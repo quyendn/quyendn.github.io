@@ -105,7 +105,7 @@ $(document).ready(function() {
                     $('#formContact').bootstrapValidator('resetForm', true);
                     toastr.success('Bạn đã đăng ký tư vấn thành công. Vĩnh Tường sẽ liên hệ lại bạn trong vòng 24 giờ làm việc. Vui lòng liên hệ tổng đài tư vấn miễn cước 1800 1218 khi cần hỗ trợ nhanh.', { timeOut: 5000 })
                     hideLoadingImage();
-                    location.href = '/cam-on.html';
+                    location.href = 'cam-on.html';
                 }
             });
         }
@@ -162,7 +162,7 @@ $(document).ready(function() {
             var phone = $('#txtPhoneMobile').val();
             var city = $('#address_city_mobile').val();
             var time = $('#cboTimeMobile').val();
-            var emailto = "quyendn84@gmail.com";
+            var emailto = "anh.levantuan@saint-gobain.com";
             var typeId = 1;
             var webdomain = "http://vinhtuong.com";
             var dataJSON = { "city": city, "time": time, "name": name, "phone": phone, 'typeId': typeId, "emailto": emailto }
@@ -247,7 +247,7 @@ $(document).ready(function() {
             var phone = $('#phone_download').val();
             var city = $('#address_city_download').val();
             var time = $('#cbo_time_download').val();
-            var emailto = "quyendn84@gmail.com";
+            var emailto = "anh.levantuan@saint-gobain.com";
             var typeId = 2;
             var webdomain = "http://vinhtuong.com";
             var dataJSON = { "city": city, "time": time, "name": name, "phone": phone, 'typeId': typeId, "emailto": emailto }
@@ -335,7 +335,7 @@ $(document).ready(function() {
             var phone = $('#phone_gift').val();
             var city = $('#address_city_gift').val();
             var time = $('#cbo_time_gift').val();
-            var emailto = "quyendn84@gmail.com";
+            var emailto = "anh.levantuan@saint-gobain.com";
             var typeId = 3;
             var webdomain = "http://vinhtuong.com";
             var dataJSON = { "city": city, "time": time, "name": name, "phone": phone, 'typeId': typeId, "emailto": emailto }
