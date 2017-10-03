@@ -278,7 +278,7 @@ $(document).ready(function() {
                     toastr.success('Bạn đã đăng ký tư vấn thành công. Vĩnh Tường sẽ liên hệ lại bạn trong vòng 24 giờ làm việc. Vui lòng liên hệ tổng đài tư vấn miễn cước 1800 1218 khi cần hỗ trợ nhanh', { timeOut: 5000 })
                     hideLoadingContactImage('content-download', 'frmContentDownload');
                    
-                    $('#downloadModalContent').modal('show');
+                    location.href = 'cam-on.html';
                 }
             });
         }
