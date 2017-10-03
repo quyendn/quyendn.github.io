@@ -77,7 +77,7 @@ $(document).ready(function() {
             var phone = $('#txtPhone').val();
             var city = $('#address_city').val();
             var time = $('#cboTime').val();
-            var emailto = "anh.levantuan@saint-gobain.com";
+            var emailto = "anh.phuthixuan@saint-gobain.com";
             var typeId =1;
             var webdomain = "http://vinhtuong.com";
             var dataJSON = { "city": city, "time": time, "name": name, "phone": phone, 'typeId': typeId, "emailto": emailto }
@@ -162,7 +162,7 @@ $(document).ready(function() {
             var phone = $('#txtPhoneMobile').val();
             var city = $('#address_city_mobile').val();
             var time = $('#cboTimeMobile').val();
-            var emailto = "anh.levantuan@saint-gobain.com";
+            var emailto = "anh.phuthixuan@saint-gobain.com";
             var typeId = 1;
             var webdomain = "http://vinhtuong.com";
             var dataJSON = { "city": city, "time": time, "name": name, "phone": phone, 'typeId': typeId, "emailto": emailto }
@@ -247,7 +247,7 @@ $(document).ready(function() {
             var phone = $('#phone_download').val();
             var city = $('#address_city_download').val();
             var time = $('#cbo_time_download').val();
-            var emailto = "anh.levantuan@saint-gobain.com";
+            var emailto = "anh.phuthixuan@saint-gobain.com";
             var typeId = 2;
             var webdomain = "http://vinhtuong.com";
             var dataJSON = { "city": city, "time": time, "name": name, "phone": phone, 'typeId': typeId, "emailto": emailto }
@@ -335,7 +335,7 @@ $(document).ready(function() {
             var phone = $('#phone_gift').val();
             var city = $('#address_city_gift').val();
             var time = $('#cbo_time_gift').val();
-            var emailto = "anh.levantuan@saint-gobain.com";
+            var emailto = "anh.phuthixuan@saint-gobain.com";
             var typeId = 3;
             var webdomain = "http://vinhtuong.com";
             var dataJSON = { "city": city, "time": time, "name": name, "phone": phone, 'typeId': typeId, "emailto": emailto }
