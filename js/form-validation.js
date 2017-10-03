@@ -83,7 +83,7 @@ $(document).ready(function() {
             var dataJSON = { "city": city, "time": time, "name": name, "phone": phone, 'typeId': typeId, "emailto": emailto }
             showLoadingImage();
             $.ajax({
-                url: "//report.f5academy.net/api/VinhTuongservice",
+                url: "//alpha.f5academy.net/api/VinhTuongservice",
                 type: "Post",
                 async: false,
                 data: dataJSON,
@@ -168,7 +168,7 @@ $(document).ready(function() {
             var dataJSON = { "city": city, "time": time, "name": name, "phone": phone, 'typeId': typeId, "emailto": emailto }
             showLoadingContactImage('content-mobile','formContentContactMobile');
             $.ajax({
-                url: "//report.f5academy.net/api/VinhTuongservice",
+                url: "//alpha.f5academy.net/api/VinhTuongservice",
                 type: "Post",
                 async: false,
                 data: dataJSON,
@@ -253,7 +253,7 @@ $(document).ready(function() {
             var dataJSON = { "city": city, "time": time, "name": name, "phone": phone, 'typeId': typeId, "emailto": emailto }
             showLoadingContactImage('content-download', 'frmContentDownload');
             $.ajax({
-                url: "//report.f5academy.net/api/VinhTuongservice",
+                url: "//alpha.f5academy.net/api/VinhTuongservice",
                 type: "Post",
                 async: false,
                 data: dataJSON,
@@ -341,7 +341,7 @@ $(document).ready(function() {
             var dataJSON = { "city": city, "time": time, "name": name, "phone": phone, 'typeId': typeId, "emailto": emailto }
             showLoadingContactImage('content-gift', 'frmContentGift');
             $.ajax({
-                url: "//report.f5academy.net/api/VinhTuongservice",
+                url: "//alpha.f5academy.net/api/VinhTuongservice",
                 type: "Post",
                 async: false,
                 data: dataJSON,
