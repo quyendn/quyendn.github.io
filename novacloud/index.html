@@ -1,0 +1,605 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="no-js" style="height:100%;">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>NOVAON Cloud</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700,700i,900&amp;subset=vietnamese" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <link href="css/font-face.css" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrapValidator.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/toastr.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="css/animate.css" />
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <div class="affix-top" data-spy="affix" data-offset-top="79">
+                <div class="container">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><img src="img/navbar-toggle.png"></button>
+                    <a class="navbar-brand" href="/"><img alt="" src="img/logo.png" width=""></a>
+                    <nav class="collapse navbar-collapse" role="navigation">
+                        <ul class="nav navbar-nav pull-right">
+                            <li class="active"><a data-scroll="" data-options="easing: easeInQuad" href="#section1" class="navbar1">Tổng quan G-suite</a></li>
+                            <li class=""><a data-scroll="" data-options="easing: easeInQuad" href="#section3" class="navbar1">Các sản phẩm</a></li>
+                            <li class=""><a data-scroll="" data-options="easing: easeInQuad" href="#section2" class="navbar1">Các gói dịch vụ</a></li>
+                            <li class=""><a data-scroll="" data-options="easing: easeInQuad" href="#section4" class="navbar1">Câu chuyện thành công</a></li>
+                            <li class=""><a data-scroll="" data-options="easing: easeInQuad" href="#section5" class="navbar1">Về Novaon</a></li>
+                            <li class=""><a data-scroll="" data-options="easing: easeInQuad" href="#footer" class="navbar1">liên hệ</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div id="slide">
+            <div data-ride="carousel" class="carousel slide" id="heartbanner-slide">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li class="active" data-slide-to="0" data-target="#heartbanner-slide"></li>
+                    <li data-slide-to="1" data-target="#heartbanner-slide" class=""></li>
+                </ol>
+                <div role="listbox" class="carousel-inner">
+                    <div class="item active"><img src="img/banner2.jpg"></div>
+                    <div class="item"><img src="img/banner3.jpg"></div>
+
+                </div>
+                <a data-slide="prev" role="button" href="#heartbanner-slide" class="left carousel-control hidden"></a>
+                <a data-slide="next" role="button" href="#heartbanner-slide" class="right carousel-control hidden"></a>
+            </div>
+            <div id="form-register" class="wow fadeInUp">
+                <div class="inner">
+                    <h3>TƯ VẤN VỀ G-SUITE MIỄN PHÍ</h3>
+                    <form id="formContact" autocomplete="off">
+                        <p class="text-center small">Vui lòng để lại thông tin chính xác. Tư vấn viên sẽ gọi điện ngay cho bạn sau khi nhận được thông tin</p>
+                        <div id="formContentContact">
+                            <div class="form-group input-group">
+                                <span class="input-group-addon" id="basic-addon1"><i class="glyphicon glyphicon-user"></i></span>
+                                <input type="text" class="form-control" name="name" id="txtName" placeholder="Họ và tên">
+                            </div>
+                            <div class="form-group input-group">
+                                <span class="input-group-addon" id="basic-addon1"><i class="glyphicon glyphicon-envelope"></i></span>
+                                <input type="text" class="form-control" placeholder="Email" id="txtEmail" name="email">
+                            </div>
+                            <div class="form-group input-group">
+                                <span class="input-group-addon" id="basic-addon1"><i class="glyphicon glyphicon-earphone"></i></span>
+                                <input type="text" class="form-control " name="phone" id="txtPhone" placeholder="Số điện thoại">
+                            </div>
+                            <div class="form-group input-group">
+                                <span class="input-group-addon" id="basic-addon1"><i class="glyphicon glyphicon-signal"></i></span>
+                                <input type="text" class="form-control" name="company" id="txtCompany" placeholder="Tên công ty">
+                            </div>
+                            <p class="text-center small">Novaon cam kết bảo mật thông tin cá nhân của bạn.</p>
+
+                            <div class="input-group col-lg-12 col-md-12 col-sm-12 col-xs-12"><button class="btn btn-block">Đăng ký</button></div>
+                            <div class="small text-center">
+                                <a href="tel:0934554491"><i class="glyphicon glyphicon-earphone"></i> 0934 554 491</a> &nbsp;&nbsp;|&nbsp;&nbsp;
+                                <a href="tel:0966508058"><i class="glyphicon glyphicon-earphone"></i> 0966 508 058</a>
+                            </div>
+                            <div id="content"></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="section1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-md-5 col-sm-5 text-center wow fadeInLeft"><img src="img/g_suite.jpg"></div>
+                    <div class="col-lg-7 col-md-7 col-sm-7 text-center wow fadeInRight"><img src="img/st1_2.jpg"></div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 wow fadeInUp">
+                        <p>
+                            G-Suite là một bộ các công cụ được xây dựng trên nền tảng điện toán đám mây của Google mang tới cho Doanh nghiệp của bạn một phương thức làm việc và cộng tác với nhau hoàn toàn mới, ở bất cứ đâu, trên bất kỳ thiết bị nào.
+                        </p>
+                        <p>
+                            G-Suite không chỉ đơn giản là email và chat mà còn có các cuộc gọi video, đặt lịch làm việc, chia sẻ dữ liệu, cùng nhau tạo và chỉnh sửa các văn bản trực tuyến…
+                        </p>
+                        <p>
+                            Chỉ với vài bước thiết lập đơn giản là bạn có thể sử dụng và quản lý, G-Suite cho phép bạn làm việc hiệu quả hơn và tập trung hơn vào những gì thực sự quan trọng.
+                        </p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 wow fadeInRight">
+                        <div class="benefit" id="ben3">
+                            <div class="text-center"><img src="img/icon_1.png"></div>
+                            <h3 class="text-center">Với nhà lãnh đạo</h3>
+                            <hr />
+                            <p>1. Giảm chi phí, tăng năng suất của nhân viên, cho phép các lãnh đạo ra quyết định nhanh hơn</p>
+                            <p>2. Linh hoạt hơn để triển khai những sự thay đổi; đổi mới nhanh chóng và liên tục kinh doanh. Lãnh đạo có thể điều hành công việc liên tục, ngay cả khi không ở văn phòng</p>
+                            <p>3. Tập trung nguồn lực vào các sáng kiến chiến lược thay vì các hoạt động vận hành, báo cáo</p>
+                            <p>4. Tạo môi trường công nghệ hấp dẫn cho để thu hút, giữ chân những nhân viên trẻ, năng động</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp">
+                        <div class="benefit" id="ben1">
+                            <div class="text-center"><img src="img/icon_2.png"></div>
+                            <h3 class="text-center">Với các nhân viên</h3>
+                            <hr />
+                            <p>1. Dữ liệu có thể truy cập từ bất cứ đâu, trên bất kỳ nền tảng máy tính/di động nào. Nhân viên có thể làm việc mọi lúc, mọi nơi – đặc biệt là các nhân viên kinh doanh</p>
+                            <p>2. 30GB bộ nhớ cho mỗi người dùng qua email và tài liệu có khả năng tìm kiếm mạnh mẽ. Dữ liệu không bao giờ bị mất, ngay cả khi máy tính xách tay của bạn chết hoặc bị đánh cắp</p>
+                            <p>3. Các công cụ hợp tác và nhắn tin đơn giản và nhanh chóng</p>
+                            <p>4. Cơ chế chia sẻ trong Documents, Sites và Video cho phép một mức độ hợp tác mới chuyên nghiệp và hiệu quả hơn. Các nhân viên cảm thấy hạnh phúc hơn khi dễ dàng hợp tác, làm việc liên tục và loại bỏ được các thời gian cho các việc vô ích</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 wow fadeInLeft">
+                        <div class="benefit" id="ben2">
+                            <div class="text-center"><img src="img/icon_3.png"></div>
+                            <h3 class="text-center">Với bộ phận IT</h3>
+                            <hr />
+                            <p>1. Tiết kiệm chi phí phần mềm, chi phí phần cứng hoặc/và chi phí cho server</p>
+                            <p>2. Không có phần cứng hoặc phần mềm để cài đặt hoặc bảo trì. Giảm chi phí nhân sự CNTT</p>
+                            <p>3. Các ứng dụng trực quan mà nhiều người dùng đã quen thuộc, vì vậy các nhân viên trong doanh nghiệp ít cần thời gian đào tạo.</p>
+                            <p>4. Nền tảng mở cho hội nhập, nhiều phần mềm của các bên thứ 3 có thể kết hợp với Gsuite. Có rất nhiều phần mềm tương thích với Gsuite đang được cung cấp thông qua Gsuite MarketPlace</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        
+        <div class="section wow fadeInUp" id="section3">
+            <div class="st-hd">
+                <h3><strong>CÁC SẢN PHẨM TRONG BỘ CÔNG CỤ G-SUITE</strong></h3>
+            </div>
+            <div class="container">
+                <div class="text-center"><img src="img/st2.jpg"></div>
+                <div class="row" id="function">
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <img src="img/icon_4.png">
+                        GMAIL
+                    </div>
+                    <div class="col-lg-9 col-md-9 col-sm-9">
+                        <div class="desc">
+                            <p><b>Gmail</b> là ứng dụng mail tốt nhất thế giới với hơn 400 triệu người dùng với hơn 1 tỷ tài khoản. Những giá trị mà Gmail mang lại cho doanh nghiệp của bạn:</p>
+                            <p><b>Tính di động và liên tục</b>: Các thành viên có thể làm việc với Gmail trên bất cứ thiết bị nào (máy tính, tablet, smartphone)</p>
+                            <p><b>Bộ nhớ lớn (tối thiểu 30GB)</b>: Giảm thiểu việc phải xóa email thường xuyên và giúp bạn gửi được các mail dung lượng lớn. </p>
+                            <p><b>Sự thông minh</b>: Hộp thư ưu tiên giúp bạn tập trung vào những thông điệp quan trọng nhất. Khả năng tìm kiếm mạnh mẽ của Google trong mail tiết kiệm thời gian tìm kiếm các thư cũ.</p>
+                            <p>
+                                <b>Sự đơn giản và quen thuộc</b>: cần ít thời gian hơn cho việc đào tạo người dùng.
+                            </p>
+                            <p>
+                                <b>Sự an toàn và tin cậy</b>: Kiểm soát mail gửi và nhận với công cụ quét virus hiệu quả của Google. Bộ lọc Mail Spam hiệu quả, chính xác. Tính năng ngăn chặn, tấn công email giả mạo tới người dùng. Bảo mật bằng cách xác nhận 2 bước.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <img src="img/icon_8.png">
+                        Google Calendar
+                    </div>
+                    <div class="col-lg-9 col-md-9 col-sm-9">
+                        <div class="desc">
+                            <p>Đặt lịch họp trực tuyến và chia sẻ cho các thành viên tham gia để họ nắm được. Google sẽ tự động gửi mail thông báo cho các thành viên, bạn không cần làm.</p>
+                            <p>Có thể đặt chế độ tự động nhắc các thành viên trước giờ họp.</p>
+                            <p>Các thành viên trong doanh nghiệp có thể xem lịch của nhau để tránh việc phòng họp hoặc cá nhân bị trùng lịch nhiều cuộc họp trong một khung giờ.</p>
+                            <p>Lịch Google cũng có thể được tích hợp với các thành phần khác của Google Apps. </p>
+                            <p>
+                                Ngoài ra, mỗi cá nhân có thể quyết định xem ai được xem chi tiết lịch của mình để đảm bảo tính bảo mật.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <img src="img/icon_7.png">
+                        Google DOCS
+                    </div>
+                    <div class="col-lg-9 col-md-9 col-sm-9">
+                        <div class="desc">
+                            <p>Google Docs cải thiện tốc độ và chất lượng sản phẩm bằng cách cho phép hợp tác và thảo luận về tài liệu đồng thời: nhiều người ở nhiều vị trí có thể xem, thảo luận và chỉnh sửa cùng một tài liệu từ mọi lúc, mọi nơi. </p>
+                            <p>Điều hướng phiên bản làm việc của người dùng, ví dụ có nhiều người cùng sửa một tệp tin thì Google Docs tự động điều chỉnh để không bị chồng chéo và mất mát dữ liệu. </p>
+                            <p>Mỗi Tài liệu Google đều có các kiểm soát chia sẻ, do đó bạn không phải lo lắng về thông tin nhận được vào tay kẻ xấu.</p>
+                            <p>
+                                Google Docs loại bỏ giảm thiểu thời gian lãng phí và tăng năng suất lao động trong các loại hình công việc: Cộng tác nhóm để xây dựng kế hoạch, dự án, tài liệu…; tổng hợp báo cáo, thống kê của các bộ phận.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <img src="img/icon_6.png">
+                        Google Drive
+                    </div>
+                    <div class="col-lg-9 col-md-9 col-sm-9">
+                        <div class="desc">
+                            <p>
+                                Google Drive cho phép bạn truy cập vào tài liệu và làm công việc của mình từ bất cứ đâu: PC, Laptop, Tablet, Smartphone.
+                            </p>
+                            <p>
+                                Chỉ cần tải xuống Drive trên PC hoặc Laptop để đồng bộ hóa các tệp từ máy tính của bạn với đám mây. Cập nhật tệp trên một thiết bị và thay đổi được tự động lưu vào Drive và thiết bị khác của bạn, vì vậy bạn có phiên bản cập nhật nhất cho các tệp của mình bất cứ nơi nào bạn cần.
+                            </p>
+                            <p>
+                                Với phiên bản Basic, bộ nhớ Drive là 30G; đối với phiên bản Business và Enterprise, bộ nhớ Drive là vô hạn. Bạn có thể dễ dàng mua thêm bộ nhớ của Drive với chi phí rất rẻ (100GB giá 1.99 USD/tháng, 1TB giá 9.99 USD/tháng)
+                            </p>
+                            <p>
+                                Với Drive, việc gửi mail có chứa những file lớn (25 MB) trở lên vô dùng đơn giản. Đây là lợi thế rất lớn khi sử dụng Gmail so với các loại hình mail Server.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <img src="img/icon_5.png">
+                        Google Hangouts
+                    </div>
+                    <div class="col-lg-9 col-md-9 col-sm-9">
+                        <div class="desc">
+                            <p>
+                                Hangouts mang các cuộc họp video trực tuyến ngay đến Laptop, Tablet hoặc Smartphone. Hangout Meets cho phép gặp mặt tối đa 30 đồng nghiệp hoặc khách hàng, từ mọi nơi trên thế giới.
+                            </p>
+                            <p>
+                                Hangouts được tích hợp với các ứng dụng năng suất của Google để phù hợp với cách bạn làm việc. Thật dễ dàng để lên lịch Hangout từ Calendar của bạn hoặc nhảy ngay từ hộp thư đến của bạn.
+                            </p>
+                            <p>
+                                Bạn có thể thêm một tài liệu từ Google Drive và làm việc cùng nhau trong thời gian thực trong cuộc họp.
+                            </p>
+                            <p>
+                                Lợi thế của Hangouts với các phần mềm chat khác (Skype, Facebook…): nick của người dùng đồng thời là địa chỉ Email. Khi bắt đầu một cuộc họp/trò chuyện, các thành viên không cần phải hỏi/tìm kiếm nick của nhau nữa.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <img src="img/icon_9.png">
+                        Google sheet
+                    </div>
+                    <div class="col-lg-9 col-md-9 col-sm-9">
+                        <div class="desc">
+                            <p>
+                                Với Google Sites việc tạo website đơn giản như tạo một văn bản với một thư viện đồ sộ chứa các mẫu dựng sẵn (template) được xây dựng bởi Google và cộng đồng người dùng với hầu hết các chủ đề thiết thực. Dễ dàng chia sẻ cho nhiều người cùng xây dựng với khả năng phân quyền tới cấp độ từng trang con. Tích hợp hoàn toàn và có thể sử dụng chung tài nguyên với các ứng dụng khác trong bộ G Suite và các sản phẩm khác của Google. Phù hợp để làm các website đơn giản hướng nội bộ. Ví dụ: Intranet, hồ sơ nhân sự, website dự án, trang lưu trữ tài liệu, …Có thể sử dụng để xây dựng trang thông tin sản phẩm phục vụ cho mục đích chạy quảng cáo Google.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <img src="img/icon_10.png">
+                        Google Vault
+                    </div>
+                    <div class="col-lg-9 col-md-9 col-sm-9">
+                        <div class="desc">
+                            <p>
+                                Google Vault for Drive đã cung cấp khả năng tìm kiếm và truy xuất các dữ liệu trong Drive của người dùng trong doanh nghiệp.
+                            </p>
+                            <p>
+                                Với công cụ bảo vệ dữ liệu mạnh mẽ, Google Vault for Drive đảm bảo quản trị viên của bạn có toàn quyền kiểm soát dữ liệu công ty trong đám mây.
+                            </p>
+                            <p>
+                                Google Vault for Drive thường có sẵn cho tất cả khách hàng của G Suite Business, Education và Enterprise hiện nay.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section wow fadeInUp" id="section2">
+            <div class="container">
+                <div class="st-hd text-center">
+                    <h3><strong>bảng giá dịch vụ</strong></h3>
+                </div>
+                <div class="owl-carousel" id="prices">
+                    <div class="item wow fadeInLeft" id="item1">
+                        <div class="tl_small text-center">G-suite Basic</div>
+                        <div class="price text-center"><span>3.00 $</span>/ người dùng / tháng</div>
+                        <ul>
+                            <li>
+                                Email theo tên miền riêng dạng tenban@tenmien.com dung lượng 30GB
+                            </li>
+                            <li>
+                                Ứng dụng lưu trữ và chia sẻ dữ liệu Google Driver dung lượng 30GB
+                            </li>
+                            <li>
+                                Bộ công cụ soạn thảo trực tuyến: Docs, Sheets, Slide, From
+                            </li>
+                            <li>
+                               Cuộc gọi Video và thoại(Hang Out)
+                            </li>
+                            <li>
+                                Lịch trực tuyến(Google Canlendar)
+                            </li>
+                            <li>
+                                Công cụ xây dựng trang web(Google Sites)
+                            </li>
+                            <li>Trang Google+</li>
+                            <li>Hỗ trợ 24/7 qua điện thoại và email</li>
+                            <li>Thiết lập và quản lý người dùng</li>
+                            <li>Bảo mật 2 lớp</li>
+                        </ul>
+                    </div>
+                    <div class="item wow fadeInUp" id="item2">
+                        <div class="tl_small text-center">G-suite Business <label class="label">BEST VALUE</label></div>
+                        <div class="price text-center"><span>10.00 $</span>/ người dùng / tháng</div>
+                       <ul>
+                            <li>
+                                Bao gồm tất cả các tính năng của G Suite Basic cộng thêm:
+                            </li>
+                            <li>
+                                Bộ nhớ vô hạn(hoặc 1TB cho mỗi người dùng nếu có 5 người dùng)
+                            </li>
+                            <li>
+                                Kiểm soát nâng cao cảu quản trị viên dành cho Drive
+                            </li>
+                            <li>
+                                Kiểm tra và báo cáo chuyên sâu cho nội dung chia sẻ trên Drive
+                            </li>
+                            <li>
+                                Google Vault dành cho eDiscovery bao gồm email, trò chuyện, tài liệu và tệp
+                            </li>
+                            <li>Dễ dàng tìm kiếm và xuất sang các định dạng khác nhau</li>
+                            <li>Lưu trữ tất cả các email do công ty bạn gửi đi</li>
+                            <li>Đặt và kích hoạt tính năng lưu trữ chứng cứ pháp lý trong hộp thư đến</li>
+                        </ul>
+                    </div>
+                    <div class="item wow fadeInRight" id="item3">
+                        <div class="tl_small text-center">G-SUITE ENTERPRISE</div>
+                        <div class="price text-center"><span>30.00 $</span>/ người dùng / tháng</div>
+                        <ul>
+                            <li>
+                                Tăng cường bảo mật cho Drive. Thêm một lớp bảo vệ khác để ngăn chặn thông tin nhậy cảm không bị tiết lộ.
+                            </li>
+                            <li>
+                                Quét lưu lượng truy cập email cho nội dung cụ thể, chẳng hạn như số thẻ tín dụng hoặc số an sinh xã hội.
+                            </li>
+                            <li>
+                                Quét hình ảnh cho văn bản. Xác định và giảm thiểu sự mất mát dữ liệu
+                            </li>
+                            <li>
+                                Sự dụng một sản phẩm lưu trữ bên thứ 3 để lưu trữ và phát hiện email quan trọng
+                            </li>
+                            <li>
+                                Phân tích nhật ký Gmail trong BigQuery, sử dụng các truy vấn năng cao tùy biến.
+                            </li>
+                            <li>
+                               Yêu cầu khóa bảo mật để người dùng đăng nhập vào tài khoản của họ.
+                            </li>
+                            <li>Sử dụng mã hóa S/MIME để tăng cường bảo mật email.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button class="btn btn-warning btn-lg">
+                        <img src="img/icon-register.png">
+                        <strong>ĐĂNG KÝ NGAY</strong><br />
+                        <small>(Để nhận tư vấn miễn phí)</small>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="section wow fadeInUp" id="section4">
+            <div class="container">
+                <div class="st-hd text-center">
+                    <h3><strong>Câu chuyện thành công</strong></h3>
+                    <div class="line"></div>
+                    <p>Với sự tin dùng của hơn 25,000 khách hàng trên khắp cả nước, Novaon không ngừng hoàn thiện và nâng cao chất lượng dịch vụ nhằm đáp ứng nhu cầu ngày càng cao của khách hàng trong các hoạt động trên Internet.</p>
+                </div>
+                <div class="owl-carousel-rate" id="rate">
+                    <div class="item" id="rate1">
+                        <div class="top">
+                            <img src="img/logo_gala.png">
+
+                        </div>
+                        <div class="desc">
+                            <p>Gala Lab là thành viên của GALA Group, một tập đoàn toàn cầu trong ngành công nghiệp trò chơi trực tuyến với nhiều công ty có trụ sở tại Nhật Bản, tại Mỹ và Hàn Quốc.</p>
+                            <p>Trước khi sử dụng Google Apps, Gala Lab phụ thuộc vào một máy chủ email nội bộ đặt tại Hàn Quốc. Tuy nhiên, thư rác là một vấn đề lớn và công ty thường gặp phải các sự cố kết nối mạng không ổn định, đặc biệt khi kết nối với các văn phòng khác trên toàn cầu. Đồng thời, chi phí nguồn lực để quản lý máy chủ nội bộ cũng là một vấn đề của Gala Lab. </p>
+                        </div>
+                    </div>
+                    <div class="item" id="rate2">
+                        <div class="top">
+                            <img src="img/logo_denwell.png">
+
+                        </div>
+
+                        <div class="desc">
+                            <p>Denwell là công ty cung cấp dịch vụ ăn uống cao cấp cho các sự kiện như tiệc cưới, hội nghị quốc tế và các buổi họp mặt doanh nghiệp hàng năm. Trụ sở chính đặt tại Đài Loan, Denwell hiện có ba chi nhánh và bốn thương hiệu, sử dụng hơn 450 nhân viên.</p>
+                            <p>Trước khi sử dụng Google Apps, công ty gặp nhiều bất lợi lớn và giải pháp địa phương như dung lượng email nhỏ, nhiều chức năng bị giới hạn và không tích hợp với điện toán đám mây</p>
+                            <p>Gia tăng hiệu quả trao đổi thông tin thêm 70% nhờ Google Apps</p>
+                            <p>Dung lượng email tăng 500 lần</p>
+                            <p>Quản lý thời gian tốt hơn cho các nhân viên khi họ không phải mất nửa giờ mỗi tuần cho việc dọn dẹp hộp thư và sắp xếp lưu trức các tài liệu của mình</p>
+                        </div>
+                    </div>
+                    <div class="item" id="rate3">
+                        <div class="top">
+                            <img src="img/logo_gala.png">
+
+                        </div>
+                        <div class="desc">
+                            <p>Gala Lab là thành viên của GALA Group, một tập đoàn toàn cầu trong ngành công nghiệp trò chơi trực tuyến với nhiều công ty có trụ sở tại Nhật Bản, tại Mỹ và Hàn Quốc.</p>
+                            <p>Trước khi sử dụng Google Apps, Gala Lab phụ thuộc vào một máy chủ email nội bộ đặt tại Hàn Quốc. Tuy nhiên, thư rác là một vấn đề lớn và công ty thường gặp phải các sự cố kết nối mạng không ổn định, đặc biệt khi kết nối với các văn phòng khác trên toàn cầu. Đồng thời, chi phí nguồn lực để quản lý máy chủ nội bộ cũng là một vấn đề của Gala Lab. </p>
+                        </div>
+
+                    </div>
+                    <div class="item" id="rate4">
+                        <div class="top">
+                            <img src="img/logo_denwell.png">
+
+                        </div>
+                        <div class="desc">
+                            <p>Denwell là công ty cung cấp dịch vụ ăn uống cao cấp cho các sự kiện như tiệc cưới, hội nghị quốc tế và các buổi họp mặt doanh nghiệp hàng năm. Trụ sở chính đặt tại Đài Loan, Denwell hiện có ba chi nhánh và bốn thương hiệu, sử dụng hơn 450 nhân viên.</p>
+                            <p>Trước khi sử dụng Google Apps, công ty gặp nhiều bất lợi lớn và giải pháp địa phương như dung lượng email nhỏ, nhiều chức năng bị giới hạn và không tích hợp với điện toán đám mây</p>
+                            <p>Gia tăng hiệu quả trao đổi thông tin thêm 70% nhờ Google Apps</p>
+                            <p>Dung lượng email tăng 500 lần</p>
+                            <p>Quản lý thời gian tốt hơn cho các nhân viên khi họ không phải mất nửa giờ mỗi tuần cho việc dọn dẹp hộp thư và sắp xếp lưu trức các tài liệu của mình</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section text-center wow fadeInUp" id="section5">
+            <div class="st-hd">
+                <h3><strong>VỀ NOVAON</strong></h3>
+                <div class="sapo"><div class="container">Novaon Cloud là thành viên của Tập đoàn Internet Novaon. Những giá trị cốt lõi đã làm nên tập đoàn Internet hàng đầu khu vực Đông Nam Á cũng chính là những giá trị mà Novaon Cloud theo đuổi.</div></div>
+
+            </div>
+            <div class="container">
+                <div class="inner">
+                    <h3><strong>Giá trị cốt lõi</strong></h3>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div><img src="img/gt1.png"></div>
+                            <h2>Khách hàng là số 1</h2>
+                            <p>Trải nghiệm của khách hàng là định hướng và mục tiêu hàng đầu của NOVAON, chúng tôi không ngừng hoàn thiện sản phẩm dịch vụ để làm thỏa mãn khách hàng.</p>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div><img src="img/gt2.png"></div>
+                            <h2>Cam kết</h2>
+                            <p>100 lời tuyên bố không bằng 1 câu cam kết. Cam kết là cách duy nhất để được tạm ứng niềm tin. Không buông lời cam kết thiếu cân nhắc thấu đáo.</p>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div><img src="img/gt3.png"></div>
+                            <h2>Học hỏi không ngừng</h2>
+                            <p>Học hỏi không phải là để giỏi hơn người khác mà là để vượt lên chính bản thân, lúc người ta thấy thiếu nhất là lúc học hỏi tốt nhất. Vì vậy, chúng tôi luôn học hỏi từ những cá nhân, doanh nghiệp giỏi nhất; từ những chi tiết nhỏ nhất và đúc rút ra những thứ bản chất nhất.</p>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div><img src="img/gt4.png"></div>
+                            <h2>Đam mê</h2>
+                            <p>Thành công lớn bắt nguồn từ niềm đam mê và khát vọng cháy bỏng, yêu việc làm là cách hay nhất để làm tốt công việc. Chúng tôi luôn lắng nghe, hiểu thật đúng và nuôi dưỡng đàm mê của chính bản thân mình, cũng như tạo cảm hứng, khích lệ đam mê của đồng nghiệp.</p>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div><img src="img/gt5.png"></div>
+                            <h2>Hành động nhanh</h2>
+                            <p>Trong thời đại Internet, không phải ý tưởng mà là hành động nhanh và quyết liệt hơn sẽ chiến thắng. Hành động quyết liệt và nhất quán còn quan trọng hơn một kế hoạch hoàn hảo.</p>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div><img src="img/gt6.png"></div>
+                            <h2>Đồng đội</h2>
+                            <p>Nếu muốn đi xa hơn, hãy đi cùng đồng đội.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="container wow fadeInUp" id="ft-top">
+                <div class="row">
+                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                        <h3 class="text-uppercase"><strong>NOVAON CLOUD - Thành viên tập đoàn Internet Novaon</strong></h3>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-right"><img src="img/logo_partner.png"></div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <p class="pink text-uppercase">Trụ sở chính Hà nội</p>
+                        <p><i class="glyphicon glyphicon-map-marker"></i> Địa chỉ: Tầng 9, tòa nhà Công đoàn Ngân hàng Việt Nam, Duy Tân, Cầu Giấy, Hà Nội</p>
+                        <p><i class="glyphicon glyphicon-earphone"></i> Tel: 0966 508 058</p>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <p class="pink text-uppercase">VP Hồ chí minh</p>
+                        <p><i class="glyphicon glyphicon-map-marker"></i> Địa chỉ: Tòa nhà MB AMC, số 538 đường CMT8, Phường 11, Quận 3, TP HCM </p>
+                        <p><i class="glyphicon glyphicon-earphone"></i> Tel: +84 283 6687 8888</p>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <p class="pink text-uppercase">VP Singapore</p>
+                        <p><i class="glyphicon glyphicon-map-marker"></i> Địa chỉ: 5001 Beach Road, Golden Mile Complex, #08-10, Singapore 199588. </p>
+                        <p><i class="glyphicon glyphicon-earphone"></i> Tel: +65 9788 7889</p>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <p class="pink text-uppercase">VP INDONESIA</p>
+                        <p><i class="glyphicon glyphicon-map-marker"></i> Địa chỉ: 88 Tower, Level 38, Tower A, Kota Kasablanka, Jl. Casablanca Raya Kav.88, Jakarta, Indonesia 12870 </p>
+                        <p><i class="glyphicon glyphicon-earphone"></i> Tel: +62 21 2963 8006</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" id="scrollTop"><img src="img/scrollTop.png"></a>
+    </div>
+    <script src="js/smooth-scroll.js"></script>
+    <script type="text/javascript" src="js/bootstrapValidator.min.js"></script>
+    <script type="text/javascript" src="js/form-validation.js"></script>
+    <script type="text/javascript" src="js/toastr.js"></script>
+    <script type="text/javascript" src="js/wow/wow.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script type="text/javascript">
+        new WOW().init();
+        $(document).ready(function () {
+            $('.owl-carousel-rate').owlCarousel({
+                loop: true,
+                margin: 10,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: true
+                    },
+                    768: {
+                        items: 2,
+                        nav: true
+                    },
+                    1000: {
+                        items: 3,
+                        nav: true,
+                        loop: true,
+                        margin: 30,
+                    }
+                }
+            })
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: true
+                    },
+                    768: {
+                        items: 2,
+                        nav: true
+                    },
+                    1000: {
+                        items: 3,
+                        nav: true,
+                        loop: false,
+                        margin: 30,
+                    }
+                }
+            })
+            if ($('#section1')) {
+                var max_height = 0;
+                $("#ben1,#ben2,#ben3").each(function () {
+                    if ($(this).height() > max_height)
+                        max_height = $(this).height();
+                });
+                $("#ben1,#ben2,#ben3").height(max_height);
+            }
+            if ($('#section1')) {
+
+                var max_height = 0;
+
+                $("#ben1,#ben2,#ben3").each(function () {
+
+                    if ($(this).height() > max_height)
+
+                        max_height = $(this).height();
+
+                });
+
+                $("#ben1,#ben2,#ben3").height(max_height);
+            }
+            if ($('#prices')) {
+                var max_height = 0;
+                $("#item1,#item2,#item3").each(function () {
+                    if ($(this).height() > max_height)
+                        max_height = $(this).height();
+                });
+                $("#item1,#item2,#item3").height(max_height);
+            }
+            if ($('#rate')) {
+
+                var max_height = 0;
+                $("#rate1,#rate2,#rate3,#rate4").each(function () {
+                    if ($(this).height() > max_height)
+
+                        max_height = $(this).height();
+
+                });
+                max_height = max_height + 20;
+
+
+                $("#rate1,#rate2,#rate3,#rate4").height(max_height);
+            }
+
+        });
+        smoothScroll.init({
+            speed: 1000,
+            easing: 'easeInOutCubic',
+            offset: 70,
+            updateURL: false,
+            callbackBefore: function (toggle, navbar1) { },
+            callbackAfter: function (toggle, navbar1) { }
+        });
+       
+    </script>
+</body>
+</html>
