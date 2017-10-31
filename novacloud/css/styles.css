@@ -1,4 +1,4 @@
-a:link,
+fa:link,
 a:visited {
     text-decoration:none;
 	transition: all 300ms ease-in-out;
@@ -254,6 +254,7 @@ ul.reset, ol.reset{
 	-moz-border-radius:5px;
 	-webkit-border-radius:5px;
 	border-radius:5px;
+    text-align:justify;
 	}
 .benefit h3{
 	margin:15px 0 0 0;
