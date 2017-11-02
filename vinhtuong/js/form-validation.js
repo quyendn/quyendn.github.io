@@ -103,7 +103,7 @@ $(document).ready(function() {
                     $('#formContact').bootstrapValidator('resetForm', true);
                     toastr.success('Bạn đã đăng ký tư vấn thành công. Vĩnh Tường sẽ liên hệ lại bạn trong vòng 24 giờ làm việc. Vui lòng liên hệ tổng đài tư vấn miễn cước 1800 1218 khi cần hỗ trợ nhanh.', { timeOut: 5000 })
                     hideLoadingImage();
-                    location.href = 'cam-on.html';
+                    location.href = 'https://quyendn.github.io/vinhtuong/cam-on.html';
                 }
             });
         }
@@ -193,7 +193,7 @@ $(document).ready(function() {
                     $('#frmMobile').bootstrapValidator('resetForm', true);
                     toastr.success('Bạn đã đăng ký tư vấn thành công. Vĩnh Tường sẽ liên hệ lại bạn trong vòng 24 giờ làm việc. Vui lòng liên hệ tổng đài tư vấn miễn cước 1800 1218 khi cần hỗ trợ nhanh.', { timeOut: 5000 })
                     hideLoadingContactImage('content-mobile', 'formContentContactMobile');
-                    location.href = '/cam-on.html';
+                    location.href = 'https://quyendn.github.io/vinhtuong/cam-on.html';
                 }
             });
         }
@@ -378,7 +378,7 @@ $(document).ready(function() {
                     $('#frmContentDownload').bootstrapValidator('resetForm', true);
                     toastr.success('Bạn đã đăng ký tư vấn thành công. Vĩnh Tường sẽ liên hệ lại bạn trong vòng 24 giờ làm việc. Vui lòng liên hệ tổng đài tư vấn miễn cước 1800 1218 khi cần hỗ trợ nhanh', { timeOut: 5000 })
                     hideLoadingContactImage('content-gift', 'frmContentGift');
-                    location.href = '/cam-on.html';
+                    location.href = 'https://quyendn.github.io/vinhtuong/cam-on.html';
                 }
             });
         }
