@@ -27,8 +27,25 @@
     <script type="text/javascript" src="js/wow/wow.min.js"></script>
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/scrolling-nav.js"></script>
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PVFMPZ');</script>
+    <!-- End Google Tag Manager -->
 </head>
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PVFMPZ"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <div id="container">
         <div id="header">
             <div class="inner">
@@ -43,7 +60,7 @@
                     </ul>
 
                 </nav>
-                <a href="tel:18001218" class="hotline pull-right"><img src="img/hotline.png"></a>
+                <a href="tel:18001218" class="hotline pull-right"><span class="num"><img src="img/hotline.png"></span></a>
 
             </div>
         </div>
@@ -411,7 +428,7 @@
             <div class="row">
                 <div class="col-lg-3 col-md-3 col-sm-7 col-xs-7 text-center">
                     <p class="text-uppercase"><strong>Đăng ký để được<br />tư vấn về Trần & Tường</strong></p>
-                    <p><img src="img/hotline.png"></p>
+                    <p><a href="tel:18001218"><span class="num"><img src="img/hotline.png"></span></a></p>
                     <p><a href="http://www.vinhtuong.com">www.vinhtuong.com</a> <a href="http://www.gyproc.vn">www.gyproc.vn</a> <a href="http://www.trannhadep.com">www.trannhadep.com</a></p>
                 </div>
                 <div class="col-lg-6 col-md-6 hidden-sm hidden-xs">
@@ -657,6 +674,13 @@
             </div>
 
         </div>
+    </div>
+    <div class='quick-alo-phone quick-alo-green quick-alo-show' id='quick-alo-phoneIcon' style="z-index:999999;">
+        <a href="tel:0917 424 365">
+            <div class="quick-alo-ph-circle"></div>
+            <div class="quick-alo-ph-circle-fill"></div>
+            <div class="quick-alo-ph-img-circle"></div>
+        </a>
     </div>
     <script src="js/smooth-scroll.js"></script>
     <script type="text/javascript" src="js/bootstrapValidator.min.js"></script>
