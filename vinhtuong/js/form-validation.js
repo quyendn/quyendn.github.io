@@ -26,7 +26,11 @@ $(document).ready(function() {
         // =================================================================
         // Indicate where the error messages are shown.
         // Tooltip, Popover, Custom Container.
-        // =================================================================
+    // =================================================================
+    $(".btn-download-cataloge-one").on('click',function(){
+        $('#downloadModal').modal('show');
+        $("#hidCataloge").val(1);
+    });
     $('#formContact').bootstrapValidator({
         message: 'This value is not valid',
         excluded: [':disabled'],
@@ -285,6 +289,16 @@ $(document).ready(function() {
                     $('#frmContentDownload').bootstrapValidator('resetForm', true);
                     toastr.success('Bạn đã đăng ký tư vấn thành công. Vĩnh Tường sẽ liên hệ lại bạn trong vòng 24 giờ làm việc. Vui lòng liên hệ tổng đài tư vấn miễn cước 1800 1218 khi cần hỗ trợ nhanh', { timeOut: 5000 })
                     hideLoadingContactImage('content-download', 'frmContentDownload');
+                    var idDownload = $("#hidCataloge").val();
+                    if (idDownload == 0) {
+                        $("#link-cataloge-01").show();
+                        $("#link-cataloge-02").hide();
+                    }
+                    else
+                    {
+                        $("#link-cataloge-01").hide();
+                        $("#link-cataloge-02").show();
+                    }
                     $('#downloadModalContent').modal('show');
                     
                 }
