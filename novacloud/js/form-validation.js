@@ -70,7 +70,7 @@ $(document).ready(function() {
             var phone = $('#txtPhone').val();
             var email = $('#txtEmail').val();
             var company = $('#txtCompany').val();
-            var emailto = "quyendn84@gmail.com";
+            var emailto = "hoannv@novaon.vn";
             var webdomain = "http://nova.com";
             var dataJSON = { "company": company, "name": name, "email": email, 'phone': phone, "emailto": emailto }
             showLoadingImage();
