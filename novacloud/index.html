@@ -148,7 +148,20 @@
 </p>
                         </div>
                     </div>
+                    <script>
+                        $(document).ready(function () {
+                            if ($('#section1')) {
+                                var max_height = 0;
+                                $("#ben1,#ben2,#ben3").each(function () {
 
+                                    if ($(this).height() > max_height)
+
+                                        max_height = $(this).height();
+                                });
+                                $("#ben1,#ben2,#ben3").height(max_height);
+                            }
+                        });
+                    </script>
                 </div>
             </div>
         </div>
@@ -707,28 +720,6 @@
                     }
                 }
             })
-            if ($('#section1')) {
-                var max_height = 0;
-                $("#ben1,#ben2,#ben3").each(function () {
-                    if ($(this).height() > max_height)
-                        max_height = $(this).height();
-                });
-                $("#ben1,#ben2,#ben3").height(max_height);
-            }
-            if ($('#section1')) {
-
-                var max_height = 0;
-
-                $("#ben1,#ben2,#ben3").each(function () {
-
-                    if ($(this).height() > max_height)
-
-                        max_height = $(this).height();
-
-                });
-
-                $("#ben1,#ben2,#ben3").height(max_height);
-            }
             if ($('#prices')) {
                 var max_height = 0;
                 $("#item1,#item2,#item3").each(function () {
