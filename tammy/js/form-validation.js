@@ -53,18 +53,20 @@ $(document).ready(function() {
                 validators: {
                     notEmpty: {
                         message: 'Điện thoại không được để trống.'
-                    },
-                    stringLength: {
-                        min: 10,
-                        max: 11,
-                        message: 'Số điện thoại chỉ có thể là 10 hoặc 11 số.'
                     }
-                } 
+                }
             },
             address_city: {
                 validators: {
                     notEmpty: {
                         message: 'Cần chọn Tỉnh/Thành phố.'
+                    }
+                }
+            },
+            time: {
+                validators: {
+                    notEmpty: {
+                        message: 'Cần chọn thời gian tư vấn.'
                     }
                 }
             }
@@ -75,13 +77,13 @@ $(document).ready(function() {
             var phone = $('#txtPhone').val();
             var city = $('#address_city').val();
             var time = $('#cboTime').val();
-            var emailto = "anh.phuthixuan@saint-gobain.com";
+            var emailto = "quyendn84@gmail.com";
             var typeId =1;
             var webdomain = "http://vinhtuong.com";
             var dataJSON = { "city": city, "time": time, "name": name, "phone": phone, 'typeId': typeId, "emailto": emailto }
             showLoadingImage();
             $.ajax({
-                url: "https://alpha.f5academy.net/api/VinhTuongservice",
+                url: "http://123.30.181.161:8025/api/VinhTuongservice",
                 type: "Post",
                 async: false,
                 data: dataJSON,
@@ -101,9 +103,9 @@ $(document).ready(function() {
                     $('#address_city').val('');
                     $('#cboTime').val('');
                     $('#formContact').bootstrapValidator('resetForm', true);
-                    toastr.success('Bạn đã đăng ký tư vấn thành công. Vĩnh Tường sẽ liên hệ lại bạn trong vòng 24 giờ làm việc. Vui lòng liên hệ tổng đài tư vấn miễn cước 1800 1218 khi cần hỗ trợ nhanh.', { timeOut: 5000 })
+                    toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', { timeOut: 5000 })
                     hideLoadingImage();
-                    location.href = 'cam-on.html';
+                    location.href = '/cam-on.html';
                 }
             });
         }
@@ -115,7 +117,7 @@ $(document).ready(function() {
         excluded: [':disabled'],
         feedbackIcons: faIcon,
         fields: {
-            email: {
+            email_mobile: {
                 validators: {
                     notEmpty: {
                         message: 'Địa chỉ email không được để trống.'
@@ -136,11 +138,6 @@ $(document).ready(function() {
                 validators: {
                     notEmpty: {
                         message: 'Điện thoại không được để trống.'
-                    },
-                    stringLength: {
-                        min: 10,
-                        max: 11,
-                        message: 'Số điện thoại chỉ có thể là 10 hoặc 11 số.'
                     }
                 }
             },
@@ -154,7 +151,7 @@ $(document).ready(function() {
             time_mobile: {
                 validators: {
                     notEmpty: {
-                        message: 'Cần đăng ký thời gian tư vấn.'
+                        message: 'Cần chọn thời gian tư vấn.'
                     }
                 }
             }
@@ -163,15 +160,14 @@ $(document).ready(function() {
 
             var name = $('#txtNameMobile').val();
             var phone = $('#txtPhoneMobile').val();
-            var city = $('#address_city_mobile').val();
-            var time = $('#cboTimeMobile').val();
-            var emailto = "anh.phuthixuan@saint-gobain.com";
-            var typeId = 1;
-            var webdomain = "http://vinhtuong.com";
-            var dataJSON = { "city": city, "time": time, "name": name, "phone": phone, 'typeId': typeId, "emailto": emailto }
+            var email = $('#txtEmailMobile').val();
+            var emailto = "hotro@firstreal.com.vn";
+            var webdomain = "reverview";
+            var address = "";
+            var dataJSON = { "fullname": name, "phone": phone, "email": email, "address": address, 'webdomain': webdomain, "emailto": emailto }
             showLoadingContactImage('content-mobile','formContentContactMobile');
             $.ajax({
-                url: "https://alpha.f5academy.net/api/VinhTuongservice",
+                url: "https://alpha.f5academy.net/api/RiverViewservice",
                 type: "Post",
                 async: false,
                 data: dataJSON,
@@ -191,21 +187,21 @@ $(document).ready(function() {
                     $('#address_city_mobile').val('');
                     $('#cboTimeMobile').val('');
                     $('#frmMobile').bootstrapValidator('resetForm', true);
-                    toastr.success('Bạn đã đăng ký tư vấn thành công. Vĩnh Tường sẽ liên hệ lại bạn trong vòng 24 giờ làm việc. Vui lòng liên hệ tổng đài tư vấn miễn cước 1800 1218 khi cần hỗ trợ nhanh.', { timeOut: 5000 })
+                    toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', { timeOut: 5000 })
                     hideLoadingContactImage('content-mobile', 'formContentContactMobile');
-                    location.href = '/cam-on.html';
+                    location.href = '/loi-cam-on.html';
                 }
             });
         }
     }).on('success.form.fv', function (e) {
 
     });
-    $('#frmRegDownload').bootstrapValidator({
+    $('#frmContactFooter').bootstrapValidator({
         message: 'This value is not valid',
         excluded: [':disabled'],
         feedbackIcons: faIcon,
         fields: {
-            email: {
+            email_footer: {
                 validators: {
                     notEmpty: {
                         message: 'Địa chỉ email không được để trống.'
@@ -215,53 +211,33 @@ $(document).ready(function() {
                     }
                 }
             },
-            name_download: {
+            name_footer: {
                 validators: {
                     notEmpty: {
                         message: 'Họ tên không được để trống.'
                     }
                 }
             },
-            phone_download: {
+            phone_footer: {
                 validators: {
                     notEmpty: {
                         message: 'Điện thoại không được để trống.'
-                    },
-                    stringLength: {
-                        min: 10,
-                        max: 11,
-                        message: 'Số điện thoại chỉ có thể là 10 hoặc 11 số.'
-                    }
-                }
-            },
-            address_city_download: {
-                validators: {
-                    notEmpty: {
-                        message: 'Cần chọn Tỉnh/Thành phố.'
-                    }
-                }
-            },
-            cbo_time_download_1: {
-                validators: {
-                    notEmpty: {
-                        message: 'Cần chọn tư vấn giải pháp.'
                     }
                 }
             }
         },
         onSuccess: function (e) {
 
-            var name = $('#name_download').val();
-            var phone = $('#phone_download').val();
-            var city = $('#address_city_download').val();
-            var time = $('#cbo_time_download').val();
-            var emailto = "anh.phuthixuan@saint-gobain.com";
-            var typeId = 2;
-            var webdomain = "http://vinhtuong.com";
-            var dataJSON = { "city": city, "time": time, "name": name, "phone": phone, 'typeId': typeId, "emailto": emailto }
-            showLoadingContactImage('content-download', 'frmContentDownload');
+            var name = $('#txtNameFooter').val();
+            var phone = $('#txtPhoneFooter').val();
+            var email = $('#txtEmailFooter').val();
+            var emailto = "quyendn84@gmail.com";
+            var webdomain = "tammy";
+            var address = "";
+            var dataJSON = { "fullname": name, "phone": phone, "email": email, "address": address, 'webdomain': webdomain, "emailto": emailto }
+            showLoadingContactImage('contact-footer', 'formContentContactFooter');
             $.ajax({
-                url: "https://alpha.f5academy.net/api/VinhTuongservice",
+                url: "https://alpha.f5academy.net/api/RiverViewservice",
                 type: "Post",
                 async: false,
                 data: dataJSON,
@@ -269,36 +245,32 @@ $(document).ready(function() {
                 dataType: 'jsonp',
                 success: function (states) {
                     $('#frmMobile').bootstrapValidator('resetForm', true);
-                    hideLoadingContactImage('content-download', 'frmContentDownload');
-                    $('#downloadModal').modal('hide');
-                 },
+                    hideLoadingContactImage('contact-footer', 'formContentContactFooter');
+                },
                 error: function (ex) {
                     toastr.error('Đã có lỗi trong quá trình đăng ký, mời bạn thử lại.', { timeOut: 5000 })
-                    hideLoadingContactImage('content-download', 'frmContentDownload');
+                    hideLoadingContactImage('contact-footer', 'formContentContactFooter');
                 },
                 complete: function (jqXHR, textStatus) {
-                    $('#downloadModal').modal('hide');
-                    $('#name_download').val('');
-                    $("#phone_download").val('');
-                    $('#address_city_download').val('');
-                    $('#cbo_time_download').val('');
-                    $('#frmContentDownload').bootstrapValidator('resetForm', true);
-                    toastr.success('Bạn đã đăng ký tư vấn thành công. Vĩnh Tường sẽ liên hệ lại bạn trong vòng 24 giờ làm việc. Vui lòng liên hệ tổng đài tư vấn miễn cước 1800 1218 khi cần hỗ trợ nhanh', { timeOut: 5000 })
-                    hideLoadingContactImage('content-download', 'frmContentDownload');
-                   
-                    location.href = 'cam-on.html';
+                    $('#txtNameFooter').val('');
+                    $("#txtPhoneFooter").val('');
+                    $('#txtEmailFooter').val('');
+                    $('#frmContactFooter').bootstrapValidator('resetForm', true);
+                    toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', { timeOut: 5000 })
+                    hideLoadingContactImage('contact-footer', 'formContentContactFooter');
+                    
                 }
             });
         }
     }).on('success.form.fv', function (e) {
 
     });
-    $('#frmRegGift').bootstrapValidator({
+    $('#frmContactCenter').bootstrapValidator({
         message: 'This value is not valid',
         excluded: [':disabled'],
         feedbackIcons: faIcon,
         fields: {
-            email: {
+            email_center: {
                 validators: {
                     notEmpty: {
                         message: 'Địa chỉ email không được để trống.'
@@ -308,77 +280,54 @@ $(document).ready(function() {
                     }
                 }
             },
-            name_gift: {
+            name_center: {
                 validators: {
                     notEmpty: {
                         message: 'Họ tên không được để trống.'
                     }
                 }
             },
-            phone_gift: {
+            phone_center: {
                 validators: {
                     notEmpty: {
                         message: 'Điện thoại không được để trống.'
-                    },
-                    stringLength: {
-                        min: 10,
-                        max: 11,
-                        message: 'Số điện thoại chỉ có thể là 10 hoặc 11 số.'
-                    }
-                }
-            },
-            address_city_gift: {
-                validators: {
-                    notEmpty: {
-                        message: 'Cần chọn Tỉnh/Thành phố.'
-                    }
-                }
-            },
-            cbo_time_gift_1: {
-                validators: {
-                    notEmpty: {
-                        message: 'Cần chọn tư vấn giải pháp.'
                     }
                 }
             }
         },
         onSuccess: function (e) {
 
-            var name = $('#name_gift').val();
-            var phone = $('#phone_gift').val();
-            var city = $('#address_city_gift').val();
-            var time = $('#cbo_time_gift').val();
-            var emailto = "anh.phuthixuan@saint-gobain.com";
-            var typeId = 3;
-            var webdomain = "http://vinhtuong.com";
-            var dataJSON = { "city": city, "time": time, "name": name, "phone": phone, 'typeId': typeId, "emailto": emailto }
-            showLoadingContactImage('content-gift', 'frmContentGift');
+            var name = $('#txtNameCenter').val();
+            var phone = $('#txtPhoneCenter').val();
+            var email = $('#txtEmailCenter').val();
+            var emailto = "hotro@firstreal.com.vn";
+            var webdomain = "reverview";
+            var address = "";
+            var dataJSON = { "fullname": name, "phone": phone, "email": email, "address": address, 'webdomain': webdomain, "emailto": emailto }
+            showLoadingContactImage('content-center', 'formContentContactCenter');
             $.ajax({
-                url: "https://alpha.f5academy.net/api/VinhTuongservice",
+                url: "https://alpha.f5academy.net/api/RiverViewservice",
                 type: "Post",
                 async: false,
                 data: dataJSON,
                 contentType: 'application/json; charset=utf-8',
                 dataType: 'jsonp',
                 success: function (states) {
-                    $('#frmRegGift').bootstrapValidator('resetForm', true);
-                    hideLoadingContactImage('content-gift', 'frmContentGift');
-                    $('#registerModal').modal('hide');
+                    $('#frmMobile').bootstrapValidator('resetForm', true);
+                    hideLoadingContactImage('content-center', 'formContentContactCenter');
                 },
                 error: function (ex) {
                     toastr.error('Đã có lỗi trong quá trình đăng ký, mời bạn thử lại.', { timeOut: 5000 })
-                    hideLoadingContactImage('content-gift', 'frmContentGift');
+                    hideLoadingContactImage('content-center', 'formContentContactCenter');
                 },
                 complete: function (jqXHR, textStatus) {
-                    $('#registerModal').modal('hide');
-                    $('#name_gift').val('');
-                    $("#phone_gift").val('');
-                    $('#address_city_gift').val('');
-                    $('#cbo_time_gift').val('');
-                    $('#frmContentDownload').bootstrapValidator('resetForm', true);
-                    toastr.success('Bạn đã đăng ký tư vấn thành công. Vĩnh Tường sẽ liên hệ lại bạn trong vòng 24 giờ làm việc. Vui lòng liên hệ tổng đài tư vấn miễn cước 1800 1218 khi cần hỗ trợ nhanh', { timeOut: 5000 })
-                    hideLoadingContactImage('content-gift', 'frmContentGift');
-                    location.href = '/cam-on.html';
+                    $('#txtNameFooter').val('');
+                    $("#txtPhoneFooter").val('');
+                    $('#txtEmailFooter').val('');
+                    $('#frmContactFooter').bootstrapValidator('resetForm', true);
+                    toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', { timeOut: 5000 })
+                    hideLoadingContactImage('content-center', 'formContentContactCenter');
+                    location.href = '/loi-cam-on.html';
                 }
             });
         }
