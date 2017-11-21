@@ -470,8 +470,8 @@ img{
 	margin:30px 0 60px 0;
 	}
 #section5 .inner{
-	border:2px solid #777;
-	padding:40px 40px 10px 40px;
+	border:2px dashed #777;
+	padding:60px 60px 40px 60px;
 	position:relative;
 	}
 #section5 .inner h3{
@@ -481,7 +481,7 @@ img{
 	top:-40px;
 	right:0;
 	left:0;
-	font-size:30px;
+	font-size:40px;
 	}
 #section5 .inner h3 strong{
 	background:#fff;
@@ -489,15 +489,15 @@ img{
 	padding:0 30px;
 	}
 #section5 .inner h2{
-	font-size:24px;
+	font-size:17px;
 	margin:15px 0;
 	font-weight:bold;
-	text-transform:uppercase;
+	line-height:24px;
 	}
-#section5 .col-lg-6{
+#section5 .col-lg-4{
 	margin-bottom:30px;
 	}
-#section5 .col-lg-6:nth-child(2n+1){
+#section5 .col-lg-4:nth-child(3n+1){
 	clear:both;
 	}
 	
@@ -557,6 +557,10 @@ img{
 		}
 	#ft-top h3{
 		font-size:14px;
+		}
+	#section2 .btn-warning.btn-lg{
+		width:auto;
+		font-size:16px;
 		}
 	}
 
@@ -653,3 +657,23 @@ img{
  #section2 .btn-warning small{
   clear:both;
   }
+ /**/
+	#section1List span.pink{
+	font-size:30px;
+	float:left;
+	font-weight:bold;
+	text-align:center;
+	width:200px;
+	}
+	#section1List  p{
+	margin:0;
+	}
+	#section1List>div{
+	margin-bottom:15px;
+	padding-bottom:15px;
+	border-bottom:1px dashed #eee;
+	}
+
+	#section1List>div:last-child{
+		border:none;
+		}
