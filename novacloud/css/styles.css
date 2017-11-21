@@ -290,7 +290,7 @@ ul.reset, ol.reset{
 	border-radius:5px 5px 0 0;
 	color:#fff;
 	position:relative;
-	background:#8c8c8c;
+	background:#333;
 	-moz-text-shadow:0 0 8px rgba(0,0,0,0.3);
 	-webkit-text-shadow:0 0 8px rgba(0,0,0,0.3);
 	text-shadow:0 0 8px rgba(0,0,0,0.3);
@@ -406,6 +406,7 @@ ul.reset, ol.reset{
 	border-radius:50%;
 	margin-top:-60px;
 	border: 1px solid #ddd;
+    background-color:#fff;
 
 	}
 #section4 .item .desc{
