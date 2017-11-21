@@ -267,7 +267,7 @@ input, select, .form-control{
 	padding:0;
 	}
 #section1, #footer{
-	background:url(../img/bg.gif) no-repeat 50% 50% / 100% auto;
+	background: url(../img/bg.gif) no-repeat 50% 50% / 100% 100%;
 	color:#fff;
 	}
 #section1.section .st-hd h3{
