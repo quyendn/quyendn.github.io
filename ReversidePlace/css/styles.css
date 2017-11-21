@@ -362,6 +362,32 @@ input, select, .form-control{
 #footer p img{
 	margin-right:5px;
 	}
+
+#frmMobile .form-control, #frmMobile textarea{
+	background:#fff;
+	color:#251915;
+	padding:8px;
+	width:100%;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	}
+#frmMobile .input-group{
+	display:block;
+	margin-bottom:10px;
+	}
+#frmMobile textarea{
+	height:100px;
+	}
+#frmMobile .btn-register{
+	background:#e8ce60;
+	color:#251915;
+	font-family: 'UTMAvoBold';
+	text-transform:uppercase;
+	margin-right:15px;
+	width:250px;
+	}
+
 #formContact .form-control, #formContact textarea{
 	background:#fff;
 	color:#251915;
