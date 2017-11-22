@@ -93,9 +93,9 @@ input, select, .form-control{
 	top:0;
 	left:0;
 	right:0;
-	z-index:9999;
+	z-index:99;
 	margin-bottom:0;
-	background:#2f3332;
+	background:#e0dcd3;
 	-moz-box-shadow:0 0 8px rgba(0, 0, 0, 0.3);
 	-webkit-box-shadow:0 0 8px rgba(0, 0, 0, 0.3);
 	box-shadow:0 0 8px rgba(0, 0, 0, 0.3);
@@ -108,8 +108,11 @@ input, select, .form-control{
 	top:0;
 	right:0;
 	left:0;
-	background:#2f3332;
+	background:#e0dcd3;
 	min-height:80px;
+	-moz-box-shadow:0 0 8px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow:0 0 8px rgba(0, 0, 0, 0.3);
+	box-shadow:0 0 8px rgba(0, 0, 0, 0.3);
 	}
 .navbar-brand{
 	margin-top:20px;
@@ -122,15 +125,18 @@ input, select, .form-control{
 	margin-right:15px;
 	}
 .navbar-nav>li>a{
-	color:#fff;
+	color:#474747;
 	text-transform:uppercase;
 	text-align:center;
 	font-family: 'UTMAvoBold';
 	}
 .navbar-nav .active a, .navbar-nav a:hover,  .navbar-nav li a:focus{
-	background:#fff !important;
+	background:#474747 !important;
 	}
-.pink, .navbar-nav .active a, .navbar-nav a:hover,  .navbar-nav li a:focus{
+.navbar-nav .active a, .navbar-nav a:hover,  .navbar-nav li a:focus{
+	color:#fff;
+	}
+.pink{
 	color:#f62946;
 	}
 .btn-registerNow{
@@ -333,8 +339,8 @@ input, select, .form-control{
 	}
 /**/
 #footer{
-	background:#2f3332;
-	color:#fff;
+	background:#e0dcd3;
+	color:#474747;
 	padding:30px 0 ;
 	}
 #footer h3{
@@ -347,26 +353,27 @@ input, select, .form-control{
 #footer .line{
 	margin:0 0 15px 0;
 	height:1px;
-	border-top:1px dotted #6e6e6e;
+	border-top:1px dotted #999;
 	}
 #footer p img{
 	margin-right:5px;
 	}
-#formContact .form-control{
-	background:#e0dcd3;
+#frmContactFooter .form-control{
+	background:#fff;
 	color:#222;
 	padding:7px;
 	width:100%;
 	}
-#formContact .input-group{
+#frmContactFooter .input-group{
 	display:block;
 	margin-bottom:10px;
 	}
-#formContact .btn-register{
-	background:#e0dcd3;
-	color:#222;
+#frmContactFooter .btn.btn-register{
+	background:#ff0000;
+	color:#fff;
 	font-family: 'UTMAvoBold';
 	text-transform:uppercase;
+	width:200px;
 	}
 img{
 	max-width:100%;
