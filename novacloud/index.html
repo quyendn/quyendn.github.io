@@ -47,7 +47,7 @@
             </div>
         </div>
         <div id="slide">
-            <div data-ride="carousel" class="carousel slide" id="heartbanner-slide">
+            <div data-ride="carousel" class="carousel slide hidden-sm hidden-xs" id="heartbanner-slide">
                 <!-- Indicators -->
                 <ol class="carousel-indicators">
                     <li class="active" data-slide-to="0" data-target="#heartbanner-slide"></li>
@@ -62,6 +62,13 @@
                 </div>
                 <a data-slide="prev" role="button" href="#heartbanner-slide" class="left carousel-control hidden"></a>
                 <a data-slide="next" role="button" href="#heartbanner-slide" class="right carousel-control hidden"></a>
+            </div>
+            <div id="slide_mobile" class="visible-sm visible-xs">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6"><img src="img/slide2_chu.png"></div>
+                    </div>
+                </div>
             </div>
             <div id="form-register" class="wow fadeInUp">
                 <div class="inner">
@@ -98,41 +105,41 @@
                 </div>
             </div>
         </div>
-        <div class="section" id="section1">
+        <div class="section" id="section1List">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-5 col-md-5 col-sm-5 text-center wow fadeInLeft"><img src="img/g_suite.jpg"></div>
-                    <div class="col-lg-7 col-md-7 col-sm-7 text-center wow fadeInRight"><img src="img/st1_2.jpg"></div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 wow fadeInUp col-lg-offset-3">
-                        <div class="st-hd text-center">
-                            <h3>
-                                GIÁ TRỊ G SUITE MANG LẠI<br/><strong><span class="pink">CON SỐ</span> TỪ NGHIÊN CỨU</strong>
-                            </h3>
-                            <div class="line"></div>
-                        </div>
-                        <div class="row" id="section1List">
-                        	<div class="col-lg-12">
-                                <span class="pink">304%</span>
+                    <div class="col-lg-7">
+                        <h3>Giá trị G Suite mang lại - Con số nghiên cứu</h3>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <span class="number">304%</span>
                                 <p>Lợi nhuận trên vốn đầu tư của doanh nghiệp <span class="small"><em>(Khảo sát trên 140 doanh nghiệp với 12,000 users của Forrester Research)</em></span></p>
                             </div>
-                        	<div class="col-lg-12">
-                                <span class="pink">13 <span class="small">ngày/năm</span></span>
+                            <div class="col-lg-6">
+                                <span class="number">13 <span class="small">ngày/năm</span></span>
                                 <p>Thời gian nhân viên tiết kiệm <span class="small"><em>(nhờ các ứng dụng Gmail, Google Drive, Google Docs, Google Sheets, Google Hangouts,…)</em></span></p>
                             </div>
-                            <div class="col-lg-12">
-                                <span class="pink">40%</span>
+                            <div class="col-lg-4">
+                                <span class="number">40%</span>
                                 <p>Chi phí đi lại hội họp tiết kiệm được</p>
                             </div>
-                            <div class="col-lg-12">
-                                <span class="pink">50 lần</span>
+                            <div class="col-lg-4">
+                                <span class="number">50 lần</span>
                                 <p>Khả năng lưu trữ dữ liệu tốt hơn so với mức trung bình của ngành</p>
                             </div>
-                            <div class="col-lg-12">
-                                <span class="pink">99,9%</span>
+                            <div class="col-lg-4">
+                                <span class="number">99,9%</span>
                                 <p>Thời gian đảm bảo hoạt động xuyên suốt</p>
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="section1">
+            <div class="container">
+                <div class="row">
+                    
                     <div class="col-lg-4 col-md-4 col-sm-4 wow fadeInRight">
                         <div class="benefit" id="ben3">
                             <div class="text-center"><img src="img/icon_1.png"></div>
@@ -199,7 +206,7 @@
                 <h3><strong>CÁC SẢN PHẨM CHÍNH</strong></h3>
             </div>
             <div class="container">
-                <div class="text-center"><img src="img/st2.jpg"></div>
+                <div class="text-center"><img src="img/g_suite.jpg"></div>
                 <div class="row" id="function">
                     <div class="col-lg-3 col-md-3 col-sm-3">
                         <img src="img/icon_4.png">
@@ -351,8 +358,10 @@
                     </div>
                     <div class="item wow fadeInRight" id="item3">
                         <div class="tl_small text-center">G-SUITE ENTERPRISE</div>
-                        <div class="price text-center" style="height:88px;"><b>Liên hệ để được tư vấn chi tiết</b></div>
-                        
+                        <div class="price text-center">
+                            <span style="color:#222;">Liên hệ : </span><strong><a href="tel:0966508008" style="color:#222;">0966 508 008</a></strong>  |  <strong><a href="tel:0902135889" style="color:#222;">0902 135 889</a></strong>
+                        </div>
+                        <div class="text-center"><img src="img/lh_banggia.jpg"></div>
                     </div>
                 </div>
                 <div class="text-center">
@@ -538,7 +547,9 @@
         <div class="section text-center wow fadeInUp" id="section5">
             <div class="st-hd">
                 <h3><strong>VỀ NOVAON CLOUD</strong></h3>
-                <div class="sapo"><div class="container">Novaon Cloud là thành viên của Tập đoàn Internet Novaon. Những giá trị cốt lõi đã làm nên tập đoàn Internet hàng đầu khu vực Đông Nam Á cũng chính là những giá trị mà Novaon Cloud theo đuổi.</div></div>
+                <div class="sapo"><div class="container">
+                                      Hàng trăm khách hàng đã lựa chọn dịch vụ G Suite do <strong>Novaon Cloud</strong> cung cấp
+                    </div></div>
 
             </div>
             <div class="container">
@@ -547,14 +558,14 @@
                     <div class="row">
                         <div class="col-lg-4 col-md-4 col-sm-4">
                             <div><img src="img/gt1.png"></div>
-                            <h2>Chúng tối có các chuyên gia về G-Suite</h2>
+                            <h2>Đội ngũ chuyên gia hàng đầu về G Suite</h2>
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-4">
                             <div><img src="img/gt2.png"></div>
-                            <h2>Được tư vấn để triển khai G-Suite hiệu quả nhất</h2>
+                            <h2>Được tư vấn từ các chuyên gia</h2>
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-4">
-                            <div><img src="img/gt3.png"></div>
+                            <div><img src="img/gt7.png"></div>
                             <h2>Được hỗ trợ trong việc triển khai, chuyển dữ liệu</h2>
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-4">
