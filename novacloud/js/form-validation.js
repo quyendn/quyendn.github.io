@@ -35,7 +35,7 @@ $(document).ready(function() {
             email: {
                 validators: {
                     notEmpty: {
-                        message: 'Địa chỉ email không được để trống.'
+                        message: 'Cần điền "địa chỉ Email"'
                     },
                     emailAddress: {
                         message: 'Không đúng định dạng email'
@@ -45,21 +45,21 @@ $(document).ready(function() {
             name: {
                 validators: {
                     notEmpty: {
-                        message: 'Họ tên không được để trống.'
+                        message: 'Cần điền "Họ và tên"'
                     }
                 }
             },
             phone: {
                 validators: {
                     notEmpty: {
-                        message: 'Điện thoại không được để trống.'
+                        message: 'Cần điền "Số điện thoại"'
                     }
                 }
             },
             company: {
                 validators: {
                     notEmpty: {
-                        message: 'Cần điền địa chỉ công ty.'
+                        message: 'Cần điền "Tên Công ty"'
                     }
                 }
             }
