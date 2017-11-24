@@ -432,6 +432,26 @@ input, select, .form-control{
 	margin-top:-50px;
 	margin-left:-50px;
 	}
+#section6 .time_en{
+	font-size:20px;
+	font-weight:bold;
+	position:relative;
+	margin:45px auto;
+	border:1px solid #999;
+	padding:15px;
+	width:750px;
+	text-transform:uppercase;
+	}
+
+#section6 .time_en .icon{
+	position:absolute;
+	width:103px;
+	height:103px;
+	top:50%;
+	left:50%;
+	margin-top:-50px;
+	margin-left:-50px;
+	}
 #section6 .col-lg-3 .inner .desc{
 	padding:30px;
 	}
