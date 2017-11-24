@@ -172,8 +172,8 @@ input, select, .form-control{
 	line-height:26px;
 	height:105px;
 	display:table-cell;
-	padding-right:20px;
-	padding-left:20px;
+	padding-right:25px;
+	padding-left:25px;
 	vertical-align:middle;
 	}
 .navbar-nav .active a, .navbar-nav a:hover,  .navbar-nav li a:focus{
@@ -720,18 +720,4 @@ img{
 	}
 .owl-dot.active{
 	background:#ba266a;
-	}
-/**/
-.navbar-nav>li.dropdown{
-	padding-top:25px;}
-.navbar-nav>li.dropdown>a{
-	padding:10px 15px;
-	height:auto;
-	font-size:13px;
-	}
-.navbar-nav>li.dropdown>a:hover, .navbar-nav li.dropdown a:focus, .navbar-nav>li.dropdown ul a:hover{
-	background:#eee !important;
-	color:#444;
-	}
-.navbar-nav>li.dropdown ul a:hover{
 	}
