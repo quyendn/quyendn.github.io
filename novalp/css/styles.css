@@ -172,8 +172,8 @@ input, select, .form-control{
 	line-height:26px;
 	height:105px;
 	display:table-cell;
-	padding-right:30px;
-	padding-left:30px;
+	padding-right:25px;
+	padding-left:25px;
 	vertical-align:middle;
 	}
 .navbar-nav .active a, .navbar-nav a:hover,  .navbar-nav li a:focus{
