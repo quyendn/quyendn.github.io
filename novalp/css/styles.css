@@ -422,7 +422,25 @@ input, select, .form-control{
 	width:500px;
 	text-transform:uppercase;
 	}
-
+#section6 .time-en{
+	font-size:20px;
+	font-weight:bold;
+	position:relative;
+	margin:45px auto;
+	border:1px solid #999;
+	padding:15px;
+	width:720px;
+	text-transform:uppercase;
+	}
+#section6 .time-en .icon{
+	position:absolute;
+	width:103px;
+	height:103px;
+	top:50%;
+	left:50%;
+	margin-top:-50px;
+	margin-left:-50px;
+	}
 #section6 .time .icon{
 	position:absolute;
 	width:103px;
