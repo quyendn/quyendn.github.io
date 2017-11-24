@@ -760,6 +760,6 @@ img{
 	bottom:0;
 	right:0;
 	left:0;
-    height:35px;
-	z-index:99999;
+    height:40px;
+	z-index:9999999999;
 	}
