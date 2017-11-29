@@ -254,6 +254,9 @@ input, select, .form-control{
 	border-bottom:1px dotted #999;
 	display:flex;
 	}
+#section1 li:last-child strong{
+	border:none;
+	}
 #section1 li span{
 	display:inline-block;
 	width:36px;
@@ -329,6 +332,9 @@ input, select, .form-control{
 	margin-bottom:10px;
 	margin-left:15px;
 	}
+#section3 .col-lg-6 .desc li:last-child{
+	margin-bottom:0;
+	}
 #section4{
 	background:#e0dcd3;
 	padding-top:30px;
@@ -355,8 +361,12 @@ input, select, .form-control{
 	height:1px;
 	border-top:1px dotted #999;
 	}
+#footer .col-lg-6 p{
+	overflow:hidden;
+	}
 #footer p img{
 	margin-right:5px;
+	float:left;
 	}
 #frmContactFooter .form-control{
 	background:#fff;
@@ -430,12 +440,16 @@ img{
 	#section3 .col-lg-6 .desc h2{
 		line-height:normal;
 		}
+	.section {
+		padding-top: 30px;
+		padding-bottom:30px;
+	}
+	#section3 .col-lg-6 .desc{
+		padding:15px;
+		}
 	
 	}
 @media (max-width:460px){
-		#slide img{
-			height:210px;
-			}
 	}
 
 
