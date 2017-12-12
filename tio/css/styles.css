@@ -153,8 +153,8 @@ input, select, .form-control{
 	}
 	/**/
 #section1{
-	padding-top:30px;
-	min-height:650px;
+	padding-top:60px;
+	min-height:700px;
 	color:#fff;
 	background:#f68623 url(../img/bg-top.png) no-repeat 50% 100%;
 	}
@@ -167,6 +167,7 @@ input, select, .form-control{
 	display:inline-block;
 	text-transform:uppercase;
 	font-weight:normal;
+	margin:0;
 	}
 #section1 .tl_1 h3 img{
 	position:absolute;
@@ -174,10 +175,22 @@ input, select, .form-control{
 	right:-80px;
 	}
 #section1 .tl_1 h2{
-	font-size:130px;
+	font-size:120px;
 	margin:0;
 	text-transform:uppercase;
 	font-weight:bold;
+	line-height:none;
+	}
+#section1 .tl_1 .text-watch{
+	background:#fff;
+	padding:2px 5px;
+	text-align:center;
+	color:#f68623;
+	font-size:22px;
+	text-transform:uppercase;
+	}
+#section1 .tl_1 td{
+	margin:0;
 	}
 #section1 .tl_1 td p{
 	margin-left:15px;
@@ -188,6 +201,10 @@ input, select, .form-control{
 	position:absolute;
 	bottom:-220px;
 	right:0;
+	}
+#section1 .tl_1 .priceOld{
+	margin-top:15px;
+	text-decoration:line-through;
 	}
 
 #section2.section{
@@ -416,6 +433,22 @@ img{
 	#footer .ft-r{
 		background:url(../img/bg-r-2.png) no-repeat 100% 100%;
 		}
+	.btn-buynowFix{
+		bottom:150px !important;
+		right:-65px !important;
+		padding-left:10px !important;
+		transform: rotate(-90deg); 
+		-webkit-transform: rotate(-90deg); 
+		-moz-transform: rotate(-90deg);
+		filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0.5);
+		}
+	.btn-buynowFix img{
+		display:none;
+		}
+	.btn-fbFix{
+		width:36px;
+		right:0 !important;
+		}
 	
 	
 	
@@ -441,7 +474,6 @@ img{
 /**/
 .btn-buynowFix, .btn-fbFix{
 	position:fixed;
-	
 	}
 .btn-buynowFix{
 	bottom:100px;
@@ -462,8 +494,23 @@ img{
 	}
 .btn-fbFix{
 	bottom:30px;
-	right:10px;}
-
+	right:5px;}
+#popupRegister .modal-header{
+	background:#008fd5;
+	color:#fff;
+	text-transform:uppercase;
+	-moz-border-radius:5px 5px 0 0;
+	-webkit-border-radius:5px 5px 0 0;
+	border-radius:5px 5px 0 0;
+	}
+#popupRegister  select{
+	padding:5px 7px;
+	width:100%;
+	}
+#popupRegister .modal-dialog{
+	max-width:400px;
+	}
+/*======================*/
 	.quick-alo-phone.quick-alo-show {
 		visibility: visible;
 		}
