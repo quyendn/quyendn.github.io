@@ -68,7 +68,7 @@ $(document).ready(function() {
                     }
                 } 
             },
-            address_city: {
+            location: {
                 validators: {
                     notEmpty: {
                         message: 'Cần chọn Tỉnh/Thành phố.'
