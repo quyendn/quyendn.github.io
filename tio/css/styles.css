@@ -199,8 +199,9 @@ input, select, .form-control{
 	}
 #section1 .tl_1 .pic{
 	position:absolute;
-	bottom:-220px;
+	bottom:-250px;
 	right:0;
+	z-index:9;
 	}
 #section1 .tl_1 .priceOld{
 	margin-top:15px;
@@ -383,6 +384,10 @@ img{
 		position:absolute;
 		top:5px;
 		right:50px;
+		}
+	.navbar-brand{
+		padding-left:0;
+		width:180px;
 		}
 	.navbar-collapse{
 		clear:both;
