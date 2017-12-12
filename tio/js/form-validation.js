@@ -86,6 +86,7 @@ $(document).ready(function() {
             var emailto = "quyendn84@gmail.com";
             var webdomain = "vinaphone.com.vn";
             var dataJSON = { "name": name, "phone": phone, "number": number, "color": color, 'location': location, "emailto": emailto }
+            location.href = '/cam-on.html';
             showLoadingImage();
             $.ajax({
                 url: "https://alpha.f5academy.net/api/Vinaphoneservice",
@@ -113,7 +114,8 @@ $(document).ready(function() {
                     toastr.success('Bạn đã đăng ký mua hàng thành công. Vui lòng liên hệ tổng đài tư vấn miễn cước 1900 0020 khi cần hỗ trợ nhanh.', { timeOut: 5000 })
                     hideLoadingImage();
                     $('#popupRegister').modal('hide');
-                    location.href = '/cam-on.html';
+                    window.location.href = 'cam-on.html';
+                    return false;
                 }
             });
         }
