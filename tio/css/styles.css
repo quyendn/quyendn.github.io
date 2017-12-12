@@ -479,6 +479,7 @@ img{
 /**/
 .btn-buynowFix, .btn-fbFix{
 	position:fixed;
+    z-index:999;
 	}
 .btn-buynowFix{
 	bottom:100px;
@@ -537,7 +538,7 @@ img{
 		-moz-transition: visibility .5s;
 		-o-transition: visibility .5s;
 		transition: visibility .5s;
-		top: 60%;
+		top: 50%;
 		right:60px;
 		}
 		.quick-alo-phone.quick-alo-green .quick-alo-ph-circle {
