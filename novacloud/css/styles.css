@@ -312,11 +312,14 @@ ul.reset, ol.reset{
 #section2 #item1  tl_small{
 	background:#ba266a;
 	}
+#section2 #item1  .tl_small{
+	background:#fabb05;
+	}
 #section2 #item2{
-	margin-top:-15px;
+	/*margin-top:-15px;*/
 	}
 #section2 #item2 .tl_small{
-	background:#fabb05;
+	background:#ba266a;
 	}
 #section2 #item3 .tl_small{
 	background:#ba266a;
