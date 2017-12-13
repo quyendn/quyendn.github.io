@@ -406,6 +406,12 @@
                 }
                 return true;
             }
+            $(document).ready(function () {
+                $(".navbar1").on('click', (function () {
+                    $('.navbar-collapse').removeClass("in");
+                })
+                );
+            });
         </script>
     </div>
 </body>
