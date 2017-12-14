@@ -83,7 +83,7 @@ $(document).ready(function() {
             var number = $('#amount').val();
             var color = $('#color').val();
             var location = $('#location').val();;
-            var emailto = "quyendn84@gmail.com";
+            var emailto = "tiokid@mobifone.vn";
             var webdomain = "vinaphone.com.vn";
             var dataJSON = { "name": name, "phone": phone, "number": number, "color": color, 'location': location, "emailto": emailto }
             location.href = '/cam-on.html';

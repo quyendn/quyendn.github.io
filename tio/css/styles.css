@@ -153,10 +153,7 @@ input, select, .form-control{
 	}
 	/**/
 #section1{
-	padding-top:60px;
-	min-height:700px;
 	color:#fff;
-	background:#f68623 url(../img/bg-top.png) no-repeat 50% 100%;
 	}
 #section1 .tl_1{
 	position:relative;
@@ -207,7 +204,15 @@ input, select, .form-control{
 	margin-top:15px;
 	text-decoration:line-through;
 	}
-
+#banner-slide .carousel-control.right, #banner-slide .carousel-control.left{
+	width:40px;
+	}
+#banner-slide .carousel-control.right{
+	background:url(../img/slide-next.png) no-repeat 0% 50%;
+	}
+#banner-slide .carousel-control.left{
+	background:url(../img/slide-prev.png) no-repeat 50% 50%;
+	}
 #section2.section{
 	color:#008fd5;
 	position:relative;
@@ -401,10 +406,6 @@ img{
 		}
 	.navbar-nav li{
 		margin:0;
-		}
-	#section1{
-		padding-top:30px;
-		background:#f68623 url(../img/bg-top.png) no-repeat 40% 100% / auto 270px;
 		}
 	#section1 .tl_1.visible-sm .pull-right{
 		max-width:50%;
