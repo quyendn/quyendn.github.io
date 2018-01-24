@@ -69,7 +69,7 @@ $(document).ready(function() {
             var phone = $('#txtPhone').val();
             var email = $('#txtEmail').val();
             var description = $('#txtContent').val();
-            var emailto = "quyendn84@gmail.com";
+            var emailto = "info@kienahom.vn";
             var webdomain = "kiena.com";
             var dataJSON = { "fullname": name, "phone": phone, "email": email, "description": description, 'webdomain': webdomain, "emailto": emailto }
             showLoadingContactImage('content-download', 'frmContentDownload');
