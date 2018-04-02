@@ -18,6 +18,9 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script type="text/javascript" src="js/wow/wow.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.fancybox.js" type="text/javascript"></script>
+    <script src="js/jquery.fancybox-thumbsER.js" type="text/javascript"></script>
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="css/styles.css" rel="stylesheet" type="text/css" />
     <link href="css/font-face.css" rel="stylesheet" type="text/css" />
@@ -25,38 +28,16 @@
     <link href="css/toastr.min.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" type="text/css" href="css/animate.css" />
     <link rel="stylesheet" type="text/css" href="css/animate.css" />
-    
+    <link href="css/jquery.fancybox.css" rel="stylesheet" type="text/css" />
+    <link href="css/jquery.fancybox-thumbsER.css" rel="stylesheet" type="text/css" />
+
 </head>
-<script>
-$(document).ready(function() {
-  $('.owl-carousel').owlCarousel({
-	loop: true,
-	margin: 10,
-	responsiveClass: true,
-	responsive: {
-	  0: {
-		items: 2,
-		nav: true
-	  },
-	  768: {
-		items: 3,
-		nav: true
-	  },
-	  1000: {
-		items: 4,
-		nav: true,
-		loop:false,
-		margin: 30,
-	  }
-	}
-  })
-})
-</script>
+
 <body>
     <div id="container">
         <div id="header">
-        	
-        	<div class="affix-top" data-spy="affix" data-offset-top="79" id="headerFix">
+
+            <div class="affix-top" data-spy="affix" data-offset-top="79" id="headerFix">
                 <div class="container">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><img src="img/navbar-toggle.png"></button>
                     <a class="navbar-brand" href="/"><img alt="" src="img/logo.png" width=""></a>
@@ -74,12 +55,12 @@ $(document).ready(function() {
                         <div class="langue"><a href=""><img src="img/vn.png"></a> <a href=""><img src="img/en.png"></a></div>
                     </nav>
                     <div class="hotline"><img src="img/phone.png"><strong> HOTLINE: 0929 333 888</strong></div>
-                    
+
                 </div>
             </div>
         </div>
         <div id="slide">
-        	<div class="textSlide"><img src="img/slide_tl.png"></div>
+            <div class="textSlide"><img src="img/slide_tl.png"></div>
             <div data-ride="carousel" class="carousel slide" id="heartbanner-slide">
                 <!-- Indicators -->
                 <ol class="carousel-indicators">
@@ -99,7 +80,7 @@ $(document).ready(function() {
             </div>
             <div id="form-register" class="hidden-sm hidden-xs">
                 <div class="inner wow fadeInRight">
-                    
+
                     <form id="frmMobile" class="form-horizontal" autocomplete="off">
                         <h3>Kính chào quý khách</h3>
                         <div class="">
@@ -119,46 +100,46 @@ $(document).ready(function() {
                     </form>
                 </div>
             </div>
-            
+
         </div>
         <div class="section wow fadeInUp" id="section1">
-        	<div class="bgL">
-            	<div class="bgR">
-                	<div class="container">
+            <div class="bgL">
+                <div class="bgR">
+                    <div class="container">
                         <div class="inner">
                             <h3>Tỏa sáng vùng Tây Bắc Đà Nẵng</h3>
                             <div class="text-center">
-                            	<p>Từ xa xưa, vùng đất Nam Ô – Thuỷ Tú thuộc Tây Bắc Đà Nẵng có địa thế độc nhất vô nhị. Với thế núi, thế sông đẹp như “tranh hoạ đồ”, phía Bắc có “đệ nhất hùng quan” đèo Hải Vân án ngữ, phía Tây có núi hầm Vàng, vắt giữa là con sông Cu Đê chảy ra biển Nguyễn Tất Thành. Thiên nhiên sơn thuỷ hữu tình được mệnh danh vùng đất tài lộc, thịnh vượng, viên ngọc xanh của Việt Nam và Đông Nam Á.</p>
+                                <p>Từ xa xưa, vùng đất Nam Ô – Thuỷ Tú thuộc Tây Bắc Đà Nẵng có địa thế độc nhất vô nhị. Với thế núi, thế sông đẹp như “tranh hoạ đồ”, phía Bắc có “đệ nhất hùng quan” đèo Hải Vân án ngữ, phía Tây có núi hầm Vàng, vắt giữa là con sông Cu Đê chảy ra biển Nguyễn Tất Thành. Thiên nhiên sơn thuỷ hữu tình được mệnh danh vùng đất tài lộc, thịnh vượng, viên ngọc xanh của Việt Nam và Đông Nam Á.</p>
 
                                 <p>Khu đô thị sinh thái Golden Hills thuộc quận Liên Chiểu Đà Nẵng, nằm trên tuyến đường huyết mạch Nguyễn Tất Thành nối dài, và là cửa ngõ phía Tây Bắc kết nối những dự án trọng điểm của thành phố như Danang IT Park, khu công nghệ cao… nên nhận được rất nhiều sự quan tâm từ các nhà đầu tư chuyên nghiệp. Với sự kết hợp hoàn hảo giữa non nước hữu tình vùng Tây Bắc Đà Nẵng cùng tầm nhìn quy hoạch quốc tế của đơn vị thiết kế hàng đầu thế giới S.O.M (Skidmore, Owings, Merrill LLP), Golden Hills đã tạo nên cộng đồng dân cư bền vững theo hướng đô thị khu đô thị sinh thái bậc nhất Đà Nẵng.</p>
                                 <ul class="st1List">
-                                	<li>
-                                    	<div><img src="img/st1_1.png"></div>
-                                        <p>Chủ đầu tư<br/><strong>Trung Nam Group</strong></p>
+                                    <li>
+                                        <div><img src="img/st1_1.png"></div>
+                                        <p>Chủ đầu tư<br /><strong>Trung Nam Group</strong></p>
                                     </li>
                                     <li>
-                                    	<div><img src="img/st1_2.png"></div>
-                                        <p>TK Quy Hoạch<br/><strong>S . O . M</strong></p>
+                                        <div><img src="img/st1_2.png"></div>
+                                        <p>TK Quy Hoạch<br /><strong>S . O . M</strong></p>
                                     </li>
                                     <li>
-                                    	<div><img src="img/st1_3.png"></div>
-                                        <p>TK Cảnh Quan<br/><strong>Cicada</strong></p>
+                                        <div><img src="img/st1_3.png"></div>
+                                        <p>TK Cảnh Quan<br /><strong>Cicada</strong></p>
                                     </li>
                                     <li>
-                                    	<div><img src="img/st1_4.png"></div>
-                                        <p>Tổng Diện Tích<br/><strong>400 ha</strong></p>
+                                        <div><img src="img/st1_4.png"></div>
+                                        <p>Tổng Diện Tích<br /><strong>400 ha</strong></p>
                                     </li>
                                     <li>
-                                    	<div><img src="img/st1_5.png"></div>
-                                        <p>Nhà Phố<br/><strong>4.214 lô</strong></p>
+                                        <div><img src="img/st1_5.png"></div>
+                                        <p>Nhà Phố<br /><strong>4.214 lô</strong></p>
                                     </li>
                                     <li>
-                                    	<div><img src="img/st1_6.png"></div>
-                                        <p>Biệt Thự<br/><strong>1.686  lô</strong></p>
+                                        <div><img src="img/st1_6.png"></div>
+                                        <p>Biệt Thự<br /><strong>1.686  lô</strong></p>
                                     </li>
                                     <li>
-                                    	<div><img src="img/st1_7.png"></div>
-                                        <p>Shophouse (Căn)<br/><strong>211 Căn</strong></p>
+                                        <div><img src="img/st1_7.png"></div>
+                                        <p>Shophouse (Căn)<br /><strong>211 Căn</strong></p>
                                     </li>
                                 </ul>
 
@@ -172,85 +153,85 @@ $(document).ready(function() {
             <div class="container-fluid">
 
                 <div class="row">
-                    
+
                     <div class="col-lg-6 col-md-6 col-sm-6 col-lg-push-6 col-md-push-6 col-sm-push-6"><img src="img/matbang.jpg"></div>
                     <div class="col-lg-6 col-md-6 col-sm-6 col-lg-pull-6 col-md-pull-6 col-sm-pull-6">
-                    	<div class="inner">
+                        <div class="inner">
                             <div class="st-hd text-center">
                                 <h3>Mặt bằng tổng thể</h3>
                                 <div class="line"></div>
                             </div>
                             <div id="inner-scrollbar" data-scrollbar="" tabindex="1" style="overflow: hidden; outline: none; padding-bottom:20px;" class="">
                                 <article class="scroll-content" style="transform: translate3d(0px, 000px, 0px); height:240px; ">
-                                <canvas class="overscroll-glow" style="display: none; pointer-events: none;"></canvas>
-                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                                  <tbody>
-                                    <tr>
-                                      <th>Khu A :</th>
-                                      <th>98 ha</th>
-                                    </tr>
-                                    <tr>
-                                      <td>Nhà Phố</td>
-                                      <td>2.213 lô</td>
-                                    </tr>
-                                    <tr>
-                                      <td>Biệt Thự</td>
-                                      <td>308 lô</td>
-                                    </tr>
-                                    <tr>
-                                      <td>Các Tiện Ích Kèm </td>
-                                      <td></td>
-                                    </tr>
-                                    <tr>
-                                      <th>Khu A :</th>
-                                      <th>98 ha</th>
-                                    </tr>
-                                    <tr>
-                                      <td>Nhà Phố</td>
-                                      <td>2.213 lô</td>
-                                    </tr>
-                                    <tr>
-                                      <td>Biệt Thự</td>
-                                      <td>308 lô</td>
-                                    </tr>
-                                    <tr>
-                                      <td>Các Tiện Ích Kèm </td>
-                                      <td></td>
-                                    </tr>
-                                    <tr>
-                                      <th>Khu A :</th>
-                                      <th>98 ha</th>
-                                    </tr>
-                                    <tr>
-                                      <td>Nhà Phố</td>
-                                      <td>2.213 lô</td>
-                                    </tr>
-                                    <tr>
-                                      <td>Biệt Thự</td>
-                                      <td>308 lô</td>
-                                    </tr>
-                                    <tr>
-                                      <td>Các Tiện Ích Kèm </td>
-                                      <td></td>
-                                    </tr>
-                                    <tr>
-                                      <th>Khu A :</th>
-                                      <th>98 ha</th>
-                                    </tr>
-                                    <tr>
-                                      <td>Nhà Phố</td>
-                                      <td>2.213 lô</td>
-                                    </tr>
-                                    <tr>
-                                      <td>Biệt Thự</td>
-                                      <td>308 lô</td>
-                                    </tr>
-                                    <tr>
-                                      <td>Các Tiện Ích Kèm </td>
-                                      <td></td>
-                                    </tr>
-                                  </tbody>
-                                </table>
+                                    <canvas class="overscroll-glow" style="display: none; pointer-events: none;"></canvas>
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                        <tbody>
+                                            <tr>
+                                                <th>Khu A :</th>
+                                                <th>98 ha</th>
+                                            </tr>
+                                            <tr>
+                                                <td>Nhà Phố</td>
+                                                <td>2.213 lô</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Biệt Thự</td>
+                                                <td>308 lô</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Các Tiện Ích Kèm </td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Khu A :</th>
+                                                <th>98 ha</th>
+                                            </tr>
+                                            <tr>
+                                                <td>Nhà Phố</td>
+                                                <td>2.213 lô</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Biệt Thự</td>
+                                                <td>308 lô</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Các Tiện Ích Kèm </td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Khu A :</th>
+                                                <th>98 ha</th>
+                                            </tr>
+                                            <tr>
+                                                <td>Nhà Phố</td>
+                                                <td>2.213 lô</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Biệt Thự</td>
+                                                <td>308 lô</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Các Tiện Ích Kèm </td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Khu A :</th>
+                                                <th>98 ha</th>
+                                            </tr>
+                                            <tr>
+                                                <td>Nhà Phố</td>
+                                                <td>2.213 lô</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Biệt Thự</td>
+                                                <td>308 lô</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Các Tiện Ích Kèm </td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </article>
                             </div>
                             <p class="small text-center">(*) Tổng: 5.900 lô. Trong đó Liền Kề: 4.214 lô và Biệt Thự: 1.686 lô </p>
@@ -267,31 +248,36 @@ $(document).ready(function() {
             </div>
             <div class="container">
                 <div class="row">
-                    
+
                     <div class="col-lg-7 col-md-7 col-sm-7 col-lg-push-5 col-md-push-5 col-sm-push-5">
                         <div class="inner">
-                        	<div class="row">
-                            	<div class="col-lg-4 col-md-4 col-sm-4"><img src="img/vt_0.png"></div>
-                                <div class="col-lg-4 col-md-4 col-sm-4"><img src="img/vt_1.png">
-                                	<p class="small">Biển Nguyễn Tất Thành, nằm trên tuyến đường Nguyễn Tất Thành Nối Dài.</p>
+                            <div class="row">
+                                <div class="col-lg-4 col-md-4 col-sm-4"><img src="img/vt_0.png"></div>
+                                <div class="col-lg-4 col-md-4 col-sm-4">
+                                    <img src="img/vt_1.png">
+                                    <p class="small">Biển Nguyễn Tất Thành, nằm trên tuyến đường Nguyễn Tất Thành Nối Dài.</p>
                                 </div>
-                                <div class="col-lg-4 col-md-4 col-sm-4"><img src="img/vt_2.png">
-                                	<p class="small">Trung tâm quận Liên Chiểu, chợ Hòa Khánh, ĐH Bách Khoa, ĐH Sư Phạm,…</p>
+                                <div class="col-lg-4 col-md-4 col-sm-4">
+                                    <img src="img/vt_2.png">
+                                    <p class="small">Trung tâm quận Liên Chiểu, chợ Hòa Khánh, ĐH Bách Khoa, ĐH Sư Phạm,…</p>
                                 </div>
-                                <div class="col-lg-4 col-md-4 col-sm-4"><img src="img/vt_3.png">
-                                	<p class="small">Bệnh viên ung bướu Đà Nẵng, bến xe trung tâm…</p>
+                                <div class="col-lg-4 col-md-4 col-sm-4">
+                                    <img src="img/vt_3.png">
+                                    <p class="small">Bệnh viên ung bướu Đà Nẵng, bến xe trung tâm…</p>
                                 </div>
-                                <div class="col-lg-4 col-md-4 col-sm-4"><img src="img/vt_4.png">
-                                	<p class="small">Trung tâm thành phố Đà Nẵng và các khu vui chơi giải trí, ẩm thực nổi tiếng lân cận.</p>
+                                <div class="col-lg-4 col-md-4 col-sm-4">
+                                    <img src="img/vt_4.png">
+                                    <p class="small">Trung tâm thành phố Đà Nẵng và các khu vui chơi giải trí, ẩm thực nổi tiếng lân cận.</p>
                                 </div>
-                                <div class="col-lg-4 col-md-4 col-sm-4"><img src="img/vt_5.png">
-                                	<p class="small">Sân bay quốc tế Đà Nẵng, kết nối dễ dàng đến các tuyến đường chính.</p>
+                                <div class="col-lg-4 col-md-4 col-sm-4">
+                                    <img src="img/vt_5.png">
+                                    <p class="small">Sân bay quốc tế Đà Nẵng, kết nối dễ dàng đến các tuyến đường chính.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-5 col-md-5 col-sm-5 col-lg-pull-7 col-md-pull-7 col-sm-pull-7">
-                    	<div class="inner">
+                        <div class="inner">
                             <div class="map text-center"><img src="img/vt_map.png"></div>
                             <p class="small text-center">(+) Click vào bản đồ để phóng to </p>
                             <h4>Điểm tiếp giáp</h4>
@@ -313,7 +299,7 @@ $(document).ready(function() {
             </div>
         </div>
         <div class="section wow fadeInUp" id="section4">
-        	<div class="st-hd text-center">
+            <div class="st-hd text-center">
                 <h3>Sản phẩm</h3>
                 <div class="line"></div>
                 <p>(Nhà Mẫu Tham Khảo Cho Đất Nền Dự Án)</p>
@@ -321,46 +307,52 @@ $(document).ready(function() {
             <div class="container">
                 <div class="row text-center">
                     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
-                    	<div><img src="img/8 copy.jpg"></div>
+                        <div><a href="img/9 copy.jpg" class="lightfancybox" rel="album_02"><img src="img/9 copy.jpg"></a></div>
                         <p>Nhà Phố 5m x 25m (Loại 1)</p>
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
-                    	<div><img src="img/8 copy.jpg"></div>
-                        <p>Nhà Phố 5m x 25m (Loại 1)</p>
+                        <div>
+                            <a href="img/8 copy.jpg" class="lightfancybox" rel="album_02">
+                                <img src="img/8 copy.jpg">
+                            </a>
+                        </div>
+                        <p>Nhà Phố 5m x 25m (Loại 2)</p>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                        <div><a href="img/10 copy.jpg" class="lightfancybox" rel="album_02"><img src="img/10 copy.jpg"></a></div>
+                        <p>Nhà Phố 7,5m x 25m (Loại 1)</p>
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
-                    	<div><img src="img/8 copy.jpg"></div>
-                        <p>Nhà Phố 5m x 25m (Loại 1)</p>
+                        <div><a href="img/11 copy.jpg" class="lightfancybox" rel="album_02"><img src="img/11 copy.jpg"></a></div>
+                        <p>Nhà Phố 7,5m x 25m (Loại 2)</p>
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
-                    	<div><img src="img/8 copy.jpg"></div>
-                        <p>Nhà Phố 5m x 25m (Loại 1)</p>
+                        <div><a href="img/12 copy.jpg" class="lightfancybox" rel="album_02"><img src="img/12 copy.jpg"></a></div>
+                        <p>Biệt thự 10m x 25m (Loại 1)</p>
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
-                    	<div><img src="img/8 copy.jpg"></div>
-                        <p>Nhà Phố 5m x 25m (Loại 1)</p>
+                        <div><a href="img/13 copy.jpg" class="lightfancybox" rel="album_02"><img src="img/13 copy.jpg"></a></div>
+                        <p>Biệt thự 10m x 25m (Loại 2)</p>
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
-                    	<div><img src="img/8 copy.jpg"></div>
-                        <p>Nhà Phố 5m x 25m (Loại 1)</p>
+                        <div><a href="img/15 copy.jpg" class="lightfancybox" rel="album_02"><img src="img/15 copy.jpg"></a></div>
+                        <p>Biệt thự 15m x 25m (Loại 1)</p>
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
-                    	<div><img src="img/8 copy.jpg"></div>
-                        <p>Nhà Phố 5m x 25m (Loại 1)</p>
+                        <div><a href="img/14 copy.jpg" class="lightfancybox" rel="album_02"><img src="img/14 copy.jpg"></a></div>
+                        <p>Biệt thự 15m x 25m (Loại 2)</p>
                     </div>
+                    
                     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
-                    	<div><img src="img/8 copy.jpg"></div>
-                        <p>Nhà Phố 5m x 25m (Loại 1)</p>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
-                    	<div><img src="img/8 copy.jpg"></div>
-                        <p>Nhà Phố 5m x 25m (Loại 1)</p>
+                        <div><a href="img/16 copy.jpg" class="lightfancybox" rel="album_02"><img src="img/16 copy.jpg"></a></div>
+                        <p>Shophouse</p>
                     </div>
                 </div>
             </div>
         </div>
         <div class="section wow fadeInUp" id="section5">
-        	<div class="inner">
+            <div class="inner">
                 <div class="container">
                     <div class="row text-center">
                         <div class="col-lg-8 col-md-8 col-lg-push-2 col-md-push-2">
@@ -371,8 +363,8 @@ $(document).ready(function() {
                                     <p>(Hòa điệu cùng thiên nhiên kết hợp với thiết kế hiện đại đẳng cấp Quốc tế)</p>
                                 </div>
                                 <p>Lấy nguồn cảm hứng từ cửa sông và quần đảo, SOM đã tận dụng tối đa nét đẹp của sông, núi và biển để tạo nên KĐT sinh thái Golden Hills có kết cấu phát triển bền vững, lấy thiên nhiên làm sợi dây gắn kết với con người.</p>
-     
-    <p>Với vị trí đắc địa bao quanh là sông, núi, biển, Golden Hills được thiết kế để phát triển thành một đô thị sinh thái đẳng cấp 5 sao với 5 phân khu cùng một khu đảo tạo nên những góc nhìn đa sắc cho dự án. Mỗi khu đều có các tiện ích nổi trội, được quy hoạch một cách tổng thể, đồng bộ và hiện đại, nhưng vẫn bảo tồn được vẻ đẹp tự nhiên vốn có và mang đậm tính nhân văn hứa hẹn sẽ đem lại cho dân cư trong thành phố những tiện ích và môi trường sống tốt nhất. Hãy đến Golden Hills để cảm nhận sự khác biệt.</p>
+
+                                <p>Với vị trí đắc địa bao quanh là sông, núi, biển, Golden Hills được thiết kế để phát triển thành một đô thị sinh thái đẳng cấp 5 sao với 5 phân khu cùng một khu đảo tạo nên những góc nhìn đa sắc cho dự án. Mỗi khu đều có các tiện ích nổi trội, được quy hoạch một cách tổng thể, đồng bộ và hiện đại, nhưng vẫn bảo tồn được vẻ đẹp tự nhiên vốn có và mang đậm tính nhân văn hứa hẹn sẽ đem lại cho dân cư trong thành phố những tiện ích và môi trường sống tốt nhất. Hãy đến Golden Hills để cảm nhận sự khác biệt.</p>
                             </div>
                         </div>
                     </div>
@@ -394,10 +386,10 @@ $(document).ready(function() {
                 <a data-slide="next" role="button" href="#kt-slide" class="right carousel-control hidden"></a>
             </div>
         </div>
-        
-        
+
+
         <div class="section wow fadeInUp" id="section6">
-        	<div class="bgL">
+            <div class="bgL">
                 <div class="bgR">
                     <div class="text-center st-hd">
                         <h3>Tiến độ dự án</h3>
@@ -405,19 +397,58 @@ $(document).ready(function() {
                     </div>
                     <div class="container">
                         <div class="owl-carousel">
-                            <div class="item"><img src="../Hình Tiến Độ/94 Toan canh GDH.JPG">
+                            <div class="item">
+                                <a href="img/tiendo/94-Toan-canh-GDH.JPG" class="lightfancybox" rel="album_01">
+                                    <img src="img/tiendo/94-Toan-canh-GDH.JPG">
+                                </a>
                                 <p>Hình thực tế dự án Quý I (2018)</p>
                             </div>
-                            <div class="item"><img src="../Hình Tiến Độ/94 Toan canh GDH.JPG">
+                            <div class="item">
+                                <a href="img/tiendo/999-Tuyen-duong-15m-1.jpg" class="lightfancybox" rel="album_01">
+                                    <img src="img/tiendo/999-Tuyen-duong-15m-1.jpg">
+                                </a>
                                 <p>Hình thực tế dự án Quý I (2018)</p>
                             </div>
-                            <div class="item"><img src="../Hình Tiến Độ/94 Toan canh GDH.JPG">
+                            <div class="item">
+                                <a href="img/tiendo/DJI_0010.jpg" class="lightfancybox" rel="album_01">
+                                    <img src="img/tiendo/DJI_0010.jpg">
+                                </a>
                                 <p>Hình thực tế dự án Quý I (2018)</p>
                             </div>
-                            <div class="item"><img src="../Hình Tiến Độ/94 Toan canh GDH.JPG">
+                            <div class="item">
+                                <a href="img/tiendo/DJI_0026.jpg" class="lightfancybox" rel="album_01">
+                                    <img src="img/tiendo/DJI_0026.jpg">
+                                </a>
                                 <p>Hình thực tế dự án Quý I (2018)</p>
                             </div>
-                            <div class="item"><img src="../Hình Tiến Độ/94 Toan canh GDH.JPG">
+                            <div class="item">
+                                <a href="img/tiendo/DJI_0039.jpg" class="lightfancybox" rel="album_01">
+                                    <img src="img/tiendo/DJI_0039.jpg">
+                                </a>
+                                <p>Hình thực tế dự án Quý I (2018)</p>
+                            </div>
+                            <div class="item">
+                                <a href="img/tiendo/DJI_0047.jpg" class="lightfancybox" rel="album_01">
+                                    <img src="img/tiendo/DJI_0047.jpg">
+                                </a>
+                                <p>Hình thực tế dự án Quý I (2018)</p>
+                            </div>
+                            <div class="item">
+                                <a href="img/tiendo/DJI_0072.jpg" class="lightfancybox" rel="album_01">
+                                    <img src="img/tiendo/DJI_0072.jpg">
+                                </a>
+                                <p>Hình thực tế dự án Quý I (2018)</p>
+                            </div>
+                            <div class="item">
+                                <a href="img/tiendo/DJI_0075.jpg" class="lightfancybox" rel="album_01">
+                                    <img src="img/tiendo/DJI_0075.jpg">
+                                </a>
+                                <p>Hình thực tế dự án Quý I (2018)</p>
+                            </div>
+                            <div class="item">
+                                <a href="img/tiendo/998-nha-o-4.jpg" class="lightfancybox" rel="album_01">
+                                    <img src="img/tiendo/998-nha-o-4.jpg">
+                                </a>
                                 <p>Hình thực tế dự án Quý I (2018)</p>
                             </div>
                         </div>
@@ -432,30 +463,33 @@ $(document).ready(function() {
             </div>
             <div class="container">
                 <div class="row">
-                	<div class="col-lg-5 col-md-5 col-sm-6">
-                    	<div class="news">
-                        	<div><img src="img/news1.jpg"></div>
-                            <h2><a href=""><img src="img/dantri.png"> Nhiều dự án khủng “đổ bộ” đánh thức khu Tây Bắc Đà Nẵng</a></h2>
+                    <div class="col-lg-5 col-md-5 col-sm-6">
+                        <div class="news">
+                            <div><img src="img/news1.jpg"></div>
+                            <h2><a href="http://dantri.com.vn/kinh-doanh/nhieu-du-an-khung-do-bo-danh-thuc-khu-tay-bac-da-nang-2018030609585597.htm"><img src="img/dantri.png"> Nhiều dự án khủng “đổ bộ” đánh thức khu Tây Bắc Đà Nẵng</a></h2>
                         </div>
                     </div>
                     <div class="col-lg-7 col-md-7 col-sm-6">
-                    	<div class="news">
-                        	<div class="hidden-xs"><img src="img/news2.jpg"></div>
-                            <h2><a href=""><img src="img/dantri.png"> Bất động sản Đà Nẵng đã hết thời “ăn xổi”</a></h2>
+                        <div class="news">
+                            <div class="hidden-xs"><img src="img/news2.jpg"></div>
+                            <h2><a href="Link: http://dantri.com.vn/kinh-doanh/bat-dong-san-da-nang-da-het-thoi-an-xoi-20180109095456818.htm
+"><img src="img/dantri.png">Bất động sản Đà Nẵng đã hết thời “ăn xổi”</a></h2>
                             <p class="hidden-xs">Các doanh nghiệp đầu tư bất động sản muốn thành công phải xác định đầu tư dài hạn, chứ không thể “ăn xổi” như trước.</p>
                         </div>
                     </div>
                     <div class="col-lg-7 col-md-7 col-sm-6">
-                    	<div class="news">
-                        	<div class="hidden-xs"><img src="img/news3.jpg"></div>
-                            <h2><a href=""><img src="img/dantri.png"> BĐS Đà Nẵng 2018: Dòng tiền đổ về đâu?</a></h2>
+                        <div class="news">
+                            <div class="hidden-xs"><img src="img/news3.jpg"></div>
+                            <h2><a href="Link: http://vietnamnet.vn/vn/bat-dong-san/bds-da-nang-2018-dong-tien-do-ve-dau-419104.htmlTin thứ III
+"><img src="img/dantri.png">BĐS Đà Nẵng 2018: Dòng tiền đổ về đâu?</a></h2>
                             <p class="hidden-xs">Theo các chuyên gia BĐS, hàng loạt dự án lớn khu vực Tây Bắc Đà Nẵng đang được triển khai khiến thị trường khu vực phát triển mạnh mẽ. Kéo theo đó, giá đất tại tuyến đường biển...</p>
                         </div>
                     </div>
                     <div class="col-lg-7 col-md-7 col-sm-6">
-                    	<div class="news">
-                        	<div class="hidden-xs"><img src="img/news4.jpg"></div>
-                            <h2><a href=""><img src="img/dantri.png"> Toàn cảnh hai dự án lớn làm thay đổi diện mạo bất động sản khu Tây Bắc Đà Nẵng</a></h2>
+                        <div class="news">
+                            <div class="hidden-xs"><img src="img/news4.jpg"></div>
+                            <h2><a href="http://cafef.vn/toan-canh-hai-du-an-lon-lam-thay-doi-dien-mao-bat-dong-san-khu-tay-bac-da-nang-2017110808252805.chn
+"><img src="img/dantri.png">Toàn cảnh hai dự án lớn làm thay đổi diện mạo bất động sản khu Tây Bắc Đà Nẵng</a></h2>
                             <p class="hidden-xs">hiToàn cảnh hai dự án lớn làm thay đổi diện mạo bất động sản khu Tây Bắc Đà Nẵng Hai năm qua có lẽ là khoảng thời gian động...</p>
                         </div>
                     </div>
@@ -463,19 +497,19 @@ $(document).ready(function() {
             </div>
         </div>
         <div class="section wow fadeInUp" id="section8">
-            
+
             <div class="container">
                 <div class="row">
-                	<div class="col-lg-4 col-md-4 col-sm-4">
-                    	<h4>CHỦ ĐẦU TƯ</h4>
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                        <h4>CHỦ ĐẦU TƯ</h4>
                         <div><img src="img/lg1.jpg"></div>
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-4">
-                    	<h4>THIẾT KẾ QUY HOẠCH KIẾN TRÚC</h4>
+                        <h4>THIẾT KẾ QUY HOẠCH KIẾN TRÚC</h4>
                         <div><img src="img/lg2.jpg"></div>
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-4">
-                    	<h4>THIẾT KẾ CẢNH QUAN</h4>
+                        <h4>THIẾT KẾ CẢNH QUAN</h4>
                         <div><img src="img/lg3.jpg"></div>
                     </div>
                 </div>
@@ -483,137 +517,218 @@ $(document).ready(function() {
         </div>
         <div id="footer">
             <div class="container wow fadeInUp">
-                
+
                 <div class="row">
                     <div class="col-lg-7 col-md-7 col-sm-7">
-                        
+
                         <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                          <tbody>
-                          	<tr>
-                              <td colspan="2">
-                              	<h3>ĐÀ NẴNG</h3>
-                                <p>Sàn giao dịch BĐS Trung Nam</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>Add: </td>
-                              <td>Lô B2-57-18, Khu đô thị Golden Hills, P.Hòa Hiệp Nam, Q. Liên Chiểu, TP. Đà Nẵng.</td>
-                            </tr>
-                            <tr>
-                              <td>Tel:</td>
-                              <td>(84-511) 222 4 666</td>
-                            </tr>
-                            <tr>
-                              <td>Hotline:</td>
-                              <td>0929 333 888</td>
-                            </tr>
-                            <tr>
-                              <td>Web:</td>
-                              <td>www.goldenhills.com.vn</td>
-                            </tr>
-                            <tr>
-                              <td>Email:</td>
-                              <td>sales@goldenhills.com.vn</td>
-                            </tr>
-                            <tr>
-                              <td colspan="2"><hr></td>
-                            </tr>
-                            <tr>
-                              <td colspan="2">
-                              	<h3>HÀ NỘI</h3>
-                                <p>VPĐD CÔNG TY CP ĐẦU TƯ XÂY DỰNG TRUNG NAM (Trungnam Group)</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>Add: </td>
-                              <td>Tầng 16 A3-53 Quang Trung, Q. Hai Bà Trưng, Hà Nội</td>
-                            </tr>
-                            <tr>
-                              <td>Tel:</td>
-                              <td>(+84) 243 944 9844</td>
-                            </tr>
-                            <tr>
-                              <td>Web:</td>
-                              <td>www.goldenhills.com.vn</td>
-                            </tr>
-                            <tr>
-                              <td>Email:</td>
-                              <td>sales@goldenhills.com.vn</td>
-                            </tr>
-                          </tbody>
+                            <tbody>
+                                <tr>
+                                    <td colspan="2" class="adname">
+                                        <h3>ĐÀ NẴNG</h3>
+                                        <p>Sàn giao dịch BĐS Trung Nam</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Add: </td>
+                                    <td>Lô B2-57-18, Khu đô thị Golden Hills, P.Hòa Hiệp Nam, Q. Liên Chiểu, TP. Đà Nẵng.</td>
+                                </tr>
+                                <tr>
+                                    <td>Tel:</td>
+                                    <td>(84-511) 222 4 666</td>
+                                </tr>
+                                <tr>
+                                    <td>Hotline:</td>
+                                    <td>0929 333 888</td>
+                                </tr>
+                                <tr>
+                                    <td>Web:</td>
+                                    <td>www.goldenhills.com.vn</td>
+                                </tr>
+                                <tr>
+                                    <td>Email:</td>
+                                    <td>sales@goldenhills.com.vn</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2"><hr></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" class="adname">
+                                        <h3>HÀ NỘI</h3>
+                                        <p>VPĐD CÔNG TY CP ĐẦU TƯ XÂY DỰNG TRUNG NAM (Trungnam Group)</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Add: </td>
+                                    <td>Tầng 16 A3-53 Quang Trung, Q. Hai Bà Trưng, Hà Nội</td>
+                                </tr>
+                                <tr>
+                                    <td>Tel:</td>
+                                    <td>(+84) 243 944 9844</td>
+                                </tr>
+                                <tr>
+                                    <td>Web:</td>
+                                    <td>www.goldenhills.com.vn</td>
+                                </tr>
+                                <tr>
+                                    <td>Email:</td>
+                                    <td>sales@goldenhills.com.vn</td>
+                                </tr>
+                            </tbody>
                         </table>
 
                     </div>
-                    
-                    <div class="col-lg-5 col-md-5 col-sm-5">
+
+                    <div class="col-lg-5 col-md-5 col-sm-5 hidden-xs">
                         <div id="form-newletter">
                             <form id="frmMobile" class="" autocomplete="off">
                                 <div id="formContentContactMobile">
-                                	<div class="form-group row">
-                                    <label for="" class="col-lg-3 col-form-label">Tên bạn</label>
-                                    <div class="col-lg-9">
-                                      <input type="text"  class="form-control" id="" value="">
+                                    <div class="form-group row">
+                                        <label for="" class="col-lg-3 col-form-label">Tên bạn</label>
+                                        <div class="col-lg-9">
+                                            <input type="text" class="form-control" id="" value="">
+                                        </div>
                                     </div>
-                                  </div>
-                                  <div class="form-group row">
-                                    <label for="" class="col-lg-3 col-form-label">Email</label>
-                                    <div class="col-lg-9">
-                                      <input type="text" class="form-control" id="" placeholder="">
+                                    <div class="form-group row">
+                                        <label for="" class="col-lg-3 col-form-label">Email</label>
+                                        <div class="col-lg-9">
+                                            <input type="text" class="form-control" id="" placeholder="">
+                                        </div>
                                     </div>
-                                  </div>
-                                  <div class="form-group row">
-                                    <label for="" class="col-lg-3 col-form-label">Tiêu đề</label>
-                                    <div class="col-lg-9">
-                                      <input type="text" class="form-control" id="" placeholder="">
+                                    <div class="form-group row">
+                                        <label for="" class="col-lg-3 col-form-label">Tiêu đề</label>
+                                        <div class="col-lg-9">
+                                            <input type="text" class="form-control" id="" placeholder="">
+                                        </div>
                                     </div>
-                                  </div>
-                                  <div class="form-group row">
-                                    <label for="" class="col-lg-3 col-form-label">Địa chỉ</label>
-                                    <div class="col-lg-9">
-                                      <input type="text" class="form-control" id="" placeholder="">
+                                    <div class="form-group row">
+                                        <label for="" class="col-lg-3 col-form-label">Địa chỉ</label>
+                                        <div class="col-lg-9">
+                                            <input type="text" class="form-control" id="" placeholder="">
+                                        </div>
                                     </div>
-                                  </div>
-                                  <div class="form-group row">
-                                    <label for="" class="col-lg-3 col-form-label">Điện thoại</label>
-                                    <div class="col-lg-9">
-                                      <input type="text" class="form-control" id="" placeholder="">
+                                    <div class="form-group row">
+                                        <label for="" class="col-lg-3 col-form-label">Điện thoại</label>
+                                        <div class="col-lg-9">
+                                            <input type="text" class="form-control" id="" placeholder="">
+                                        </div>
                                     </div>
-                                  </div>
-                                  <div class="form-group row">
-                                    <label for="" class="col-lg-3 col-form-label">Nội dung</label>
-                                    <div class="col-lg-9">
-                                    	<textarea class="form-control"></textarea>
+                                    <div class="form-group row">
+                                        <label for="" class="col-lg-3 col-form-label">Nội dung</label>
+                                        <div class="col-lg-9">
+                                            <textarea class="form-control"></textarea>
+                                        </div>
                                     </div>
-                                  </div>
-                                  <div class="form-group row">
-                                    <label for="" class="col-lg-3 col-form-label"></label>
-                                    <div class="col-lg-9">
-                                    	<button class="btn btn-success">Gửi</button>
+                                    <div class="form-group row">
+                                        <label for="" class="col-lg-3 col-form-label"></label>
+                                        <div class="col-lg-9">
+                                            <button class="btn btn-success">Gửi</button>
+                                        </div>
                                     </div>
-                                  </div>
                                 </div>
                             </form>
                         </div>
                     </div>
                 </div>
                 <div id="ftBt" class="text-center">
-                	<div>
+                    <div>
                         <a href=""><img src="img/fb.png"></a>
                         <a href=""><img src="img/yt.png"></a>
                     </div>
                     <p class="small">2018 COPYRIGHT  GOLDENHILL. ALL RIGHT RESERVED.</p>
                 </div>
             </div>
-            
+
+        </div>
+        <div id="btnRegisterFix" class="visible-sm visible-xs">
+            <button class="btn btn-danger" data-toggle="modal" data-target="#popupRegister">
+                <img src="img/btn_register.gif"> Đăng ký nhận tư vấn
+            </button>
+        </div>
+        <div id="popupRegister" class="modal fade" role="dialog" style="">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <img src="img/logo.png">
+                        <h4 class="modal-title">đăng ký nhận tư vấn</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group"><input type="text" name="name" id="name" placeholder="Họ và tên"></div>
+                        <div class="form-group"><input type="text" name="phone" id="phone" placeholder="Số điện thoại"></div>
+                        <div class="form-group"><input type="text" name="email" id="email" placeholder="Email"></div>
+                        <div class="form-group">
+                            <div class="text-center">
+                                <button class="btn btn-warning btn-lg btn-block text-uppercase">Đăng ký</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </div>
-    
-    
-    
     <script src="js/smooth-scroll.js"></script>
     <script type="text/javascript" src="js/bootstrapValidator.min.js"></script>
     <script type="text/javascript" src="js/form-validation.js"></script>
     <script type="text/javascript" src="js/toastr.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".lightfancybox").fancybox(
+                {
+                    autoScale: true,
+                    //openEffect 	:	'elastic',
+                    //closeEffect 	:	'elastic',
+                    fitToView: true,
+                    scrolling: 'no',
+                    //type: 'image',
+                    helpers: {
+                        title: {
+                            type: 'over'
+                        },
+                        thumbs: {
+                            width: 76,
+                            height: 56,
+                            position: 'bottom'
+                        }
+                    },
+                    beforeLoad: function () {
+                        if (this.title == "") {
+                            if ($(this.element).attr('caption') == "") {
+                                this.title = "Marina Complex Da Nang City";
+                            } else {
+                                this.title = $(this.element).attr('caption');
+                            }
+                        }
+
+                    }
+                });
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 2,
+                        nav: true
+                    },
+                    768: {
+                        items: 3,
+                        nav: true
+                    },
+                    1000: {
+                        items: 4,
+                        nav: true,
+                        loop: false,
+                        margin: 30,
+                    }
+                }
+            })
+        })
+    </script>
     <script>
         new WOW().init();
         smoothScroll.init({
