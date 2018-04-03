@@ -27,7 +27,8 @@ $(document).ready(function() {
         // Indicate where the error messages are shown.
         // Tooltip, Popover, Custom Container.
         // =================================================================
-    $('#formContact').bootstrapValidator({
+    
+    $('#frmRegDownload').bootstrapValidator({
         message: 'This value is not valid',
         excluded: [':disabled'],
         feedbackIcons: faIcon,
@@ -53,63 +54,50 @@ $(document).ready(function() {
                 validators: {
                     notEmpty: {
                         message: 'Điện thoại không được để trống.'
-                    }
-                }
-            },
-            address_city: {
-                validators: {
-                    notEmpty: {
-                        message: 'Cần chọn Tỉnh/Thành phố.'
-                    }
-                }
-            },
-            time: {
-                validators: {
-                    notEmpty: {
-                        message: 'Cần chọn thời gian tư vấn.'
+                    },
+                    stringLength: {
+                        min: 10,
+                        max: 11,
+                        message: 'Số điện thoại chỉ có thể là 10 hoặc 11 số.'
                     }
                 }
             }
         },
-        onSuccess: function(e) {
+        onSuccess: function (e) {
 
             var name = $('#txtName').val();
             var phone = $('#txtPhone').val();
-            var city = $('#address_city').val();
-            var time = $('#cboTime').val();
+            var email = $('#txtEmail').val();
+            var address = $('#txtAddress').val();
+            var description = $('#txtContent').val();
             var emailto = "quyendn84@gmail.com";
-            var typeId =1;
-            var webdomain = "http://vinhtuong.com";
-            var dataJSON = { "city": city, "time": time, "name": name, "phone": phone, 'typeId': typeId, "emailto": emailto }
-            showLoadingImage();
+            var webdomain = "GoldenHills.vn";
+            var dataJSON = { "fullname": name, "phone": phone, "email": email, "address": address, "description": description, 'webdomain': webdomain, "emailto": emailto }
+            showLoadingContactImage('content-download', 'frmContentDownload');
             $.ajax({
-                url: "http://123.30.181.161:8025/api/VinhTuongservice",
+                url: "https://alpha.f5academy.net/api/Goldenservice",
                 type: "Post",
                 async: false,
                 data: dataJSON,
                 contentType: 'application/json; charset=utf-8',
                 dataType: 'jsonp',
-                success: function(states) {
-                    $('#formContact').bootstrapValidator('resetForm', true);
-                    hideLoadingImage();
-                },
+                success: function (states) {
+                    $('#frmRegDownload').bootstrapValidator('resetForm', true);
+                    hideLoadingContactImage('content-download', 'frmContentDownload');
+                 },
                 error: function (ex) {
                     toastr.error('Đã có lỗi trong quá trình đăng ký, mời bạn thử lại.', { timeOut: 5000 })
-                    hideLoadingImage();
+                    hideLoadingContactImage('content-download', 'frmContentDownload');
                 },
-                complete: function(jqXHR, textStatus) {
-                    $('#txtName').val('');
-                    $("#txtPhone").val('');
-                    $('#address_city').val('');
-                    $('#cboTime').val('');
-                    $('#formContact').bootstrapValidator('resetForm', true);
-                    toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', { timeOut: 5000 })
-                    hideLoadingImage();
-                    location.href = '/cam-on.html';
+                complete: function (jqXHR, textStatus) {
+                    $('#frmRegDownload').bootstrapValidator('resetForm', true);
+                    toastr.success('Bạn đã đăng ký tư vấn thành công. Golden Hills sẽ liên hệ lại bạn trong vòng 24 giờ làm việc. Vui lòng liên hệ số điện thoại 0929333888 khi cần hỗ trợ nhanh', { timeOut: 5000 })
+                    hideLoadingContactImage('content-download', 'frmContentDownload');
+                    //location.href = 'cam-on.html';
                 }
             });
         }
-    }).on('success.form.fv', function(e) {
+    }).on('success.form.fv', function (e) {
 
     });
     $('#frmMobile').bootstrapValidator({
@@ -117,16 +105,70 @@ $(document).ready(function() {
         excluded: [':disabled'],
         feedbackIcons: faIcon,
         fields: {
-            email: {
+            
+            name_top: {
                 validators: {
                     notEmpty: {
-                        message: 'Địa chỉ email không được để trống.'
-                    },
-                    emailAddress: {
-                        message: 'Không đúng định dạng email'
+                        message: 'Họ tên không được để trống.'
                     }
                 }
             },
+            phone_top: {
+                validators: {
+                    notEmpty: {
+                        message: 'Điện thoại không được để trống.'
+                    },
+                    stringLength: {
+                        min: 10,
+                        max: 11,
+                        message: 'Số điện thoại chỉ có thể là 10 hoặc 11 số.'
+                    }
+                }
+            }
+        },
+        onSuccess: function (e) {
+
+            var name = $('#txtNameTop').val();
+            var phone = $('#txtPhoneTop').val();
+            var email = '';
+            var address = '';
+            var description ='';
+            var emailto = "quyendn84@gmail.com";
+            var webdomain = "GoldenHills.vn";
+            var dataJSON = { "fullname": name, "phone": phone, "email": email, "address": address, "description": description, 'webdomain': webdomain, "emailto": emailto }
+            showLoadingContactImage('content-top-reg', 'formContentContactMobile');
+            $.ajax({
+                url: "https://alpha.f5academy.net/api/Goldenservice",
+                type: "Post",
+                async: false,
+                data: dataJSON,
+                contentType: 'application/json; charset=utf-8',
+                dataType: 'jsonp',
+                success: function (states) {
+                    $('#frmMobile').bootstrapValidator('resetForm', true);
+                    hideLoadingContactImage('content-top-reg', 'formContentContactMobile');
+                },
+                error: function (ex) {
+                    toastr.error('Đã có lỗi trong quá trình đăng ký, mời bạn thử lại.', { timeOut: 5000 })
+                    hideLoadingContactImage('content-top-reg', 'formContentContactMobile');
+                },
+                complete: function (jqXHR, textStatus) {
+                    $('#frmMobile').bootstrapValidator('resetForm', true);
+                    toastr.success('Bạn đã đăng ký tư vấn thành công. Golden Hills sẽ liên hệ lại bạn trong vòng 24 giờ làm việc. Vui lòng liên hệ số điện thoại 0929333888 khi cần hỗ trợ nhanh', { timeOut: 5000 })
+                    hideLoadingContactImage('content-top-reg', 'formContentContactMobile');
+                    //location.href = 'cam-on.html';
+                }
+            });
+        }
+    }).on('success.form.fv', function (e) {
+
+    });
+    $('#frmMobileBottom').bootstrapValidator({
+        message: 'This value is not valid',
+        excluded: [':disabled'],
+        feedbackIcons: faIcon,
+        fields: {
+
             name_mobile: {
                 validators: {
                     notEmpty: {
@@ -138,20 +180,21 @@ $(document).ready(function() {
                 validators: {
                     notEmpty: {
                         message: 'Điện thoại không được để trống.'
+                    },
+                    stringLength: {
+                        min: 10,
+                        max: 11,
+                        message: 'Số điện thoại chỉ có thể là 10 hoặc 11 số.'
                     }
                 }
             },
-            address_city_mobile: {
+            email_mobile: {
                 validators: {
                     notEmpty: {
-                        message: 'Cần chọn Tỉnh/Thành phố.'
-                    }
-                }
-            },
-            time_mobile: {
-                validators: {
-                    notEmpty: {
-                        message: 'Cần chọn thời gian tư vấn.'
+                        message: 'Địa chỉ email không được để trống.'
+                    },
+                    emailAddress: {
+                        message: 'Không đúng định dạng email'
                     }
                 }
             }
@@ -160,212 +203,33 @@ $(document).ready(function() {
 
             var name = $('#txtNameMobile').val();
             var phone = $('#txtPhoneMobile').val();
-            var city = $('#address_city_mobile').val();
-            var time = $('#cboTimeMobile').val();
+            var email = $('#txtEmailMobile').val();
+            var address = '';
+            var description = '';
             var emailto = "quyendn84@gmail.com";
-            var typeId = 1;
-            var webdomain = "http://vinhtuong.com";
-            var dataJSON = { "city": city, "time": time, "name": name, "phone": phone, 'typeId': typeId, "emailto": emailto }
-            showLoadingContactImage('content-mobile','formContentContactMobile');
+            var webdomain = "GoldenHills.vn";
+            var dataJSON = { "fullname": name, "phone": phone, "email": email, "address": address, "description": description, 'webdomain': webdomain, "emailto": emailto }
+            showLoadingContactImage('content-mobile-bottom-reg', 'formContentContactMobileBottom');
             $.ajax({
-                url: "http://123.30.181.161:8025/api/VinhTuongservice",
+                url: "https://alpha.f5academy.net/api/Goldenservice",
                 type: "Post",
                 async: false,
                 data: dataJSON,
                 contentType: 'application/json; charset=utf-8',
                 dataType: 'jsonp',
                 success: function (states) {
-                    $('#frmMobile').bootstrapValidator('resetForm', true);
-                    hideLoadingContactImage('formContentContactMobile', 'content-mobile');
+                    $('#frmMobileBottom').bootstrapValidator('resetForm', true);
+                    hideLoadingContactImage('content-mobile-bottom-reg', 'formContentContactMobileBottom');
                 },
                 error: function (ex) {
                     toastr.error('Đã có lỗi trong quá trình đăng ký, mời bạn thử lại.', { timeOut: 5000 })
-                    hideLoadingContactImage('content-mobile','formContentContactMobile');
+                    hideLoadingContactImage('content-mobile-bottom-reg', 'formContentContactMobileBottom');
                 },
                 complete: function (jqXHR, textStatus) {
-                    $('#txtNameMobile').val('');
-                    $("#txtPhoneMobile").val('');
-                    $('#address_city_mobile').val('');
-                    $('#cboTimeMobile').val('');
-                    $('#frmMobile').bootstrapValidator('resetForm', true);
-                    toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', { timeOut: 5000 })
-                    hideLoadingContactImage('content-mobile', 'formContentContactMobile');
-                    location.href = '/cam-on.html';
-                }
-            });
-        }
-    }).on('success.form.fv', function (e) {
-
-    });
-    $('#frmRegDownload').bootstrapValidator({
-        message: 'This value is not valid',
-        excluded: [':disabled'],
-        feedbackIcons: faIcon,
-        fields: {
-            email: {
-                validators: {
-                    notEmpty: {
-                        message: 'Địa chỉ email không được để trống.'
-                    },
-                    emailAddress: {
-                        message: 'Không đúng định dạng email'
-                    }
-                }
-            },
-            name_download: {
-                validators: {
-                    notEmpty: {
-                        message: 'Họ tên không được để trống.'
-                    }
-                }
-            },
-            phone_download: {
-                validators: {
-                    notEmpty: {
-                        message: 'Điện thoại không được để trống.'
-                    }
-                }
-            },
-            address_city_download: {
-                validators: {
-                    notEmpty: {
-                        message: 'Cần chọn Tỉnh/Thành phố.'
-                    }
-                }
-            },
-            cbo_time_download: {
-                validators: {
-                    notEmpty: {
-                        message: 'Cần chọn tư vấn giải pháp.'
-                    }
-                }
-            }
-        },
-        onSuccess: function (e) {
-
-            var name = $('#name_download').val();
-            var phone = $('#phone_download').val();
-            var city = $('#address_city_download').val();
-            var time = $('#cbo_time_download').val();
-            var emailto = "quyendn84@gmail.com";
-            var typeId = 2;
-            var webdomain = "http://vinhtuong.com";
-            var dataJSON = { "city": city, "time": time, "name": name, "phone": phone, 'typeId': typeId, "emailto": emailto }
-            showLoadingContactImage('content-download', 'frmContentDownload');
-            $.ajax({
-                url: "http://123.30.181.161:8025/api/VinhTuongservice",
-                type: "Post",
-                async: false,
-                data: dataJSON,
-                contentType: 'application/json; charset=utf-8',
-                dataType: 'jsonp',
-                success: function (states) {
-                    $('#frmMobile').bootstrapValidator('resetForm', true);
-                    hideLoadingContactImage('content-download', 'frmContentDownload');
-                    $('#downloadModal').modal('hide');
-                 },
-                error: function (ex) {
-                    toastr.error('Đã có lỗi trong quá trình đăng ký, mời bạn thử lại.', { timeOut: 5000 })
-                    hideLoadingContactImage('content-download', 'frmContentDownload');
-                },
-                complete: function (jqXHR, textStatus) {
-                    $('#downloadModal').modal('hide');
-                    $('#name_download').val('');
-                    $("#phone_download").val('');
-                    $('#address_city_download').val('');
-                    $('#cbo_time_download').val('');
-                    $('#frmContentDownload').bootstrapValidator('resetForm', true);
-                    toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', { timeOut: 5000 })
-                    hideLoadingContactImage('content-download', 'frmContentDownload');
-                   
-                    $('#downloadModalContent').modal('show');
-                }
-            });
-        }
-    }).on('success.form.fv', function (e) {
-
-    });
-    $('#frmRegGift').bootstrapValidator({
-        message: 'This value is not valid',
-        excluded: [':disabled'],
-        feedbackIcons: faIcon,
-        fields: {
-            email: {
-                validators: {
-                    notEmpty: {
-                        message: 'Địa chỉ email không được để trống.'
-                    },
-                    emailAddress: {
-                        message: 'Không đúng định dạng email'
-                    }
-                }
-            },
-            name_gift: {
-                validators: {
-                    notEmpty: {
-                        message: 'Họ tên không được để trống.'
-                    }
-                }
-            },
-            phone_gift: {
-                validators: {
-                    notEmpty: {
-                        message: 'Điện thoại không được để trống.'
-                    }
-                }
-            },
-            address_city_gift: {
-                validators: {
-                    notEmpty: {
-                        message: 'Cần chọn Tỉnh/Thành phố.'
-                    }
-                }
-            },
-            cbo_time_gift: {
-                validators: {
-                    notEmpty: {
-                        message: 'Cần chọn tư vấn giải pháp.'
-                    }
-                }
-            }
-        },
-        onSuccess: function (e) {
-
-            var name = $('#name_gift').val();
-            var phone = $('#phone_gift').val();
-            var city = $('#address_city_gift').val();
-            var time = $('#cbo_time_gift').val();
-            var emailto = "quyendn84@gmail.com";
-            var typeId = 3;
-            var webdomain = "http://vinhtuong.com";
-            var dataJSON = { "city": city, "time": time, "name": name, "phone": phone, 'typeId': typeId, "emailto": emailto }
-            showLoadingContactImage('content-gift', 'frmContentGift');
-            $.ajax({
-                url: "http://123.30.181.161:8025/api/VinhTuongservice",
-                type: "Post",
-                async: false,
-                data: dataJSON,
-                contentType: 'application/json; charset=utf-8',
-                dataType: 'jsonp',
-                success: function (states) {
-                    $('#frmRegGift').bootstrapValidator('resetForm', true);
-                    hideLoadingContactImage('content-gift', 'frmContentGift');
-                    $('#registerModal').modal('hide');
-                },
-                error: function (ex) {
-                    toastr.error('Đã có lỗi trong quá trình đăng ký, mời bạn thử lại.', { timeOut: 5000 })
-                    hideLoadingContactImage('content-gift', 'frmContentGift');
-                },
-                complete: function (jqXHR, textStatus) {
-                    $('#registerModal').modal('hide');
-                    $('#name_gift').val('');
-                    $("#phone_gift").val('');
-                    $('#address_city_gift').val('');
-                    $('#cbo_time_gift').val('');
-                    $('#frmContentDownload').bootstrapValidator('resetForm', true);
-                    toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', { timeOut: 5000 })
-                    hideLoadingContactImage('content-gift', 'frmContentGift');
-                    location.href = '/cam-on.html';
+                    $('#frmMobileBottom').bootstrapValidator('resetForm', true);
+                    toastr.success('Bạn đã đăng ký tư vấn thành công. Golden Hills sẽ liên hệ lại bạn trong vòng 24 giờ làm việc. Vui lòng liên hệ số điện thoại 0929333888 khi cần hỗ trợ nhanh', { timeOut: 5000 })
+                    hideLoadingContactImage('content-mobile-bottom-reg', 'formContentContactMobileBottom');
+                    //location.href = 'cam-on.html';
                 }
             });
         }

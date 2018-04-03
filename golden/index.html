@@ -30,6 +30,17 @@
     <link rel="stylesheet" type="text/css" href="css/animate.css" />
     <link href="css/jquery.fancybox.css" rel="stylesheet" type="text/css" />
     <link href="css/jquery.fancybox-thumbsER.css" rel="stylesheet" type="text/css" />
+    <script>
+        $(document).ready(function () {
+            $(".navbar1").on('click', (function () {
+                $('.navbar-collapse').removeClass("in");
+            })
+       );
+        });
+
+    </script>
+
+
 
 </head>
 
@@ -52,7 +63,7 @@
                             <li class=""><a data-scroll="" data-options="easing: easeInQuad" href="#section7" class="navbar1">Tin tức</a></li>
                             <li class=""><a data-scroll="" data-options="easing: easeInQuad" href="#section8" class="navbar1">Liên hệ</a></li>
                         </ul>
-                        <div class="langue"><a href=""><img src="img/vn.png"></a> <a href=""><img src="img/en.png"></a></div>
+                        <!--<div class="langue"><a href=""><img src="img/vn.png"></a> <a href=""><img src="img/en.png"></a></div>-->
                     </nav>
                     <div class="hotline"><img src="img/phone.png"><strong><a style="color:#000;" href="tel:0929333888"> HOTLINE: 0929 333 888</a></strong></div>
 
@@ -71,11 +82,11 @@
                     <li data-slide-to="4" data-target="#heartbanner-slide" class=""></li>
                 </ol>
                 <div role="listbox" class="carousel-inner">
-                    <div class="item active"><img src="img/slide/kim_lien.jpg"></div>
-                    <div class="item"><img src="img/slide/DJI_0001-2.jpg"></div>
-                    <div class="item"><img src="img/slide/DJI_0019.jpg"></div>
-                    <div class="item "><img src="img/slide/DJI_0023.jpg"></div>
-                    <div class="item "><img src="img/slide/PANO0005.jpg"></div>
+                    <div class="item active"><img style="width:100%;" src="img/slide/kim_lien.jpg" ></div>
+                    <div class="item"><img style="width:100%;" src="img/slide/DJI_0001-2.jpg"></div>
+                    <div class="item"><img style="width:100%;" src="img/slide/DJI_0019.jpg" ></div>
+                    <div class="item "><img style="width:100%;" src="img/slide/DJI_0023.jpg" ></div>
+                    <div class="item "><img style="width:100%;" src="img/slide/PANO0005.jpg" ></div>
                 </div>
                 <a data-slide="prev" role="button" href="#heartbanner-slide" class="left carousel-control hidden"></a>
                 <a data-slide="next" role="button" href="#heartbanner-slide" class="right carousel-control hidden"></a>
@@ -89,16 +100,18 @@
                             <p>Cám ơn Quý khách đã quan tâm đến khu đô thị sinh thái Golden Hills. Để biết thêm thông tin về dự án, Quý Khách vui lòng để lại thông tin liên hệ.</p>
                             <p>Chúng tôi chủ động liên hệ và tư vấn trực tiếp tới Quý Khách. Trân trọng !</p>
                         </div>
+
                         <div id="formContentContactMobile">
-                            <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Họ và tên (*)">
+                            <div class="form-group input-group" style="margin-left:0;margin-right:0;">
+                                <input type="text" class="form-control" name="name_top" id="txtNameTop" placeholder="Họ và tên (*)">
                             </div>
-                            <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Số điện thoại (*)">
+                            <div class="form-group input-group" style="margin-left:0;margin-right:0;">
+                                <input type="text" class="form-control" name="phone_top" id="txtPhoneTop" placeholder="Số điện thoại (*)">
                             </div>
-                            <div class="input-group col-lg-12 col-md-12 col-sm-12 col-xs-12"><button class="btn btn-submit">Gửi</button></div>
+                            <div class="form-group input-group col-lg-12 col-md-12 col-sm-12 col-xs-12" style="margin-left:0;margin-right:0;"><button class="btn btn-submit">Gửi</button></div>
                             <div id="content-mobile"></div>
                         </div>
+                        <div id="content-top-reg"></div>
                     </form>
                 </div>
             </div>
@@ -324,7 +337,7 @@
                         </div>
                         <p>Nhà Phố 5m x 25m (Loại 2)</p>
                     </div>
-                    
+
                     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
                         <div><a href="img/10 copy.jpg" class="lightfancybox" rel="album_02"><img src="img/10 copy.jpg"></a></div>
                         <p>Nhà Phố 7,5m x 25m (Loại 1)</p>
@@ -349,7 +362,7 @@
                         <div><a href="img/14 copy.jpg" class="lightfancybox" rel="album_02"><img src="img/14 copy.jpg"></a></div>
                         <p>Biệt thự 15m x 25m (Loại 2)</p>
                     </div>
-                    
+
                     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
                         <div><a href="img/16 copy.jpg" class="lightfancybox" rel="album_02"><img src="img/16 copy.jpg"></a></div>
                         <p>Shophouse</p>
@@ -478,24 +491,30 @@
                     <div class="col-lg-7 col-md-7 col-sm-6">
                         <div class="news">
                             <div class="hidden-xs"><img src="img/news2.jpg"></div>
-                            <h2><a href="Link: http://dantri.com.vn/kinh-doanh/bat-dong-san-da-nang-da-het-thoi-an-xoi-20180109095456818.htm
-"><img src="img/dantri.png">Bất động sản Đà Nẵng đã hết thời “ăn xổi”</a></h2>
+                            <h2>
+                                <a href="Link: http://dantri.com.vn/kinh-doanh/bat-dong-san-da-nang-da-het-thoi-an-xoi-20180109095456818.htm
+"><img src="img/dantri.png">Bất động sản Đà Nẵng đã hết thời “ăn xổi”</a>
+                            </h2>
                             <p class="hidden-xs">Các doanh nghiệp đầu tư bất động sản muốn thành công phải xác định đầu tư dài hạn, chứ không thể “ăn xổi” như trước.</p>
                         </div>
                     </div>
                     <div class="col-lg-7 col-md-7 col-sm-6">
                         <div class="news">
                             <div class="hidden-xs"><img src="img/news3.jpg"></div>
-                            <h2><a href="Link: http://vietnamnet.vn/vn/bat-dong-san/bds-da-nang-2018-dong-tien-do-ve-dau-419104.htmlTin thứ III
-"><img src="img/bds_dn.png">BĐS Đà Nẵng 2018: Dòng tiền đổ về đâu?</a></h2>
+                            <h2>
+                                <a href="Link: http://vietnamnet.vn/vn/bat-dong-san/bds-da-nang-2018-dong-tien-do-ve-dau-419104.htmlTin thứ III
+"><img src="img/bds_dn.png">BĐS Đà Nẵng 2018: Dòng tiền đổ về đâu?</a>
+                            </h2>
                             <p class="hidden-xs">Theo các chuyên gia BĐS, hàng loạt dự án lớn khu vực Tây Bắc Đà Nẵng đang được triển khai khiến thị trường khu vực phát triển mạnh mẽ. Kéo theo đó, giá đất tại tuyến đường biển...</p>
                         </div>
                     </div>
                     <div class="col-lg-7 col-md-7 col-sm-6">
                         <div class="news">
                             <div class="hidden-xs"><img src="img/news4.jpg"></div>
-                            <h2><a href="http://cafef.vn/toan-canh-hai-du-an-lon-lam-thay-doi-dien-mao-bat-dong-san-khu-tay-bac-da-nang-2017110808252805.chn
-"><img src="img/cf.png">Toàn cảnh hai dự án lớn làm thay đổi diện mạo bất động sản khu Tây Bắc Đà Nẵng</a></h2>
+                            <h2>
+                                <a href="http://cafef.vn/toan-canh-hai-du-an-lon-lam-thay-doi-dien-mao-bat-dong-san-khu-tay-bac-da-nang-2017110808252805.chn
+"><img src="img/cf.png">Toàn cảnh hai dự án lớn làm thay đổi diện mạo bất động sản khu Tây Bắc Đà Nẵng</a>
+                            </h2>
                             <p class="hidden-xs">hiToàn cảnh hai dự án lớn làm thay đổi diện mạo bất động sản khu Tây Bắc Đà Nẵng Hai năm qua có lẽ là khoảng thời gian động...</p>
                         </div>
                     </div>
@@ -587,42 +606,36 @@
 
                     <div class="col-lg-5 col-md-5 col-sm-5 hidden-xs">
                         <div id="form-newletter">
-                            <form id="frmMobile" class="" autocomplete="off">
-                                <div id="formContentContactMobile">
+                            <form id="frmRegDownload" autocomplete="off">
+                                <div id="frmContentDownload">
                                     <div class="form-group row">
                                         <label for="" class="col-lg-3 col-form-label">Tên bạn</label>
                                         <div class="col-lg-9">
-                                            <input type="text" class="form-control" id="" value="">
+                                            <input type="text" class="form-control" name="name" id="txtName" value="">
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label for="" class="col-lg-3 col-form-label">Email</label>
                                         <div class="col-lg-9">
-                                            <input type="text" class="form-control" id="" placeholder="">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label for="" class="col-lg-3 col-form-label">Tiêu đề</label>
-                                        <div class="col-lg-9">
-                                            <input type="text" class="form-control" id="" placeholder="">
+                                            <input type="text" name="email" class="form-control" id="txtEmail" placeholder="">
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label for="" class="col-lg-3 col-form-label">Địa chỉ</label>
                                         <div class="col-lg-9">
-                                            <input type="text" class="form-control" id="" placeholder="">
+                                            <input type="text" name="address" class="form-control" id="txtAddress" placeholder="">
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label for="" class="col-lg-3 col-form-label">Điện thoại</label>
                                         <div class="col-lg-9">
-                                            <input type="text" class="form-control" id="" placeholder="">
+                                            <input type="text" name="phone" class="form-control" id="txtPhone" placeholder="">
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label for="" class="col-lg-3 col-form-label">Nội dung</label>
                                         <div class="col-lg-9">
-                                            <textarea class="form-control"></textarea>
+                                            <textarea class="form-control" name="content" id="txtContent"></textarea>
                                         </div>
                                     </div>
                                     <div class="form-group row">
@@ -632,6 +645,7 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div id="content-download"></div>
                             </form>
                         </div>
                     </div>
@@ -653,27 +667,29 @@
         </div>
         <div id="popupRegister" class="modal fade" role="dialog" style="">
             <div class="modal-dialog">
-
                 <!-- Modal content-->
                 <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <img src="img/logo.png">
-                        <h4 class="modal-title">đăng ký nhận tư vấn</h4>
-                    </div>
-                    <div class="modal-body">
-                        <div class="form-group"><input type="text" name="name" id="name" placeholder="Họ và tên"></div>
-                        <div class="form-group"><input type="text" name="phone" id="phone" placeholder="Số điện thoại"></div>
-                        <div class="form-group"><input type="text" name="email" id="email" placeholder="Email"></div>
-                        <div class="form-group">
-                            <div class="text-center">
-                                <button class="btn btn-warning btn-lg btn-block text-uppercase">Đăng ký</button>
+                    <form id="frmMobileBottom" class="form-horizontal" autocomplete="off">
+                        <div id="formContentContactMobileBottom">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <img src="img/logo.png">
+                                <h4 class="modal-title">đăng ký nhận tư vấn</h4>
                             </div>
-
+                            <div class="modal-body">
+                                <div class="form-group"><input type="text" name="name_mobile" id="txtNameMobile" placeholder="Họ và tên"></div>
+                                <div class="form-group"><input type="text" name="phone_mobile" id="txtPhoneMobile" placeholder="Số điện thoại"></div>
+                                <div class="form-group"><input type="text" name="email_mobile" id="txtEmailMobile" placeholder="Email"></div>
+                                <div class="form-group">
+                                    <div class="text-center">
+                                        <button class="btn btn-warning btn-lg btn-block text-uppercase">Đăng ký</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
+                        <div id="content-mobile-bottom-reg"></div>
+                    </form>
                 </div>
-
             </div>
         </div>
     </div>
@@ -751,6 +767,4 @@
     <script> Scrollbar.initAll(); </script>
     <link href="css/smooth-scrollbar.css" rel="stylesheet" type="text/css" />
 </body>
-
-
 </html>
