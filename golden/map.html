@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="no-js" style="height:100%;">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</head>
+<body>
+    <img src="img/matbang.jpg" usemap="#map" alt="">
+    <map name="map" id="map">
+        <area shape="poly" coords="377, 462, 458, 455, 502, 444, 552, 411, 607, 384, 659, 351, 690, 375, 707, 393.16666650772095, 707, 408, 667, 441, 618, 474, 569, 506, 455, 633, 417, 595, 386, 540" href="#" title="Khu A" alt="Khu A">
+        <area shape="poly" coords="367, 367, 409, 358, 439, 347, 464, 329, 479, 364, 494, 411, 508, 444, 377, 463" href="#" title="Khu B" alt="Khu B">
+        <area shape="poly" coords="467, 317, 488, 284, 507, 243, 540, 227, 594, 214, 640, 194, 645, 208, 636, 240, 648, 250, 649, 263, 659, 269, 670, 302, 666, 327, 661, 352, 601, 386, 574, 395, 516, 432, 500, 406, 484, 379, 478, 348" href="#" title="Khu C" alt="Khu C">
+        <area shape="poly" coords="346, 202, 448, 202, 468, 203, 492, 198, 565, 179, 634, 154, 643, 161, 643, 169, 633, 182, 620, 172, 602, 185, 588, 204, 570, 213, 518, 223, 497, 236, 492, 265, 483, 284, 474, 303, 448, 333, 409, 350, 385, 347, 361, 343" href="#" title="Khu D" alt="Khu D">
+        <area shape="poly" coords="253, 408, 294, 370, 348, 320, 373, 525, 343, 556, 298, 518, 252, 479, 263, 449, 261, 433" href="#" title="Khu D" alt="Khu D">
+        <area shape="poly" coords="188, 274, 210, 243, 258, 215, 324, 200, 335, 297, 329, 319, 299, 349, 250, 394, 238, 384, 213, 364, 160, 319" href="#" title="Khu E" alt="Khu E">
+        <area shape="poly" coords="643, 67, 673, 42, 693, 34, 688, 63, 670, 77, 655, 87, 633, 94" href="#" title="Khu F/Đảo" alt="Khu F/Đảo">
+    </map>
+    <script type="text/javascript" src="js/jquery.maphilight.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('img[usemap]').maphilight({
+                fill: true,
+                fillColor: '000000',
+                fillOpacity: .2,
+                stroke: true,
+                strokeColor: 'ff0000',
+                strokeOpacity: .5,
+                strokeWidth: 2,
+                fade: false,
+                alwaysOn: false,
+                neverOn: false,
+                groupBy: false
+            });
+        })
+    </script>
+</body>
+</html>
