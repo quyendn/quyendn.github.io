@@ -70,7 +70,7 @@ $(document).ready(function() {
             var email = $('#txtEmail').val();
             var address = $('#txtAddress').val();
             var description = $('#txtContent').val();
-            var emailto = "quyendn84@gmail.com";
+            var emailto = "minhhien125814@gmail.com";
             var webdomain = "GoldenHills.vn";
             var dataJSON = { "fullname": name, "phone": phone, "email": email, "address": address, "description": description, 'webdomain': webdomain, "emailto": emailto }
             showLoadingContactImage('content-download', 'frmContentDownload');
@@ -133,7 +133,7 @@ $(document).ready(function() {
             var email = '';
             var address = '';
             var description ='';
-            var emailto = "quyendn84@gmail.com";
+            var emailto = "minhhien125814@gmail.com";
             var webdomain = "GoldenHills.vn";
             var dataJSON = { "fullname": name, "phone": phone, "email": email, "address": address, "description": description, 'webdomain': webdomain, "emailto": emailto }
             showLoadingContactImage('content-top-reg', 'formContentContactMobile');
@@ -206,7 +206,7 @@ $(document).ready(function() {
             var email = $('#txtEmailMobile').val();
             var address = '';
             var description = '';
-            var emailto = "quyendn84@gmail.com";
+            var emailto = "minhhien125814@gmail.com";
             var webdomain = "GoldenHills.vn";
             var dataJSON = { "fullname": name, "phone": phone, "email": email, "address": address, "description": description, 'webdomain': webdomain, "emailto": emailto }
             showLoadingContactImage('content-mobile-bottom-reg', 'formContentContactMobileBottom');
