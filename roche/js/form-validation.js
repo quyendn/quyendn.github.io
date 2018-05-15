@@ -68,10 +68,10 @@ $(document).ready(function() {
             var name = $('#txtName').val();
             var phone = $('#txtPhone').val();
             var email = $('#txtEmail').val();
-            var address = $('#txtAddress').val();
+            var address = "";
             var description = $('#txtContent').val();
-            var emailto = "quyendn84@gmail.com";
-            var webdomain = "GoldenHills.vn";
+            var emailto = "quyendn@gmail.com";
+            var webdomain = "roche.vn";
             var dataJSON = { "fullname": name, "phone": phone, "email": email, "address": address, "description": description, 'webdomain': webdomain, "emailto": emailto }
             showLoadingContactImage('content-download', 'frmContentDownload');
             $.ajax({
@@ -91,7 +91,7 @@ $(document).ready(function() {
                 },
                 complete: function (jqXHR, textStatus) {
                     $('#frmRegDownload').bootstrapValidator('resetForm', true);
-                    toastr.success('Bạn đã đăng ký tư vấn thành công. Golden Hills sẽ liên hệ lại bạn trong vòng 24 giờ làm việc. Vui lòng liên hệ số điện thoại 0929333888 khi cần hỗ trợ nhanh', { timeOut: 5000 })
+                    toastr.success('Bạn đã đăng ký tư vấn thành công. Roche sẽ liên hệ lại bạn trong vòng 24 giờ làm việc. Vui lòng liên hệ số điện thoại 18001597 khi cần hỗ trợ nhanh', { timeOut: 5000 })
                     hideLoadingContactImage('content-download', 'frmContentDownload');
                     //location.href = 'cam-on.html';
                 }
@@ -133,7 +133,7 @@ $(document).ready(function() {
             var email = '';
             var address = '';
             var description ='';
-            var emailto = "quyendn84@gmail.com";
+            var emailto = "minhhien125814@gmail.com";
             var webdomain = "GoldenHills.vn";
             var dataJSON = { "fullname": name, "phone": phone, "email": email, "address": address, "description": description, 'webdomain': webdomain, "emailto": emailto }
             showLoadingContactImage('content-top-reg', 'formContentContactMobile');
@@ -206,7 +206,7 @@ $(document).ready(function() {
             var email = $('#txtEmailMobile').val();
             var address = '';
             var description = '';
-            var emailto = "quyendn84@gmail.com";
+            var emailto = "minhhien125814@gmail.com";
             var webdomain = "GoldenHills.vn";
             var dataJSON = { "fullname": name, "phone": phone, "email": email, "address": address, "description": description, 'webdomain': webdomain, "emailto": emailto }
             showLoadingContactImage('content-mobile-bottom-reg', 'formContentContactMobileBottom');
