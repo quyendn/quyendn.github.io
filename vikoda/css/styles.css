@@ -379,7 +379,6 @@ strong, b{
 #questionGroup .panel{
 	background:none;
 	border:none;
-	text-align:center;
 	margin-bottom:15px;
 	}
 #questionGroup .panel-heading{
@@ -390,9 +389,13 @@ strong, b{
 	color:#222;
 	margin-left:20px;
 	margin-right:20px;
-	padding:10px;
+	padding:10px 30px;
 	background:#fff;
 	font-size:22px;
+	}
+#questionGroup .panel li{
+	list-style:none;
+	margin-bottom:10px;
 	}
 /**/
 #section3{
