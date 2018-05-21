@@ -1,0 +1,109 @@
+
+@font-face {
+  font-family: 'UTM Avo';
+  src: url('../font/UTM Avo.eot');
+  src: url('../font/UTM Avo.woff2') format('woff2'),
+       url('../font/UTM Avo.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'UTMAvo';
+  src: url('../font/UTMAvo.woff') format('woff'),
+       url('../font/UTMAvo.ttf') format('truetype'),
+       url('../font/UTMAvo.svg#UTMAvo') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'UTM AvoItalic';
+  src: url('../font/UTM AvoItalic.eot');
+  src: url('../font/UTM AvoItalic.woff2') format('woff2'),
+       url('../font/UTM AvoItalic.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'UTMAvo-Italic';
+  src: url('../font/UTMAvo-Italic.woff') format('woff'),
+       url('../font/UTMAvo-Italic.ttf') format('truetype'),
+       url('../font/UTMAvo-Italic.svg#UTMAvo-Italic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'UTM AvoBold';
+  src: url('../font/UTM AvoBold.eot');
+  src: url('../font/UTM AvoBold.woff2') format('woff2'),
+       url('../font/UTM AvoBold.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'UTMAvoBold';
+  src: url('../font/UTMAvoBold.woff') format('woff'),
+       url('../font/UTMAvoBold.ttf') format('truetype'),
+       url('../font/UTMAvoBold.svg#UTMAvoBold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'UTM AvoBold_Italic';
+  src: url('../font/UTM AvoBold_Italic.eot');
+  src: url('../font/UTM AvoBold_Italic.woff2') format('woff2'),
+       url('../font/UTM AvoBold_Italic.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'UTMAvo-BoldItalic';
+  src: url('../font/UTMAvo-BoldItalic.woff') format('woff'),
+       url('../font/UTMAvo-BoldItalic.ttf') format('truetype'),
+       url('../font/UTMAvo-BoldItalic.svg#UTMAvo-BoldItalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'UTM HelveBold';
+  src: url('../font/UTM HelveBold.eot');
+  src: url('../font/UTM HelveBold.woff2') format('woff2'),
+       url('../font/UTM HelveBold.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'UTMHelveBold';
+  src: url('../font/UTMHelveBold.woff') format('woff'),
+       url('../font/UTMHelveBold.ttf') format('truetype'),
+       url('../font/UTMHelveBold.svg#UTMHelveBold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'UTM Helve';
+  src: url('../font/UTM Helve.eot');
+  src: url('../font/UTM Helve.woff2') format('woff2'),
+       url('../font/UTM Helve.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'UTMHelve';
+  src: url('../font/UTMHelve.woff') format('woff'),
+       url('../font/UTMHelve.ttf') format('truetype'),
+       url('../font/UTMHelve.svg#UTMHelve') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
