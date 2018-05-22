@@ -24,6 +24,10 @@ a{
 a:hover{
 	color:#148f24;
 	}
+a.section5Desc
+{
+    color:#333;
+}
 #scroll-fix-top{
     width: 100%;
 }
