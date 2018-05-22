@@ -492,13 +492,11 @@
             var id = $(this).attr('rel');
             $('.section5Desc').removeClass("in");
             $('#' + id).addClass("in");
-        });
-        $(".section5Desc2").on('click', (function () {
+        }).mouseleave(function () {
             var id = $(this).attr('rel');
             $('.section5Desc').removeClass("in");
             $('#' + id).addClass("in");
-        })
-        );
+        });
         new WOW().init();
         smoothScroll.init({
             speed: 1000,
