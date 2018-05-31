@@ -28,7 +28,9 @@
         	<div class="affix" data-spy="affix" data-offset-top="79" id="">
                 <div class="container">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"></button>
-                    <a class="navbar-brand" href="#" ><img src="img/logo.png"></a>
+                    <a class="navbar-brand hidden-xs" href="#" ><img src="img/logo.png"></a>
+                    <a class="navbar-brand visible-xs" href="#" ><img src="img/logoMobi.png"></a>
+                    <a class="hotlineMobi visible-xs" href="#" ><img src="img/hotlineMobi.png"></a>
                     <nav class="collapse navbar-collapse" role="navigation">
                         <ul class="nav navbar-nav navbar-right">
                             <li class=""><a data-scroll="" data-options="easing: easeInQuad" href="#section1" class="navbar1">TRANG CHỦ</a></li>
@@ -51,14 +53,21 @@
                 <ol class="carousel-indicators">
                     <li class="active" data-slide-to="0" data-target="#heartbanner-slide"></li>
                     <li data-slide-to="1" data-target="#heartbanner-slide" class=""></li>
+                    <li data-slide-to="2" data-target="#heartbanner-slide" class=""></li>
                 </ol>
                 <div role="listbox" class="carousel-inner">
                     <div class="item active">
                     	<div class="text">Chuẩn mực nghệ thuật sống mới</div>
                         <img src="img/slide1.jpg">
-                    
                     </div>
-                    <div class="item"><img src="img/slide1.jpg"></div>
+                    <div class="item">
+                    	<div class="text">Kiệt tác dành cho người kiệt xuất</div>
+                        <img src="img/slide2.jpg">
+                    </div>
+                    <div class="item">
+                    	<div class="text">Dấu ấn vượt tầm thượng lưu</div>
+                        <img src="img/slide3.jpg">
+                    </div>
                 </div>
                 <a data-slide="prev" role="button" href="#heartbanner-slide" class="left carousel-control hidden"></a>
                 <a data-slide="next" role="button" href="#heartbanner-slide" class="right carousel-control hidden"></a>
@@ -82,15 +91,16 @@
         <div class="section" id="section2">
         	<div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-7 col-md-7 col-sm-7"><img src="img/map.jpg"></div>
-                    <div class="col-lg-4 col-md-4 col-sm-5">
-                        <p class="text-center">Vị trí vàng trung tâm khu đô thị Nam Thành Phố</p>
-                        <p>TNR EverGreen được bao quanh bởi 3 dòng sông lớn. Vị thế long mạch vòng cung: phía đông giáp mạch nhánh rạch Ông Đội, cửa bắc giáp rạch Ông Đội và phía tây giáp sông Phú Xuân. Điều này đã đem lại nhiều tài lộc trường tồn, vững chắc.</p>
+                    <div class="col-lg-4 col-md-4 col-sm-5 col-lg-push-7 col-md-push-7 col-sm-push-7">
+                        <p>Vị trí vàng trung tâm khu đô thị Nam Thành Phố TNR EverGreen được bao quanh bởi 3 dòng sông lớn. Vị thế long mạch vòng cung: phía đông giáp mạch nhánh rạch Ông Đội, cửa bắc giáp rạch Ông Đội và phía tây giáp sông Phú Xuân. Điều này đã đem lại nhiều tài lộc trường tồn, vững chắc.</p>
+                    </div>
+                    <div class="col-lg-7 col-md-7 col-sm-7 col-lg-pull-4 col-md-pull-4  col-sm-pull-4">
+                    	<div class="map"><img src="img/map2.jpg"></div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="section" id="section3">
+        <div class="section hidden-xs" id="section3">
             <div class="container">
             	<div class="row">
                 	<div class="col-lg-4 col-md-4 col-sm-4"><img src="img/vt1.jpg"></div>
@@ -110,48 +120,49 @@
         </div>
         
         <div class="section" id="section5">
-            <div data-ride="carousel" class="carousel villa" id="villa-slide">
+            
+            <div data-ride="carousel" class="carousel slide" id="villa-slide">
                 <!-- Indicators -->
-                <ol class="carousel-indicators hidden">
+                <ol class="carousel-indicators" style="display:none;">
                     <li class="active" data-slide-to="0" data-target="#villa-slide"></li>
                     <li data-slide-to="1" data-target="#villa-slide" class=""></li>
                     <li data-slide-to="2" data-target="#villa-slide" class=""></li>
                 </ol>
                 <div role="listbox" class="carousel-inner">
                     <div class="item active">
+                    	<div class="slideImg"><img src="img/slideVilla1.jpg"></div>
                     	<div class="text">
                         	<div class="container">
                                 <h2>LỄ RA MẮT EVERGREEN</h2>
                                 <h3>KIỆT TÁC NGHỆ THUẬT SỐNG </h3>
-                                <p>Liên hệ tham dự chương trình: 093 88 55 777</p>
+                                <p class="hidden-xs">Liên hệ tham dự chương trình: 093 88 55 777</p>
                             </div>
                         </div>
                         <div class="time">
-                        	<div class="container text-right">
+                        	<div class="container">
                                 <p>Thời gian: 8h - 12h</p>
                                 <p>Ngày: 03/06/2018</p>
                                 <p>The Reverie Saigon Hotel</p>
                             </div>
                         </div>
-                        <img src="img/slideVilla1.jpg">
                     </div>
                     <div class="item">
-                    	<div class="text">
-                        	<div class="container">
-                            	<h3>Cái bắt tay làm nên lịch sử</h3>
-                                <h2>TNR  Holdings - Tài nguyên</h2>
-                            </div>
-                        </div>
-                    	<img src="img/slideVilla1.jpg">
-                    </div>
-                    <div class="item">
+                    	<div class="slideImg"><img src="img/slideVilla2.jpg"></div>
                     	<div class="text">
                         	<div class="container">
                                 <h2>city villas</h2>
                                 <p style="color:#fff;">Đáp ứng tiêu chuẩn sống năng động nhưng không kém phần thượng lưu</p>
                             </div>
                         </div>
-                    	<img src="img/slideVilla1.jpg">
+                    </div>
+                    <div class="item">
+                    	<div class="slideImg"><img src="img/slideVilla3.jpg"></div>
+                    	<div class="text">
+                        	<div class="container">
+                            	<h3>Cái bắt tay làm nên lịch sử</h3>
+                                <h2>TNR  Holdings - Tài nguyên</h2>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <a data-slide="prev" role="button" href="#villa-slide" class="left carousel-control"></a>
@@ -159,7 +170,7 @@
             </div>
         </div>
         
-        <div class="section" id="section6">
+        <div class="section hidden-xs" id="section6">
         	<div class="container">
             	<h2 class="text-uppercase">TỔ HỢP TIỆN ÍCH VƯỢT TẦM THẾ GIớI</h2>
                 <div class="row">
@@ -180,7 +191,7 @@
                 </div>
             </div>
         </div>
-        <div class="section" id="section7">
+        <div class="section hidden-xs" id="section7">
             <div class="container">
             	<div class="text">
                     <h2>MARINA CLUB</h2>
@@ -202,7 +213,7 @@
                 
             </div>
         </div>
-        <div class="section" id="section8">
+        <div class="section hidden-xs" id="section8">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-6 col-md-6 col-sm-6 text-right">
@@ -225,6 +236,65 @@
                 </div>
             </div>
         </div>
+        <div class="visible-xs" id="slideMobile">
+            <h2 class="text-uppercase">TỔ HỢP TIỆN ÍCH VƯỢT TẦM THẾ GIớI</h2>
+            <div class="owl-carousel slideMobile">
+                <div class="item">
+                    <div id="seciton6">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6"><img src="img/tienich1.jpg"></div>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="text">
+                                    <h3>CITY CLUB</h3>
+                                    <p class="fa-2">GẮN KẾT CỘNG ĐỒNG THƯỢNG LƯU</p>
+                                    <p>Không gian mở sang trọng đầy quyền rũ là lối kiến trúc thời thượng được áp dụng cho CityClub. Hệ thống tiện ích:</p>
+                                    <ol class="listItemol">
+                                        <li><span>1</span> Câu lạc bộ vương giả </li>
+                                        <li><span>2</span> Khu cà phê trong nhà ngoài trời</li>
+                                        <li><span>3</span> Sky Garden</li>
+                                        <li><span>4</span> Bar Lounge</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div id="section7">
+                    	<div><img src="img/bgClup.jpg"></div>
+                        <div class="text">
+                            <h2>MARINA CLUB</h2>
+                            <p class="fa-2">VẺ ĐẸP MÊ HOẶC CỦA BẢN HÒA CA NƯỚC VÀ ÁNH SÁNG </p>
+                            <p>Marina Club được chăm chút tỉ mĩ từng chi tiết từ thiết kế, thi công cũng như công năng sử dụng:</p>
+                            <ol class="listItemol">
+                                <li><span>1</span> Khu cà phê ngoài trời</li>
+                                <li><span>4</span> Khu nhà hàng đẳng cấp</li>
+                                <li><span>2</span> Cigar Club</li>
+                                <li><span>5</span> WINE BAR</li>
+                                <li><span>3</span> VIP Lounge</li>
+                            </ol>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="slideMobi-img"><img src="img/hoboi.jpg"></div>
+                    <div class="text"><h2>Hồ bơi lười</h2></div>
+                </div>
+                <div class="item">
+                    <div class="slideMobi-img"><img src="img/cvbosong.jpg"></div>
+                    <div class="text"><h2>Khu công viên bờ sông xanh</h2></div>
+                </div>
+                <div class="item">
+                    <div class="slideMobi-img"><img src="img/duthuyen.jpg"></div>
+                    <div class="text">
+                        <h2>PRIVATE MARINA</h2>
+                        <p>BẾN DU THUYỀN CHO TỪNG BIỆT THỰ</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
         <div class="section" id="section9">
             <div class="container">
             	<h2>PHÁT TRIỂN BỀN VỮNG VỚI HỆ THỐNG GIAO THÔNG HÀNG ĐẦU</h2>
@@ -234,73 +304,76 @@
                             <p class="text-uppercase">Giao thông nội khu Ngầm hóa Lan tỏa và gắn kết</p>
                             <p>Giao thông đường bộ ngầm hóa, làm giảm thiểu tối đa lượng khí thải, khói bụi và tiếng ồn thải ra môi trường, giúp con người gần gũi với thiên nhiên nhiều hơn</p>
                         </div>
-                        <img src="img/giaothong1.jpg">
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-6">
-                        <img src="img/giaothong2.jpg">
+                    	<img src="img/giaothong2.jpg">
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-lg-push-6 col-md-push-6 col-sm-push-6">
                         <div class="text">
                             <p class="text-uppercase">Hệ thống Giao thông đường thủy</p>
                             <p>Tuyến giao thông đường thủy thâm nhập sâu vào trong nội khu. Có thể đi thuyền từ rạch Ông Đội để di chuyển vào kênh đào dẫn đến các căn biệt thự bên trong. Từ TNR EverGreen cũng có thể di chuyển dễ dàng đến khu vực trung tâm thành phố hay du lịch đến vùng đệm sinh quyển Cần Giờ </p>
                         </div>
                     </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-lg-pull-6 col-md-pull-6 col-sm-pull-6">
+                        <img src="img/giaothong1.jpg">
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="section" id="section10">
-            <div class="container">
-            	<h2 class="text-uppercase">TIN TỨC -  sự kiện</h2>
-                <div class="row" id="list-article-box">
-                    <script type="text/javascript">
-                        $(function () {
-                            var url = 'https://alpha.f5academy.net/api/articleservice/?listArticle&userName=evergreen&pageSize=4';
-                            $.ajax({
-                                type: 'GET',
-                                url: url,
-                                async: false,
-                                contentType: "json",
-                                dataType: 'jsonp',
-                                success: function (data) {
-                                    $.each(data, function (index, item) {
-                                        if (index == 0 || index == 1) {
-                                            $("#itemTemplateArticleTop").tmpl(item).appendTo("#list-article-box");
-                                        }
-                                        else
-                                        {
-                                            $("#itemTemplateArticleBottom").tmpl(item).appendTo("#list-article-box");
-                                        }
-                                    });
-                                },
-                                error: function (data, status, jqXHR) {
+    <div class="section" id="section10">
+        <div class="container">
+            <h2 class="text-uppercase">TIN TỨC -  sự kiện</h2>
+            <div class="row" id="list-article-box">
+                <script type="text/javascript">
+                    $(function () {
+                        var url = 'https://alpha.f5academy.net/api/articleservice/?listArticle&userName=evergreen&pageSize=4';
+                        $.ajax({
+                            type: 'GET',
+                            url: url,
+                            async: false,
+                            contentType: "json",
+                            dataType: 'jsonp',
+                            success: function (data) {
+                                $.each(data, function (index, item) {
+                                    if (index == 0 || index == 1) {
+                                        $("#itemTemplateArticleTop").tmpl(item).appendTo("#list-article-box");
+                                    }
+                                    else {
+                                        $("#itemTemplateArticleBottom").tmpl(item).appendTo("#list-article-box");
+                                    }
+                                });
+                            },
+                            error: function (data, status, jqXHR) {
 
-                                }
-                            });
+                            }
                         });
-                    </script>
-                    <script id="itemTemplateArticleTop" type="text/x-jquery-tmpl">
-                        <div class="col-lg-6 col-md-6 col-sm-6">
-                            <a href="${link}">
-                                <p>${title}</p>
-                                <img src="https://alpha.f5academy.net${imagePath}">
-                            </a>
-                        </div>
-                        
-                    </script>
-                    <script id="itemTemplateArticleBottom" type="text/x-jquery-tmpl">
-                        <div class="col-lg-3 col-md-3 col-sm-3">
-                            <a href="${link}">
-                                <p>${title}</p>
-                                <img src="https://alpha.f5academy.net${imagePath}">
-                            </a>
-                        </div>
+                    });
+                </script>
+                <script id="itemTemplateArticleTop" type="text/x-jquery-tmpl">
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <a href="${link}">
+                            <p>${title}</p>
+                            <img src="https://alpha.f5academy.net${imagePath}">
+                        </a>
+                    </div>
 
-                    </script>
-                    
-                </div>
+                </script>
+                <script id="itemTemplateArticleBottom" type="text/x-jquery-tmpl">
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <a href="${link}">
+                            <p>${title}</p>
+                            <img src="https://alpha.f5academy.net${imagePath}">
+                        </a>
+                    </div>
+
+                </script>
+
             </div>
         </div>
+    </div>
         <div class="section" id="section11">
             <div class="container"><h2 class="text-uppercase">Đối tác</h2></div>
-            <div><img src="img/doitac.jpg"></div>
+            <div class="hidden-xs"><img src="img/doitac.jpg"></div>
             <div class="partner">
                 <div class="container">
                     <div class="row" >
@@ -367,7 +440,7 @@
                                 <input type="text" name="email" class="form-control" id="txtEmail" placeholder="Email">
                             </div>
                             <div class="form-group">
-                                <input type="text" name="phone" class="form-control" id="txtPhone" placeholder="Điện thoại">
+                                <input type="text" name="phone" onkeypress="return AllowNumberOnly(event);" class="form-control" id="txtPhone" placeholder="Điện thoại">
                             </div>
                             <div class="form-group">
                                 <button class="btn btn-default btn-lg">Gửi yêu cầu</button>
@@ -388,15 +461,19 @@
             </div>
       </div>
     </div>
-    
-    
-    
-    
     <script src="js/smooth-scroll.js"></script>
     <script type="text/javascript" src="js/bootstrapValidator.min.js"></script>
     <script type="text/javascript" src="js/form-validation.js"></script>
     <script type="text/javascript" src="js/toastr.js"></script>
     <script type="text/javascript">
+        function AllowNumberOnly(evt) {
+            evt = (evt) ? evt : event;
+            var charCode = (evt.charCode) ? evt.charCode : ((evt.keyCode) ? evt.keyCode : ((evt.which) ? evt.which : 0));
+            if ((charCode > 31) && (charCode < 48 || charCode > 57) && charCode != 8 && charCode != 37 && charCode != 39 && charCode != 45 && charCode != 46) {
+                return false;
+            }
+            return true;
+        }
         $(document).ready(function () {
             /* Get iframe src attribute value i.e. YouTube video url
        and store it in a variable */
@@ -468,7 +545,7 @@
         smoothScroll.init({
             speed: 1000,
             easing: 'easeInOutCubic',
-            offset: 30,
+            offset: 90,
             updateURL: false,
             callbackBefore: function (toggle, navbar1) { },
             callbackAfter: function (toggle, navbar1) { }

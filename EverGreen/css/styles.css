@@ -135,14 +135,12 @@ h1, h2, h3{
 .affix .navbar-nav .active a{
 	color:#fff}
 
-
-#headerFix .row{
-	margin-left:-5px;
-	margin-right:-5px;
+.hotlineMobi{
+	margin-top:20px;
 	}
-#headerFix .row>div{
-	padding-right:5px;
-	padding-left:5px;
+.navbar-brand.visible-xs{
+	margin-right:20px;
+	margin-top:5px;
 	}
 /**/
 .section{
@@ -188,6 +186,7 @@ h1, h2, h3{
 	position:absolute;
 	color:#fff;
 	font-size:20px;
+	z-index:9;
 	}
 
 #btnRegister{
@@ -233,6 +232,23 @@ h1, h2, h3{
 	color:#1d4e58;
 	text-align:justify;
 	}
+#section2 .map{
+	position:relative;
+	height:220px;
+	overflow:hidden;
+	margin-right:-15px;
+	margin-left:-15px;
+	}
+#section2 .map img{
+	position:absolute;
+	bottom:0;
+	right:0;
+	left:auto;
+	max-width:none;
+	}
+
+	
+	
 #section3{
 	padding-top:25px;
 	padding-bottom:25px;
@@ -272,17 +288,21 @@ h1, h2, h3{
 	right:0;
 	}
 #section5 .text h2, #section5 .text h3, #section5 .text p{
-	padding:5px 30px;
-	
+	padding:0px 30px;
 	text-transform:uppercase;
 	}
 #section5 .text h2{
 	color:#ffb302;
 	line-height:normal;
-	display:inline-block;margin:0;
+	display:inline-block;
+	margin:0;
+	line-height:40px;
+	font-size:30px;
+	height:50px;
 	}
 #section5 .text h3{
 	color:#1d4e58;
+	margin:10px 0;
 	}
 #section5 .text p{
 	color:#996b01;
@@ -294,7 +314,7 @@ h1, h2, h3{
 	left:0;
 	font-size:20px;
 	color:#1d4e58;
-	
+	text-align:right;
 	}
 #section5 .time p{
 	margin:0;
@@ -310,11 +330,12 @@ h1, h2, h3{
 .btn{
 	outline:none;
 	}
-
 #section5 .textPhone{
 	margin-bottom:30px;
 	text-align:center;
 	}
+
+	
 #section6{
 	padding-bottom:15px;
 	}
@@ -460,7 +481,7 @@ h1, h2, h3{
 .partner .inner h3{
 	height:60px;
 	color:#b49d64;
-	font-size:20px;
+	font-size:18px;
 	line-height:30px;
 	text-transform:uppercase;
 	}
@@ -549,6 +570,57 @@ h1, h2, h3{
 #popupVideo .modal-body{
 	padding:0;
 	}
+#slideMobile h2.text-uppercase, #slideMobile .text{
+	padding-right:15px;
+	padding-left:15px;
+	
+	}
+#slideMobile h2{
+	color:#ffb302;
+	margin:0;
+	padding:15px;
+}
+#slideMobile .text{
+	color:#fff;
+	}
+#slideMobile .text h3{
+	color:#ffb302;
+	}
+#slideMobile .text h2{
+	padding:15px 0;
+	font-size:20px;
+	}
+#slideMobile .slideMobi-img{
+	position:relative;
+	height:300px;
+	overflow:hidden;
+	}
+#slideMobile .slideMobi-img img{
+	height:300px;
+	position:absolute;
+	max-width:none !important;
+	}
+#slideMobile .owl-stage-outer{
+	height:auto !important;
+	}
+#slideMobile .owl-dots{
+	display:none;
+	}
+#slideMobile .owl-nav{
+	display:block;
+	}
+
+#slideMobile .owl-nav .owl-prev{
+	left:0;
+	top:100px;
+	}
+#slideMobile .owl-nav .owl-next{
+	right:0;
+	top:100px;
+	}
+#slide img, .map img, #section5 img, #slideMobile img, #section9 img{
+	min-width:100%;
+	}
 /**/
 img{
 	max-width:100%}
@@ -561,6 +633,9 @@ img{
 	
 	}
 @media (max-width:768px){
+	body{
+		font-size:13px;
+		}
 	#header{
 		position:relative;
 		min-height:70px;
@@ -585,21 +660,30 @@ img{
 	#slide .item .text{
 		top:10px;
 		left:10px;
-		font-size:16px;
+		font-size:14px;
 		padding:10px;
 		}
 	#section1 .col-lg-5, #section3 .col-lg-4, #section1 .video, #section6 .row>div, #section7 .col-lg-4, #section8 .col-lg-6, #section8 .col-lg-6>div:first-child, #section9 .col-lg-6, #section10 .row>div, .partner .col-lg-4{
 		margin-bottom:15px;
 		}
+		
+	#section2 .map img{
+		height:280px;
+		}
+		
 	#footer{
 		font-size:14px;
 		padding-bottom:100px;
+		color:#fff;
 		}
 	#footer .phone{
 		font-size:24px;
 		}
 	#footer h2{
 		font-size:18px;
+		}
+	#footer img{
+		height:40px;
 		}
 	#section5 .text, #section5 .time{
 		position:static;
@@ -610,19 +694,37 @@ img{
 		padding: 0;
 		margin:5px 0;
 		}
-	#section5 .text{
+	#section5 .text, #section5 .time{
 		background:#083f48;
+		text-align:center !important;
+		font-size:14px;
+		color:#fff;
+		padding-bottom:15px;
 		}
-	#section5 .text h2{
+	#section5 .text h2, #section5 .text h3{
 		background:none;
-		font-size:18px;
+		font-size:16px;
+		height:auto;
+		line-height:normal;
 		}
 	#section5 .text h3{
 		color:#fff;
-		font-size:16px;
 		}
-	#section5 .time{
-		font-size:14px;
+	#section5 .slideImg{
+	position:relative;
+	}
+	#section5 .slideImg{
+		height:240px;
+		overflow:hidden;
+		}
+	#section5 .slideImg img{
+		position:absolute;
+		height:240px;
+		top:0;
+		max-width:none !important;
+		}
+	#section5 #villa-slide .carousel-control{
+		background-position:50% 110px !important;
 		}
 	.listItemol li{
 		width:100%;
@@ -645,10 +747,72 @@ img{
 		right:30px;
 		}
 	#section9 .col-lg-6 .text{
-		padding:15px 0;
+		padding:0;
 		}
 	.partner .inner h3{
 		height:auto;
+		}
+	#slide .item{
+		height:280px;
+		text-align:center;
+		overflow:hidden;
+		}
+	#slide .item img{
+		position:absolute;
+		top:0;
+		left:0;
+		width:auto;
+		height:280px;
+		max-width:none !important;
+		}
+	#section4, #slideMobile{
+		background:url(../img/bgVilla.jpg) no-repeat 50% 100% / auto 100%;
+		}
+	h2.text-uppercase{
+		font-size:24px !important;
+		}
+	#section6 h2, #section6 h3, #section10 h2, #section11 h2, .partner .inner h3, #footer .phone{
+		color:#ffb302;
+		}
+	#section6{
+		color:#fff;
+		}
+	#slideMobile #section7{
+		background:none;
+		}
+	#section10, #footer{
+		background:url(../img/bgHeader.png) no-repeat 0 0 / 100% 100%;
+		}
+	#section10 a p{
+		font-size:15px;
+		text-align:left;
+		}
+	#section10 .col-lg-3 a p, #section10 .col-lg-6:nth-child(2) a p{
+		font-size:15px;
+		position:static;
+		padding:0 0 0 20px;
+		background:url(../img/dotnews.gif) no-repeat 0 10px;
+		}
+	#section11{
+		background:#052126;
+		border-top:2px solid #030909;
+		}
+	.partner{
+		background-size:auto 100% !important;
+		}
+	.partner .inner{
+		background:none;
+		padding:0;
+		}
+	.partner .inner>div{
+		padding:0 15px;
+		background:rgba(8,63,72,0.5);
+		}
+	.partner .inner p{
+		font-size:15px;
+		}
+	.partner .inner h3{
+		font-size:16px;
 		}
 	}
 
@@ -684,6 +848,7 @@ img{
   user-select: none;
 }
 .owl-carousel .item{
+	height:auto;
 	
 	}
 .owl-carousel .item img{
@@ -709,13 +874,13 @@ img{
 	}
 .owl-loaded .owl-prev{
 	left:-60px;
-	background:url(../img/priv.png) no-repeat 50% 50%
+	background:url(../img/prev.png) no-repeat 50% 50%
 	}
 .owl-loaded .owl-next{
 	right:-60px;
 	background:url(../img/next.png) no-repeat 50% 50%
 	}
-#section2 .owl-loaded .owl-prev, #section2.owl-loaded .owl-next{
+#section2 .owl-loaded .owl-prev, #section2 .owl-loaded .owl-next{
 	display:none;
 	}
 .owl-dots{
