@@ -13,6 +13,18 @@
     <meta property="og:site_name" content="NOVAON" />
     <meta itemprop="name" content="" />
     <meta itemprop="description" content="" />
+    <!-- Google Tag Manager -->
+    <script>
+    (function (w, d, s, l, i) {
+    w[l] = w[l] || []; w[l].push({
+    'gtm.start':
+    new Date().getTime(), event: 'gtm.js'
+    }); var f = d.getElementsByTagName(s)[0],
+    j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-WX8HGW3');</script>
+        <!-- End Google Tag Manager -->
+
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700,700i,900&amp;subset=vietnamese" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -41,6 +53,13 @@
     </script>
 </head>
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WX8HGW3"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
     <div id="container">
         <div id="header">
             <div class="affix-top" data-spy="affix" data-offset-top="79" id="headerFix">
@@ -150,11 +169,11 @@
                 <div class="datetime">Từ ngày <strong>9/5/2018</strong> đến ngày <strong>21/5/2018</strong></div>
                 <div class="row">
                     <div class="col-lg-6 col-md-6 col-sm-6">
-                        <div class="info">Khi mua bộ máy đo đường huyết Accu-Chek® Instant SET (mmol/L)<br /> và hộp que Accu-Chek® Instant 25</div>
+                        <div class="info">Khi mua bộ máy đo đường huyết Accu-Chek®<br /> Instant SET (mmol/L) và hộp que Accu-Chek® Instant 25</div>
                         <div class="thumb"><img src="img/km1.png"></div>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-6">
-                        <div class="info">Khi mua bộ máy đo đường huyết Accu-Chek® Instant KIT (mg/dL)<br /> và hộp kim Accu-Chek® SoftClix 25</div>
+                        <div class="info">Khi mua bộ máy đo đường huyết Accu-Chek®<br /> Instant KIT (mg/dL) và hộp kim Accu-Chek® SoftClix 25</div>
                         <div class="thumb"><img src="img/km2.png"></div>
                     </div>
                 </div>
@@ -181,7 +200,7 @@
                                     <textarea class="form-control" name="content" id="txtContent" placeholder="Nội dung"></textarea>
                                 </div>
                                 <div class="form-group text-right">
-                                    <button class="btn btn-default">Gửi</button>
+                                    <button class="btn btn-default btn-lg"  data-toggle="modal">Gửi</button>
                                 </div>
                             </div>
                             <div id="content-download"></div>
@@ -208,9 +227,25 @@
             </div>
 
         </div>
-
-
     </div>
+    
+    <div class="modal fade" id="registerpopup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="alertContact">
+                    <div class="inner">
+                    <p>Câu hỏi của bạn đã được gửi về cho <strong>TTCSKH</strong> của Roche.</p>
+                    <p>Chúng tôi sẽ liên hệ lại với bạn trong thời gian sớm nhất.</p>
+                    <p>Hoặc bạn có thể gọi số <strong><a href="tel:18001597">18001597</a></strong> (trong giờ hành chính) khi cần hỗ trợ nhanh</p>
+                    </div>
+                </div>
+          </div>
+    </div>
+  </div>
+</div>
+    
+    
     <script src="js/smooth-scroll.js"></script>
     <script type="text/javascript" src="js/bootstrapValidator.min.js"></script>
     <script type="text/javascript" src="js/form-validation.js"></script>

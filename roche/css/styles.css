@@ -341,12 +341,12 @@ ul.reset, ol.reset{
 #section4 .col-lg-3 p{
 	margin-top:15px;
 	}
-#frmContact .form-control{
+#frmContact .form-control, #frmRegDownload .form-control{
 	border:1px solid #00b9cb;
 	padding:10px;
 	height:auto;
 	}
-#frmContact .btn{
+#frmContact .btn, #frmRegDownload .btn{
 	border:1px solid #00b9cb;
 	padding:10px 30px;
 	background:#ebebeb;
@@ -517,4 +517,15 @@ margin:0;
 	background:#ba266a;
 	}
 	
-	
+/**/
+.modal-body{
+	padding:15px;
+	background:#00afc0;
+	}
+.alertContact .inner{
+	padding:60px 45px;
+	border:1px solid #fff;
+	color:#fff;
+	font-size:18px;
+	text-align:center;
+	}
