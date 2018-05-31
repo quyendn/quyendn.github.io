@@ -12,7 +12,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/jquery.nanoscroller.min.js"></script>
-    
+    <script src="js/jquery.tmpl.min.js"></script>
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="css/styles.css" rel="stylesheet" type="text/css" />
     <link href="css/font-face.css" rel="stylesheet" type="text/css" />
@@ -249,31 +249,52 @@
         <div class="section" id="section10">
             <div class="container">
             	<h2 class="text-uppercase">TIN TỨC -  sự kiện</h2>
-                <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-6">
-                    	<a href="">
-                            <p>EverGreen - Sự hoàn hảo của thiết kế và tiện ích xứng tầm cho giới thượng lưu</p>
-                            <img src="img/tin1.jpg">
-                        </a>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-6">
-                    	<a href="">
-                            <p>Xu hướng “bắt tay để hợp lực” của các ông lớn trên thị trường bất động sản</p>
-                            <img src="img/tin2.jpg">
-                        </a>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-3">
-                    	<a href="">
-                            <p>Bất động sản hạng sang Cái bắt tay tạo nên kiệt tác</p>
-                            <img src="img/tin3.jpg">
-                        </a>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-3">
-                    	<a href="">
-                            <p>Ai đứng đằng sau dự án EverGreen?</p>
-                            <img src="img/tin4.jpg">
-                        </a>
-                    </div>
+                <div class="row" id="list-article-box">
+                    <script type="text/javascript">
+                        $(function () {
+                            var url = 'https://alpha.f5academy.net/api/articleservice/?listArticle&userName=evergreen&pageSize=4';
+                            $.ajax({
+                                type: 'GET',
+                                url: url,
+                                async: false,
+                                contentType: "json",
+                                dataType: 'jsonp',
+                                success: function (data) {
+                                    $.each(data, function (index, item) {
+                                        if (index == 0 || index == 1) {
+                                            $("#itemTemplateArticleTop").tmpl(item).appendTo("#list-article-box");
+                                        }
+                                        else
+                                        {
+                                            $("#itemTemplateArticleBottom").tmpl(item).appendTo("#list-article-box");
+                                        }
+                                    });
+                                },
+                                error: function (data, status, jqXHR) {
+
+                                }
+                            });
+                        });
+                    </script>
+                    <script id="itemTemplateArticleTop" type="text/x-jquery-tmpl">
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <a href="${link}">
+                                <p>${title}</p>
+                                <img src="https://alpha.f5academy.net${imagePath}">
+                            </a>
+                        </div>
+                        
+                    </script>
+                    <script id="itemTemplateArticleBottom" type="text/x-jquery-tmpl">
+                        <div class="col-lg-3 col-md-3 col-sm-3">
+                            <a href="${link}">
+                                <p>${title}</p>
+                                <img src="https://alpha.f5academy.net${imagePath}">
+                            </a>
+                        </div>
+
+                    </script>
+                    
                 </div>
             </div>
         </div>
