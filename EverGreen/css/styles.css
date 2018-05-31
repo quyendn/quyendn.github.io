@@ -448,7 +448,7 @@ h1, h2, h3{
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0 );
 	}
 #section10 .col-lg-3 a p{
-	font-size:16px;
+	/*font-size:16px;*/
 	}
 #section10 .col-lg-3{
 	margin-top:10px;
