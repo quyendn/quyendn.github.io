@@ -338,8 +338,11 @@
                             dataType: 'jsonp',
                             success: function (data) {
                                 $.each(data, function (index, item) {
-                                    if (index == 0 || index == 1) {
+                                    if (index == 0) {
                                         $("#itemTemplateArticleTop").tmpl(item).appendTo("#list-article-box");
+                                    }
+                                    else if (index == 0) {
+                                        $("#itemTemplateArticleSecond").tmpl(item).appendTo("#list-article-box");
                                     }
                                     else {
                                         $("#itemTemplateArticleBottom").tmpl(item).appendTo("#list-article-box");
@@ -361,11 +364,20 @@
                     </div>
 
                 </script>
+                <script id="itemTemplateArticleSecond" type="text/x-jquery-tmpl">
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <a href="${link}">
+                            <p>${title}</p>
+                            <img class="hidden-xs" src="https://alpha.f5academy.net${imagePath}">
+                        </a>
+                    </div>
+
+                </script>
                 <script id="itemTemplateArticleBottom" type="text/x-jquery-tmpl">
                     <div class="col-lg-3 col-md-3 col-sm-3">
                         <a href="${link}">
                             <p>${title}</p>
-                            <img src="https://alpha.f5academy.net${imagePath}">
+                            <img class="hidden-xs" src="https://alpha.f5academy.net${imagePath}" >
                         </a>
                     </div>
 
@@ -391,7 +403,7 @@
                             <div class="inner">
                                 <div><img src="img/tainguyen.png"></div>
                                 <h3>CHỦ ĐẦU TƯ</h3>
-                                <p>Công ty TNHH Xây dựng -<br class="hidden-xs"> Sản xuất - Thương mại Tài Nguyên</p>
+                                <p>Công ty TNHH Xây dựng -<br class="hidden-xs"> <span style="white-space:nowrap;">Sản xuất - Thương mại</span> Tài Nguyên</p>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-4">
