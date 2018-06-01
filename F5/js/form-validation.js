@@ -68,7 +68,7 @@ $(document).ready(function() {
             var name = $('#txtName').val();
             var phone = $('#txtPhone').val();
             var email = $('#txtEmail').val();
-            var emailto = "quyendn84@gmail.com";
+            var emailto = "thenv202@gmail.com";
             var typeId = 1;
             var webdomain = "f5academy";
             var dataJSON = { "name": name, "email": email, "phone": phone, "emailto": emailto }
