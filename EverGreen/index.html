@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>EverGreen</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700,700i,900&amp;subset=vietnamese" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&amp;subset=vietnamese" rel="stylesheet"> 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
@@ -28,20 +28,23 @@
         	<div class="affix" data-spy="affix" data-offset-top="79" id="">
                 <div class="container">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"></button>
-                    <a class="navbar-brand hidden-xs" href="#" ><img src="img/logo.png"></a>
-                    <a class="navbar-brand visible-xs" href="#" ><img src="img/logoMobi.png"></a>
-                    <a class="hotlineMobi visible-xs" href="#" ><img src="img/hotlineMobi.png"></a>
+                    <a class="navbar-brand hidden-xs" href="/" ><img src="img/logo.png"></a>
+                    <a class="navbar-brand visible-xs" href="/"><img src="img/logoMobi.png"></a>
+                    <a class="hotlineMobi visible-xs" href="tel:0938855777"><img src="img/hotlineMobi.png"></a>
                     <nav class="collapse navbar-collapse" role="navigation">
                         <ul class="nav navbar-nav navbar-right">
                             <li class=""><a data-scroll="" data-options="easing: easeInQuad" href="#section1" class="navbar1">TRANG CHỦ</a></li>
                             <li class=""><a data-scroll="" data-options="easing: easeInQuad" href="#section1" class="navbar1">TỔNG QUAN</a></li>
                             <li class=""><a data-scroll="" data-options="easing: easeInQuad" href="#section2" class="navbar1">VỊ TRÍ</a></li>
                             <li class=""><a data-scroll="" data-options="easing: easeInQuad" href="#section4" class="navbar1">SẢN PHẨM</a></li>
-                            <li class=""><a data-scroll="" data-options="easing: easeInQuad" href="#section6" class="navbar1">TIỆN ÍCH</a></li>
+                            <li class="visible-xs"><a data-scroll="" data-options="easing: easeInQuad" href="#slideMobile" class="navbar1">TIỆN ÍCH</a></li>
+                            <li class="hidden-xs"><a data-scroll="" data-options="easing: easeInQuad" href="#section6" class="navbar1">TIỆN ÍCH</a></li>
                             <li class=""><a data-scroll="" data-options="easing: easeInQuad" href="#section9" class="navbar1">GIAO THÔNG</a></li>
                             <li class=""><a data-scroll="" data-options="easing: easeInQuad" href="#section10" class="navbar1">TIN TỨC</a></li>
                             <li class=""><a data-scroll="" data-options="easing: easeInQuad" href="#section11" class="navbar1">ĐỐI TÁC</a></li>
                             <li class=""><a data-scroll="" data-options="easing: easeInQuad" href="#footer" class="navbar1">LIÊN HỆ</a></li>
+
+                          
                         </ul>
                     </nav>
                 </div>
@@ -135,7 +138,7 @@
                         	<div class="container">
                                 <h2>LỄ RA MẮT EVERGREEN</h2>
                                 <h3>KIỆT TÁC NGHỆ THUẬT SỐNG </h3>
-                                <p class="hidden-xs">Liên hệ tham dự chương trình: 093 88 55 777</p>
+                                <p class="hidden-xs" style="font-size:14px;">Liên hệ tham dự chương trình: <span style="font-weight:bold;">093 88 55 777</span></p>
                             </div>
                         </div>
                         <div class="time">
@@ -322,7 +325,7 @@
         </div>
     <div class="section" id="section10">
         <div class="container">
-            <h2 class="text-uppercase">TIN TỨC -  sự kiện</h2>
+            <h2 class="text-uppercase">TIN TỨC -  SỰ KIỆN</h2>
             <div class="row" id="list-article-box">
                 <script type="text/javascript">
                     $(function () {
@@ -376,26 +379,26 @@
             <div class="hidden-xs"><img src="img/doitac.jpg"></div>
             <div class="partner">
                 <div class="container">
-                    <div class="row" >
-                        <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-lg-push-4 col-md-push-4 col-lg-sm-4">
                             <div class="inner">
-                            	<div><img src="img/tainguyen.png"></div>
-                                <h3>CHỦ ĐẦU TƯ</h3>
-                                <p>Công ty TNHH Xây dựng - Sản xuất - Thương mại Tài Nguyên</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-4">
-                            <div class="inner">
-                            	<div><img src="img/tnr.png"></div>
+                                <div><img src="img/tnr.png"></div>
                                 <h3>Hợp tác đầu tư - đơn vị quản lý và phát triển độc quyền</h3>
-                                <p>Công ty Cổ phần Đầu tư, Phát triển Bất động sản TNR Holdings Việt Nam</p>
+                                <p>Công ty Cổ phần Đầu tư, Phát triển<br class="hidden-xs"> Bất động sản TNR Holdings Việt Nam</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-lg-pull-4 col-md-pull-4 col-sm-pull-4">
+                            <div class="inner">
+                                <div><img src="img/tainguyen.png"></div>
+                                <h3>CHỦ ĐẦU TƯ</h3>
+                                <p>Công ty TNHH Xây dựng -<br class="hidden-xs"> Sản xuất - Thương mại Tài Nguyên</p>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-4">
                             <div class="inner">
-                            	<div><img src="img/maritime.png"></div>
-                                <h3>Đối tác tài chính chiến lược</h3>
-                                <p>Ngân hàng TMCP Hàng Hải Việt Nam</p>
+                                <div><img src="img/maritime.png"></div>
+                                <h3>Đối tác<br class="hidden-xs"> tài chính chiến lược</h3>
+                                <p>Ngân hàng TMCP Hàng Hải<br class="hidden-xs"> Việt Nam</p>
                             </div>
                         </div>
                     </div>
@@ -417,7 +420,7 @@
     </div>
     <div id="fixBottom">
     	<a href="tel:0938855777" class="btnPhone"><img src="img/iconPhone.gif"> <span class="hidden-xs">093 88 55 777</span></a>
-        <a href="" class="btnRegister" data-toggle="modal" data-target="#popupRegister">ĐĂNG KÝ THAM DỰ <span class="hidden-xs">LỄ RA MẮT DỰ ÁN</span></a>
+        <a href="" class="btnRegister" data-toggle="modal" data-target="#popupRegister">ĐĂNG KÝ THAM DỰ LỄ RA MẮT DỰ ÁN</a>
     </div>
     <!---->
     <div class="modal fade" id="popupRegister" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -545,7 +548,7 @@
         smoothScroll.init({
             speed: 1000,
             easing: 'easeInOutCubic',
-            offset: 90,
+            offset: 60,
             updateURL: false,
             callbackBefore: function (toggle, navbar1) { },
             callbackAfter: function (toggle, navbar1) { }
