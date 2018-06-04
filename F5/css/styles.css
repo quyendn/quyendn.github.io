@@ -243,6 +243,9 @@ a, .btn, button{
 	font-family: 'UTM AvoBold';
 	font-size:24px;
 	}
+#section1 img{
+	width:200px;
+	}
 #section1 .btn{
 	padding-right:30px;
 	padding-left:30px;
@@ -450,11 +453,12 @@ a, .btn, button{
 	padding:30px 30px;
 	}
 .modal .st-hd h3{
-	font-size:60px;
+	font-size:46px;
 	margin-top:0;
 	}
 .modal .st-hd h3 span{
-	font-size:30px;
+	font-size:24px;
+	line-height:normal;
 	}
 .modal .sapo{
 	font-size:22px;
@@ -582,6 +586,22 @@ img{
 		}
 	#aboutus .st-hd h3{
 		font-size:40px;
+		}
+	.modal .sapo{
+		padding-left:40px;
+		}
+	.modal .sapo:before{
+		width:30px;
+		height:30px;
+		background:url(../img/accolade.gif) no-repeat 0 0;
+		background-size:contain;
+		}
+	.modal .modal-body, #section6 .inner{
+		padding:15px;
+		}
+	.modal-body ol ul{
+		margin:0 0 0 10px;
+		padding:0;
 		}
 	}
 
