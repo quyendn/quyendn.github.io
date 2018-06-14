@@ -997,3 +997,7 @@ img{
     transform: rotate(0deg) scale(1) skew(1deg);
   }
 }
+
+.has-error .form-control-feedback{
+    padding-top:10px;
+}
