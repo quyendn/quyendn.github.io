@@ -85,21 +85,17 @@ h1, h2, h3{
 
 #header{
 	border:none;
-	position:absolute;
-	top:0;
-	left:0;
-	right:0;
 	padding:0;
 	z-index:9999;
 	min-height:115px;
-	background: rgba(0,0,0,0.9);
+	background: url(../img/bg-hd.gif) repeat 50% 0;
 	}
 #header .affix{
 	left:0;
 	right:0;
-	top:0;
+	top:0;z-index:9999;
 	min-height:70px;
-	background: rgba(0,0,0,0.9);
+	background: url(../img/bg-hd.gif) repeat 50% 0;
 	}
 
 .navbar-collapse{
@@ -129,8 +125,8 @@ h1, h2, h3{
 	line-height:115px;
 	}
 .navbar-nav .active a, .navbar-nav a:hover,  .navbar-nav li a:focus{
-	color:#fff;
-	background:#1f565b !important;
+	color:#111;
+	background:#fff !important;
 	}
 .affix .navbar-nav .active a{
 	color:#fff}
@@ -216,7 +212,7 @@ h1, h2, h3{
 	}
 .slideText .textBottom{
 	bottom:100px;
-	left:0;
+	left:80px;
 	font-size:20px;
 	line-height:normal;
 	position:absolute;
@@ -244,7 +240,7 @@ h1, h2, h3{
 	}
 .formRegister{
 	position:absolute;
-	right:0;
+	right:80px;
 	bottom:100px;
 	padding:15px;
 	background:rgba(255,255,255,0.9);
@@ -291,10 +287,19 @@ h1, h2, h3{
 	height:12px;
 	background:#000;
 	}
-	
-#section1{
-	background:#000;
+#heartbanner-slide .carousel-control{
 	background-size:cover;
+	width:70px;
+	}
+#heartbanner-slide .carousel-control.right{
+	background:url(../img/next.png) no-repeat 50% 50%;
+	}
+#heartbanner-slide .carousel-control.left{
+	background:url(../img/prev.png) no-repeat 50% 50%;
+	}
+/**/
+#section1{
+	background:#9a620e;
 	color:#fff;
 	}
 #section1 h3{
@@ -311,6 +316,10 @@ h1, h2, h3{
 	}
 #section1 .row .inner{
 	position:relative;
+	transition: all 300ms ease-in-out;
+	-webkit-transition: all 300ms ease-in-out;
+	-moz-transition: all 300ms ease-in-out;
+	-o-transition: all 300ms ease-in-out;
 	}
 #section1 .inner .text{
 	position:absolute;
@@ -325,6 +334,7 @@ h1, h2, h3{
 #section1 .inner .text h2{
 	margin:0;
 	color:#000;
+	font-size:26px;
 	text-transform:uppercase;}
 #section1 .inner .text p, .section2Bottom p{
 	color:#f38120;

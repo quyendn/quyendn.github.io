@@ -61,13 +61,6 @@ $(document).ready(function() {
                         message: 'Số điện thoại chỉ có thể là 10 hoặc 11 số.'
                     }
                 }
-            },
-            date: {
-                validators: {
-                    notEmpty: {
-                        message: 'Ngày đặt tiệc không được để trống.'
-                    }
-                }
             }
         },
         onSuccess: function (e) {
