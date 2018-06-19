@@ -193,8 +193,8 @@ h1, h2, h3{
 .slideText{
 	position:absolute;
 	top:150px;
-	right:30px;
-	left:30px;
+	right:90px;
+	left:90px;
 	bottom:0;
 	z-index:99;
 	color:#222;
@@ -212,7 +212,7 @@ h1, h2, h3{
 	}
 .slideText .textBottom{
 	bottom:100px;
-	left:80px;
+	left:00px;
 	font-size:20px;
 	line-height:normal;
 	position:absolute;
@@ -240,7 +240,7 @@ h1, h2, h3{
 	}
 .formRegister{
 	position:absolute;
-	right:80px;
+	right:00px;
 	bottom:100px;
 	padding:15px;
 	background:rgba(255,255,255,0.9);
