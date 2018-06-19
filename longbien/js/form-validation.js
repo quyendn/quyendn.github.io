@@ -71,7 +71,7 @@ $(document).ready(function() {
             var datecreate = $('#txtDate').val();
             var description = $('#txtDescription').val();
             var typeId = 1;
-            var emailto = "quyendn84@gmail.com";
+            var emailto = "nam.trinh@tansonnhatgolf.vn";
             var dataJSON = { "name": name, "email": email, "phone": phone, "datecreate": datecreate, "description": description, 'typeId': typeId, "emailto": emailto };
             showLoadingContactImage('content-download', 'frmContentDownload');
             $.ajax({
@@ -127,7 +127,7 @@ $(document).ready(function() {
             var datecreate = '';
             var description = '';
             var typeId = 3;
-            var emailto = "quyendn84@gmail.com";
+            var emailto = "nam.trinh@tansonnhatgolf.vn";
             var dataJSON = { "name": name, "email": email, "phone": phone, "datecreate": datecreate, "description": description, 'typeId': typeId, "emailto": emailto };
             showLoadingContactImage('content-promotion', 'frmContentPromotion');
             $.ajax({
@@ -189,7 +189,7 @@ $(document).ready(function() {
             var datecreate = '';
             var description = '';
             var typeId = 2;
-            var emailto = "quyendn84@gmail.com";
+            var emailto = "nam.trinh@tansonnhatgolf.vn";
             var dataJSON = { "name": name, "email": email, "phone": phone, "datecreate": datecreate, "description": description, 'typeId': typeId, "emailto": emailto };
             showLoadingContactImage('content-download', 'frmContentReg');
             $.ajax({

@@ -68,7 +68,7 @@ $(document).ready(function() {
             var name = $('#txtName').val();
             var email = $('#txtEmail').val();
             var phone = $('#txtPhone').val();
-            var emailto = "quyendn84@gmail.com";
+            var emailto = "info.tnrevergreen@gmail.com";
             var webdomain = "evergreen";
             var dataJSON = { "fullname": name, "phone": phone, "email": email, "address": '', "description": '', 'webdomain': webdomain, "emailto": emailto }
             showLoadingContactImage('content-download', 'frmContentDownload');
