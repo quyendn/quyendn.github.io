@@ -641,7 +641,8 @@ img{
 		font-size:20px;
 		}
 	.section2Bottom li{
-		width:100%;
+		width:50%; 
+        padding-right:5%
 		}
 	#section2 {
 		background: url(../img/uudai.jpg) no-repeat 50% 50% / auto 100%;
