@@ -95,7 +95,7 @@ $(document).ready(function() {
                     $("#txtPhone").val('');
                     $('#txtEmail').val('');
                     $('#frmRegister').bootstrapValidator('resetForm', true);
-                    toastr.success('Bạn đã đăng ký tư vấn thành công. Pearlriverside sẽ liên hệ lại bạn trong vòng 24 giờ làm việc. Vui lòng liên hệ số điện thoại 0972452451 khi cần hỗ trợ nhanh', { timeOut: 5000 })
+                    toastr.success('Bạn đã đăng ký tư vấn thành công. Pearlriverside sẽ liên hệ lại bạn trong vòng 24 giờ làm việc. Vui lòng liên hệ số điện thoại 0976.38.58.69 khi cần hỗ trợ nhanh', { timeOut: 5000 })
                 }
             });
         }
