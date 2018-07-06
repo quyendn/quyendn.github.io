@@ -1,0 +1,66 @@
+@font-face {
+  font-family: 'Arno Pro';
+  src: url('../fonts/Arno Pro.eot');
+  src: url('../fonts/Arno Pro.woff2') format('woff2'),
+       url('../fonts/Arno Pro.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ArnoPro-Regular';
+  src: url('../fonts/ArnoPro-Regular.woff') format('woff'),
+       url('../fonts/ArnoPro-Regular.ttf') format('truetype'),
+       url('../fonts/ArnoPro-Regular.svg#ArnoPro-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ArnoPro-LightDisplay';
+  src: url('../fonts/ArnoPro-LightDisplay.eot');
+  src: url('../fonts/ArnoPro-LightDisplay.woff2') format('woff2'),
+       url('../fonts/ArnoPro-LightDisplay.woff') format('woff'),
+       url('../fonts/ArnoPro-LightDisplay.ttf') format('truetype'),
+       url('../fonts/ArnoPro-LightDisplay.svg#ArnoPro-LightDisplay') format('svg'),
+       url('../fonts/ArnoPro-LightDisplay.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Averta-Light';
+  src: url('../fonts/Averta-Light.eot');
+  src: url('../fonts/Averta-Light.woff2') format('woff2'),
+       url('../fonts/Averta-Light.woff') format('woff'),
+       url('../fonts/Averta-Light.ttf') format('truetype'),
+       url('../fonts/Averta-Light.svg#Averta-Light') format('svg'),
+       url('../fonts/Averta-Light.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Averta-Regular';
+  src: url('../fonts/Averta-Regular.eot');
+  src: url('../fonts/Averta-Regular.woff2') format('woff2'),
+       url('../fonts/Averta-Regular.woff') format('woff'),
+       url('../fonts/Averta-Regular.ttf') format('truetype'),
+       url('../fonts/Averta-Regular.svg#Averta-Regular') format('svg'),
+       url('../fonts/Averta-Regular.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Averta-Bold';
+  src: url('../fonts/Averta-Bold.eot');
+  src: url('../fonts/Averta-Bold.woff2') format('woff2'),
+       url('../fonts/Averta-Bold.woff') format('woff'),
+       url('../fonts/Averta-Bold.ttf') format('truetype'),
+       url('../fonts/Averta-Bold.svg#Averta-Bold') format('svg'),
+       url('../fonts/Averta-Bold.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
