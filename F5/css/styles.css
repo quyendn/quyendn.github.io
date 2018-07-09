@@ -183,7 +183,7 @@ a, .btn, button{
 	position:relative;
 	background:url(../img/bg-hd.png) no-repeat 50% 100%;
 	background-size:cover;
-	padding:100px 0 60px 0;
+	padding:150px 0 100px 0;
 	}
 #textSlide{
 	z-index:99;
@@ -267,7 +267,18 @@ a, .btn, button{
 	}
 #section3 img{
 	width:100%;
+	transition: all 300ms ease-in-out;
+	-webkit-transition: all 300ms ease-in-out;
+	-moz-transition: all 300ms ease-in-out;
+	-o-transition: all 300ms ease-in-out;
 	}
+#section3 img:hover{
+	-webkit-transform: scale(1.15);
+	-moz-transform: scale(1.15);
+	transform: scale(1.15);
+	z-index:9;
+	}
+	
 #section3 .col-lg-3{
 	margin-bottom:30px;
 	}
@@ -421,17 +432,16 @@ a, .btn, button{
 	color:#999;
 	}
 #section6 .inner li.disabled:before{
-	
 	background:url(../img/check-symbol.png) no-repeat 0 0;
 	}
-#section6 .inner .btn, #section6 .col-lg-4:first-child .inner .btn:hover{
-	background:#872b1c;
-	color:#fff;
-	border:2px solid #872b1c;
-	}
-#section6 .col-lg-4:first-child .inner .btn{
+#section6 .inner .btn, #section6 .col-lg-4:nth-child(2) .inner .btn:hover{
 	background:#fff;
 	color:#872b1c;
+	border:2px solid #872b1c;
+	}
+#section6 .col-lg-4:nth-child(2) .inner .btn, #section6 .col-lg-4 .inner .btn:hover, .btnRegister-popup{
+	background:#872b1c;
+	color:#fff;
 	}
 #footer{
 	background:#333;
@@ -508,6 +518,10 @@ a, .btn, button{
 .modal ol ul li:last-child{
 	margin-bottom:0;
 	}
+.btnRegister-popup{
+	max-width:320px;
+	margin:30px auto;
+	}
 
 /**/
 img{
@@ -539,6 +553,9 @@ img{
 		}
 	.navbar-brand img{
 		width:220px;
+		}
+	#slide{
+		padding:100px 0 50px 0;
 		}
 	#textSlide h1{
 		font-size:3em;
@@ -582,17 +599,18 @@ img{
 		background:none;
 		padding-left:30px;}
 	#aboutus .modal-body{
-		padding:30px;
+		padding:15px;
 		}
 	#aboutus .st-hd h3{
 		font-size:40px;
 		}
 	.modal .sapo{
-		padding-left:40px;
+		padding-left:30px;
+		font-size:18px;
 		}
 	.modal .sapo:before{
-		width:30px;
-		height:30px;
+		width:20px;
+		height:20px;
 		background:url(../img/accolade.gif) no-repeat 0 0;
 		background-size:contain;
 		}
@@ -602,6 +620,10 @@ img{
 	.modal-body ol ul{
 		margin:0 0 0 10px;
 		padding:0;
+		}
+	.modal-body ul{
+		padding-left:0;
+		margin-left:15px;
 		}
 	}
 
