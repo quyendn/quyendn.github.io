@@ -130,7 +130,7 @@ $(document).ready(function() {
             var phone = '';
             var datecreate = '';
             var description = '';
-            var typeId = 5;
+            var typeId = 6;
             var emailto = "baogiahn@longbiengolf.vn";
             var dataJSON = { "name": name, "email": email, "phone": phone, "datecreate": datecreate, "description": description, 'typeId': typeId, "emailto": emailto };
             showLoadingContactImage('content-promotion', 'frmContentPromotion');
@@ -193,10 +193,10 @@ $(document).ready(function() {
             var phone = $('#txtPhoneRG').val();
             var datecreate = '';
             var description = '';
-            var typeId = 6;
+            var typeId = 5;
             var emailto = "baogiahn@longbiengolf.vn";
             var dataJSON = { "name": name, "email": email, "phone": phone, "datecreate": datecreate, "description": description, 'typeId': typeId, "emailto": emailto };
-            showLoadingContactImage('content-download', 'frmContentReg');
+            showLoadingContactImage('content-register', 'frmContentReg');
             $.ajax({
                 url: "https://alpha.f5academy.net/api/Longbienservice",
                 type: "Post",

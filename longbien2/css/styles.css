@@ -1039,3 +1039,6 @@ img{
     padding-top:10px;
 }
 
+.has-success .form-control-feedback{
+     padding-top:10px;
+}
