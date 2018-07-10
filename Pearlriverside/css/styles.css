@@ -655,6 +655,9 @@ img{
 	#section4 .carousel-control.right{
 		right:0;
 		}
+    #btnRegister-fix  img{
+	 width:100px;
+	}
 	}
 
 /*owl-carousel*/
