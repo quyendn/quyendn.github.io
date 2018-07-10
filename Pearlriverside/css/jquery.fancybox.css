@@ -217,6 +217,7 @@ box-shadow:         0px 0px 10px 0px rgba(0, 0, 0, 1);
 	z-index: 8010;
 	/*background:rgba(78,39,60,0.90);*/
 	background: url('img/fancybox_overlay.png');
+
 }
 
 .fancybox-overlay-fixed {
@@ -228,6 +229,7 @@ box-shadow:         0px 0px 10px 0px rgba(0, 0, 0, 1);
 .fancybox-lock .fancybox-overlay {
 	overflow: auto;
 	overflow-y: scroll;
+    z-index:99999;
 }
 
 /* Title helper */
