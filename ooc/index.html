@@ -23,31 +23,32 @@
     <link href="js/bootstrap-datepicker/bootstrap-datepicker.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="js/bootstrap-datepicker/bootstrap-datepicker.js"></script>
     <script type="text/javascript" src="js/bootstrap-datepicker/locales/bootstrap-datepicker.vi.min.js"></script>
-    <script>
-$(document).ready(function() {
-  $('.owl-carousel').owlCarousel({
-	loop: true,
-	margin: 10,
-	responsiveClass: true,
-	responsive: {
-	  0: {
-		items: 2,
-		nav: true
-	  },
-	  768: {
-		items: 4,
-		nav: true
-	  },
-	  1000: {
-		items: 6,
-		nav: true,
-		loop:true,
-		margin: 0,
-	  }
-	}
-  })
-})
-</script>
+    <script>$(document).ready(function() {
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 2,
+                        nav: true
+                    },
+                    768: {
+                        items: 4,
+                        nav: true
+                    },
+                    1000: {
+                        items: 6,
+                        nav: true,
+                        loop: true,
+                        margin: 0,
+                        autoplay: true,
+                        autoplayTimeout: 3000,
+                        autoplayHoverPause: true
+                    }
+                }
+            })
+})</script>
     
 </head>
 <body>
