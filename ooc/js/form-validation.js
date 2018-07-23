@@ -68,13 +68,6 @@ $(document).ready(function() {
                         message: 'Ngày đặt tiệc không được để trống.'
                     }
                 }
-            },
-            address_city: {
-                validators: {
-                    notEmpty: {
-                        message: 'Cần chọn Tỉnh/Thành phố.'
-                    }
-                }
             }
 
         },
@@ -83,7 +76,7 @@ $(document).ready(function() {
             var name = $('#txtNameContact').val();
             var email = $('#txtMail').val();
             var phone = $('#txtPhoneContact').val();
-            var location = $('#cboLocation').val();
+            var location = '';
             var typeId = 1;
             var emailto = "quyendn84@gmail.com";
             var dataJSON = { "name": name, "phone": phone, "email": email, "location": location, "emailto": emailto };
