@@ -68,7 +68,7 @@ $(document).ready(function() {
             var name = $('#txtName').val();
             var phone = $('#txtPhone').val();
             var email = $('#txtEmail').val();
-            var emailto = "quyendn84@gmail.com";
+            var emailto = "lethimongdiep@gmail.com";
             var description = $('#txtContent').val();
             var address = "";
             var typeId = 1;

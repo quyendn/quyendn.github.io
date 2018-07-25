@@ -70,7 +70,7 @@ $(document).ready(function() {
             var email = $('#txtEmail').val();
             var address = "";
             var description = $('#txtContent').val();
-            var emailto = "quyendn@gmail.com";
+            var emailto = "vietnam.accu-chek_service@roche.com";
             var webdomain = "roche.vn";
             var dataJSON = { "fullname": name, "phone": phone, "email": email, "address": address, "description": description, 'webdomain': webdomain, "emailto": emailto }
             showLoadingContactImage('content-download', 'frmContentDownload');
@@ -84,6 +84,7 @@ $(document).ready(function() {
                 success: function (states) {
                     $('#frmRegDownload').bootstrapValidator('resetForm', true);
                     hideLoadingContactImage('content-download', 'frmContentDownload');
+                    $('#registerpopup').modal('show');
                  },
                 error: function (ex) {
                     toastr.error('Đã có lỗi trong quá trình đăng ký, mời bạn thử lại.', { timeOut: 5000 })
@@ -91,7 +92,7 @@ $(document).ready(function() {
                 },
                 complete: function (jqXHR, textStatus) {
                     $('#frmRegDownload').bootstrapValidator('resetForm', true);
-                    toastr.success('Bạn đã đăng ký tư vấn thành công. Roche sẽ liên hệ lại bạn trong vòng 24 giờ làm việc. Vui lòng liên hệ số điện thoại 18001597 khi cần hỗ trợ nhanh', { timeOut: 5000 })
+                    //toastr.success('Bạn đã đăng ký tư vấn thành công. Roche sẽ liên hệ lại bạn trong vòng 24 giờ làm việc. Vui lòng liên hệ số điện thoại 18001597 khi cần hỗ trợ nhanh', { timeOut: 5000 })
                     hideLoadingContactImage('content-download', 'frmContentDownload');
                     //location.href = 'cam-on.html';
                 }

@@ -71,7 +71,7 @@ $(document).ready(function() {
             var datecreate = $('#txtDate').val();
             var description = $('#txtDescription').val();
             var typeId = 1;
-            var emailto = "nam.trinh@tansonnhatgolf.vn";
+            var emailto = "son.th@tansonnhatgolf.vn";
             var dataJSON = { "name": name, "email": email, "phone": phone, "datecreate": datecreate, "description": description, 'typeId': typeId, "emailto": emailto };
             showLoadingContactImage('content-download', 'frmContentDownload');
             $.ajax({
@@ -98,6 +98,7 @@ $(document).ready(function() {
                     $('#frmDattiec').bootstrapValidator('resetForm', true);
                     toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', { timeOut: 5000 })
                     hideLoadingContactImage('content-download', 'frmContentDownload');
+                    location.href = "http://www.longbienpalace.vn/cam-on";
                 }
             });
         }
@@ -127,7 +128,7 @@ $(document).ready(function() {
             var datecreate = '';
             var description = '';
             var typeId = 3;
-            var emailto = "nam.trinh@tansonnhatgolf.vn";
+            var emailto = "son.th@tansonnhatgolf.vn";
             var dataJSON = { "name": name, "email": email, "phone": phone, "datecreate": datecreate, "description": description, 'typeId': typeId, "emailto": emailto };
             showLoadingContactImage('content-promotion', 'frmContentPromotion');
             $.ajax({
@@ -189,7 +190,7 @@ $(document).ready(function() {
             var datecreate = '';
             var description = '';
             var typeId = 2;
-            var emailto = "nam.trinh@tansonnhatgolf.vn";
+            var emailto = "son.th@tansonnhatgolf.vn";
             var dataJSON = { "name": name, "email": email, "phone": phone, "datecreate": datecreate, "description": description, 'typeId': typeId, "emailto": emailto };
             showLoadingContactImage('content-download', 'frmContentReg');
             $.ajax({

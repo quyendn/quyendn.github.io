@@ -68,7 +68,7 @@ $(document).ready(function() {
             var phone = $('#txtPhone').val();
             var email = $('#txtEmail').val();
             var description = $('#txtDescription').val();
-            var emailto = "quyendn84@gmail.com";
+            var emailto = "event@riversidepalace.vn";
             var webdomain = "riversidepalace.com";
             var dataJSON = { "fullname": name, "phone": phone, "email": email, "description": description, 'webdomain': webdomain, "emailto": emailto }
             showLoadingImage();
@@ -143,7 +143,7 @@ $(document).ready(function() {
             var phone = $('#txtPhoneFooter').val();
             var email = $('#txtEmailFooter').val();
             var description = $('#descriptionfooter').val();
-            var emailto = "quyendn84@gmail.com";
+            var emailto = "event@riversidepalace.vn";
             var webdomain = "riversidepalace.com";
             var dataJSON = { "fullname": name, "phone": phone, "email": email, "description": description, 'webdomain': webdomain, "emailto": emailto }
             showLoadingContactImage('content-mobile','formContentContactMobile');
@@ -232,7 +232,7 @@ $(document).ready(function() {
             var phone = $('#phone_download').val();
             var city = $('#address_city_download').val();
             var time = $('#cbo_time_download').val();
-            var emailto = "anh.phuthixuan@saint-gobain.com";
+            var emailto = "event@riversidepalace.vn";
             var typeId = 2;
             var webdomain = "http://vinhtuong.com";
             var dataJSON = { "city": city, "time": time, "name": name, "phone": phone, 'typeId': typeId, "emailto": emailto }
@@ -325,7 +325,7 @@ $(document).ready(function() {
             var phone = $('#phone_gift').val();
             var city = $('#address_city_gift').val();
             var time = $('#cbo_time_gift').val();
-            var emailto = "anh.phuthixuan@saint-gobain.com";
+            var emailto = "event@riversidepalace.vn";
             var typeId = 3;
             var webdomain = "http://vinhtuong.com";
             var dataJSON = { "city": city, "time": time, "name": name, "phone": phone, 'typeId': typeId, "emailto": emailto }
