@@ -28,7 +28,7 @@ $(document).ready(function() {
         // Tooltip, Popover, Custom Container.
         // =================================================================
    
-    $('#frmDattiec').bootstrapValidator({
+    $('#frmMobile').bootstrapValidator({
         message: 'This value is not valid',
         excluded: [':disabled'],
         feedbackIcons: faIcon,
@@ -62,164 +62,49 @@ $(document).ready(function() {
                     }
                 }
             },
-            date: {
+            inlineRadioOptions: {
                 validators: {
                     notEmpty: {
-                        message: 'Ngày đặt tiệc không được để trống.'
+                        message: 'Cần chọn địa điểm.'
                     }
                 }
             }
         },
         onSuccess: function (e) {
 
-            var name = $('#txtNameContact').val();
-            var email = $('#txtMail').val();
-            var phone = $('#txtPhoneContact').val();
-            var datecreate = $('#txtDate').val();
-            var description = $('#txtDescription').val();
+            var name = $('#txtName').val();
+            var email = $('#txtEmail').val();
+            var phone = $('#txtPhone').val();
+            var place = $('.form-check-input').val();
+            alert(place);
             var typeId = 1;
             var emailto = "quyendn84@gmail.com";
-            var dataJSON = { "name": name, "email": email, "phone": phone, "datecreate": datecreate, "description": description, 'typeId': typeId, "emailto": emailto };
-            showLoadingContactImage('content-download', 'frmContentDownload');
+            var dataJSON = { "name": name, "email": email, "phone": phone, "place": place, "emailto": emailto };
+            showLoadingContactImage('content-mobile', 'formContentContactMobile');
             $.ajax({
-                url: "https://alpha.f5academy.net/api/Longbienservice",
+                url: "https://alpha.f5academy.net/api/Toyotaservice",
                 type: "Post",
                 async: false,
                 data: dataJSON,
                 contentType: 'application/json; charset=utf-8',
                 dataType: 'jsonp',
                 success: function (states) {
-                    $('#frmDattiec').bootstrapValidator('resetForm', true);
-                    hideLoadingContactImage('content-download', 'frmContentDownload');
+                    $('#frmMobile').bootstrapValidator('resetForm', true);
+                    hideLoadingContactImage('content-mobile', 'formContentContactMobile');
                  },
                 error: function (ex) {
                     toastr.error('Đã có lỗi trong quá trình đăng ký, mời bạn thử lại.', { timeOut: 5000 })
-                    hideLoadingContactImage('content-download', 'frmContentDownload');
+                    hideLoadingContactImage('content-mobile', 'formContentContactMobile');
                 },
                 complete: function (jqXHR, textStatus) {
-                    $('#txtNameContact').val('');
-                    $("#txtMail").val('');
-                    $('#txtPhoneContact').val('');
-                    $('#txtDate').val('');
-                    $('#txtDescription').val('');
-                    $('#frmDattiec').bootstrapValidator('resetForm', true);
+                    $('#txtName').val('');
+                    $("#txtEmail").val('');
+                    $('#txtPhone').val('');
+                    $('#frmMobile').bootstrapValidator('resetForm', true);
                     toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', { timeOut: 5000 })
-                    hideLoadingContactImage('content-download', 'frmContentDownload');
-                }
-            });
-        }
-    }).on('success.form.fv', function (e) {
-
-    });
-    $('#frmRegPromotion').bootstrapValidator({
-        message: 'This value is not valid',
-        excluded: [':disabled'],
-        feedbackIcons: faIcon,
-        fields: {
-            email_pro: {
-                validators: {
-                    notEmpty: {
-                        message: 'Địa chỉ email không được để trống.'
-                    },
-                    emailAddress: {
-                        message: 'Không đúng định dạng email'
-                    }
-                }
-            }
-        },
-        onSuccess: function (e) {
-            var name = '';
-            var email = $('#txtEmailPromotion').val();
-            var phone = '';
-            var datecreate = '';
-            var description = '';
-            var typeId = 3;
-            var emailto = "quyendn84@gmail.com";
-            var dataJSON = { "name": name, "email": email, "phone": phone, "datecreate": datecreate, "description": description, 'typeId': typeId, "emailto": emailto };
-            showLoadingContactImage('content-promotion', 'frmContentPromotion');
-            $.ajax({
-                url: "https://alpha.f5academy.net/api/Longbienservice",
-                type: "Post",
-                async: false,
-                data: dataJSON,
-                contentType: 'application/json; charset=utf-8',
-                dataType: 'jsonp',
-                success: function (states) {
-                    $('#frmRegPromotion').bootstrapValidator('resetForm', true);
-                    hideLoadingContactImage('content-promotion', 'frmContentPromotion');
-                },
-                error: function (ex) {
-                    toastr.error('Đã có lỗi trong quá trình đăng ký, mời bạn thử lại.', { timeOut: 5000 })
-                    hideLoadingContactImage('content-promotion', 'frmContentPromotion');
-                },
-                complete: function (jqXHR, textStatus) {
-                    $('#txtEmailPromotion').val('');
-                    $('#frmRegPromotion').bootstrapValidator('resetForm', true);
-                    toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', { timeOut: 5000 })
-                    hideLoadingContactImage('content-promotion', 'frmContentPromotion');
-                }
-            });
-        }
-    }).on('success.form.fv', function (e) {
-
-    });
-    $('#frmRegDownload').bootstrapValidator({
-        message: 'This value is not valid',
-        excluded: [':disabled'],
-        feedbackIcons: faIcon,
-        fields: {
-            name_rg: {
-                validators: {
-                    notEmpty: {
-                        message: 'Họ tên không được để trống.'
-                    }
-                }
-            },
-            phone_rg: {
-                validators: {
-                    notEmpty: {
-                        message: 'Điện thoại không được để trống.'
-                    },
-                    stringLength: {
-                        min: 10,
-                        max: 11,
-                        message: 'Số điện thoại chỉ có thể là 10 hoặc 11 số.'
-                    }
-                }
-            }
-        },
-        onSuccess: function (e) {
-
-            var name = $('#txtNameRG').val();
-            var email = '';
-            var phone = $('#txtPhoneRG').val();
-            var datecreate = '';
-            var description = '';
-            var typeId = 2;
-            var emailto = "quyendn84@gmail.com";
-            var dataJSON = { "name": name, "email": email, "phone": phone, "datecreate": datecreate, "description": description, 'typeId': typeId, "emailto": emailto };
-            showLoadingContactImage('content-download', 'frmContentReg');
-            $.ajax({
-                url: "https://alpha.f5academy.net/api/Longbienservice",
-                type: "Post",
-                async: false,
-                data: dataJSON,
-                contentType: 'application/json; charset=utf-8',
-                dataType: 'jsonp',
-                success: function (states) {
-                    $('#frmRegDownload').bootstrapValidator('resetForm', true);
-                    hideLoadingContactImage('content-register', 'frmContentReg');
-                },
-                error: function (ex) {
-                    toastr.error('Đã có lỗi trong quá trình đăng ký, mời bạn thử lại.', { timeOut: 5000 })
-                    hideLoadingContactImage('content-register', 'frmContentReg');
-                },
-                complete: function (jqXHR, textStatus) {
-                    $('#txtNameContact').val('');
-                    $('#txtPhoneContact').val('');
-                    $('#frmRegDownload').bootstrapValidator('resetForm', true);
-                    toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', { timeOut: 5000 })
-                    hideLoadingContactImage('content-register', 'frmContentReg');
+                    hideLoadingContactImage('content-mobile', 'formContentContactMobile');
+                    $("#dk_datve").modal("hide");
+                    window.location.href = "http://quyendn.github.io/toyota/dang-ky-thanh-cong.html";
                 }
             });
         }

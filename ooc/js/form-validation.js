@@ -91,6 +91,7 @@ $(document).ready(function() {
                 success: function (states) {
                     $('#frmDattiec').bootstrapValidator('resetForm', true);
                     hideLoadingContactImage('content-download', 'frmContentDownload');
+                   
                  },
                 error: function (ex) {
                     toastr.error('Đã có lỗi trong quá trình đăng ký, mời bạn thử lại.', { timeOut: 5000 })
@@ -104,12 +105,13 @@ $(document).ready(function() {
                     $('#frmDattiec').bootstrapValidator('resetForm', true);
                     toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', { timeOut: 5000 })
                     hideLoadingContactImage('content-download', 'frmContentDownload');
-                    location.href = "https://ooc.vn/phan-mem-ooc/dang-ky-thanh-cong.html"
+                    window.location.href ="https://ooc.vn/phan-mem-ooc/dang-ky-thanh-cong.html";
+                    
                 }
             });
         }
     }).on('success.form.fv', function (e) {
-
+       
     });
     
     function showLoadingImage() {
