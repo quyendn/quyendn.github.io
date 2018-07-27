@@ -215,7 +215,7 @@ h1, h2, h3{
 	background:#000;
 	}
 /**/
-#section1{
+#section1, #thanks{
 	background:url(../img/bg-top.jpg) no-repeat 50% 100%;
 	color:#fff;
 	padding-top:60px;
@@ -583,30 +583,22 @@ img{
 	
 /*thanks*/
 #thanks{
-	position:relative;
-	background:url(../img/bgthank.jpg) no-repeat 50% 100% /100% 100%;
+	padding:150px 0;
+	text-align:center;
+	text-transform:uppercase;
 	}
-#thanks .inner{
-	position:absolute;
-	top:100px;
-	left:0;
-	right:0;
-	bottom:100px;
+
+#thanks .tl1{
+	color:#2e2f31;
+	font-size:60px;
 	}
-#thanks .text-center{
-	max-width:900px;
-	margin:0 auto;
-	background:rgba(255,255,255,0.8);
-	padding:30px;
-	}
-#thanks .text-center>div{
-	border:3px solid #ffb302;
-	padding:100px 30px;
-	}
-#thanks .text-center p{
-	font-size:22px;
-	margin-top:30px;
-	color:#222;
+#thanks .tl2{
+	clear:both;
+	color:#fff;
+	font-size:40px;
+	background:#727070;
+	display:inline-block;
+	padding:10px 30px;
 	}
 
 
