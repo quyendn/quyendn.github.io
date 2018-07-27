@@ -104,6 +104,7 @@ $(document).ready(function() {
                     $('#frmDattiec').bootstrapValidator('resetForm', true);
                     toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', { timeOut: 5000 })
                     hideLoadingContactImage('content-download', 'frmContentDownload');
+                    location.href = "https://ooc.vn/phan-mem-ooc/dang-ky-thanh-cong.html"
                 }
             });
         }
