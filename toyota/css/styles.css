@@ -451,6 +451,9 @@ img{
 		position:relative;
 		min-height:70px;
 		}
+    #btnRegister-fix img {
+        width: 150px;
+    }
 	#header.open{
 		background:rgba(0,0,0,0.8);
 		}
@@ -857,4 +860,10 @@ img{
 
 .has-error .form-control-feedback{
     padding-top:10px;
+}
+#btnRegister-fix {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    
 }
