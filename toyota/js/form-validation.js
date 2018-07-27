@@ -75,8 +75,7 @@ $(document).ready(function() {
             var name = $('#txtName').val();
             var email = $('#txtEmail').val();
             var phone = $('#txtPhone').val();
-            var place = $('.form-check-input').val();
-            alert(place);
+            var place = $("input[name='inlineRadioOptions']:checked").val();
             var typeId = 1;
             var emailto = "quyendn84@gmail.com";
             var dataJSON = { "name": name, "email": email, "phone": phone, "place": place, "emailto": emailto };
