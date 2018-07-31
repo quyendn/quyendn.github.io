@@ -77,7 +77,7 @@ $(document).ready(function() {
             var phone = $('#txtPhone').val();
             var place = $("input[name='inlineRadioOptions']:checked").val();
             var typeId = 1;
-            var emailto = "quyendn84@gmail.com";
+            var emailto = "ngannt@novaon.asia";
             var dataJSON = { "name": name, "email": email, "phone": phone, "place": place, "emailto": emailto };
             showLoadingContactImage('content-mobile', 'formContentContactMobile');
             $.ajax({
