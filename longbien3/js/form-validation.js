@@ -33,7 +33,7 @@ $(document).ready(function() {
         excluded: [':disabled'],
         feedbackIcons: faIcon,
         fields: {
-            email: {
+            Email: {
                 validators: {
                     notEmpty: {
                         message: 'Địa chỉ email không được để trống.'
@@ -43,14 +43,14 @@ $(document).ready(function() {
                     }
                 }
             },
-            name: {
+            FullName: {
                 validators: {
                     notEmpty: {
                         message: 'Họ tên không được để trống.'
                     }
                 }
             },
-            phone: {
+            Phone: {
                 validators: {
                     notEmpty: {
                         message: 'Điện thoại không được để trống.'
@@ -62,7 +62,7 @@ $(document).ready(function() {
                     }
                 }
             },
-            date: {
+            Date: {
                 validators: {
                     notEmpty: {
                         message: 'Ngày đặt tiệc không được để trống.'
@@ -72,11 +72,11 @@ $(document).ready(function() {
         },
         onSuccess: function (e) {
 
-            var name = $('#txtNameContact').val();
-            var email = $('#txtMail').val();
-            var phone = $('#txtPhoneContact').val();
-            var datecreate = $('#txtDate').val();
-            var description = $('#txtDescription').val();
+            var name = $('.txtNameContact').val();
+            var email = $('.txtMail').val();
+            var phone = $('.txtPhoneContact').val();
+             var datecreate = $('.txtDate').val();
+           var description = $('.txtDescription').val();
             var typeId = 1;
             var emailto = "baogiahcm@tansonnhatgolf.vn";
             var dataJSON = { "name": name, "email": email, "phone": phone, "datecreate": datecreate, "description": description, 'typeId': typeId, "emailto": emailto };
@@ -105,6 +105,7 @@ $(document).ready(function() {
                     $('#frmDattiec').bootstrapValidator('resetForm', true);
                     toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', { timeOut: 5000 })
                     hideLoadingContactImage('content-download', 'frmContentDownload');
+                    window.location.href = "http://uudai.longbienpalace.vn/dang-ky-thanh-cong.html";
                 }
             });
         }

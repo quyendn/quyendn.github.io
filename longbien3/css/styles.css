@@ -250,7 +250,7 @@ h1, h2, h3{
 	border:1px dashed #3c280b;
 	color:#69553b;
 	padding:30px;
-	max-width:360px;
+	max-width:360px;background:rgba(255,255,255,0.5);
 	}
 .formRegister .inner h3{
 	margin:0 0 15px 0;
@@ -820,7 +820,7 @@ img{
 .phone {
 	position: fixed;
     right: 20px;
-    bottom: 00px;
+    bottom: 100px;
     padding: 10px;
     z-index: 99;
     min-width: 150px;
@@ -833,7 +833,7 @@ img{
   color: #fff;
   position: fixed;
   right: 20px;
-  bottom: 00px;
+  bottom: 100px;
   padding: 10px;
   z-index: 99;
 }
@@ -1049,3 +1049,17 @@ img{
     padding-top:10px;
 }
 
+/**/
+.btn_dattiec{
+	position:fixed;
+	bottom:30px;
+	right:15px;
+	padding:10px 20px;
+	background:#9a620e;
+	color:#fff;
+	border:1px solid #7e4c00
+	}
+.btn_dattiec:hover{
+	color:#fff;
+	background:#7e4c00;
+	}
