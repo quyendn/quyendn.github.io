@@ -103,7 +103,11 @@ $(document).ready(function() {
                     toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', { timeOut: 5000 })
                     hideLoadingContactImage('content-mobile', 'formContentContactMobile');
                     $("#dk_datve").modal("hide");
+<<<<<<< HEAD
                     window.location.href = "dang-ky-thanh-cong.html";
+=======
+                    window.location.href = "/dang-ky-thanh-cong.html";
+>>>>>>> 15ef8b1c9f72ef74676601a5ba3c6e773a792966
                 }
             });
         }
