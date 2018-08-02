@@ -28,8 +28,27 @@
     <link href="js/bootstrap-datepicker/bootstrap-datepicker.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="js/bootstrap-datepicker/bootstrap-datepicker.js"></script>
     <script type="text/javascript" src="js/bootstrap-datepicker/locales/bootstrap-datepicker.vi.min.js"></script>
+    <script type="text/javascript" src="jwplayer/jwplayer.js"></script>
+    <script type="text/javascript">jwplayer.key = "XumejFo+svwQswRJ3Mi++itror5V6+6q+6I7MQ==";</script>
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-MFLTM9P');</script>
+    <!-- End Google Tag Manager -->
 </head>
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MFLTM9P"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <div id="container">
         <div id="header">
             <div class="affix" data-spy="affix" data-offset-top="79" id="">
@@ -40,16 +59,20 @@
         </div>
         <div id="slide">
             <div class="container">
-                <div class="titlePage"><img src="img/titlePage.png"></div>
-                <div><button class="btn btn-buynow" data-toggle="modal" data-target="#dk_datve"><img src="img/datve.png"></button></div>
+                <div class="inner">
+                    <div class="titlePage"><img src="img/titlePage.png"></div>
+                    <div><button class="btn btn-buynow" data-toggle="modal" data-target="#dk_datve"><img src="img/datve.png"></button></div>
+                </div>
             </div>
         </div>
         <div class="section wow fadeInUp" id="section1">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-4 col-md-4 col-sm-4"><img src="img/Nhactruong.png"></div>
-                    <div class="col-lg-4 col-md-4 col-sm-4"><img src="img/Violin.png"></div>
-                    <div class="col-lg-4 col-md-4 col-sm-4"><img src="img/Cello.png"></div>
+                <div class="inner">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-4"><img src="img/Nhactruong.png"></div>
+                        <div class="col-lg-4 col-md-4 col-sm-4"><img src="img/Violin.png"></div>
+                        <div class="col-lg-4 col-md-4 col-sm-4"><img src="img/Cello.png"></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -146,7 +169,24 @@
                         <div class="col-lg-4 col-md-4 col-sm-4"><img src="img/p3.jpg"></div>
                     </div>
                 </div>
-                <div class="video text-center"><img src="img/video.jpg"></div>
+                <div class="video text-center">
+                    <div class="player text-center" id="VdoPlayr" style="text-align:center;"></div>
+                    <script type='text/javascript'>
+                        jwplayer('VdoPlayr').setup({
+                            autostart: false,
+                            file: 'https://youtu.be/67vY3JhkRfw',
+                            image: "img/video.jpg",
+                            width: '765px',
+                            height: '430px',
+                            aspectratio: '16:6',
+                            controls: true,
+                            skin: 'seven',
+                            mute: false,
+                            primary: 'html5'
+                        });
+                    </script>
+                    
+                </div>
             </div>
         </div>
         <div class="section wow fadeInUp" id="section5">
