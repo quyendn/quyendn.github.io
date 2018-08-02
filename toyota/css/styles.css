@@ -627,6 +627,9 @@ img{
   #footer .footer-bottom .brandcol {
     margin-bottom: 15px;
   }
+  .titlePage img{
+	max-width:100%;
+	}
 }
 
 #footer .footer-bottom .brandcol img {
