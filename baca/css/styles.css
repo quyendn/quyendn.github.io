@@ -816,3 +816,7 @@ img{
     padding-top:10px;
     padding-right:20px;
 }
+.has-success .form-control-feedback {
+    padding-top: 10px;
+    padding-right: 20px;
+}

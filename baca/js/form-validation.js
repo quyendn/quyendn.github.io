@@ -71,17 +71,17 @@ $(document).ready(function() {
             var description = $('#txtDescription').val();
             var typeId = 1;
             var emailto = "quyendn84@gmail.com";
-            var dataJSON = { "name": name, "email": email, "phone": phone, "datecreate": datecreate, "description": description, 'typeId': typeId, "emailto": emailto };
+            var dataJSON = { "name": name, "email": email, "phone": phone, "description": description, "emailto": emailto };
             showLoadingContactImage('content-download', 'frmContentDownload');
             $.ajax({
-                url: "https://alpha.f5academy.net/api/Longbienservice",
+                url: "https://alpha.f5academy.net/api/BacAservice",
                 type: "Post",
                 async: false,
                 data: dataJSON,
                 contentType: 'application/json; charset=utf-8',
                 dataType: 'jsonp',
                 success: function (states) {
-                    $('#frmDattiec').bootstrapValidator('resetForm', true);
+                    $('#frmSendEmail').bootstrapValidator('resetForm', true);
                     hideLoadingContactImage('content-download', 'frmContentDownload');
                  },
                 error: function (ex) {
@@ -94,8 +94,8 @@ $(document).ready(function() {
                     $('#txtPhoneContact').val('');
                     $('#txtDate').val('');
                     $('#txtDescription').val('');
-                    $('#frmDattiec').bootstrapValidator('resetForm', true);
-                    toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', { timeOut: 5000 })
+                    $('#frmSendEmail').bootstrapValidator('resetForm', true);
+                    toastr.success('Bạn đã đăng ký thành công. Xin chân thành cảm ơn!', { timeOut: 5000 })
                     hideLoadingContactImage('content-download', 'frmContentDownload');
                 }
             });
