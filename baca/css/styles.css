@@ -814,4 +814,5 @@ img{
 
 .has-error .form-control-feedback{
     padding-top:10px;
+    padding-right:20px;
 }

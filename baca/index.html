@@ -66,15 +66,18 @@
                         	<div class="col-sm-3 col-sm-offset-1"><h3 class="radius">Đăng ký tư vấn</h3></div>
                             <div class="col-sm-6 col-sm-offset-1">
                             	<div class="form radius">
-                                	<form>
-                                    	<div class="row">
-                                        	<div class="col-sm-6 form-group"><input type="text" class="form-control" placeholder="Họ và tên(*)"></div>
-                                            <div class="col-sm-6 form-group"><input type="text" class="form-control" placeholder="Email"></div>
-                                            <div class="col-sm-6 form-group"><input type="text" class="form-control" placeholder="Điện thoại(*)"></div>
-                                            <div class="col-sm-6 form-group"><input type="text" class="form-control" placeholder="Ý kiến/câu hỏi"></div>
+                                    <form id="frmSendEmail" autocomplete="off">
+                                        <div id="frmContentDownload">
+                                            <div class="row">
+                                                <div class="col-sm-6 form-group"><input type="text" class="form-control" id="txtNameContact" name="name" placeholder="Họ và tên(*)"></div>
+                                                <div class="col-sm-6 form-group"><input type="text" class="form-control" id="txtMail" name="email" placeholder="Email(*)"></div>
+                                                <div class="col-sm-6 form-group"><input type="text" class="form-control" id="txtPhoneContact" onkeypress="return AllowNumberOnly(event);" name="phone" placeholder="Điện thoại(*)"></div>
+                                                <div class="col-sm-6 form-group"><input type="text" class="form-control" id="txtDescription" placeholder="Ý kiến/câu hỏi"></div>
+                                            </div>
+                                            <p class="text-center"><em>(*: Trường thông tin bắt buộc)</em></p>
+                                            <button class="btn btn-default"><img src="img/icon_tamgiac.png"> Gửi ngay</button>
                                         </div>
-                                        <p class="text-center"><em>(*: Trường thông tin bắt buộc)</em></p>
-                                        <button class="btn btn-default"><img src="img/icon_tamgiac.png"> Gửi ngay</button>
+                                        <div id="content-download"></div>
                                     </form>
                                 </div>
                             </div>

@@ -28,7 +28,7 @@ $(document).ready(function() {
         // Tooltip, Popover, Custom Container.
         // =================================================================
    
-    $('#frmDattiec').bootstrapValidator({
+    $('#frmSendEmail').bootstrapValidator({
         message: 'This value is not valid',
         excluded: [':disabled'],
         feedbackIcons: faIcon,
@@ -61,13 +61,6 @@ $(document).ready(function() {
                         message: 'Số điện thoại chỉ có thể là 10 hoặc 11 số.'
                     }
                 }
-            },
-            date: {
-                validators: {
-                    notEmpty: {
-                        message: 'Ngày đặt tiệc không được để trống.'
-                    }
-                }
             }
         },
         onSuccess: function (e) {
@@ -75,7 +68,6 @@ $(document).ready(function() {
             var name = $('#txtNameContact').val();
             var email = $('#txtMail').val();
             var phone = $('#txtPhoneContact').val();
-            var datecreate = $('#txtDate').val();
             var description = $('#txtDescription').val();
             var typeId = 1;
             var emailto = "quyendn84@gmail.com";
