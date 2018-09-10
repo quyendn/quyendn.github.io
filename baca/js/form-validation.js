@@ -33,17 +33,9 @@ $(document).ready(function() {
         excluded: [':disabled'],
         feedbackIcons: faIcon,
         fields: {
-            email: {
-                validators: {
-                    notEmpty: {
-                        message: 'Địa chỉ email không được để trống.'
-                    },
-                    emailAddress: {
-                        message: 'Không đúng định dạng email'
-                    }
-                }
-            },
+           
             name: {
+                container: 'popover',
                 validators: {
                     notEmpty: {
                         message: 'Họ tên không được để trống.'
@@ -51,6 +43,7 @@ $(document).ready(function() {
                 }
             },
             phone: {
+                container: 'popover',
                 validators: {
                     notEmpty: {
                         message: 'Điện thoại không được để trống.'
