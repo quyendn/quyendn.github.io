@@ -63,7 +63,7 @@ $(document).ready(function() {
             var phone = $('#txtPhoneContact').val();
             var description = $('#txtDescription').val();
             var typeId = 1;
-            var emailto = "quyendn84@gmail.com";
+            var emailto = "callcenter@baca-bank.vn";
             var dataJSON = { "name": name, "email": email, "phone": phone, "description": description, "emailto": emailto };
             showLoadingContactImage('content-download', 'frmContentDownload');
             $.ajax({
@@ -90,6 +90,7 @@ $(document).ready(function() {
                     $('#frmSendEmail').bootstrapValidator('resetForm', true);
                     toastr.success('Bạn đã đăng ký thành công. Xin chân thành cảm ơn!', { timeOut: 5000 })
                     hideLoadingContactImage('content-download', 'frmContentDownload');
+                    window.location.href = "https://khuyenmai.baca-bank.vn/dang-ky-thanh-cong.html";
                 }
             });
         }
