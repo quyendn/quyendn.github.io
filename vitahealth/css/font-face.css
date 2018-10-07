@@ -1,0 +1,60 @@
+@font-face {
+	font-family: 'BryantLG_B';
+	src: url('../fonts/UTM BryantLG_B.eot');
+	src: url('../fonts/UTM BryantLG_B.woff') format('woff'),
+		url('../fonts/UTM BryantLG_B.ttf') format('truetype'),
+		url('../fonts/UTM BryantLG_B.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+  font-family: 'UTM Avo';
+  src: url('../fonts/UTM Avo.eot');
+  src: url('../fonts/UTM Avo.woff2') format('woff2'),
+       url('../fonts/UTM Avo.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'UTMAvo';
+  src: url('../fonts/UTMAvo.woff') format('woff'),
+       url('../fonts/UTMAvo.ttf') format('truetype'),
+       url('../fonts/UTMAvo.svg#UTMAvo') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'UTM Times';
+  src: url('../fonts/UTM Times.eot');
+  src: url('../fonts/UTM Times.woff2') format('woff2'),
+       url('../fonts/UTM Times.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'UTMTimes';
+  src: url('../fonts/UTMTimes.woff') format('woff'),
+       url('../fonts/UTMTimes.ttf') format('truetype'),
+       url('../fonts/UTMTimes.svg#UTMTimes') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'UTMTimesBold';
+  src: url('../fonts/UTMTimesBold.eot');
+  src: url('../fonts/UTMTimesBold.woff2') format('woff2'),
+       url('../fonts/UTMTimesBold.woff') format('woff'),
+       url('../fonts/UTMTimesBold.ttf') format('truetype'),
+       url('../fonts/UTMTimesBold.svg#UTMTimesBold') format('svg'),
+       url('../fonts/UTMTimesBold.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
