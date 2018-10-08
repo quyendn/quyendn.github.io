@@ -68,7 +68,7 @@ $(document).ready(function() {
             var name = $('#txtName').val();
             var phone = $('#txtPhone').val();
             var email = $('#txtEmail').val();
-            var emailto = "quyendn84@gmail.com";
+            var emailto = "tocotoco.novaon@gmail.com";
             var typeId = 1;
             var webdomain = "tocotoco";
             var dataJSON = { "name": name, "email": email, "phone": phone, "emailto": emailto }
@@ -141,7 +141,7 @@ $(document).ready(function() {
             var name = $('#txtNameFooter').val();
             var phone = $('#txtPhoneFooter').val();
             var email = $('#txtEmailFooter').val();
-            var emailto = "quyendn84@gmail.com";
+            var emailto = "tocotoco.novaon@gmail.com";
             var typeId = 1;
             var webdomain = "tocotoco";
             var dataJSON = { "name": name, "email": email, "phone": phone, "emailto": emailto }
