@@ -34,7 +34,7 @@
                                     Thực phẩm bảo vệ sức khỏe<br>VitaHealth Advanced Eyecare
                                 </a>
                             </li>
-                            <li><a data-scroll="" data-options="easing: easeInQuad" href="" class="navbar1">Về VitaHealth</a></li>
+                            <li><a data-scroll="" data-options="easing: easeInQuad" href="" class="navbar1 about">Về VitaHealth</a></li>
                             <li><a data-scroll="" data-options="easing: easeInQuad" href="" class="navbar1">Câu hỏi thường gặp</a></li>
                             <li><a data-scroll="" data-options="easing: easeInQuad" href="" class="navbar1">Liên hệ</a></li>
                             <li><a href="https://www.facebook.com/VitaHealth.VN"><img src="img/icon_fb.png"></a><a href=""><img src="img/icon_home.png"></a></li>
@@ -44,7 +44,7 @@
             </div>
         </div>
         <div id="slide-wrap" style="">
-            <div data-ride="carousel" class="carousel slide" id="slide">
+            <div data-ride="carousel" class="owl-carousel slide" id="slide">
                 <!-- Indicators -->
                 <ol class="carousel-indicators">
                     <li class="active" data-slide-to="0" data-target="#slide"></li>
@@ -199,10 +199,6 @@
         </div>
     </div>
     <!---->
-
-
-
-
     <script src="js/smooth-scroll.js"></script>
     <script type="text/javascript" src="js/bootstrapValidator.min.js"></script>
     <script type="text/javascript" src="js/form-validation.js"></script>
@@ -217,48 +213,24 @@
             return true;
         }
         $(document).ready(function () {
-            $('.owl-carousel').owlCarousel({
+            var owl = $('.carousel-inner');
+            owl.owlCarousel({
+                
                 loop: true,
-                margin: 0,
-                responsiveClass: true,
                 responsive: {
                     0: {
-                        items: 1,
-                        nav: true
+                        items: 1
                     },
-                    768: {
-                        items: 2,
-                        nav: true
+                    600: {
+                        items: 1
                     },
                     1000: {
-                        items: 3,
-                        nav: true,
-                        loop: false,
-                        margin: 30,
+                        items: 1
                     }
                 }
             })
-            $('.owl-carousel-rate').owlCarousel({
-                loop: true,
-                margin: 10,
-                responsiveClass: true,
-                responsive: {
-                    0: {
-                        items: 1,
-                        nav: true
-                    },
-                    768: {
-                        items: 1,
-                        nav: true
-                    },
-                    1000: {
-                        items: 1,
-                        nav: true,
-                        loop: true,
-                        margin: 0,
-                    }
-                }
-            })
+            
+            
         })
     </script>
     <script>

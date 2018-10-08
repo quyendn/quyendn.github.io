@@ -1,0 +1,48 @@
+@font-face {
+	font-family: 'BryantLG_B';
+	src: url('../fonts/UTM BryantLG_B.eot');
+	src: url('../fonts/UTM BryantLG_B.woff') format('woff'),
+		url('../fonts/UTM BryantLG_B.ttf') format('truetype'),
+		url('../fonts/UTM BryantLG_B.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+  font-family: 'UTM Avo';
+  src: url('../fonts/UTM Avo.eot');
+  src: url('../fonts/UTM Avo.woff2') format('woff2'),
+       url('../fonts/UTM Avo.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'UTMAvo';
+  src: url('../fonts/UTMAvo.woff') format('woff'),
+       url('../fonts/UTMAvo.ttf') format('truetype'),
+       url('../fonts/UTMAvo.svg#UTMAvo') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'UTM AvoBold';
+  src: url('../fonts/UTM AvoBold.eot');
+  src: url('../fonts/UTM AvoBold.woff2') format('woff2'),
+       url('../fonts/UTM AvoBold.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'UTMAvoBold';
+  src: url('../fonts/UTMAvoBold.woff') format('woff'),
+       url('../fonts/UTMAvoBold.ttf') format('truetype'),
+       url('../fonts/UTMAvoBold.svg#UTMAvoBold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
