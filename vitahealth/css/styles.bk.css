@@ -148,9 +148,6 @@ a, .btn, button{
 /**/
 
 	/**/
-#slide .item, .owl-item{
-	min-height:780px;
-	}
 #slide .item .utmBold{
 	font-family: 'UTMTimesBold';
 	}
@@ -159,7 +156,7 @@ a, .btn, button{
 	font-family: 'Conv_Averta Bold';
 	}
 #slide1{
-	background:url(../img/bg-1.jpg) no-repeat 50% 50%/ auto 100%;
+	background:url(../img/bg-1.jpg) no-repeat 50% 50%;
 	padding-top:100px;
 	padding-bottom:100px;
 	}
@@ -183,7 +180,7 @@ a, .btn, button{
 	font-size:14px;
 	padding-top:15px;
 	padding-bottom:15px;
-	background:url(../img/bg2.jpg) no-repeat 50% 50% / auto 100%
+	background:url(../img/bg2.jpg) no-repeat 50% 50% / 100% 100%
 	}	
 .slide2-hd{
 	font-size:30px;
@@ -196,72 +193,41 @@ a, .btn, button{
 	max-width:500px;
 	}
 #slide3{
-	padding-top:15px;
+	padding-top:60px;
 	padding-bottom:15px;
-	background:url(../img/bg3.jpg) no-repeat 50% 50% / auto 100%;
+	background:url(../img/bg3.jpg) no-repeat 50% 50%;
 	}
 #slide3 .yell{
 	font-size:24px;
 	}
 #slide3 img{
 	max-width:320px;
-	margin-top:30px;
+	margin-top:60px;
 	}
 #slide4{
 	padding-top:60px;
 	padding-bottom:15px;
-	background:url(../img/bg4.jpg) no-repeat 50% 50% / auto 100%;
+	background:url(../img/bg4.jpg) no-repeat 50% 50% / 100% auto;
 	}
 #slide5{
 	padding-top:60px;
 	padding-bottom:15px;
-	background:url(../img/bg5.jpg) no-repeat 50% 50% / auto 100%;
+	background:url(../img/bg5.jpg) no-repeat 50% 50% / 100% auto;
 	}
-#slide6{
-	padding-top:30px;
-	padding-bottom:15px;
-	background:url(../img/bg2.jpg) no-repeat 50% 50% / auto 100%;
-	}
-#slide6 h3.utmBold{
-	font-size:60px;
-	margin-top:0;
-	margin-bottom:30px;
-	color:#211d70;}
-.panel-default{
-	border:none;
-	border-bottom:1px solid #211d70;
-	background:none;
-	-moz-border-radius:0;
-	-webkit-border-radius:0;
-	border-radius:0;font-size:14px;
-	}
-.panel-default > .panel-heading{
-	border:none;
-	padding:0;
-	background:none;
-	
-	}
-.panel-default > .panel-heading a{
-	color:#211d70;
-	outline:none;
-	}
-.pagination > li > a, .pagination > li > span{
-	margin:0 1px;
-	padding:10px 15px;
-	color:#777;
-	border:none;
-	background:#fff;
-	-moz-border-radius:3px;
-	-webkit-border-radius:3px;
-	border-radius:3px;
-	outline:none;
-	}
-.pagination > li > a:focus, .pagination > li > a:hover, .pagination > li > span:focus, .pagination > li > span:hover, #schedule thead th{
-	background:#211d71;
-	color:#fff;
-	}
-#inner-scrollbar{padding-right:30px;}
 /**/	
+.carousel-indicators{
+	}
+.carousel-indicators li{
+	width:10px;
+	height:10px;
+	background:transparent;
+	border:2px solid #fff;
+	}
+.carousel-indicators .active{
+	width:12px;
+	height:12px;
+	background:#fff;
+	}
 .carousel-control.left{
 	width:57px;
 	background:url(../img/prev.png) no-repeat 10px 50%;
@@ -445,7 +411,7 @@ img{
 	}
 .owl-dots {
     text-align: center;
-    bottom: 15px;
+    bottom: 0;
     left: 44%;
     position: absolute;
 }
