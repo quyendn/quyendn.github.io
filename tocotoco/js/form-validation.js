@@ -6,7 +6,7 @@
 // - ThemeOn.net -
 
 $(document).ready(function() {
-
+   
 
     // FORM VALIDATION
     // =================================================================
@@ -68,13 +68,13 @@ $(document).ready(function() {
             var name = $('#txtName').val();
             var phone = $('#txtPhone').val();
             var email = $('#txtEmail').val();
-            var emailto = "thenv202@gmail.com";
+            var emailto = "quyendn84@gmail.com";
             var typeId = 1;
-            var webdomain = "f5academy";
+            var webdomain = "tocotoco";
             var dataJSON = { "name": name, "email": email, "phone": phone, "emailto": emailto }
             showLoadingContactImage('content-mobile','formContentContactMobile');
             $.ajax({
-                url: "https://alpha.f5academy.net/api/F5service",
+                url: "https://alpha.f5academy.net/api/TocoTocoservice",
                 type: "Post",
                 async: false,
                 data: dataJSON,
@@ -83,9 +83,10 @@ $(document).ready(function() {
                 success: function (states) {
                     $('#frmMobile').bootstrapValidator('resetForm', true);
                     hideLoadingContactImage('formContentContactMobile', 'content-mobile');
+                    toastr.success('Cảm ơn bạn đã đăng ký tham gia.', { timeOut: 5000 });
                 },
                 error: function (ex) {
-                    toastr.error('Đã có lỗi trong quá trình đăng ký, mời bạn thử lại.', { timeOut: 5000 })
+                    toastr.error('Đã có lỗi trong quá trình đăng ký, mời bạn thử lại.', { timeOut: 5000 });
                     hideLoadingContactImage('content-mobile','formContentContactMobile');
                 },
                 complete: function (jqXHR, textStatus) {
@@ -93,7 +94,80 @@ $(document).ready(function() {
                     $("#txtPhone").val('');
                     $('#txtEmail').val('');
                     $('#frmMobile').bootstrapValidator('resetForm', true);
-                    $("#thanks").show();
+                    window.location.href = "https://quyendn.github.io/tocotoco/dang-ky-thanh-cong.html";
+                }
+            });
+        }
+    }).on('success.form.fv', function (e) {
+
+        });
+    $('#frmMobileFooter').bootstrapValidator({
+        message: 'This value is not valid',
+        excluded: [':disabled'],
+        feedbackIcons: faIcon,
+        fields: {
+            emailfooter: {
+                validators: {
+                    notEmpty: {
+                        message: 'Địa chỉ email không được để trống.'
+                    },
+                    emailAddress: {
+                        message: 'Không đúng định dạng email'
+                    }
+                }
+            },
+            namefooter: {
+                validators: {
+                    notEmpty: {
+                        message: 'Họ tên không được để trống.'
+                    }
+                }
+            },
+            phonefooter: {
+                validators: {
+                    notEmpty: {
+                        message: 'Điện thoại không được để trống.'
+                    },
+                    stringLength: {
+                        min: 10,
+                        max: 11,
+                        message: 'Số điện thoại chỉ có thể là 10 hoặc 11 số.'
+                    }
+                }
+            }
+        },
+        onSuccess: function (e) {
+
+            var name = $('#txtNameFooter').val();
+            var phone = $('#txtPhoneFooter').val();
+            var email = $('#txtEmailFooter').val();
+            var emailto = "quyendn84@gmail.com";
+            var typeId = 1;
+            var webdomain = "tocotoco";
+            var dataJSON = { "name": name, "email": email, "phone": phone, "emailto": emailto }
+            showLoadingContactImage('content-mobile', 'formContentContactFooter');
+            $.ajax({
+                url: "https://alpha.f5academy.net/api/TocoTocoservice",
+                type: "Post",
+                async: false,
+                data: dataJSON,
+                contentType: 'application/json; charset=utf-8',
+                dataType: 'jsonp',
+                success: function (states) {
+                    $('#frmMobileFooter').bootstrapValidator('resetForm', true);
+                    hideLoadingContactImage('formContentContactFooter', 'content-mobile-footer');
+                    toastr.success('Cảm ơn bạn đã đăng ký tham gia.', { timeOut: 5000 });
+                },
+                error: function (ex) {
+                    toastr.error('Đã có lỗi trong quá trình đăng ký, mời bạn thử lại.', { timeOut: 5000 })
+                    hideLoadingContactImage('content-mobile', 'formContentContactFooter');
+                },
+                complete: function (jqXHR, textStatus) {
+                    $('#txtName').val('');
+                    $("#txtPhone").val('');
+                    $('#txtEmail').val('');
+                    $('#frmMobileFooter').bootstrapValidator('resetForm', true);
+                    window.location.href = "https://quyendn.github.io/tocotoco/dang-ky-thanh-cong.html";
                 }
             });
         }
