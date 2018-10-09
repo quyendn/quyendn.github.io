@@ -136,6 +136,20 @@ a, .btn, button{
 
 
 .slogan {
+    
+    /*margin-top:20px;*/
+    /*margin-left:30px;*/
+    text-align: center;
+    display: block;
+    float: left;
+    top: -10px;
+    position: relative;
+}
+.slogan_activate {
+    
+    
+}
+.slogan_none {
     color: #f58220 !important;
     /*margin-top:20px;*/
     /*margin-left:30px;*/
@@ -144,6 +158,9 @@ a, .btn, button{
     float: left;
     top: -10px;
     position: relative;
+}
+.menu_activate {
+    color: #f58220 !important;
 }
 /**/
 

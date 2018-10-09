@@ -136,7 +136,7 @@ a, .btn, button{
 
 
 .slogan {
-    color: #f58220 !important;
+    
     /*margin-top:20px;*/
     /*margin-left:30px;*/
     text-align: center;
@@ -478,5 +478,8 @@ img{
 .owl-dot.active{
 	background:#333;
 	}
-	
-	
+
+
+.menu_activate {
+    color: #f58220 !important;
+}
