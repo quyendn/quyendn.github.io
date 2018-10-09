@@ -222,11 +222,27 @@ a, .btn, button{
 	padding-bottom:15px;
 	background:url(../img/bg2.jpg) no-repeat 50% 50% / auto 100%;
 	}
-#slide6 h3.utmBold{
+#slide6 h3.utmBold, #slide7  h3.utmBold{
 	font-size:60px;
 	margin-top:0;
 	margin-bottom:30px;
 	color:#211d70;}
+#slide7{
+	color:#211d71;
+	background:url(../img/bg-1.jpg) no-repeat 50% 50%/ auto 100%;
+	padding-top:100px;
+	padding-bottom:100px;
+	}
+#slide7 h2{
+	font-size:50px;
+	margin-bottom:30px;
+	text-transform:uppercase;
+	}
+#slide7 p{
+	font-size:24px;
+	margin-bottom:0;
+	}
+
 .panel-default{
 	border:none;
 	border-bottom:1px solid #211d70;

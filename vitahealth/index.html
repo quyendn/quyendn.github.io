@@ -37,7 +37,7 @@
                             </li>
                             <li><a data-scroll="" data-options="easing: easeInQuad" href="javascript:void(0);" class="navbar1 about">Về VitaHealth</a></li>
                             <li><a data-scroll="" data-options="easing: easeInQuad" href="javascript:void(0);" class="navbar1 question">Câu hỏi thường gặp</a></li>
-                            <li><a data-scroll="" data-options="easing: easeInQuad" href="#footer" class="navbar1">Liên hệ</a></li>
+                            <li><a data-scroll="" data-options="easing: easeInQuad" href="javascript:void(0);" class="navbar1 contact">Liên hệ</a></li>
                             <li><a href="https://www.facebook.com/VitaHealth.VN"><img src="img/icon_fb.png"></a><a href="http://vitahealth.vn"><img src="img/icon_home.png"></a></li>
                         </ul>
                     </nav>
@@ -187,7 +187,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="item active" id="slide6">
+                    <div class="item" id="slide6">
                         <div class="container">
                             <h3 class="utmBold text-center">Câu hỏi thường gặp</h3>
 
@@ -353,6 +353,17 @@
                             </nav>
                         </div>
                     </div>
+                    <div class="item active" id="slide7">
+                        <div class="container text-center">
+                            <h3 class="utmBold text-center">Liên hệ</h3>
+                            <h2><strong>Công ty TNHH Vita Health Việt Nam</strong></h2>
+                            <p><strong>Địa chỉ:</strong> Tầng 2, tòa nhà HBT Số 456-458 Hai Bà Trưng, phường Tân Định, Quận 1, TP. Hồ Chí Minh</p>
+                            <p><strong>Điện thoại:</strong> (+84) 28 3848 3523</p>
+                            <p><strong>Fax:</strong> (+84)  28 3848 3582</p>
+                            <p><strong>Website:</strong>  www.vitahealth.vn</p>
+                            <p><strong>Email:</strong> enquiry@vitahealth.com.vn</p>
+                        </div>
+                    </div>
                 </div>
                 <a data-slide="prev" role="button" href="#slide" class="left carousel-control"></a>
                 <a data-slide="next" role="button" href="#slide" class="right carousel-control"></a>
@@ -408,8 +419,9 @@
                 }
             });
             $('.slogan').click(function () { owl.trigger('to.owl.carousel', 1); });
-            $('.about').click(function () { owl.trigger('to.owl.carousel', 2); });
+            $('.about').click(function () { owl.trigger('to.owl.carousel', 2); }); 
             $('.question').click(function () { owl.trigger('to.owl.carousel', 5); });
+            $('.contact').click(function () { owl.trigger('to.owl.carousel', 6); });
         });
 
     </script>
