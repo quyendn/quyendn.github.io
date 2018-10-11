@@ -85,7 +85,7 @@ $(document).ready(function() {
                     $("#txtPhone").val('');
                     $('#txtEmail').val('');
                     $('#frmMobile').bootstrapValidator('resetForm', true);
-                    window.location.href = "https://quyendn.github.io/tocotoco/dang-ky-thanh-cong.html";
+                    window.location.href = "/dang-ky-thanh-cong.html";
                 }
             });
         }
@@ -149,7 +149,7 @@ $(document).ready(function() {
                     $("#txtPhone").val('');
                     $('#txtEmail').val('');
                     $('#frmMobileFooter').bootstrapValidator('resetForm', true);
-                    window.location.href = "https://quyendn.github.io/tocotoco/dang-ky-thanh-cong.html";
+                    window.location.href = "/dang-ky-thanh-cong.html";
                 }
             });
         }
