@@ -61,13 +61,6 @@ $(document).ready(function() {
                         message: 'Số điện thoại chỉ có thể là 10 hoặc 11 số.'
                     }
                 }
-            },
-            inlineRadioOptions: {
-                validators: {
-                    notEmpty: {
-                        message: 'Cần chọn địa điểm.'
-                    }
-                }
             }
         },
         onSuccess: function (e) {
@@ -75,7 +68,7 @@ $(document).ready(function() {
             var name = $('#txtName').val();
             var email = $('#txtEmail').val();
             var phone = $('#txtPhone').val();
-            var place = $("input[name='inlineRadioOptions']:checked").val();
+            var place = 'Hồ Chí Minh';
             var typeId = 1;
             var emailto = "quyendn84@gmail.com";
             var dataJSON = { "name": name, "email": email, "phone": phone, "place": place, "emailto": emailto };
