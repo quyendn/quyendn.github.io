@@ -237,7 +237,7 @@ h1, h2, h3{
 	}
 #slide .text-center{
 	position:absolute;
-	bottom:30px;
+	bottom:110px;
 	left:0;
 	right:0;
 	}
@@ -880,7 +880,4 @@ img{
     bottom: 0;
     right: 0;
     
-}
-#VdoPlayr {
-    margin: 0 auto;
 }
