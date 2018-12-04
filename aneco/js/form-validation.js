@@ -33,17 +33,14 @@ $(document).ready(function() {
         excluded: [':disabled'],
         feedbackIcons: faIcon,
         fields: {
-            email: {
+            address: {
                 validators: {
                     notEmpty: {
-                        message: 'Địa chỉ email không được để trống.'
-                    },
-                    emailAddress: {
-                        message: 'Không đúng định dạng email'
+                        message: 'Địa chỉ không được để trống.'
                     }
                 }
             },
-            name: {
+            fullname: {
                 validators: {
                     notEmpty: {
                         message: 'Họ tên không được để trống.'
@@ -65,35 +62,127 @@ $(document).ready(function() {
         },
         onSuccess: function (e) {
 
-            var name = $('#txtName').val();
-            var phone = $('#txtPhone').val();
-            var email = $('#txtEmail').val();
-            var emailto = "thenv202@gmail.com";
-            var typeId = 1;
-            var webdomain = "f5academy";
-            var dataJSON = { "name": name, "email": email, "phone": phone, "emailto": emailto }
+            var fullname = $('#fullname').val();
+            var phone = $('#phone').val();
+            var address = $('#address').val();
+            var emailto = "quyendn84@gmail.com";
+            var typeId = 0;
+            var dataJSON = { "name": fullname, "address": address, "phone": phone,"typeId": typeId, "emailto": emailto }
             showLoadingContactImage('content-mobile','formContentContactMobile');
             $.ajax({
-                url: "https://alpha.f5academy.net/api/F5service",
+                url: "https://alpha.f5academy.net/api/Anecoservice",
                 type: "Post",
                 async: false,
                 data: dataJSON,
                 contentType: 'application/json; charset=utf-8',
                 dataType: 'jsonp',
                 success: function (states) {
-                    $('#frmMobile').bootstrapValidator('resetForm', true);
-                    hideLoadingContactImage('formContentContactMobile', 'content-mobile');
+                    if(states=="0")
+                    {
+                        toastr.error('Số điện thoại đã được đăng ký.', { timeOut: 5000 })
+                        hideLoadingContactImage('content-mobile', 'formContentContactMobile');
+                        return false;
+                    }
+                    else
+                    {
+                        $('#frmMobile').bootstrapValidator('resetForm', true);
+                        toastr.success('Cảm ơn bạn đã tham gia chương trình.', { timeOut: 5000 })
+                        hideLoadingContactImage('content-mobile', 'formContentContactMobile');
+                    }
+                    
                 },
                 error: function (ex) {
                     toastr.error('Đã có lỗi trong quá trình đăng ký, mời bạn thử lại.', { timeOut: 5000 })
                     hideLoadingContactImage('content-mobile','formContentContactMobile');
                 },
                 complete: function (jqXHR, textStatus) {
-                    $('#txtName').val('');
-                    $("#txtPhone").val('');
-                    $('#txtEmail').val('');
+                    $('#fullname').val('');
+                    $("#phone").val('');
+                    $('#address').val('');
                     $('#frmMobile').bootstrapValidator('resetForm', true);
-                    $("#thanks").show();
+                    window.location.href ="dang-ky-thanh-cong.html";
+                    
+                }
+            });
+        }
+    }).on('success.form.fv', function (e) {
+
+    });
+    $('#frmMobile2').bootstrapValidator({
+        message: 'This value is not valid',
+        excluded: [':disabled'],
+        feedbackIcons: faIcon,
+        fields: {
+            addressother: {
+                validators: {
+                    notEmpty: {
+                        message: 'Địa chỉ không được để trống.'
+                    }
+                }
+            },
+            fullnameother: {
+                validators: {
+                    notEmpty: {
+                        message: 'Họ tên không được để trống.'
+                    }
+                }
+            },
+            phoneother: {
+                validators: {
+                    notEmpty: {
+                        message: 'Điện thoại không được để trống.'
+                    },
+                    stringLength: {
+                        min: 10,
+                        max: 11,
+                        message: 'Số điện thoại chỉ có thể là 10 hoặc 11 số.'
+                    }
+                }
+            }
+        },
+        onSuccess: function (e) {
+
+            var fullname = $('#fullnameother').val();
+            var phone = $('#phoneother').val();
+            var address = $('#addressother').val();
+            var emailto = "quyendn84@gmail.com";
+            var typeId = 1;
+            var dataJSON = { "name": fullname, "address": address, "phone": phone,"typeId": typeId, "emailto": emailto }
+            showLoadingContactImage('content-mobile-other','formContentContactFooter');
+            $.ajax({
+                url: "https://alpha.f5academy.net/api/Anecoservice",
+                type: "Post",
+                async: false,
+                data: dataJSON,
+                contentType: 'application/json; charset=utf-8',
+                dataType: 'jsonp',
+                success: function (states) {
+                    if(states=="0")
+                    {
+                        toastr.error('Số điện thoại đã được đăng ký.', { timeOut: 5000 })
+                        hideLoadingContactImage('content-mobile-other', 'formContentContactFooter');
+                        return false;
+                    }
+                    else
+                    {
+                        $('#frmMobile').bootstrapValidator('resetForm', true);
+                        toastr.success('Cảm ơn bạn đã tham gia chương trình.', { timeOut: 5000 })
+                        hideLoadingContactImage('content-mobile-other', 'formContentContactFooter');
+                    }
+                    
+                },
+                error: function (ex) {
+                    toastr.error('Đã có lỗi trong quá trình đăng ký, mời bạn thử lại.', { timeOut: 5000 })
+                    hideLoadingContactImage('content-mobile-other','formContentContactFooter');
+                    
+                },
+                complete: function (jqXHR, textStatus) {
+                    $('#fullnameother').val('');
+                    $("#phoneother").val('');
+                    $('#addressother').val('');
+                    $('#frmMobile2').bootstrapValidator('resetForm', true);
+                    window.location.href ="dang-ky-thanh-cong.html";
+                    
                 }
             });
         }

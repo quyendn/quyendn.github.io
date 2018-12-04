@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="no-js" style="height:100%;">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Aneco</title>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MGZWRVD');</script>
+    <!-- End Google Tag Manager -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700,700i&amp;subset=vietnamese" rel="stylesheet"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.nanoscroller.min.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <link href="css/font-face.css" rel="stylesheet" type="text/css" />
+    <link href="css/toastr.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrapValidator.min.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MGZWRVD"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div id="container">
+        
+        <div id="thank">
+        	<div class="container text-center">
+            	<div class="logo_thank"><img src="img/logo_ft.png"></div>
+                <div class="text">
+                	<p>Cám ơn bạn đã để lại thông tin tham gia thử thách và nhận quà.</p>
+                    <p>AnEco sẽ liên hệ với bạn trong thời gian sớm nhất!</p>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="container">
+            	<div class="row">
+                	<div class="col-sm-8">
+                    	<div><img src="img/logo_ft.png"></div>
+                    	<h3>Sản phẩm vi sinh phân hủy hoàn toàn AnEco</h3>
+                        <h4>Tập đoàn An Phát Holdings</h4>
+                        <p>Địa chỉ: Tầng 17, Tòa nhà PV Oil, 148 Hoàng Quốc Việt, Quận Cầu Giấy, Hà Nội</p>
+                        <p>Tel: <a href="" class="phone">0243 21 91277</a></p>
+                        <div class="social">
+                        	<a href="https://www.facebook.com/tuivisinh.aneco/"><img src="img/ic_fb.png"></a>
+                            <a href="https://www.youtube.com/channel/UCjLVVU4mNrz0qS5hyL0MQtw/featured"><img src="img/ic_yt.png"></a>
+                            <a href="https://m.me/tuivisinh.aneco"><img src="img/ic_tw.png"></a>
+                        </div>
+                    </div>
+                    <div class="col-sm-4"><img src="img/bg-ft.png"></div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="fixTop"><a href="tel:02432191277"><img src="img/hotline.png"></a></div>
+        <div class="fixBottom"><a data-scroll="" data-options="easing: easeInQuad" href="#section1"><img src="img/btn_reg_gift.png"></a></div>
+    </div>
+    <!---->
+   
+    <script src="js/smooth-scroll.js"></script>
+    <script type="text/javascript" src="js/bootstrapValidator.min.js"></script>
+    <script type="text/javascript" src="js/form-validation.js"></script>
+    <script type="text/javascript" src="js/toastr.js"></script>
+    <script type="text/javascript">
+        function AllowNumberOnly(evt) {
+            evt = (evt) ? evt : event;
+            var charCode = (evt.charCode) ? evt.charCode : ((evt.keyCode) ? evt.keyCode : ((evt.which) ? evt.which : 0));
+            if ((charCode > 31) && (charCode < 48 || charCode > 57) && charCode != 8 && charCode != 37 && charCode != 39 && charCode != 45 && charCode != 46) {
+                return false;
+            }
+            return true;
+        }
+    </script>
+    <script>
+        smoothScroll.init({
+            speed: 1000,
+            easing: 'easeInOutCubic',
+            offset: 30,
+            updateURL: false,
+            callbackBefore: function (toggle, navbar1) { },
+            callbackAfter: function (toggle, navbar1) { }
+        });
+
+    </script>
+    <script>
+    	$("button").click(function(){
+			$(".navbar-toggle").toggleClass("close");
+		});
+
+    	$(".navbar-toggle").click(function(){
+			$("#header").toggleClass("open");
+		});
+  
+    	$(".navbar-nav a").click(function(){
+			$(".navbar-collapse").removeClass("in");
+		
+			$(".navbar-toggle").removeClass("close");
+		});
+    </script>
+</body>
+
+
+</html>

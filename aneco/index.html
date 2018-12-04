@@ -1,22 +1,37 @@
 ﻿<!DOCTYPE html>
 <html lang="en" class="no-js" style="height:100%;">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>Aneco</title>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MGZWRVD');</script>
+    <!-- End Google Tag Manager -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700,700i&amp;subset=vietnamese" rel="stylesheet"> 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/scrolling-nav.js"></script>
     <script src="js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/wow/wow.min.js"></script>
     <script src="js/jquery.nanoscroller.min.js"></script>
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="css/styles.css" rel="stylesheet" type="text/css" />
     <link href="css/font-face.css" rel="stylesheet" type="text/css" />
     <link href="css/toastr.min.css" rel="stylesheet" type="text/css" />
     <link href="css/bootstrapValidator.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="css/animate.css" />
 </head>
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MGZWRVD"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <div id="container">
         <div id="header">
         	<div class="container text-center">
@@ -31,7 +46,11 @@
                     <li data-slide-to="2" data-target="#heartbanner-slide" class=""></li>
                 </ol>
                 <div role="listbox" class="carousel-inner">
-                    <div class="item active"><img src="img/slide1.png"></div>
+                    <div class="item active">
+                        <a href="https://www.facebook.com/tuivisinh.aneco/">
+                            <img src="img/slide1.png">
+                        </a>
+                    </div>
                 </div>
                 <a data-slide="prev" role="button" href="#heartbanner-slide" class="left carousel-control"></a>
                 <a data-slide="next" role="button" href="#heartbanner-slide" class="right carousel-control"></a>
@@ -39,46 +58,46 @@
             
         </div>
         </div>
-        <div class="section text-center" id="section1">
+        <div class="section text-center wow fadeInUp" id="section1">
             <div class="container">
             	<div class="st-hd">
                     <h3><em>7 ngày thử thách - Xách quà liền tay</em></h3>
                     <p>Vui lòng để lại thông tin của bạn để tham gia thử thách và nhận Quà từ AnEco</p>
                 </div>
-            	<form id="frmMobile1" class="" autocomplete="off">
-                    <div id="formContentContactFooter1" class="row text-center">
+            	<form id="frmMobile" class="wow fadeInLeft" autocomplete="off">
+                    <div id="formContentContactMobile" class="row text-center">
                         <div class="form-group col-sm-4 col-md-offset-2">
-                            <input type="text" class="form-control" placeholder="Họ và tên">
+                            <input type="text" class="form-control" name="fullname" id="fullname" placeholder="Họ và tên">
                         </div>
                         <div class="form-group col-sm-4">
-                            <input type="text" class="form-control" placeholder="Số điện thoại">
+                            <input type="text" class="form-control" name="phone" id="phone" onkeypress="return AllowNumberOnly(event);"  placeholder="Số điện thoại">
                         </div>
                         <div class="form-group col-sm-8 col-md-offset-2">
-                            <input type="text" class="form-control" placeholder="Địa chỉ">
+                            <input type="text" class="form-control" name="address" id="address" placeholder="Địa chỉ">
                         </div>
                         <div class="form-group col-sm-8 col-md-offset-2"><button class="btn btn-lg"><img src="img/icon_hand.png"> Gửi đăng ký</button></div>
                     </div>
                     <div id="content-mobile"></div>
                 </form>
-                <form id="frmMobile2" class="" autocomplete="off">
+                <form id="frmMobile2" class="wow fadeInRight" autocomplete="off">
                 	<p><strong>Để người thân/bạn bè cũng có quà, lan tỏa thử thách tới:</strong></p>
-                    <div id="formContentContactFooter2" class="row text-center">
-                        <div class="form-group col-sm-5 col-md-offset-1">
-                            <input type="text" class="form-control" placeholder="Họ và tên">
+                    <div id="formContentContactFooter" class="row text-center">
+                        <div class="form-group col-sm-4 col-md-offset-2">
+                            <input type="text" class="form-control" name="fullnameother" id="fullnameother" placeholder="Họ và tên">
                         </div>
-                        <div class="form-group col-sm-5">
-                            <input type="text" class="form-control" placeholder="Số điện thoại">
+                        <div class="form-group col-sm-4">
+                            <input type="text" class="form-control" name="phoneother" id="phoneother" onkeypress="return AllowNumberOnly(event);"  placeholder="Số điện thoại">
                         </div>
-                        <div class="form-group col-sm-10 col-md-offset-1">
-                            <input type="text" class="form-control" placeholder="Địa chỉ">
+                        <div class="form-group col-sm-8 col-md-offset-2">
+                            <input type="text" class="form-control" name="addressother" id="addressother" placeholder="Địa chỉ">
                         </div>
                         <div class="form-group col-sm-10 col-md-offset-1"><button class="btn btn-lg">Gửi</button></div>
                     </div>
-                    <div id="content-mobile"></div>
+                    <div id="content-mobile-other"></div>
                 </form>
             </div>
         </div>
-        <div class="section" id="section2">
+        <div class="section wow fadeInUp" id="section2">
             <div class="container">
             	<div class="st-hd text-center">
                     <h3>Quá trình tạo ra túi Aneco vi sinh phân hủy</h3>
@@ -88,76 +107,73 @@
             	<div class="steps"><img src="img/stepall.png"></div>
             </div>
         </div>
-        <div class="section" id="section3">
+        <div class="section wow fadeInUp" id="section3">
             <div class="container">
             	<div class="st-hd text-center">
                     <h3>SẢN PHẨM của aneco</h3>
                 </div>
             	<div class="owl-carousel">
                     <div class="item">
-                        <div class="thumb"><a href="img/tiendo/94-Toan-canh-GDH.JPG" class="lightfancybox" rel="album_01"><img src="img/p1.jpg"></a></div>
-                        <p><a href="">Túi Shopping Vi Sinh Phẩn Hủy Hoàn Toàn Aneco Có Quai (30X55) Hộp Xanh</a></p>
-                        <div class="text-center"><a href="" class="btn">Mua ngay</a></div>
+                        <div class="thumb"><a href="https://shopee.vn/anecomall" class="lightfancybox" rel="album_01"><img src="img/p1.jpg"></a></div>
+                        <p><a href="https://shopee.vn/anecomall">Túi Shopping Vi Sinh Phẩn Hủy Hoàn Toàn Aneco Có Quai (30X55) Hộp Xanh</a></p>
+                        <div class="text-center"><a href="https://shopee.vn/anecomall" class="btn">Mua ngay</a></div>
                     </div>
                     <div class="item">
-                        <div class="thumb"><a href="img/tiendo/94-Toan-canh-GDH.JPG" class="lightfancybox" rel="album_01"><img src="img/p2.jpg"></a></div>
-                        <p><a href="">Túi Shopping Vi Sinh Phân Hủy Hoàn Toàn Aneco (20x38) Hộp Xanh</a></p>
-                        <div class="text-center"><a href="" class="btn">Mua ngay</a></div>
+                        <div class="thumb"><a href="https://shopee.vn/anecomall" class="lightfancybox" rel="album_01"><img src="img/p2.jpg"></a></div>
+                        <p><a href="https://shopee.vn/anecomall">Túi Shopping Vi Sinh Phân Hủy Hoàn Toàn Aneco (20x38) Hộp Xanh</a></p>
+                        <div class="text-center"><a href="https://shopee.vn/anecomall" class="btn">Mua ngay</a></div>
                     </div>
                     <div class="item">
-                        <div class="thumb"><a href="img/tiendo/94-Toan-canh-GDH.JPG" class="lightfancybox" rel="album_01"><img src="img/p3.jpg"></a></div>
-                        <p><a href="">Túi Đựng Thực Phẩm Vi Sinh Phân Hủy Hoàn Toàn Aneco (20x35) Hộp Nâu Không Quai</a></p>
-                        <div class="text-center"><a href="" class="btn">Mua ngay</a></div>
+                        <div class="thumb"><a href="https://shopee.vn/anecomall" class="lightfancybox" rel="album_01"><img src="img/p3.jpg"></a></div>
+                        <p><a href="https://shopee.vn/anecomall">Túi Đựng Thực Phẩm Vi Sinh Phân Hủy Hoàn Toàn Aneco (20x35) Hộp Nâu Không Quai</a></p>
+                        <div class="text-center"><a href="https://shopee.vn/anecomall" class="btn">Mua ngay</a></div>
                     </div>
                     <div class="item">
-                        <div class="thumb"><a href="img/tiendo/94-Toan-canh-GDH.JPG" class="lightfancybox" rel="album_01"><img src="img/p4.jpg"></a></div>
-                        <p><a href="">Combo 3 Hộp Túi Đựng Thực Phẩm + 2 Túi Đựng Rác Vi Sinh Phân Hủy Hoàn Toàn Aneco (Không Quai)</a></p>
-                        <div class="text-center"><a href="" class="btn">Mua ngay</a></div>
+                        <div class="thumb"><a href="https://shopee.vn/anecomall" class="lightfancybox" rel="album_01"><img src="img/p4.jpg"></a></div>
+                        <p><a href="https://shopee.vn/anecomall">Combo 3 Hộp Túi Đựng Thực Phẩm + 2 Túi Đựng Rác Vi Sinh Phân Hủy Hoàn Toàn Aneco (Không Quai)</a></p>
+                        <div class="text-center"><a href="https://shopee.vn/anecomall" class="btn">Mua ngay</a></div>
                     </div>
                     <div class="item">
-                        <div class="thumb"><a href="img/tiendo/94-Toan-canh-GDH.JPG" class="lightfancybox" rel="album_01"><img src="img/p2.jpg"></a></div>
-                        <p><a href="">Túi Shopping Vi Sinh Phẩn Hủy Hoàn Toàn Aneco Có Quai (30X55) Hộp Xanh</a></p>
-                        <div class="text-center"><a href="" class="btn">Mua ngay</a></div>
+                        <div class="thumb"><a href="https://shopee.vn/anecomall" class="lightfancybox" rel="album_01"><img src="img/p2.jpg"></a></div>
+                        <p><a href="https://shopee.vn/anecomall">Túi Shopping Vi Sinh Phẩn Hủy Hoàn Toàn Aneco Có Quai (30X55) Hộp Xanh</a></p>
+                        <div class="text-center"><a href="https://shopee.vn/anecomall" class="btn">Mua ngay</a></div>
                     </div>
                     <div class="item">
-                        <div class="thumb"><a href="img/tiendo/94-Toan-canh-GDH.JPG" class="lightfancybox" rel="album_01"><img src="img/p3.jpg"></a></div>
-                        <p><a href="">Túi Shopping Vi Sinh Phẩn Hủy Hoàn Toàn Aneco Có Quai (30X55) Hộp Xanh</a></p>
-                        <div class="text-center"><a href="" class="btn">Mua ngay</a></div>
+                        <div class="thumb"><a href="https://shopee.vn/anecomall" class="lightfancybox" rel="album_01"><img src="img/p3.jpg"></a></div>
+                        <p><a href="https://shopee.vn/anecomall">Túi Shopping Vi Sinh Phẩn Hủy Hoàn Toàn Aneco Có Quai (30X55) Hộp Xanh</a></p>
+                        <div class="text-center"><a href="https://shopee.vn/anecomall" class="btn">Mua ngay</a></div>
                     </div>
                     <div class="item">
-                        <div class="thumb"><a href="img/tiendo/94-Toan-canh-GDH.JPG" class="lightfancybox" rel="album_01"><img src="img/p4.jpg"></a></div>
-                        <p><a href="">Túi Shopping Vi Sinh Phẩn Hủy Hoàn Toàn Aneco Có Quai (30X55) Hộp Xanh</a></p>
-                        <div class="text-center"><a href="" class="btn">Mua ngay</a></div>
+                        <div class="thumb"><a href="https://shopee.vn/anecomall" class="lightfancybox" rel="album_01"><img src="img/p4.jpg"></a></div>
+                        <p><a href="https://shopee.vn/anecomall">Túi Shopping Vi Sinh Phẩn Hủy Hoàn Toàn Aneco Có Quai (30X55) Hộp Xanh</a></p>
+                        <div class="text-center"><a href="https://shopee.vn/anecomall" class="btn">Mua ngay</a></div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="section" id="section4">
+        <div class="section wow fadeInUp" id="section4">
             <div class="container">
             	<div class="st-hd text-center">
                     <h3>CÁC HOẠT ĐỘNG ANECO</h3>
                 </div>
             	<div class="row">
                 	<div class="col-sm-4">
-                    	<div><a href=""><img src="img/n1.jpg"></a></div>
-                        <h2><a href="">Sản phẩm AnEco tham dự Chương trình “Chống rác thải nhựa” do Bộ Tài nguyên và Môi trường tổ chức</a></h2>
+                    	<div><a href="http://anphatholdings.com/san-pham-than-thien-moi-truong/san-pham-aneco-tham-du-chuong-trinh-chong-rac-thai-nhua-do-bo-tai-nguyen-va-moi-truong-to-chuc.html"><img src="img/n1.jpg"></a></div>
+                        <h2><a href="http://anphatholdings.com/san-pham-than-thien-moi-truong/san-pham-aneco-tham-du-chuong-trinh-chong-rac-thai-nhua-do-bo-tai-nguyen-va-moi-truong-to-chuc.html">Sản phẩm AnEco tham dự Chương trình “Chống rác thải nhựa” do Bộ Tài nguyên và Môi trường tổ chức</a></h2>
                     </div>
                     <div class="col-sm-4">
-                    	<div><a href=""><img src="img/n2.jpg"></a></div>
-                        <h2><a href="">AnEco tham gia sự kiện "Sử dụng các sản phẩm thân thiện với môi trường" do Bộ VHTT&amp;DL tổ chức tại Đà Nẵng</a></h2>
+                    	<div><a href="http://anphatholdings.com/san-pham-than-thien-moi-truong/aneco-tham-gia-su-kien-su-dung-cac-san-pham-than-thien-voi-moi-truong-do-bo-vhttdl-to-chuc-tai-da-nang.html"><img src="img/n2.jpg"></a></div>
+                        <h2><a href="http://anphatholdings.com/san-pham-than-thien-moi-truong/aneco-tham-gia-su-kien-su-dung-cac-san-pham-than-thien-voi-moi-truong-do-bo-vhttdl-to-chuc-tai-da-nang.html">AnEco tham gia sự kiện "Sử dụng các sản phẩm thân thiện với môi trường" do Bộ VHTT&amp;DL tổ chức tại Đà Nẵng</a></h2>
                     </div>
                     <div class="col-sm-4">
-                    	<div><a href=""><img src="img/n1.jpg"></a></div>
-                        <h2><a href="">Tiêu dùng xanh giữa không gian EcoPark</a></h2>
+                    	<div><a href="http://anphatholdings.com/san-pham-than-thien-moi-truong/tieu-dung-xanh-giua-khong-gian-ecopark.html"><img src="img/n1.jpg"></a></div>
+                        <h2><a href="http://anphatholdings.com/san-pham-than-thien-moi-truong/tieu-dung-xanh-giua-khong-gian-ecopark.html">Tiêu dùng xanh giữa không gian EcoPark</a></h2>
                     </div>
                 </div>
             </div>
         </div>
-        
-        
-        
-        <div id="footer">
-            <div class="container">
+          <div id="footer">
+            <div class="container wow fadeInUp">
             	<div class="row">
                 	<div class="col-sm-8">
                     	<div><img src="img/logo_ft.png"></div>
@@ -166,9 +182,9 @@
                         <p>Địa chỉ: Tầng 17, Tòa nhà PV Oil, 148 Hoàng Quốc Việt, Quận Cầu Giấy, Hà Nội</p>
                         <p>Tel: <a href="" class="phone">0243 21 91277</a></p>
                         <div class="social">
-                        	<a href=""><img src="img/ic_fb.png"></a>
-                            <a href=""><img src="img/ic_yt.png"></a>
-                            <a href=""><img src="img/ic_tw.png"></a>
+                        	<a href="https://www.facebook.com/tuivisinh.aneco/"><img src="img/ic_fb.png"></a>
+                            <a href="https://www.youtube.com/channel/UCjLVVU4mNrz0qS5hyL0MQtw/featured"><img src="img/ic_yt.png"></a>
+                            <a href="https://m.me/tuivisinh.aneco"><img src="img/ic_tw.png"></a>
                         </div>
                     </div>
                     <div class="col-sm-4"><img src="img/bg-ft.png"></div>
@@ -176,14 +192,10 @@
                 </div>
             </div>
         </div>
-        <div class="fixTop"><a href=""><img src="img/hotline.png"></a></div>
-        <div class="fixBottom"><a href=""><img src="img/btn_reg_gift.png"></a></div>
+        <div class="fixTop"><a href="tel:02432191277"><img src="img/hotline.png"></a></div>
+        <div class="fixBottom"><a data-scroll="" data-options="easing: easeInQuad" href="#section1"><img src="img/btn_reg_gift.png"></a></div>
     </div>
     <!---->
-    
-    
-    
-    
     <script src="js/smooth-scroll.js"></script>
     <script type="text/javascript" src="js/bootstrapValidator.min.js"></script>
     <script type="text/javascript" src="js/form-validation.js"></script>
@@ -267,6 +279,9 @@
 		
 			$(".navbar-toggle").removeClass("close");
 		});
+    </script>
+     <script>
+        new WOW().init();
     </script>
 </body>
 

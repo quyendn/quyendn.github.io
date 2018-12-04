@@ -415,4 +415,15 @@ img{
 	background:#333;
 	}
 	
-	
+/*thank*/
+#thank{
+	padding:30px 0 90px 0;
+	}
+#thank .logo_thank{
+	margin-bottom:90px;
+	}
+#thank .text{
+	text-transform:uppercase;
+	font-size:24px;
+	color:#0b9e49;
+	}
