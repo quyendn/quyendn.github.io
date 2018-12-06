@@ -1,0 +1,764 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="no-js" style="height:100%;">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>NOVAON Cloud</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700,700i,900&amp;subset=vietnamese" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <link href="css/font-face.css" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrapValidator.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/toastr.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="css/animate.css" />
+    <script>
+        $(document).ready(function () {
+            $(".navbar1").on('click', (function () {
+                $('.navbar-collapse').removeClass("in");
+            })
+       );
+        });
+        
+    </script>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <div class="affix-top" data-spy="affix" data-offset-top="79">
+                <div class="container">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><img src="img/navbar-toggle.png"></button>
+                    <a class="navbar-brand" href="/"><img alt="" src="img/logo.png" width=""></a>
+                    <nav class="collapse navbar-collapse" id="navbar" role="navigation">
+                        <ul class="nav navbar-nav pull-right">
+                            <li class="active"><a data-scroll="" data-options="easing: easeInQuad" href="#section1List" class="navbar1">Tổng quan G Suite</a></li>
+                            <li class=""><a data-scroll="" data-options="easing: easeInQuad" href="#section3" class="navbar1">Các sản phẩm</a></li>
+                            <li class=""><a data-scroll="" data-options="easing: easeInQuad" href="#section2" class="navbar1">Gói dịch vụ</a></li>
+                            <li class=""><a data-scroll="" data-options="easing: easeInQuad" href="#section4" class="navbar1">Câu chuyện thành công</a></li>
+                            <li class=""><a data-scroll="" data-options="easing: easeInQuad" href="#section5" class="navbar1">Về Novaon CLOUD</a></li>
+                            <li class=""><a data-scroll="" data-options="easing: easeInQuad" href="#footer" class="navbar1">liên hệ</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div id="slide">
+            <div data-ride="carousel" class="carousel slide hidden-sm hidden-xs" id="heartbanner-slide">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li class="active" data-slide-to="0" data-target="#heartbanner-slide"></li>
+                    <li data-slide-to="1" data-target="#heartbanner-slide" class=""></li>
+                    <li data-slide-to="2" data-target="#heartbanner-slide" class=""></li>
+                </ol>
+                <div role="listbox" class="carousel-inner">
+                    <div class="item active"><img src="img/banner1.jpg"></div>
+                    <div class="item"><img src="img/banner2.jpg"></div>
+                    <div class="item"><img src="img/banner3.jpg"></div>
+
+                </div>
+                <a data-slide="prev" role="button" href="#heartbanner-slide" class="left carousel-control hidden"></a>
+                <a data-slide="next" role="button" href="#heartbanner-slide" class="right carousel-control hidden"></a>
+            </div>
+            <div id="slide_mobile" class="visible-sm visible-xs">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6"><img src="img/slide2_chu.png"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="form-register" class="wow fadeInUp">
+                <div class="inner">
+                    <h3>TƯ VẤN G SUITE MIỄN PHÍ</h3>
+                    <form id="formContact" autocomplete="off">
+                        <p class="text-center small">Vui lòng để lại thông tin chính xác. Tư vấn viên sẽ gọi điện ngay cho bạn sau khi nhận được thông tin</p>
+                        <div id="formContentContact">
+                            <div class="form-group input-group">
+                                <span class="input-group-addon" id="basic-addon1"><i class="glyphicon glyphicon-user"></i></span>
+                                <input type="text" class="form-control" name="name" id="txtName" placeholder="Họ và tên">
+                            </div>
+                            <div class="form-group input-group">
+                                <span class="input-group-addon" id="basic-addon1"><i class="glyphicon glyphicon-envelope"></i></span>
+                                <input type="text" class="form-control" placeholder="Email" id="txtEmail" name="email">
+                            </div>
+                            <div class="form-group input-group">
+                                <span class="input-group-addon" id="basic-addon1"><i class="glyphicon glyphicon-earphone"></i></span>
+                                <input type="text" class="form-control " name="phone" id="txtPhone" placeholder="Số điện thoại">
+                            </div>
+                            <div class="form-group input-group">
+                                <span class="input-group-addon" id="basic-addon1"><i class="glyphicon glyphicon-signal"></i></span>
+                                <input type="text" class="form-control" name="company" id="txtCompany" placeholder="Tên công ty">
+                            </div>
+                            <p class="text-center small">Novaon cam kết bảo mật thông tin cá nhân của bạn.</p>
+
+                            <div class="input-group col-lg-12 col-md-12 col-sm-12 col-xs-12"><button class="btn btn-block">Đăng ký</button></div>
+                            <div class="small text-center">
+                                <a href="tel:0966508008"><i class="glyphicon glyphicon-earphone"></i> 0966 508 008 </a> &nbsp;&nbsp;|&nbsp;&nbsp;
+                                <a href="tel:0966689123"><i class="glyphicon glyphicon-earphone"></i> 0966 689 123</a>
+                            </div>
+                            <div id="content"></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section" id="section1">
+            <div class="" id="section1List">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-7">
+                            <h3>Giá trị G Suite mang lại</h3>
+                            <div class="line"></div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <span class="number">304%</span>
+                                    <p>Lợi nhuận trên vốn đầu tư của doanh nghiệp (Khảo sát trên 140 doanh nghiệp với 12,000 users của Forrester Research)</p>
+                                </div>
+                                <div class="col-lg-6">
+                                    <span class="number">13 NGÀY<span class="small">/NĂM</span></span>
+                                    <p>Thời gian nhân viên tiết kiệm (nhờ các ứng dụng Gmail, Google Drive, Google Docs, Google Sheets, Google Hangouts,…)</p>
+                                </div>
+                                <div class="col-lg-4">
+                                    <span class="number">-40%</span>
+                                    <p>Chi phí đi lại hội họp tiết kiệm được</p>
+                                </div>
+                                <div class="col-lg-4">
+                                    <span class="number">50 LẦN</span>
+                                    <p>Khả năng lưu trữ dữ liệu tốt hơn so với mức trung bình của ngành</p>
+                                </div>
+                                <div class="col-lg-4">
+                                    <span class="number">99,9%</span>
+                                    <p>Thời gian đảm bảo hoạt động xuyên suốt</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    
+                    <div class="col-lg-4 col-md-4 col-sm-4 wow fadeInRight">
+                        <div class="benefit" id="ben3">
+                            <div class="text-center"><img src="img/icon_1.png"></div>
+                            <h3 class="text-center">Với nhà lãnh đạo</h3>
+                            <hr />
+                            <p>1. Cho phép lãnh đạo điều hành công việc nhanh hơn.
+                            </p>
+                            <p>2. Giúp doanh nghiệp linh hoạt hơn trong kinh doanh, dễ dàng triển khai các đổi mới.</p>
+                            <p>3. Tập trung nguồn lực vào các sáng kiến chiến lược thay vì hoạt động vận hành, báo cáo
+                            </p>
+                            <p>4. Giảm chi phí, tăng năng suất lao động của nhân viên.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp">
+                        <div class="benefit" id="ben1">
+                            <div class="text-center"><img src="img/icon_2.png"></div>
+                            <h3 class="text-center">Với các nhân viên</h3>
+                            <hr />
+                            <p>1. Nhân viên có thể làm việc mọi lúc, mọi nơi – đặc biệt là nhân viên kinh doanh</p>
+                            <p>2. Không lo bị mất dữ liệu do đã được lưu trữ trên Drive
+                            </p>
+                            <p>3. Cơ chế chia sẻ trong Docs, Sheets, Sites, Video… cho phép hợp tác chuyên nghiệp và hiệu quả
+                            </p>
+                            <p>4. Bộ công cụ quen thuộc và dễ sử dụng.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 wow fadeInLeft">
+                        <div class="benefit" id="ben2">
+                            <div class="text-center"><img src="img/icon_3.png"></div>
+                            <h3 class="text-center">Với bộ phận IT</h3>
+                            <hr />
+                            <p>1. Tiết kiệm chi phí phần cứng, phần mềm và Server
+                            </p>
+                            <p>2. Giảm bớt công việc liên quan đến cài đặt, vận hành, xử lý sự cố…
+                            </p>
+                            <p>3. IT cần ít thời gian để đào tạo nhân viên mới
+                            </p>
+                            <p>4. Dễ dàng mở rộng các phần mềm hữu ích thông qua G Suite MarketPlace
+                            </p>
+                        </div>
+                    </div>
+                    <script>
+                        $(document).ready(function () {
+                            if ($('#section1')) {
+                                var max_height = 0;
+                                $("#ben1,#ben2,#ben3").each(function () {
+
+                                    if ($(this).height() > max_height)
+
+                                        max_height = $(this).height();
+                                });
+                                $("#ben1,#ben2,#ben3").height(max_height);
+                            }
+                        });
+                    </script>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section wow fadeInUp" id="section3">
+            <div class="st-hd">
+                <h3><strong>CÁC SẢN PHẨM CHÍNH</strong></h3>
+            </div>
+            <div class="container">
+                <div class="text-center"><img src="img/g_suite.jpg"></div>
+                <div class="row" id="function">
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <img src="img/icon_4.png">
+                        GMAIL
+                    </div>
+                    <div class="col-lg-9 col-md-9 col-sm-9">
+                        <div class="desc">
+                            <p>Hệ thống mail ổn định và đáng tin cậy nhất thế giới với hơn 400 triệu người dùng</p>
+                            <p>Các thành viên có thể làm việc với Gmail mọi lúc, mọi nơi, trên mọi thiết bị.</p>
+                            <p>Đem lại doanh thu tăng 1,5 – 5% nhờ: không thất lạc mail của khách hàng, mail gửi đi tốt hơn, chế độ quét virus hiệu quả.</p>
+                            <p>Tăng năng suất của nhân viên lên tới 10% nhờ: không phải xóa mail thường xuyên, gửi được mail dung lượng lớn, lọc Spam hiệu quả.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <img src="img/icon_8.png">
+                        Google Calendar
+                    </div>
+                    <div class="col-lg-9 col-md-9 col-sm-9">
+                        <div class="desc">
+                            <p>Giảm đến 5% công việc hành chính nhờ chế độ đặt lịch thông minh.</p>
+                            <p>Có thể đặt lịch sử dụng cho các tài sản chung: phòng họp, xe cơ quan, máy chiếu…</p>
+                            <p>Ngăn ngừa việc trùng lịch.</p>
+                           
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <img src="img/icon_7.png">
+                        Google DOCS
+                    </div>
+                    <div class="col-lg-9 col-md-9 col-sm-9">
+                        <div class="desc">
+                            <p>Giúp loại bỏ thời gian lãng phí và tăng năng suất trong các công việc: Cộng tác nhóm;  xây dựng kế hoạch, dự án; xây dựng và chỉnh sửa tài liệu…</p>
+                            <p>Giúp ban lãnh đạo, bộ phận kế hoạch và các bộ phận khác giảm bớt thời gian cho báo cáo, thống kê.</p>
+                            <p>Người dùng kiểm soát được chia sẻ, tránh thông tin nhận được vào tay kẻ xấu.</p>
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <img src="img/icon_6.png">
+                        Google Drive
+                    </div>
+                    <div class="col-lg-9 col-md-9 col-sm-9">
+                        <div class="desc">
+                            <p>
+                                Bộ nhớ lưu trữ Cloud lên tới vô hạn, tránh việc mất dữ liệu.
+                            </p>
+                            <p>
+                                Làm việc và chia sẻ mọi lúc, mọi nơi
+                            </p>
+                            <p>
+                                Hỗ trợ gửi file dung lượng lớn (hơn 25 MB)
+                            </p>
+                            <p>
+                                Doanh nghiệp dễ dàng lưu giữ dữ liệu khi nhân viên nghỉ.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <img src="img/icon_5.png">
+                        Google Hangouts
+                    </div>
+                    <div class="col-lg-9 col-md-9 col-sm-9">
+                        <div class="desc">
+                            <p>
+                                Giảm tới 40% chi phí đi lại của doanh nghiệp nhờ bộ công cụ chat Hangouts và các cuộc họp trực tuyến thông qua Hangout Meets.
+                            </p>
+                            <p>
+                                Giảm chi phí điện thoại của doanh nghiệp.
+                            </p>
+                            <p>
+                                Giúp các lãnh đạo điều hành liên tục, không gián đoạn.
+                            </p>
+                            <p>
+                                Giúp nhân viên kinh doanh, kỹ sư ngoài công trường… vẫn làm việc hiệu quả.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <img src="img/icon_10.png">
+                        Google Vault
+                    </div>
+                    <div class="col-lg-9 col-md-9 col-sm-9">
+                        <div class="desc">
+                            <p>
+                                Google Vault for Drive đã cung cấp khả năng tìm kiếm và truy xuất các dữ liệu trong Drive của người dùng trong doanh nghiệp.
+                            </p>
+                            <p>
+                                Google Vault for Drive đảm bảo quản trị viên của bạn có toàn quyền kiểm soát dữ liệu công ty trong đám mây.
+                            </p>
+                          
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section wow fadeInUp" id="section2">
+            <div class="container">
+                <div class="st-hd text-center">
+                    <h3><strong>bảng giá dịch vụ</strong></h3>
+                    <div class="line"></div>
+                </div>
+                <div class="owl-carousel" id="prices">
+                    <div class="item wow fadeInLeft" id="item1">
+                        <div class="tl_small text-center">G Suite Basic</div>
+                        <div class="price text-center"><span>$2.50</span>/ người dùng / tháng</div>
+                        <ul>
+                            <li>
+                                Email doanh nghiệp thông qua Gmail (dạng tenban@tenmiencongtyban)
+                            </li>
+                            <li>
+                                Công cụ chat và Hội nghị truyền hình (Hangouts và Google Meets)
+                            </li>
+                            <li>
+                                Lịch trực tuyến (Google Calendar)
+                            </li>
+                            <li>
+                                Google Docs, Google Sheets, Google Slides, Google Sites, Google Forms, Google Keeps.
+                            </li>
+                            <li>
+                                Hỗ trợ 24/7 qua điện thoại, email và trực tuyến
+                            </li>
+                            <li>
+                                Kiểm soát bảo mật và quản lý
+                            </li>
+                            <li>Bộ nhớ đám mây 30GB</li>
+                        </ul>
+                    </div>
+                    <div class="item wow fadeInUp" id="item2">
+                        <div class="tl_small text-center">G Suite Business</div>
+                        <div class="price text-center"><span>$10.00</span>/ người dùng / tháng</div>
+                        <ul>
+                            <li>
+                                Toàn bộ các tính năng của gói G Suite Basic, cộng với:
+                            </li>
+                            <li>
+                                Bộ nhớ đám mây không giới hạn (hoặc 1 TB/người nếu công ty có ít hơn 5 người)
+                            </li>
+                            <li>
+                                Tìm kiếm thông minh trên G Suite với Cloud Search
+                            </li>
+                            <li>
+                                Lưu trữ và thiết lập chính sách lưu giữ cho Email và trò chuyện
+                            </li>
+                            <li>
+                                eDiscovery cho email, các tài liệu (ngăn ngừa mất dữ liệu do luân chuyển nhân viên)
+                            </li>
+                            <li>Báo cáo, kiểm tra để theo dõi hoạt động của người dùng</li>
+
+                        </ul>
+                    </div>
+                    
+                    
+                    <div class="item wow fadeInRight" id="item3">
+                        <div class="tl_small text-center">G SUITE ENTERPRISE</div>
+                        <div class="price text-center">
+                            <span style="color:#222;">Liên hệ : </span><strong><a href="tel:0966508008" style="color:#222;">0966 508 008</a></strong>  |  <strong><a href="tel:0902135889" style="color:#222;">0902 135 889</a></strong>
+                        </div>
+                        <div class="text-center"><img src="img/lh_banggia.jpg"></div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <a class="btn btn-warning btn-lg" href="#form-register" data-scroll="" data-options="easing: easeInQuad">
+                        <img src="img/icon-register.png">
+                        <strong>ĐĂNG KÝ NGAY</strong><br />
+                        <small>(Để nhận tư vấn miễn phí)</small>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="section wow fadeInUp" id="section4">
+            <div class="container">
+                <div class="st-hd text-center">
+                    <h3><strong>Câu chuyện thành công</strong></h3>
+                    <div class="line"></div>
+                    <p>Hơn 5 triệu doanh nghiệp đã sử dụng G Suite, bao gồm nhiều doanh nghiệp trong Fortune 500 thế giới như: Verizon, Home Depot, HSBC, Disney, Ebay, HP, Saleforce, Colgate…</p>
+                </div>
+                <div class="owl-carousel-rate" id="rate">
+                    
+                    
+                    <div class="item" id="rate1">
+                        <div class="top">
+                            <img src="img/Colgate logo.jpg">
+
+                        </div>
+                        <div class="desc">
+                            <p><b>Công ty</b></p>
+                            <p>
+                                Là một công ty đa quốc gia của Mỹ chuyên về sản phẩm tiêu dùng, chăm sóc sức khỏe với hơn 37.700 nhân viên và doanh thu 15 tỷ (năm 2016).
+                            </p>
+                            <p><b>Thách thức</b></p>
+                            <p>
+                                Số lượng nhân viên khổng lồ đòi hỏi Colgate có giải pháp công nghệ để tiết kiệm chi phí nhân công và phần cứng, tăng năng suất lao động và lợi nhuận.
+                            </p>
+                            <p><b>Kết quả</b></p>
+                            <p>
+                                Colgate tăng năng suất lao động của nhân viên đồng thời tăng nhanh hơn trong các công cụ năng suất như tài liệu, trang tính (Sites) và Trang trình bày (Slides).
+                               
+                            </p>
+                            <p>
+                                90% nhân viên làm việc trên Google Drive và chỉ riêng tháng 2/2017 đã có hơn 57.000 giờ Google Hangouts. 
+                            </p>
+                            <p>
+                                Thành công trong việc mở rộng môi trường SAP rộng lớn của mình để sử dụng SAP HANA trên Google Cloud Platform và phiên bản cho nhà phát triển HANA Express trên Google Cloud Launcher.
+                            </p>
+                        </div>
+
+                    </div>
+                    
+                    <div class="item" id="rate2">
+                        <div class="top">
+                            <img src="img/verizon.jpg">
+
+                        </div>
+                        <div class="desc">
+                            <p><b>Công ty</b></p>
+                            <p>
+                                Là tập đoàn viễn thông đa quốc gia của Hoa Kỳ đồng thời là thành viên của Tập đoàn Công nghiệp Dow Jones với doanh thu gần 130 tỷ và 150 triệu thuê bao. 
+                                
+                            </p>
+                            <p><b>Thách thức</b></p>
+                            <p>
+                                Bắt đầu việc chuyển 150.000 nhân viên sang nền tảng công nghệ mới, thúc đẩy nhân viên tập trung vào việc nâng cao năng suất lao động .
+                                
+                            </p>
+                            <p><b>Kết quả</b></p>
+
+                            <p>
+                                Verizon hoàn thành việc luân chuyển 150.000 nhân viên sang công nghệ mới. 
+                            </p>
+                            <p>
+                                Thành công trong việc truyền thông hợp nhất trên toàn cầu và cải tiến năng suất, tiết kiệm chi phí nhân công lớn nhờ Google Cloud.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item" id="rate3">
+                        <div class="top">
+                            <img src="img/hsbc.png">
+
+                        </div>
+                        <div class="desc">
+                            <p><b>Tổ chức</b></p>
+                            <p>
+                                Là một trong những tập đoàn tài chính ngân hàng lớn nhất trên thế giới với chi nhánh tại châu Âu, châu Á Thái Bình Dương, châu Mỹ, Trung Đông và châu Phi. Với trụ sở chính tại Luân Đôn, HSBC có 7.500 văn phòng tại 87 quốc gia và vùng lãnh thổ, tổng giá trị tài sản của Tập đoàn là 2, 455 tỷ đô la tính đến 31/12/2010.
+                            </p>
+                            <p><b>Thách thức</b></p>
+                            <p>
+                                Ngoài việc sở hữu tài sản 2,4000 tỷ USD, công ty cũng có một lượng lớn tài nguyên về dữ liệu. Trong vòng 2-3 năm vừa rồi, cơ sở dữ liệu của công ty đã tăng lên đáng kinh ngạc. Con số thống kê thực về dữ liệu của HSBC tính đến nay đã lên tới 100 petabytes.
+
+                            </p>
+                            <p>
+                                Mạng lưới phân phối và số văn phòng đại diện lớn trên toàn quốc, HBC cần một giải pháp video conference chất lượng cao, nhằm giảm chi phí và thời gian đi lại.
+                            </p>
+                            <p><b>Kết quả</b></p>
+
+                            <p>
+                                Dịch vụ G Suite đã giúp HSBC vượt qua khó khăn với việc phải đối mặt với nguồn dữ liệu khổng lồ.
+
+                            </p>
+                            <p>
+                                Ngân hàng cần làm việc với một đối tác có thể hiểu rõ va xử lý được lượng dữ liệu này, và Google đã giúp HSBC quản lý dữ liệu tốt hơn, góp phần mang lại những trải nghiệm tuyệt vời cho khách hàng.
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="item" id="rate4">
+                        <div class="top">
+                            <img src="img/hoabinh.png">
+
+                        </div>
+                        <div class="desc">
+                            <p><b>Tổ chức</b></p>
+                            <p>
+                                Với hơn 16 năm kinh nghiệm phân phối máy công, nông nghiệp và dân dụng, HBC đã phát triển 7 công ty con, hơn 200 đại lý bán lẻ và hơn 10 đại lý OEM khắp Việt Nam.
+                                
+                            </p>
+                            <p><b>Thách thức</b></p>
+                            <p>Thư gửi từ hệ thống email MDaemon của HBC thường bị chặn do hệ thống gửi – nhận không tương thích, gây ra thiếu sót thông tin, làm giảm hiệu suất và hiệu quả công việc.
+                                
+                            </p>
+                            <p>Mạng lưới phân phối và số văn phòng đại diện lớn trên toàn quốc, HBC cần một giải pháp video conference chất lượng cao, nhằm giảm chi phí và thời gian đi lại. 
+                            </p>
+                            <p><b>Kết quả</b></p>
+
+                            <p>
+                                100% dữ liệu email và hơn 80% dữ liệu được lưu trữ hoàn toàn trên Google Drive giúp HBC tránh thất thoát dữ liệu khi hư hỏng, mất mát thiết bị hay bị virus lây nhiễm.
+
+                            </p>
+                            <p>
+                                90% vấn đề truyền tin của hệ thống cũ đã được G Suite khắc phục. 99.9% số lượng mail của nhân viên được gửi thành công.
+                            </p>
+                            <p>
+                                95% số cuộc họp có thời lượng ngắn được giảm nhờ video call.
+
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="item" id="rate5">
+                        <div class="top">
+                            <img src="img/deoca.jpg">
+
+                        </div>
+                        <div class="desc">
+                            <p><b>Tổ chức</b></p>
+                            <p>
+                                Là tập đoàn chuyên quản lý, thi công công trình xây dựng trọng yếu cấp quốc gia với vốn điều lệ 1.614 tỷ đồng. Các dự án, công trình đường hầm xuyên đèo dọc miền trung Việt nam hiện được tập đoàn này chịu trách nhiệm thi công xây dựng.
+
+
+                            </p>
+                            <p><b>Thách thức</b></p>
+                            <p>
+                                Cần tìm giải pháp công nghệ vừa đáp ứng tính bảo mật dữ liệu, giao dịch ổn định và phải làm việc được ở mọi nơi trên mọi thiết bị kể cả ngoài công trường xây dựng.
+
+
+                            </p>
+                            <p>
+                                Các công ty thành viên thuộc tập đoàn đều có tên miền riêng và được quản lý tách biệt với đơn vị thành viên khác nhưng cần được quản lý chung bởi văn phòng tổng thuộc tập đoàn.
+
+                            </p>
+                            <p><b>Kết quả</b></p>
+
+                            <p>
+                                Google Apps cho phép quản lý các tên miền công ty con, giúp nhân viên có thể làm việc bất cứ đâu trên mọi thiết bị nhờ vận hành điện toán đám mây.
+
+
+                            </p>
+                            <p>
+                                Giải quyết gánh nặng chi phí về phần cứng, đội ngũ vận hành hệ thống, bảo mật thông tin, đổi mới công nghệ và quản lý hệ thống đơn giản mà không cần một đội ngũ IT túc trực xuyên suốt.
+
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section text-center wow fadeInUp" id="section5">
+            <div class="st-hd">
+                <h3><strong>VỀ NOVAON CLOUD</strong></h3>
+                <div class="sapo"><div class="container">
+                                      Hàng trăm khách hàng đã lựa chọn dịch vụ G Suite do <strong>Novaon Cloud</strong> cung cấp
+                    </div></div>
+
+            </div>
+            <div class="container">
+                <div class="inner">
+                    <h3><strong>LÝ DO LỰA CHỌN</strong></h3>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-4">
+                            <div class="desc">
+                            <div><img src="img/gt1.png"></div>
+                            <h2>Đội ngũ chuyên gia hàng đầu về G Suite</h2>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4">
+                        	<div class="desc">
+                            <div><img src="img/gt2.png"></div>
+                            <h2>Được tư vấn để triển khai G Suite hiệu quả nhất.</h2>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4">
+                        	<div class="desc">
+                            <div><img src="img/gt7.png"></div>
+                            <h2>Được hỗ trợ trong việc triển khai, chuyển dữ liệu</h2>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4">
+                        	<div class="desc">
+                            <div><img src="img/gt4.png"></div>
+                            <h2>Được đào tạo chi tiết về từng công cụ cho các nhân viên và quản trị viên</h2>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4">
+                        	<div class="desc">
+                            <div><img src="img/gt5.png"></div>
+                            <h2>Được cập nhật thông tin liên tục về sản phẩm</h2>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4">
+                        	<div class="desc">
+                            <div><img src="img/gt6.png"></div>
+                            <h2>Được hỗ trợ khi phát sinh lỗi</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="container wow fadeInUp" id="ft-top">
+                <div class="row">
+                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                        <h3 class="text-uppercase"><strong>NOVAON CLOUD - Thành viên Tập đoàn Digital Novaon</strong></h3>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-right"><img src="img/logo_partner.png"></div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <p class="pink text-uppercase">Trụ sở chính Hà nội</p>
+                        <p><i class="glyphicon glyphicon-map-marker"></i> Địa chỉ: Tầng 9, tòa nhà Công đoàn Ngân hàng Việt Nam, Duy Tân, Cầu Giấy, Hà Nội</p>
+                        <p><i class="glyphicon glyphicon-earphone"></i> Tel: 0966 508 008</p>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <p class="pink text-uppercase">VP Hồ chí minh</p>
+                        <p><i class="glyphicon glyphicon-map-marker"></i> Địa chỉ: Tòa nhà MB AMC, số 538 đường CMT8, Phường 11, Quận 3, TP HCM </p>
+                        <p><i class="glyphicon glyphicon-earphone"></i> Tel: +84 283 6687 8888</p>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <p class="pink text-uppercase">VP Singapore</p>
+                        <p><i class="glyphicon glyphicon-map-marker"></i> Địa chỉ: 5001 Beach Road, Golden Mile Complex, #08-10, Singapore 199588. </p>
+                       
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <p class="pink text-uppercase">VP INDONESIA</p>
+                        <p><i class="glyphicon glyphicon-map-marker"></i> Địa chỉ: 88 Tower, Level 38, Tower A, Kota Kasablanka, Jl. Casablanca Raya Kav.88, Jakarta, Indonesia 12870 </p>
+                        
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <p class="pink text-uppercase">VP Malaysia</p>
+                        <p><i class="glyphicon glyphicon-map-marker"></i> Địa chỉ: Unit 7-1,Wisma Genting (New Wing). No 28 Jalan Sultan Ismail, 50250 Kuala Lumpur, Malaysia</p>
+
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <p class="pink text-uppercase">VP Philippines</p>
+                        <p><i class="glyphicon glyphicon-map-marker"></i> Địa chỉ:  Mavenue Building, Penthouse, 7884 Makati Avenue, Makati City 1209 Philippines</p>
+
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <p class="pink text-uppercase">VP Thái Lan</p>
+                        <p><i class="glyphicon glyphicon-map-marker"></i> Địa chỉ: No.152, Chartered Square Building, Floor11, Room 11-08, North Sathon Road, Silom, Bangrak, Bangkok 10500</p>
+
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <p class="pink text-uppercase">VP Ấn Độ</p>
+                        <p><i class="glyphicon glyphicon-map-marker"></i> Địa chỉ: Lower Ground, Art Guild House, Phoenix Marketcity, L.B.S Marg, BKC Annexe, Mumbai - 400070 </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="btn btn-warning btn-block visible-xs" href="#form-register" data-scroll="" data-options="easing: easeInQuad" id="btnFixbottom">
+            <strong>ĐĂNG KÝ NHẬN TƯ VẤN</strong><br />
+        </a>
+        <a href="#slide" class="navbar1" data-scroll="" data-options="easing: easeInQuad" id="scrollTop"><img src="img/scrollTop.png"></a>
+    </div>
+    <script src="js/smooth-scroll.js"></script>
+    <script type="text/javascript" src="js/bootstrapValidator.min.js"></script>
+    <script type="text/javascript" src="js/form-validation.js"></script>
+    <script type="text/javascript" src="js/toastr.js"></script>
+    <script type="text/javascript" src="js/wow/wow.min.js"></script>
+    <script type="text/javascript">
+        new WOW().init();
+        $(document).ready(function () {
+            $('.owl-carousel-rate').owlCarousel({
+                loop: true,
+                margin: 10,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: true
+                    },
+                    768: {
+                        items: 2,
+                        nav: true
+                    },
+                    1000: {
+                        items: 2,
+                        nav: true,
+                        loop: true,
+                        margin: 30,
+                    }
+                }
+            })
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: true
+                    },
+                    768: {
+                        items: 2,
+                        nav: true
+                    },
+                    1000: {
+                        items: 3,
+                        nav: true,
+                        loop: false,
+                        margin: 30,
+                    }
+                }
+            })
+            if ($('#prices')) {
+                var max_height = 0;
+                $("#item1,#item2,#item3").each(function () {
+                    if ($(this).height() > max_height)
+                        max_height = $(this).height();
+                });
+                $("#item1,#item2,#item3").height(max_height);
+            }
+            if ($('#rate')) {
+
+                var max_height = 0;
+                $("#rate1,#rate2,#rate3,#rate4,#rate5").each(function () {
+                    if ($(this).height() > max_height)
+
+                        max_height = $(this).height();
+
+                });
+                max_height = max_height + 20;
+
+
+                $("#rate1,#rate2,#rate3,#rate4,#rate5").height(max_height);
+            }
+
+        });
+        smoothScroll.init({
+            speed: 1000,
+            easing: 'easeInOutCubic',
+            offset: 70,
+            updateURL: false,
+            callbackBefore: function (toggle, navbar1) { },
+            callbackAfter: function (toggle, navbar1) { }
+        });
+       
+    </script>
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var ua = navigator.userAgent.toLowerCase(),
+        platform = navigator.platform.toLowerCase();
+        platformName = ua.match(/ip(?:ad|od|hone)/) ? 'ios' : (ua.match(/(?:webos|android)/) || platform.match(/mac|win|linux/) || ['other'])[0],
+        isMobile = /ios|android|webos/.test(platformName);
+
+        if (!isMobile) {
+
+            var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+            (function () {
+                var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+                s1.async = true;
+                s1.src = 'https://embed.tawk.to/59f69cdf4854b82732ff8b62/default';
+                s1.charset = 'UTF-8';
+                s1.setAttribute('crossorigin', '*');
+                s0.parentNode.insertBefore(s1, s0);
+            })();
+
+        }
+
+    </script>
+
+    <!--End of Tawk.to Script-->
+</body>
+</html>

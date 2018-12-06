@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'UTM Androgyne';
+  src: url('../fonts/UTM Androgyne.eot');
+  src: url('../fonts/UTM Androgyne.woff2') format('woff2'),
+       url('../fonts/UTM Androgyne.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'UTMAndrogyne';
+  src: url('../fonts/UTMAndrogyne.woff') format('woff'),
+       url('../fonts/UTMAndrogyne.ttf') format('truetype'),
+       url('../fonts/UTMAndrogyne.svg#UTMAndrogyne') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+

@@ -1,0 +1,81 @@
+
+@font-face {
+    font-family: 'Cambria-italic';
+    src: url('../font/Cambria-Italic.woff2') format('woff2'),
+        url('../font/Cambria-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+
+
+@font-face {
+    font-family: 'Shelia VNF';
+    src: url('../font/SheliaVNF.woff2') format('woff2'),
+        url('../font/SheliaVNF.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cambria-bold';
+    src: url('../font/Cambria-Bold.woff2') format('woff2'),
+        url('../font/Cambria-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SVN-Rex';
+    src: url('../font/SVN-Rex.woff2') format('woff2'),
+        url('../font/SVN-Rex.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cambria';
+    src: url('../font/Cambria-BoldItalic.woff2') format('woff2'),
+        url('../font/Cambria-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Verdana';
+    src: url('../font/Verdana.woff2') format('woff2'),
+        url('../font/Verdana.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Verdana-italic';
+    src: url('../font/Verdana-Italic.woff2') format('woff2'),
+        url('../font/Verdana-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Verdana-italic-bold';
+    src: url('../font/Verdana-BoldItalic.woff2') format('woff2'),
+        url('../font/Verdana-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Verdana-italic-bold';
+    src: url('../font/Verdana-BoldItalic.woff2') format('woff2'),
+        url('../font/Verdana-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Verdana-bold';
+    src: url('../font/Verdana-Bold.eot');
+    src: url('../font/Verdana-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../font/Verdana-Bold.woff2') format('woff2'),
+        url('../font/Verdana-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
