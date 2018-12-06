@@ -70,7 +70,7 @@ $(document).ready(function() {
             var dataJSON = { "name": fullname, "address": address, "phone": phone,"typeId": typeId, "emailto": emailto }
             showLoadingContactImage('content-mobile','formContentContactMobile');
             $.ajax({
-                url: "https://alpha.f5academy.net/api/Anecoservice",
+                url: "http://alpha.f5academy.net/api/Anecoservice",
                 type: "Post",
                 async: false,
                 data: dataJSON,
@@ -150,7 +150,7 @@ $(document).ready(function() {
             var dataJSON = { "name": fullname, "address": address, "phone": phone,"typeId": typeId, "emailto": emailto }
             showLoadingContactImage('content-mobile-other','formContentContactFooter');
             $.ajax({
-                url: "https://alpha.f5academy.net/api/Anecoservice",
+                url: "http://alpha.f5academy.net/api/Anecoservice",
                 type: "Post",
                 async: false,
                 data: dataJSON,
