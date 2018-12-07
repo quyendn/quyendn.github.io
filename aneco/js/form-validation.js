@@ -65,8 +65,9 @@ $(document).ready(function() {
             var fullname = $('#fullname').val();
             var phone = $('#phone').val();
             var address = $('#address').val();
-            var emailto = "quyendn84@gmail.com";
+            var emailto = "anecovn@gmail.com";
             var typeId = 0;
+            var rederect = false;
             var dataJSON = { "name": fullname, "address": address, "phone": phone,"typeId": typeId, "emailto": emailto }
             showLoadingContactImage('content-mobile','formContentContactMobile');
             $.ajax({
@@ -88,6 +89,9 @@ $(document).ready(function() {
                         $('#frmMobile').bootstrapValidator('resetForm', true);
                         toastr.success('Cảm ơn bạn đã tham gia chương trình.', { timeOut: 5000 })
                         hideLoadingContactImage('content-mobile', 'formContentContactMobile');
+                        $('#frmMobile').bootstrapValidator('resetForm', true);
+                        rederect= true;
+                       
                     }
                     
                 },
@@ -100,7 +104,8 @@ $(document).ready(function() {
                     $("#phone").val('');
                     $('#address').val('');
                     $('#frmMobile').bootstrapValidator('resetForm', true);
-                    window.location.href ="dang-ky-thanh-cong.html";
+                    if(rederect == true)
+                        window.location.href ="dang-ky-thanh-cong.html";
                     
                 }
             });
@@ -145,8 +150,9 @@ $(document).ready(function() {
             var fullname = $('#fullnameother').val();
             var phone = $('#phoneother').val();
             var address = $('#addressother').val();
-            var emailto = "quyendn84@gmail.com";
+            var emailto = "anecovn@gmail.com";
             var typeId = 1;
+            var rederect = false;
             var dataJSON = { "name": fullname, "address": address, "phone": phone,"typeId": typeId, "emailto": emailto }
             showLoadingContactImage('content-mobile-other','formContentContactFooter');
             $.ajax({
@@ -167,7 +173,10 @@ $(document).ready(function() {
                     {
                         $('#frmMobile').bootstrapValidator('resetForm', true);
                         toastr.success('Cảm ơn bạn đã tham gia chương trình.', { timeOut: 5000 })
+                        $('#frmMobile2').bootstrapValidator('resetForm', true);
                         hideLoadingContactImage('content-mobile-other', 'formContentContactFooter');
+                        rederect = true;
+                        window.location.href ="dang-ky-thanh-cong.html";
                     }
                     
                 },
@@ -181,7 +190,8 @@ $(document).ready(function() {
                     $("#phoneother").val('');
                     $('#addressother').val('');
                     $('#frmMobile2').bootstrapValidator('resetForm', true);
-                    window.location.href ="dang-ky-thanh-cong.html";
+                    if(rederect == true)
+                        window.location.href ="dang-ky-thanh-cong.html";
                     
                 }
             });
