@@ -1,0 +1,60 @@
+
+@font-face {
+  font-family: 'ImagoPro-Book';
+  src: url('../font/ImagoPro-Book.eot');
+  src: url('../font/ImagoPro-Book.woff2') format('woff2'),
+       url('../font/ImagoPro-Book.woff') format('woff'),
+       url('../font/ImagoPro-Book.ttf') format('truetype'),
+       url('../font/ImagoPro-Book.svg#ImagoPro-Book') format('svg'),
+       url('../font/ImagoPro-Book.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'VIE-Imago-Book';
+  src: url('../font/VIE-Imago-Book.eot');
+  src: url('../font/VIE-Imago-Book.woff2') format('woff2'),
+       url('../font/VIE-Imago-Book.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'VIE-ImagoBook';
+  src: url('../font/VIE-ImagoBook.woff') format('woff'),
+       url('../font/VIE-ImagoBook.ttf') format('truetype'),
+       url('../font/VIE-ImagoBook.svg#VIE-ImagoBook') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'VIE-ImagoBookItalic';
+  src: url('../font/VIE-ImagoBookItalic.eot');
+  src: url('../font/VIE-ImagoBookItalic.woff2') format('woff2'),
+       url('../font/VIE-ImagoBookItalic.woff') format('woff'),
+       url('../font/VIE-ImagoBookItalic.ttf') format('truetype'),
+       url('../font/VIE-ImagoBookItalic.svg#VIE-ImagoBookItalic') format('svg'),
+       url('../font/VIE-ImagoBookItalic.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'VIE-Imago-Medium';
+  src: url('../font/VIE-Imago-Medium.eot');
+  src: url('../font/VIE-Imago-Medium.woff2') format('woff2'),
+       url('../font/VIE-Imago-Medium.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'VIE-ImagoMedium';
+  src: url('../font/VIE-ImagoMedium.woff') format('woff'),
+       url('../font/VIE-ImagoMedium.ttf') format('truetype'),
+       url('../font/VIE-ImagoMedium.svg#VIE-ImagoMedium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
