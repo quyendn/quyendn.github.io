@@ -158,8 +158,8 @@ ul.reset, ol.reset{
 
 /**/
 .section{
-	padding-top:60px;
-	padding-bottom:60px;
+	padding-top:30px;
+	padding-bottom:30px;
 	}
 .section .st-hd{
 	margin-bottom:30px;
@@ -243,6 +243,9 @@ ul.reset, ol.reset{
 	font-size:24px;
 	}
 /**/
+#section1{
+	padding-bottom:15px;
+	}
 #section1 .col-sm-6 h4{
 	font-size:22px;
 	color:#0066b3;
@@ -288,18 +291,18 @@ ul.reset, ol.reset{
 #section2{
 	background:#f3f3f3;}
 #section2 .st-hd{
-	margin-bottom:100px;
+	margin-bottom:30px;
 	}	
 #section2 .inner{
 	border:3px solid #e5e5e5;
 	background:#fff;
 	text-align:center;
 	position:relative;
-	height:210px;
+	height:190px;
 	color:#ef7b10;
 	font-weight:bold;
 	font-size:18px;
-	padding:100px 30px 0 30px;
+	padding:100px 30px 30px 30px;
 	}
 #section2 .inner img{
 	position:absolute;
@@ -315,6 +318,9 @@ ul.reset, ol.reset{
 	-moz-border-radius:3px;
 	-webkit-border-radius:3px;
 	border-radius:3px;
+	}
+#section2 .owl-dots{
+	display:none;
 	}
 /**/
 #section2 .inner {
@@ -352,8 +358,8 @@ ul.reset, ol.reset{
 	background:#f2eff2 url(../img/bg_dk_r.jpg) no-repeat 100% 100%;
 	}
 #section4 .inner{
-	padding-top:60px;
-	padding-bottom:60px;
+	padding-top:30px;
+	padding-bottom:30px;
 	background:url(../img/bg_dk_l.jpg) no-repeat 0 100%;
 	}
 #section4 .text-uppercase,  #thanks .text-uppercase{
@@ -425,12 +431,13 @@ ul.reset, ol.reset{
 	margin:0 0 15px 0;
 	}
 #footer p{
-	margin:0;
+	margin:0 0 10px 0;
 	}
 #footer address{
 	margin:0;
 	padding:0;
 	}
+	
 
 /**/
 
@@ -457,6 +464,9 @@ img{
 	
 	}
 @media (max-width:768px){
+	.section .st-hd h3{
+		font-size:24px;
+		}
 	#header{
 		margin-top:0;
 		}
@@ -493,12 +503,23 @@ img{
 		margin-bottom:30px;
 		}
 	#slide{
+		padding-top:30px;
+		padding-bottom:30px;
 		background: #2670b6 url(../img/bg_slide.gif) no-repeat 100% 100% / auto 100%;
 		}
+	#slide .col-md-8{
+		margin-bottom:30px;
+		}
 	#frmRegister{
+		padding:15px;
 		position:static;
 		}
-	
+	#frmRegister h3{
+		margin-bottom:15px;
+		}
+	#frmContact .form-control, #frmRegDownload .form-control{
+		padding:5px;
+		}
 	#section1 .inner .text{
 		padding:15px;}
 	#section1 .inner img{
@@ -506,11 +527,17 @@ img{
 		float:none;
 		width:100%;
 		}
-	#section2 .col-md-3{
-		margin-bottom:90px;
+	#section2 .inner{
+		height:auto;
+		}
+	#section2 .owl-dots{
+		display:block;
 		}
 	#section4, #thanks, #section4 .inner, #thanks .inner{
 		background-image:none;}
+	#section4 .text-uppercase{
+		font-size:18px;
+		}
 	.owl-loaded .owl-next{
 		right:0 !important;
 		}
@@ -525,6 +552,7 @@ img{
 	#footer p.name{
 		font-size:18px;
 		}
+		
 		
 	
 	
@@ -541,12 +569,19 @@ margin:0;
 .owl-carousel .owl-stage-outer, .owl-carousel-rate .owl-stage-outer{
   position: relative;
   overflow:hidden;
-  padding-top:15px;
-  padding-bottom:5px;
+ 
   -moz-transform: translate3d(0px,0,0);
   -webkit-transform: translate3d(0px,0,0);
   transform: translate3d(0px,0,0);
 }
+.owl-carousel .owl-stage-outer{
+	 padding-top:15px;
+  padding-bottom:5px;
+  }
+.owl-carousel-rate .owl-stage-outer{
+	padding-top:75px;
+	padding-bottom:15px;
+	}
 .owl-carousel .owl-item, .owl-carousel-rate .owl-item{
   position: relative;
   min-height: 1px;
@@ -609,7 +644,10 @@ margin:0;
 	border:2px solid #ddd;
 	}
 .owl-dot.active{
-	background:#ba266a;
+	background:#2670b6;
+	}
+.owl-carousel-rate .owl-nav{
+	display:none;
 	}
 	
 /**/
@@ -624,3 +662,40 @@ margin:0;
 	font-size:18px;
 	text-align:center;
 	}
+.socials ul{
+    font-size: 0;
+    padding: 0;
+    margin: 0;
+}
+.socials ul li{
+    margin-right: 13px;
+    padding: 0;
+}
+.socials ul li a{
+    width: 32px;
+    height: 32px;
+    line-height: 28px;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+    border-radius: 50%;
+    border-width: 2px;
+    border-style: solid;
+    text-align: center;
+}
+.socials ul li.facebook a{
+    color: #4c76be;
+    border-color: #4c76be;
+}
+.socials ul li.twitter a{
+    color: #00c7ff;
+    border-color: #00c7ff;
+}
+.socials ul li.youtube a{
+    color: #fd3832;
+    border-color: #fd3832;
+}
+.socials ul li.google-plus a{
+    color: #fc5345;
+    border-color: #fc5345;
+}
