@@ -245,6 +245,7 @@ ul.reset, ol.reset{
 /**/
 #section1{
 	padding-bottom:15px;
+	padding-top:60px;
 	}
 #section1 .col-sm-6 h4{
 	font-size:22px;
@@ -390,12 +391,12 @@ ul.reset, ol.reset{
 	background:url(../img/bg_dk_l.jpg) no-repeat 0 100%;
 }
 /**/
-#frmContact .form-control, #frmRegDownload .form-control{
+#frmContact .form-control, #frmMobile .form-control{
 	border:1px solid #cccccc;
 	padding:10px;
 	height:auto;
 	}
-#frmContact .btn, #frmRegDownload .btn{
+#frmContact .btn, #frmMobile .btn{
 	padding:10px 30px;
 	background:#ff7f00;
 	color:#fff;
@@ -698,4 +699,14 @@ margin:0;
 .socials ul li.google-plus a{
     color: #fc5345;
     border-color: #fc5345;
+}
+@keyframes move{
+	from{ top: 0px;}
+	to{ top: 5px;}
+}
+.btnHotline{
+	animation-name: move;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	position: relative;
 }
