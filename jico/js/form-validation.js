@@ -59,7 +59,7 @@ $(document).ready(function () {
             var fullname = $('#fullname').val();
             var phone = $('#phone').val();
             var email = $('#email').val();
-            var emailto = "quyendn84@gmail.com";
+            var emailto = "phamkhanhlam93@gmail.com";
             var descripton = $('#txtContent').val();
             var rederect = false;
             var dataJSON = { "name": fullname, "email": email, "phone": phone, "description": descripton, "emailto": emailto }
