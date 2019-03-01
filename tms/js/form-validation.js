@@ -75,7 +75,7 @@ $(document).ready(function() {
             var dataJSON = { "name": name, "email": email, "phone": phone, "typeId": typeId, "emailto": emailto }
             showLoadingContactImage('content-mobile','formContentContactMobile');
             $.ajax({
-                url: "http://localhost:50623/api/TSMservice",
+                url: "https://alpha.f5academy.net/api/TSMservice",
                 type: "Post",
                 async: false,
                 data: dataJSON,
@@ -150,7 +150,7 @@ $(document).ready(function() {
             var dataJSON = { "name": name, "email": email, "phone": phone, "typeId": typeId, "emailto": emailto }
             showLoadingContactImage('content-contact', 'formContentContact');
             $.ajax({
-                url: "http://localhost:50623/api/TSMservice",
+                url: "https://alpha.f5academy.net/api/TSMservice",
                 type: "Post",
                 async: false,
                 data: dataJSON,
