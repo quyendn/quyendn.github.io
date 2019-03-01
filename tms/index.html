@@ -4,7 +4,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>TMS Grand City</title>
+    <title>Chủ đầu tư – TMS Grand City Phúc Yên</title>
+    <link rel="icon" href="http://tmsphucyen.com.vn/wp-content/uploads/2018/03/cropped-logo300-192x192.png" sizes="192x192">
+    <link rel="icon" href="http://tmsphucyen.com.vn/wp-content/uploads/2018/03/cropped-logo300-32x32.png" sizes="32x32">
+    <link rel="apple-touch-icon-precomposed" href="http://tmsphucyen.com.vn/wp-content/uploads/2018/03/cropped-logo300-180x180.png">
+    <meta name="msapplication-TileImage" content="http://tmsphucyen.com.vn/wp-content/uploads/2018/03/cropped-logo300-270x270.png">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
@@ -25,7 +29,7 @@
                     <a data-scroll="" data-options="easing: easeInQuad" href="#slide" class="navbar-brand"><img src="img/logo.png"></a>
                     <nav class="collapse navbar-collapse" role="navigation">
                         <ul class="nav navbar-nav navbar-right">
-                            <li class=""><a data-scroll="" data-options="easing: easeInQuad" href="#header" class="navbar1">TRANG CHỦ</a></li>
+                            <li class=""><a  href="http://tmsphucyen.com.vn" target="blank" class="navbar1">TRANG CHỦ</a></li>
                             <li class=""><a data-scroll="" data-options="easing: easeInQuad" href="#section3" class="navbar1">VỊ TRÍ</a></li>
                             <li class=""><a data-scroll="" data-options="easing: easeInQuad" href="#section4" class="navbar1">MẶT BẰNG</a></li>
                             <li class=""><a data-scroll="" data-options="easing: easeInQuad" href="#section5" class="navbar1">CƠ HỘI ĐẦU TƯ</a></li>
@@ -86,16 +90,22 @@
                 <h3>Quý khách vui lòng nhập thông tin liên hệ<br/>để nhận được tư vấn 24/24h</h3>
                 <div class="inner">
                     <div class="row">
-                        <div class="form-group col-sm-6">
-                            <input type="text" class="form-control" id="txtName" name="name" placeholder="Họ và tên">
-                        </div>
-                        <div class="form-group col-sm-6">
-                            <input type="text" class="form-control" id="txtName" name="name" placeholder="Họ và tên">
-                        </div>
-                        <div class="form-group col-sm-12">
-                            <input type="text" class="form-control" id="txtName" name="name" placeholder="Họ và tên">
-                        </div>
-                        <div class="form-group text-center"><button class="btn">Đăng ký</button></div>
+                            <form id="frmContact" class="" autocomplete="off">
+                                <div id="formContentContact">
+                                    <div class="form-group col-sm-6">
+                                        <input type="text" class="form-control" id="txtNameContact" name="name_contact" placeholder="Họ và tên">
+                                    </div>
+                                    <div class="form-group col-sm-6">
+                                        <input type="text" class="form-control" id="txtEmailContact" name="email_contact" placeholder="Email">
+                                    </div>
+                                    <div class="form-group col-sm-12">
+                                        <input type="text" class="form-control" id="txtPhoneContact" onkeypress="return AllowNumberOnly(event);" name="phone_contact" placeholder="Số điện thoại">
+                                    </div>
+                                    <div class="form-group text-center"><button class="btn">Đăng ký</button></div>
+                                </div>
+                                <div id="content-contact"></div>
+                            </form>
+                        </form> 
                     </div>
                 </div>
             </div>
@@ -116,7 +126,7 @@
                             <li><span>3</span>Cơ hội đón sóng đầu tư vùng cận đô </li>
                             <li><span>4</span>Chủ đầu tư uy tín với hàng loạt dự án đã và đang triển khai trên khắp tỉnh thành cả nước</li>
                             <li><span>5</span>Nhận nhiều ưu đãi đặc biệt, trực tiếp từ Chủ đầu tư</li>
-                            <li><button class="btn">Đăng ký nhận ưu đãi</button></li>
+                            <li><a class="btn" href="#formContact" class="navbar1"  data-scroll="" data-options="easing: easeInQuad">Đăng ký nhận ưu đãi</a></li>
                         </ul>
                     </div>
                     
@@ -147,7 +157,7 @@
                             <li>Siêu thị Big C: 15 phút</li>
                             <li>Thiền viện Trúc Lâm Tây Thiên: 50 phút</li>
                         </ul>
-                        <div><button class="btn">Đăng ký tham quan dự án</button></div>
+                        <div><a class="btn"  href="#section1" class="navbar1"  data-scroll="" data-options="easing: easeInQuad">Đăng ký tham quan dự án</a></div>
                     </div>
                 </div>
             	
@@ -169,7 +179,7 @@
                                 <p>Hệ thống các hồ nước tự nhiên, công viên nằm trong quần thể hồ điều hòa của vùng tạo bầu không khí trong lành cho toàn khu đô thị.</p>
                             </li>
                         </ul>
-                        <div><button class="btn">Đăng ký tham quan dự án</button></div>
+                        <div><a class="btn"  href="#">Tải trọn bộ tài liệu về dự án</a></div>
                     </div>
                     <div class="col-sm-6">
                     	<img src="img/batbang.jpg">
@@ -193,7 +203,7 @@
                         <div><strong>Số tầng: 4 – 5 tầng</strong></div>
                         <p>&nbsp;</p>
                         <p>Biệt thự song lập sở hữu vị trí tuyệt đẹp với tầm nhìn hướng mặt hồ Biwaco – trái tim của khu đô thị - vừa tạo nên giá trị khác biệt nhưng vẫn hài hòa với tự nhiên. Các chủ nhân tương lai được thụ hưởng cuộc sống trong một không gian sang trọng, đẳng cấp nhưng vẫn đảm bảo được sự riêng tư với an ninh nội khu riêng biệt. Kết hợp hài hòa giữa phong Phuc Yen được hưởng trọn vẹn không gian xanh, trong một cộng đồng văn minh, đẳng cấp được xã hội công nhận.</p>
-                        <div><button class="btn">Đăng ký chuyên gia tư vấn</button></div>
+                        <div><a class="btn"  href="#section1" class="navbar1"  data-scroll="" data-options="easing: easeInQuad">Đăng ký chuyên gia tư vấn</a></div>
                     </div>
                 </div>
             	
@@ -242,8 +252,8 @@
                     	<h3>CÔNG TY CỔ PHẦN TMS BẤT ĐỘNG SẢN</h3>
                         <p><img src="img/i_home.png"> Tầng 3, tòa nhà VIMECO, lô E9, đường Phạm Hùng, phường Trung Hòa, Quận Cầu Giấy, Thành phố Hà Nội, Việt Nam</p>
                         <p><img src="img/i_phone.png"> Điện thoại: (+84) 24 376 90088 / Fax: (+84) 24 376 90019</p>
-                        <p><img src="img/i_mail.png"> Email: info@tmsgroup.vn / Website: tmsphucyen.com.vn</p>
-                        <p><img src="img/i_fb.png"> Fanpage: https://www.facebook.com/tmsgrandcityphucyen.chudautu/</p>
+                        <p><img src="img/i_mail.png"> Email: <a href="mailto:info@tmsgroup.vn">info@tmsgroup.vn</a> / Website: <a href="http://tmsphucyen.com.vn" target="blank">tmsphucyen.com.vn</a></p>
+                        <p><img src="img/i_fb.png"> Fanpage: <a target="blank" href="https://www.facebook.com/tmsgrandcityphucyen.chudautu">https://www.facebook.com/tmsgrandcityphucyen.chudautu</a></p>
                     </div>
                     <div class="col-sm-6 text-center">
                     	<img src="img/logo_tmsgr.png">&nbsp;&nbsp;

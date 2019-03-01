@@ -1,0 +1,211 @@
+﻿<!DOCTYPE html>
+<html lang="vi" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://opengraphprotocol.org/schema/" itemscope="itemscope" itemtype="http://schema.org/WebPage">
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="content-language" itemprop="inLanguage" content="vi" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="google-site-verification" content="xMYzNiIZZ5achAbzc-vXy4sBVponGjcI6pkY6PVw_bs" />
+    <title>@ViewBag.Title</title>
+    <meta name="robots" content="index,follow,noodp" />
+    <meta name="robots" content="noarchive">
+    <meta name="keywords" content='@ViewBag.Keywords' />
+    <meta name="description" content='@ViewBag.Description' />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" itemprop="url" content="@ViewBag.Url" />
+    <meta property="og:site_name" content="bepquangnam.vn" />
+    <meta property="og:locale" content="vi_VN" />
+    <meta property="fb:app_id" content="236877933535873" />
+    <meta property="fb:pages" content="314103605281408" />
+    <meta content="@ViewBag.ImagePath" itemprop="thumbnailUrl" property="og:image" />
+    <meta property="og:title" content="@Html.Raw(ViewBag.Title)" />
+    <meta property="og:description" content="@Html.Raw(ViewBag.Description)" />
+    <meta name="language" content="vietnamese" />
+    <meta name="copyright" content="Copyright © 2018 by bepquangnam.vn" />
+    <meta name="abstract" content="bepgasquangnam.com.vn Website bán đồ bếp số 1 Việt Nam" />
+    <meta name="distribution" content="Global" />
+    <meta name="author" content="Bếp Gas Quang Nam" />
+    <meta http-equiv="refresh" content="1200" />
+    <meta name="REVISIT-AFTER" content="1 DAYS" />
+    <meta name="RATING" content="GENERAL" />
+    @*@Styles.Render("~/Content/themes/quangnam/css")*@
+    <link rel="stylesheet" href="/Content/themes/quangnam/main.css" media="none" onload="if(media!='all')media='all'">
+    <noscript>
+        <link rel="stylesheet" href="/Content/themes/quangnam/main.css">
+    </noscript>
+    @*<link rel="stylesheet" href="/Content/themes/quangnam/font-awesome.min.css">
+    <link rel="stylesheet" href="/Content/themes/quangnam/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="/Content/themes/quangnam/font-awesome-animation.min.css" type="text/css">
+    <link rel="stylesheet" href="/Content/themes/quangnam/font-face.css" type="text/css">
+    <link rel="stylesheet" href="/Content/themes/quangnam/styles.css" type="text/css">
+    <link rel="stylesheet" href="/Content/themes/quangnam/responsive.css" type="text/css">
+    <link rel="stylesheet" href="/Content/themes/quangnam/animate.css" type="text/css">
+    <link rel="stylesheet" href="/Content/themes/quangnam/jquery-ui.css" type="text/css">
+    <link rel="stylesheet" href="/Content/themes/quangnam/custom.css" type="text/css">
+    <link rel="stylesheet" href="/Content/themes/nifty/plugins/toastr/toastr.css" type="text/css">
+    <link rel="stylesheet" href="/Content/themes/nifty/plugins/toastr/toastr.css" type="text/css">
+    <link rel="stylesheet" href="/Content/themes/nifty/plugins/bootstrap-validator/formValidation.min.css" type="text/css">*@
+    @Scripts.Render("~/bundles/modernizr")
+    @*<script>
+        var giftofspeed = document.createElement('link');
+        giftofspeed.rel = 'stylesheet';
+        giftofspeed.href = '/Content/themes/quangnam/main.css';
+        giftofspeed.type = 'text/css';
+        var godefer = document.getElementsByTagName('link')[0];
+        godefer.parentNode.insertBefore(giftofspeed, godefer);
+    </script>*@
+	
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-115874297-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-115874297-1');
+	</script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-41520634-12"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-41520634-12');
+	</script>
+    <!-- Global site tag (gtag.js) - Google Ads: 776285191 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-776285191"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'AW-776285191');
+    </script>
+
+    <script>
+        gtag('event', 'page_view', {
+            'send_to': 'AW-776285191',
+            'user_id': 'replace with value'
+        });
+    </script>
+
+</head>
+<body>
+    <div id="container">
+        <header id="header">
+            @{Html.RenderAction("Header", "Home");}
+
+        </header>
+        <div id="body">
+            @RenderBody()
+        </div>
+        <footer id="footer">
+            @{Html.RenderAction("Footer", "Home");}
+
+        </footer>
+        <div class="phone">
+            <a class="btn-call" href="tel:0969738286">
+                <em class="fa fa-phone" aria-hidden="true"></em>
+            </a>
+        </div>
+        <div id="fixBottom">
+            <a href="https://www.facebook.com/bepquangnam/"><img src="/img/icon_fb.png"></a>
+            <a href=""><img src="/img/icon_yt.png"></a>
+            <a href=""><img src="/img/icon_tw.png"></a>
+            <a href=""><img src="/img/icon_is.png"></a>
+        </div>
+    </div>
+    <script language="javascript" type="text/javascript" src="/Scripts/jquery-1.10.2.min.js"></script>
+    <script language="javascript" type="text/javascript" src="/Scripts/bootstrap.min.js"></script>
+    <script language="javascript" type="text/javascript" src="/Scripts/jquery-ui.min.js"></script>
+    <script language="javascript" type="text/javascript" src="/Scripts/jquery.ui.autocomplete.html.js"></script>
+    <script src="/Scripts/owl.carousel.min.js" language="javascript" type="text/javascript"></script>
+    
+    @Scripts.Render("~/bundles/jqueryui")
+    @RenderSection("scripts", required: false)
+    <script language="javascript" type="text/javascript" src="/Scripts/fb.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            toastr.options = {
+                "closeButton": true,
+                "debug": false,
+                "newestOnTop": false,
+                "progressBar": true,
+                "positionClass": "toast-top-right",
+                "preventDuplicates": false,
+                "onclick": null,
+                "showDuration": "300",
+                "hideDuration": "1000",
+                "timeOut": "3000",
+                "extendedTimeOut": "1000",
+                "showEasing": "swing",
+                "hideEasing": "linear",
+                "showMethod": "fadeIn",
+                "hideMethod": "fadeOut"
+            }
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 3,
+                        nav: true
+                    },
+                    768: {
+                        items: 6,
+                        nav: true
+                    },
+                    1000: {
+                        items: 10,
+                        nav: true,
+                        loop: true,
+                        margin: 10,
+                    }
+                }
+            });
+            $("#txtSearchProduct").autocomplete({
+                source: "/Home/SearchProduct",
+                focus: function (event, ui) {
+                    return false;
+                },
+                select: function (event, ui) {
+                    window.location.href = ui.item.Url;
+                }
+            }).data("ui-autocomplete")._renderItem = function (ul, item) {
+                var inner_html = '<a href="' + item.Url + '" ><div class="list_item_container"><div class="image"><img src="/' + item.Images + '" ></div><div class="label"><h4><b>' + item.Name + '</b></h4></div></div></a>';
+                return $("<li></li>")
+                        .data("item.autocomplete", item)
+                        .append(inner_html)
+                        .appendTo(ul);
+            };
+
+        });
+    </script>
+    @Html.Partial("_GenericMessage")
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/5b3351bfd0b5a54796823754/default';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-41520634-12"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-41520634-12');
+</script>
+
+    
+</body>
+</html>
+
