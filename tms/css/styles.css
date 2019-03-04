@@ -596,7 +596,41 @@ img{
 		right:0;
 		width:auto;
 		padding:5px 0;}
+		#fontline{
+		right:10px;
+		}
+	#fontline a{
+		padding:0 5px;
+		margin:0;
+		width:50%;
+		float:left;
+		display:block;
+		text-align:center;
+		font-family: 'MyriadPro-Semibold';
+		background: none;
+
+		}
+
+	#fontline a strong{
+		display:none;
 		
+		
+		
+		}
+#fontline a span{
+	padding:10px;
+	background-color: #b31b20;
+	display:block;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+}
+		#footer{
+			padding-bottom: 80px;
+		}
+		.st5Text{
+			padding-bottom: 60px;
+		}
 	}
 
 /*owl-carousel*/
