@@ -68,7 +68,7 @@ $(document).ready(function() {
             var name = $('#txtName').val();
             var phone = $('#txtPhone').val();
             var email = $('#txtEmail').val();
-            var emailto = "quyendn84@gmail.com";
+            var emailto = "anhntt@tmsgroup.vn";
             var typeId = 1;
             var webdomain = "f5academy";
             var rederect = false;
@@ -143,7 +143,7 @@ $(document).ready(function() {
             var name = $('#txtNameContact').val();
             var phone = $('#txtPhoneContact').val();
             var email = $('#txtEmailContact').val();
-            var emailto = "quyendn84@gmail.com";
+            var emailto = "anhntt@tmsgroup.vn";
             var typeId = 2;
             var webdomain = "f5academy";
             var rederect = false;
@@ -218,7 +218,7 @@ $(document).ready(function() {
             var name = $('#name_modal').val();
             var phone = $('#phone_modal').val();
             var email = $('#email_modal').val();
-            var emailto = "quyendn84@gmail.com";
+            var emailto = "anhntt@tmsgroup.vn";
             var typeId = 1;
             var webdomain = "f5academy";
             var rederect = false;
@@ -293,7 +293,7 @@ $(document).ready(function() {
             var name = $('#name_modal_info').val();
             var phone = $('#phone_modal_info').val();
             var email = $('#email_modal_info').val();
-            var emailto = "quyendn84@gmail.com";
+            var emailto = "anhntt@tmsgroup.vn";
             var typeId = 2;
             var webdomain = "f5academy";
             var rederect = false;
