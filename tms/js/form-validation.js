@@ -178,6 +178,156 @@ $(document).ready(function() {
     }).on('success.form.fv', function (e) {
 
     });
+    $('#frmRegModal').bootstrapValidator({
+        message: 'This value is not valid',
+        excluded: [':disabled'],
+        feedbackIcons: faIcon,
+        fields: {
+            email_modal: {
+                validators: {
+                    notEmpty: {
+                        message: 'Địa chỉ email không được để trống.'
+                    },
+                    emailAddress: {
+                        message: 'Không đúng định dạng email'
+                    }
+                }
+            },
+            name_modal: {
+                validators: {
+                    notEmpty: {
+                        message: 'Họ tên không được để trống.'
+                    }
+                }
+            },
+            phone_modal: {
+                validators: {
+                    notEmpty: {
+                        message: 'Điện thoại không được để trống.'
+                    },
+                    stringLength: {
+                        min: 10,
+                        max: 11,
+                        message: 'Số điện thoại chỉ có thể là 10 hoặc 11 số.'
+                    }
+                }
+            }
+        },
+        onSuccess: function (e) {
+
+            var name = $('#name_modal').val();
+            var phone = $('#phone_modal').val();
+            var email = $('#email_modal').val();
+            var emailto = "quyendn84@gmail.com";
+            var typeId = 1;
+            var webdomain = "f5academy";
+            var rederect = false;
+            var dataJSON = { "name": name, "email": email, "phone": phone, "typeId": typeId, "emailto": emailto }
+            showLoadingContactImage('content-modal', 'frmContentModal');
+            $.ajax({
+                url: "https://alpha.f5academy.net/api/TSMservice",
+                type: "Post",
+                async: false,
+                data: dataJSON,
+                contentType: 'application/json; charset=utf-8',
+                dataType: 'jsonp',
+                success: function (states) {
+                    $('#frmRegModal').bootstrapValidator('resetForm', true);
+                    hideLoadingContactImage('frmContentModal', 'content-modal');
+                    rederect = true;
+                },
+                error: function (ex) {
+                    toastr.error('Đã có lỗi trong quá trình đăng ký, mời bạn thử lại.', { timeOut: 5000 })
+                    hideLoadingContactImage('content-modal', 'frmContentModal');
+                },
+                complete: function (jqXHR, textStatus) {
+                    $('#name_modal').val('');
+                    $("#phone_modal").val('');
+                    $('#email_modal').val('');
+                    $('#frmRegModal').bootstrapValidator('resetForm', true);
+                    if (rederect == true)
+                        window.location.href = "dang-ky-thanh-cong.html";
+                }
+            });
+        }
+    }).on('success.form.fv', function (e) {
+
+    });
+    $('#frmRegModalInfo').bootstrapValidator({
+        message: 'This value is not valid',
+        excluded: [':disabled'],
+        feedbackIcons: faIcon,
+        fields: {
+            email_modal_info: {
+                validators: {
+                    notEmpty: {
+                        message: 'Địa chỉ email không được để trống.'
+                    },
+                    emailAddress: {
+                        message: 'Không đúng định dạng email'
+                    }
+                }
+            },
+            name_modal_info: {
+                validators: {
+                    notEmpty: {
+                        message: 'Họ tên không được để trống.'
+                    }
+                }
+            },
+            phone_modal_info: {
+                validators: {
+                    notEmpty: {
+                        message: 'Điện thoại không được để trống.'
+                    },
+                    stringLength: {
+                        min: 10,
+                        max: 11,
+                        message: 'Số điện thoại chỉ có thể là 10 hoặc 11 số.'
+                    }
+                }
+            }
+        },
+        onSuccess: function (e) {
+
+            var name = $('#name_modal_info').val();
+            var phone = $('#phone_modal_info').val();
+            var email = $('#email_modal_info').val();
+            var emailto = "quyendn84@gmail.com";
+            var typeId = 2;
+            var webdomain = "f5academy";
+            var rederect = false;
+            var dataJSON = { "name": name, "email": email, "phone": phone, "typeId": typeId, "emailto": emailto }
+            showLoadingContactImage('content-modal-info', 'frmContentModalInfo');
+            $.ajax({
+                url: "https://alpha.f5academy.net/api/TSMservice",
+                type: "Post",
+                async: false,
+                data: dataJSON,
+                contentType: 'application/json; charset=utf-8',
+                dataType: 'jsonp',
+                success: function (states) {
+                    $('#frmRegModalInfo').bootstrapValidator('resetForm', true);
+                    hideLoadingContactImage('frmContentModalInfo', 'content-modal-info');
+                    rederect = true;
+                },
+                error: function (ex) {
+                    toastr.error('Đã có lỗi trong quá trình đăng ký, mời bạn thử lại.', { timeOut: 5000 })
+                    hideLoadingContactImage('content-modal', 'frmContentModalInfo');
+                },
+                complete: function (jqXHR, textStatus) {
+                    $('#name_modal_info').val('');
+                    $("#phone_modal_info").val('');
+                    $('#email_modal_info').val('');
+                    $('#frmRegModalInfo').bootstrapValidator('resetForm', true);
+                    if (rederect == true)
+                        window.location.href = "dang-ky-thanh-cong.html";
+                }
+            });
+        }
+    }).on('success.form.fv', function (e) {
+
+    });
     function showLoadingImage() {
 
         $('#content').empty().append('<div id="loading-image" align="center"><img src="img/ajax-loader.gif" alt="Loading..." /></div>');
