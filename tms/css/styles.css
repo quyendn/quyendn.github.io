@@ -164,11 +164,11 @@ a, .btn, button{
 	position:relative;
 	background-size:cover;
 	}
-#slide .boder, #thank .boder{
+#slide .boder{
 	border:5px solid #fff;
 	padding:60px;
 	}
-#slide .bg, #thank .boder .text{
+#slide .bg{
 	background:#fff;
 	padding:30px 0;
 	text-transform:uppercase;
@@ -193,7 +193,7 @@ a, .btn, button{
 .carousel-indicators .active{
 	width:16px;
 	height:16px;
-	background:#fff;
+	background:#b31b20;
 	}
 	
 #formContact{
@@ -242,8 +242,6 @@ a, .btn, button{
 	border-radius:10px;
 	}
 #fontline{
-	
-
 	color:#fff;
 	font-size:20px;
 	text-transform:uppercase;
@@ -510,7 +508,30 @@ a, .btn, button{
 	padding:5px 0;
 	text-align:center;}
 
-
+/**/
+#thank{
+	font-family: 'MyriadPro-Semibold';
+	background:url(../img/bannerTop-1.jpg) no-repeat 50% 50% / 100% 100%;}
+#thank .inner{
+	background:rgba(255,255,255,0.9);
+	padding:50px 0;
+	text-align:center;
+	}
+#thank h3{
+	font-size:30px;
+	}
+#thank h2{
+	font-size:46px;
+	color:#b31b20;
+	}
+#thank span{
+	display:inline-block;
+	padding:10px 30px;
+	color:#fff;
+	background:#b31b20;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;}
 /**/
 img{
 	max-width:100%}
@@ -520,15 +541,6 @@ img{
 .modal .modal-header h4{
 	margin-top:10px;}
 #popModal input{
-	width:100%;
-	padding:10px;
-	background:#f2f2f2;
-	-moz-border-radius:5px;
-	-webkit-border-radius:5px;
-	border-radius:5px;
-	border:none;
-	}
-	#popModalInfo input{
 	width:100%;
 	padding:10px;
 	background:#f2f2f2;

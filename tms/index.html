@@ -14,6 +14,7 @@
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/jquery.nanoscroller.min.js"></script>
     <script type="text/javascript" src="js/wow/wow.min.js"></script>
+    <script src="js/jquery.zoom.min.js"></script>
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="css/styles.css" rel="stylesheet" type="text/css" />
     <link href="css/font-face.css" rel="stylesheet" type="text/css" />
@@ -179,8 +180,8 @@
                         </ul>
                         <div><a class="btn" data-target="#popModalInfo" data-toggle="modal">Tải trọn bộ tài liệu về dự án</a></div>
                     </div>
-                    <div class="col-sm-6 wow fadeInRight">
-                    	<img src="img/batbang.jpg">
+                    <div class="col-sm-6 wow fadeInRight photo">
+                    	<img   src="img/batbang.jpg">
                     </div>
                     
                 </div>
@@ -195,7 +196,32 @@
                     <li data-slide-to="2" data-target="#st5-slide" class=""></li>
                 </ol>
                 <div role="listbox" class="carousel-inner">
-                    <div class="item active" style="background:url(img/cohoidautu3.jpg) no-repeat 50% 50% / 100% 100%">
+                    <div class="item active" style="background:url(img/cohoidautu1.jpg) no-repeat 50% 50% / 100% 100%">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-5 col-sm-offset-7 st5Text">
+                                    <div class="st-hd">
+                                        <div><img src="img/bullit_tl.png"></div>
+                                        <h3>CƠ HỘI ĐẦU TƯ</h3>
+                                    </div>
+                                    <h2>Nhà phố thương mại</h2>
+                                    <hr>
+                                    <div><strong>Số lượng: 315 căn</strong></div>
+                                    <div><strong>Diện tích: 75 - 150 m2</strong></div>
+                                    <div><strong>Số tầng: 4 - 5 tầng</strong></div>
+                                    <p>&nbsp;</p>
+                                    <p>Nhà phố thương mại sở hữu mặt tiền lớn, có vị trí nằm dọc theo các trục đường sầm uất, huyết mạch của
+                                        khu đô thị TMS Grand City Phuc Yen.</p>
+                                    <p>Kết hợp hài hòa giữa quy hoạch, hạ tầng, giá trị thương mại và không gian sống, nhà phố thương mại sở
+                                        hữu chức năng kép là chốn an cư đồng thời là chốn sinh lời bền vững cho gia chủ.</p>
+                                    <div><a type="button" class="btn btn-submit btn-lg" data-toggle="modal" data-target="#popModalInfo">Đăng
+                                            ký chuyên gia tư vấn</a></div>
+                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" style="background:url(img/cohoidautu3.jpg) no-repeat 50% 50% / 100% 100%">
                         <div class="container-fluid">
                             <div class="row">
                                 <div class="col-md-5 col-sm-offset-7 st5Text">
@@ -236,28 +262,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="item" style="background:url(img/cohoidautu1.jpg) no-repeat 50% 50% / 100% 100%">
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div class="col-md-5 col-sm-offset-7 st5Text">
-                                    <div class="st-hd">
-                                        <div><img src="img/bullit_tl.png"></div>
-                                        <h3>CƠ HỘI ĐẦU TƯ</h3>
-                                    </div>
-                                    <h2>Nhà phố thương mại</h2>
-                                    <hr>
-                                    <div><strong>Số lượng: 315 căn</strong></div>
-                                    <div><strong>Diện tích: 75 - 150 m2</strong></div>
-                                    <div><strong>Số tầng: 4 - 5 tầng</strong></div>
-                                    <p>&nbsp;</p>
-                                    <p>Nhà phố thương mại sở hữu mặt tiền lớn, có vị trí nằm dọc theo các trục đường sầm uất, huyết mạch của khu đô thị TMS Grand City Phuc Yen.</p>
-                                    <p>Kết hợp hài hòa giữa quy hoạch, hạ tầng, giá trị thương mại và không gian sống, nhà phố thương mại sở hữu chức năng kép là chốn an cư đồng thời là chốn sinh lời bền vững cho gia chủ.</p>
-                                    <div><a type="button" class="btn btn-submit btn-lg" data-toggle="modal" data-target="#popModalInfo">Đăng ký chuyên gia tư vấn</a></div>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    
                 </div>
                 <a data-slide="prev" role="button" href="#st5-slide" class="left carousel-control hidden"></a>
                 <a data-slide="next" role="button" href="#st5-slide" class="right carousel-control hidden"></a>
@@ -319,7 +324,7 @@
         <div id="noteFt">(*) Mọi thông tin và hình ảnh chỉ mang tính chất tham khảo. Vui lòng liên hệ bộ phận kinh doanh để biết thêm thông tin chi tiết.</div>
         
         <div id="popModal" class="modal fade" role="dialog" style="">
-            <div class="modal-dialog modal-sm">
+            <div class="modal-dialog modal-md">
     
                 <!-- Modal content-->
                 <div class="modal-content">
@@ -327,7 +332,7 @@
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                         <div><img src="img/logo.png"></div>
                         
-                        <h4 class="modal-title"><strong>ĐĂNG KÝ NHẬN ƯU ĐÃI</strong></h4>
+                        <h4 class="modal-title"><strong>QUÝ KHÁCH VUI LÒNG NHẬP THÔNG TIN NHẬN ƯU ĐÃI</strong></h4>
                     </div>
                     <div class="modal-body" style="padding:15px 30px;">
                         <form id="frmRegModal" class="form-horizontal" autocomplete="off">
@@ -387,6 +392,14 @@
     <script type="text/javascript" src="js/form-validation.js"></script>
     <script type="text/javascript" src="js/toastr.js"></script>
     <script type="text/javascript">
+        $(document).ready(function () {
+            $('.photo').zoom({
+                url: 'img/tienich2.jpg',
+                callback: function () {
+                    $(this).colorbox({ href: this.src });
+                }
+            });
+        });
         new WOW().init();
         function AllowNumberOnly(evt) {
             evt = (evt) ? evt : event;
