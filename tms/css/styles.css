@@ -246,7 +246,7 @@ a, .btn, button{
 	font-size:20px;
 	text-transform:uppercase;
 	position:fixed;
-	bottom:10px;
+	bottom:40px;
 	left:10px;
 	z-index:99999;
 	
@@ -254,9 +254,9 @@ a, .btn, button{
 #fontline a{
 	padding:10px;
 	margin:0 5px;
-	-moz-border-radius:10px;
-	-webkit-border-radius:10px;
-	border-radius:10px;
+	-moz-border-radius:40px;
+	-webkit-border-radius:40px;
+	border-radius:40px;
 	color:#fff;
 	background:url(../img/bg_phone.gif) repeat 50% 50%;
 	}
@@ -598,6 +598,7 @@ img{
 		padding:5px 0;}
 		#fontline{
 		right:10px;
+		bottom: 10px;
 		}
 	#fontline a{
 		padding:0 5px;
@@ -621,9 +622,9 @@ img{
 	padding:10px;
 	background-color: #b31b20;
 	display:block;
-	-moz-border-radius:5px;
-	-webkit-border-radius:5px;
-	border-radius:5px;
+	-moz-border-radius:40px;
+	-webkit-border-radius:40px;
+	border-radius:40px;
 }
 		#footer{
 			padding-bottom: 80px;
