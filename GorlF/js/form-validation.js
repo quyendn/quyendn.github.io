@@ -183,6 +183,7 @@ $(document).ready(function() {
                     $('#txtEmailReg').val('');
                     $('#txtDescriptionReg').val('');
                     $('#frmMobileRegister').bootstrapValidator('resetForm', true);
+                    $('#dangky').modal('hide');
                     toastr.success('Cảm ơn bạn đã đăng ký.</br>Chúng tôi sẽ liên hệ tư vấn sớm nhất!', {
                         timeOut: 5000
                     })
