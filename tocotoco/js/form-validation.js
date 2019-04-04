@@ -85,7 +85,11 @@ $(document).ready(function() {
                     $("#txtPhone").val('');
                     $('#txtEmail').val('');
                     $('#frmMobile').bootstrapValidator('resetForm', true);
+<<<<<<< HEAD
                     window.location.href = "http://tocotocotea.com/chien-dich-nhuong-quyen/dang-ky-thanh-cong.html";
+=======
+                    window.location.href = "/dang-ky-thanh-cong.html";
+>>>>>>> e8f75dabfa8395b26ddaf0c933d31e58a3db2101
                 }
             });
         }
@@ -149,7 +153,11 @@ $(document).ready(function() {
                     $("#txtPhone").val('');
                     $('#txtEmail').val('');
                     $('#frmMobileFooter').bootstrapValidator('resetForm', true);
+<<<<<<< HEAD
                     window.location.href = "http://tocotocotea.com/chien-dich-nhuong-quyen/dang-ky-thanh-cong.html";
+=======
+                    window.location.href = "/dang-ky-thanh-cong.html";
+>>>>>>> e8f75dabfa8395b26ddaf0c933d31e58a3db2101
                 }
             });
         }
