@@ -80,7 +80,7 @@ $(document).ready(function() {
             }
             showLoadingContactImage('content-mobile', 'formContentContactMobile');
             $.ajax({
-                url: "http://localhost:50623/api/GoldenFiledservice",
+                url: "https://alpha.f5academy.net/api/GoldenFiledservice",
                 type: "Post",
                 async: false,
                 data: dataJSON,
@@ -161,7 +161,7 @@ $(document).ready(function() {
             }
             showLoadingContactImage('content-mobile-register', 'formContentContactMobileRegister');
             $.ajax({
-                url: "http://localhost:50623/api/GoldenFiledservice",
+                url: "https://alpha.f5academy.net/api/GoldenFiledservice",
                 type: "Post",
                 async: false,
                 data: dataJSON,
@@ -216,4 +216,4 @@ $(document).ready(function() {
         $('#' + frmContent).show();
         $('#loading-image').remove();
     }
-});
+})
