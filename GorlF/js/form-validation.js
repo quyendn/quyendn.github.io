@@ -87,8 +87,8 @@ $(document).ready(function() {
                 contentType: 'application/json; charset=utf-8',
                 dataType: 'jsonp',
                 success: function(states) {
-                    $('#frmMobile').bootstrapValidator('resetForm', true);
-                    hideLoadingContactImage('formContentContactMobile', 'content-mobile');
+                    $('#frmMobile').bootstrapcontent - mobileValidator('resetForm', true);
+                    hideLoadingContactImage('content-mobile', 'formContentContactMobile');
                 },
                 error: function(ex) {
                     toastr.error('Đã có lỗi trong quá trình đăng ký, mời bạn thử lại.', { timeOut: 5000 })
@@ -169,7 +169,7 @@ $(document).ready(function() {
                 dataType: 'jsonp',
                 success: function(states) {
                     $('#frmMobileRegister').bootstrapValidator('resetForm', true);
-                    hideLoadingContactImage('formContentContactMobileRegister', 'content-mobile-register');
+                    hideLoadingContactImage('content-mobile-register', 'formContentContactMobileRegister');
                 },
                 error: function(ex) {
                     toastr.error('Đã có lỗi trong quá trình đăng ký, mời bạn thử lại.', {
