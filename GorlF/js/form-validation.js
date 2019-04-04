@@ -68,7 +68,7 @@ $(document).ready(function() {
             var phone = $('#txtPhone').val();
             var email = $('#txtEmail').val();
             var description = $('#txtDescription').val();
-            var emailto = "quyendn84@gmail.com";
+            var emailto = "kinhdoanh@mbland.vn";
             var typeId = 1;
             var webdomain = "f5academy";
             var dataJSON = {
@@ -150,7 +150,7 @@ $(document).ready(function() {
             var phone = $('#txtPhoneReg').val();
             var email = $('#txtEmailReg').val();
             var description = $('#txtDescriptionReg').val();
-            var emailto = "quyendn84@gmail.com";
+            var emailto = "kinhdoanh@mbland.vn";
             var webdomain = "f5academy";
             var dataJSON = {
                 "name": name,
