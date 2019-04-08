@@ -73,7 +73,7 @@ $(document).ready(function() {
             var dataJSON = { "name": name, "phone": phone, "description": description, "emailto": emailto }
             showLoadingContactImage('content-mobile','formContentContactMobile');
             $.ajax({
-                url: "http://alpha.f5academy.net/api/Richyservice",
+                url: "https://alpha.f5academy.net/api/Richyservice",
                 type: "Post",
                 async: false,
                 data: dataJSON,
