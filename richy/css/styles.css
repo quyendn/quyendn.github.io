@@ -159,6 +159,16 @@ a, .btn, button{
 	left:50%;
 	margin-left:-114px;
 	display:inline-block;}
+#header .affix .hotline{
+	display:none;
+	}
+#header .affix .navbar-brand{
+	top:0;
+	margin-left:-59px;
+	}
+#header .affix .navbar-brand > img{
+	height:68px;
+	}
 /**/
 .section{
 	padding-top:30px;
@@ -189,11 +199,11 @@ a, .btn, button{
 	position:relative;
 	background-size:cover;
 	}
-#slide .boder, #thank .boder{
+#slide .boder{
 	border:5px solid #fff;
 	padding:60px;
 	}
-#slide .bg, #thank .boder .text{
+#slide .bg{
 	background:#fff;
 	padding:30px 0;
 	text-transform:uppercase;
@@ -332,7 +342,7 @@ a, .btn, button{
 	}
 #section4 .st-hd h3{
 	color:#e42228;
-	font-size:36px;
+	font-size:30px;
 	}
 #section4 #video{
 	border:10px solid #e42228;
@@ -354,8 +364,8 @@ a, .btn, button{
 	background-position:100% 50%;
 	right:-45px;
 	background-image:url(../img/next.png);}
-#section4 .news{
-	margin-bottom:30px;
+#section4 .item .news:last-child{
+	margin-top:30px;
 	}
 #section4 .news img{
 	border:3px solid #fff;
@@ -403,8 +413,18 @@ a, .btn, button{
 	}
 	
 /**/
-
-
+#thank{
+	padding-top:100px;
+	padding-bottom:100px;
+	background:#ffc522;
+	font-size:21px;
+	}
+#thank .thankImg{
+	margin-bottom:30px;
+	
+	}
+#thank .thankImg img{
+	max-width:380px;}
 /**/
 img{
 	max-width:100%}

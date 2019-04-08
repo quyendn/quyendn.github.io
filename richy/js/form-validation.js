@@ -67,7 +67,7 @@ $(document).ready(function() {
 
             var name = $('#txtName').val();
             var phone = $('#txtPhone').val();
-            var description = $('#txtDescription').val();
+            var description = $('#txtAddress').val();
             var emailto = "quyendn84@gmail.com";
             var webdomain = "f5academy";
             var dataJSON = { "name": name, "phone": phone, "description": description, "emailto": emailto }
@@ -90,11 +90,12 @@ $(document).ready(function() {
                 complete: function (jqXHR, textStatus) {
                     $('#txtName').val('');
                     $("#txtPhone").val('');
-                    $('#txtDescription').val('');
+                    $('#txtAddress').val('');
                     $('#frmMobile').bootstrapValidator('resetForm', true);
                     toastr.success('Cảm ơn bạn đã đăng ký.</br>Chúng tôi sẽ liên hệ tư vấn sớm nhất!', {
                         timeOut: 5000
                     })
+                    window.location.href = "https://quyendn.github.io/richy/dang-ky-thanh-cong.html";
                 }
             });
         }
