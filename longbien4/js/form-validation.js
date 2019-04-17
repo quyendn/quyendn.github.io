@@ -27,7 +27,6 @@ $(document).ready(function() {
         // Indicate where the error messages are shown.
         // Tooltip, Popover, Custom Container.
         // =================================================================
-   
     $('#frmDattiec').bootstrapValidator({
         message: 'This value is not valid',
         excluded: [':disabled'],
@@ -91,7 +90,7 @@ $(document).ready(function() {
                 success: function (states) {
                     $('#frmDattiec').bootstrapValidator('resetForm', true);
                     hideLoadingContactImage('content-download', 'frmContentDownload');
-                 },
+                },
                 error: function (ex) {
                     toastr.error('Đã có lỗi trong quá trình đăng ký, mời bạn thử lại.', { timeOut: 5000 })
                     hideLoadingContactImage('content-download', 'frmContentDownload');

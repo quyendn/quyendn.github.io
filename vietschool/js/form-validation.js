@@ -110,7 +110,7 @@ $(document).ready(function() {
                     toastr.success('Cảm ơn bạn đã đăng ký.</br>Chúng tôi sẽ liên hệ tư vấn sớm nhất!', {
                         timeOut: 5000
                     })
-                    window.location.href = "http://quyendn.github.io/vietschool/dang-ky-thanh-cong.html";
+                    window.location.href = "/dang-ky-thanh-cong.html";
                 }
             });
         }
