@@ -240,7 +240,7 @@ h1, h2, h3{
 	}
 .formRegister{
 	position:absolute;
-	left:00px;
+	right:00px;
 	bottom:100px;
 	padding:15px;
 	background:rgba(255,255,255,0.9);
@@ -250,7 +250,7 @@ h1, h2, h3{
 	border:1px dashed #3c280b;
 	color:#69553b;
 	padding:30px;
-	max-width:360px;
+	max-width:360px;background:rgba(255,255,255,0.5);
 	}
 .formRegister .inner h3{
 	margin:0 0 15px 0;
@@ -331,7 +331,7 @@ h1, h2, h3{
 	background:rgba(255,255,255,0.9);
 	padding:10px;
 	text-align:center;
-	font-size:24px;
+	font-size:18px;
 	margin-top:-5px;
 	}
 #section1 .inner .text h2{
@@ -339,7 +339,7 @@ h1, h2, h3{
 	color:#000;
 	font-size:26px;
 	text-transform:uppercase;}
-#section1 .inner .text p, .section2Bottom p{
+#section1 .inner .text p{
 	color:#f38120;
 	margin:0;
 	font-family: 'UVFMetroScript';
@@ -347,24 +347,30 @@ h1, h2, h3{
 	
 #section2{
 	text-align:center;
-	 background:url(../img/uudai.jpg) no-repeat 50% 50% / 100% auto; 
+	 background:url(../img/uudai.jpg) no-repeat 50% 100%; 
 	}
 	
 .section2Top{
-	margin-top:30px;
-	margin-bottom:60px;
+	margin-bottom:350px;
+	padding:15px;
+	background:rgba(255,255,255,0.8);
 	}
 .section2Top h2{
-	color:#111;margin:0 0 30px 0;
+	color:#f38120;
+	margin:0 0 10px 0;
 	text-transform:uppercase;
 	}
 .section2Top p{
 	margin:0;
-	color:#111;
-	font-size:16px;
+	color:#;
+	font-size:20px;
+	}
+.section2Bottom{
+	padding:15px;
+	background:rgba(255,255,255,0.8);
 	}
 .section2Bottom ul{
-	margin:30px 0 30px 0px;
+	margin:30px 0px;
 	padding:0;
 	overflow:hidden;
 	}
@@ -372,13 +378,16 @@ h1, h2, h3{
 	width:50%;
 	float:left;
 	text-align:left;
-	padding-tight:30px;
 	list-style:none;
 	font-size:13px;
+	padding-right:30px;
 	margin-bottom:5px;
 	}
 .section2Bottom p{
-	font-size:36px;
+	font-size:18px;
+	margin:0;
+	}
+.section2Bottom h3,.section2Bottom p{color:#f38120;margin:0;text-transform:uppercase;
 	}
 #section3{
 	background:#9a620e}
@@ -389,16 +398,15 @@ h1, h2, h3{
 	text-align:center;
 	color:#fff;
 	}
-	
 #section4{
-	background:url(../img/bg-partner.gif) repeat 50% 50%;
-	}
+	background:#fff;
+	}	
 #section4 h3{
 	text-transform:uppercase;
 	font-size:30px;
 	margin:0 0 30px 0;
 	text-align:center;
-	color:#dc730a;
+	color:#f4cf11;
 	}
 	
 #frmDattiec{
@@ -406,10 +414,10 @@ h1, h2, h3{
 	margin:0 auto;
 	}
 #frmDattiec .btn{
-	background:#fff;
+	background:#3c280b;
 	text-transform:uppercase;
 	font-size:20px;
-	color:#222;
+	color:#fff;
 	border:none;
 	padding:10px 30px;
 	border:1px solid #333;
@@ -621,10 +629,12 @@ img{
 	#heartbanner-slide .tus{
 		position:static;
 		background:#ffe7c2;
-		padding:30px 0;
+		padding:15px;
 		}
 	#heartbanner-slide .item:nth-child(4) .tus{
 		background:#4cad7a;}
+	#heartbanner-slide .item:nth-child(2) .tus, #heartbanner-slide .item:nth-child(3) .tus{
+		background:#9a620e;}
 	.formRegister{
 		padding:0;
 		margin-top:30px;
@@ -649,14 +659,13 @@ img{
 		font-size:20px;
 		}
 	.section2Bottom li{
-		width:45%; 
-        padding-right:5%
+		width:100%;
 		}
 	#section2 {
 		background: url(../img/uudai.jpg) no-repeat 50% 50% / auto 100%;
 		}
 	.section2Bottom p{
-		font-size:24px;
+		font-size:16px;
 		}
 	#thanks{
 		background:url(../img/uudai.jpg) no-repeat 00% 50% / auto 100%;
@@ -818,7 +827,7 @@ img{
 .phone {
 	position: fixed;
     right: 20px;
-    bottom: 00px;
+    bottom: 100px;
     padding: 10px;
     z-index: 99;
     min-width: 150px;
@@ -831,7 +840,7 @@ img{
   color: #fff;
   position: fixed;
   right: 20px;
-  bottom: 00px;
+  bottom: 100px;
   padding: 10px;
   z-index: 99;
 }
@@ -1042,9 +1051,22 @@ img{
     transform: rotate(0deg) scale(1) skew(1deg);
   }
 }
+
 .has-error .form-control-feedback{
     padding-top:10px;
 }
-.has-success .form-control-feedback{
-     padding-top:10px;
-}
+
+/**/
+.btn_dattiec{
+	position:fixed;
+	bottom:30px;
+	right:15px;
+	padding:10px 20px;
+	background:#9a620e;
+	color:#fff;
+	border:1px solid #7e4c00
+	}
+.btn_dattiec:hover{
+	color:#fff;
+	background:#7e4c00;
+	}
