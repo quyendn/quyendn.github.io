@@ -281,6 +281,7 @@ a, .btn, button{
 
 #section1{
 	padding:60px 0;
+	background:url(../img/egg.gif) no-repeat 100% 100%;
 	}
 #section1 h3 span{
 	font-size:56px;
@@ -327,11 +328,13 @@ a, .btn, button{
 	position:relative;
 	}
 #section3 .st-hd h3{
-	color:#e32228;
+	color:#111;
 	text-transform:uppercase;
 	font-size:30px;
 	text-align:center;
 	}
+#section3 .st-hd h3 span{
+	color:#ffc522}
 #section3 .col-sm-7 .col-sm-6{
 	margin-bottom:30px;}
 #section3 .col-sm-7 p{

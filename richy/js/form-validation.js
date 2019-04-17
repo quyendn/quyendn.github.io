@@ -27,7 +27,7 @@ $(document).ready(function() {
         // Indicate where the error messages are shown.
         // Tooltip, Popover, Custom Container.
         // =================================================================
-    
+
     $('#frmMobile').bootstrapValidator({
         message: 'This value is not valid',
         excluded: [':disabled'],
@@ -63,7 +63,7 @@ $(document).ready(function() {
                 }
             }
         },
-        onSuccess: function (e) {
+        onSuccess: function(e) {
 
             var name = $('#txtName').val();
             var phone = $('#txtPhone').val();
@@ -71,7 +71,7 @@ $(document).ready(function() {
             var emailto = "quyendn84@gmail.com";
             var webdomain = "f5academy";
             var dataJSON = { "name": name, "phone": phone, "description": description, "emailto": emailto }
-            showLoadingContactImage('content-mobile','formContentContactMobile');
+            showLoadingContactImage('content-mobile', 'formContentContactMobile');
             $.ajax({
                 url: "https://alpha.f5academy.net/api/Richyservice",
                 type: "Post",
@@ -79,15 +79,15 @@ $(document).ready(function() {
                 data: dataJSON,
                 contentType: 'application/json; charset=utf-8',
                 dataType: 'jsonp',
-                success: function (states) {
+                success: function(states) {
                     $('#frmMobile').bootstrapValidator('resetForm', true);
                     hideLoadingContactImage('content-mobile', 'formContentContactMobile');
                 },
-                error: function (ex) {
+                error: function(ex) {
                     toastr.error('Đã có lỗi trong quá trình đăng ký, mời bạn thử lại.', { timeOut: 5000 })
-                    hideLoadingContactImage('content-mobile','formContentContactMobile');
+                    hideLoadingContactImage('content-mobile', 'formContentContactMobile');
                 },
-                complete: function (jqXHR, textStatus) {
+                complete: function(jqXHR, textStatus) {
                     $('#txtName').val('');
                     $("#txtPhone").val('');
                     $('#txtAddress').val('');
@@ -95,13 +95,14 @@ $(document).ready(function() {
                     toastr.success('Cảm ơn bạn đã đăng ký.</br>Chúng tôi sẽ liên hệ tư vấn sớm nhất!', {
                         timeOut: 5000
                     })
-                    window.location.href = "https://quyendn.github.io/richy/dang-ky-thanh-cong.html";
+                    window.location.href = "http://rumo.richy.com.vn/dang-ky-thanh-cong.html";
                 }
             });
         }
-    }).on('success.form.fv', function (e) {
+    }).on('success.form.fv', function(e) {
 
     });
+
     function showLoadingImage() {
 
         $('#content').empty().append('<div id="loading-image" align="center"><img src="img/ajax-loader.gif" alt="Loading..." /></div>');
@@ -113,8 +114,8 @@ $(document).ready(function() {
         $('#formContentContact').show();
         $('#loading-image').remove();
     }
-   
-    function showLoadingContactImage(contentLoading,frmContent) {
+
+    function showLoadingContactImage(contentLoading, frmContent) {
 
         $('#' + contentLoading).empty().append('<div id="loading-image" align="center"><img src="img/ajax-loader.gif" alt="Loading..." /></div>');
         $('#' + frmContent).hide();
