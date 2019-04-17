@@ -120,7 +120,6 @@
                             <div class="text">
                                 <h2>Phòng Hội nghị</h2>
                             </div>
-                            <div class="player text-center" id="VdoPlayr" style="text-align:center;"></div>
                             <script type='text/javascript'>
                                 jwplayer('Video1').setup({
                                     autostart: false,
@@ -139,18 +138,46 @@
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-4">
                         <div class="inner zoom">
-                            <div><iframe width="100%" height="300" src="https://www.youtube.com/embed/mC88IybZ104" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                            <div id="Video2"></div>
                             <div class="text">
                                 <h2>Hệ thống âm thanh ánh sáng</h2>
                             </div>
+                            <script type='text/javascript'>
+                                jwplayer('Video2').setup({
+                                    autostart: false,
+                                    file: 'https://youtu.be/Ug-rQlnE_-4',
+                                    image: "img/video_amthanh.png",
+                                    width: '100%',
+                                    height: '300px',
+                                    repeat:true,
+                                    controls: true,
+                                    skin: 'seven',
+                                    mute: false,
+                                    primary: 'html5'
+                                });
+                            </script>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-4">
                         <div class="inner zoom">
-                            <div><iframe width="100%" height="300" src="https://www.youtube.com/embed/YziBAAT05N0?list=PLO_kSa7mkOmQPLCMhy_-ifGv13ndO5iQA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                            <div id="Video3"></div>
                             <div class="text">
                                 <h2>Ẩm thực đặc sắc</h2>
                             </div>
+                            <script type='text/javascript'>
+                                jwplayer('Video3').setup({
+                                    autostart: false,
+                                    file: 'https://youtu.be/YziBAAT05N0',
+                                    image: "img/am_thuc.png",
+                                    width: '100%',
+                                    height: '300px',
+                                    repeat:true,
+                                    controls: true,
+                                    skin: 'seven',
+                                    mute: false,
+                                    primary: 'html5'
+                                });
+                            </script>
                         </div>
                     </div>
                 </div>
