@@ -628,11 +628,11 @@ img{
 		}
 	#heartbanner-slide .tus{
 		position:static;
-		background:#ffe7c2;
+		background:#9a620e;
 		padding:15px;
 		}
 	#heartbanner-slide .item:nth-child(4) .tus{
-		background:#4cad7a;}
+		background:#9a620e;}
 	#heartbanner-slide .item:nth-child(2) .tus, #heartbanner-slide .item:nth-child(3) .tus{
 		background:#9a620e;}
 	.formRegister{
@@ -1053,6 +1053,9 @@ img{
 }
 
 .has-error .form-control-feedback{
+    padding-top:10px;
+}
+.has-success .form-control-feedback{
     padding-top:10px;
 }
 

@@ -76,7 +76,7 @@ $(document).ready(function() {
             var phone = $('#txtPhoneContact').val();
             var datecreate = $('#txtDate').val();
             var description = $('#txtDescription').val();
-            var typeId = 1;
+            var typeId = 7;
             var emailto = "quyendn84@gmail.com";
             var dataJSON = { "name": name, "email": email, "phone": phone, "datecreate": datecreate, "description": description, 'typeId': typeId, "emailto": emailto };
             showLoadingContactImage('content-download', 'frmContentDownload');
@@ -104,6 +104,7 @@ $(document).ready(function() {
                     $('#frmDattiec').bootstrapValidator('resetForm', true);
                     toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', { timeOut: 5000 })
                     hideLoadingContactImage('content-download', 'frmContentDownload');
+                    location.href = "https://quyendn.github.io/longbien4/cam-on.html";
                 }
             });
         }
@@ -132,7 +133,7 @@ $(document).ready(function() {
             var phone = '';
             var datecreate = '';
             var description = '';
-            var typeId = 3;
+            var typeId = 9;
             var emailto = "quyendn84@gmail.com";
             var dataJSON = { "name": name, "email": email, "phone": phone, "datecreate": datecreate, "description": description, 'typeId': typeId, "emailto": emailto };
             showLoadingContactImage('content-promotion', 'frmContentPromotion');
@@ -156,6 +157,7 @@ $(document).ready(function() {
                     $('#frmRegPromotion').bootstrapValidator('resetForm', true);
                     toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', { timeOut: 5000 })
                     hideLoadingContactImage('content-promotion', 'frmContentPromotion');
+                    location.href = "https://quyendn.github.io/longbien4/cam-on.html";
                 }
             });
         }
@@ -194,10 +196,10 @@ $(document).ready(function() {
             var phone = $('#txtPhoneRG').val();
             var datecreate = '';
             var description = '';
-            var typeId = 2;
+            var typeId = 8;
             var emailto = "quyendn84@gmail.com";
             var dataJSON = { "name": name, "email": email, "phone": phone, "datecreate": datecreate, "description": description, 'typeId': typeId, "emailto": emailto };
-            showLoadingContactImage('content-download', 'frmContentReg');
+            showLoadingContactImage('content-register', 'frmContentReg');
             $.ajax({
                 url: "https://alpha.f5academy.net/api/Longbienservice",
                 type: "Post",
@@ -219,6 +221,7 @@ $(document).ready(function() {
                     $('#frmRegDownload').bootstrapValidator('resetForm', true);
                     toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', { timeOut: 5000 })
                     hideLoadingContactImage('content-register', 'frmContentReg');
+                    location.href = "https://quyendn.github.io/longbien4/cam-on.html";
                 }
             });
         }
@@ -227,7 +230,7 @@ $(document).ready(function() {
     });
     function showLoadingImage() {
 
-        $('#content').empty().append('<div id="loading-image" align="center"><img src="img/ajax-loader.gif" alt="Loading..." /></div>');
+        $('#content').empty().append('<div id="loading-image" align="center"><img style="min-width:32px" src="img/ajax-loader.gif" alt="Loading..." /></div>');
         $('#formContentContact').hide();
     }
     function hideLoadingImage() {
@@ -236,7 +239,7 @@ $(document).ready(function() {
     }
     function showLoadingContactImage(contentLoading,frmContent) {
 
-        $('#' + contentLoading).empty().append('<div id="loading-image" align="center"><img src="img/ajax-loader.gif" alt="Loading..." /></div>');
+        $('#' + contentLoading).empty().append('<div id="loading-image" align="center"><img style="min-width:32px" src="img/ajax-loader.gif" alt="Loading..." /></div>');
         $('#' + frmContent).hide();
     }
     function hideLoadingContactImage(contentLoading, frmContent) {
