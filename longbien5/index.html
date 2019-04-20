@@ -52,6 +52,10 @@
     <script type="text/javascript" src="js/bootstrap-datepicker/bootstrap-datepicker.js"></script>
     <script type="text/javascript" src="js/bootstrap-datepicker/locales/bootstrap-datepicker.vi.min.js"></script>
     <script type="text/javascript" src="//media1.admicro.vn/cpa/admicro-core.min.js"></script>
+    <script type="text/javascript" src="jwplayer/jwplayer.js"></script>
+    <script type="text/javascript">
+        jwplayer.key = "XumejFo+svwQswRJ3Mi++itror5V6+6q+6I7MQ==";
+    </script>
     <script type="text/javascript">
         window.admicro_cpa_q = window.admicro_cpa_q || [];
         window.admicro_cpa_q.push({
@@ -174,26 +178,73 @@
                 <div class="row">
                     <div class="col-lg-4 col-md-4 col-sm-4">
                         <div class="inner ">
-                            <div><iframe width="100%" height="300px" src="https://www.youtube.com/embed/en1s8sQZWdg?list=PLO_kSa7mkOmQPLCMhy_-ifGv13ndO5iQA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                            <div id="Video1">
+                            </div>
                             <div class="text">
                                 <h2>Tiệc cưới ngoài trời lung linh </h2>
                             </div>
+                            <script type='text/javascript'>
+                                jwplayer('Video1').setup({
+                                    autostart: false,
+                                    file: 'https://youtu.be/en1s8sQZWdg',
+                                    image: "img/tiec_cuoi_ngoai_troi.png",
+                                    width: '100%',
+                                    height: '300px',
+                                    repeat:true,
+                                    controls: true,
+                                    skin: 'seven',
+                                    mute: false,
+                                    primary: 'html5'
+                                });
+                            </script>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-4">
                         <div class="inner ">
-                            <div><iframe width="100%" height="300px" src="https://www.youtube.com/embed/BObGEu9OVN0?list=PLO_kSa7mkOmQPLCMhy_-ifGv13ndO5iQA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                            <div id="Video2">
+
+                            </div>
                             <div class="text">
                                 <h2>Hệ thống âm thanh ánh sáng - Sảnh và tiệc đẳng cấp</h2>
                             </div>
+                            <script type='text/javascript'>
+                                jwplayer('Video2').setup({
+                                    autostart: false,
+                                    file: 'https://youtu.be/BObGEu9OVN0',
+                                    image: "img/sanh_tiec.png",
+                                    width: '100%',
+                                    height: '300px',
+                                    repeat:true,
+                                    controls: true,
+                                    skin: 'seven',
+                                    mute: false,
+                                    primary: 'html5'
+                                });
+                            </script>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-4">
                         <div class="inner ">
-                            <div><iframe  width="100%" height="300px" src="https://www.youtube.com/embed/MBtmNfSUho4?list=PLO_kSa7mkOmQPLCMhy_-ifGv13ndO5iQA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                            <div id="Video3">
+
+                            </div>
                             <div class="text">
                                 <h2>Ẩm thực đặc sắc </h2>
                             </div>
+                            <script type='text/javascript'>
+                                jwplayer('Video3').setup({
+                                    autostart: false,
+                                    file: 'https://youtu.be/MBtmNfSUho4',
+                                    image: "img/am_thuc_dac_sac.png",
+                                    width: '100%',
+                                    height: '300px',
+                                    repeat:true,
+                                    controls: true,
+                                    skin: 'seven',
+                                    mute: false,
+                                    primary: 'html5'
+                                });
+                            </script>
                         </div>
                     </div>
                 </div>
@@ -245,9 +296,57 @@
         <div class="container wow fadeInUp">
             <h3>NHỮNG CẶP UYÊN ƯƠNG TUYỆT VỜI CỦA CHÚNG TÔI</h3>
             <div class="row">
-                <div class="col-sm-4"><iframe width="100%" height="320" src="https://www.youtube.com/embed/It27gyI19QE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-                <div class="col-sm-4"><iframe width="100%" height="320" src="https://www.youtube.com/embed/n-8t8R0fD_Y?list=PLO_kSa7mkOmQPLCMhy_-ifGv13ndO5iQA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-                <div class="col-sm-4"><iframe width="100%" height="320" src="https://www.youtube.com/embed/YI9b5xR22RE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                <div class="col-sm-4">
+                    <div id="Video4"></div>
+                    <script type='text/javascript'>
+                        jwplayer('Video4').setup({
+                            autostart: false,
+                            file: 'https://youtu.be/It27gyI19QE',
+                            image: "img/cap_doi_1.png",
+                            width: '100%',
+                            height: '300px',
+                            repeat:true,
+                            controls: true,
+                            skin: 'seven',
+                            mute: false,
+                            primary: 'html5'
+                        });
+                    </script>
+                </div>
+                <div class="col-sm-4">
+                        <div id="Video5"></div>
+                        <script type='text/javascript'>
+                            jwplayer('Video5').setup({
+                                autostart: false,
+                                file: 'https://youtu.be/n-8t8R0fD_Y',
+                                image: "img/cap_doi_2.png",
+                                width: '100%',
+                                height: '300px',
+                                repeat:true,
+                                controls: true,
+                                skin: 'seven',
+                                mute: false,
+                                primary: 'html5'
+                            });
+                        </script>
+                </div>
+                <div class="col-sm-4">
+                        <div id="Video6"></div>
+                        <script type='text/javascript'>
+                            jwplayer('Video6').setup({
+                                autostart: false,
+                                file: 'https://youtu.be/YI9b5xR22RE',
+                                image: "img/cap_doi_3.png",
+                                width: '100%',
+                                height: '300px',
+                                repeat:true,
+                                controls: true,
+                                skin: 'seven',
+                                mute: false,
+                                primary: 'html5'
+                            });
+                        </script>
+                </div>
             </div>
         </div>
     </div>
