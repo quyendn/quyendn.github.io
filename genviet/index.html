@@ -39,11 +39,11 @@
                     <nav class="collapse navbar-collapse" role="navigation">
                         <ul class="nav navbar-nav fadeInLeft animated">
                             <li class=""><a data-scroll="" data-options="easing: easeInQuad" href="#section2" class="navbar1">Sản phẩm</a></li>
-                            <li class=""><a data-scroll="" data-options="easing: easeInQuad" href="#section1" class="navbar1">Voucher 350k</a></li>
-                            <li class=""><a data-scroll="" data-options="easing: easeInQuad" href="#section1" class="navbar1">Khuyến mại 40%</a></li>
+                            <li class=""><a data-scroll="" data-options="easing: easeInQuad" href="#section1" class="navbar1" rel="0">Voucher 350k</a></li>
+                            <li class=""><a data-scroll="" data-options="easing: easeInQuad" href="#section1" class="navbar1" rel="1">Khuyến mại 40%</a></li>
                         </ul>
                         <ul class="nav navbar-nav navbar-right wow fadeInRight animated">
-                            <li class=""><a data-scroll="" data-options="easing: easeInQuad" href="#section1" class="navbar1">Checkin nhận quà khủng</a></li>
+                            <li class=""><a data-scroll="" data-options="easing: easeInQuad" href="#section1" class="navbar1" rel="2">Checkin nhận quà khủng</a></li>
                             <li class=""><a data-scroll="" data-options="easing: easeInQuad" href="#section3" class="navbar1">Cửa hàng</a></li>
                             <li class=""><a data-scroll="" data-options="easing: easeInQuad" href="#footer" class="navbar1">Liên hệ</a></li>
                         </ul>
@@ -60,18 +60,19 @@
                     <li data-slide-to="2" data-target="#banner-slide" class=""></li>
                 </ol>
                 <div role="listbox" class="carousel-inner">
-                    <div class="item active">
-                        <img src="img/sl_1.jpg" class="hidden-xs">
-                        <img src="img/sl_1_m.jpg" class="visible-xs">
-                    </div>
-                    <div class="item">
-                        <img src="img/sl_2.jpg" class="hidden-xs">
-                        <img src="img/sl_2_m.jpg" class="visible-xs">
-                    </div>
-                    <div class="item">
+                    <div class="item active navbar1" rel="0" style="cursor:pointer;">
                         <img src="img/sl_3.jpg" class="hidden-xs">
                         <img src="img/sl_3_m.jpg" class="visible-xs">
                     </div>
+                    <div class="item navbar1" rel="1" style="cursor:pointer;">
+                        <img src="img/sl_1.jpg" class="hidden-xs">
+                        <img src="img/sl_1_m.jpg" class="visible-xs">
+                    </div>
+                    <div class="item navbar1" rel="2" style="cursor:pointer;">
+                        <img src="img/sl_2.jpg" class="hidden-xs">
+                        <img src="img/sl_2_m.jpg" class="visible-xs">
+                    </div>
+                    
                 </div>
                 <a data-slide="prev" role="button" href="#banner-slide" class="left carousel-control "></a>
                 <a data-slide="next" role="button" href="#banner-slide" class="right carousel-control "></a>
@@ -81,9 +82,9 @@
         <div class="section wow fadeInUp" id="section1">
             <div class="container">
                 <ul class="nav nav-tabs">
-                    <li class="active"><a data-toggle="tab" href="#st1-tab1"><span class="inner"><span class="small">Đăng ký nhận e-Voucher</span><br /><strong>350K</strong></span></a></li>
-                    <li><a data-toggle="tab" href="#st1-tab2"><span class="inner">KHUYẾN MẠI GIẢM GIÁ<br /><strong class="yell">40%</strong> Sản phẩm hè</span></a></li>
-                    <li ><a data-toggle="tab" href="#st1-tab3"><span class="inner">CƠ HỘI DU LỊCH<br /><strong class="yell">MIỄN PHÍ</strong></span></a></li>
+                    <li class="active"><a data-toggle="tab" href="#st1-tab1" class="tab-1"><span class="inner"><span class="small">Đăng ký nhận e-Voucher</span><br /><strong>350K</strong></span></a></li>
+                    <li><a data-toggle="tab" href="#st1-tab2" class="tab-2"><span class="inner">KHUYẾN MẠI GIẢM GIÁ<br /><strong class="yell">40%</strong> Sản phẩm hè</span></a></li>
+                    <li ><a data-toggle="tab" href="#st1-tab3" class="tab-3"><span class="inner">CƠ HỘI DU LỊCH<br /><strong class="yell">MIỄN PHÍ</strong></span></a></li>
                 </ul>
                 <div class="tab-content">
                     <div id="st1-tab1" class="tab-pane fade in active ">
@@ -152,7 +153,7 @@
                         <p class="text-center">(*) Địa điểm áp dụng: Trên toàn hệ thống GENVIET & kênh online</p>
                         <p class="text-center">Mỗi E-voucher chỉ được sử dụng trên một hóa đơn & không áp dụng cho dòng hàng Gen+</p>
                     </div>
-                    <div id="st1-tab2" class="tab-pane fade">
+                    <div id="st1-tab2" class="tab-pane fade in">
                         <div class="text-center st-hd"><h3 class="text-uppercase">CƠ HỘI NHẬN VOUCHER TỔNG GIÁ TRỊ LÊN TỚI <span class="red">350,000đ</span></h3></div>
                         <div class="row wow fadeInUp">
                             <div class="col-sm-4">
@@ -169,11 +170,11 @@
                                     <li>Thời gian sử dụng E-voucher: sau ngày 02/05/2019</li>
                                     <li>Mặt hàng áp dụng: Tất cả sản phẩm nhãn hàng GENVIET JEANS & GENKIDS; không áp dụng đồng thời với CTKM</li>
                                 </ul>
-                                <button class="btn btnSubmit">MUA HÀNG NGAY</button>
+                                <a class="btn btnSubmit" data-scroll="" data-options="easing: easeInQuad" href="#section2" class="navbar1">MUA HÀNG NGAY</a>
                             </div>
                         </div>
                     </div>
-                    <div id="st1-tab3" class="tab-pane fade ">
+                    <div id="st1-tab3" class="tab-pane fade in">
                         <div class="text-center st-hd">
                             <h3 class="text-uppercase"><span class="red">Check in liền tay</span> - nhận ngay quà khủng<br />Tổng giá trị giải thưởng lên tới <span class="red">100,000,000đ</span></h3>
                             <p>Thời gian dự thi: <strong>24/04 - 05/05/2019</strong></p>
@@ -202,7 +203,7 @@
                             </div>
                         </div>
                         <p class="text-center">Giải đồng hành: 5.000 E-voucher mua hàng trị giá 50,000đ cho tất cả khách tham dự</p>
-                        <div class="text-center"><button class="btn btnSubmit">THAM GIA NGAY</button></div>
+                        <div class="text-center"><a class="btn btnSubmit" href="https://www.facebook.com/genvietjeans/posts/2321594417880302">THAM GIA NGAY</a></div>
 
                     </div>
                 </div>
@@ -712,7 +713,7 @@
 
                             </div>
                         </div>
-                        <div id="st3-tab2" class="tab-pane fade">
+                        <div id="st3-tab2" class="tab-pane fade in ">
                             <div class="panel-group">
                                 <div class="panel panel-default">
                                     <div class="panel-heading">
@@ -1163,7 +1164,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div id="st3-tab3" class="tab-pane fade">
+                        <div id="st3-tab3" class="tab-pane fade in ">
                             <div class="panel-group">
                                 <div class="panel panel-default">
                                     <div class="panel-heading">
@@ -1310,16 +1311,20 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-6">
-                            <form class="form-horizontal">
+                            <form class="form-horizontal" id="frmSaleOff"  autocomplete="off">
                                 <div class="form-group">
                                     <label class="col-sm-7 control-label" style="font-weight:normal">Đăng ký nhận tin khuyến mãi miễn phí:</label>
-                                    <div class="col-sm-5 input-group">
-                                        <input type="text" class="form-control" placeholder="Nhập Email của bạn...">
-                                        <div class="input-group-btn">
-                                            <button class="btn btn-default" type="submit">GỬI</button>
+                                    <div id="formContentContactSaleOff">
+                                        <div class="col-sm-5 input-group">
+                                            <input type="text" class="form-control" name="emailsaleoff" id ="txtMailSaleOff" placeholder="Nhập Email của bạn...">
+                                            <div class="input-group-btn">
+                                                <button class="btn btn-default">GỬI</button>
+                                            </div>
                                         </div>
                                     </div>
+                                    
                                 </div>
+                                <div id="content-saleoff"></div>
                             </form>
                         </div>
                         <div class="col-sm-6 text-right">
@@ -1336,15 +1341,17 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6 col-sm-12">
-                            <div class="st-hd"><h3>CÔNG TY CỔ PHẦN THỜI TRANG GENVIET</h3><div class="line"></div></div>
-                            <address>
-                                <p>Số ĐKKD: 0700629763, ngày cấp 31/08/2018
-                                <p>Nơi cấp: Sở kế hoạch và đầu tư Hà Nam
-                                <p>Trụ sở: Cụm công nghiệp Cầu Giát, X.Châu Giang, H.Duy Tiên, Tỉnh Hà Nam
-                                <p>Văn phòng: 56B Bà Triệu, P.Hàng Bài, Q.Hoàn Kiếm, Hà Nội
-                                <p>Tel: 024.6261.3397     Hotline: 0909.398.188
-                                <p>Email: cskh@genviet.com
-                            </address>
+                            <div style="padding-left:10px;">
+                                <div class="st-hd"><h3>CÔNG TY CỔ PHẦN THỜI TRANG GENVIET</h3><div class="line"></div></div>
+                                <address>
+                                    <p>Số ĐKKD: 0700629763, ngày cấp 31/08/2018
+                                    <p>Nơi cấp: Sở kế hoạch và đầu tư Hà Nam
+                                    <p>Trụ sở: Cụm công nghiệp Cầu Giát, X.Châu Giang, H.Duy Tiên, Tỉnh Hà Nam
+                                    <p>Văn phòng: 56B Bà Triệu, P.Hàng Bài, Q.Hoàn Kiếm, Hà Nội
+                                    <p>Tel: 024.6261.3397     Hotline: 0909.398.188
+                                    <p>Email: cskh@genviet.com
+                                </address>
+                            </div>
                         </div>
                         <div class="col-md-3 col-sm-6">
                             <div class="st-hd"><h3>QUYỀN LỢI KHÁCH HÀNG</h3><div class="line"></div></div>
@@ -1441,6 +1448,40 @@
 
 			$(".navbar-toggle").removeClass("close");
 		});
+        $(".navbar1").on( "click", function() {
+            var strValue = $(this).attr("rel");
+            SelectTab(strValue);
+            ShowInitialTabContent(); 
+            
+        });
+        function SelectTab(tabindex)
+        {
+            $('.nav-tabs li ').removeClass('active');
+            $('.nav-tabs li').eq(tabindex).addClass('active');
+           
+            
+        }
+        function FindActiveDiv()
+        {  
+            var DivName = $('.nav-tabs .active a').attr('href');  
+            return DivName;
+        }
+        function RemoveFocusNonActive()
+        {
+            $('#st1-tab1').removeClass('active');
+            $('#st1-tab2').removeClass('active');
+            $('#st1-tab3').removeClass('active');
+            //to >  remove  :hover :focus;
+        }
+        function ShowInitialTabContent()
+        {
+            RemoveFocusNonActive();
+            var DivName = FindActiveDiv();
+            if (DivName)
+            {
+                $(DivName).addClass('active'); 
+            } 
+        }
         </script>
 </body>
 

@@ -70,7 +70,7 @@ $(document).ready(function() {
             var email = $('#txtMail').val();
             var date = $('#txtBirthday').val();
             var emailto = "quyendn84@gmail.com";
-            var dataJSON = { "name": name, "email": email, "phone": phone,"date":date, "emailto": emailto }
+            var dataJSON = { "name": name, "email": email, "phone": phone,"date":date,"typeId": 2, "emailto": emailto }
             showLoadingContactImage('content-mobile','formContentContactMobile');
             $.ajax({
                 url: "https://alpha.f5academy.net/api/Genvietservice",
@@ -81,7 +81,7 @@ $(document).ready(function() {
                 dataType: 'jsonp',
                 success: function (states) {
                     $('#frmMobile').bootstrapValidator('resetForm', true);
-                    hideLoadingContactImage('formContentContactMobile', 'content-mobile');
+                    hideLoadingContactImage('content-mobile', 'formContentContactMobile');
                 },
                 error: function (ex) {
                     toastr.error('Đã có lỗi trong quá trình đăng ký, mời bạn thử lại.', { timeOut: 5000 })
@@ -91,9 +91,62 @@ $(document).ready(function() {
                     $('#txtName').val('');
                     $("#txtPhone").val('');
                     $('#txtMail').val('');
-                    $('#txtMatxtBirthdayil').val('');
+                    $('#txtBirthday').val('');
                     $('#frmMobile').bootstrapValidator('resetForm', true);
-                    $("#thanks").show();
+                    hideLoadingContactImage('content-mobile', 'formContentContactMobile');
+                    toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', { timeOut: 5000 })
+                    location.href = "https://quyendn.github.io/genviet/dang-ky-thanh-cong.html";
+                }
+            });
+        }
+    }).on('success.form.fv', function (e) {
+
+    });
+    $('#frmSaleOff').bootstrapValidator({
+        message: 'This value is not valid',
+        excluded: [':disabled'],
+        feedbackIcons: faIcon,
+        fields: {
+            emailsaleoff: {
+                validators: {
+                    notEmpty: {
+                        message: 'Địa chỉ email không được để trống.'
+                    },
+                    emailAddress: {
+                        message: 'Không đúng định dạng email'
+                    }
+                }
+            }
+        },
+        onSuccess: function (e) {
+
+            var email = $('#txtMailSaleOff').val();
+            var emailto = "quyendn84@gmail.com";
+            var dataJSON = { "name": "", "email": email, "phone": "","date":"","typeId": 1, "emailto": emailto }
+            showLoadingContactImage('content-saleoff','formContentContactSaleOff');
+            $.ajax({
+                url: "https://alpha.f5academy.net/api/Genvietservice",
+                type: "Post",
+                async: false,
+                data: dataJSON,
+                contentType: 'application/json; charset=utf-8',
+                dataType: 'jsonp',
+                success: function (states) {
+                    $('#frmSaleOff').bootstrapValidator('resetForm', true);
+                    hideLoadingContactImage('content-saleoff', 'formContentContactSaleOff');
+                },
+                error: function (ex) {
+                    toastr.error('Đã có lỗi trong quá trình đăng ký, mời bạn thử lại.', { timeOut: 5000 })
+                    hideLoadingContactImage('content-saleoff','formContentContactSaleOff');
+                },
+                complete: function (jqXHR, textStatus) {
+                    $('#txtName').val('');
+                    $("#txtPhone").val('');
+                    $('#txtMail').val('');
+                    $('#txtBirthday').val('');
+                    $('#frmSaleOff').bootstrapValidator('resetForm', true);
+                    hideLoadingContactImage('content-saleoff', 'formContentContactSaleOff');
+                    toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', { timeOut: 5000 })
                 }
             });
         }
