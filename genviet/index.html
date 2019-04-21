@@ -172,7 +172,7 @@
                                     <li> Mặt hàng áp dụng: Tất cả sản phẩm nhãn hàng GENVIET JEANS & GENKIDS; không áp dụng đồng thời với CTKM</li>
                                     
                                 </ul>
-                                <a class="btn btnSubmit" data-scroll="" data-options="easing: easeInQuad" href="#section2" class="navbar1">MUA HÀNG NGAY</a>
+                                <a class="btn btnSubmit navbar1" data-scroll="" data-options="easing: easeInQuad" href="#section2">MUA HÀNG NGAY</a>
                             </div>
                         </div>
                     </div>
@@ -181,23 +181,24 @@
                             <h3 class="text-uppercase"><span class="red">Check in liền tay</span> - nhận ngay quà khủng<br />Tổng giá trị giải thưởng lên tới <span class="red">100,000,000đ</span></h3>
                             <p>Thời gian dự thi: <strong>24/04 - 05/05/2019</strong></p>
                         </div>
-                        <div class="row">
-                            <div class="col-xs-4 giai1 wow fadeInLeft">
+                        
+                        <div class="owl-carousel">
+                            <div class="item wow fadeInLeft">
                                 <div><img src="img/p1.jpg"></div>
                                 <div class="text">
                                     <h2 class="">Giải nhất</h2>
                                     <p>1 Voucher du lịch Phú Quốc cho 2 người trị giá <strong class="red">15,000,000đ</strong></p>
                                 </div>
                             </div>
-                            <div class="col-xs-4 giai2 wow fadeInUp">
-                                <div><img src="img/p2.jpg"></div>
+                            <div class="item wow fadeInLeft">
+                            	<div><img src="img/p2.jpg"></div>
                                 <div class="text">
                                     <h2>Giải nhì</h2>
                                     <p>1 Voucher du lịch Đà Nẵng cho 2 người trị giá <strong class="red">10,000,000đ</strong></p>
                                 </div>
                             </div>
-                            <div class="col-xs-4 giai3 wow fadeInRight">
-                                <div><img src="img/p3.jpg"></div>
+                            <div class="item wow fadeInLeft">
+                            	<div><img src="img/p3.jpg"></div>
                                 <div class="text">
                                     <h2>Giải ba</h2>
                                     <p>1 Voucher du lịch Quảng Ninh cho 2 người trị giá <strong class="red">5,000,000đ</strong></p>
@@ -1339,7 +1340,7 @@
                     </div>
                 </div>
             </div>
-            <div id="ftText" class="wow fadeInUp"
+            <div id="ftText" class="wow fadeInUp">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6 col-sm-12">
@@ -1484,6 +1485,29 @@
                 $(DivName).addClass('active'); 
             } 
         }
+        
+        $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: true
+                    },
+                    768: {
+                        items: 2,
+                        nav: true
+                    },
+                    1000: {
+                        items: 3,
+                        nav: true,
+                        loop: true,
+                        margin: 10,
+                    }
+                }
+            })
+        
         </script>
 </body>
 

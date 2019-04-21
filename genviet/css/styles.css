@@ -588,6 +588,10 @@ img{
 	
 	}
 @media (max-width:768px){
+	#formContact .btn, .btn.btnSubmit, .btn{
+		padding:10px;
+		font-size:14px;
+		}
 	#header, #header .affix{
 		margin:0;
 		top:0;
@@ -605,21 +609,32 @@ img{
 		}
 	.navbar-nav > li > a{
 		color:#fff;
-		padding:15px;
+		padding:10px 15px;
 		font-size:16px;
 		line-height:normal;
+		background:none;
+		}
+	#section1 .nav-tabs{
+		margin-bottom:-20px;
 		}
 	#section1 .tab-pane{
 		padding:60px 15px;
 		}
 	#section1 .nav.nav-tabs > li > a{
-		font-size:16px;
+		font-size:10px;
+		padding:0px;
 		}
 	#section1 .nav.nav-tabs > li > a .inner{
-		padding:10px;
-		min-height:60px;}
+		padding:5px 1px;
+		min-height:45px;}
 	#section1 .nav.nav-tabs > li > a strong{
-		font-size:24px;
+		font-size:14px;
+		}
+	#formContact{
+		padding:5px;
+		}
+	#section1 #voucher .inner{
+		min-height:auto;
 		}
 		
 	#section2 img{
@@ -641,7 +656,7 @@ img{
 		margin-bottom:15px;
 		}
 	#section3 .nav-tabs > li > a{
-		padding:10px;
+		padding:10px 2px;
 		}
 		
 	#section3 .panel-group{
@@ -649,8 +664,16 @@ img{
 		}
 	#formContact{
 		margin-bottom:30px;
-		
 		}
+	#section2 .inner .text{
+		font-size:14px;
+		padding:15px 5px;
+		}
+	.section .st-hd h3, #section1 h3{
+		font-size:18px;
+		}
+		
+	
 	#footer .copy, #footer .copy .social{
 		text-align:center !important;}
 		
