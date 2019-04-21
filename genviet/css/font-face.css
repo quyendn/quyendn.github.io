@@ -1,0 +1,25 @@
+
+@font-face {
+  font-family: 'VLAmple';
+  src: url('../fonts/VLAmple.eot');
+  src: url('../fonts/VLAmple.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/VLAmple.svg#VLAmple') format('svg'),
+       url('../fonts/VLAmple.ttf') format('truetype'),
+       url('../fonts/VLAmple.woff') format('woff'),
+       url('../fonts/VLAmple.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'VLAmple-Bold';
+  src: url('../fonts/VLAmple-Bold.eot');
+  src: url('../fonts/VLAmple-Bold.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/VLAmple-Bold.svg#VLAmple-Bold') format('svg'),
+       url('../fonts/VLAmple-Bold.ttf') format('truetype'),
+       url('../fonts/VLAmple-Bold.woff') format('woff'),
+       url('../fonts/VLAmple-Bold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
