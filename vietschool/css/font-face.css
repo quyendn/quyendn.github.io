@@ -1,0 +1,22 @@
+@font-face {
+	font-family: 'BryantLG_B';
+	src: url('../fonts/UTM BryantLG_B.eot');
+	src: url('../fonts/UTM BryantLG_B.woff') format('woff'),
+		url('../fonts/UTM BryantLG_B.ttf') format('truetype'),
+		url('../fonts/UTM BryantLG_B.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+/* font converted using font-converter.net. thank you! */
+@font-face {
+  font-family: "iCielCadena";
+  src: url("../fonts/icielCadena.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/icielCadena.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/icielCadena.otf") format("opentype"), /* Open Type Font */
+    url("../fonts/icielCadena.svg") format("svg"), /* Legacy iOS */
+    url("../fonts/icielCadena.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("../fonts/icielCadena.woff") format("woff"), /* Modern Browsers */
+    url("../fonts/icielCadena.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
