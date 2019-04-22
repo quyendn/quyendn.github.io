@@ -512,11 +512,13 @@ a, .btn, button{
 	color:#fff;
 	}
 /**/
-#hotline{
+#share, #hotline{
 	position:fixed;
 	bottom:60px;
-	left:5px;
 	z-index:999;
+	}
+#hotline{
+	left:5px;
 	}
 #hotline a{
 	color:#f6ea14;
@@ -532,7 +534,18 @@ a, .btn, button{
 	-webkit-box-shadow:0 0 10px rgba(0,0,0,0.3);
 	box-shadow:0 0 10px rgba(0,0,0,0.3);
 	}
-
+#share{
+	right:5px;
+	}
+.carousel-control{
+	width:40px;
+	}
+.carousel-control.left{
+	background:url(../img/lefft-arrow.png) no-repeat 50% 50%;
+	}
+.carousel-control.right{
+	background:url(../img/right-arrow.png) no-repeat 50% 50%;
+	}
 /**/
 #thanks{
 	background:#f6e6cb;
