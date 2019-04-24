@@ -109,7 +109,7 @@ button {
 #header {
     border: none;
     min-height: 46px;
-    margin-top: 21px;
+    margin-top: 0px;
     background: url(../img/bg_hd.png) repeat-x 0 0;
     z-index: 99;
     position: relative;
@@ -125,7 +125,7 @@ button {
 #header .affix {
     left: 0;
     right: 0;
-    top: 21px;
+    top: 0px;
     min-height: 46px;
     z-index: 9999;
     background: url(../img/bg_hd.png) repeat-x 0 0;
@@ -632,6 +632,7 @@ button {
 #share,
 #hotline {
     position: fixed;
+    bottom: 60px;
     z-index: 999;
 }
 
