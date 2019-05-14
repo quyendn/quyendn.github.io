@@ -5,7 +5,7 @@
 //
 // - ThemeOn.net -
 
-$(document).ready(function() {
+$(document).ready(function () {
 
     // FORM VALIDATION
     // =================================================================
@@ -15,17 +15,17 @@ $(document).ready(function() {
     // FORM VALIDATION FEEDBACK ICONS
     // =================================================================
     var faIcon = {
-            valid: 'fa fa-check-circle fa-lg text-success',
-            invalid: 'fa fa-times-circle fa-lg',
-            validating: 'fa fa-refresh'
-        }
-        // FORM VALIDATION ON ACCORDION
-        // =================================================================
-        // FORM VALIDATION CUSTOM ERROR CONTAINER
-        // =================================================================
-        // Indicate where the error messages are shown.
-        // Tooltip, Popover, Custom Container.
-        // =================================================================
+        valid: 'fa fa-check-circle fa-lg text-success',
+        invalid: 'fa fa-times-circle fa-lg',
+        validating: 'fa fa-refresh'
+    }
+    // FORM VALIDATION ON ACCORDION
+    // =================================================================
+    // FORM VALIDATION CUSTOM ERROR CONTAINER
+    // =================================================================
+    // Indicate where the error messages are shown.
+    // Tooltip, Popover, Custom Container.
+    // =================================================================
 
     $('#frmMobile').bootstrapValidator({
         message: 'This value is not valid',
@@ -62,7 +62,7 @@ $(document).ready(function() {
                 }
             }
         },
-        onSuccess: function(e) {
+        onSuccess: function (e) {
 
             var name = $('#txtName').val();
             var phone = $('#txtPhone').val();
@@ -86,27 +86,27 @@ $(document).ready(function() {
                 data: dataJSON,
                 contentType: 'application/json; charset=utf-8',
                 dataType: 'jsonp',
-                success: function(states) {
-                    $('#frmMobile').bootstrapcontent - mobileValidator('resetForm', true);
+                success: function (states) {
+                    $('#frmMobile').bootstrapValidator('resetForm', true);
                     hideLoadingContactImage('content-mobile', 'formContentContactMobile');
                 },
-                error: function(ex) {
+                error: function (ex) {
                     toastr.error('Đã có lỗi trong quá trình đăng ký, mời bạn thử lại.', { timeOut: 5000 })
                     hideLoadingContactImage('content-mobile', 'formContentContactMobile');
                 },
-                complete: function(jqXHR, textStatus) {
+                complete: function (jqXHR, textStatus) {
                     $('#txtName').val('');
                     $("#txtPhone").val('');
                     $('#txtEmail').val('');
                     $('#txtDescription').val('');
                     $('#frmMobile').bootstrapValidator('resetForm', true);
-                    toastr.success('Cảm ơn bạn đã đăng ký.</br>Chúng tôi sẽ liên hệ tư vấn sớm nhất!', {
+                    toastr.success('THANK YOU !</br> Nhân viên tư vấn sẽ liên hệ với bạn ngay', {
                         timeOut: 5000
                     })
                 }
             });
         }
-    }).on('success.form.fv', function(e) {
+    }).on('success.form.fv', function (e) {
 
     });
     $('#frmMobileRegister').bootstrapValidator({
@@ -144,7 +144,7 @@ $(document).ready(function() {
                 }
             }
         },
-        onSuccess: function(e) {
+        onSuccess: function (e) {
 
             var name = $('#txtNameReg').val();
             var phone = $('#txtPhoneReg').val();
@@ -167,30 +167,30 @@ $(document).ready(function() {
                 data: dataJSON,
                 contentType: 'application/json; charset=utf-8',
                 dataType: 'jsonp',
-                success: function(states) {
+                success: function (states) {
                     $('#frmMobileRegister').bootstrapValidator('resetForm', true);
                     hideLoadingContactImage('content-mobile-register', 'formContentContactMobileRegister');
                 },
-                error: function(ex) {
+                error: function (ex) {
                     toastr.error('Đã có lỗi trong quá trình đăng ký, mời bạn thử lại.', {
                         timeOut: 5000
                     })
                     hideLoadingContactImage('content-mobile-register', 'formContentContactMobileRegister');
                 },
-                complete: function(jqXHR, textStatus) {
+                complete: function (jqXHR, textStatus) {
                     $('#txtNameReg').val('');
                     $("#txtPhoneReg").val('');
                     $('#txtEmailReg').val('');
                     $('#txtDescriptionReg').val('');
                     $('#frmMobileRegister').bootstrapValidator('resetForm', true);
                     $('#dangky').modal('hide');
-                    toastr.success('Cảm ơn bạn đã đăng ký.</br>Chúng tôi sẽ liên hệ tư vấn sớm nhất!', {
+                    toastr.success('THANK YOU !</br> Nhân viên tư vấn sẽ liên hệ với bạn ngay', {
                         timeOut: 5000
                     })
                 }
             });
         }
-    }).on('success.form.fv', function(e) {
+    }).on('success.form.fv', function (e) {
 
     });
 
