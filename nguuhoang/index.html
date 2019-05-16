@@ -8,9 +8,7 @@
     <title>Ngưu Hoàng Thanh Tâm Liquid </title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
     <script type="text/javascript" src="js/wow/wow.min.js"></script>
-    <script src="js/jquery.nanoscroller.min.js"></script>
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="css/styles.css" rel="stylesheet" type="text/css" />
     <link href="css/toastr.min.css" rel="stylesheet" type="text/css" />
@@ -18,9 +16,9 @@
     <link href="css/font-face.css" rel="stylesheet" type="text/css" media="all" />
     <link rel="stylesheet" type="text/css" href="css/animate.css" />
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
-    <link href="js/bootstrap-datepicker.css" rel="stylesheet" type="text/css" />
-    <script type="text/javascript" src="js/bootstrap-datepicker/bootstrap-datepicker.js"></script>
-    <script type="text/javascript" src="js/bootstrap-datepicker/locales/bootstrap-datepicker.vi.min.js"></script>
+    <script type="text/javascript" src="js/jquery.plugin.min.js"></script>
+    <script type="text/javascript" src="js/jquery.countdown.js"></script>
+
 </head>
 
 <body>
@@ -30,33 +28,34 @@
             <div class="affix-top" data-spy="affix" data-offset-top="79" id="">
                 <div class="container">
                     <a class="navbar-brand" href="/"><img src="img/logo.png"></a>
-                    
+
                 </div>
             </div>
         </div>
-        <div id="slide">
-        	<div class="inner">
-            	<div class="container">
-                	<h1>Ngưu Hoàng Thanh Tâm Liquid </h1>
+        <div id="slide" class="wow fadeInUp">
+            <div class="inner">
+                <div class="container">
+                    <h1>Ngưu Hoàng Thanh Tâm Liquid </h1>
                     <div class="row">
-                        
+
                         <div class="col-sm-7 col-sm-offset-1 wow fadeInRight col-sm-push-4">
-                        	<img src="img/p-st-1.png">
+                            <img src="img/p-st-1.png">
                         </div>
                         <div class="col-sm-4 wow fadeInLeft  col-sm-pull-7">
-                        	<div class="formRegister wow fadeInRight" style="visibility: visible; animation-name: fadeInRight;">
+                            <div class="formRegister wow fadeInRight" style="visibility: visible; animation-name: fadeInRight;">
                                 <div class="inner">
                                     <h3 class="text-center">Đăng ký NHẬN ƯU ĐÃI</h3>
                                     <hr/>
-            
-                                    <form id="frmRegDownload" autocomplete="off" novalidate class="bv-form"><button type="submit" class="bv-hidden-submit" style="display: none; width: 0px; height: 0px;"></button>
+
+                                    <form id="frmRegDownload" autocomplete="off" novalidate class="bv-form">
+
                                         <div id="frmContentReg">
                                             <div class="form-group has-feedback">
-                                                <input type="text" class="form-control" value="" placeholder="Họ và tên"></div>
+                                                <input type="text" class="form-control" name="name" value="" placeholder="Họ và tên"></div>
                                             <div class="form-group has-feedback">
-                                                <input type="text"  class="form-control" placeholder="Số điện thoại"></div>
+                                                <input type="text" class="form-control" name="phone" placeholder="Số điện thoại"></div>
                                             <div class="form-group has-feedback">
-                                                <input type="text"  class="form-control" placeholder="Email"></div>
+                                                <input type="text" class="form-control" name="email" placeholder="Email"></div>
                                             <div class="form-group text-center">
                                                 <button class="btn btn-default"><strong>Đăng ký</strong></button>
                                             </div>
@@ -67,18 +66,21 @@
                                     <p class="text-center"><strong>200 KHÁCH HÀNG ĐẦU TIÊN</strong></p>
                                 </div>
                                 <div class="datetime">
-                                	<table width="100%" border="0" cellspacing="0" cellpadding="0">
-                                      <tbody>
-                                        <tr>
-                                          <td><strong>CHỈ CÒN</strong></td>
-                                          <td width="60px"><span class="run">1</span></td>
-                                          <td width="60px"><span class="run">0</span></td>
-                                          <td width="60px"><span>ngày</span></td>
-                                          <td width="60px">&nbsp;</td>
-                                        </tr>
-                                      </tbody>
+                                    <div class="main-example">
+                                        <div class="countdown-container" data-timer="2020/09/05" id="main-example">
+                                        </div>
+                                    </div>
+                                    <table width="100%" cellspacing="0" cellpadding="0">
+                                        <tbody>
+                                            <tr class="timeOpen" id="timeOpen">
+                                                <td><strong>CHỈ CÒN</strong></td>
+                                                <td width="60px"><span class="run">0</span></td>
+                                                <td width="60px"><span class="run">0</span></td>
+                                                <td width="60px"><span>ngày</span></td>
+                                                <td width="60px">&nbsp;</td>
+                                            </tr>
+                                        </tbody>
                                     </table>
-                                    
                                 </div>
                             </div>
                         </div>
@@ -87,35 +89,35 @@
                 </div>
             </div>
         </div>
-        <div class="section" id="section1">
-        	<div class="bg-top"></div>
-        	<div class="container">
-            	<div class="inner">
+        <div class="section wow fadeInUp" id="section1">
+            <div class="bg-top"></div>
+            <div class="container">
+                <div class="inner">
                     <h3 class="text-center">Ưu đãi đặc biệt</h3>
                     <div class="row">
                         <div class="col-sm-6"><img src="img/uudai-1.png"></div>
                         <div class="col-sm-6"><img src="img/uudai-2.png"></div>
                     </div>
                     <div class="st1-bt">
-                    	<img src="img/ic_ship.png">Giao HÀNG<strong> MIỄN PHÍ</strong> TRÊN TOÀN QUỐC - Hotline: 0888 28 98 28
-   
+                        <img src="img/ic_ship.png">Giao HÀNG<strong> MIỄN PHÍ</strong> TRÊN TOÀN QUỐC - Hotline: 0888 28 98 28
+
                     </div>
                 </div>
             </div>
             <div class="bg-bottom"></div>
         </div>
-        <div class="section" id="section2">
-        	<div class="inner">
-            	<div class="container">
+        <div class="section wow fadeInUp" id="section2">
+            <div class="inner">
+                <div class="container">
                     <h3 class="text-center">Công dụng</h3>
                     <div class="row">
                         <div class="col-sm-6 col-sm-offset-6">
-                        	<p>Dự phòng tai biến mạch máu não</p>
+                            <p>Dự phòng tai biến mạch máu não</p>
                             <p>Giảm mỡ máu, xơ vữa động mạch</p>
                             <p>Điều hòa khí huyết, mạnh tim</p>
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
@@ -125,49 +127,49 @@
                 <div class="row">
                     <div class="col-md-3 col-sm-6">
                         <div class="inner">
-                        	<div><img src="img/dt1.png"></div>
+                            <div><img src="img/dt1.png"></div>
                             <p>Người cao huyết áp</p>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6">
                         <div class="inner">
-                        	<div><img src="img/dt2.png"></div>
+                            <div><img src="img/dt2.png"></div>
                             <p>Người rối loạn mỡ máu</p>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6">
                         <div class="inner">
-                        	<div><img src="img/dt3.png"></div>
+                            <div><img src="img/dt3.png"></div>
                             <p>Phụ nữ tiền mãn kinh</p>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6">
                         <div class="inner">
-                        	<div><img src="img/dt4.png"></div>
+                            <div><img src="img/dt4.png"></div>
                             <p>Phụ nữ tiền mãn kinh</p>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6">
                         <div class="inner">
-                        	<div><img src="img/dt5.png"></div>
+                            <div><img src="img/dt5.png"></div>
                             <p>Người bị tiểu đường</p>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6">
                         <div class="inner">
-                        	<div><img src="img/dt6.png"></div>
+                            <div><img src="img/dt6.png"></div>
                             <p>Người có vấn đề về tim mạch</p>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6">
                         <div class="inner">
-                        	<div><img src="img/dt7.png"></div>
+                            <div><img src="img/dt7.png"></div>
                             <p>Người hoạt động trí óc kéo dài</p>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6">
                         <div class="inner">
-                        	<div><img src="img/dt8.png"></div>
+                            <div><img src="img/dt8.png"></div>
                             <p>Làm trong môi trường stress</p>
                         </div>
                     </div>
@@ -180,7 +182,7 @@
                 <div class="row">
                     <div class="col-md-6 col-sm-6">
                         <ul>
-                        	<li>Dạng nước, dễ hấp thu, không gây nghẹn nguy hiểm đến tính mạng.</li>
+                            <li>Dạng nước, dễ hấp thu, không gây nghẹn nguy hiểm đến tính mạng.</li>
                             <li>Phân phối chính hãng bởi Công ty CP Dược phẩm Nam Hà một đơn vị uy tín với hơn 60 năm kinh nghiệm.</li>
                             <li>Có nhiều vị thuốc quý như Ngưu Hoàng, Linh Dương Giác, Xạ Hương.</li>
                             <li>Loại bỏ các vị thuốc như Chu Sa nên thích hợp để sử dụng dài ngày.</li>
@@ -195,194 +197,202 @@
                 <div class="row">
                     <div class="col-md-4 col-sm-6">
                         <div class="inner">
-                        	<div><img src="img/duphong-1.png"></div>
-                            <p><strong>Chị Lan</strong><p>
-                            <p><em>Mua cho mẹ bị huyết áp cao</em></p>
+                            <div><img src="img/duphong-1.png"></div>
+                            <p><strong>Chị Lan</strong>
+                                <p>
+                                    <p><em>Mua cho mẹ bị huyết áp cao</em></p>
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-6">
                         <div class="inner">
-                        	<div><img src="img/duphong-2.png"></div>
-                            <p><strong>Chú Vũ Đình Sơn - 62 tuổi</strong><p>
-                            <p><em>Tiểu đường tuýp 2, mỡ máu ...</em></p>
+                            <div><img src="img/duphong-2.png"></div>
+                            <p><strong>Chú Vũ Đình Sơn - 62 tuổi</strong>
+                                <p>
+                                    <p><em>Tiểu đường tuýp 2, mỡ máu ...</em></p>
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-6">
                         <div class="inner">
-                        	<div><img src="img/duphong-3.png"></div>
-                            <p><strong>Tiến sĩ Nguyễn Hồng Mạc</strong><p>
-                            <p><em>Stress, đau đầu, mất ngủ ...</em></p>
+                            <div><img src="img/duphong-3.png"></div>
+                            <p><strong>Tiến sĩ Nguyễn Hồng Mạc</strong>
+                                <p>
+                                    <p><em>Stress, đau đầu, mất ngủ ...</em></p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="section" id="section6">
-        	<h3>Được  các  chuyên  gia  khuyên  dùng</h3>
+            <h3>Được các chuyên gia khuyên dùng</h3>
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 col-sm-12 col-md-offset-2">
                         <div class="inner left">
-                        	<div><img src="img/chuyengia-1.png" class=""></div>
-                            <div class="text"><strong>Bác sĩ Trần Thế Thao - nguyên hiệu trường trường Cao đẳng Y tế Hà Đông:</strong> “việc phòng ngừa đi trước tất cả”. Ngưu Hoàng Thanh Tâm Liquid đang dần khẳng định chỗ đứng riêng của mình trên thị trường các sản phẩm có nguồn gốc YHCT. Sử dụng Ngưu Hoàng Thanh Tâm Liquid đem lại các kết quả khả quan, đặc biệt sản phẩm tuân theo đúng tinh thần nguyên lý “làm cho cơ thể khỏe mạnh để tránh mắc bệnh”.</div>
+                            <div><img src="img/chuyengia-1.png" class=""></div>
+                            <div class="text"><strong>Bác sĩ Trần Thế Thao - nguyên hiệu trường trường Cao đẳng Y tế Hà Đông:</strong> “việc phòng ngừa đi trước tất cả”. Ngưu Hoàng Thanh Tâm Liquid đang dần khẳng định chỗ đứng riêng của mình trên thị trường các sản phẩm
+                                có nguồn gốc YHCT. Sử dụng Ngưu Hoàng Thanh Tâm Liquid đem lại các kết quả khả quan, đặc biệt sản phẩm tuân theo đúng tinh thần nguyên lý “làm cho cơ thể khỏe mạnh để tránh mắc bệnh”.</div>
                         </div>
                     </div>
                     <div class="col-md-8 col-sm-12">
                         <div class="inner right">
-                        	<div><img src="img/chuyengia-2.png"></div>
-                            <div class="text"><strong>Tiến sĩ, Bác sĩ, Đại tá Vũ Thị Khánh Vân - Nguyên chủ nhiệm khoa A9, Viện Y học Cổ truyền Quân Đội:</strong> Đây là một trong những sản phẩm đầu tiên mang thương hiệu IKSU có điểm khác biệt là sử dụng Ngưu hoàng tự nhiên nhân tạo, thay Tê giác bằng Linh dương giác, dạng sử dụng là nước nêntiện dụng cho người sau tai biến có các triệu chứng cứng hàm, khó nuốt. Với bệnh nhân phục hồi di chứng sau tai biến:1 lọ/ ngày/2 - 4 tuầnvà dự phòng tai biến các đối tượng nguy cơ1lọ/lần/2lọ/tuần có hệu quả tốt.
-</div>
+                            <div><img src="img/chuyengia-2.png"></div>
+                            <div class="text"><strong>Tiến sĩ, Bác sĩ, Đại tá Vũ Thị Khánh Vân - Nguyên chủ nhiệm khoa A9, Viện Y học Cổ truyền Quân Đội:</strong> Đây là một trong những sản phẩm đầu tiên mang thương hiệu IKSU có điểm khác biệt là sử dụng Ngưu hoàng tự
+                                nhiên nhân tạo, thay Tê giác bằng Linh dương giác, dạng sử dụng là nước nêntiện dụng cho người sau tai biến có các triệu chứng cứng hàm, khó nuốt. Với bệnh nhân phục hồi di chứng sau tai biến:1 lọ/ ngày/2 - 4 tuầnvà dự
+                                phòng tai biến các đối tượng nguy cơ1lọ/lần/2lọ/tuần có hệu quả tốt.
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-8 col-sm-12 col-md-offset-2">
                         <div class="inner left">
-                        	<div><img src="img/chuyengia-3.png" class=""></div>
-                            <div class="text"><strong>Thạc sĩ, Bác sĩ, Đại tá Hoàng Khánh Toàn, Trưởng khoa Đông y, Bệnh viện Trung ương quân đội 108:</strong> Giá cả hợp lý, Ngưu Hoàng Thanh Tâm Liquid quả thực là một trong những lựa chọn chính xác và hữu hiệu cho việc dự phòng và hỗ trợ trị liệu đột quỵ não trên nhiều phương diện khác nhau!
-</div>
+                            <div><img src="img/chuyengia-3.png" class=""></div>
+                            <div class="text"><strong>Thạc sĩ, Bác sĩ, Đại tá Hoàng Khánh Toàn, Trưởng khoa Đông y, Bệnh viện Trung ương quân đội 108:</strong> Giá cả hợp lý, Ngưu Hoàng Thanh Tâm Liquid quả thực là một trong những lựa chọn chính xác và hữu hiệu cho việc
+                                dự phòng và hỗ trợ trị liệu đột quỵ não trên nhiều phương diện khác nhau!
+                            </div>
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
         <div class="section" id="section7">
             <div class="container">
-            	<h3 class="text-center">Cách dùng</h3>
-            	<p>• Dùng cho người lớn sau tai biến: 1 chai/ lần, 1-2 lần/ ngày, duy trì trong 3 tháng mỗi đợt.</p>
-                <p>• Dùng dự phòng Tai biến mạch máu não cho những người có nguy cơ cao (người cao huyết áp, mỡ máu, rối loạn tiền đình, tiểu đường, tim mạch, phụ nữ tiền mãn kinh, người lao động trí óc thường xuyên, hay căng thẳng, stress, ...): Dùng 1 chai/ lần, 2 - 3 lần/ tuần, duy trì trong 1 tháng mỗi đợt.</p>
+                <h3 class="text-center">Cách dùng</h3>
+                <p>• Dùng cho người lớn sau tai biến: 1 chai/ lần, 1-2 lần/ ngày, duy trì trong 3 tháng mỗi đợt.</p>
+                <p>• Dùng dự phòng Tai biến mạch máu não cho những người có nguy cơ cao (người cao huyết áp, mỡ máu, rối loạn tiền đình, tiểu đường, tim mạch, phụ nữ tiền mãn kinh, người lao động trí óc thường xuyên, hay căng thẳng, stress, ...): Dùng 1
+                    chai/ lần, 2 - 3 lần/ tuần, duy trì trong 1 tháng mỗi đợt.</p>
                 <div class="inner">
-                	<h3 class="text-center">Công thức</h3>
+                    <h3 class="text-center">Công thức</h3>
                     <table cellspacing="0" cellpadding="0">
-                      <tr>
-                        <td>Ngưu Hoàng</td>
-                        <td>Cattle Gallstone</td>
-                        <td>14 mg</td>
-                      </tr>
-                      <tr>
-                        <td>Linh dương giác</td>
-                        <td>Antelopis Cornu</td>
-                        <td>35 mg</td>
-                      </tr>
-                      <tr>
-                        <td>Xạ hương</td>
-                        <td>L-Muscone</td>
-                        <td>75 mcg</td>
-                      </tr>
-                      <tr>
-                        <td>Cam thảo</td>
-                        <td>Licorice</td>
-                        <td>202 mg</td>
-                      </tr>
-                      <tr>
-                        <td>Vỏ quế</td>
-                        <td>Cinnamon Bark</td>
-                        <td>70 mg</td>
-                      </tr>
-                      <tr>
-                        <td>Mẫu đơn</td>
-                        <td>Peony Root</td>
-                        <td>60 mg</td>
-                      </tr>
-                      <tr>
-                        <td>Hoàng cầm</td>
-                        <td>Scutellaria Root</td>
-                        <td>60 mg</td>
-                      </tr>
-                      <tr>
-                        <td>Phòng phong</td>
-                        <td>Saposhnikovia Root</td>
-                        <td>60 mg</td>
-                      </tr>
-                      <tr>
-                        <td>Bạch truật</td>
-                        <td>Atractylodes Rhizome white</td>
-                        <td>60 mg</td>
-                      </tr>
-                      <tr>
-                        <td>Cát cánh</td>
-                        <td>Plantycodon Root</td>
-                        <td>50 mg</td>
-                      </tr>
-                      <tr>
-                        <td>Phục linh</td>
-                        <td>Poria</td>
-                        <td>50 mg</td>
-                      </tr>
-                      <tr>
-                        <td>Xuyên khung</td>
-                        <td>Cnidium Rhizome</td>
-                        <td>50 mg</td>
-                      </tr>
-                      <tr>
-                        <td>Hoài sơn</td>
-                        <td>Dioscorea Rhizome</td>
-                        <td>282 mg</td>
-                      </tr>
-                      <tr>
-                        <td>Nhân sâm</td>
-                        <td>Ginseng</td>
-                        <td>97 mg</td>
-                      </tr>
-                      <tr>
-                        <td>Bồ hoàng</td>
-                        <td>Typhae Pollen</td>
-                        <td>100 mg</td>
-                      </tr>
-                      <tr>
-                        <td>Thần khúc</td>
-                        <td>Massa Medicata Fermentata</td>
-                        <td>100 mg</td>
-                      </tr>
-                      <tr>
-                        <td>Đại đậu hoàng quyền</td>
-                        <td>Glycine Semen Germinatum</td>
-                        <td>70 mg</td>
-                      </tr>
-                      <tr>
-                        <td>A giao</td>
-                        <td></td>
-                        <td></td>
-                      </tr>
-                      <tr>
-                        <td>Mạch môn</td>
-                        <td>Glue</td>
-                        <td>70 mg</td>
-                      </tr>
-                      <tr>
-                        <td>Bạch liễm</td>
-                        <td>Liriope tuber</td>
-                        <td>60 mg</td>
-                      </tr>
-                      <tr>
-                        <td>Đương quy</td>
-                        <td>Ampelosis Radix</td>
-                        <td>30 mg</td>
-                      </tr>
-                      <tr>
-                        <td>Sài hồ</td>
-                        <td>Angelica Gigas Root</td>
-                        <td>60 mg</td>
-                      </tr>
-                      <tr>
-                        <td>Hạnh nhân</td>
-                        <td>Bupleurum Root</td>
-                        <td>50 mg</td>
-                      </tr>
-                      <tr>
-                        <td>Long não</td>
-                        <td>Apricot Kernel</td>
-                        <td>50 mg</td>
-                      </tr>
-                      <tr>
-                        <td>Gừng</td>
-                        <td>Borneolum</td>
-                        <td>41 mg</td>
-                      </tr>
-                      <tr>
-                        <td>Mỗi chai 50 ml Ngưu Hoàng Thanh Tâm    chứa:</td>
-                        <td>Gingseng</td>
-                        <td>30 mg</td>
-                      </tr>
+                        <tr>
+                            <td>Ngưu Hoàng</td>
+                            <td>Cattle Gallstone</td>
+                            <td>14 mg</td>
+                        </tr>
+                        <tr>
+                            <td>Linh dương giác</td>
+                            <td>Antelopis Cornu</td>
+                            <td>35 mg</td>
+                        </tr>
+                        <tr>
+                            <td>Xạ hương</td>
+                            <td>L-Muscone</td>
+                            <td>75 mcg</td>
+                        </tr>
+                        <tr>
+                            <td>Cam thảo</td>
+                            <td>Licorice</td>
+                            <td>202 mg</td>
+                        </tr>
+                        <tr>
+                            <td>Vỏ quế</td>
+                            <td>Cinnamon Bark</td>
+                            <td>70 mg</td>
+                        </tr>
+                        <tr>
+                            <td>Mẫu đơn</td>
+                            <td>Peony Root</td>
+                            <td>60 mg</td>
+                        </tr>
+                        <tr>
+                            <td>Hoàng cầm</td>
+                            <td>Scutellaria Root</td>
+                            <td>60 mg</td>
+                        </tr>
+                        <tr>
+                            <td>Phòng phong</td>
+                            <td>Saposhnikovia Root</td>
+                            <td>60 mg</td>
+                        </tr>
+                        <tr>
+                            <td>Bạch truật</td>
+                            <td>Atractylodes Rhizome white</td>
+                            <td>60 mg</td>
+                        </tr>
+                        <tr>
+                            <td>Cát cánh</td>
+                            <td>Plantycodon Root</td>
+                            <td>50 mg</td>
+                        </tr>
+                        <tr>
+                            <td>Phục linh</td>
+                            <td>Poria</td>
+                            <td>50 mg</td>
+                        </tr>
+                        <tr>
+                            <td>Xuyên khung</td>
+                            <td>Cnidium Rhizome</td>
+                            <td>50 mg</td>
+                        </tr>
+                        <tr>
+                            <td>Hoài sơn</td>
+                            <td>Dioscorea Rhizome</td>
+                            <td>282 mg</td>
+                        </tr>
+                        <tr>
+                            <td>Nhân sâm</td>
+                            <td>Ginseng</td>
+                            <td>97 mg</td>
+                        </tr>
+                        <tr>
+                            <td>Bồ hoàng</td>
+                            <td>Typhae Pollen</td>
+                            <td>100 mg</td>
+                        </tr>
+                        <tr>
+                            <td>Thần khúc</td>
+                            <td>Massa Medicata Fermentata</td>
+                            <td>100 mg</td>
+                        </tr>
+                        <tr>
+                            <td>Đại đậu hoàng quyền</td>
+                            <td>Glycine Semen Germinatum</td>
+                            <td>70 mg</td>
+                        </tr>
+                        <tr>
+                            <td>A giao</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Mạch môn</td>
+                            <td>Glue</td>
+                            <td>70 mg</td>
+                        </tr>
+                        <tr>
+                            <td>Bạch liễm</td>
+                            <td>Liriope tuber</td>
+                            <td>60 mg</td>
+                        </tr>
+                        <tr>
+                            <td>Đương quy</td>
+                            <td>Ampelosis Radix</td>
+                            <td>30 mg</td>
+                        </tr>
+                        <tr>
+                            <td>Sài hồ</td>
+                            <td>Angelica Gigas Root</td>
+                            <td>60 mg</td>
+                        </tr>
+                        <tr>
+                            <td>Hạnh nhân</td>
+                            <td>Bupleurum Root</td>
+                            <td>50 mg</td>
+                        </tr>
+                        <tr>
+                            <td>Long não</td>
+                            <td>Apricot Kernel</td>
+                            <td>50 mg</td>
+                        </tr>
+                        <tr>
+                            <td>Gừng</td>
+                            <td>Borneolum</td>
+                            <td>41 mg</td>
+                        </tr>
+                        <tr>
+                            <td>Mỗi chai 50 ml Ngưu Hoàng Thanh Tâm chứa:</td>
+                            <td>Gingseng</td>
+                            <td>30 mg</td>
+                        </tr>
                     </table>
                     <div class="note">
                         <p><strong>Mỗi chai 50ml Ngưu Hoàng Thanh Tâm chứa:</strong></p>
@@ -394,28 +404,28 @@
             </div>
         </div>
         <div class="section" id="section8">
-            <div class="container">
-            	<div class="row">
-                	<div class="col-md-4 col-sm-6 col-md-offset-2">
-                    	<p><strong>CÁCH THỨC ĐẶT HÀNG</strong></p>
+            <div class="container wow fadeInUp">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 col-md-offset-2">
+                        <p><strong>CÁCH THỨC ĐẶT HÀNG</strong></p>
                         <p>Cách 1: Gọi hotline: 0888 28 98 28</p>
                         <p>Cách 2: Đăng kí mua hàng tại form <img src="img/ar-st8.png"></p>
                         <p>Cách 3: Mua trực tiếp tại những hiệu thuốc sau đây: <a href="">chi tiết</a></p>
                     </div>
                     <div class="col-md-4 col-sm-6">
-                    	<div class="formRegister wow fadeInRight" style="visibility: visible; animation-name: fadeInRight;">
+                        <div class="formRegister wow fadeInRight" style="visibility: visible; animation-name: fadeInRight;">
                             <div class="inner">
                                 <h3 class="text-center">Đăng ký NHẬN ƯU ĐÃI</h3>
                                 <hr/>
-        
+
                                 <form id="frmRegDownload" autocomplete="off" novalidate class="bv-form"><button type="submit" class="bv-hidden-submit" style="display: none; width: 0px; height: 0px;"></button>
                                     <div id="frmContentReg">
                                         <div class="form-group has-feedback">
                                             <input type="text" class="form-control" value="" placeholder="Họ và tên"></div>
                                         <div class="form-group has-feedback">
-                                            <input type="text"  class="form-control" placeholder="Số điện thoại"></div>
+                                            <input type="text" class="form-control" placeholder="Số điện thoại"></div>
                                         <div class="form-group has-feedback">
-                                            <input type="text"  class="form-control" placeholder="Email"></div>
+                                            <input type="text" class="form-control" placeholder="Email"></div>
                                         <div class="form-group text-center">
                                             <button class="btn btn-default"><strong>Đăng ký</strong></button>
                                         </div>
@@ -425,170 +435,90 @@
                                 <hr/>
                                 <p class="text-center"><strong>200 KHÁCH HÀNG ĐẦU TIÊN</strong></p>
                             </div>
-                            
+
                         </div>
                     </div>
                     <div class="col-md-12 col-sm-12 text-center">
-                    	<p class="name"><strong>CHI NHÁNH CÔNG TY CỔ PHẦN DƯỢC PHẨM NAM HÀ</strong></p>
+                        <p class="name"><strong>CHI NHÁNH CÔNG TY CỔ PHẦN DƯỢC PHẨM NAM HÀ</strong></p>
                         <p>Địa chỉ: 423 Vũ Tông Phan, P.Khương Trung, Q.Thanh Xuân, HN;</p>
                         <p>Email: nguuhoangthanhtamliquid@namhapharma.com; Hotline: 0888 28 98 28; Website: nguuhoangthanhtam.vn</p>
                     </div>
                     <div class="col-md-12 col-sm-12 text-center">
-                    	<table border="0" cellspacing="0" cellpadding="0">
-                          <tbody>
-                            <tr>
-                              <td><span>GIẤY CHỨNG NHẬN<br/>SẢN PHẨM</span></td>
-                              <td><img src="img/dathongbao.png"></td>
-                              <td><span>GIẤY CHỨNG NHẬN<br/>AN TOÀN THỰC PHẨM</span></td>
-                            </tr>
-                          </tbody>
+                        <table border="0" cellspacing="0" cellpadding="0">
+                            <tbody>
+                                <tr>
+                                    <td><span>GIẤY CHỨNG NHẬN<br/>SẢN PHẨM</span></td>
+                                    <td><img src="img/dathongbao.png"></td>
+                                    <td><span>GIẤY CHỨNG NHẬN<br/>AN TOÀN THỰC PHẨM</span></td>
+                                </tr>
+                            </tbody>
                         </table>
 
-                    	
-                        
+
+
                     </div>
                 </div>
-                
+
             </div>
         </div>
 
-        
-        
+
+
         <div id="fixBottom">
-        	<a href=""><img src="img/ic_phone.png"> TỔNG ĐÀI TƯ VẤN<br/>0888 28 98 28</a>
+            <a href=""><img src="img/ic_phone.png"> TỔNG ĐÀI TƯ VẤN<br/>0888 28 98 28</a>
             <a href=""><img src="img/ic_get.png"> ĐĂNG KÍ TƯ VẤN<br/><span class="small">(chúng tôi sẽ gọi lại ngay)</span></a>
             <a href=""><img src="img/ic_shop.png"> ĐĂNG KÍ<br/>LÀM ĐẠI LÝ</a>
         </div>
 
     </div>
-    <!---->
-    <div id="fb-root"></div>
-    <script>
-    (function(d, s, id) {
-          var js, fjs = d.getElementsByTagName(s)[0];
-          if (d.getElementById(id)) return;
-          js = d.createElement(s); js.id = id;
-          js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
-          fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));
-    </script>
-            <!-- Your customer chat code -->
-    <div class="fb-customerchat"
-         attribution=setup_tool
-         page_id="443239369049159"
-         logged_in_greeting="Genviet có thể giúp gì bạn không? Inbox #Genviet ngay!"
-         logged_out_greeting="Genviet có thể giúp gì bạn không? Inbox #Genviet ngay!">
-    </div>
-
     <script src="js/smooth-scroll.js"></script>
     <script type="text/javascript" src="js/bootstrapValidator.min.js"></script>
     <script type="text/javascript" src="js/form-validation.js"></script>
     <script type="text/javascript" src="js/toastr.js"></script>
-    <!-- Load Facebook SDK for JavaScript -->
-
     <script>
-       $(document).ready(function () {
-        $('#txtBirthday').datepicker({
-            format: "dd/mm/yyyy",
-            todayBtn: "linked",
-            autoclose: true,
-            todayHighlight: true,
-            language: 'vi'
-        }).on('changeDate', function (e) {
-        });
-    });
-    function AllowNumberOnly(evt) {
-        evt = (evt) ? evt : event;
-        var charCode = (evt.charCode) ? evt.charCode : ((evt.keyCode) ? evt.keyCode : ((evt.which) ? evt.which : 0));
-        if ((charCode > 31) && (charCode < 48 || charCode > 57) && charCode != 8 && charCode != 37 && charCode != 39 && charCode != 45 && charCode != 46) {
-            return false;
-        }
-        return true;
-    }
-    new WOW().init();
-    smoothScroll.init({
-        speed: 1000,
-        easing: 'easeInOutCubic',
-        offset: 90,
-        updateURL: false,
-        callbackBefore: function (toggle, navbar1) { },
-        callbackAfter: function (toggle, navbar1) { }
-    });
+        new WOW().init();
+        $(document).ready(function() {
 
+            var timeServer = '05/30/2019 00:00:00';
+            var serverTime = new Date('05/30/2019 00:00:00');
+            var newYear = new Date(timeServer);
+            $('#timeOpen').countdown({
+                until: newYear,
+                serverSync: serverTime,
+                compact: true,
+                layout: '<td><strong>CHỈ CÒN</strong></td>' +
+                    '<td width="60px"><span class="run">{d10}</span></td>' +
+                    '<td width="60px"><span class="run">{d1}</span></td>' +
+                    '<td width="60px"><span>ngày</span></td>' +
+                    '<td width="60px">&nbsp;</td>'
+            });
+
+        });
+
+        function AllowNumberOnly(evt) {
+            evt = (evt) ? evt : event;
+            var charCode = (evt.charCode) ? evt.charCode : ((evt.keyCode) ? evt.keyCode : ((evt.which) ? evt.which : 0));
+            if ((charCode > 31) && (charCode < 48 || charCode > 57) && charCode != 8 && charCode != 37 && charCode != 39 && charCode != 45 && charCode != 46) {
+                return false;
+            }
+            return true;
+        }
     </script>
     <script>
-    $("button").click(function(){
-        $(".navbar-toggle").toggleClass("close");
-    });
+        $("button").click(function() {
+            $(".navbar-toggle").toggleClass("close");
+        });
 
-    $(".navbar-toggle").click(function(){
-        $("#header").toggleClass("open");
-    });
+        $(".navbar-toggle").click(function() {
+            $("#header").toggleClass("open");
+        });
 
-    $(".navbar-nav a").click(function(){
-        $(".navbar-collapse").removeClass("in");
+        $(".navbar-nav a").click(function() {
+            $(".navbar-collapse").removeClass("in");
 
-        $(".navbar-toggle").removeClass("close");
-    });
-    $(".navbar1").on( "click", function() {
-        var strValue = $(this).attr("rel");
-        SelectTab(strValue);
-        ShowInitialTabContent(); 
-        
-    });
-    function SelectTab(tabindex)
-    {
-        $('.nav-tabs li ').removeClass('active');
-        $('.nav-tabs li').eq(tabindex).addClass('active');
-       
-        
-    }
-    function FindActiveDiv()
-    {  
-        var DivName = $('.nav-tabs .active a').attr('href');  
-        return DivName;
-    }
-    function RemoveFocusNonActive()
-    {
-        $('#st1-tab1').removeClass('active');
-        $('#st1-tab2').removeClass('active');
-        $('#st1-tab3').removeClass('active');
-        //to >  remove  :hover :focus;
-    }
-    function ShowInitialTabContent()
-    {
-        RemoveFocusNonActive();
-        var DivName = FindActiveDiv();
-        if (DivName)
-        {
-            $(DivName).addClass('active'); 
-        } 
-    }
-    
-    $('.owl-carousel').owlCarousel({
-            loop: true,
-            margin: 10,
-            responsiveClass: true,
-            responsive: {
-                0: {
-                    items: 1,
-                    nav: true
-                },
-                768: {
-                    items: 2,
-                    nav: true
-                },
-                1000: {
-                    items: 3,
-                    nav: true,
-                    loop: true,
-                    margin: 10,
-                }
-            }
-        })
-    
+            $(".navbar-toggle").removeClass("close");
+        });
     </script>
 </body>
-
 
 </html>
