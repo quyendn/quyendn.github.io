@@ -27,8 +27,8 @@ $(document).ready(function() {
         // Indicate where the error messages are shown.
         // Tooltip, Popover, Custom Container.
         // =================================================================
-    
-    $('#frmMobile').bootstrapValidator({
+
+    $('#frmRegDownload').bootstrapValidator({
         message: 'This value is not valid',
         excluded: [':disabled'],
         feedbackIcons: faIcon,
@@ -63,43 +63,41 @@ $(document).ready(function() {
                 }
             }
         },
-        onSuccess: function (e) {
+        onSuccess: function(e) {
 
             var name = $('#txtName').val();
             var phone = $('#txtPhone').val();
-            var email = $('#txtMail').val();
-            var date = $('#txtBirthday').val();
+            var email = $('#txtEmail').val();
             var emailto = "quyendn84@gmail.com";
-            var dataJSON = { "name": name, "email": email, "phone": phone,"date":date,"typeId": 2, "emailto": emailto }
-            showLoadingContactImage('content-mobile','formContentContactMobile');
+            var dataJSON = { "name": name, "phone": phone, "email": email, "emailto": emailto }
+            showLoadingContactImage('content-register', 'frmContentReg');
             $.ajax({
-                url: "https://alpha.f5academy.net/api/Genvietservice",
+                url: "https://alpha.f5academy.net//api/NguuHoangservice",
                 type: "Post",
                 async: false,
                 data: dataJSON,
                 contentType: 'application/json; charset=utf-8',
                 dataType: 'jsonp',
-                success: function (states) {
+                success: function(states) {
                     $('#frmMobile').bootstrapValidator('resetForm', true);
-                    hideLoadingContactImage('content-mobile', 'formContentContactMobile');
+                    hideLoadingContactImage('content-register', 'frmContentReg');
                 },
-                error: function (ex) {
+                error: function(ex) {
                     toastr.error('Đã có lỗi trong quá trình đăng ký, mời bạn thử lại.', { timeOut: 5000 })
-                    hideLoadingContactImage('content-mobile','formContentContactMobile');
+                    hideLoadingContactImage('content-register', 'frmContentReg');
                 },
-                complete: function (jqXHR, textStatus) {
+                complete: function(jqXHR, textStatus) {
                     $('#txtName').val('');
                     $("#txtPhone").val('');
                     $('#txtMail').val('');
-                    $('#txtBirthday').val('');
-                    $('#frmMobile').bootstrapValidator('resetForm', true);
-                    hideLoadingContactImage('content-mobile', 'formContentContactMobile');
+                    $('#frmRegDownload').bootstrapValidator('resetForm', true);
+                    hideLoadingContactImage('content-register', 'frmContentReg');
                     toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', { timeOut: 5000 })
-                    location.href = "https://quyendn.github.io/genviet/dang-ky-thanh-cong.html";
+                    location.href = "https://quyendn.github.io/nguuhoang/dang-ky-thanh-cong.html";
                 }
             });
         }
-    }).on('success.form.fv', function (e) {
+    }).on('success.form.fv', function(e) {
 
     });
     $('#frmSaleOff').bootstrapValidator({
@@ -116,43 +114,66 @@ $(document).ready(function() {
                         message: 'Không đúng định dạng email'
                     }
                 }
+            },
+            namesaleoff: {
+                validators: {
+                    notEmpty: {
+                        message: 'Họ tên không được để trống.'
+                    }
+                }
+            },
+            phonesaleoff: {
+                validators: {
+                    notEmpty: {
+                        message: 'Điện thoại không được để trống.'
+                    },
+                    stringLength: {
+                        min: 10,
+                        max: 11,
+                        message: 'Số điện thoại chỉ có thể là 10 hoặc 11 số.'
+                    }
+                }
             }
         },
-        onSuccess: function (e) {
+        onSuccess: function(e) {
 
-            var email = $('#txtMailSaleOff').val();
+            var name = $('#txtNameSaleoff').val();
+            var phone = $('#txtPhoneSaleoff').val();
+            var email = $('#txtEmailSaleoff').val();
             var emailto = "quyendn84@gmail.com";
-            var dataJSON = { "name": "", "email": email, "phone": "","date":"","typeId": 1, "emailto": emailto }
-            showLoadingContactImage('content-saleoff','formContentContactSaleOff');
+            var dataJSON = { "name": name, "phone": phone, "email": email, "emailto": emailto }
+            showLoadingContactImage('content-loading', 'frmContentRegSaleOff');
             $.ajax({
-                url: "https://alpha.f5academy.net/api/Genvietservice",
+                url: "https://alpha.f5academy.net//api/NguuHoangservice",
                 type: "Post",
                 async: false,
                 data: dataJSON,
                 contentType: 'application/json; charset=utf-8',
                 dataType: 'jsonp',
-                success: function (states) {
+                success: function(states) {
                     $('#frmSaleOff').bootstrapValidator('resetForm', true);
-                    hideLoadingContactImage('content-saleoff', 'formContentContactSaleOff');
+                    hideLoadingContactImage('content-loading', 'frmContentRegSaleOff');
                 },
-                error: function (ex) {
+                error: function(ex) {
                     toastr.error('Đã có lỗi trong quá trình đăng ký, mời bạn thử lại.', { timeOut: 5000 })
-                    hideLoadingContactImage('content-saleoff','formContentContactSaleOff');
+                    hideLoadingContactImage('content-loading', 'frmContentRegSaleOff');
                 },
-                complete: function (jqXHR, textStatus) {
+                complete: function(jqXHR, textStatus) {
                     $('#txtName').val('');
                     $("#txtPhone").val('');
                     $('#txtMail').val('');
                     $('#txtBirthday').val('');
                     $('#frmSaleOff').bootstrapValidator('resetForm', true);
-                    hideLoadingContactImage('content-saleoff', 'formContentContactSaleOff');
-                    toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', { timeOut: 5000 })
+                    hideLoadingContactImage('content-loading', 'frmContentRegSaleOff');
+                    toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', { timeOut: 5000 });
+                    location.href = "https://quyendn.github.io/nguuhoang/dang-ky-thanh-cong.html";
                 }
             });
         }
-    }).on('success.form.fv', function (e) {
+    }).on('success.form.fv', function(e) {
 
     });
+
     function showLoadingImage() {
 
         $('#content').empty().append('<div id="loading-image" align="center"><img src="img/ajax-loader.gif" alt="Loading..." /></div>');
@@ -164,8 +185,8 @@ $(document).ready(function() {
         $('#formContentContact').show();
         $('#loading-image').remove();
     }
-   
-    function showLoadingContactImage(contentLoading,frmContent) {
+
+    function showLoadingContactImage(contentLoading, frmContent) {
 
         $('#' + contentLoading).empty().append('<div id="loading-image" align="center"><img src="img/ajax-loader.gif" alt="Loading..." /></div>');
         $('#' + frmContent).hide();

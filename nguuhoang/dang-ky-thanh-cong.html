@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="no-js" style="height:100%;">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Ngưu Hoàng Thanh Tâm Liquid </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/wow/wow.min.js"></script>
+    <script src="js/smooth-scroll.js"></script>
+    <script type="text/javascript" src="js/bootstrapValidator.min.js"></script>
+    <script type="text/javascript" src="js/form-validation.js"></script>
+    <script type="text/javascript" src="js/toastr.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <link href="css/toastr.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrapValidator.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/font-face.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+    <script type="text/javascript" src="js/jquery.plugin.min.js"></script>
+    <script type="text/javascript" src="js/jquery.countdown.js"></script>
+
+</head>
+
+<body>
+    <div id="container">
+        <div id="header">
+
+            <div class="affix-top" data-spy="affix" data-offset-top="79" id="">
+                <div class="container">
+                    <a class="navbar-brand" href="/"><img src="img/logo.png"></a>
+
+                </div>
+            </div>
+        </div>
+        <div id="thank" class="">
+            <div class="inner">
+                <div class="container">
+                    <h1>Ngưu Hoàng Thanh Tâm Liquid </h1>
+                    <div class="row">
+
+                        <div class="col-sm-6 col-sm-push-6">
+                            <img src="img/thank.png">
+                        </div>
+                        <div class="col-sm-6 col-sm-pull-6">
+                            <p>CẢM ƠN QUÝ KHÁCH!</p>
+                            <p>ĐÃ ĐĂNG KÍ NHẬN ƯU ĐÃI</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+
+
+
+        
+
+    </div>
+    <script>
+        new WOW().init();
+        $(document).ready(function() {
+
+            var timeServer = '05/30/2019 00:00:00';
+            var serverTime = new Date('05/30/2019 00:00:00');
+            var newYear = new Date(timeServer);
+            $('#timeOpen').countdown({
+                until: newYear,
+                serverSync: serverTime,
+                compact: true,
+                layout: '<td><strong>CHỈ CÒN</strong></td>' +
+                    '<td width="60px"><span class="run">{d10}</span></td>' +
+                    '<td width="60px"><span class="run">{d1}</span></td>' +
+                    '<td width="60px"><span>ngày</span></td>' +
+                    '<td width="60px">&nbsp;</td>'
+            });
+
+        });
+
+        function AllowNumberOnly(evt) {
+            evt = (evt) ? evt : event;
+            var charCode = (evt.charCode) ? evt.charCode : ((evt.keyCode) ? evt.keyCode : ((evt.which) ? evt.which : 0));
+            if ((charCode > 31) && (charCode < 48 || charCode > 57) && charCode != 8 && charCode != 37 && charCode != 39 && charCode != 45 && charCode != 46) {
+                return false;
+            }
+            return true;
+        }
+    </script>
+    <script>
+        $("button").click(function() {
+            $(".navbar-toggle").toggleClass("close");
+        });
+
+        $(".navbar-toggle").click(function() {
+            $("#header").toggleClass("open");
+        });
+
+        $(".navbar-nav a").click(function() {
+            $(".navbar-collapse").removeClass("in");
+
+            $(".navbar-toggle").removeClass("close");
+        });
+    </script>
+</body>
+
+</html>

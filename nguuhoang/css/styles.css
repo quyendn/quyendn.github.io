@@ -208,11 +208,11 @@ img{
 	background-size:cover;
 	}
 
-#slide{
+#slide, #thank{
 	padding:90px 0 30px 0;
 	background:url(../img/bg-st-1.jpg) no-repeat 50% 50% / 100% 100%;
 	}
-#slide h1{
+#slide h1, #thank h1{
 	font-size:90px;
 	color:#fff;
 	text-align:center;
@@ -642,6 +642,15 @@ img{
 	margin-right:10px;
 	}
 /**/
+#thank .col-sm-6{
+	font-size:46px;
+	color:#fff;
+	text-align:center;
+	padding-top:45px;
+	text-transform:uppercase;
+	font-family: 'UTM HelvetIns';
+	}
+/**/
 #viewFinish{
 	padding:0 45px;}
 #viewFinish .owl-nav{
@@ -767,4 +776,10 @@ img{
 		width:70px;
 		border: 2px solid #faec22;
 		}
+}
+.has-error .form-control-feedback{
+    padding-top:10px;
+}
+.has-success .form-control-feedback{
+     padding-top:10px;
 }
