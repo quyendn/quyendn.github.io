@@ -26,6 +26,10 @@
     <script type="text/javascript" src="js/jquery.countdown.js"></script>
     <link href="css/jquery.fancybox.css" rel="stylesheet" type="text/css" />
     <link href="css/jquery.fancybox-thumbsER.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="jwplayer/jwplayer.js"></script>
+    <script type="text/javascript">
+        jwplayer.key = "XumejFo+svwQswRJ3Mi++itror5V6+6q+6I7MQ==";
+    </script>
     <!-- Google Tag Manager -->
     <script>
         (function(w, d, s, l, i) {
@@ -235,7 +239,23 @@
                 <div class="row">
                     <div class="col-md-4 col-sm-6 wow fadeInLeft">
                         <div class="inner">
-                            <div><img src="img/duphong-1.png"></div>
+                            <div>
+                                <div class="player text-center" id="VdoPlayr1" style="text-align:center;"></div>
+                                <script type='text/javascript'>
+                                    jwplayer('VdoPlayr1').setup({
+                                        autostart: false,
+                                        file: 'https://youtu.be/BnqBsK7Hvz4',
+                                        image: "img/duphong-1.png",
+                                        width: '340px',
+                                        height: '189px',
+                                        aspectratio: '16:6',
+                                        controls: true,
+                                        skin: 'seven',
+                                        mute: false,
+                                        primary: 'html5'
+                                    });
+                                </script>
+                            </div>
                             <p><strong>Chị Lan</strong>
                                 <p>
                                     <p><em>Mua cho mẹ bị huyết áp cao</em></p>
@@ -243,7 +263,24 @@
                     </div>
                     <div class="col-md-4 col-sm-6 wow fadeInDown">
                         <div class="inner">
-                            <div><img src="img/duphong-2.png"></div>
+                            <div>
+                                <div class="player text-center" id="VdoPlayr2" style="text-align:center;"></div>
+                                <script type='text/javascript'>
+                                    jwplayer('VdoPlayr2').setup({
+                                        autostart: false,
+                                        file: 'https://youtu.be/rnP5NqC4W8o',
+                                        image: "img/duphong-2.png",
+                                        width: '340px',
+                                        height: '189px',
+                                        aspectratio: '16:6',
+                                        controls: true,
+                                        skin: 'seven',
+                                        mute: false,
+                                        primary: 'html5'
+                                    });
+                                </script>
+
+                            </div>
                             <p><strong>Chú Vũ Đình Sơn - 62 tuổi</strong>
                                 <p>
                                     <p><em>Tiểu đường tuýp 2, mỡ máu ...</em></p>
@@ -251,7 +288,23 @@
                     </div>
                     <div class="col-md-4 col-sm-6 wow fadeInRight">
                         <div class="inner">
-                            <div><img src="img/duphong-3.png"></div>
+                            <div>
+                                <div class="player text-center" id="VdoPlayr3" style="text-align:center;"></div>
+                                <script type='text/javascript'>
+                                    jwplayer('VdoPlayr3').setup({
+                                        autostart: false,
+                                        file: 'https://youtu.be/7aPb8FLnIVQ',
+                                        image: "img/duphong-3.png",
+                                        width: '340px',
+                                        height: '189px',
+                                        aspectratio: '16:6',
+                                        controls: true,
+                                        skin: 'seven',
+                                        mute: false,
+                                        primary: 'html5'
+                                    });
+                                </script>
+                            </div>
                             <p><strong>Tiến sĩ Nguyễn Hồng Mạc</strong>
                                 <p>
                                     <p><em>Stress, đau đầu, mất ngủ ...</em></p>
