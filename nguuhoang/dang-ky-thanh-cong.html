@@ -24,14 +24,21 @@
     <script type="text/javascript" src="js/jquery.countdown.js"></script>
     <!-- Google Tag Manager -->
     <script>
-(function (w, d, s, l, i) {
-w[l] = w[l] || []; w[l].push({
-'gtm.start':
-new Date().getTime(), event: 'gtm.js'
-}); var f = d.getElementsByTagName(s)[0],
-j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-})(window, document, 'script', 'dataLayer', 'GTM-TLSKC9J');</script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-TLSKC9J');
+    </script>
     <!-- End Google Tag Manager -->
 
 </head>
@@ -71,39 +78,9 @@ j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; 
                 </div>
             </div>
         </div>
-        
-        
-        
-        
-        
-        
-        
-        
-
-
-
-        
-
     </div>
     <script>
         new WOW().init();
-        $(document).ready(function() {
-
-            var timeServer = '05/30/2019 00:00:00';
-            var serverTime = new Date('05/30/2019 00:00:00');
-            var newYear = new Date(timeServer);
-            $('#timeOpen').countdown({
-                until: newYear,
-                serverSync: serverTime,
-                compact: true,
-                layout: '<td><strong>CHỈ CÒN</strong></td>' +
-                    '<td width="60px"><span class="run">{d10}</span></td>' +
-                    '<td width="60px"><span class="run">{d1}</span></td>' +
-                    '<td width="60px"><span>ngày</span></td>' +
-                    '<td width="60px">&nbsp;</td>'
-            });
-
-        });
 
         function AllowNumberOnly(evt) {
             evt = (evt) ? evt : event;

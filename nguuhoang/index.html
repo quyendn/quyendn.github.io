@@ -28,15 +28,22 @@
     <link href="css/jquery.fancybox-thumbsER.css" rel="stylesheet" type="text/css" />
     <!-- Google Tag Manager -->
     <script>
-    (function (w, d, s, l, i) {
-    w[l] = w[l] || []; w[l].push({
-    'gtm.start':
-    new Date().getTime(), event: 'gtm.js'
-    }); var f = d.getElementsByTagName(s)[0],
-    j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-TLSKC9J');</script>
-        <!-- End Google Tag Manager -->
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-TLSKC9J');
+    </script>
+    <!-- End Google Tag Manager -->
 
 </head>
 
@@ -460,7 +467,7 @@
                                                 <option value="" selected>Chọn nhu cầu</option>
                                                 <option value="0">Nhận ưu đãi</option>
                                                 <option value="1">Làm đại lý</option>
-                                            </select>    
+                                            </select>
                                         </div>
                                         <div class="form-group text-center">
                                             <button class="btn btn-default"><strong>Đăng ký</strong></button>
@@ -483,11 +490,11 @@
                         <div style="max-width:500px; margin:0 auto">
                             <div class="row">
                                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6"><a style="color:#fff;" href="img/NHTT1.jpg" class="lightfancybox" rel="album_01"><span>GIẤY CHỨNG NHẬN<br />SẢN PHẨM</span></a></div>
-                                
-                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 col-lg-push-4 col-md-push-4 col-ms-push-4"><span>GIẤY CHỨNG NHẬN<br/>AN TOÀN THỰC PHẨM</span></div>
+
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 col-lg-push-4 col-md-push-4 col-ms-push-4"><a style="color:#fff;" href="img/chungnhan.JPG" class="lightfancybox" rel="album_01"><span>GIẤY CHỨNG NHẬN<br/>AN TOÀN THỰC PHẨM</span></a></div>
                                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 col-lg-pull-4 col-md-pull-4 col-ms-pull-4"><img src="img/dathongbao.png"></div>
                             </div>
-                        </div> 
+                        </div>
                     </div>
                 </div>
 
@@ -498,7 +505,7 @@
 
         <div id="fixBottom">
             <a href="tel:0888289828"><img src="img/ic_phone.png"> TỔNG ĐÀI TƯ VẤN<br/>0888 28 98 28</a>
-            <a data-scroll="" data-options="easing: easeInQuad"  class="navbar1" href="#box-register" ><img src="img/ic_get.png"> ĐĂNG KÍ TƯ VẤN<br /><span class="small">(chúng tôi sẽ gọi lại ngay)</span></a>
+            <a data-scroll="" data-options="easing: easeInQuad" class="navbar1" href="#box-register"><img src="img/ic_get.png"> ĐĂNG KÍ TƯ VẤN<br /><span class="small">(chúng tôi sẽ gọi lại ngay)</span></a>
             <a data-scroll="" data-options="easing: easeInQuad" class="navbar1" href="#box-register"><img src="img/ic_shop.png"> ĐĂNG KÍ<br />LÀM ĐẠI LÝ</a>
         </div>
 
@@ -510,8 +517,8 @@
             easing: 'easeInOutCubic',
             offset: 90,
             updateURL: false,
-            callbackBefore: function (toggle, navbar1) { },
-            callbackAfter: function (toggle, navbar1) { }
+            callbackBefore: function(toggle, navbar1) {},
+            callbackAfter: function(toggle, navbar1) {}
         });
         $(document).ready(function() {
 
@@ -528,8 +535,7 @@
                     '<td width="60px"><span>ngày</span></td>' +
                     '<td width="60px">&nbsp;</td>'
             });
-            $(".lightfancybox").fancybox(
-            {
+            $(".lightfancybox").fancybox({
                 autoScale: true,
                 //openEffect 	:	'elastic',
                 //closeEffect 	:	'elastic',
@@ -546,7 +552,7 @@
                         position: 'bottom'
                     }
                 },
-                beforeLoad: function () {
+                beforeLoad: function() {
                     if (this.title == "") {
                         if ($(this.element).attr('caption') == "") {
                             this.title = "Marina Complex Da Nang City";
