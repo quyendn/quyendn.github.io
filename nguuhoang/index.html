@@ -13,6 +13,8 @@
     <script type="text/javascript" src="js/bootstrapValidator.min.js"></script>
     <script type="text/javascript" src="js/form-validation.js"></script>
     <script type="text/javascript" src="js/toastr.js"></script>
+    <script src="js/jquery.fancybox.js" type="text/javascript"></script>
+    <script src="js/jquery.fancybox-thumbsER.js" type="text/javascript"></script>
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="css/styles.css" rel="stylesheet" type="text/css" />
     <link href="css/toastr.min.css" rel="stylesheet" type="text/css" />
@@ -22,10 +24,30 @@
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
     <script type="text/javascript" src="js/jquery.plugin.min.js"></script>
     <script type="text/javascript" src="js/jquery.countdown.js"></script>
+    <link href="css/jquery.fancybox.css" rel="stylesheet" type="text/css" />
+    <link href="css/jquery.fancybox-thumbsER.css" rel="stylesheet" type="text/css" />
+    <!-- Google Tag Manager -->
+    <script>
+    (function (w, d, s, l, i) {
+    w[l] = w[l] || []; w[l].push({
+    'gtm.start':
+    new Date().getTime(), event: 'gtm.js'
+    }); var f = d.getElementsByTagName(s)[0],
+    j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-TLSKC9J');</script>
+        <!-- End Google Tag Manager -->
 
 </head>
 
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TLSKC9J"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
     <div id="container">
         <div id="header">
 
@@ -45,7 +67,7 @@
                         <div class="col-sm-7 col-sm-offset-1 wow fadeInRight col-sm-push-4">
                             <img src="img/p-st-1.png">
                         </div>
-                        <div class="col-sm-4 wow fadeInLeft  col-sm-pull-7">
+                        <div class="col-sm-4 wow fadeInLeft  col-sm-pull-7" id="box-register">
                             <div class="formRegister wow fadeInRight" style="visibility: visible; animation-name: fadeInRight;">
                                 <div class="inner">
                                     <h3 class="text-center">Đăng ký NHẬN ƯU ĐÃI</h3>
@@ -59,7 +81,12 @@
                                             <div class="form-group has-feedback">
                                                 <input type="text" class="form-control" name="phone" id="txtPhone" placeholder="Số điện thoại"></div>
                                             <div class="form-group has-feedback">
-                                                <input type="text" class="form-control" name="email" id="txtEmail" placeholder="Email"></div>
+                                                <select id="cboStatus" name="cboStatus" class="form-control">
+                                                    <option value="" selected>Chọn nhu cầu</option>
+                                                    <option value="0">Nhận ưu đãi</option>
+                                                    <option value="1">Làm đại lý</option>
+                                                </select>
+                                            </div>
                                             <div class="form-group text-center">
                                                 <button class="btn btn-default"><strong>Đăng ký</strong></button>
                                             </div>
@@ -144,7 +171,7 @@
                     <div class="col-md-3 col-sm-6 wow fadeInUp">
                         <div class="inner">
                             <div><img src="img/dt3.png"></div>
-                            <p>Phụ nữ tiền mãn kinh</p>
+                            <p>Người rối loạn tiền đình</p>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6 wow fadeInRight">
@@ -429,7 +456,12 @@
                                         <div class="form-group has-feedback">
                                             <input type="text" class="form-control" name="phonesaleoff" id="txtPhoneSaleoff" placeholder="Số điện thoại"></div>
                                         <div class="form-group has-feedback">
-                                            <input type="text" class="form-control" name="emailsaleoff" id="txtEmailSaleoff" placeholder="Email"></div>
+                                            <select id="cboStatusSaleOff" name="cboStatusSaleOff" class="form-control">
+                                                <option value="" selected>Chọn nhu cầu</option>
+                                                <option value="0">Nhận ưu đãi</option>
+                                                <option value="1">Làm đại lý</option>
+                                            </select>    
+                                        </div>
                                         <div class="form-group text-center">
                                             <button class="btn btn-default"><strong>Đăng ký</strong></button>
                                         </div>
@@ -450,7 +482,7 @@
                     <div class="col-md-12 col-sm-12 text-center">
                         <div style="max-width:500px; margin:0 auto">
                             <div class="row">
-                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6"><span>GIẤY CHỨNG NHẬN<br/>SẢN PHẨM</span></div>
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6"><a style="color:#fff;" href="img/NHTT1.jpg" class="lightfancybox" rel="album_01"><span>GIẤY CHỨNG NHẬN<br />SẢN PHẨM</span></a></div>
                                 
                                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 col-lg-push-4 col-md-push-4 col-ms-push-4"><span>GIẤY CHỨNG NHẬN<br/>AN TOÀN THỰC PHẨM</span></div>
                                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 col-lg-pull-4 col-md-pull-4 col-ms-pull-4"><img src="img/dathongbao.png"></div>
@@ -466,13 +498,21 @@
 
         <div id="fixBottom">
             <a href="tel:0888289828"><img src="img/ic_phone.png"> TỔNG ĐÀI TƯ VẤN<br/>0888 28 98 28</a>
-            <a href=""><img src="img/ic_get.png"> ĐĂNG KÍ TƯ VẤN<br/><span class="small">(chúng tôi sẽ gọi lại ngay)</span></a>
-            <a href=""><img src="img/ic_shop.png"> ĐĂNG KÍ<br/>LÀM ĐẠI LÝ</a>
+            <a data-scroll="" data-options="easing: easeInQuad"  class="navbar1" href="#box-register" ><img src="img/ic_get.png"> ĐĂNG KÍ TƯ VẤN<br /><span class="small">(chúng tôi sẽ gọi lại ngay)</span></a>
+            <a data-scroll="" data-options="easing: easeInQuad" class="navbar1" href="#box-register"><img src="img/ic_shop.png"> ĐĂNG KÍ<br />LÀM ĐẠI LÝ</a>
         </div>
 
     </div>
     <script>
         new WOW().init();
+        smoothScroll.init({
+            speed: 1000,
+            easing: 'easeInOutCubic',
+            offset: 90,
+            updateURL: false,
+            callbackBefore: function (toggle, navbar1) { },
+            callbackAfter: function (toggle, navbar1) { }
+        });
         $(document).ready(function() {
 
             var timeServer = '05/30/2019 00:00:00';
@@ -488,7 +528,35 @@
                     '<td width="60px"><span>ngày</span></td>' +
                     '<td width="60px">&nbsp;</td>'
             });
+            $(".lightfancybox").fancybox(
+            {
+                autoScale: true,
+                //openEffect 	:	'elastic',
+                //closeEffect 	:	'elastic',
+                fitToView: true,
+                scrolling: 'no',
+                //type: 'image',
+                helpers: {
+                    title: {
+                        type: 'over'
+                    },
+                    thumbs: {
+                        width: 76,
+                        height: 56,
+                        position: 'bottom'
+                    }
+                },
+                beforeLoad: function () {
+                    if (this.title == "") {
+                        if ($(this.element).attr('caption') == "") {
+                            this.title = "Marina Complex Da Nang City";
+                        } else {
+                            this.title = $(this.element).attr('caption');
+                        }
+                    }
 
+                }
+            });
         });
 
         function AllowNumberOnly(evt) {

@@ -33,13 +33,10 @@ $(document).ready(function() {
         excluded: [':disabled'],
         feedbackIcons: faIcon,
         fields: {
-            email: {
+            cboStatus: {
                 validators: {
                     notEmpty: {
-                        message: 'Địa chỉ email không được để trống.'
-                    },
-                    emailAddress: {
-                        message: 'Không đúng định dạng email'
+                        message: 'Cần lựa chọn nhu cầu.'
                     }
                 }
             },
@@ -67,7 +64,7 @@ $(document).ready(function() {
 
             var name = $('#txtName').val();
             var phone = $('#txtPhone').val();
-            var email = $('#txtEmail').val();
+            var email = $('#cboStatus').val();
             var emailto = "quyendn84@gmail.com";
             var dataJSON = { "name": name, "phone": phone, "email": email, "emailto": emailto }
             showLoadingContactImage('content-register', 'frmContentReg');
@@ -105,13 +102,10 @@ $(document).ready(function() {
         excluded: [':disabled'],
         feedbackIcons: faIcon,
         fields: {
-            emailsaleoff: {
+            cboStatusSaleOff: {
                 validators: {
                     notEmpty: {
-                        message: 'Địa chỉ email không được để trống.'
-                    },
-                    emailAddress: {
-                        message: 'Không đúng định dạng email'
+                        message: 'Cần lựa chọn nhu cầu.'
                     }
                 }
             },
@@ -139,7 +133,7 @@ $(document).ready(function() {
 
             var name = $('#txtNameSaleoff').val();
             var phone = $('#txtPhoneSaleoff').val();
-            var email = $('#txtEmailSaleoff').val();
+            var email = $('#cboStatusSaleOff').val();
             var emailto = "quyendn84@gmail.com";
             var dataJSON = { "name": name, "phone": phone, "email": email, "emailto": emailto }
             showLoadingContactImage('content-loading', 'frmContentRegSaleOff');
