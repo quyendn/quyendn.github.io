@@ -90,7 +90,7 @@ $(document).ready(function() {
                     $('#frmRegDownload').bootstrapValidator('resetForm', true);
                     hideLoadingContactImage('content-register', 'frmContentReg');
                     toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', { timeOut: 5000 })
-                    location.href = "https://quyendn.github.io/nguuhoang/dang-ky-thanh-cong.html";
+                    location.href = "/dang-ky-thanh-cong.html";
                 }
             });
         }
@@ -160,7 +160,7 @@ $(document).ready(function() {
                     $('#frmSaleOff').bootstrapValidator('resetForm', true);
                     hideLoadingContactImage('content-loading', 'frmContentRegSaleOff');
                     toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', { timeOut: 5000 });
-                    location.href = "https://quyendn.github.io/nguuhoang/dang-ky-thanh-cong.html";
+                    location.href = "/dang-ky-thanh-cong.html";
                 }
             });
         }
