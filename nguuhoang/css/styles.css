@@ -856,7 +856,7 @@ i {
 #section6 .btnConnect{
 	position:absolute;
 	right:15px;
-	bottom:10px;
+	bottom:400px;
 	min-width:240px;
 	text-align:center;
 	text-transform:uppercase;color:#fff;
