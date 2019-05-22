@@ -464,10 +464,16 @@ a, .btn, button{
 	}
 #section7 .owl-dots{
 	bottom:0;
+	width:100%;
+	left:0;
+	right:0;
 	}
 #section7 .owl-dot{
 	background:#895797;
 	border:1px solid #895797;
+	width:10px;
+	height:10px;
+	
 	}
 #section7 .owl-dot.active{
 	background:#fbce53;

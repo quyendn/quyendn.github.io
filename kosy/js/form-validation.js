@@ -86,7 +86,7 @@ $(document).ready(function() {
                     $('#frmRegDownload').bootstrapValidator('resetForm', true);
                     hideLoadingContactImage('content-register', 'frmContentReg');
                     toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', { timeOut: 5000 })
-                    location.href = "https://quyendn.github.io/kosy/dang-ky-thanh-cong.html";
+                    location.href = "/dang-ky-thanh-cong.html";
                 }
             });
         }
@@ -152,7 +152,7 @@ $(document).ready(function() {
                     $('#frmSaleOff').bootstrapValidator('resetForm', true);
                     hideLoadingContactImage('content-loading-off', 'frmContentRegSaleOff');
                     toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', { timeOut: 5000 })
-                    location.href = "https://quyendn.github.io/kosy/dang-ky-thanh-cong.html";
+                    location.href = "/dang-ky-thanh-cong.html";
                 }
             });
         }
@@ -190,7 +190,7 @@ $(document).ready(function() {
             var phone = $('#txtPhoneDownload').val();
             var email = $('#txtEmailDownload').val();
             var address = "";
-            var emailto = "quyendn@gmail.com";
+            var emailto = "phongtruyenthong@kosy.vn";
             var dataJSON = { "name": name, "phone": phone, "address": address, "email": email, "emailto": emailto }
             var check = checkPhoneNumber3();
             if (!check)
@@ -219,7 +219,7 @@ $(document).ready(function() {
                     hideLoadingContactImage('content-download', 'frmContentDownloadReg');
                     toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', { timeOut: 5000 })
                     $('#formDownload').modal('hide');
-                    location.href = "https://quyendn.github.io/kosy/file/tai_lieu.zip";
+                    location.href = "/file/tai_lieu.zip";
                 }
             });
         }
