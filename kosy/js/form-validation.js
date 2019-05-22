@@ -59,6 +59,8 @@ $(document).ready(function() {
             var email = $('#txtEmail').val();
             var address = $('#txtAdd').val();
             var emailto = "phongtruyenthong@kosy.vn";
+            var source = getUrlParameter('utm_source');
+            alert(source);
             var check = checkPhoneNumber();
             if (!check)
                 return;
@@ -300,4 +302,18 @@ $(document).ready(function() {
             return false;
         }
     }
+    var getUrlParameter = function getUrlParameter(sParam) {
+        var sPageURL = window.location.search.substring(1),
+            sURLVariables = sPageURL.split('&'),
+            sParameterName,
+            i;
+
+        for (i = 0; i < sURLVariables.length; i++) {
+            sParameterName = sURLVariables[i].split('=');
+
+            if (sParameterName[0] === sParam) {
+                return sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
+            }
+        }
+    };
 });
