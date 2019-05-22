@@ -47,8 +47,7 @@ $(document).ready(function() {
                     },
                     stringLength: {
                         min: 10,
-                        max: 11,
-                        message: 'Số điện thoại chỉ có thể là 10 hoặc 11 số.'
+                        message: 'Số điện thoại chỉ có thể là 10số.'
                     }
                 }
             }
@@ -60,6 +59,9 @@ $(document).ready(function() {
             var email = $('#txtEmail').val();
             var address = $('#txtAdd').val();
             var emailto = "phongtruyenthong@kosy.vn";
+            var check = checkPhoneNumber();
+            if (!check)
+                return;
             var dataJSON = { "name": name, "phone": phone, "address": address, "email": email, "emailto": emailto }
             showLoadingContactImage('content-register', 'frmContentReg');
             $.ajax({
@@ -123,7 +125,10 @@ $(document).ready(function() {
             var email = $('#txtEmailOff').val();
             var address = $('#txtAddOff').val();
             var emailto = "phongtruyenthong@kosy.vn";
-            var dataJSON = { "name": name, "phone": phone, "email": email, "emailto": emailto }
+            var dataJSON = { "name": name, "phone": phone, "address": address, "email": email, "emailto": emailto }
+            var check = checkPhoneNumber2();
+            if (!check)
+                return;
             showLoadingContactImage('content-loading', 'frmContentRegSaleOff');
             $.ajax({
                 url: "https://alpha.f5academy.net/api/Kosyservice",
@@ -141,10 +146,9 @@ $(document).ready(function() {
                     hideLoadingContactImage('content-loading', 'frmContentRegSaleOff');
                 },
                 complete: function(jqXHR, textStatus) {
-                    $('#txtName').val('');
-                    $("#txtPhone").val('');
-                    $('#txtMail').val('');
-                    $('#txtBirthday').val('');
+                    $('#txtNameOff').val('');
+                    $("#txtPhoneOff").val('');
+                    $('#txtEmailOff').val('');
                     $('#frmSaleOff').bootstrapValidator('resetForm', true);
                     hideLoadingContactImage('content-loading-off', 'frmContentRegSaleOff');
                     toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', { timeOut: 5000 })
@@ -178,5 +182,39 @@ $(document).ready(function() {
     function hideLoadingContactImage(contentLoading, frmContent) {
         $('#' + frmContent).show();
         $('#loading-image').remove();
+    }
+    function checkPhoneNumber() {
+        var vnf_regex = /((09|03|07|08|05)+([0-9]{8})\b)/g;
+        var mobile = $('#txtPhone').val();
+        if (mobile !== '') {
+            if (vnf_regex.test(mobile) == false) {
+                toastr.error('Số điện thoại của bạn không đúng định dạng.', { timeOut: 5000 })
+                $("#txtPhone").focus();
+                return false;
+
+            } else {
+                return true;
+            }
+        } else {
+            toastr.error('Bạn chưa điền số điện thoại.', { timeOut: 5000 })
+            return false;
+        }
+    }
+    function checkPhoneNumber2() {
+        var vnf_regex = /((09|03|07|08|05)+([0-9]{8})\b)/g;
+        var mobile = $('#txtPhoneOff').val();
+        if (mobile !== '') {
+            if (vnf_regex.test(mobile) == false) {
+                toastr.error('Số điện thoại của bạn không đúng định dạng.', { timeOut: 5000 })
+                $("#txtPhoneOff").focus();
+                return false;
+
+            } else {
+                return true;
+            }
+        } else {
+            toastr.error('Bạn chưa điền số điện thoại.', { timeOut: 5000 })
+            return false;
+        }
     }
 });
