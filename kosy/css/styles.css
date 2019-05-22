@@ -301,6 +301,9 @@ a, .btn, button{
 	height:71px;
 	z-index:10;
 	background:url(../img/bg_light_sl.png) no-repeat 50% 100% / 100% auto;}
+#slide-wrap .owl-dots{
+	display:none;
+	}
 /**/
 .section{
 	padding-top:30px;
