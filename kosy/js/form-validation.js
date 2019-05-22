@@ -262,7 +262,13 @@ $(document).ready(function() {
         $('#' + frmContent).hide();
 
     }
-
+    function isEmpty(item) {
+        if (item) {
+            return false;
+        } else {
+            return true;
+        }
+    }
     function hideLoadingContactImage(contentLoading, frmContent) {
         $('#' + frmContent).show();
         $('#loading-image').remove();
