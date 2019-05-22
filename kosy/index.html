@@ -76,10 +76,11 @@
                             <div class="form-group has-feedback">
                                 <input type="text" class="form-control" name="name" id="txtName" value="" placeholder="Họ và tên(*)"></div>
                             <div class="form-group has-feedback">
-                                <input type="text" class="form-control" name="phone" id="txtPhone" onkeypress="return AllowNumberOnly(event);"  placeholder="Số điện thoại(*)"></div>
-                            <div class="form-group has-feedback">
                                 <input type="text" class="form-control" name="address" id="txtAdd" placeholder="Địa chỉ"></div>
                                 <div class="form-group has-feedback">
+                            <div class="form-group has-feedback">
+                                <input type="text" class="form-control" name="phone" id="txtPhone" onkeypress="return AllowNumberOnly(event);"  placeholder="Số điện thoại(*)"></div>
+                            
                                 <input type="text" class="form-control" name="email" id="txtEmail" placeholder="Email"></div>
                             <div class="form-group text-center">
                                 <button class="btn btn-block btn-register bgGradient-y">Đăng ký ngay</button>
@@ -181,22 +182,22 @@
                 <div class="st-hd text-center"><h3>Tiện ích nội khu vượt trội</h3><div class="line"></div></div>
                 <div class="row">
                     <div class="col-md-6 col-sm-6 wow fadeInLeft">
-                        <a href="img/tienich_1.jpg" class="lightfancybox" rel="tien_ich"><img src="img/tienich_1.jpg"></a>
+                        <a href="img/tienich_1_big.jpg" class="lightfancybox" rel="tien_ich"><img src="img/tienich_1.jpg"></a>
                     </div>
                     <div class="col-md-6 col-sm-6 wow fadeInRight">
-                        <a href="img/tienich_2.jpg" class="lightfancybox" rel="tien_ich"><img src="img/tienich_2.jpg"></a>
+                        <a href="img/tienich_2_big.png" class="lightfancybox" rel="tien_ich"><img src="img/tienich_2.jpg"></a>
 </div>
                     <div class="col-md-6 col-sm-6 wow fadeInDown">
-                        <a href="img/tienich_3.jpg" class="lightfancybox" rel="tien_ich"><img src="img/tienich_3.jpg"></a>
+                        <a href="img/tienich_3_big.jpg" class="lightfancybox" rel="tien_ich"><img src="img/tienich_3.jpg"></a>
 </div>
                     <div class="col-md-6 col-sm-6 wow fadeInUp">
-                        <a href="img/tienich_4.jpg" class="lightfancybox" rel="tien_ich"><img src="img/tienich_4.jpg"></a>
+                        <a href="img/tienich_4_big.jpg" class="lightfancybox" rel="tien_ich"><img src="img/tienich_4.jpg"></a>
 </div>
                     <div class="col-md-6 col-sm-6 wow fadeInRight">
-                        <a href="img/tienich_5.jpg" class="lightfancybox" rel="tien_ich"><img src="img/tienich_5.jpg"></a>
+                        <a href="img/tienich_5_big.png" class="lightfancybox" rel="tien_ich"><img src="img/tienich_5.jpg"></a>
 </div>
                     <div class="col-md-6 col-sm-6 wow fadeInLeft">
-                        <a href="img/tienich_1.jpg" class="lightfancybox" rel="tien_ich"><img src="img/tienich_6.jpg"></a>
+                        <a href="img/tienich_6_big.png" class="lightfancybox" rel="tien_ich"><img src="img/tienich_6.jpg"></a>
 </div>
                 </div>
             </div>
@@ -355,11 +356,12 @@
                             <input type="text" class="form-control" name="nameoff" id="txtNameOff" value="" placeholder="Họ và tên(*)">
                         </div>
                         <div class="form-group has-feedback col-md-3 col-sm-6">
-                            <input type="text" class="form-control" name="phoneoff" id="txtPhoneOff" placeholder="Số điện thoại(*)">
-                        </div>
-                        <div class="form-group has-feedback col-md-3 col-sm-6">
                             <input type="text" class="form-control" name="txtAdd" id="txtAddOff" placeholder="Địa chỉ">
                         </div>
+                        <div class="form-group has-feedback col-md-3 col-sm-6">
+                            <input type="text" class="form-control" name="phoneoff" id="txtPhoneOff" placeholder="Số điện thoại(*)">
+                        </div>
+                        
                         <div class="form-group has-feedback col-md-3 col-sm-6">
                             <input type="text" class="form-control" name="email" id="txtEmailOff" placeholder="Email">
                         </div>
@@ -388,8 +390,42 @@
             </div>
         </div>
         <a href="tel:0964648447" class="btn btn-phone bgGradient-y visible-xs"><img src="img/ic_phone-hd.png"> 09.64.64.84.47</a>
-        <a href="/file/tai_lieu.zip" class="btn btn-download bgGradient-y hidden-xs">Download<br />tài liệu</a>
+        <a href="/file/tai_lieu.zip" class="btn btn-download bgGradient-y hidden-xs" data-toggle="modal" data-target="#formDownload">Download<br />tài liệu</a>
     </div>
+    <!---->
+    <div class="modal fade" id="formDownload" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content bgGradient">
+                <div class="modal-body ">
+                	<button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                    <div class="formRegister" id="" style="visibility: visible; animation-name: fadeInRight;">
+                        <div class="inner">
+                            <div class="tl text-center">
+                                <div>-KHU ĐÔ THỊ-</div>
+                                <div class="name"><strong>KOSY BẮC GIANG</strong></div>
+                                <div class="lg"><strong>ĐĂNG KÝ ĐỂ <span>DOWNLOAD TÀI LIỆU</span></strong></div>
+                            </div>
+                            <form id="frmRegContentDownload" autocomplete="off" novalidate class="bv-form">
+        
+                                <div id="frmContentDownloadReg">
+                                    <div class="form-group has-feedback"><input type="text" class="form-control" name="namedownload" id="txtNameDownload" value="" placeholder="Họ và tên(*)"></div>
+                                    <div class="form-group has-feedback"><input type="text" class="form-control" name="phonedownload" id="txtPhoneDownload" onkeypress="return AllowNumberOnly(event);"  placeholder="Số điện thoại(*)"></div>
+                                    
+                                    <div class="form-group has-feedback"><input type="text" class="form-control" name="emaildownload" id="txtEmailDownload" placeholder="Email"></div>
+                                    <div class="form-group text-center">
+                                        <button class="btn btn-register bgGradient-y"><img src="img/ic_download.png" width="24px"> Download tài liệu</button>
+                                    </div>
+                                </div>
+                                <div id="content-download"></div>
+                            </form>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+      </div>
+    </div>
+    
     <!---->
     <script src="js/smooth-scroll.js"></script>
     <script type="text/javascript" src="js/bootstrapValidator.min.js"></script>

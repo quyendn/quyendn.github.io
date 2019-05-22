@@ -159,7 +159,73 @@ $(document).ready(function() {
     }).on('success.form.fv', function(e) {
 
     });
+    $('#frmRegContentDownload').bootstrapValidator({
+        message: 'This value is not valid',
+        excluded: [':disabled'],
+        feedbackIcons: faIcon,
+        fields: {
 
+            namedownload: {
+                validators: {
+                    notEmpty: {
+                        message: 'Họ tên không được để trống.'
+                    }
+                }
+            },
+            phonedownload: {
+                validators: {
+                    notEmpty: {
+                        message: 'Điện thoại không được để trống.'
+                    },
+                    stringLength: {
+                        min: 10,
+                        message: 'Số điện thoại chỉ có thể là 10 số.'
+                    }
+                }
+            }
+        },
+        onSuccess: function (e) {
+
+            var name = $('#txtNameDownload').val();
+            var phone = $('#txtPhoneDownload').val();
+            var email = $('#txtEmailDownload').val();
+            var address = "";
+            var emailto = "quyendn@gmail.com";
+            var dataJSON = { "name": name, "phone": phone, "address": address, "email": email, "emailto": emailto }
+            var check = checkPhoneNumber3();
+            if (!check)
+                return;
+            showLoadingContactImage('content-download', 'frmContentDownloadReg');
+            $.ajax({
+                url: "https://alpha.f5academy.net/api/Kosyservice",
+                type: "Post",
+                async: false,
+                data: dataJSON,
+                contentType: 'application/json; charset=utf-8',
+                dataType: 'jsonp',
+                success: function (states) {
+                    $('#frmRegContentDownload').bootstrapValidator('resetForm', true);
+                    hideLoadingContactImage('content-download', 'frmContentDownloadReg');
+                },
+                error: function (ex) {
+                    toastr.error('Đã có lỗi trong quá trình đăng ký, mời bạn thử lại.', { timeOut: 5000 })
+                    hideLoadingContactImage('content-download', 'frmContentDownloadReg');
+                },
+                complete: function (jqXHR, textStatus) {
+                    $('#txtNameOff').val('');
+                    $("#txtPhoneOff").val('');
+                    $('#txtEmailOff').val('');
+                    $('#frmRegContentDownload').bootstrapValidator('resetForm', true);
+                    hideLoadingContactImage('content-download', 'frmContentDownloadReg');
+                    toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', { timeOut: 5000 })
+                    $('#formDownload').modal('hide');
+                    location.href = "https://quyendn.github.io/kosy/file/tai_lieu.zip";
+                }
+            });
+        }
+    }).on('success.form.fv', function (e) {
+
+    });
     function showLoadingImage() {
 
         $('#content').empty().append('<div id="loading-image" align="center"><img src="img/ajax-loader.gif" alt="Loading..." /></div>');
@@ -207,6 +273,23 @@ $(document).ready(function() {
             if (vnf_regex.test(mobile) == false) {
                 toastr.error('Số điện thoại của bạn không đúng định dạng.', { timeOut: 5000 })
                 $("#txtPhoneOff").focus();
+                return false;
+
+            } else {
+                return true;
+            }
+        } else {
+            toastr.error('Bạn chưa điền số điện thoại.', { timeOut: 5000 })
+            return false;
+        }
+    }
+    function checkPhoneNumber3() {
+        var vnf_regex = /((09|03|07|08|05)+([0-9]{8})\b)/g;
+        var mobile = $('#txtPhoneDownload').val();
+        if (mobile !== '') {
+            if (vnf_regex.test(mobile) == false) {
+                toastr.error('Số điện thoại của bạn không đúng định dạng.', { timeOut: 5000 })
+                $("#txtPhoneDownload").focus();
                 return false;
 
             } else {
