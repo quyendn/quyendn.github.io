@@ -33,16 +33,6 @@ $(document).ready(function() {
         excluded: [':disabled'],
         feedbackIcons: faIcon,
         fields: {
-            email: {
-                validators: {
-                    notEmpty: {
-                        message: 'Địa chỉ email không được để trống.'
-                    },
-                    emailAddress: {
-                        message: 'Không đúng định dạng email'
-                    }
-                }
-            },
             name: {
                 validators: {
                     notEmpty: {
@@ -68,11 +58,12 @@ $(document).ready(function() {
             var name = $('#txtName').val();
             var phone = $('#txtPhone').val();
             var email = $('#txtEmail').val();
-            var emailto = "quyendn84@gmail.com";
-            var dataJSON = { "name": name, "phone": phone, "email": email, "emailto": emailto }
+            var address = $('#txtAdd').val();
+            var emailto = "phongtruyenthong@kosy.vn";
+            var dataJSON = { "name": name, "phone": phone, "address": address, "email": email, "emailto": emailto }
             showLoadingContactImage('content-register', 'frmContentReg');
             $.ajax({
-                url: "https://alpha.f5academy.net//api/NguuHoangservice",
+                url: "https://alpha.f5academy.net/api/Kosyservice",
                 type: "Post",
                 async: false,
                 data: dataJSON,
@@ -93,7 +84,7 @@ $(document).ready(function() {
                     $('#frmRegDownload').bootstrapValidator('resetForm', true);
                     hideLoadingContactImage('content-register', 'frmContentReg');
                     toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', { timeOut: 5000 })
-                    location.href = "https://quyendn.github.io/genviet/dang-ky-thanh-cong.html";
+                    location.href = "https://quyendn.github.io/kosy/dang-ky-thanh-cong.html";
                 }
             });
         }
@@ -105,46 +96,37 @@ $(document).ready(function() {
         excluded: [':disabled'],
         feedbackIcons: faIcon,
         fields: {
-            emailsaleoff: {
-                validators: {
-                    notEmpty: {
-                        message: 'Địa chỉ email không được để trống.'
-                    },
-                    emailAddress: {
-                        message: 'Không đúng định dạng email'
-                    }
-                }
-            },
-            namesaleoff: {
+           
+            nameoff: {
                 validators: {
                     notEmpty: {
                         message: 'Họ tên không được để trống.'
                     }
                 }
             },
-            phonesaleoff: {
+            phoneoff: {
                 validators: {
                     notEmpty: {
                         message: 'Điện thoại không được để trống.'
                     },
                     stringLength: {
                         min: 10,
-                        max: 11,
-                        message: 'Số điện thoại chỉ có thể là 10 hoặc 11 số.'
+                        message: 'Số điện thoại chỉ có thể là 10 số.'
                     }
                 }
             }
         },
         onSuccess: function(e) {
 
-            var name = $('#txtNameSaleoff').val();
-            var phone = $('#txtPhoneSaleoff').val();
-            var email = $('#txtEmailSaleoff').val();
-            var emailto = "quyendn84@gmail.com";
+            var name = $('#txtNameOff').val();
+            var phone = $('#txtPhoneOff').val();
+            var email = $('#txtEmailOff').val();
+            var address = $('#txtAddOff').val();
+            var emailto = "phongtruyenthong@kosy.vn";
             var dataJSON = { "name": name, "phone": phone, "email": email, "emailto": emailto }
             showLoadingContactImage('content-loading', 'frmContentRegSaleOff');
             $.ajax({
-                url: "https://alpha.f5academy.net//api/NguuHoangservice",
+                url: "https://alpha.f5academy.net/api/Kosyservice",
                 type: "Post",
                 async: false,
                 data: dataJSON,
@@ -164,8 +146,9 @@ $(document).ready(function() {
                     $('#txtMail').val('');
                     $('#txtBirthday').val('');
                     $('#frmSaleOff').bootstrapValidator('resetForm', true);
-                    hideLoadingContactImage('content-loading', 'frmContentRegSaleOff');
+                    hideLoadingContactImage('content-loading-off', 'frmContentRegSaleOff');
                     toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', { timeOut: 5000 })
+                    location.href = "https://quyendn.github.io/kosy/dang-ky-thanh-cong.html";
                 }
             });
         }
