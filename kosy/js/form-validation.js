@@ -59,12 +59,16 @@ $(document).ready(function() {
             var email = $('#txtEmail').val();
             var address = $('#txtAdd').val();
             var emailto = "phongtruyenthong@kosy.vn";
+            var url_source = "lp_kosy";
             var source = getUrlParameter('utm_source');
-            alert(source);
+            if (isEmpty(source))
+                url_source = "lp_kosy";
+            else
+                url_source = source;
             var check = checkPhoneNumber();
             if (!check)
                 return;
-            var dataJSON = { "name": name, "phone": phone, "address": address, "email": email, "emailto": emailto }
+            var dataJSON = { "name": name, "phone": phone, "address": address, "email": email, "source": url_source, "emailto": emailto }
             showLoadingContactImage('content-register', 'frmContentReg');
             $.ajax({
                 url: "https://alpha.f5academy.net/api/Kosyservice",
@@ -127,7 +131,13 @@ $(document).ready(function() {
             var email = $('#txtEmailOff').val();
             var address = $('#txtAddOff').val();
             var emailto = "phongtruyenthong@kosy.vn";
-            var dataJSON = { "name": name, "phone": phone, "address": address, "email": email, "emailto": emailto }
+            var url_source = "lp_kosy";
+            var source = getUrlParameter('utm_source');
+            if (isEmpty(source))
+                url_source = "lp_kosy";
+            else
+                url_source = source;
+            var dataJSON = { "name": name, "phone": phone, "address": address, "email": email, "source": url_source, "emailto": emailto }
             var check = checkPhoneNumber2();
             if (!check)
                 return;
@@ -193,7 +203,13 @@ $(document).ready(function() {
             var email = $('#txtEmailDownload').val();
             var address = "";
             var emailto = "phongtruyenthong@kosy.vn";
-            var dataJSON = { "name": name, "phone": phone, "address": address, "email": email, "emailto": emailto }
+            var url_source = "lp_kosy";
+            var source = getUrlParameter('utm_source');
+            if (isEmpty(source))
+                url_source = "lp_kosy";
+            else
+                url_source = source;
+            var dataJSON = { "name": name, "phone": phone, "address": address, "email": email, "source": url_source, "emailto": emailto }
             var check = checkPhoneNumber3();
             if (!check)
                 return;
