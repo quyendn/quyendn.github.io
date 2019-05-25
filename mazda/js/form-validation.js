@@ -68,6 +68,13 @@ $(document).ready(function() {
                         message: 'Cần chọn Tỉnh/thành phố'
                     }
                 }
+            },
+            cboPartner: {
+                validators: {
+                    notEmpty: {
+                        message: 'Cần chọn Showroom/Đại lý'
+                    }
+                }
             }
         },
         onSuccess: function (e) {
@@ -151,6 +158,13 @@ $(document).ready(function() {
                 validators: {
                     notEmpty: {
                         message: 'Cần chọn Tỉnh/thành phố'
+                    }
+                }
+            },
+            cboSubPartner: {
+                validators: {
+                    notEmpty: {
+                        message: 'Cần chọn Showroom/Đại lý'
                     }
                 }
             }
