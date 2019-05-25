@@ -85,7 +85,7 @@ $(document).ready(function() {
             var dataJSON = { "city": city, "partner": partner, "name": name, "phone": phone, "email": email, "emailto": emailto, "typeId": typeId };
             showLoadingContactImage('content-register', 'frmContentReg');
             $.ajax({
-                url: "http://localhost:50623/api/Mazdaservice",
+                url: "https://alpha.f5academy.net/api/Mazdaservice",
                 type: "Post",
                 async: false,
                 data: dataJSON,
@@ -106,7 +106,7 @@ $(document).ready(function() {
                     $('#frmRegDownload').bootstrapValidator('resetForm', true);
                     toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', { timeOut: 5000 })
                     hideLoadingContactImage('content-register', 'frmContentReg');
-                    //window.location.href = "http://quyendn.github.io/toyota/dang-ky-thanh-cong.html";
+                    window.location.href = "http://quyendn.github.io/mazda/dang-ky-thanh-cong.html";
                 }
             });
         }
@@ -170,7 +170,7 @@ $(document).ready(function() {
             var dataJSON = { "city": city, "partner": partner, "name": name, "phone": phone, "email": email, "emailto": emailto, "typeId": typeId };
             showLoadingContactImage('content-register-sub', 'frmContentReg');
             $.ajax({
-                url: "http://localhost:50623/api/Mazdaservice",
+                url: "https://alpha.f5academy.net/api/Mazdaservice",
                 type: "Post",
                 async: false,
                 data: dataJSON,
@@ -191,7 +191,7 @@ $(document).ready(function() {
                     $('#frmRegDownloadSub').bootstrapValidator('resetForm', true);
                     toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', { timeOut: 5000 })
                     hideLoadingContactImage('content-register-sub', 'frmContentRegSub');
-                    //window.location.href = "http://quyendn.github.io/toyota/dang-ky-thanh-cong.html";
+                    window.location.href = "http://quyendn.github.io/mazda/dang-ky-thanh-cong.html";
                 }
             });
         }
@@ -221,7 +221,7 @@ $(document).ready(function() {
             var dataJSON = { "city": "", "partner": "", "name": "", "phone": "", "email": email, "emailto": emailto, "typeId": typeId };
             showLoadingContactImage('content-mobile', 'formContentContactMobile');
             $.ajax({
-                url: "http://localhost:50623/api/Mazdaservice",
+                url: "https://alpha.f5academy.net/api/Mazdaservice",
                 type: "Post",
                 async: false,
                 data: dataJSON,
@@ -240,7 +240,7 @@ $(document).ready(function() {
                     $('#frmMobile').bootstrapValidator('resetForm', true);
                     toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', { timeOut: 5000 })
                     hideLoadingContactImage('content-mobile', 'formContentContactMobile');
-                    //window.location.href = "http://quyendn.github.io/toyota/dang-ky-thanh-cong.html";
+                    window.location.href = "http://quyendn.github.io/mazda/dang-ky-thanh-cong.html";
                 }
             });
         }
