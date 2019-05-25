@@ -173,8 +173,9 @@ h1, h2, h3{
 	}
 	/**/
 #slide-wrap{
-	background:url(../img/cx8.jpg) no-repeat 50% 50%;
+	background:url(../img/cx8.jpg) no-repeat 50% 100%;
 	padding:60px 0;
+	background-size:100% auto;
 	}
 #slide-wrap h1, #slide-wrap h2{
 	color:#e6e6e6;
@@ -349,7 +350,10 @@ img{
 	
 	
 	}
+@media (max-width:991px){
+	}
 @media (max-width:768px){
+	
 	#header, #header .affix{
 		min-height:70px;
 		}
@@ -361,10 +365,10 @@ img{
 		height:auto;
 		}
 	#slide-wrap{
-		background: url(../img/cx8_mb.jpg) no-repeat 50% 50%;
-		background-size: 100% auto;
+		background: url(../img/cx8_mb.jpg) no-repeat 50% 100%;
+		background-size:100% auto;
 		padding:15px 0 60px 0;
-		
+		height:400px;
 		}
 	#slide-wrap span{
 		font-size:24px;
