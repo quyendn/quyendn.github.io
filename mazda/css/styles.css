@@ -134,15 +134,13 @@ h1, h2, h3{
 	margin-right:20px;
 	margin-top:5px;
 	}
-.navbar-nav>li#btnQuote>a{
+.navbar-nav>li#btnQuote>a, .btn.btnFix{
 	border:1px solid #333;
 	font-family: 'UTMAvoBold';
 	text-transform:uppercase;
+	background:#fff;
 	}
-#buynowFix{
-	position:fixed;
-	bottom:0;
-	right:0;}
+
 /**/
 .section{
 	padding-top:30px;
@@ -185,6 +183,7 @@ h1, h2, h3{
 	}
 #slide-wrap h1{
 	font-size:46px;
+	margin-top:0;
 	font-family: 'UTMAvoBold';
 	}
 #slide-wrap h2{
@@ -250,7 +249,9 @@ h1, h2, h3{
 	color:#fff;
 	padding:20px 0 0 0;
 	}
-
+#section2 img, #section3 img{
+	width:100%;
+	}
 #section2{
 	color:#fff;
 	padding-bottom:10px;
@@ -331,6 +332,11 @@ h1, h2, h3{
 	padding:10px;
 	height:auto;
 	}
+.btn.btnFix{
+	position:fixed;
+	bottom:5px;
+	right:5px;
+	}
 
 /**/
 img{
@@ -354,17 +360,29 @@ img{
 	.navbar-brand img{
 		height:auto;
 		}
+	#slide-wrap{
+		background: url(../img/cx8_mb.jpg) no-repeat 50% 50%;
+		background-size: 100% auto;
+		padding:15px 0 60px 0;
+		
+		}
+	#slide-wrap span{
+		font-size:24px;
+		display:block;}
 	#slide-wrap h1{
 		font-size:30px;
 		}
 	#slide-wrap h2{
-		font-size:20px;
+		font-size:14px;
 		}
 	.formRegister .inner{
 		padding:0;
 		}
-	.section .st-hd h3{
+	.formRegister .inner h3{
 		font-size:18px;
+		}
+	.section .st-hd h3{
+		font-size:16px;
 		font-family: 'UTMAvoBold';
 		}
 	.section .st-hd h3 span{

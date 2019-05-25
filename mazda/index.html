@@ -22,7 +22,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="css/styles.css" rel="stylesheet" type="text/css" />
     <link href="css/font-face.css" rel="stylesheet" type="text/css" />
-    <link href="css/bootstrapValidator.min.css" rel="stylesheet" type="text/css" />z
+    <link href="css/bootstrapValidator.min.css" rel="stylesheet" type="text/css" />
     <link href="css/toastr.min.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" type="text/css" href="css/animate.css" />
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
@@ -151,7 +151,7 @@
         </div>
 
         <div class="section wow fadeInUp" id="section1">
-            <div class="player text-center" id="VdoPlayr" style="text-align:center;"></div>
+            <!-- <div class="player text-center" id="VdoPlayr" style="text-align:center;"></div>
             <script type='text/javascript'>
                 jwplayer('VdoPlayr').setup({
                     autostart: true,
@@ -166,8 +166,16 @@
                     mute: false,
                     primary: 'html5'
                 });
-            </script>
-
+            </script> -->
+            <video controls
+            src="https://quyendn.github.io/mazda/video/Teaser 15s.mp4"
+            poster="img/video.png"
+            width="100%">
+            Sorry, your browser doesn't support embedded videos, 
+            but don't worry, you can <a href="https://quyendn.github.io/mazda/video/Teaser 15s.mp4">download it</a> 
+            and watch it with your favorite video player!
+        
+        </video>
         </div>
         
         <div class="section wow fadeInUp" id="section2">
@@ -208,89 +216,83 @@
                 </div>
             </div>
         </div>
-        <div class="section hidden-sm hidden-md hidden-lg">
-            <div class="row">
-                <div class="col-md-6 col-sm-6 col-md-offset-7 col-sm-offset-7">
-                    <div class="formRegister bgGradient wow fadeInRight" id="frm-register" style="visibility: visible; animation-name: fadeInRight;">
-                        <div class="inner">
-                            <h3>đăng ký nhận báo giá</h3>
-                            <form id="frmRegDownloadSub" autocomplete="off" novalidate class="bv-form">
-
-                                <div id="frmContentRegSub">
-                                    <div class="form-group has-feedback">
-                                        <select class="form-control" id="cboSubCity" name="cboSubCity">
-                                            <option value="">--- Tỉnh/thành phố ---</option>
-                                            <option value="Hà Nội">Hà Nội</option>
-                                            <option value="An Giang">An Giang</option>
-                                            <option value="Bà Rịa Vũng Tàu">Bà Rịa Vũng Tàu</option>
-                                            <option value="Bạc Liêu">Bạc Liêu</option>
-                                            <option value="Bình Dương">Bình Dương</option>
-                                            <option value="Bình Định">Bình Định</option>
-                                            <option value="Bình Phước">Bình Phước</option>
-                                            <option value="Bình Thuận">Bình Thuận</option>
-                                            <option value="Cần Thơ">Cần Thơ</option>
-                                            <option value="Đắk Lắk">Đắk Lắk</option>
-                                            <option value="Đà Nẵng">Đà Nẵng</option>
-                                            <option value="Đồng Nai">Đồng Nai</option>
-                                            <option value="Gia Lai">Gia Lai</option>
-                                            <option value="Hà Tĩnh">Hà Tĩnh</option>
-                                            <option value="Hải Dương">Hải Dương</option>
-                                            <option value="Hải Phòng">Hải Phòng</option>
-                                            <option value="Hòa Bình">Hòa Bình</option>
-                                            <option value="Kiên Giang">Kiên Giang</option>
-                                            <option value="Kon Tum">Kon Tum</option>
-                                            <option value="Khánh Hoà">Khánh Hoà</option>
-                                            <option value="Lạng Sơn">Lạng Sơn</option>
-                                            <option value="Lâm Đồng">Lâm Đồng</option>
-                                            <option value="Nghệ An">Nghệ An</option>
-                                            <option value="Phú Thọ">Phú Thọ</option>
-                                            <option value="Quảng Bình">Quảng Bình</option>
-                                            <option value="Quảng Nam">Quảng Nam</option>
-                                            <option value="Quảng Ninh">Quảng Ninh</option>
-                                            <option value="Quảng Ngãi">Quảng Ngãi</option>
-                                            <option value="Quảng Trị">Quảng Trị</option>
-                                            <option value="Sơn La">Sơn La</option>
-                                            <option value="Tây Ninh">Tây Ninh</option>
-                                            <option value="Tiền Giang">Tiền Giang</option>
-                                            <option value="TP. HCM">TP. HCM</option>
-                                            <option value="Tuyên Quang">Tuyên Quang</option>
-                                            <option value="Thái Bình">Thái Bình</option>
-                                            <option value="Thái Nguyên">Thái Nguyên</option>
-                                            <option value="Thanh Hóa">Thanh Hóa</option>
-                                            <option value="Thừa Thiên Huế">Thừa Thiên Huế</option>
-                                            <option value="Vĩnh Long">Vĩnh Long</option>
-                                            <option value="Vĩnh Phúc">Vĩnh Phúc</option>
-                                            <option value="Yên Bái">Yên Bái</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group has-feedback">
-                                        <select class="form-control" id="cboSubPartner" name="cboSubPartner">
-                                            <option value="">--- Showroom/Đại lý ---</option>
-                                        </select>
-
-                                    </div>
-                                    <div class="form-group">
-                                        <hr>
-                                    </div>
-                                    <div class="form-group has-feedback">
-                                        <input type="text" class="form-control" name="namesub" id="txtNameSub" value="" placeholder="Họ và tên(*)">
-                                    </div>
-                                    <div class="form-group has-feedback">
-                                        <input type="text" class="form-control" name="phonesub" id="txtPhoneSub" onkeypress="return AllowNumberOnly(event);" placeholder="Số điện thoại(*)">
-                                    </div>
-                                    <div class="form-group has-feedback">
-                                        <input type="text" class="form-control" name="emailsub" id="txtEmailSub" placeholder="Email">
-                                    </div>
-                                    <div class="form-group text-center">
-                                        <button class="btn btnRegister">Đăng ký ngay</button>
-                                    </div>
-                                </div>
-                                <div id="content-register-sub"></div>
-                            </form>
-
+        <div class="formRegister wow fadeInRight visible-xs" id="frm-register" style="visibility: visible; animation-name: fadeInRight;">
+            <div class="inner">
+                <h3>Đăng ký nhận báo giá</h3>
+                <form id="frmRegDownload" autocomplete="off" novalidate class="bv-form">
+    
+                    <div id="frmContentReg">
+                        <div class="form-group has-feedback">
+                            <select class="form-control" id="cboCity" name="cboCity">
+                                <option value="">--- Tỉnh/thành phố ---</option>
+                                <option value="Hà Nội">Hà Nội</option>
+                                <option value="An Giang">An Giang</option>
+                                <option value="Bà Rịa Vũng Tàu">Bà Rịa Vũng Tàu</option>
+                                <option value="Bạc Liêu">Bạc Liêu</option>
+                                <option value="Bình Dương">Bình Dương</option>
+                                <option value="Bình Định">Bình Định</option>
+                                <option value="Bình Phước">Bình Phước</option>
+                                <option value="Bình Thuận">Bình Thuận</option>
+                                <option value="Cần Thơ">Cần Thơ</option>
+                                <option value="Đắk Lắk">Đắk Lắk</option>
+                                <option value="Đà Nẵng">Đà Nẵng</option>
+                                <option value="Đồng Nai">Đồng Nai</option>
+                                <option value="Gia Lai">Gia Lai</option>
+                                <option value="Hà Tĩnh">Hà Tĩnh</option>
+                                <option value="Hải Dương">Hải Dương</option>
+                                <option value="Hải Phòng">Hải Phòng</option>
+                                <option value="Hòa Bình">Hòa Bình</option>
+                                <option value="Kiên Giang">Kiên Giang</option>
+                                <option value="Kon Tum">Kon Tum</option>
+                                <option value="Khánh Hoà">Khánh Hoà</option>
+                                <option value="Lạng Sơn">Lạng Sơn</option>
+                                <option value="Lâm Đồng">Lâm Đồng</option>
+                                <option value="Nghệ An">Nghệ An</option>
+                                <option value="Phú Thọ">Phú Thọ</option>
+                                <option value="Quảng Bình">Quảng Bình</option>
+                                <option value="Quảng Nam">Quảng Nam</option>
+                                <option value="Quảng Ninh">Quảng Ninh</option>
+                                <option value="Quảng Ngãi">Quảng Ngãi</option>
+                                <option value="Quảng Trị">Quảng Trị</option>
+                                <option value="Sơn La">Sơn La</option>
+                                <option value="Tây Ninh">Tây Ninh</option>
+                                <option value="Tiền Giang">Tiền Giang</option>
+                                <option value="TP. HCM">TP. HCM</option>
+                                <option value="Tuyên Quang">Tuyên Quang</option>
+                                <option value="Thái Bình">Thái Bình</option>
+                                <option value="Thái Nguyên">Thái Nguyên</option>
+                                <option value="Thanh Hóa">Thanh Hóa</option>
+                                <option value="Thừa Thiên Huế">Thừa Thiên Huế</option>
+                                <option value="Vĩnh Long">Vĩnh Long</option>
+                                <option value="Vĩnh Phúc">Vĩnh Phúc</option>
+                                <option value="Yên Bái">Yên Bái</option>
+                            </select>
+                        </div>
+                        <div class="form-group has-feedback">
+                            <select class="form-control" id="cboPartner" name="cboPartner">
+                                <option value="">--- Showroom/Đại lý ---</option>
+                            </select>
+    
+                        </div>
+                        <div class="form-group">
+                            <hr>
+                        </div>
+                        <div class="form-group has-feedback">
+                            <input type="text" class="form-control" name="name" id="txtName" value="" placeholder="Họ và tên(*)">
+                        </div>
+                        <div class="form-group has-feedback">
+                            <input type="text" class="form-control" name="phone" id="txtPhone" onkeypress="return AllowNumberOnly(event);" placeholder="Số điện thoại(*)">
+                        </div>
+                        <div class="form-group has-feedback">
+                            <input type="text" class="form-control" name="email" id="txtEmail" placeholder="Email">
+                        </div>
+                        <div class="form-group text-center">
+                            <button class="btn btnRegister">Đăng ký ngay</button>
                         </div>
                     </div>
-                </div>
+                    <div id="content-register"></div>
+                </form>
+    
             </div>
         </div>
         <div id="footer" class="wow fadeInUp">
@@ -315,6 +317,7 @@
                 </form>
             </div>
         </div>
+        <a href="" class="btn btnFix visible-xs">Nhận báo giá</a>
     </div>
     <script type="text/javascript" src="js/toastr.js"></script>
     <script src="js/smooth-scroll.js"></script>
