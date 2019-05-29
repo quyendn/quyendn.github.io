@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js" style="height:100%;">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>KIA Sedona</title>
+    <meta name="description" content="KIA Sedona">
+    <meta name="keywords" content="KIA Sedona">
+    <meta property="og:title" content="KIA Sedona" />
+    <meta property="og:url" content="" />
+    <meta property="og:description" content="KIA Sedona" />
+    <link rel="shortcut icon" href="images/icon-logo.png">
+    <meta property="fb:app_id" content="890776717644660" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+    
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.nanoscroller.min.js"></script>
+    <script src="js/jquery.tmpl.min.js"></script>
+    <script type="text/javascript" src="js/wow/wow.min.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <link href="css/font-face.css" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrapValidator.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/toastr.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+    
+    <link href="css/main.css" rel="stylesheet" type="text/css" />
+    <script src="js/main.js"></script>
+    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+
+
+    <link rel="stylesheet" type="text/css" href="css/fullpage.min.css" />
+    <link rel="stylesheet" type="text/css" href="examples.css" />
+
+    <!--[if IE]>
+        <script type="text/javascript">
+             var console = { log: function() {} };
+        </script>
+    <![endif]-->
+
+    <!--<style>
+      .myContent{
+        height: 300px;
+      }
+    </style>-->
+
+</head>
+<body>
+
+
+
+<ul id="pagination-st">
+  <li data-menuanchor="anchor0"><a href="#anchor1"><i class="fa fa-chevron-up"></i></a></li>
+  <li data-menuanchor="anchor2"><a href="#anchor2"><span class="number">1</span><span class="text">tổng quan</span></a></li>
+  <li data-menuanchor="anchor3"><a href="#anchor3"><span class="number">2</span><span class="text">ngoại thất</span></a></li>
+  <li data-menuanchor="anchor4"><a href="#anchor4"><span class="number">3</span><span class="text">nội thất</span></a></li>
+  <li data-menuanchor="anchor5"><a href="#anchor5"><span class="number">4</span><span class="text">vận hành</span></a></li>
+  <li data-menuanchor="anchor6"><a href="#anchor6"><span class="number">5</span><span class="text">an toàn</span></a></li>
+  <li data-menuanchor="anchor7"><a href="#anchor7"><span class="number">6</span><span class="text">liên hệ</span></a></li>
+</ul>
+
+<div id="fullpage">
+    <div class="section" id="section0">
+    	<div class="myContent">
+        <div id="header">
+            <div class="container">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"></button>
+                <a data-scroll="" data-options="easing: easeInQuad" href="#slide" class="navbar-brand">
+                    <img src="img/logo.png">
+                </a>
+
+                <nav class="collapse navbar-collapse navbar-right" role="navigation">
+                    <ul class="nav navbar-nav">
+                        <li data-menuanchor="anchor2"><a href="#anchor2">tổng quan</a></li>
+                        <li data-menuanchor="anchor3"><a href="#anchor3">ngoại thất</a></li>
+                        <li data-menuanchor="anchor4"><a href="#anchor4">nội thất</a></li>
+                        <li data-menuanchor="anchor5"><a href="#anchor5">vận hành</a></li>
+                        <li data-menuanchor="anchor6"><a href="#anchor6">an toàn</a></li>
+                        <li data-menuanchor="anchor7"><a href="#anchor7">liên hệ</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div id="slide-wrap" style="">
+            <div class="owl-carousel owl-carousel-slide">
+                <div class="item"><img src="img/slide1.png"></div>
+                <div class="item"><img src="img/slide2.png"></div>
+                <div class="item"><img src="img/slide3.png"></div>
+            </div>
+            <div class="formRegister" id="frm-register" style="visibility: visible; animation-name: fadeInRight;">
+            	<div class="container">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-4 col-md-offset-8 col-sm-offset-8">
+                            <div class="inner">
+                                <div class="tl text-center">
+                                    <div>Đăng ký báo giá / lái thử</div>
+                                </div>
+                                <form id="frmRegDownload" autocomplete="off" novalidate class="bv-form">
+                                    <div id="frmContentReg">
+                                        <div class="form-group has-feedback">
+                                            <select class="form-control">
+                                                <option>--- Tỉnh/thành phố ---</option>
+                                            </select>
+                                         </div>
+                                        <div class="form-group has-feedback">
+                                            <select class="form-control">
+                                                <option>--- Showroom/Đại lý ---</option>
+                                            </select>
+                                            
+                                        </div>
+                                        <div class="form-group"><hr></div>
+                                        <div class="form-group has-feedback">
+                                            <input type="text" class="form-control" name="name" id="txtName" value="" placeholder="Họ và tên(*)">
+                                        </div>
+                                        <div class="form-group has-feedback">
+                                            <input type="text" class="form-control" name="phone" id="txtPhone" onkeypress="return AllowNumberOnly(event);"  placeholder="Số điện thoại(*)">
+                                        </div>
+                                        <div class="form-group has-feedback">
+                                            <input type="text" class="form-control" name="email" id="txtEmail" placeholder="Email">
+                                        </div>
+                                        <div class="form-group text-center">
+                                            <button class="btn btnBaogia">Đăng ký ngay</button>
+                                            <button class="btn btnLaithu">Đăng ký lái thử</button>
+                                        </div>
+                                    </div>
+                                    <div id="content-register"></div>
+                                </form>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="section fp-auto-height" id="section1">
+        
+        <div class="container">
+                <div class="row text-center" id="version">
+                    <div class="col-md-4 col-sm-4">
+                        <div class="version-name">
+                            <div>SEDONA LUXURY</div>
+                            <p>1.129.000.000</p>
+                        </div>
+                        <div><img src="img/thumb_w.png"></div>
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                        <div class="version-name">
+                            <div>SEDONA PLATINUM D</div>
+                            <p>1.209.000.000</p>
+                        </div>
+                        <div><img src="img/thumb_r.png"></div>
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                        <div class="version-name">
+                            <div>SEDONA LUXURY</div>
+                            <p>1.429.000.000</p>
+                        </div>
+                        <div><img src="img/thumb_b.png"></div>
+                    </div>
+                    
+                </div>
+                <div class="text-center">
+                	<div class="st-hd">
+                    	<h3><span class="red">KIA</span> SEDONA</h3>
+                        <p>NGƯỜI BẠN ĐỒNG HÀNH ĐÁNG TIN CẬY TRONG MỌI HÀNH TRÌNH CUỘC SỐNG</p>
+                        <div class="line"></div>
+                    </div>
+                    <div style="max-width:860px; margin:0 auto">Khoác lên mình thiết kế sang trọng và không gian nội thất rộng rãi, Kia Sedona Mới chính là sự lựa chọn hoàn hảo cho các khách hàng có nhu cầu tìm một mẫu xe 7 chỗ có thể đáp ứng đầy đủ nhu cầu sử dụng như thoải mái vi vu du lịch cùng gia đình, sang trọng khi đón tiếp và gặp gỡ đối tác, đem lại sự tiện nghi trên tất cả các chuyến công tác hoặc di chuyển đường dài.</div>
+                </div>
+            </div>
+    </div>
+    <div class="section fp-auto-height" id="section2">
+        <div class="">
+          <div class="container text-center">
+                <div class="bgGradient">
+                    <div class="st-hd">
+                        <h3><span class="red">CHUẨN MỰC</span> CỦA SỰ SANG TRỌNG</h3>
+                        <div class="line"></div>
+                    </div>
+                    <p>Mang đến sự mới mẻ, đầy cuốn hút trong thiết kế và tiện nghi, Kia Sedona Mới luôn bên bạn trên mọi chuyến hành trình. Với diện mạo sang trọng, lịch lãm cùng không gian rộng rãi bậc nhất phân khúc, chiếc xe sẽ mang đến những trải nghiệm hoàn toàn mới, giúp bạn định nghĩa lại khái niệm về sự hiện đai và tính tiện nghi. Thú vị hơn, hào hứng hơn, sang trọng hơn.</p>
+                </div>
+                <div class="text-center" id="products">
+                	<div class="owl-carousel owl-carousel-product">
+                        <div class="item"><img src="img/c1.png"></div>
+                        <div class="item"><img src="img/c2.png"></div>
+                        <div class="item"><img src="img/c3.png"></div>
+                        <div class="item"><img src="img/c4.png"></div>
+                        <div class="item"><img src="img/c5.png"></div>
+                        <div class="item"><img src="img/c6.png"></div>
+                        <div class="item"><img src="img/c7.png"></div>
+                        <div class="item"><img src="img/c8.png"></div>
+                        <div class="item"><img src="img/c9.png"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section fp-auto-height" id="section3">
+        <div class="myContent">
+          <div class="container text-center">
+            	<div class="row">
+                	<div class="col-md-4 col-sm-12 col-md-push-4">
+                    	<div class="st-hd text-center"><h3><span class="red">TIỆN NGHI</span> CAO CẤP</h3><div class="line"></div></div>
+                        <p>Ứng dụng cải tiến công nghệ mới, Sedona trang bị những tính năng hiện đại duy nhất phân khúc khiến cho việc di chuyển trở nên dễ dàng hơn bao giờ hết. Sedona chính là thành quả vượt trội của kết nối công nghệ cùng phương tiện giải trí cao cấp, với mong muốn mang lại những trải nghiệm hàng đầu cho hành khách.</p>
+                        <div><img src="img/thumb_tienich.png"></div>
+                    </div>
+                	<div class="col-md-4 col-sm-6 col-md-pull-4">
+                    	<div><img src="img/tienich-1.png"></div>
+                        <div><img src="img/tienich-3.png"></div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                    	<div><img src="img/tienich-2.png"></div>
+                        <div><img src="img/tienich-4.png"></div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-md-push-4 col-sm-push-3 clearfix" style="clear:both">
+                    	<div><img src="img/tienich-5.png"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section fp-auto-height" id="section4">
+        <div class="myContent">
+          <div class="container">
+                <div style="margin:0 auto; max-width:890px; position:relative;height:420px">
+                	<div class="bdslide"></div>
+                	<div id="wrapper_bu">
+                        <div id="bu1" class="holder_bu"><img src="img/sl1.jpg"></div>
+                        <div id="bu2" class="holder_bu"><img src="img/sl2.jpg"></div>
+                        <div id="bu3" class="holder_bu"><img src="img/sl3.jpg"></div>
+                        <div id="bu4" class="holder_bu"><img src="img/sl4.jpg"></div>
+                        <div id="bu5" class="holder_bu"><img src="img/sl5.jpg"></div>
+                    </div>
+                    <script>Conclave.auto()</script>
+                    
+                    
+                </div>
+                <div class="text-center">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-md-push-3">
+                        	<div class="bgGradient">
+                                <div class="st-hd"><h3><span class="red">VẬN HÀNH</span> MẠNH MẼ</h3><div class="line"></div></div>
+                                <p>Sedona mới là biểu tượng cho sự cân bằng giữa sức mạnh và khả năng xử lý linh hoạt, trang bị động cơ diesel tăng 7 mã lực so với phiên bản hiện hữu. Ngoài ra, Kia Sedona mới còn được trang bị động cơ xăng 3.3 L đầy mạnh mẽ giúp xe có một chế độ vận hành ưu việt.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-3 col-md-pull-6">
+                        	<div><img src="img/dongco_1.png"></div>
+                            <h2>Động cơ xăng 3.3L</h2>
+                            <p>Hộp số tự động 6 cấp</p>
+                        </div>
+                        <div class="col-md-3 col-sm-3">
+                        	<div><img src="img/dongco_2.png"></div>
+                            <h2>Động cơ dầu 2.2L</h2>
+                            <p>Hộp số tự động 8 cấp</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section fp-auto-height" id="section5">
+        <div class="myContent">
+          <div class="inner">
+                <div class="container">
+                    <div class="st-hd text-center"><h3><span class="red">AN TOÀN</span> CHUẨN 5 SAO TOÀN CẦU</h3><div class="line"></div></div>
+                    <div class="row">
+                        <div class="col-md-8 col-sm-12 text-center">
+                            <p>Mạnh mẽ từ trong ra ngoài, Sedona tích hợp công nghệ chủ động và thụ động giúp bảo vệ bạn và các hành khách trên xe. Bạn được toàn quyền điều khiển khi vận hành xe trên suốt những chặng đường khác nhau. Thuộc danh sách những mẫu xe cỡ lớn đạt chuẩn 5 sao an toàn hàng đầu, Kia Sedona liên tiếp nhận các giải thưởng an toàn uy tín như JD Power APEAL Awards, 2017 Top Safety Pick, 5-Star Safety Ratings NHTSA.</p>
+                            <div><img src="img/chungnhan.jpg"></div>
+                            <p>Consumer Reports đã thu thập dữ liệu từ 470.000 xe ô tô ở khu vực khác nhau và ghi nhận các đánh giá về mức độ hài lòng từ chủ sở hữu để chọn ra 10 mẫu xe có độ tin cậy nhất 2019. Đáng chú ý, Kia Sedona Mới là mẫu xe 7 chỗ cỡ lớn duy nhất nằm trong danh sách 10 xe đáng tin cậy nhất toàn cầu. </p>
+                        </div>
+                        <div class="col-md-4 col-sm-12 text-center">
+                            <div class="row">
+                            	<div class="col-md-12 col-sm-4">
+                                	<h2>HỆ THỐNG TÚI KHÍ &  KHUNG THÉP GIA CƯỜNG</h2>
+                                    <div><img src="img/antoan_1.jpg"></div>
+                                </div>
+                                <div class="col-md-12 col-sm-4">
+                                	<h2>HỆ THỐNG TÚI KHÍ &  KHUNG THÉP GIA CƯỜNG</h2>
+                                    <div><img src="img/antoan_2.jpg"></div>
+                                </div>
+                                <div class="col-md-12 col-sm-4">
+                                	<h2>HỆ THỐNG CẢNH BÁO ĐIỂM MÙ</h2>
+                                    <div><img src="img/antoan_3.jpg"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section fp-auto-height" id="section6">
+        <div class="">
+          <div id="footer">
+            <div class="container">
+            	<div class="row">
+                	<div class="col-md-8 col-sm-7">
+                    	<h3>công ty tnhh phân phối ô tô du lịch chu lai trường hải</h3>
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tbody>
+                            <tr>
+                              <td>Giấy CNĐKDN:</td>
+                              <td>4000779880 ngày cấp 27/10/2010</td>
+                            </tr>
+                            <tr>
+                              <td>Cơ quan cấp:</td>
+                              <td>Phòng đăng ký kinh doanh sở kế hoạch và đầu tư tỉnh Quảng Nam  </td>
+                            </tr>
+                            <tr>
+                              <td>Cơ quan cấp:</td>
+                              <td>Thôn 4. xã Tam Hiệp, huyện Núi Thành, tỉnh Quảng Nam, Việt Nam</td>
+                            </tr>
+                          </tbody>
+                        </table>
+
+                    </div>
+                    <div class="col-md-4 col-sm-5 social">
+                        <a href=""><img src="img/ic_phone.png"></a>
+                        <a href=""><img src="img/ic_fb.png"></a>
+                        <a href=""><img src="img/ic_mail.png"></a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="js/fullpage.min.js"></script>
+<script type="text/javascript" src="js/examples.js"></script>
+
+<script type="text/javascript">
+  var myFullpage = new fullpage('#fullpage', {
+      verticalCentered: true,
+      anchors: ['anchor1', 'anchor2', 'anchor3', 'anchor4', 'anchor5', 'anchor6', 'anchor7'],
+      menu: '#pagination-st',
+  });
+</script>
+
+<!---->
+    <script src="js/smooth-scroll.js"></script>
+    <script type="text/javascript" src="js/bootstrapValidator.min.js"></script>
+    <script type="text/javascript" src="js/form-validation.js"></script>
+    <script type="text/javascript" src="js/toastr.js"></script>
+    <script type="text/javascript">
+        new WOW().init();
+        function AllowNumberOnly(evt) {
+            evt = (evt) ? evt : event;
+            var charCode = (evt.charCode) ? evt.charCode : ((evt.keyCode) ? evt.keyCode : ((evt.which) ? evt.which : 0));
+            if ((charCode > 31) && (charCode < 48 || charCode > 57) && charCode != 8 && charCode != 37 && charCode != 39 && charCode != 45 && charCode != 46) {
+                return false;
+            }
+            return true;
+        }
+
+        
+        $(document).ready(function () {
+            var owl = $('.owl-carousel');
+            owl.owlCarousel({
+                navText: [$('.left'), $('.right')],
+                nav: false,
+                loop: true,
+                autoHeight: true,
+                transitionStyle: "fade",
+                stopOnHover: true,
+                singleItem: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 1
+                    },
+                    1000: {
+                        items: 1
+                    }
+                }
+            });
+            $(".lightfancybox").fancybox({
+                autoScale: true,
+                //openEffect 	:	'elastic',
+                //closeEffect 	:	'elastic',
+                fitToView: true,
+                scrolling: 'no',
+                //type: 'image',
+                helpers: {
+                    title: {
+                        type: 'over'
+                    },
+                    thumbs: {
+                        width: 76,
+                        height: 56,
+                        position: 'bottom'
+                    }
+                },
+                beforeLoad: function () {
+                    if (this.title == "") {
+                        if ($(this.element).attr('caption') == "") {
+                            this.title = "Marina Complex Da Nang City";
+                        } else {
+                            this.title = $(this.element).attr('caption');
+                        }
+                    }
+
+                }
+            });
+            
+        });
+        
+    </script>
+    <script>
+        smoothScroll.init({
+		speed: 1000,
+		easing: 'easeInOutCubic',
+		offset: 70,
+		updateURL: false,
+		callbackBefore: function (toggle, navbar1) { },
+		callbackAfter: function (toggle, navbar1) { }
+		});
+
+    </script>
+    <script>
+    	$("button").click(function(){
+			$(".navbar-toggle").toggleClass("close");
+		});
+
+    	$(".navbar-toggle").click(function(){
+			$("#header").toggleClass("open");
+		});
+  
+    	$(".navbar-nav a").click(function(){
+			$(".navbar-collapse").removeClass("in");
+			$(".navbar-toggle").removeClass("close");
+		});
+		
+		$("#pagination-st li a").click(function(){
+			$("#pagination-st li a").removeClass("active");
+			$(this).toggleClass("active");
+		});
+    </script>
+    <script>
+		$('.owl-carousel-slide').owlCarousel({
+				loop: true,
+				margin: 10,
+				responsiveClass: true,
+				responsive: {
+					0: {
+						items: 1,
+						nav: true
+					},
+					768: {
+						items: 1,
+						nav: true
+					},
+					1000: {
+						items: 1,
+						nav: true,
+						loop: true,
+						margin: 0,
+					}
+				}
+			})
+		$('.owl-carousel-product').owlCarousel({
+				loop: true,
+				margin: 10,
+				responsiveClass: true,
+				responsive: {
+					0: {
+						items: 1,
+						nav: true
+					},
+					768: {
+						items: 1,
+						nav: true
+					},
+					1000: {
+						items: 1,
+						nav: true,
+						loop: true,
+						margin: 10,
+					}
+				}
+			})
+			$('.owl-carousel-pic').owlCarousel({
+				loop: true,
+				margin: 10,
+				responsiveClass: true,
+				responsive: {
+					0: {
+						items: 1,
+						nav: true
+					},
+					768: {
+						items: 1,
+						nav: true
+					},
+					1000: {
+						items: 1,
+						nav: true,
+						loop: true,
+						margin: 0,
+						
+					}
+				}
+			})
+		</script>
+
+    <script src="js/smooth-scrollbar.js"></script>
+    <link href="css/smooth-scrollbar.css" rel="stylesheet" type="text/css" />
+    
+</body>
+</html>
