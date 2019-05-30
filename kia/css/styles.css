@@ -794,3 +794,24 @@ img{
 .has-success .form-control-feedback {
     padding-top: 10px;
 }
+/**/
+#footer #link .row{
+	margin-right:-1px;
+	margin-left:-1px;
+	}
+#footer #link .col-md-4{
+	padding-right:1px;
+	padding-left:1px;
+	}
+#footer #link .col-md-4 a{
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	text-transform:uppercase;
+	display:block;
+	padding:10px;
+	color:#da0000;
+	text-align:center;
+	font-family: 'UTMNeoSansIntelBold';
+	background:url(../img/bg_linkft.png) repeat-x 50% 50%;
+	}
