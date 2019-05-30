@@ -300,7 +300,9 @@ a, .btn, button{
 	padding-right:0;
 	padding-left:0;
 	margin-bottom:30px;
-	
+	}
+#version a{
+	color:#fff;
 	}
 .version-name{
 	text-transform:uppercase;
@@ -374,7 +376,7 @@ a, .btn, button{
 	background:#000;
 	}
 #products .owl-dots .owl-dot:nth-child(3){
-	background:#955263;
+	background:#57242b;
 	}
 #products .owl-dots .owl-dot:nth-child(4){
 	background:#ffffff;
@@ -757,3 +759,38 @@ img{
 #section0{
 	padding:0;
 	}
+#section3 .owl-dots{
+	display:none;
+	}
+#section3 .owl-loaded .owl-prev{
+	background:url(../img/btn_slide_left.png) no-repeat 50% 50%;
+	}	
+#section3 .owl-loaded .owl-next{
+	background:url(../img/btn_slide_right.png) no-repeat 50% 50%;
+	}	
+.modal .modal-body{
+	color:#222;
+	}
+.modal .modal-body td, .modal .modal-body th{
+	padding:10px;
+	}
+.modal .modal-body .table{
+	margin:0;
+	}
+.zoom {
+  transition: all 300ms ease-in-out;
+	-webkit-transition: all 300ms ease-in-out;
+	-moz-transition: all 300ms ease-in-out;
+	-o-transition: all 300ms ease-in-out;
+}
+
+.zoom:hover {
+  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+.has-error .form-control-feedback {
+    padding-top: 10px;
+}
+
+.has-success .form-control-feedback {
+    padding-top: 10px;
+}
