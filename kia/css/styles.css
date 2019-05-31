@@ -770,6 +770,7 @@ img{
 	}	
 .modal .modal-body{
 	color:#222;
+	padding:0;
 	}
 .modal .modal-body td, .modal .modal-body th{
 	padding:10px;
