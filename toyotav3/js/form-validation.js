@@ -75,12 +75,20 @@ $(document).ready(function() {
                         message: 'Cần chọn địa điểm.'
                     }
                 }
+            },
+            cboVitri: {
+                validators: {
+                    notEmpty: {
+                        message: 'Cần chọn vị trí mong muốn.'
+                    }
+                }
             }
+
         },
         onSuccess: function (e) {
 
             var name = $('#txtName').val();
-            var email = $('#txtEmail').val();
+            var email = $('#cboVitri').val();
             var phone = $('#txtPhone').val();
             var location = $("#cboLocation").val();
             var birthdate = $("#txtBrith").val();

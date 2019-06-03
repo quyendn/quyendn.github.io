@@ -6,8 +6,6 @@
 // - ThemeOn.net -
 
 $(document).ready(function() {
-
-
     // FORM VALIDATION
     // =================================================================
     // Require Bootstrap Validator
@@ -33,6 +31,16 @@ $(document).ready(function() {
         excluded: [':disabled'],
         feedbackIcons: faIcon,
         fields: {
+            email: {
+                validators: {
+                    notEmpty: {
+                        message: 'Địa chỉ email không được để trống.'
+                    },
+                    emailAddress: {
+                        message: 'Không đúng định dạng email'
+                    }
+                }
+            },
             name: {
                 validators: {
                     notEmpty: {
@@ -47,7 +55,8 @@ $(document).ready(function() {
                     },
                     stringLength: {
                         min: 10,
-                        message: 'Số điện thoại chỉ có thể là 10số.'
+                        max: 10,
+                        message: 'Số điện thoại chỉ có thể là 10 số.'
                     }
                 }
             }
@@ -55,200 +64,58 @@ $(document).ready(function() {
         onSuccess: function(e) {
 
             var name = $('#txtName').val();
-            var phone = $('#txtPhone').val();
             var email = $('#txtEmail').val();
-            var address = $('#txtAdd').val();
-            var emailto = "phongtruyenthong@kosy.vn";
+            var phone = $('#txtPhone').val();
+            var city = $('#cboCity').val();
+            var partner = $('#cboPartner').val();
+            var emailto = "quyendn84@gmail.com";
+            var typeId = 1;
             var check = checkPhoneNumber();
             if (!check)
                 return;
-            var dataJSON = { "name": name, "phone": phone, "address": address, "email": email, "emailto": emailto }
-            showLoadingContactImage('content-register', 'frmContentReg');
+            var dataJSON = { "city": city, "partner": partner, "name": name, "phone": phone, "email": email, "emailto": emailto, "typeId": typeId };
+            showLoadingContactImage('content-register', 'frmContentDownloadReg');
             $.ajax({
-                url: "https://alpha.f5academy.net/api/Kosyservice",
+                url: "https://alpha.f5academy.net/api/Mazdaservice",
                 type: "Post",
                 async: false,
                 data: dataJSON,
                 contentType: 'application/json; charset=utf-8',
                 dataType: 'jsonp',
                 success: function(states) {
-                    $('#frmMobile').bootstrapValidator('resetForm', true);
-                    hideLoadingContactImage('content-register', 'frmContentReg');
+                    $('#frmRegDownload').bootstrapValidator('resetForm', true);
+                    hideLoadingContactImage('content-register', 'frmContentDownloadReg');
                 },
                 error: function(ex) {
                     toastr.error('Đã có lỗi trong quá trình đăng ký, mời bạn thử lại.', { timeOut: 5000 })
-                    hideLoadingContactImage('content-register', 'frmContentReg');
+                    hideLoadingContactImage('content-register', 'frmContentDownloadReg');
                 },
                 complete: function(jqXHR, textStatus) {
                     $('#txtName').val('');
-                    $("#txtPhone").val('');
-                    $('#txtMail').val('');
+                    $("#txtEmail").val('');
+                    $('#txtPhone').val('');
                     $('#frmRegDownload').bootstrapValidator('resetForm', true);
-                    hideLoadingContactImage('content-register', 'frmContentReg');
                     toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', { timeOut: 5000 })
-                    location.href = "https://quyendn.github.io/kosy/dang-ky-thanh-cong.html";
+                    hideLoadingContactImage('content-register', 'frmContentDownloadReg');
+                    window.location.href = "http://quyendn.github.io/kia/dang-ky-thanh-cong.html";
                 }
             });
         }
     }).on('success.form.fv', function(e) {
 
     });
-    $('#frmSaleOff').bootstrapValidator({
-        message: 'This value is not valid',
-        excluded: [':disabled'],
-        feedbackIcons: faIcon,
-        fields: {
-           
-            nameoff: {
-                validators: {
-                    notEmpty: {
-                        message: 'Họ tên không được để trống.'
-                    }
-                }
-            },
-            phoneoff: {
-                validators: {
-                    notEmpty: {
-                        message: 'Điện thoại không được để trống.'
-                    },
-                    stringLength: {
-                        min: 10,
-                        message: 'Số điện thoại chỉ có thể là 10 số.'
-                    }
-                }
-            }
-        },
-        onSuccess: function(e) {
-
-            var name = $('#txtNameOff').val();
-            var phone = $('#txtPhoneOff').val();
-            var email = $('#txtEmailOff').val();
-            var address = $('#txtAddOff').val();
-            var emailto = "phongtruyenthong@kosy.vn";
-            var dataJSON = { "name": name, "phone": phone, "address": address, "email": email, "emailto": emailto }
-            var check = checkPhoneNumber2();
-            if (!check)
-                return;
-            showLoadingContactImage('content-loading', 'frmContentRegSaleOff');
-            $.ajax({
-                url: "https://alpha.f5academy.net/api/Kosyservice",
-                type: "Post",
-                async: false,
-                data: dataJSON,
-                contentType: 'application/json; charset=utf-8',
-                dataType: 'jsonp',
-                success: function(states) {
-                    $('#frmSaleOff').bootstrapValidator('resetForm', true);
-                    hideLoadingContactImage('content-loading', 'frmContentRegSaleOff');
-                },
-                error: function(ex) {
-                    toastr.error('Đã có lỗi trong quá trình đăng ký, mời bạn thử lại.', { timeOut: 5000 })
-                    hideLoadingContactImage('content-loading', 'frmContentRegSaleOff');
-                },
-                complete: function(jqXHR, textStatus) {
-                    $('#txtNameOff').val('');
-                    $("#txtPhoneOff").val('');
-                    $('#txtEmailOff').val('');
-                    $('#frmSaleOff').bootstrapValidator('resetForm', true);
-                    hideLoadingContactImage('content-loading-off', 'frmContentRegSaleOff');
-                    toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', { timeOut: 5000 })
-                    location.href = "https://quyendn.github.io/kosy/dang-ky-thanh-cong.html";
-                }
-            });
-        }
-    }).on('success.form.fv', function(e) {
-
-    });
-    $('#frmRegContentDownload').bootstrapValidator({
-        message: 'This value is not valid',
-        excluded: [':disabled'],
-        feedbackIcons: faIcon,
-        fields: {
-
-            namedownload: {
-                validators: {
-                    notEmpty: {
-                        message: 'Họ tên không được để trống.'
-                    }
-                }
-            },
-            phonedownload: {
-                validators: {
-                    notEmpty: {
-                        message: 'Điện thoại không được để trống.'
-                    },
-                    stringLength: {
-                        min: 10,
-                        message: 'Số điện thoại chỉ có thể là 10 số.'
-                    }
-                }
-            }
-        },
-        onSuccess: function (e) {
-
-            var name = $('#txtNameDownload').val();
-            var phone = $('#txtPhoneDownload').val();
-            var email = $('#txtEmailDownload').val();
-            var address = "";
-            var emailto = "quyendn@gmail.com";
-            var dataJSON = { "name": name, "phone": phone, "address": address, "email": email, "emailto": emailto }
-            var check = checkPhoneNumber3();
-            if (!check)
-                return;
-            showLoadingContactImage('content-download', 'frmContentDownloadReg');
-            $.ajax({
-                url: "https://alpha.f5academy.net/api/Kosyservice",
-                type: "Post",
-                async: false,
-                data: dataJSON,
-                contentType: 'application/json; charset=utf-8',
-                dataType: 'jsonp',
-                success: function (states) {
-                    $('#frmRegContentDownload').bootstrapValidator('resetForm', true);
-                    hideLoadingContactImage('content-download', 'frmContentDownloadReg');
-                },
-                error: function (ex) {
-                    toastr.error('Đã có lỗi trong quá trình đăng ký, mời bạn thử lại.', { timeOut: 5000 })
-                    hideLoadingContactImage('content-download', 'frmContentDownloadReg');
-                },
-                complete: function (jqXHR, textStatus) {
-                    $('#txtNameOff').val('');
-                    $("#txtPhoneOff").val('');
-                    $('#txtEmailOff').val('');
-                    $('#frmRegContentDownload').bootstrapValidator('resetForm', true);
-                    hideLoadingContactImage('content-download', 'frmContentDownloadReg');
-                    toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', { timeOut: 5000 })
-                    $('#formDownload').modal('hide');
-                    location.href = "https://quyendn.github.io/kosy/file/tai_lieu.zip";
-                }
-            });
-        }
-    }).on('success.form.fv', function (e) {
-
-    });
-    function showLoadingImage() {
-
-        $('#content').empty().append('<div id="loading-image" align="center"><img src="img/ajax-loader.gif" alt="Loading..." /></div>');
-        $('#formContentContact').hide();
-
-    }
-
-    function hideLoadingImage() {
-        $('#formContentContact').show();
-        $('#loading-image').remove();
-    }
 
     function showLoadingContactImage(contentLoading, frmContent) {
 
         $('#' + contentLoading).empty().append('<div id="loading-image" align="center"><img src="img/ajax-loader.gif" alt="Loading..." /></div>');
         $('#' + frmContent).hide();
-
     }
 
     function hideLoadingContactImage(contentLoading, frmContent) {
         $('#' + frmContent).show();
         $('#loading-image').remove();
     }
+
     function checkPhoneNumber() {
         var vnf_regex = /((09|03|07|08|05)+([0-9]{8})\b)/g;
         var mobile = $('#txtPhone').val();
@@ -266,38 +133,6 @@ $(document).ready(function() {
             return false;
         }
     }
-    function checkPhoneNumber2() {
-        var vnf_regex = /((09|03|07|08|05)+([0-9]{8})\b)/g;
-        var mobile = $('#txtPhoneOff').val();
-        if (mobile !== '') {
-            if (vnf_regex.test(mobile) == false) {
-                toastr.error('Số điện thoại của bạn không đúng định dạng.', { timeOut: 5000 })
-                $("#txtPhoneOff").focus();
-                return false;
 
-            } else {
-                return true;
-            }
-        } else {
-            toastr.error('Bạn chưa điền số điện thoại.', { timeOut: 5000 })
-            return false;
-        }
-    }
-    function checkPhoneNumber3() {
-        var vnf_regex = /((09|03|07|08|05)+([0-9]{8})\b)/g;
-        var mobile = $('#txtPhoneDownload').val();
-        if (mobile !== '') {
-            if (vnf_regex.test(mobile) == false) {
-                toastr.error('Số điện thoại của bạn không đúng định dạng.', { timeOut: 5000 })
-                $("#txtPhoneDownload").focus();
-                return false;
 
-            } else {
-                return true;
-            }
-        } else {
-            toastr.error('Bạn chưa điền số điện thoại.', { timeOut: 5000 })
-            return false;
-        }
-    }
 });
