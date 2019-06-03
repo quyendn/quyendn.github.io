@@ -439,7 +439,7 @@ a, .btn, button{
 	}
 #section5 h2{
 	font-size:14px;
-	margin:15px 0;
+	margin:15px 0 5px 0;
 	}
 #section5 .col-md-8{
 	padding-bottom:480px;
@@ -786,7 +786,7 @@ img{
 }
 
 .zoom:hover {
-  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 .has-error .form-control-feedback {
     padding-top: 10px;
