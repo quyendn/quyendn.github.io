@@ -27,7 +27,10 @@ $(document).ready(function() {
         // Indicate where the error messages are shown.
         // Tooltip, Popover, Custom Container.
         // =================================================================
-   
+    
+    $(".btnLaithu").on("click", function () {
+        $("#hdTypeId").val(2);
+    });
     $('#frmRegDownload').bootstrapValidator({
         message: 'This value is not valid',
         excluded: [':disabled'],
@@ -85,14 +88,14 @@ $(document).ready(function() {
             var city = $('#cboCity').val();
             var partner = $('#cboPartner').val();
             var emailto = "quyendn84@gmail.com";
-            var typeId = 1;
+            var typeId = $("#hdTypeId").val();
             var check = checkPhoneNumber();
             if (!check)
                 return;
             var dataJSON = { "city": city, "partner": partner, "name": name, "phone": phone, "email": email, "emailto": emailto, "typeId": typeId };
             showLoadingContactImage('content-register', 'frmContentReg');
             $.ajax({
-                url: "https://alpha.f5academy.net/api/Mazdaservice",
+                url: "https://alpha.f5academy.net/api/Kiaservice",
                 type: "Post",
                 async: false,
                 data: dataJSON,
