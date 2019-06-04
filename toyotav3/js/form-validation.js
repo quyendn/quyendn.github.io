@@ -121,7 +121,7 @@ $(document).ready(function() {
                     toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', { timeOut: 5000 })
                     hideLoadingContactImage('content-mobile', 'formContentContactMobile');
                     $("#dk_datve").modal("hide");
-                    window.location.href = "http://quyendn.github.io/toyotav3/dang-ky-thanh-cong.html";
+                    window.location.href = "/dang-ky-thanh-cong.html";
                 }
             });
         }
