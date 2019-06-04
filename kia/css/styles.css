@@ -817,3 +817,6 @@ img{
 	font-family: 'UTMNeoSansIntelBold';
 	background:url(../img/bg_linkft.png) repeat-x 50% 50%;
 	}
+#section5 .col-md-4 .col-md-12{
+	margin-bottom:30px;
+	}
