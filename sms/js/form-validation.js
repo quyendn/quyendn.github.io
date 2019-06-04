@@ -88,17 +88,94 @@ $(document).ready(function() {
                     hideLoadingContactImage('content-register', 'frmContentDownloadReg');
                 },
                 complete: function(jqXHR, textStatus) {
-                    $('#txtName').val('');
-                    $("#txtEmail").val('');
-                    $('#txtPhone').val('');
+                    $('#txtNameDownload').val('');
+                    $("#txtEmailDownload").val('');
+                    $('#txtPhoneDownload').val('');
                     $('#frmRegDownload').bootstrapValidator('resetForm', true);
                     toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', { timeOut: 5000 })
                     hideLoadingContactImage('content-register', 'frmContentDownloadReg');
-                    window.location.href = "http://quyendn.github.io/kia/dang-ky-thanh-cong.html";
+                    window.location.href = "http://quyendn.github.io/sms/dang-ky-thanh-cong.html";
                 }
             });
         }
     }).on('success.form.fv', function(e) {
+
+    });
+    $('#frmRegUserDownload').bootstrapValidator({
+        message: 'This value is not valid',
+        excluded: [':disabled'],
+        feedbackIcons: faIcon,
+        fields: {
+            emaildownload: {
+                validators: {
+                    notEmpty: {
+                        message: 'Địa chỉ email không được để trống.'
+                    },
+                    emailAddress: {
+                        message: 'Không đúng định dạng email'
+                    }
+                }
+            },
+            namedownload: {
+                validators: {
+                    notEmpty: {
+                        message: 'Họ tên không được để trống.'
+                    }
+                }
+            },
+            phonedownload: {
+                validators: {
+                    notEmpty: {
+                        message: 'Điện thoại không được để trống.'
+                    },
+                    stringLength: {
+                        min: 10,
+                        max: 10,
+                        message: 'Số điện thoại chỉ có thể là 10 số.'
+                    }
+                }
+            }
+        },
+        onSuccess: function (e) {
+
+            var name = $('#txtName').val();
+            var email = $('#txtEmail').val();
+            var phone = $('#txtPhone').val();
+            var emailto = "quyendn84@gmail.com";
+            var check = checkPhoneNumber2();
+            if (!check)
+                return;
+            var dataJSON = { "name": name, "phone": phone, "email": email, "emailto": emailto };
+            showLoadingContactImage('content-user-register', 'frmContentDownloadUserReg');
+            $.ajax({
+                url: "https://alpha.f5academy.net/api/MobifoneSMSservice",
+                type: "Post",
+                async: false,
+                data: dataJSON,
+                contentType: 'application/json; charset=utf-8',
+                dataType: 'jsonp',
+                success: function (states) {
+                    $('#frmRegDownload').bootstrapValidator('resetForm', true);
+                    hideLoadingContactImage('content-user-register', 'frmContentDownloadUserReg');
+                    $("#formDownload").modal('hide');
+                },
+                error: function (ex) {
+                    toastr.error('Đã có lỗi trong quá trình đăng ký, mời bạn thử lại.', { timeOut: 5000 })
+                    hideLoadingContactImage('content-register', 'frmContentDownloadUserReg');
+                },
+                complete: function (jqXHR, textStatus) {
+                    $('#txtName').val('');
+                    $("#txtEmail").val('');
+                    $('#txtPhone').val('');
+                    $('#frmRegUserDownload').bootstrapValidator('resetForm', true);
+                    toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', { timeOut: 5000 })
+                    hideLoadingContactImage('content-user-register', 'frmContentDownloadUserReg');
+                    $("#formDownload").modal('hide');
+                    window.location.href = "http://quyendn.github.io/sms/dang-ky-thanh-cong.html";
+                }
+            });
+        }
+    }).on('success.form.fv', function (e) {
 
     });
 
@@ -130,6 +207,22 @@ $(document).ready(function() {
             return false;
         }
     }
+    function checkPhoneNumber2() {
+        var vnf_regex = /((09|03|07|08|05)+([0-9]{8})\b)/g;
+        var mobile = $('#txtPhone').val();
+        if (mobile !== '') {
+            if (vnf_regex.test(mobile) == false) {
+                toastr.error('Số điện thoại của bạn không đúng định dạng.', { timeOut: 5000 })
+                $("#txtPhone").focus();
+                return false;
 
+            } else {
+                return true;
+            }
+        } else {
+            toastr.error('Bạn chưa điền số điện thoại.', { timeOut: 5000 })
+            return false;
+        }
+    }
 
 });

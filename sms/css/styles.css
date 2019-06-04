@@ -465,16 +465,21 @@ a.btn-phone:hover {
     background: url(../img/bg_gradient.png) repeat-x 0 100%;
 }
 
-#section5 .input-group {
+.input-group {
     margin-bottom: 15px;
     width: 100%;
 }
 
-#section5 .input-group-addon {
-    background: #fff;
+.input-group-addon {
+    background: #fff !important;
     border-right: none;
     width: 50px;
+	border:1px solid #fff;
 }
+#section5 .input-group-addon{
+	border:1px solid #ccc;
+	border-right:none;
+	}
 
 #section5 .form-control {
     height: auto;
@@ -550,12 +555,28 @@ img {
 }
 
 #thank {
-    background: url(../img/bg_prod.jpg) no-repeat 50% 50%;
+	padding:100px 0;
+    background: url(../img/bg_thank.png) no-repeat 50% 50%;
 }
 
 #thank .st-hd h3 {
-    color: #fff;
+    color: #ffe010;
+	margin:30px 0 0 0;
+	font-size:40px;
 }
+#thank .st-hd .line{
+	height:2px;
+	background:#fff;
+	margin:0 auto;
+	width:60px;
+	}
+#thank p{
+	font-size:20px;
+	}
+#thank .btn-fw{
+	color:#fff;
+	padding-left:40px;
+	background:url(../img/ic_fw.png) no-repeat 0 0;}
 
 @media (max-width:1336px) {}
 
@@ -715,39 +736,61 @@ img {
 
 /**/
 
-#formDownload .modal-content {
+#formDownload .modal-content{
     padding: 30px 45px;
-    -moz-border-radius: 45px 10px 45px 10px;
-    -webkit-border-radius: 45px 10px 45px 10px;
-    -moz-border-radius: 45px 10px 45px 10px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+	background:url(../img/bg_thank.png) no-repeat 50% 50%;
+	background-size:auto 100%;
 }
-
-#formDownload .tl .lg {
-    margin: 30px 0;
-}
-
-#formDownload .tl .lg span {
-    color: #dbc483;
-}
+#formDownload .modal-content .input-group{
+	width:100%;
+	}
 
 #formDownload .btn {
-    margin-top: 30px;
     text-transform: uppercase;
-    padding: 15px 30px;
-    font-family: 'UTM DaxBold';
+    padding: 10px 30px;
+    font-family: 'UTMHelveBold';
+	background:#ffc300;
+	color:#0e59a4;
+	font-size:18px;
     -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
     -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+	border:1px solid #bce7ff;
 }
-
 #formDownload .form-control {
-    -moz-border-radius: 30px;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
+    
     padding: 10px 15px;
     height: auto;
     border: none;
 }
+.tl-pop {
+	text-align:center;
+	margin-bottom:30px;
+	color:#fff;
+	}
+.tl-pop h3{
+	margin:0;
+	font-size:24px;
+	font-family: 'UTMHelveBold';
+	text-transform:uppercase;
+	}
+.tl-pop p{
+	margin:12px;
+	}
+.tl-pop .line{
+	height:2px;
+	background:#fff;
+	margin:10px auto;
+	width:60px;
+	}
+#section5 #formDownload .form-control{
+	-moz-border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+	}
 
 #formDownload .close {
     position: absolute;
