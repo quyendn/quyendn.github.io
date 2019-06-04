@@ -7,7 +7,23 @@
 
 $(document).ready(function() {
 
+    $("#form-number").hide();
+    $("#form-number-view").hide();
 
+    $('#cboType').on('change', function () {
+        var Id = $(this).val();
+        if(Id =="Liệu trình khác")
+            $("#form-number").show();
+        else
+            $("#form-number").hide();
+    });
+    $('#cboTypeScurma').on('change', function () {
+        var Id = $(this).val();
+        if (Id == "Liệu trình khác")
+            $("#form-number-view").show();
+        else
+            $("#form-number-view").hide();
+    });
     // FORM VALIDATION
     // =================================================================
     // Require Bootstrap Validator
@@ -47,32 +63,49 @@ $(document).ready(function() {
                     },
                     stringLength: {
                         min: 10,
-                        message: 'Số điện thoại chỉ có thể là 10số.'
+                        message: 'Số điện thoại chỉ có thể là 10 số.'
+                    }
+                }
+            },
+            type: {
+                validators: {
+                    notEmpty: {
+                        message: 'Cần chọn liệu trình'
+                    }
+                }
+            },
+            address: {
+                validators: {
+                    notEmpty: {
+                        message: 'Địa chỉ không được để trống.'
                     }
                 }
             }
+
         },
         onSuccess: function(e) {
 
             var name = $('#txtName').val();
             var phone = $('#txtPhone').val();
-            var email = $('#txtEmail').val();
+            var type = $('#cboType').val();
             var address = $('#txtAdd').val();
-            var emailto = "phongtruyenthong@kosy.vn";
+            var total = $('#txtNumber').val();
+            
+            var emailto = "quyendn84@gmail.com";
             var check = checkPhoneNumber();
             if (!check)
                 return;
-            var dataJSON = { "name": name, "phone": phone, "address": address, "email": email, "emailto": emailto }
+            var dataJSON = { "name": name, "phone": phone, "address": address, "type": type, "total": total, "emailto": emailto }
             showLoadingContactImage('content-register', 'frmContentReg');
             $.ajax({
-                url: "https://alpha.f5academy.net/api/Kosyservice",
+                url: "https://alpha.f5academy.net/api/Scurmaservice",
                 type: "Post",
                 async: false,
                 data: dataJSON,
                 contentType: 'application/json; charset=utf-8',
                 dataType: 'jsonp',
                 success: function(states) {
-                    $('#frmMobile').bootstrapValidator('resetForm', true);
+                    $('#frmRegDownload').bootstrapValidator('resetForm', true);
                     hideLoadingContactImage('content-register', 'frmContentReg');
                 },
                 error: function(ex) {
@@ -86,27 +119,26 @@ $(document).ready(function() {
                     $('#frmRegDownload').bootstrapValidator('resetForm', true);
                     hideLoadingContactImage('content-register', 'frmContentReg');
                     toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', { timeOut: 5000 })
-                    location.href = "https://quyendn.github.io/kosy/dang-ky-thanh-cong.html";
+                    location.href = "https://quyendn.github.io/scrurma/dang-ky-thanh-cong.html";
                 }
             });
         }
     }).on('success.form.fv', function(e) {
 
     });
-    $('#frmSaleOff').bootstrapValidator({
+    $('#frmRegScrumaDownload').bootstrapValidator({
         message: 'This value is not valid',
         excluded: [':disabled'],
         feedbackIcons: faIcon,
         fields: {
-           
-            nameoff: {
+            nameScruma: {
                 validators: {
                     notEmpty: {
                         message: 'Họ tên không được để trống.'
                     }
                 }
             },
-            phoneoff: {
+            phoneScruma: {
                 validators: {
                     notEmpty: {
                         message: 'Điện thoại không được để trống.'
@@ -116,47 +148,66 @@ $(document).ready(function() {
                         message: 'Số điện thoại chỉ có thể là 10 số.'
                     }
                 }
+            },
+            TypeScurma: {
+                validators: {
+                    notEmpty: {
+                        message: 'Cần chọn liệu trình'
+                    }
+                }
+            },
+            addressScruma: {
+                validators: {
+                    notEmpty: {
+                        message: 'Địa chỉ không được để trống.'
+                    }
+                }
             }
-        },
-        onSuccess: function(e) {
 
-            var name = $('#txtNameOff').val();
-            var phone = $('#txtPhoneOff').val();
-            var email = $('#txtEmailOff').val();
-            var address = $('#txtAddOff').val();
-            var emailto = "phongtruyenthong@kosy.vn";
-            var dataJSON = { "name": name, "phone": phone, "address": address, "email": email, "emailto": emailto }
+        },
+        onSuccess: function (e) {
+
+            var name = $('#txtNameScruma').val();
+            var phone = $('#txtPhoneScruma').val();
+            var type = $('#cboTypeScurma').val();
+            var address = $('#txtAddScruma').val();
+            var total = $('#txtNumberView').val();
+            var emailto = "quyendn84@gmail.com";
             var check = checkPhoneNumber2();
             if (!check)
                 return;
-            showLoadingContactImage('content-loading', 'frmContentRegSaleOff');
+            var dataJSON = { "name": name, "phone": phone, "address": address, "type": type, "total": total, "emailto": emailto }
+            showLoadingContactImage('content-register-scurma', 'frmContentScurmaReg');
             $.ajax({
-                url: "https://alpha.f5academy.net/api/Kosyservice",
+                url: "https://alpha.f5academy.net/api/Scurmaservice",
                 type: "Post",
                 async: false,
                 data: dataJSON,
                 contentType: 'application/json; charset=utf-8',
                 dataType: 'jsonp',
-                success: function(states) {
-                    $('#frmSaleOff').bootstrapValidator('resetForm', true);
-                    hideLoadingContactImage('content-loading', 'frmContentRegSaleOff');
+                success: function (states) {
+                    $('#frmRegDownload').bootstrapValidator('resetForm', true);
+                    hideLoadingContactImage('content-register-scurma', 'frmContentScurmaReg');
                 },
-                error: function(ex) {
+                error: function (ex) {
                     toastr.error('Đã có lỗi trong quá trình đăng ký, mời bạn thử lại.', { timeOut: 5000 })
-                    hideLoadingContactImage('content-loading', 'frmContentRegSaleOff');
+                    hideLoadingContactImage('content-register-scurma', 'frmContentReg');
+                    $("#formbuynow").modal("hide");
                 },
-                complete: function(jqXHR, textStatus) {
-                    $('#txtNameOff').val('');
-                    $("#txtPhoneOff").val('');
-                    $('#txtEmailOff').val('');
-                    $('#frmSaleOff').bootstrapValidator('resetForm', true);
-                    hideLoadingContactImage('content-loading-off', 'frmContentRegSaleOff');
+                complete: function (jqXHR, textStatus) {
+                    $('#txtNameScruma').val('');
+                    $("#txtPhoneScruma").val('');
+                    $('#cboTypeScurma').val('');
+                    $('#txtAddScruma').val('');
+                    $('#frmRegDownload').bootstrapValidator('resetForm', true);
+                    hideLoadingContactImage('content-register', 'frmContentScurmaReg');
                     toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', { timeOut: 5000 })
-                    location.href = "https://quyendn.github.io/kosy/dang-ky-thanh-cong.html";
+                    $("#formbuynow").modal("hide");
+                    location.href = "https://quyendn.github.io/scrurma/dang-ky-thanh-cong.html";
                 }
             });
         }
-    }).on('success.form.fv', function(e) {
+    }).on('success.form.fv', function (e) {
 
     });
     $('#frmRegContentDownload').bootstrapValidator({
@@ -268,11 +319,11 @@ $(document).ready(function() {
     }
     function checkPhoneNumber2() {
         var vnf_regex = /((09|03|07|08|05)+([0-9]{8})\b)/g;
-        var mobile = $('#txtPhoneOff').val();
+        var mobile = $('#txtPhoneScruma').val();
         if (mobile !== '') {
             if (vnf_regex.test(mobile) == false) {
                 toastr.error('Số điện thoại của bạn không đúng định dạng.', { timeOut: 5000 })
-                $("#txtPhoneOff").focus();
+                $("#txtPhoneScruma").focus();
                 return false;
 
             } else {

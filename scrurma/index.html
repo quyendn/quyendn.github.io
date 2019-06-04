@@ -66,16 +66,19 @@
                                         <div class="form-group has-feedback">
                                             <input type="text" class="form-control" name="phone" id="txtPhone" onkeypress="return AllowNumberOnly(event);"  placeholder="Số điện thoại"></div>
                                         <div class="form-group has-feedback">
-                                        <select class="form-control" name="phone" id="txtcourse" onkeypress="return AllowNumberOnly(event);"  placeholder="Liệu trình">
-                                        	<option>Chọn liệu trình</option>
-                                        	<option>Liệu trình Công phá</option>
-                                            <option>Liệu trình Phát huy</option>
-                                            <option>Liệu trình Toàn diện</option>
+                                        <select class="form-control" name="type" id="cboType">
+                                        	<option value="">Chọn liệu trình</option>
+                                            <option value="Liệu trình Công phá">Liệu trình Công Phá (4 hộp)</option>
+                                            <option value="Liệu trình Phát huy">Liệu trình Phát Huy (5 hộp)</option>
+                                            <option value="Liệu trình Toàn diện">Liệu trình Toàn Diện (9 hộp - tặng ngay 1 hộp)</option>
+                                            <option value="Liệu trình khác">Liệu trình khác</option>
                                         </select>
+                                        </div>
+                                        <div class="form-group has-feedback" id="form-number">
+                                            <input type="text" class="form-control" name="number" id="txtNumber" onkeypress="return AllowNumberOnly(event);" placeholder="Số lượng">
                                         </div>
                                         <div class="form-group has-feedback">
                                             <input type="text" class="form-control" name="address" id="txtAdd" placeholder="Địa chỉ"></div>
-                                            
                                         <div class="form-group text-center">
                                             <button class="btn btn-register btn-lg">Gửi đi</button>
                                         </div>
@@ -477,29 +480,34 @@
                                     <h3 class="f-neu"><strong>ĐĂNG KÝ ĐẶT HÀNG</strong></h3>
                                     <div class="price f-neu"><strong>Giá: 295.000 VNĐ/ Hộp/20 Viên</strong></div>
                                 </div>
-                                <form id="frmRegDownload" autocomplete="off" novalidate class="bv-form">
+                                <form id="frmRegScrumaDownload" autocomplete="off" novalidate class="bv-form">
             
-                                    <div id="frmContentReg">
+                                    <div id="frmContentScurmaReg">
                                         <div class="form-group has-feedback">
-                                            <input type="text" class="form-control" name="name" id="txtName" value="" placeholder="Họ và tên"></div>
+                                            <input type="text" class="form-control" name="nameScruma" id="txtNameScruma" value="" placeholder="Họ và tên"></div>
                                         <div class="form-group has-feedback">
-                                            <input type="text" class="form-control" name="phone" id="txtPhone" onkeypress="return AllowNumberOnly(event);"  placeholder="Số điện thoại"></div>
+                                            <input type="text" class="form-control" name="phoneScruma" id="txtPhoneScruma" onkeypress="return AllowNumberOnly(event);" placeholder="Số điện thoại"></div>
                                         <div class="form-group has-feedback">
-                                        	<select class="form-control" name="phone" id="txtcourse" onkeypress="return AllowNumberOnly(event);"  placeholder="Liệu trình">
-                                        	<option>Chọn liệu trình</option>
-                                        	<option>Liệu trình Công phá</option>
-                                            <option>Liệu trình Phát huy</option>
-                                            <option>Liệu trình Toàn diện</option>
-                                        </select>
+                                            <select class="form-control" name="TypeScurma" id="cboTypeScurma">
+                                                <option value="">Chọn liệu trình</option>
+                                                <option value="Liệu trình Công phá">Liệu trình Công Phá (4 hộp)</option>
+                                                <option value="Liệu trình Phát huy">Liệu trình Phát Huy (5 hộp)</option>
+                                                <option value="Liệu trình Toàn diện">Liệu trình Toàn Diện (9 hộp - tặng ngay 1 hộp)</option>
+                                                <option value="Liệu trình khác">Liệu trình khác</option>
+                                            </select>
                                         </div>
+                                        <div class="form-group has-feedback" id="form-number-view">
+                                            <input type="text" class="form-control" name="number" id="txtNumberView" onkeypress="return AllowNumberOnly(event);" placeholder="Số lượng">
+                                        </div>    
                                         <div class="form-group has-feedback">
-                                            <input type="text" class="form-control" name="address" id="txtAdd" placeholder="Địa chỉ"></div>
-                                            
+                                            <input type="text" class="form-control" name="addressScruma" id="txtAddScruma" placeholder="Địa chỉ">
+                                        </div>
+                                        
                                         <div class="form-group text-center">
                                             <button class="btn btn-register btn-lg">Gửi đi</button>
                                         </div>
                                     </div>
-                                    <div id="content-register"></div>
+                                    <div id="content-register-scurma"></div>
                                 </form>
                                 
                             </div>
