@@ -200,6 +200,7 @@ a.btn-phone {
     -webkit-border-radius: 35px;
     border-radius: 35px;
     border: 2px solid #bce7ff;
+    background: #217cbc;
 }
 
 .navbar-nav li a.btn-phone img,
