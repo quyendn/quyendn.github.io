@@ -33,7 +33,7 @@ img{
 	padding:30px;
 	background:rgba(0,0,0,0.3);
 	font-size:36px;
-	color:#fff;
+	color:#f6f6f6;
 	z-index:9999;
 	left:0;
 	right:0;
@@ -41,7 +41,28 @@ img{
 	margin-top:-86px;
 	text-align:center;
 	}
-
+@media (max-width:1336px){
+	
+	
+	}
+@media (max-width:768px){
+		#intro .logo{
+			margin:15px;
+			top:0;
+			display:inline-block;
+			position:static;
+			}
+		#intro .text{
+			position:static;
+			font-size:24px;
+			top:0;
+			margin-top:0;
+			padding:15px;
+			}
+		#intro .text br{
+			display:none;
+			}
+	}
 /*owl-carousel*/
 .owl-carousel{
 	}
