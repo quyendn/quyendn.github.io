@@ -84,7 +84,7 @@ a, .btn, button{
 #header{
 	border:none;
 	z-index:9999;
-	min-height:100px;
+	min-height:90px;
 	transition: all 300ms ease-in-out;
 	-webkit-transition: all 300ms ease-in-out;
 	-moz-transition: all 300ms ease-in-out;
@@ -99,7 +99,7 @@ a, .btn, button{
 	right:0;
 	top:0;
 	z-index:9999;
-	min-height:100px;
+	min-height:90px;
 	background:#000;
 	-moz-box-shadow:0 0 5px rgba(0,0,0,0.3);
 	-webkit-box-shadow:0 0 5px rgba(0,0,0,0.3);
@@ -211,24 +211,31 @@ a, .btn, button{
 	background:url(../img/btn_slide_right.png) no-repeat 50% 50% !important;
 	}
 #slide-wrap{
-	position:relative;
+	/*position:relative;*/
 	}
 #slide-wrap .owl-carousel{
 	z-index:90;}
 
 
-#slide-wrap .formRegister{
+/*#section0 .formRegister{
 	position:absolute;
 	z-index:99;
-	top:50px;
+	top:100px;
 	right:50px;
 	left:50px;
 	}
-#slide-wrap .formRegister .inner{
+*/
+#section0{
+	background:url(../img/bg_st0.jpg) no-repeat 50% 50%;
+	}
+#section0 #video{
+	border:5px solid #e5e5e5;
+	}
+#section0 .formRegister .inner{
 	padding:30px 45px;
 	background:rgba(0,0,0,0.5);
 	}
-#slide-wrap .formRegister .tl, #formDownload .tl{
+#section0 .formRegister .tl, #formDownload .tl{
 	color:#fff;
 	font-size:20px;
 	text-transform:uppercase;
@@ -236,24 +243,24 @@ a, .btn, button{
 	font-family: 'UTMNeoSansIntelBold';
 	}
 
-#slide-wrap .formRegister  .form-control{
+#section0 .formRegister  .form-control{
 	border:1px solid #898989;
 	background:#fff;
 	}
-#slide-wrap .formRegister .btn{
+#section0 .formRegister .btn{
 	font-family: 'UTMNeoSansIntelBold';
 	text-transform:uppercase;
 	color:#fff;
 	border:1px solid #898989;
 	}
-#slide-wrap .formRegister .btn.btnBaogia{
+#section0 .formRegister .btn.btnBaogia{
 	background:#9e0b0f;
 	}
-#slide-wrap .formRegister .btn.btnLaithu{
+#section0 .formRegister .btn.btnLaithu{
 	background:#000;
 	}
 
-#slide-wrap .formRegister-bt hr{
+#section0 .formRegister-bt hr{
 	margin:5px 0;
 	border-top:1px solid #dbc483;
 	}
@@ -321,6 +328,8 @@ a, .btn, button{
 	margin:0;
 	}
 #section2{
+	padding-top:15px;
+	padding-bottom:15px;
 	background:url(../img/bg-st2-b.jpg) no-repeat 50% 50%;
 	}
 #section2 .bgGradient{
@@ -347,7 +356,7 @@ a, .btn, button{
 	z-index:99;
 	max-width:860px;
 	margin:0 auto;
-	padding:15px 0;
+	padding:5px 0;
 	
 	}
 #section4 .bgGradient, #products .owl-dots{
@@ -401,7 +410,7 @@ a, .btn, button{
 	border:2px solid #dfdfdf;
 	}
 #products .owl-stage-outer{
-	margin-top:160px;
+	margin-top:90px;
 	}
 #products .owl-nav{
 	display:none;
@@ -445,6 +454,9 @@ a, .btn, button{
 	padding-bottom:480px;
 	}
 #section5 .col-md-8 p, #section5 .col-md-8 div{
+	margin-bottom:30px;
+	}
+#section5 .col-md-4 .col-md-12{
 	margin-bottom:30px;
 	}
 
@@ -539,23 +551,23 @@ img{
 		display:block;
 		padding:10px 15px;
 		}
-	#slide-wrap .formRegister{
+	#section0 .formRegister{
 		position:static;
 		-moz-border-radius:0;
 		-webkit-border-radius:0;
 		border-radius:0;
 		padding:15px 0;
 		}
-	#slide-wrap .formRegister .inner{
+	#section0 .formRegister .inner{
 		padding:15px 0;
 		}
-	#slide-wrap .formRegister .tl .lg{
+	#section0 .formRegister .tl .lg{
 		font-size:24px;
 		}
-	#slide-wrap .slide-wrap-bt{
+	#section0 .slide-wrap-bt{
 		display:none;
 		}
-	#slide-wrap .formRegister{
+	#section0 .formRegister{
 		max-width:100%;}
 	.section .st-hd h3{
 		font-size:22px;
@@ -563,6 +575,9 @@ img{
 		}
 	.section .st-hd p{
 		font-size:16px;
+		}
+	#products .owl-stage-outer{
+		margin-top:120px;
 		}
 	#section5{
 		padding-bottom:200px;
@@ -817,6 +832,16 @@ img{
 	font-family: 'UTMNeoSansIntelBold';
 	background:url(../img/bg_linkft.png) repeat-x 50% 50%;
 	}
-#section5 .col-md-4 .col-md-12{
-	margin-bottom:30px;
+/**/
+#section.section{
+	padding:0;
+	}
+#section.section.fp-section.fp-table, #section.section.fp-section.fp-table .fp-tableCell, #section6.section.fp-section.fp-table, #section6.section.fp-section.fp-table .fp-tableCell{
+	height:auto !important}
+#footer .social a{
+	display:inline-block;
+	
+	}
+#footer .social .tooltip{
+	font-family: 'UTMNeoSansIntel';
 	}
