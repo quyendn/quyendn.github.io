@@ -1,0 +1,19 @@
+
+@font-face {
+  font-family: 'MazdaType-Bold';
+  src: url('../font/MazdaType-Bold.eot');
+  src: url('../font/MazdaType-Bold.eot?#iefix') format('embedded-opentype'),
+       url('../font/MazdaType-Bold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MazdaTypeUnicode-Bold';
+  src: url('../font/MazdaTypeUnicode-Bold.svg#MazdaTypeUnicode-Bold') format('svg'),
+       url('../font/MazdaTypeUnicode-Bold.ttf') format('truetype'),
+       url('../font/MazdaTypeUnicode-Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
