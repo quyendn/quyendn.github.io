@@ -473,7 +473,7 @@ a, .btn, button{
 	margin-bottom:15px;
 	}
 #footer h3{
-	font-size:24px;
+	font-size:22px;
 	margin-top: 0;
 	text-transform:uppercase;
 	font-family: 'UTMNeoSansIntelBold';
@@ -483,6 +483,18 @@ a, .btn, button{
 	}
 #footer .social a{
 	margin:0 5px;
+	height:42px;
+	width:42px;
+	border:1px solid #fff;
+	-moz-border-radius:21px;
+	-webkit-border-radius:21px;
+	border-radius:21px;
+	}
+#footer .social a.btn-download-ft{
+	width:auto;
+	color:#fff;
+	padding:0 15px 0 5px;
+	font-size:12px;
 	}
 /**/
 img{
