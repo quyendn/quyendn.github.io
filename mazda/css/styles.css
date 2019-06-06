@@ -88,14 +88,16 @@ h1, h2, h3{
 	padding:0;
 	z-index:9999;
 	min-height:70px;
-	background:#fff;
+	background:#000;
+	border-bottom:5px solid #fff;
 	}
 #header .affix{
 	left:0;
 	right:0;
 	top:0;z-index:9999;
 	min-height:70px;
-	background:#fff;
+	background:#000;
+	border-bottom:5px solid #fff;
 	}
 .navbar-brand{
 	padding:15px 0;
@@ -116,14 +118,14 @@ h1, h2, h3{
 	margin:0 0 0 0;
 	}
 .navbar-nav>li>a{
-	color:#222;
+	color:#fff;
 	text-align:center;
 	outline:none;
 	font-size:18px;
 	}
 .navbar-nav .active a, .navbar-nav a:hover,  .navbar-nav li a:focus{
-	color:#19191a;
-	background:#fff !important;
+	color:#fff;
+	background:#111 !important;
 	}
 .affix .navbar-nav .active a{
 	color:#19191a}
@@ -135,10 +137,11 @@ h1, h2, h3{
 	margin-top:5px;
 	}
 .navbar-nav>li#btnQuote>a, .btn.btnFix{
-	border:1px solid #333;
-	font-family: 'UTMAvoBold';
+	border:2px solid #fff;
+	background:#000;
+	color:#fff;
 	text-transform:uppercase;
-	background:#fff;
+	font-family: 'UTMAvoBold';
 	}
 
 /**/
@@ -196,13 +199,13 @@ h1, h2, h3{
 	background:rgba(0,0,0,0.7);
 	}
 .formRegister .inner{
-	padding:30px 45px;
+	padding:30px 15px;
 	}
 .formRegister .inner h3{
 	margin:0 0 30px 0;
 	color:#fff;
 	font-family: 'UTMAvoBold';
-	font-size:24px;
+	font-size:18px;
 	text-transform:uppercase;
 	text-align:center;
 	}
@@ -258,16 +261,53 @@ h1, h2, h3{
 	padding-bottom:10px;
 	font-size:12px;
 	}
-#section2 .row, #section3 .row{
+#section2 .row, #section3 .row, #section4 .row{
 	margin-right:-2px;
 	margin-left:-2px;
 	}
-#section2 .row>div, #section3 .row>div{
+#section2 .row>div, #section3 .row>div, #section4 .row>div{
 	padding-right:2px;
 	padding-left:2px;
 	margin-top:2px;
 	margin-bottom:2px;
 	}
+	
+#section4 .inner{
+	padding:15px 5px;
+	text-transform:uppercase;
+	color:#fff;
+	border:1px solid #fff;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	line-height:normal;
+	
+	}
+#section4 .inner h3{
+	line-height:40px;
+	margin:0;}
+#section4 .inner h3 .text-lg{
+	font-size:40px;
+	}
+#section4 .inner.tl-st4{
+	padding:15px;
+	background:#252525 url(../img/bg-st4.gif) repeat-x 0 100%;
+	}
+#section4 .inner p{
+	font-size:12px;
+	overflow:hidden;
+	height:30px;
+	}	
+#section4 .inner, #section4 .inner strong{
+	font-family: 'MazdaTypeUnicode-Bold';
+	}
+#section4 .inner strong{
+	font-size:32px;
+	}
+#section4 .inner .icon{
+	height:76px;
+	margin-bottom:12px;
+	}	
 
 .yell{
 	color:#f0812e}
@@ -290,6 +330,17 @@ h1, h2, h3{
 	padding-left:15px;
 	border:1px solid #790000;
 	}
+#footer .social{
+	margin-top:45px;
+	text-align:center;
+	}
+#footer .social a{
+	color:#fff;
+	display:inline-block;
+	margin:15px;
+	font-size:18px;
+	}
+	
 .modal .modal-content{
 	background:url(../img/bg-bodytop.jpg) no-repeat 50% 50% / auto 100%;
 	background-size:cover;
