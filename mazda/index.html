@@ -37,20 +37,30 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-846605434"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
         gtag('js', new Date());
 
         gtag('config', 'AW-846605434');
     </script>
     <script>
-        !function (f, b, e, v, n, t, s) {
-            if (f.fbq) return; n = f.fbq = function () {
+        ! function(f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function() {
                 n.callMethod ?
-                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
             };
-            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
-            n.queue = []; t = b.createElement(e); t.async = !0;
-            t.src = v; s = b.getElementsByTagName(e)[0];
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
             s.parentNode.insertBefore(t, s)
         }(window, document, 'script',
             'https://connect.facebook.net/en_US/fbevents.js');
@@ -61,7 +71,6 @@
         <img height="1" width="1" style="display:none"
              src="https://www.facebook.com/tr?id=1877629032290500&ev=PageView&noscript=1" />
     </noscript>
-
 
 </head>
 
@@ -107,6 +116,7 @@
                                             <select class="form-control" id="cboCity" name="cboCity">
                                                 <option value="">--- Tỉnh/thành phố ---</option>
                                                 <option value="Hà Nội">Hà Nội</option>
+                                                <option value="TP. HCM">TP. HCM</option>
                                                 <option value="An Giang">An Giang</option>
                                                 <option value="Bà Rịa Vũng Tàu">Bà Rịa Vũng Tàu</option>
                                                 <option value="Bạc Liêu">Bạc Liêu</option>
@@ -138,7 +148,7 @@
                                                 <option value="Sơn La">Sơn La</option>
                                                 <option value="Tây Ninh">Tây Ninh</option>
                                                 <option value="Tiền Giang">Tiền Giang</option>
-                                                <option value="TP. HCM">TP. HCM</option>
+                                                
                                                 <option value="Tuyên Quang">Tuyên Quang</option>
                                                 <option value="Thái Bình">Thái Bình</option>
                                                 <option value="Thái Nguyên">Thái Nguyên</option>
@@ -189,7 +199,7 @@
                 <source src="video/TEASER_30S.mp4" type="video/ogg">
             </video>
 
-           
+
         </div>
 
         <div class="section wow fadeInUp" id="section2">
@@ -381,14 +391,14 @@
     <script type="text/javascript" src="js/form-validation.js"></script>
 
     <script>
-        $(document).ready(function () {
+        $(document).ready(function() {
             $('#txtDate').datepicker({
                 format: "dd/mm/yyyy",
                 todayBtn: "linked",
                 autoclose: true,
                 todayHighlight: true,
                 language: 'vi'
-            }).on('changeDate', function (e) { });
+            }).on('changeDate', function(e) {});
         });
         new WOW().init();
 
@@ -405,23 +415,23 @@
             easing: 'easeInOutCubic',
             offset: 70,
             updateURL: false,
-            callbackBefore: function (toggle, navbar1) { },
-            callbackAfter: function (toggle, navbar1) { }
+            callbackBefore: function(toggle, navbar1) {},
+            callbackAfter: function(toggle, navbar1) {}
         });
-        $("button").click(function () {
+        $("button").click(function() {
             $(".navbar-toggle").toggleClass("close");
         });
 
-        $(".navbar-toggle").click(function () {
+        $(".navbar-toggle").click(function() {
             $("#header").toggleClass("open");
         });
 
-        $(".navbar-nav a").click(function () {
+        $(".navbar-nav a").click(function() {
             $(".navbar-collapse").removeClass("in");
 
             $(".navbar-toggle").removeClass("close");
         });
-        $('#cboCity').change(function () {
+        $('#cboCity').change(function() {
             var value = $("#cboCity").val();
             switch (value) {
                 case "Hà Nội":
@@ -593,7 +603,7 @@
                     break;
             }
         });
-        $('#cboSubCity').change(function () {
+        $('#cboSubCity').change(function() {
             var value = $("#cboSubCity").val();
             switch (value) {
                 case "Hà Nội":
