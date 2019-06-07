@@ -66,7 +66,7 @@ $(document).ready(function() {
             var name = $('#txtNameDownload').val();
             var email = $('#txtEmailDownload').val();
             var phone = $('#txtPhoneDownload').val();
-            var emailto = "quyendn84@gmail.com";
+            var emailto = "linh.nth@mobifone.vn";
             var check = checkPhoneNumber();
             if (!check)
                 return;
@@ -94,7 +94,7 @@ $(document).ready(function() {
                     $('#frmRegDownload').bootstrapValidator('resetForm', true);
                     toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', { timeOut: 5000 })
                     hideLoadingContactImage('content-register', 'frmContentDownloadReg');
-                    window.location.href = "http://quyendn.github.io/sms/dang-ky-thanh-cong.html";
+                    window.location.href = "https://esms.mobifone.vn/smsbrandname/dang-ky-thanh-cong.html";
                 }
             });
         }
@@ -141,7 +141,7 @@ $(document).ready(function() {
             var name = $('#txtName').val();
             var email = $('#txtEmail').val();
             var phone = $('#txtPhone').val();
-            var emailto = "quyendn84@gmail.com";
+            var emailto = "linh.nth@mobifone.vn";
             var check = checkPhoneNumber2();
             if (!check)
                 return;
@@ -171,7 +171,7 @@ $(document).ready(function() {
                     toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', { timeOut: 5000 })
                     hideLoadingContactImage('content-user-register', 'frmContentDownloadUserReg');
                     $("#formDownload").modal('hide');
-                    window.location.href = "http://quyendn.github.io/sms/dang-ky-thanh-cong.html";
+                    window.location.href = "https://esms.mobifone.vn/smsbrandname/dang-ky-thanh-cong.html";
                 }
             });
         }

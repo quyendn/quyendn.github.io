@@ -119,7 +119,7 @@ $(document).ready(function() {
                     $('#frmRegDownload').bootstrapValidator('resetForm', true);
                     hideLoadingContactImage('content-register', 'frmContentReg');
                     toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', { timeOut: 5000 })
-                    location.href = "https://quyendn.github.io/scrurma/dang-ky-thanh-cong.html";
+                    location.href = "/dang-ky-thanh-cong.html";
                 }
             });
         }
@@ -203,7 +203,7 @@ $(document).ready(function() {
                     hideLoadingContactImage('content-register', 'frmContentScurmaReg');
                     toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', { timeOut: 5000 })
                     $("#formbuynow").modal("hide");
-                    location.href = "https://quyendn.github.io/scrurma/dang-ky-thanh-cong.html";
+                    location.href = "/dang-ky-thanh-cong.html";
                 }
             });
         }

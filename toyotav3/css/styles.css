@@ -238,14 +238,22 @@ h1, h2, h3{
 	padding:60px 0 30px 0;
 	min-height:940px;
 	position:relative;
-	background:url(../img/bg_slide.jpg) no-repeat 100% 50% / 100% auto;
+	background:url(../img/bg_slide.jpg) no-repeat 100% 50%;
+	background-size:auto 100%;
 	
 	}
 #slide .inner, #section1 .inner{
 	margin:0 auto;
 	}
 .titlePage{
-	margin-bottom:60px;
+	margin-bottom:30px;
+	}
+.titlePage p{
+	margin-top:10px;
+	color:#e01f25;
+	background:rgba(255,255,255,0.7);
+	display:inline-block;
+	padding:5px 10px;
 	}
 #slide .text, #thanks .text{
 	padding:15px 30px;
@@ -281,21 +289,24 @@ h1, h2, h3{
 	background-size:auto 100%;
 	}
 
-#section1 .btn{
-	padding:8px 30px;
-	background:#fff;
-	color:#e0252a;
+#section1 .btn, .btn-danger{
+	background:#e01f25;
+	color:#fff;
 	text-transform:uppercase;
 	font-family: 'UTMAvoBold';
-	font-size:18px;
+	border:2px solid #fff;
+	
+	}
+#section1 .btn{
+	margin-top:30px;
 	}
 #section1 h3.textStyle, #section3 h3.textStyle{
 	color:#ffe323;
 	}
-#section1 .col-sm-7{
-	padding-top:45px;
+#section1 .col-sm-6{
+	padding-top:30px;
 	}
-#section1 .col-sm-7 p{
+#section1 .col-sm-6 p{
 	background:url(../img/ic_football.png) no-repeat 0 0;
 	padding-left:30px;
 	font-size:16px;
@@ -308,11 +319,28 @@ h1, h2, h3{
 	background:#295877;
 	color:#fff;
 	text-transform:uppercase;
-	font-family: 'UTMCopperplateBold';
 	padding:10px 15px;
 	font-size:24px;
 	margin:20px 0;
 	}
+#section1 .radius{
+	background:rgba(255,255,255,0.8);
+	padding:30px;
+	color:#333;
+	}
+#section1 .radius h3{
+	text-transform:uppercase;
+	font-size:18px;
+	margin:0 0 15px 0;
+	text-align:center;
+	}
+#section1 .radius h3 strong{
+	border-bottom:1px solid #e01f25;
+	padding-bottom:5px;}
+.red{
+	color:#e01f25;
+	}
+
 #section2{
 	color:#fff;
 	background:#fff;
@@ -383,22 +411,28 @@ h1, h2, h3{
 	}	
 
 .modal .modal-content{
-	background:url(../img/bg-bodytop.jpg) no-repeat 50% 50% / auto 100%;
-	background-size:cover;
+	background:#2c8e3f url(../img/bg_popup.gif) no-repeat 0% 100%;
+	background-size:auto;
 	}
 .modal .modal-body{
 	padding:10px 30px;
-	font-family: 'HelveticaNeue';
 	font-size:15px;
 	color:#fff;
+	}
+.modal .modal-body .tl-pop{
+	margin:30px 0;
+	text-align:center;
 	}
 .modal .modal-header{
 	border-bottom:0;
 	padding:15px;
 	text-align:center;
-	font-family: 'UTMCopperplate';
 	font-size:36px;
 	color:#fff;
+	}
+.form-check-inline{
+	display:inline-block;
+	margin-right:30px;
 	}
 
 .modal .modal-header .close{
@@ -416,14 +450,20 @@ h1, h2, h3{
 	background:#e51b26;
 	color:#fff;
 	margin-top:15px;
-	font-family: 'UTMCopperplate';
 	border:none;
-	font-weight:bold;
-	font-size:24px;
+	padding:10px 30px;
+	font-size:18px;
+	border:2px solid #fff;
+	text-transform:uppercase;
+	font-family: 'UTMAvoBold';
 	}
 .modal .form-control{
 	padding:10px;
 	height:auto;
+	}
+.modal .source label{
+	font-family: 'UTMAvo';
+	font-size:12px;
 	}
 
 /**/

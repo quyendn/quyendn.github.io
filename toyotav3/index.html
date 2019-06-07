@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang="en" class="no-js" style="height:100%;">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -29,28 +30,47 @@
     <link href="js/bootstrap-datepicker/bootstrap-datepicker.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="js/bootstrap-datepicker/bootstrap-datepicker.js"></script>
     <script type="text/javascript" src="js/bootstrap-datepicker/locales/bootstrap-datepicker.vi.min.js"></script>
+
+    <link href="css/smooth-scrollbar.css" rel="stylesheet" type="text/css" />
+
+
     <!-- Google Tag Manager -->
     <script>
-(function (w, d, s, l, i) {
-w[l] = w[l] || []; w[l].push({
-'gtm.start':
-new Date().getTime(), event: 'gtm.js'
-}); var f = d.getElementsByTagName(s)[0],
-j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-})(window, document, 'script', 'dataLayer', 'GTM-55WXPT9');</script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-55WXPT9');
+    </script>
     <!-- End Google Tag Manager -->
 </head>
+
 <body>
     <!-- Admicro Tag Manager -->
     <script>
-     (function (a, b, d, c, e) {
-    a[c] = a[c] || [];
-         a[c].push({ "atm.start": (new Date).getTime(), event: "atm.js" });
-         a = b.getElementsByTagName(d)[0]; b = b.createElement(d); b.async = !0;
-         b.src = "//deqik.com/tag/corejs/" + e + ".js"; a.parentNode.insertBefore(b, a)
-     })(window, document, "script", "atmDataLayer", "ATM8YZ8P7MM39");</script>
-        <!-- End Admicro Tag Manager -->
+        (function(a, b, d, c, e) {
+            a[c] = a[c] || [];
+            a[c].push({
+                "atm.start": (new Date).getTime(),
+                event: "atm.js"
+            });
+            a = b.getElementsByTagName(d)[0];
+            b = b.createElement(d);
+            b.async = !0;
+            b.src = "//deqik.com/tag/corejs/" + e + ".js";
+            a.parentNode.insertBefore(b, a)
+        })(window, document, "script", "atmDataLayer", "ATM8YZ8P7MM39");
+    </script>
+    <!-- End Admicro Tag Manager -->
     <!-- Google Tag Manager (noscript) -->
     <noscript>
         <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-55WXPT9"
@@ -62,15 +82,19 @@ j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; 
             <div class="affix" data-spy="affix" data-offset-top="79" id="">
                 <div class="container">
                     <a class="navbar-brand" href="/"><img src="img/Logo.png" height="52px"></a>
-                     <a class="navbar-brand pull-right" href="/"><img src="img/logo_impos.png" height="45px"></a>
+                    <a class="navbar-brand pull-right" href="/"><img src="img/logo_impos.png" height="45px"></a>
                 </div>
             </div>
         </div>
         <div id="slide">
             <div class="container text-center">
-                <div class="titlePage"><img src="img/slide.png"></div>
+                <div class="titlePage">
+                    <img src="img/slide.png">
+                    <div><button class="btn btn-danger btn-lg" data-toggle="modal" data-target="#modal_dangky">Đăng ký tham gia</button></div>
+                    <p><em><strong>*Đăng ký Online để giảm thời gian chờ đợi khi đến dự tuyển</strong></em></p>
+                </div>
                 <div class="text">
-                	<div class="st-hd">
+                    <div class="st-hd">
                         <h3 class="textStyle">Các địa điểm VÀ thời gian diễn ra ngày sơ tuyển</h3>
                         <p class=""><strong>Hãy đến tham gia “NGÀY HỘI SƠ TUYỂN” tại 4 điểm:</strong></p>
                     </div>
@@ -85,57 +109,39 @@ j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; 
         </div>
         <div class="section wow fadeInUp" id="section1">
             <div class="container">
-            	<div class="row">
-                    <div class="col-md-4 col-sm-4 wow fadeInLeft">
-                        <div class="st-hd"><h3 class="textStyle">ĐĂNG KÝ THAM GIA</h3></div>
-                        <form id="frmMobile" class="" autocomplete="off">
-                            <div id="formContentContactMobile">
-                                <div class="form-group">
-                                    <input type="text" name="name" id="txtName" class="form-control" placeholder="Họ và tên">
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" name="brith" id="txtBrith" class="form-control" placeholder="Năm sinh">
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" name="phone" id="txtPhone" class="form-control" placeholder="Số điện thoại">
-                                </div>
-                                <div class="form-group">
-                                    <select class="form-control" name="cboVitri" id="cboVitri">
-                                        <option value="">---Vị trí mong muốn----</option>
-                                        <option value="Thủ Môn">Thủ Môn</option>
-                                        <option value="Cầu Thủ">Cầu Thủ</option>
-                                    </select>
-                                </div>
-
-                                <div class="form-group row">
-                                    <label class="col-sm-6 control-label" for="">Đăng ký tham gia tại:</label>
-                                    <div class="col-sm-6">
-                                        <select class="form-control" id="cboLocation">
-                                            <option value="Quảng Ninh">Quảng Ninh</option>
-                                            <option value="Nam Định">Nam Định</option>
-                                            <option value="Nghệ An">Nghệ An</option>
-                                            <option value="Bình Dương">Bình Dương</option>
-                                        </select>
-                                    </div>
-                                </div>
-
-                                <div class="form-group text-center"><button class="btn">Đăng ký</button></div>
-
+                <div class="row">
+                    <div class="col-md-5 col-sm-5 wow fadeInLeft">
+                        <div class="radius">
+                            <div id="inner-scrollbar" data-scrollbar="" tabindex="1" style="overflow: hidden; outline: none; padding-bottom:20px;" class="">
+                                <article class="scroll-content" style="transform: translate3d(0px, 000px, 0px); height:360px; ">
+                                    <canvas class="overscroll-glow" style="display: none; pointer-events: none;"></canvas>
+                                    <h3 class="red"><strong>Quy Định Đăng Ký Sự Kiện</strong></h3>
+                                    <p><strong>Cảm ơn Quý khách đã đăng ký, khi đến tham dự tuyển</strong></p>
+                                    <p><strong>Quý khách vui lòng đọc và nắm rõ các thông tin dưới đây:</strong></p>
+                                    <p><em><strong>* Cam kết của Cha/Mẹ/Người bảo hộ thí sinh:</strong></em></p>
+                                    <p>Bằng việc điền vào mẫu đơn đăng ký và trực tiếp đến tham gia chương trình <strong class="red">“TRẠI HÈ BÓNG ĐÁ THIẾU NIÊN TOYOTA 2019”</strong> do Công ty Ô tô Toyota Việt Nam tổ chức. Quý khách mặc định cam kết các
+                                        thông tin dưới đây:</p>
+                                    <p>- Tất cả các nội dung thông tin được khai ở trên là hoàn toàn trung thực và chính xác. </p>
+                                    <p>- Chúng tôi đồng ý cho Ban tổ chức sử dụng các thông tin cũng như hình ảnh của cháu cho các hoạt động nhằm mục đích quảng cáo, truyền thông cho các hoạt động của Chương trình và hoạt động khác</p>
+                                    <p>...</p>
+                                </article>
                             </div>
-                            <div id="content-mobile"></div>
-                        </form>
+                        </div>
                     </div>
-                    <div class="col-md-7 col-sm-7 col-md-offset-1 text-center wow fadeInRight">
+                    <div class="col-md-6 col-sm-6 text-center wow fadeInRight">
                         <p><strong>TRẠI HÈ BÓNG ĐÁ THIẾU NIÊN TOYOTA 2019</strong> tạo ra sân chơi cho các em nhỏ từ 09 đến 12 tuổi, có niềm đam mê và yêu thích bóng đá, cùng thử sức và tranh tài qua các bài kiểm tra cực kỳ bổ ích và lý thú.</p>
                         <p>Những năng khiếu bóng đá sẽ được lựa chọn để bồi dưỡng và đào tạo, được học tập với các huấn luyện viên nổi tiếng, chuyên nghiệp.</p>
                         <p>18 Cầu thủ nhí xuất sắc nhất sẽ được tham dự chuyến đi Nhật Bản và có Trận đấu giao hữu Quốc tế.</p>
+                        <div><button class="btn btn-danger btn-lg" data-toggle="modal" data-target="#modal_dangky">Đăng ký tham gia</button></div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="section wow fadeInUp" id="section2">
             <div class="container">
-            	<div class="st-hd text-center"><h3 class="textStyle">CHƯƠNG TRÌNH CHI TIẾT</h3></div>
+                <div class="st-hd text-center">
+                    <h3 class="textStyle">CHƯƠNG TRÌNH CHI TIẾT</h3>
+                </div>
                 <div class="row">
                     <div class="col-md-3 col-sm-6 wow fadeInLeft">
                         <div style="background:#e01f25">
@@ -188,10 +194,12 @@ j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; 
                 </div>
             </div>
         </div>
-        
+
         <div class="section wow fadeInUp" id="section3">
             <div class="container">
-            	<div class="st-hd text-center"><h3 class="textStyle">HÌNH ẢNH CHƯƠNG TRÌNH</h3></div>
+                <div class="st-hd text-center">
+                    <h3 class="textStyle">HÌNH ẢNH CHƯƠNG TRÌNH</h3>
+                </div>
                 <div class="owl-carousel">
                     <div class="item"><img src="img/p1.jpg"></div>
                     <div class="item"><img src="img/p2.jpg"></div>
@@ -199,13 +207,15 @@ j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; 
                     <div class="item"><img src="img/p4.jpg"></div>
                 </div>
                 <hr/>
-                <div class="st-hd text-center"><h3 class="textStyle">Video CHƯƠNG TRÌNH</h3></div>
+                <div class="st-hd text-center">
+                    <h3 class="textStyle">Video CHƯƠNG TRÌNH</h3>
+                </div>
                 <div class="video text-center wow fadeInDown" style="max-width:860px; margin:0 auto;">
                     <iframe width="100%" height="480" src="https://www.youtube.com/embed/TsoKkcPsDY0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
-        
+
 
         <div id="footer" class="wow fadeInUp">
             <div class="container">
@@ -215,9 +225,17 @@ j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; 
                     </div>
                     <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6 col-lg-push-8 col-md-push-8">
                         <div><img src="img/logo_impos.png"></div>
-                        <div class="social hidden-xs"><a href=""><img src="img/ic_yt.jpg"></a><a href=""><img src="img/ic_fb.jpg"></a></div>
+                        <div class="social hidden-xs">
+                            <a href=""><img src="img/ic_yt.jpg"></a>
+                            <a href=""><img src="img/ic_fb.jpg"></a>
+                        </div>
                     </div>
-                    <div class="col-xs-12 visible-xs"><div class="social"><a href=""><img src="img/ic_yt.jpg"></a><a href=""><img src="img/ic_fb.jpg"></a></div></div>
+                    <div class="col-xs-12 visible-xs">
+                        <div class="social">
+                            <a href=""><img src="img/ic_yt.jpg"></a>
+                            <a href=""><img src="img/ic_fb.jpg"></a>
+                        </div>
+                    </div>
                     <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 col-lg-pull-2 col-md-pull-2 text-center">
                         <h3><strong>CÔNG TY ÔTÔ TOYOTA VIỆT NAM</strong></h3>
                         <p>Giấy CNĐKDN: 191022000028.</p>
@@ -229,22 +247,183 @@ j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; 
             </div>
         </div>
     </div>
+    <div class="modal fade" id="modal_dangky" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="tl-pop"><img src="img/tl_pop.png"></div>
+                    <form id="frmRegDownload" autocomplete="off" novalidate class="bv-form">
+
+                        <div id="frmContentReg">
+
+                            <div class="form-group has-feedback">
+                                <input type="text" class="form-control" name="name" id="txtName" placeholder="Họ và tên(*)">
+                            </div>
+                            <div class="form-group has-feedback">
+                                <input type="text" class="form-control" name="brith" id="txtBrith" placeholder="Ngày sinh">
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label" for="">CLB/Trung tâm TDTT hoặc cơ sở bóng đá khác đã/ đang tham gia:</label>
+                                <div class="">
+                                    <select class="form-control" id="cboHinhThuc" name="cboHinhThuc">
+                                    	<option value="">---Hình thức tham gia (*)---</option>
+                                        <option>Là thành viên chính thức</option>
+                                        <option>Là thành viên không chính thức</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <select class="form-control" id="cboCity" name="cboCity">
+                                	<option value="">---Nơi ở hiện tại---</option>
+                                    <option value="Hà Nội">Hà Nội</option>
+                                    <option value="An Giang">An Giang</option>
+                                    <option value="Bà Rịa Vũng Tàu">Bà Rịa Vũng Tàu</option>
+                                    <option value="Bạc Liêu">Bạc Liêu</option>
+                                    <option value="Bình Dương">Bình Dương</option>
+                                    <option value="Bình Định">Bình Định</option>
+                                    <option value="Bình Phước">Bình Phước</option>
+                                    <option value="Bình Thuận">Bình Thuận</option>
+                                    <option value="Cần Thơ">Cần Thơ</option>
+                                    <option value="Đắk Lắk">Đắk Lắk</option>
+                                    <option value="Đà Nẵng">Đà Nẵng</option>
+                                    <option value="Đồng Nai">Đồng Nai</option>
+                                    <option value="Gia Lai">Gia Lai</option>
+                                    <option value="Hà Tĩnh">Hà Tĩnh</option>
+                                    <option value="Hải Dương">Hải Dương</option>
+                                    <option value="Hải Phòng">Hải Phòng</option>
+                                    <option value="Hòa Bình">Hòa Bình</option>
+                                    <option value="Kiên Giang">Kiên Giang</option>
+                                    <option value="Kon Tum">Kon Tum</option>
+                                    <option value="Khánh Hoà">Khánh Hoà</option>
+                                    <option value="Lạng Sơn">Lạng Sơn</option>
+                                    <option value="Lâm Đồng">Lâm Đồng</option>
+                                    <option value="Nghệ An">Nghệ An</option>
+                                    <option value="Phú Thọ">Phú Thọ</option>
+                                    <option value="Quảng Bình">Quảng Bình</option>
+                                    <option value="Quảng Nam">Quảng Nam</option>
+                                    <option value="Quảng Ninh">Quảng Ninh</option>
+                                    <option value="Quảng Ngãi">Quảng Ngãi</option>
+                                    <option value="Quảng Trị">Quảng Trị</option>
+                                    <option value="Sơn La">Sơn La</option>
+                                    <option value="Tây Ninh">Tây Ninh</option>
+                                    <option value="Tiền Giang">Tiền Giang</option>
+                                    <option value="TP. HCM">TP. HCM</option>
+                                    <option value="Tuyên Quang">Tuyên Quang</option>
+                                    <option value="Thái Bình">Thái Bình</option>
+                                    <option value="Thái Nguyên">Thái Nguyên</option>
+                                    <option value="Thanh Hóa">Thanh Hóa</option>
+                                    <option value="Thừa Thiên Huế">Thừa Thiên Huế</option>
+                                    <option value="Vĩnh Long">Vĩnh Long</option>
+                                    <option value="Vĩnh Phúc">Vĩnh Phúc</option>
+                                    <option value="Yên Bái">Yên Bái</option>
+                                </select>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-sm-4 control-label" for="">Tình trạng sức khỏe:</label>
+                                <div class="col-sm-8">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" checked name="group1[]" value="Tốt">
+                                        <label class="form-check-label" for="inlineCheckbox1">Tốt</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" name="group1[]" value="Không tốt">
+                                        <label class="form-check-label" for="inlineCheckbox1">Không tốt</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group has-feedback">
+                                <input type="text" class="form-control" name="name_parent" id="name_parent" placeholder="Họ tên Cha/Mẹ/Người bảo hộ thí sinh:">
+                            </div>
+                            <div class="form-group has-feedback">
+                                <input type="text" class="form-control" name="phone" id="txtPhone" placeholder="Điện thoại">
+                            </div>
+                            <div class="form-group has-feedback">
+                                <input type="text" class="form-control" name="email" id="txtEmail" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <div class="">
+                                    <select class="form-control" name="cboLocation" id="cboLocation">
+                                    	<option value="">---Đăng ký tham gia tại:---</option>
+                                        <option>Quảng Ninh</option>
+                                        <option>Nam Định</option>
+                                        <option>Nghệ An</option>
+                                        <option>Bình Dương</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="">
+                                    <select class="form-control" name="cboVitri" id="cboVitri">
+                                    	<option value="">---Vị trí mong muốn:---</option>
+                                        <option>Tiền đạo</option>
+                                        <option>Tiền vệ</option>
+                                        <option>Hậu vệ</option>
+                                        <option>Thủ môn</option>
+                                    </select>
+                                </div>
+
+                            </div>
+                            <div class="form-group text-center">
+                                <p><strong>Quý phụ huynh biết về chương trình từ nguồn thông tin</strong></p>
+                                <p><em>(có thể chọn nhiều phương án)</em></p>
+                            </div>
+                            <div class="form-group row source">
+                                <div class="col-sm-6">
+                                    <input class="form-check-input" type="checkbox" name="chk1[]" d="chk1" value="Từ các đại lý của Toyota">
+                                    <label class="form-check-label" for="">Từ các đại lý của Toyota</label>
+                                </div>
+                                <div class="col-sm-6">
+                                    <input class="form-check-input" type="checkbox" name="chk2[]" id="chk2" value="Câu lạc bộ, Trung tâm TDTT, ...">
+                                    <label class="form-check-label" for="">Câu lạc bộ, Trung tâm TDTT, ...</label>
+                                </div>
+                                <div class="col-sm-6">
+                                    <input class="form-check-input" type="checkbox" name="chk3[]" id="chk3" checked value="Qua online (website, Facebook, ...)">
+                                    <label class="form-check-label" for="">Qua online (website, Facebook, ...)</label>
+                                </div>
+                                <div class="col-sm-6">
+                                    <input class="form-check-input" type="checkbox" name="chk4[]" id="chk4" value="Nguồn thông tin khác (bạn bè, ...)">
+                                    <label class="form-check-label" for="">Nguồn thông tin khác (bạn bè, ...)</label>
+                                </div>
+                                <div class="col-sm-6">
+                                    <input class="form-check-input" type="checkbox" name="chk5[]" id="chk5" value="Qua quảng cáo báo chí, truyền hình">
+                                    <label class="form-check-label" for="">Qua quảng cáo báo chí, truyền hình</label>
+                                </div>
+                                <div class="col-sm-6">
+                                    <input class="form-check-input" type="checkbox" name="chk6[]" id="chk6" value="Trường học">
+                                    <label class="form-check-label" for="">Trường học</label>
+                                </div>
+                            </div>
+                            <div class="form-group text-center">
+                                <button class="btn btnRegister"><strong>ĐĂNG KÝ THAM GIA</strong></button>
+                            </div>
+                        </div>
+                        <div id="content-register"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/smooth-scrollbar.js"></script>
+    <script>
+        Scrollbar.initAll();
+    </script>
+
     <script src="js/smooth-scroll.js"></script>
     <script type="text/javascript" src="js/bootstrapValidator.min.js"></script>
     <script type="text/javascript" src="js/form-validation.js"></script>
     <script type="text/javascript" src="js/toastr.js"></script>
     <script>
-        $(document).ready(function () {
+        $(document).ready(function() {
             $('#txtBrith').datepicker({
                 format: "dd/mm/yyyy",
                 todayBtn: "linked",
                 autoclose: true,
                 todayHighlight: true,
                 language: 'vi'
-            }).on('changeDate', function (e) {
-            });
+            }).on('changeDate', function(e) {});
         });
         new WOW().init();
+
         function AllowNumberOnly(evt) {
             evt = (evt) ? evt : event;
             var charCode = (evt.charCode) ? evt.charCode : ((evt.keyCode) ? evt.keyCode : ((evt.which) ? evt.which : 0));
@@ -258,46 +437,62 @@ j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; 
             easing: 'easeInOutCubic',
             offset: 70,
             updateURL: false,
-            callbackBefore: function (toggle, navbar1) { },
-            callbackAfter: function (toggle, navbar1) { }
+            callbackBefore: function(toggle, navbar1) {},
+            callbackAfter: function(toggle, navbar1) {}
         });
-        $("button").click(function () {
+        $("button").click(function() {
             $(".navbar-toggle").toggleClass("close");
         });
 
-        $(".navbar-toggle").click(function () {
+        $(".navbar-toggle").click(function() {
             $("#header").toggleClass("open");
         });
 
-        $(".navbar-nav a").click(function () {
+        $(".navbar-nav a").click(function() {
             $(".navbar-collapse").removeClass("in");
 
             $(".navbar-toggle").removeClass("close");
         });
     </script>
     <script>
-		$('.owl-carousel').owlCarousel({
-				loop: true,
-				margin: 10,
-				responsiveClass: true,
-				responsive: {
-					0: {
-						items: 2,
-						nav: true
-					},
-					768: {
-						items: 2,
-						nav: true
-					},
-					1000: {
-						items: 4,
-						nav: true,
-						loop: true,
-						margin: 15,
-					}
-				}
-			})
-		</script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 2,
+                    nav: true
+                },
+                768: {
+                    items: 2,
+                    nav: true
+                },
+                1000: {
+                    items: 4,
+                    nav: true,
+                    loop: true,
+                    margin: 15,
+                }
+            }
+        });
+        $("input:checkbox").on('click', function() {
+            // in the handler, 'this' refers to the box clicked on
+            var $box = $(this);
+            if ($box.is(":checked")) {
+                // the name of the box is retrieved using the .attr() method
+                // as it is assumed and expected to be immutable
+                var group = "input:checkbox[name='" + $box.attr("name") + "']";
+                // the checked state of the group/box on the other hand will change
+                // and the current value is retrieved using .prop() method
+                $(group).prop("checked", false);
+                $box.prop("checked", true);
+            } else {
+                $box.prop("checked", false);
+            }
+        });
+    </script>
 
 </body>
+
 </html>
