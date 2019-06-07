@@ -13,7 +13,7 @@ body{
 	font-size:14px;
 	background:#000;
 	background-attachment:fixed;
-	font-family: 'UTMAvo';
+	font-family: 'MazdaType-Bold';
 	}
 	
 a{
@@ -74,7 +74,6 @@ ul.reset, ol.reset{
 	background: #d94700;
 	}
 strong, b{
-	font-family: 'UTMAvoBold';
 	}
 a, .btn, button{
 	outline:none;
@@ -89,7 +88,10 @@ h1, h2, h3{
 	z-index:9999;
 	min-height:70px;
 	background:#000;
-	border-bottom:5px solid #fff;
+	position:absolute;
+	top:0;
+	right:0;
+	left:0;
 	}
 #header .affix{
 	left:0;
@@ -97,7 +99,6 @@ h1, h2, h3{
 	top:0;z-index:9999;
 	min-height:70px;
 	background:#000;
-	border-bottom:5px solid #fff;
 	}
 .navbar-brand{
 	padding:15px 0;
@@ -141,7 +142,6 @@ h1, h2, h3{
 	background:#000;
 	color:#fff;
 	text-transform:uppercase;
-	font-family: 'UTMAvoBold';
 	}
 
 /**/
@@ -154,10 +154,11 @@ h1, h2, h3{
 	background:url(../img/dot.png) repeat-x 0 50%;
 	}
 .section .st-hd h3{
-	font-size:30px;
+	font-size:36px;
 	color:#fff;
 	margin:0;
 	line-height:normal;
+	text-transform:uppercase
 	}
 .section .st-hd h3 span{
 	display:inline-block;
@@ -177,8 +178,13 @@ h1, h2, h3{
 	/**/
 #slide-wrap{
 	background:url(../img/cx8.jpg) no-repeat 50% 100%;
-	padding:60px 0;
+	padding:0;
 	background-size:100% auto;
+	border-bottom:5px solid #000;
+	}
+#slide-wrap .container-fluid{
+	padding-top:130px;
+	padding-bottom:60px;
 	}
 #slide-wrap h1, #slide-wrap h2{
 	color:#e6e6e6;
@@ -186,26 +192,23 @@ h1, h2, h3{
 	text-transform:uppercase;
 	}
 #slide-wrap h1{
-	font-size:46px;
+	font-size:60px;
 	margin-top:0;
-	font-family: 'UTMAvoBold';
 	}
 #slide-wrap h2{
 	margin-bottom:30px;
 	font-size:36px;
 	}
 .formRegister{
-	padding:15px;
 	background:rgba(0,0,0,0.7);
 	}
 .formRegister .inner{
-	padding:30px 15px;
+	padding: 15px 30px;
 	}
 .formRegister .inner h3{
 	margin:0 0 30px 0;
 	color:#fff;
-	font-family: 'UTMAvoBold';
-	font-size:18px;
+	font-size:30px;
 	text-transform:uppercase;
 	text-align:center;
 	}
@@ -224,7 +227,6 @@ h1, h2, h3{
 	background:#790000;
 	color:#fff;
 	font-size:16px;
-	font-family: 'UTMAvoBold';
 	padding:10px 30px;
 	text-transform:uppercase;
 	}
@@ -251,7 +253,7 @@ h1, h2, h3{
 /**/
 #section1{
 	color:#fff;
-	padding:20px 0 0 0;
+	padding:0 0 0 0;
 	}
 #section2 img, #section3 img{
 	width:100%;
@@ -347,7 +349,6 @@ h1, h2, h3{
 	}
 .modal .modal-body{
 	padding:10px 30px;
-	font-family: 'HelveticaNeue';
 	font-size:15px;
 	color:#fff;
 	}
@@ -355,7 +356,6 @@ h1, h2, h3{
 	border-bottom:0;
 	padding:15px;
 	text-align:center;
-	font-family: 'UTMCopperplate';
 	font-size:36px;
 	color:#fff;
 	}
@@ -375,7 +375,6 @@ h1, h2, h3{
 	background:#e51b26;
 	color:#fff;
 	margin-top:15px;
-	font-family: 'UTMCopperplate';
 	border:none;
 	font-weight:bold;
 	font-size:24px;
@@ -418,27 +417,28 @@ img{
 	#slide-wrap{
 		background: url(../img/cx8_mb.jpg) no-repeat 50% 100%;
 		background-size:100% auto;
-		padding:15px 0 60px 0;
-		height:400px;
+		}
+	#slide-wrap .container-fluid{
+		padding-top:100px;
+		padding-bottom:30px;
 		}
 	#slide-wrap span{
 		font-size:24px;
 		display:block;}
 	#slide-wrap h1{
-		font-size:30px;
+		font-size:36px;
 		}
 	#slide-wrap h2{
-		font-size:14px;
+		font-size:24px;
 		}
 	.formRegister .inner{
-		padding:0;
+		padding:0 15px;
 		}
 	.formRegister .inner h3{
-		font-size:18px;
+		font-size:22px;
 		}
 	.section .st-hd h3{
-		font-size:16px;
-		font-family: 'UTMAvoBold';
+		font-size:15px;
 		}
 	.section .st-hd h3 span{
 		padding:0 10px;
