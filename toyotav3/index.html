@@ -20,6 +20,7 @@
     <script src="js/jquery.nanoscroller.min.js"></script>
     <script src="js/jquery.tmpl.min.js"></script>
     <script type="text/javascript" src="js/wow/wow.min.js"></script>
+    <script type="text/javascript" src="js/smooth-scrollbar.js"></script>
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="css/styles.css" rel="stylesheet" type="text/css" />
     <link href="css/font-face.css" rel="stylesheet" type="text/css" />
@@ -90,7 +91,7 @@
             <div class="container text-center">
                 <div class="titlePage">
                     <img src="img/slide.png">
-                    <div><button class="btn btn-danger btn-lg" data-toggle="modal" data-target="#modal_dangky">Đăng ký tham gia</button></div>
+                    <div><button class="btn btn-danger btn-lg" data-toggle="modal" data-target="#modal_dangky" style="font-size: 24px;">Đăng ký tham gia</button></div>
                     <p><em><strong>*Đăng ký Online để giảm thời gian chờ đợi khi đến dự tuyển</strong></em></p>
                 </div>
                 <div class="text">
@@ -122,8 +123,24 @@
                                     <p>Bằng việc điền vào mẫu đơn đăng ký và trực tiếp đến tham gia chương trình <strong class="red">“TRẠI HÈ BÓNG ĐÁ THIẾU NIÊN TOYOTA 2019”</strong> do Công ty Ô tô Toyota Việt Nam tổ chức. Quý khách mặc định cam kết các
                                         thông tin dưới đây:</p>
                                     <p>- Tất cả các nội dung thông tin được khai ở trên là hoàn toàn trung thực và chính xác. </p>
-                                    <p>- Chúng tôi đồng ý cho Ban tổ chức sử dụng các thông tin cũng như hình ảnh của cháu cho các hoạt động nhằm mục đích quảng cáo, truyền thông cho các hoạt động của Chương trình và hoạt động khác</p>
-                                    <p>...</p>
+                                    <p>- Chúng tôi đồng ý cho Ban tổ chức sử dụng các thông tin cũng như hình ảnh của cháu cho các hoạt động nhằm mục đích quảng cáo, truyền thông cho các hoạt động của Chương trình và hoạt động khác của BTC mà không phải trả thêm bất cứ chi phí nào.</p>
+                                    <p>- Chúng tôi đồng ý cho Ban tổ chức sử dụng các thông tin cũng như hình ảnh của cháu cho các hoạt động nhằm mục đích quảng cáo, truyền thông cho các hoạt động của Chương trình và hoạt động khác của BTC mà không phải trả thêm bất cứ chi phí nào.</p>
+                                    <p>
+                                       - Gia đình sẽ hỗ trợ BTC hoàn thành các thủ tục giấy tờ liên quan nếu Thí sinh được chọn tham gia tiếp các vòng sau của Chương trình. Trường hợp không thể tham gia, Gia đình sẽ có trách nhiệm thông báo với BTC ít nhất 07 ngày trước khi hoạt động diễn ra. 
+                                    </p>
+                                    <p>
+                                        - BTC có toàn quyền quyết định kết quả lựa chọn thí sinh
+                                    </p>
+                                    <p>
+                                        - - BTC chỉ áp dụng bảo hiểm cho sự kiện, không chịu trách nhiệm bảo hiểm cho từng cá nhân tham gia sự kiện. 
+                                    </p>
+                                    <p><em><strong>*Yêu cầu khi đến tham gia vòng tuyển chọn: </strong></em></p>
+                                    <p>
+                                        1. Xuất trình Bản photo Giấy khai sinh của Thí sinh (không cần công chứng) tại bàn làm thủ tục lấy số BD để BTC kiểm tra độ tuổi (đây là điều kiện bắt buộc để thí sinh được tham gia tuyển chọn).
+                                    </p>
+                                    <p>
+                                        2. Trang phục phù hợp cho đá bóng: Giầy đá bóng + Tất 
+                                    </p>    
                                 </article>
                             </div>
                         </div>
@@ -262,61 +279,19 @@
                             <div class="form-group has-feedback">
                                 <input type="text" class="form-control" name="brith" id="txtBrith" placeholder="Ngày sinh">
                             </div>
-                            <div class="form-group">
+                            <div class="">
                                 <label class="control-label" for="">CLB/Trung tâm TDTT hoặc cơ sở bóng đá khác đã/ đang tham gia:</label>
-                                <div class="">
+                                <div class="form-group">
                                     <select class="form-control" id="cboHinhThuc" name="cboHinhThuc">
                                     	<option value="">---Hình thức tham gia (*)---</option>
-                                        <option>Là thành viên chính thức</option>
-                                        <option>Là thành viên không chính thức</option>
+                                        <option value="Là thành viên chính thức">Là thành viên chính thức</option>
+                                        <option value="Chỉ tham gia khóa đào tạo ngắn" >Chỉ tham gia khóa đào tạo ngắn</option>
+                                        <option value="Chưa tham gia">Chưa tham gia </option>
                                     </select>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <select class="form-control" id="cboCity" name="cboCity">
-                                	<option value="">---Nơi ở hiện tại---</option>
-                                    <option value="Hà Nội">Hà Nội</option>
-                                    <option value="An Giang">An Giang</option>
-                                    <option value="Bà Rịa Vũng Tàu">Bà Rịa Vũng Tàu</option>
-                                    <option value="Bạc Liêu">Bạc Liêu</option>
-                                    <option value="Bình Dương">Bình Dương</option>
-                                    <option value="Bình Định">Bình Định</option>
-                                    <option value="Bình Phước">Bình Phước</option>
-                                    <option value="Bình Thuận">Bình Thuận</option>
-                                    <option value="Cần Thơ">Cần Thơ</option>
-                                    <option value="Đắk Lắk">Đắk Lắk</option>
-                                    <option value="Đà Nẵng">Đà Nẵng</option>
-                                    <option value="Đồng Nai">Đồng Nai</option>
-                                    <option value="Gia Lai">Gia Lai</option>
-                                    <option value="Hà Tĩnh">Hà Tĩnh</option>
-                                    <option value="Hải Dương">Hải Dương</option>
-                                    <option value="Hải Phòng">Hải Phòng</option>
-                                    <option value="Hòa Bình">Hòa Bình</option>
-                                    <option value="Kiên Giang">Kiên Giang</option>
-                                    <option value="Kon Tum">Kon Tum</option>
-                                    <option value="Khánh Hoà">Khánh Hoà</option>
-                                    <option value="Lạng Sơn">Lạng Sơn</option>
-                                    <option value="Lâm Đồng">Lâm Đồng</option>
-                                    <option value="Nghệ An">Nghệ An</option>
-                                    <option value="Phú Thọ">Phú Thọ</option>
-                                    <option value="Quảng Bình">Quảng Bình</option>
-                                    <option value="Quảng Nam">Quảng Nam</option>
-                                    <option value="Quảng Ninh">Quảng Ninh</option>
-                                    <option value="Quảng Ngãi">Quảng Ngãi</option>
-                                    <option value="Quảng Trị">Quảng Trị</option>
-                                    <option value="Sơn La">Sơn La</option>
-                                    <option value="Tây Ninh">Tây Ninh</option>
-                                    <option value="Tiền Giang">Tiền Giang</option>
-                                    <option value="TP. HCM">TP. HCM</option>
-                                    <option value="Tuyên Quang">Tuyên Quang</option>
-                                    <option value="Thái Bình">Thái Bình</option>
-                                    <option value="Thái Nguyên">Thái Nguyên</option>
-                                    <option value="Thanh Hóa">Thanh Hóa</option>
-                                    <option value="Thừa Thiên Huế">Thừa Thiên Huế</option>
-                                    <option value="Vĩnh Long">Vĩnh Long</option>
-                                    <option value="Vĩnh Phúc">Vĩnh Phúc</option>
-                                    <option value="Yên Bái">Yên Bái</option>
-                                </select>
+                                <input type="text" class="form-control" name="city" id="txtCity" placeholder="Nơi ở hiện tại">
                             </div>
                             <div class="form-group row">
                                 <label class="col-sm-4 control-label" for="">Tình trạng sức khỏe:</label>
@@ -344,10 +319,10 @@
                                 <div class="">
                                     <select class="form-control" name="cboLocation" id="cboLocation">
                                     	<option value="">---Đăng ký tham gia tại:---</option>
-                                        <option>Quảng Ninh</option>
-                                        <option>Nam Định</option>
-                                        <option>Nghệ An</option>
-                                        <option>Bình Dương</option>
+                                        <option value="Quảng Ninh">Quảng Ninh</option>
+                                        <option value="Nam Định">Nam Định</option>
+                                        <option value="Nghệ An">Nghệ An</option>
+                                        <option value="Bình Dương">Bình Dương</option>
                                     </select>
                                 </div>
                             </div>
@@ -355,10 +330,10 @@
                                 <div class="">
                                     <select class="form-control" name="cboVitri" id="cboVitri">
                                     	<option value="">---Vị trí mong muốn:---</option>
-                                        <option>Tiền đạo</option>
-                                        <option>Tiền vệ</option>
-                                        <option>Hậu vệ</option>
-                                        <option>Thủ môn</option>
+                                        <option value="Tiền đạo">Tiền đạo</option>
+                                        <option value="Tiền vệ">Tiền vệ</option>
+                                        <option value="Hậu vệ">Hậu vệ</option>
+                                        <option value="Thủ môn">Thủ môn</option>
                                     </select>
                                 </div>
 
@@ -403,10 +378,6 @@
             </div>
         </div>
     </div>
-    <script src="js/smooth-scrollbar.js"></script>
-    <script>
-        Scrollbar.initAll();
-    </script>
 
     <script src="js/smooth-scroll.js"></script>
     <script type="text/javascript" src="js/bootstrapValidator.min.js"></script>
@@ -421,6 +392,8 @@
                 todayHighlight: true,
                 language: 'vi'
             }).on('changeDate', function(e) {});
+            var Scrollbar = window.Scrollbar;
+            Scrollbar.init(document.querySelector('.scroll-content'));
         });
         new WOW().init();
 

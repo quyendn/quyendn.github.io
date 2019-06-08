@@ -238,8 +238,8 @@ h1, h2, h3{
 	padding:60px 0 30px 0;
 	min-height:940px;
 	position:relative;
-	background:url(../img/bg_slide.jpg) no-repeat 100% 50%;
-	background-size:auto 100%;
+	background: url(../img/bg_slide.jpg) no-repeat 100% 50% / 100% auto;
+	/* background-size:auto 100%; */
 	
 	}
 #slide .inner, #section1 .inner{

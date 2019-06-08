@@ -90,10 +90,10 @@ $(document).ready(function() {
                     }
                 }
             },
-            cboCity: {
+            city: {
                 validators: {
                     notEmpty: {
-                        message: 'Cần chọn nơi ở.'
+                        message: 'Cần nhập nơi ở.'
                     }
                 }
             },
@@ -111,7 +111,7 @@ $(document).ready(function() {
             var name = $('#txtName').val();
             var birthdate = $("#txtBrith").val();
             var hinhThuc = $("#cboHinhThuc").val();
-            var city = $("#cboCity").val();
+            var city = $("#txtCity").val();
             var suckhoe = $("input[name='group1[]']:checked").val();
             var name_parent = $('#name_parent').val();
             var phone = $('#txtPhone').val();
