@@ -1,0 +1,33 @@
+@font-face {
+  font-family: 'UTM Helve';
+  src: url('../fonts/UTM Helve.eot');
+  src: url('../fonts/UTM Helve.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/UTM Helve.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'VIE-HandelGothic-Bold';
+  src: url('../fonts/VIE-HandelGothic-Bold.eot');
+  src: url('../fonts/VIE-HandelGothic-Bold.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/VIE-HandelGothic-Bold.svg#VIE-HandelGothic-Bold') format('svg'),
+       url('../fonts/VIE-HandelGothic-Bold.ttf') format('truetype'),
+       url('../fonts/VIE-HandelGothic-Bold.woff') format('woff'),
+       url('../fonts/VIE-HandelGothic-Bold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'VIE-HandelGothicMedium';
+  src: url('../fonts/VIE-HandelGothicMedium.eot');
+  src: url('../fonts/VIE-HandelGothicMedium.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/VIE-HandelGothicMedium.svg#VIE-HandelGothicMedium') format('svg'),
+       url('../fonts/VIE-HandelGothicMedium.ttf') format('truetype'),
+       url('../fonts/VIE-HandelGothicMedium.woff') format('woff'),
+       url('../fonts/VIE-HandelGothicMedium.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
