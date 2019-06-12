@@ -63,17 +63,17 @@ $(document).ready(function() {
         },
         onSuccess: function(e) {
 
-            var name = $('#txtNameDownload').val();
-            var email = $('#txtEmailDownload').val();
-            var phone = $('#txtPhoneDownload').val();
+            var name = $('#txtName').val();
+            var email = $('#txtEmail').val();
+            var phone = $('#txtPhone').val();
             var emailto = "quyendn84@gmail.com";
             var check = checkPhoneNumber();
             if (!check)
                 return;
             var dataJSON = { "name": name, "phone": phone, "email": email, "emailto": emailto };
-            showLoadingContactImage('content-register', 'frmContentDownloadReg');
+            showLoadingContactImage('content-register', 'frmContentReg');
             $.ajax({
-                url: "https://alpha.f5academy.net/api/MobifoneSMSservice",
+                url: "https://alpha.f5academy.net/api/MobifoneOCservice",
                 type: "Post",
                 async: false,
                 data: dataJSON,
@@ -81,11 +81,11 @@ $(document).ready(function() {
                 dataType: 'jsonp',
                 success: function(states) {
                     $('#frmRegDownload').bootstrapValidator('resetForm', true);
-                    hideLoadingContactImage('content-register', 'frmContentDownloadReg');
+                    hideLoadingContactImage('content-register', 'frmContentReg');
                 },
                 error: function(ex) {
                     toastr.error('Đã có lỗi trong quá trình đăng ký, mời bạn thử lại.', { timeOut: 5000 })
-                    hideLoadingContactImage('content-register', 'frmContentDownloadReg');
+                    hideLoadingContactImage('content-register', 'frmContentReg');
                 },
                 complete: function(jqXHR, textStatus) {
                     $('#txtName').val('');
@@ -93,8 +93,8 @@ $(document).ready(function() {
                     $('#txtPhone').val('');
                     $('#frmRegDownload').bootstrapValidator('resetForm', true);
                     toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', { timeOut: 5000 })
-                    hideLoadingContactImage('content-register', 'frmContentDownloadReg');
-                    window.location.href = "http://quyendn.github.io/kia/dang-ky-thanh-cong.html";
+                    hideLoadingContactImage('content-register', 'frmContentReg');
+                    window.location.href = "http://quyendn.github.io/mobifone/dang-ky-thanh-cong.html";
                 }
             });
         }
@@ -115,11 +115,11 @@ $(document).ready(function() {
 
     function checkPhoneNumber() {
         var vnf_regex = /((09|03|07|08|05)+([0-9]{8})\b)/g;
-        var mobile = $('#txtPhoneDownload').val();
+        var mobile = $('#txtPhone').val();
         if (mobile !== '') {
             if (vnf_regex.test(mobile) == false) {
                 toastr.error('Số điện thoại của bạn không đúng định dạng.', { timeOut: 5000 })
-                $("#txtPhoneDownload").focus();
+                $("#txtPhone").focus();
                 return false;
 
             } else {
