@@ -27,7 +27,7 @@ $(document).ready(function() {
         // Indicate where the error messages are shown.
         // Tooltip, Popover, Custom Container.
         // =================================================================
-   
+
     $('#frmRegDownload').bootstrapValidator({
         message: 'This value is not valid',
         excluded: [':disabled'],
@@ -77,7 +77,7 @@ $(document).ready(function() {
                 }
             }
         },
-        onSuccess: function (e) {
+        onSuccess: function(e) {
 
             var name = $('#txtName').val();
             var email = $('#txtEmail').val();
@@ -98,26 +98,26 @@ $(document).ready(function() {
                 data: dataJSON,
                 contentType: 'application/json; charset=utf-8',
                 dataType: 'jsonp',
-                success: function (states) {
+                success: function(states) {
                     $('#frmRegDownload').bootstrapValidator('resetForm', true);
                     hideLoadingContactImage('content-register', 'frmContentReg');
-                 },
-                error: function (ex) {
+                },
+                error: function(ex) {
                     toastr.error('Đã có lỗi trong quá trình đăng ký, mời bạn thử lại.', { timeOut: 5000 })
                     hideLoadingContactImage('content-register', 'frmContentReg');
                 },
-                complete: function (jqXHR, textStatus) {
+                complete: function(jqXHR, textStatus) {
                     $('#txtName').val('');
                     $("#txtEmail").val('');
                     $('#txtPhone').val('');
                     $('#frmRegDownload').bootstrapValidator('resetForm', true);
                     toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', { timeOut: 5000 })
                     hideLoadingContactImage('content-register', 'frmContentReg');
-                    window.location.href = "http://quyendn.github.io/mazda/dang-ky-thanh-cong.html";
+                    window.location.href = "http://cx-8.mazdamotors.vn/dang-ky-thanh-cong.html";
                 }
             });
         }
-    }).on('success.form.fv', function (e) {
+    }).on('success.form.fv', function(e) {
 
     });
     $('#frmRegDownloadSub').bootstrapValidator({
@@ -169,7 +169,7 @@ $(document).ready(function() {
                 }
             }
         },
-        onSuccess: function (e) {
+        onSuccess: function(e) {
 
             var name = $('#txtNameSub').val();
             var email = $('#txtEmailSub').val();
@@ -190,26 +190,26 @@ $(document).ready(function() {
                 data: dataJSON,
                 contentType: 'application/json; charset=utf-8',
                 dataType: 'jsonp',
-                success: function (states) {
+                success: function(states) {
                     $('#frmRegDownloadSub').bootstrapValidator('resetForm', true);
                     hideLoadingContactImage('content-register-sub', 'frmContentRegSub');
                 },
-                error: function (ex) {
+                error: function(ex) {
                     toastr.error('Đã có lỗi trong quá trình đăng ký, mời bạn thử lại.', { timeOut: 5000 })
                     hideLoadingContactImage('content-register-sub', 'frmContentRegSub');
                 },
-                complete: function (jqXHR, textStatus) {
+                complete: function(jqXHR, textStatus) {
                     $('#txtNameSub').val('');
                     $("#txtEmailSub").val('');
                     $('#txtPhoneSub').val('');
                     $('#frmRegDownloadSub').bootstrapValidator('resetForm', true);
                     toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', { timeOut: 5000 })
                     hideLoadingContactImage('content-register-sub', 'frmContentRegSub');
-                    window.location.href = "http://quyendn.github.io/mazda/dang-ky-thanh-cong.html";
+                    window.location.href = "http://cx-8.mazdamotors.vn/dang-ky-thanh-cong.html";
                 }
             });
         }
-    }).on('success.form.fv', function (e) {
+    }).on('success.form.fv', function(e) {
 
     });
     $('#frmMobile').bootstrapValidator({
@@ -228,7 +228,7 @@ $(document).ready(function() {
                 }
             }
         },
-        onSuccess: function (e) {
+        onSuccess: function(e) {
             var email = $('#txtEmailBrochure').val();
             var emailto = "quyendn84@gmail.com";
             var typeId = 2;
@@ -241,44 +241,49 @@ $(document).ready(function() {
                 data: dataJSON,
                 contentType: 'application/json; charset=utf-8',
                 dataType: 'jsonp',
-                success: function (states) {
+                success: function(states) {
                     $('#frmMobile').bootstrapValidator('resetForm', true);
                     hideLoadingContactImage('content-mobile', 'formContentContactMobile');
                 },
-                error: function (ex) {
+                error: function(ex) {
                     toastr.error('Đã có lỗi trong quá trình đăng ký, mời bạn thử lại.', { timeOut: 5000 })
                     hideLoadingContactImage('content-mobile', 'frmContentReg');
                 },
-                complete: function (jqXHR, textStatus) {
+                complete: function(jqXHR, textStatus) {
                     $("#txtEmailBrochure").val('');
                     $('#frmMobile').bootstrapValidator('resetForm', true);
                     toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', { timeOut: 5000 })
                     hideLoadingContactImage('content-mobile', 'formContentContactMobile');
-                    window.location.href = "http://quyendn.github.io/mazda/dang-ky-thanh-cong.html";
+                    window.location.href = "http://cx-8.mazdamotors.vn/dang-ky-thanh-cong.html";
                 }
             });
         }
-    }).on('success.form.fv', function (e) {
+    }).on('success.form.fv', function(e) {
 
     });
+
     function showLoadingImage() {
 
         $('#content').empty().append('<div id="loading-image" align="center"><img src="img/ajax-loader.gif" alt="Loading..." /></div>');
         $('#formContentContact').hide();
     }
+
     function hideLoadingImage() {
         $('#formContentContact').show();
         $('#loading-image').remove();
     }
-    function showLoadingContactImage(contentLoading,frmContent) {
+
+    function showLoadingContactImage(contentLoading, frmContent) {
 
         $('#' + contentLoading).empty().append('<div id="loading-image" align="center"><img src="img/ajax-loader.gif" alt="Loading..." /></div>');
         $('#' + frmContent).hide();
     }
+
     function hideLoadingContactImage(contentLoading, frmContent) {
         $('#' + frmContent).show();
         $('#loading-image').remove();
     }
+
     function checkPhoneNumber() {
         var vnf_regex = /((09|03|07|08|05)+([0-9]{8})\b)/g;
         var mobile = $('#txtPhone').val();
@@ -296,6 +301,7 @@ $(document).ready(function() {
             return false;
         }
     }
+
     function checkPhoneNumber2() {
         var vnf_regex = /((09|03|07|08|05)+([0-9]{8})\b)/g;
         var mobile = $('#txtPhoneSub').val();

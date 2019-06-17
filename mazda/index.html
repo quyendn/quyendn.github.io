@@ -11,7 +11,7 @@
     <meta property="og:title" content="Mazda CX8" />
     <meta property="og:url" content="" />
     <meta property="og:description" content="TMazda CX8" />
-    <link rel="shortcut icon" href="images/icon-logo.png">
+    <link rel="shortcut icon" href="http://cx-8.mazdamotors.vn/favicon.ico">
     <meta property="fb:app_id" content="890776717644660" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -37,28 +37,47 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-846605434"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
         gtag('js', new Date());
 
         gtag('config', 'AW-846605434');
     </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142136957-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-142136957-1');
+    </script>
     <!-- Facebook Pixel Code -->
     <script>
-        !function (f, b, e, v, n, t, s) {
-            if (f.fbq) return; n = f.fbq = function () {
+        ! function (f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function () {
                 n.callMethod ?
-                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
             };
-            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
-            n.queue = []; t = b.createElement(e); t.async = !0;
-            t.src = v; s = b.getElementsByTagName(e)[0];
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
             s.parentNode.insertBefore(t, s)
         }(window, document, 'script',
-        'https://connect.facebook.net/en_US/fbevents.js');
+            'https://connect.facebook.net/en_US/fbevents.js');
         fbq('init', '1877629032290500');
         fbq('track', 'PageView');
     </script>
-    
+
     <!-- End Facebook Pixel Code -->
 
 
@@ -143,7 +162,7 @@
                                                 <option value="Sơn La">Sơn La</option>
                                                 <option value="Tây Ninh">Tây Ninh</option>
                                                 <option value="Tiền Giang">Tiền Giang</option>
-                                               
+                                                <option value="Long An">Long An</option>
                                                 <option value="Tuyên Quang">Tuyên Quang</option>
                                                 <option value="Thái Bình">Thái Bình</option>
                                                 <option value="Thái Nguyên">Thái Nguyên</option>
@@ -185,7 +204,7 @@
                 </div>
             </div>
             <script>
-                $(window).resize(function() {
+                $(window).resize(function () {
                     $('#slide-wrap').height($(window).height() - 0);
                 });
 
@@ -197,10 +216,10 @@
 
 
         <div class="section wow fadeInUp" id="section1">
-            <video id="video" poster="img/video.png" width="100%" muted="" controls loop autoplay>
-            <source src="video/TEASER_30S.mp4" type="video/mp4">
-            <source src="video/TEASER_30S.mp4" type="video/ogg">
-        </video>
+            <video id="video" poster="img/video.png" width="100%" muted controls loop autoplay>
+                <source src="video/TEASER_30S.mp4" type="video/mp4">
+                <source src="video/TEASER_30S.mp4" type="video/ogg">
+            </video>
         </div>
 
         <div class="section wow fadeInUp" id="section2">
@@ -211,13 +230,13 @@
                 <div class="row">
                     <div class="col-md-7 col-sm-12 wow fadeInDown">
                         <div class="row">
-                            <div class="col-md-12 col-sm-6 wow fadeInLeft"><img src="img/kg_1.jpg"></div>
+                            <div class="col-md-12 col-sm-12 wow fadeInLeft"><img src="img/kg_1.jpg"></div>
                             <div class="col-md-6 col-sm-6 wow fadeInLeft"><img src="img/kg_4.jpg"></div>
                             <div class="col-md-6 col-sm-6 wow fadeInRight"><img src="img/kg_5.jpg"></div>
                         </div>
                     </div>
-                    <div class="col-md-5 col-sm-4 wow fadeInLeft"><img src="img/kg_2.jpg"></div>
-                    <div class="col-md-5 col-sm-4 wow fadeInUp"><img src="img/kg_3.jpg"></div>
+                    <div class="col-md-5 col-sm-6 wow fadeInLeft"><img src="img/kg_2.jpg"></div>
+                    <div class="col-md-5 col-sm-6 wow fadeInUp"><img src="img/kg_3.jpg"></div>
                 </div>
             </div>
         </div>
@@ -227,50 +246,50 @@
                     <h3><span>THIẾT KẾ TINH TẾ - KODO</span></h3>
                 </div>
                 <div class="row">
-                    <div class="col-md-8 col-sm-12 wow fadeInDown"><img src="img/tk_1.jpg"></div>
-                    <div class="col-md-4 col-sm-12">
+                    <div class="col-md-7 col-sm-12 wow fadeInDown">
                         <div class="row">
-                            <div class="col-md-12 col-sm-6 wow fadeInLeft"><img src="img/tk_2.jpg"></div>
-                            <div class="col-md-12 col-sm-6 wow fadeInRight"><img src="img/tk_3.jpg"></div>
+                            <div class="col-md-12 col-sm-12 wow fadeInLeft"><img src="img/tk_1.jpg"></div>
+                            <div class="col-md-6 col-sm-6 wow fadeInLeft"><img src="img/tk_4.jpg"></div>
+                            <div class="col-md-6 col-sm-6 wow fadeInRight"><img src="img/tk_3.jpg"></div>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-4 wow fadeInUp"><img src="img/tk_4.jpg"></div>
-                    <div class="col-md-4 col-sm-4 wow fadeInRight"><img src="img/tk_5.jpg"></div>
-                    <div class="col-md-4 col-sm-4 wow fadeInLeft"><img src="img/tk_6.jpg"></div>
+                    <div class="col-md-5 col-sm-6 wow fadeInLeft"><img src="img/tk_2.jpg"></div>
+                    <div class="col-md-5 col-sm-6 wow fadeInUp"><img src="img/tk_6.jpg"></div>
                 </div>
+
             </div>
         </div>
         <!--
         <div class="section wow fadeInUp hidden" id="section4">
             <div class="container-fluid text-center">
                 <div class="row">
-                	<div class="col-md-3 col-sm-3 wow fadeInLeft">
-                    	<div class="inner tl-st4">
+                    <div class="col-md-3 col-sm-3 wow fadeInLeft">
+                        <div class="inner tl-st4">
                             <h3>4 tính năng mới<br/><strong><span class="text-lg">An toàn</span><br/>Chủ động</strong></h3>
                         </div>
                     </div>
                     <div class="col-md-9 col-sm-9 wow fadeInRight">
-                    	<div class="row">
+                        <div class="row">
                             <div class="col-md-3 col-sm-6">
-                            	<div class="inner">
+                                <div class="inner">
                                     <div class="icon"><img src="img/tn_1.png" height="70px"></div>
                                     <p>Mazda Radar cuise control</p>
                                 </div>
                             </div>
                             <div class="col-md-3 col-sm-6">
-                            	<div class="inner">
+                                <div class="inner">
                                     <div class="icon"><img src="img/tn_2.png" height="70px"></div>
                                     <p>Smart city brake support & front pedestrian detection</p>
                                 </div>
                             </div>
                             <div class="col-md-3 col-sm-6">
-                            	<div class="inner">
+                                <div class="inner">
                                     <div class="icon"><img src="img/tn_3.png" height="70px"></div>
                                     <p>Forward obstruction warning/smartbrake support</p>
                                 </div>
                             </div>
                             <div class="col-md-3 col-sm-6">
-                            	<div class="inner">
+                                <div class="inner">
                                     <div class="icon"><img src="img/tn_4.png" height="70px"></div>
                                     <p>Dricer attention alert</p>
                                 </div>
@@ -323,7 +342,7 @@
                                 <option value="Sơn La">Sơn La</option>
                                 <option value="Tây Ninh">Tây Ninh</option>
                                 <option value="Tiền Giang">Tiền Giang</option>
-                                
+                                <option value="Long An">Long An</option>
                                 <option value="Tuyên Quang">Tuyên Quang</option>
                                 <option value="Thái Bình">Thái Bình</option>
                                 <option value="Thái Nguyên">Thái Nguyên</option>
@@ -394,14 +413,14 @@
     <script type="text/javascript" src="js/form-validation.js"></script>
 
     <script>
-        $(document).ready(function() {
+        $(document).ready(function () {
             $('#txtDate').datepicker({
                 format: "dd/mm/yyyy",
                 todayBtn: "linked",
                 autoclose: true,
                 todayHighlight: true,
                 language: 'vi'
-            }).on('changeDate', function(e) {});
+            }).on('changeDate', function (e) { });
         });
         new WOW().init();
 
@@ -418,23 +437,23 @@
             easing: 'easeInOutCubic',
             offset: 70,
             updateURL: false,
-            callbackBefore: function(toggle, navbar1) {},
-            callbackAfter: function(toggle, navbar1) {}
+            callbackBefore: function (toggle, navbar1) { },
+            callbackAfter: function (toggle, navbar1) { }
         });
-        $("button").click(function() {
+        $("button").click(function () {
             $(".navbar-toggle").toggleClass("close");
         });
 
-        $(".navbar-toggle").click(function() {
+        $(".navbar-toggle").click(function () {
             $("#header").toggleClass("open");
         });
 
-        $(".navbar-nav a").click(function() {
+        $(".navbar-nav a").click(function () {
             $(".navbar-collapse").removeClass("in");
 
             $(".navbar-toggle").removeClass("close");
         });
-        $('#cboCity').change(function() {
+        $('#cboCity').change(function () {
             var value = $("#cboCity").val();
             switch (value) {
                 case "Hà Nội":
@@ -589,6 +608,10 @@
                     $("#cboPartner").html("<option value='Mazda Thanh Hoá'>Mazda Huế</option>");
                     // code block
                     break;
+                case "Long An":
+                    $("#cboPartner").html("<option value='Mazda Long An'>Mazda Long An</option>");
+                    // code block
+                    break;
                 case "Vĩnh Long":
                     $("#cboPartner").html("<option value='Mazda Vĩnh Long'>Mazda Vĩnh Long</option>");
                     // code block
@@ -606,7 +629,7 @@
                     break;
             }
         });
-        $('#cboSubCity').change(function() {
+        $('#cboSubCity').change(function () {
             var value = $("#cboSubCity").val();
             switch (value) {
                 case "Hà Nội":
@@ -759,6 +782,10 @@
                     break;
                 case "Thừa Thiên Huế":
                     $("#cboSubPartner").html("<option value='Mazda Thanh Hoá'>Mazda Huế</option>");
+                    // code block
+                    break;
+                case "Long An":
+                    $("#cboSubPartner").html("<option value='Mazda Long An'>Mazda Long An</option>");
                     // code block
                     break;
                 case "Vĩnh Long":
