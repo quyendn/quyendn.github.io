@@ -39,6 +39,21 @@
     <script type="text/javascript">
     jwplayer.key = "XumejFo+svwQswRJ3Mi++itror5V6+6q+6I7MQ==";
     </script>
+    <script type="text/javascript">
+    var primaryCookie = 'html5';
+    var skinURL = "/jwplayer/skins/five/five.xml";
+    var cookies = document.cookie.split(";");
+    for (i = 0; i < cookies.length; i++) {
+        var x = cookies[i].substr(0, cookies[i].indexOf("="));
+        var y = cookies[i].substr(cookies[i].indexOf("=") + 1);
+        x = x.replace(/^\s+|\s+$/g, "");
+        if (x == 'primaryCookie') {
+            primaryCookie = y;
+        } else if (x == 'skinURL') {
+            skinURL = y;
+        }
+    }
+    </script>
 
     <!-- Google Tag Manager -->
     <script>
@@ -116,7 +131,7 @@
                             <div class="player text-center" id="VdoPlayr" style="text-align:center;"></div>
                             <script type='text/javascript'>
                                 jwplayer('VdoPlayr').setup({
-                                    autostart: true,
+                                    
                                     file: 'https://youtu.be/KZJ5lf_65PQ',
                                     image: "img/video.jpg",
                                     width: '100%',
@@ -124,7 +139,8 @@
                                     repeat: true,
                                     controls: true,
                                     skin: 'seven',
-                                    mute: false,
+                                    autostart: true,
+                                    mute: true,
                                     primary: 'html5'
                                 });
                             </script>
