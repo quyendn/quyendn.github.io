@@ -5,7 +5,7 @@
 //
 // - ThemeOn.net -
 
-$(document).ready(function() {
+$(document).ready(function () {
 
 
     // FORM VALIDATION
@@ -16,33 +16,24 @@ $(document).ready(function() {
     // FORM VALIDATION FEEDBACK ICONS
     // =================================================================
     var faIcon = {
-            valid: 'fa fa-check-circle fa-lg text-success',
-            invalid: 'fa fa-times-circle fa-lg',
-            validating: 'fa fa-refresh'
-        }
-        // FORM VALIDATION ON ACCORDION
-        // =================================================================
-        // FORM VALIDATION CUSTOM ERROR CONTAINER
-        // =================================================================
-        // Indicate where the error messages are shown.
-        // Tooltip, Popover, Custom Container.
-        // =================================================================
+        valid: 'fa fa-check-circle fa-lg text-success',
+        invalid: 'fa fa-times-circle fa-lg',
+        validating: 'fa fa-refresh'
+    }
+    // FORM VALIDATION ON ACCORDION
+    // =================================================================
+    // FORM VALIDATION CUSTOM ERROR CONTAINER
+    // =================================================================
+    // Indicate where the error messages are shown.
+    // Tooltip, Popover, Custom Container.
+    // =================================================================
 
     $('#frmRegDownload').bootstrapValidator({
         message: 'This value is not valid',
         excluded: [':disabled'],
         feedbackIcons: faIcon,
         fields: {
-            email: {
-                validators: {
-                    notEmpty: {
-                        message: 'Địa chỉ email không được để trống.'
-                    },
-                    emailAddress: {
-                        message: 'Không đúng định dạng email'
-                    }
-                }
-            },
+           
             name: {
                 validators: {
                     notEmpty: {
@@ -106,7 +97,7 @@ $(document).ready(function() {
             }
 
         },
-        onSuccess: function(e) {
+        onSuccess: function (e) {
 
             var name = $('#txtName').val();
             var birthdate = $("#txtBrith").val();
@@ -169,15 +160,15 @@ $(document).ready(function() {
                 data: dataJSON,
                 contentType: 'application/json; charset=utf-8',
                 dataType: 'jsonp',
-                success: function(states) {
+                success: function (states) {
                     $('#frmRegDownload').bootstrapValidator('resetForm', true);
                     hideLoadingContactImage('content-register', 'frmContentReg');
                 },
-                error: function(ex) {
+                error: function (ex) {
                     toastr.error('Đã có lỗi trong quá trình đăng ký, mời bạn thử lại.', { timeOut: 5000 })
                     hideLoadingContactImage('content-register', 'frmContentReg');
                 },
-                complete: function(jqXHR, textStatus) {
+                complete: function (jqXHR, textStatus) {
                     $('#txtName').val('');
                     $("#txtEmail").val('');
                     $('#txtPhone').val('');
@@ -189,7 +180,7 @@ $(document).ready(function() {
                 }
             });
         }
-    }).on('success.form.fv', function(e) {
+    }).on('success.form.fv', function (e) {
 
     });
 
