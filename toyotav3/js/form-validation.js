@@ -185,7 +185,7 @@ $(document).ready(function() {
                     toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', { timeOut: 5000 })
                     hideLoadingContactImage('content-register', 'frmContentReg');
                     $("#modal_dangky").modal("hide");
-                    window.location.href = "https://quyendn.github.io/toyotav3/dang-ky-thanh-cong.html";
+                    window.location.href = "http://www.toyotavn.com.vn/vi/dong-gop-xa-hoi/van-hoa-xa-hoi/trai-he-bong-da/dang-ky-thanh-cong.html";
                 }
             });
         }
