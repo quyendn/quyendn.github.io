@@ -38,8 +38,8 @@
                             <li><a data-scroll="" data-options="easing: easeInQuad" href="#section3" class="navbar1 ">THIẾT KẾ</a></li>
                             <li><a data-scroll="" data-options="easing: easeInQuad" href="#section2" class="navbar1 ">CÁC PHIÊN BẢN</a></li>
                             <li><a data-scroll="" data-options="easing: easeInQuad" href="#section6" class="navbar1 ">CÁC TÍNH NĂNG</a></li>
-                            <li><a data-scroll="" data-options="easing: easeInQuad" href="#section1" class="navbar1 ">ĐĂNG KÝ BROCHURE</a></li>
-                            <li><a data-scroll="" data-options="easing: easeInQuad" href="#section1" class="navbar1">ĐĂNG KÝ NHẬN BÁO GIÁ</a></li>
+                            <li><a data-scroll="" data-options="easing: easeInQuad" href="#section1" rel="4" class="navbar1 btn-send-register">ĐĂNG KÝ BROCHURE</a></li>
+                            <li><a data-scroll="" data-options="easing: easeInQuad" href="#section1" rel="3" class="navbar1 btn-send-register">ĐĂNG KÝ NHẬN BÁO GIÁ</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -89,7 +89,7 @@
                                     </div>
                                     <div class="col-md-3">
                                         <div class="form-group has-feedback">
-                                        <input type="text" class="form-control" value="Email" name="name" id="txtMail"  placeholder="Email"></div>
+                                            <input type="text" class="form-control" value="Email" name="name" id="txtEmail" placeholder="Email"></div>
                                     </div>
                                     <div class="col-md-3">
                                         <div class="form-group has-feedback">
@@ -111,7 +111,9 @@
         </div>
         <div class="section wow fadeInUp" id="section2">
             <div class="container">
-                <div id="video"><img src="img/video.png" width="100%"></div>
+                <div id="video">
+                    <iframe width="100%" height="450" src="https://www.youtube.com/embed/Ze4-k9yxc3s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
                 <div class="st-hd text-center">
                     <h3>CÁC PHIÊN BẢN VÀ MÀU SẮC</h3>
                 </div>
@@ -340,7 +342,7 @@
         </div>
         <div class="section wow fadeInUp" id="section7">
             <div class="container">
-            	<div class="st-hd text-center"><h3><span>ƯU ĐÃI ĐẶC BIỆT TRONG THÁNG</span></h3></div>
+            	<div class="st-hd text-center"><h3><span>TIN TỨC & THÔNG TIN ƯU ĐÃI</span></h3></div>
                 <div class="row wow fadeInDown">
                     <div class="col-sm-12">
                         <div class="inner">
@@ -386,7 +388,7 @@
                               <td>
                               	<h2>Tìm Đại Lý</h2>
                                 <p>Tìm đại lý gần bạn nhất</p>
-                                <p><a href="">Tìm trên bản đồ</a></p>
+                                <p><a href="http://mazdamotors.vn/ho-tro/tim-kiem-showroom/">Tìm trên bản đồ</a></p>
                               </td>
                             </tr>
                           </tbody>
@@ -400,7 +402,7 @@
                               <td>
                               	<h2>Chi Phí Linh Kiện</h2>
                                 <p>Danh sách các linh kiện, phụ tùng</p>
-                                <p><a href="">Xem bảng giá</a></p>
+                                <p><a href="http://mazdamotors.vn/dich-vu-khach-hang/phu-tung-phu-kien/">Xem bảng giá</a></p>
                               </td>
                             </tr>
                           </tbody>
@@ -414,7 +416,7 @@
                               <td>
                               	<h2>Brochure</h2>
                                 <p>...</p>
-                                <p><a href="">Download</a></p>
+                                <p><a href="/img/BROCHURE v 5.pdf" target="_blank">Download</a></p>
                               </td>
                             </tr>
                           </tbody>
@@ -436,18 +438,18 @@
                     <p>Địa chỉ: Thôn 4. Xã Tam Hiệp, Huyện Núi Thành, Tỉnh Quảng Nam, Việt Nam </p>
                 </address>
             	<ul>
-                	<li><a href=""><img src="img/ic_phone.png"><span class="small">Hotline CSKH</span><br/>1900 5455 91</a></li>
-                    <li><a href=""><img src="img/ic_web.png">www.mazdamotors.vn</a></li>
-                    <li><a href=""><img src="img/ic_fb.png">Mazda Vietnam</a></li>
-                    <li><a href=""><img src="img/ic_yt.png">Mazda Vietnam</a></li>
-                    <li><a href=""><img src="img/ic_off.png">mazdavnofficial</a></li>
+                	<li><a href="tel:1900545591"><img src="img/ic_phone.png"><span class="small">Hotline CSKH</span><br />1900 5455 91</a></li>
+                    <li><a href="http://mazdamotors.vn/"><img src="img/ic_web.png">www.mazdamotors.vn</a></li>
+                    <li><a href="https://www.facebook.com/mazdamotors.vn/"><img src="img/ic_fb.png">Mazda Vietnam</a></li>
+                    <li><a href="https://www.youtube.com/channel/UCS0mc7owoy6D5TKn0xGPpBQ"><img src="img/ic_yt.png">Mazda Vietnam</a></li>
+                    <li><a href="http://mazdamotors.vn/"><img src="img/ic_off.png">mazdavnofficial</a></li>
                 </ul>
             </div>
         </div>
     </div>
     
     <!---->
-    
+    <input type="hidden" id="hdfTypeId" value="4" />
     <!---->
     <script src="js/smooth-scroll.js"></script>
     <script type="text/javascript" src="js/bootstrapValidator.min.js"></script>

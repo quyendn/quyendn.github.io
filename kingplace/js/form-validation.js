@@ -95,7 +95,7 @@ $(document).ready(function() {
                     $('#frmRegDownload').bootstrapValidator('resetForm', true);
                     hideLoadingContactImage('content-download', 'frmContentDownload');
                     toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', { timeOut: 5000 })
-                    location.href = "https://alpha.f5academy.net/kingplace/dang-ky-thanh-cong.html";
+                    location.href = "https://quyendn.github.io/kingplace/dang-ky-thanh-cong.html";
                 }
             });
         }
