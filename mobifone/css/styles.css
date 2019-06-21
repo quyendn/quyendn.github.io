@@ -187,7 +187,10 @@ button {
 	display:inline-block;
 	font-family: 'VIE-HandelGothic-Bold';
 }
-
+.hdTop a.hotline{
+	color:#fff;
+	background:none;
+	}
 .navbar-collapse {
     padding-right: 0;
     padding-left: 0;
@@ -454,6 +457,17 @@ a.btn-phone:hover {
 	font-size:14px;
 	margin:0
 	}
+#section2 .col-md-3{
+	margin-top:15px;
+	margin-bottom:15px;
+	}
+#section2 .col-md-3 .inner{
+	padding-right:30px;
+	padding-left:30px;
+	}
+#section2 .col-md-3:nth-child(4n+1){
+	clear:both;
+	}
 
 
 #section3 {
@@ -564,6 +578,9 @@ a.btn-phone:hover {
 #footer .address a {
     color: #0662aa;
 }
+#footer #map{
+	margin-top:20px;
+	}
 
 
 
@@ -675,6 +692,9 @@ img {
 		}
 	#section2 .st-hd h3 span, #thank p{
 		font-size:15px;
+		}
+	#section2 .col-md-3 .inner{
+		padding:0;
 		}
 	#section3 .row{
 		background:none;
