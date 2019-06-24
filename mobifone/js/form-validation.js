@@ -66,7 +66,7 @@ $(document).ready(function() {
             var name = $('#txtName').val();
             var email = $('#txtEmail').val();
             var phone = $('#txtPhone').val();
-            var emailto = "quyendn84@gmail.com";
+            var emailto = "onecontact@mobifone.vn";
             var check = checkPhoneNumber();
             if (!check)
                 return;

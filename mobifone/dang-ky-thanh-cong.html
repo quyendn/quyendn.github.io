@@ -14,28 +14,51 @@
     <link href="css/bootstrapValidator.min.css" rel="stylesheet" type="text/css" />
     <link href="css/owl.carousel.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" type="text/css" href="css/animate.css" />
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-TMVX3PV');
+    </script>
+    <!-- End Google Tag Manager -->
 </head>
 
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TMVX3PV" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <div id="container">
-    	<div id="thank">
-        	<div class="container">
-            	<div class="inner text-center">
-                	<p>Chúng tôi xin chân thành cảm ơn quý khách hàng đã đăng ký sử dụng dịch vụ.</p><p>Tư vấn viên sẽ liên hệ với quý khách trong thời gian sớm nhất.</p>
+        <div id="thank">
+            <div class="container">
+                <div class="inner text-center">
+                    <p>Chúng tôi xin chân thành cảm ơn quý khách hàng đã đăng ký sử dụng dịch vụ.</p>
+                    <p>Tư vấn viên sẽ liên hệ với quý khách trong thời gian sớm nhất.</p>
                     <div class="logo"><img src="img/logo_mobifone.png"></div>
                 </div>
             </div>
             <script>
-            	$(window).resize(function() {
-					$('#thank .container').height($(window).height() - 0);
-				});
-				
-				$(window).trigger('resize');
+                $(window).resize(function() {
+                    $('#thank .container').height($(window).height() - 0);
+                });
+
+                $(window).trigger('resize');
             </script>
         </div>
     </div>
     <!---->
-    
+
     <!---->
     <script src="js/owl.carousel.min.js"></script>
     <script type="text/javascript" src="js/wow/wow.min.js"></script>
@@ -52,7 +75,7 @@
 
         });
         new WOW().init();
-        $(document).ready(function () {
+        $(document).ready(function() {
             $('.carousel-inner').owlCarousel({
                 nav: false,
                 loop: true,
@@ -73,6 +96,7 @@
                 }
             });
         });
+
         function AllowNumberOnly(evt) {
             evt = (evt) ? evt : event;
             var charCode = (evt.charCode) ? evt.charCode : ((evt.keyCode) ? evt.keyCode : ((evt.which) ? evt.which : 0));
@@ -94,7 +118,7 @@
 
             $(".navbar-toggle").removeClass("close");
         });
-       
+
         $('.owl-carousel-partner').owlCarousel({
             loop: true,
             margin: 10,
