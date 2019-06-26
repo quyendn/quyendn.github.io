@@ -21,8 +21,25 @@
     <link rel="stylesheet" type="text/css" href="css/animate.css" />
     <link href="css/jquery.fancybox.css" rel="stylesheet" type="text/css" />
     <link href="css/jquery.fancybox-thumbsER.css" rel="stylesheet" type="text/css" />
+    <!-- Google Tag Manager -->
+    <script>
+(function (w, d, s, l, i) {
+w[l] = w[l] || []; w[l].push({
+'gtm.start':
+new Date().getTime(), event: 'gtm.js'
+}); var f = d.getElementsByTagName(s)[0],
+j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+})(window, document, 'script', 'dataLayer', 'GTM-T2TTG7C');</script>
+    <!-- End Google Tag Manager -->
 </head>
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T2TTG7C"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <div id="container">
         <div id="header" class="">
         	<div class="affix" data-spy="affix" data-offset-top="79" id="">
@@ -63,12 +80,12 @@
                                         <div class="form-group has-feedback">
                                             <input type="text" class="form-control" name="phone" id="txtPhone" onkeypress="return AllowNumberOnly(event);"  placeholder="Số điện thoại"></div>
                                         <div class="form-group has-feedback">
-                                            <input type="text" class="form-control" name="address" id="txtMail" placeholder="Email"></div>
+                                            <input type="text" class="form-control" name="email" id="txtMail" placeholder="Email"></div>
                                         <div class="form-group has-feedback">
-                                        <select class="form-control" name="phone" id="txtcourse" onkeypress="return AllowNumberOnly(event);"  placeholder="Liệu trình">
-                                        	<option>Nhận Báo Giá/Lái Thử</option>
-                                        	<option>Nhận Báo Giá</option>
-                                            <option>Lái Thử </option>
+                                        <select class="form-control" name="type" id="cboType">
+                                        	<option value="">Chọn hình thức đăng ký</option>
+                                        	<option value="1">Nhận Báo Giá</option>
+                                            <option value="2">Lái Thử </option>
                                         </select>
                                         </div>
                                         <div class="form-group text-center">
@@ -166,27 +183,30 @@
                                     <div class="tl text-center">
                                         <h3>Đăng Ký Nhận Tư Vấn</h3>
                                     </div>
-                                    <form id="frmRegDownload" autocomplete="off" novalidate class="bv-form">
-                
-                                        <div id="frmContentReg">
+                                    <form id="frmRegDownloadSub" autocomplete="off" novalidate class="bv-form">
+
+                                        <div id="frmRegDownloadSub">
                                             <div class="form-group has-feedback">
-                                                <input type="text" class="form-control" name="name" id="txtName" value="" placeholder="Họ và tên"></div>
+                                                <input type="text" class="form-control" name="namesub" id="txtSubName" value="" placeholder="Họ và tên">
+                                            </div>
                                             <div class="form-group has-feedback">
-                                                <input type="text" class="form-control" name="phone" id="txtPhone" onkeypress="return AllowNumberOnly(event);"  placeholder="Số điện thoại"></div>
+                                                <input type="text" class="form-control" name="phonesub" id="txtSubPhone" onkeypress="return AllowNumberOnly(event);" placeholder="Số điện thoại">
+                                            </div>
                                             <div class="form-group has-feedback">
-                                                <input type="text" class="form-control" name="address" id="txtMail" placeholder="Email"></div>
+                                                <input type="text" class="form-control" name="emailsub" id="txtSubMail" placeholder="Email">
+                                            </div>
                                             <div class="form-group has-feedback">
-                                            <select class="form-control" name="phone" id="txtcourse" onkeypress="return AllowNumberOnly(event);"  placeholder="Liệu trình">
-                                                <option>Nhận Báo Giá/Lái Thử</option>
-                                                <option>Nhận Báo Giá</option>
-                                                <option>Lái Thử </option>
-                                            </select>
+                                                <select class="form-control" name="cboType" id="cboTypeSub">
+                                                    <option value="">Chọn hình thức đăng ký</option>
+                                                    <option value="1">Nhận Báo Giá</option>
+                                                    <option value="2">Lái Thử </option>
+                                                </select>
                                             </div>
                                             <div class="form-group text-center">
                                                 <button class="btn btn-register">ĐĂNG KÝ NGAY</button>
                                             </div>
                                         </div>
-                                        <div id="content-register"></div>
+                                        <div id="content-register-sub"></div>
                                     </form>
                                     
                                 </div>
@@ -219,7 +239,13 @@
             </div>
         </div>
     </div>
-    
+    <div class='quick-alo-phone quick-alo-green quick-alo-show' id='quick-alo-phoneIcon' style="z-index:999999;">
+        <a href="tel:0938806771">
+            <div class="quick-alo-ph-circle"></div>
+            <div class="quick-alo-ph-circle-fill"></div>
+            <div class="quick-alo-ph-img-circle"></div>
+        </a>
+    </div>
     <!---->
     
     <!---->
