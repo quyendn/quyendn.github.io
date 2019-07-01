@@ -27,7 +27,7 @@ $(document).ready(function() {
         // Indicate where the error messages are shown.
         // Tooltip, Popover, Custom Container.
         // =================================================================
-    $(".btn-send-register").on("click", function () {
+    $(".btn-send-register").on("click", function() {
         var id = $(this).attr("rel");
         $("#hdfTypeId").val(id);
     });
@@ -67,7 +67,15 @@ $(document).ready(function() {
             var check = checkPhoneNumber();
             if (!check)
                 return;
-            var dataJSON = { "city": "", "partner": "", "name": "", "phone": phone, "email": email, "emailto": emailto, "typeId": typeId };
+            var dataJSON = {
+                "city": "",
+                "partner": "",
+                "name": "",
+                "phone": phone,
+                "email": email,
+                "emailto": emailto,
+                "typeId": typeId
+            };
             showLoadingContactImage('content-register', 'frmContentReg');
             $.ajax({
                 url: "https://alpha.f5academy.net/api/Mazdaservice",
@@ -81,7 +89,9 @@ $(document).ready(function() {
                     hideLoadingContactImage('content-register', 'frmContentReg');
                 },
                 error: function(ex) {
-                    toastr.error('Đã có lỗi trong quá trình đăng ký, mời bạn thử lại.', { timeOut: 5000 })
+                    toastr.error('Đã có lỗi trong quá trình đăng ký, mời bạn thử lại.', {
+                        timeOut: 5000
+                    })
                     hideLoadingContactImage('content-register', 'frmContentReg');
                 },
                 complete: function(jqXHR, textStatus) {
@@ -90,15 +100,17 @@ $(document).ready(function() {
                     $('#txtMail').val('');
                     $('#frmRegDownload').bootstrapValidator('resetForm', true);
                     hideLoadingContactImage('content-register', 'frmContentReg');
-                    toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', { timeOut: 5000 })
-                    location.href = "https://quyendn.github.io/mazdav2/dang-ky-thanh-cong.html";
+                    toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', {
+                        timeOut: 5000
+                    })
+                    location.href = "http://cx-8.mazdamotors.vn/dang-ky-thanh-cong.html";
                 }
             });
         }
     }).on('success.form.fv', function(e) {
 
     });
-    
+
     function showLoadingImage() {
 
         $('#content').empty().append('<div id="loading-image" align="center"><img src="img/ajax-loader.gif" alt="Loading..." /></div>');
@@ -122,12 +134,15 @@ $(document).ready(function() {
         $('#' + frmContent).show();
         $('#loading-image').remove();
     }
+
     function checkPhoneNumber() {
         var vnf_regex = /((09|03|07|08|05)+([0-9]{8})\b)/g;
         var mobile = $('#txtPhone').val();
         if (mobile !== '') {
             if (vnf_regex.test(mobile) == false) {
-                toastr.error('Số điện thoại của bạn không đúng định dạng.', { timeOut: 5000 })
+                toastr.error('Số điện thoại của bạn không đúng định dạng.', {
+                    timeOut: 5000
+                })
                 $("#txtPhone").focus();
                 return false;
 
@@ -135,16 +150,21 @@ $(document).ready(function() {
                 return true;
             }
         } else {
-            toastr.error('Bạn chưa điền số điện thoại.', { timeOut: 5000 })
+            toastr.error('Bạn chưa điền số điện thoại.', {
+                timeOut: 5000
+            })
             return false;
         }
     }
+
     function checkPhoneNumber2() {
         var vnf_regex = /((09|03|07|08|05)+([0-9]{8})\b)/g;
         var mobile = $('#txtPhoneOff').val();
         if (mobile !== '') {
             if (vnf_regex.test(mobile) == false) {
-                toastr.error('Số điện thoại của bạn không đúng định dạng.', { timeOut: 5000 })
+                toastr.error('Số điện thoại của bạn không đúng định dạng.', {
+                    timeOut: 5000
+                })
                 $("#txtPhoneOff").focus();
                 return false;
 
@@ -152,16 +172,21 @@ $(document).ready(function() {
                 return true;
             }
         } else {
-            toastr.error('Bạn chưa điền số điện thoại.', { timeOut: 5000 })
+            toastr.error('Bạn chưa điền số điện thoại.', {
+                timeOut: 5000
+            })
             return false;
         }
     }
+
     function checkPhoneNumber3() {
         var vnf_regex = /((09|03|07|08|05)+([0-9]{8})\b)/g;
         var mobile = $('#txtPhoneDownload').val();
         if (mobile !== '') {
             if (vnf_regex.test(mobile) == false) {
-                toastr.error('Số điện thoại của bạn không đúng định dạng.', { timeOut: 5000 })
+                toastr.error('Số điện thoại của bạn không đúng định dạng.', {
+                    timeOut: 5000
+                })
                 $("#txtPhoneDownload").focus();
                 return false;
 
@@ -169,7 +194,9 @@ $(document).ready(function() {
                 return true;
             }
         } else {
-            toastr.error('Bạn chưa điền số điện thoại.', { timeOut: 5000 })
+            toastr.error('Bạn chưa điền số điện thoại.', {
+                timeOut: 5000
+            })
             return false;
         }
     }
