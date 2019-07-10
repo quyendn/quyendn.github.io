@@ -56,6 +56,13 @@ $(document).ready(function() {
                         message: 'Số điện thoại chỉ có thể là 10 số.'
                     }
                 }
+            },
+            cboCity: {
+                validators: {
+                    notEmpty: {
+                        message: 'Cần chọn Tỉnh/thành phố'
+                    }
+                }
             }
         },
         onSuccess: function(e) {
@@ -64,11 +71,12 @@ $(document).ready(function() {
             var email = $('#txtEmail').val();
             var emailto = "quyendn84@gmail.com";
             var typeId = $('#hdfTypeId').val();
+            var city = $('#cboCity').val();
             var check = checkPhoneNumber();
             if (!check)
                 return;
             var dataJSON = {
-                "city": "",
+                "city": city,
                 "partner": "",
                 "name": "",
                 "phone": phone,
