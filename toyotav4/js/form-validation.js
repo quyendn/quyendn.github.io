@@ -28,12 +28,21 @@ $(document).ready(function() {
         // Tooltip, Popover, Custom Container.
         // =================================================================
    
-    $('#frmRegDownload').bootstrapValidator({
+    $('#frmMobile').bootstrapValidator({
         message: 'This value is not valid',
         excluded: [':disabled'],
         feedbackIcons: faIcon,
         fields: {
-           
+            email: {
+                validators: {
+                    notEmpty: {
+                        message: 'Địa chỉ email không được để trống.'
+                    },
+                    emailAddress: {
+                        message: 'Không đúng định dạng email'
+                    }
+                }
+            },
             name: {
                 validators: {
                     notEmpty: {
@@ -57,47 +66,41 @@ $(document).ready(function() {
         onSuccess: function (e) {
 
             var name = $('#txtName').val();
-            var email = $('#txtEmail').val();
+            var location = $('#cboLocation').val();
             var phone = $('#txtPhone').val();
-            var question = $('#txtQuestion').val();
+            var price = $('#cboPrice').val();
             var isSend = 0;
             var emailto = "quyendn84@gmail.com";
-            var check = checkPhoneNumber();
-            if (!check)
-                return;
-            var dataJSON = { "name": name, "phone": phone, "email": email, "question": question, "emailto": emailto, 'isSend': isSend };
-            showLoadingContactImage('content-download', 'frmContentDownload');
+            var dataJSON = { "name": name, "phone": phone, "location": location, "price": price, "emailto": emailto, "isSend": isSend };
+            showLoadingContactImage('content-mobile', 'formContentContactMobile');
             $.ajax({
-                url: "https://alpha.f5academy.net/api/BacABankservice",
+                url: "https://alpha.f5academy.net/api/ToyotaConcertservice",
                 type: "Post",
                 async: false,
                 data: dataJSON,
                 contentType: 'application/json; charset=utf-8',
                 dataType: 'jsonp',
                 success: function (states) {
-                    $('#frmRegDownload').bootstrapValidator('resetForm', true);
-                    hideLoadingContactImage('content-download', 'frmContentDownload');
+                    $('#frmMobile').bootstrapValidator('resetForm', true);
+                    hideLoadingContactImage('content-mobile', 'formContentContactMobile');
                  },
                 error: function (ex) {
                     toastr.error('Đã có lỗi trong quá trình đăng ký, mời bạn thử lại.', { timeOut: 5000 })
-                    hideLoadingContactImage('content-download', 'frmContentDownload');
+                    hideLoadingContactImage('content-mobile', 'formContentContactMobile');
                 },
                 complete: function (jqXHR, textStatus) {
                     $('#txtName').val('');
-                    $("#txtEmail").val('');
                     $('#txtPhone').val('');
-                    $('#txtQuestion').val('');
-                    $('#frmDattiec').bootstrapValidator('resetForm', true);
+                    $('#frmMobile').bootstrapValidator('resetForm', true);
                     toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', { timeOut: 5000 })
-                    hideLoadingContactImage('content-download', 'frmContentDownload');
-                    window.location.href = "https://quyendn.github.io/bacav2/dang-ky-thanh-cong.html";
+                    hideLoadingContactImage('content-mobile', 'formContentContactMobile');
+                    window.location.href = "http://quyendn.github.io/toyotav4/dang-ky-thanh-cong.html";
                 }
             });
         }
     }).on('success.form.fv', function (e) {
 
     });
-
     function showLoadingImage() {
 
         $('#content').empty().append('<div id="loading-image" align="center"><img src="img/ajax-loader.gif" alt="Loading..." /></div>');
@@ -115,22 +118,5 @@ $(document).ready(function() {
     function hideLoadingContactImage(contentLoading, frmContent) {
         $('#' + frmContent).show();
         $('#loading-image').remove();
-    }
-    function checkPhoneNumber() {
-        var vnf_regex = /((09|03|07|08|05)+([0-9]{8})\b)/g;
-        var mobile = $('#txtPhone').val();
-        if (mobile !== '') {
-            if (vnf_regex.test(mobile) == false) {
-                toastr.error('Số điện thoại của bạn không đúng định dạng.', { timeOut: 5000 })
-                $("#txtPhone").focus();
-                return false;
-
-            } else {
-                return true;
-            }
-        } else {
-            toastr.error('Bạn chưa điền số điện thoại.', { timeOut: 5000 })
-            return false;
-        }
     }
 });
