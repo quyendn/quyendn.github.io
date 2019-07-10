@@ -1,0 +1,85 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"></script>
+    <!-- <script src="https://api4.windy.com/assets/libBoot.js"></script> -->
+    <script src="libBoot.js"></script>
+    <style>
+        #windy {
+            width: 100%;
+            height: 100%;
+        }
+        
+        #logo {
+            display: none
+        }
+    </style>
+</head>
+
+<body>
+    <div id="windy"></div>
+    <!-- Make sure you will generate YOUR OWN API KEY -->
+    <!-- at https://api4.windy.com -->
+
+    <script>
+        var check = true;
+        const options = {
+            key: 'gE0WRnrYgF0ge6Vx9oL8nS1Qoh5aE8av'
+
+            // Tip: Use verbose true for nice console output
+            // verbose: true
+        }
+        windyInit(options, windyAPI => {
+
+            const {
+                store,
+                broadcast
+            } = windyAPI
+            // broadcast is main Windy's event emmiter that
+            // let you know what is happening inside
+
+            // Change overlays programatically
+            var overlays = ['rain', 'wind', 'temp', 'clouds'],
+                i = 0
+
+            <!-- setInterval( ()=> { -->
+            <!-- i = ( i === 3 ? 0 : i + 1 ) -->
+            <!-- store.set('overlay', overlays[ i ] ) -->
+            <!-- }, 800) -->
+
+            // Observe the most important broadcasts
+            broadcast.on('paramsChanged', params => {
+
+                console.log('Params changed:', params)
+
+            })
+
+            broadcast.on('redrawFinished', params => {
+
+                setTimeout(function() {
+                    if (check) {
+                        W.map.setView(new L.LatLng(10.2669639, 103.9363215), 10);
+                        //Add test marker
+                        // L.marker([21.0810968, 107.1493804]).addTo(W.map)
+                        //     .bindPopup('Trạm quan trắc số 1.')
+                        //     // .openPopup();
+                        // L.marker([21.1810968, 107.2493804]).addTo(W.map)
+                        //     .bindPopup('Trạm quan trắc số 2.')
+                        //     //.openPopup();
+                        // L.marker([21.2810968, 107.1193804]).addTo(W.map)
+                        //     .bindPopup('Trạm quan trắc số 3.')
+                        //.openPopup();
+
+
+                        check = false;
+                    }
+                }, 100);
+
+            })
+        })
+    </script>
+
+</body>
+
+</html>

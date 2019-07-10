@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang="en" class="no-js" style="height:100%;">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -19,7 +20,7 @@
     <script src="js/jquery.fancybox.js" type="text/javascript"></script>
     <script src="js/jquery.fancybox-thumbsER.js" type="text/javascript"></script>
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <link href="css/styles_v2.css" rel="stylesheet" type="text/css" />
     <link href="css/font-face.css" rel="stylesheet" type="text/css" />
     <link href="css/toastr.min.css" rel="stylesheet" type="text/css" />
     <link href="css/bootstrapValidator.min.css" rel="stylesheet" type="text/css" />
@@ -53,9 +54,9 @@
     </script>
     <!-- Facebook Pixel Code -->
     <script>
-        ! function (f, b, e, v, n, t, s) {
+        ! function(f, b, e, v, n, t, s) {
             if (f.fbq) return;
-            n = f.fbq = function () {
+            n = f.fbq = function() {
                 n.callMethod ?
                     n.callMethod.apply(n, arguments) : n.queue.push(arguments)
             };
@@ -78,7 +79,7 @@
     <!-- End Facebook Pixel Code -->
     <!-- Admicro Tag Manager -->
     <script>
-        (function (a, b, d, c, e) {
+        (function(a, b, d, c, e) {
             a[c] = a[c] || [];
             a[c].push({
                 "atm.start": (new Date).getTime(),
@@ -94,7 +95,7 @@
     <!-- End Admicro Tag Manager -->
     <!-- Google Tag Manager -->
     <script>
-        (function (w, d, s, l, i) {
+        (function(w, d, s, l, i) {
             w[l] = w[l] || [];
             w[l].push({
                 'gtm.start': new Date().getTime(),
@@ -111,27 +112,27 @@
     </script>
     <!-- End Google Tag Manager -->
 </head>
+
 <body>
     <!-- Google Tag Manager (noscript) -->
     <noscript>
         <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5MFCKW7" height="0" width="0"
-                style="display:none;visibility:hidden"></iframe>
+            style="display:none;visibility:hidden"></iframe>
     </noscript>
     <!-- End Google Tag Manager (noscript) -->
 
     <script id='autoAdsMaxLead-widget-script' src='https://cdn.autoads.asia/scripts/autoads-maxlead-widget.js?business_id=5a138bba94194b69b238cbdcda3cbfc3' type='text/javascript' charset='UTF-8' async></script>
     <noscript>
         <img height="1" width="1" style="display:none"
-             src="https://www.facebook.com/tr?id=1877629032290500&ev=PageView&noscript=1" />
+            src="https://www.facebook.com/tr?id=1877629032290500&ev=PageView&noscript=1" />
     </noscript>
     <div id="container">
         <div id="header" class="">
-        	<div class="affix" data-spy="affix" data-offset-top="79" id="">
+            <div class="affix" data-spy="affix" data-offset-top="79" id="">
                 <div class="container">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"></button>
                     <a data-scroll="" data-options="easing: easeInQuad" href="#slide" class="navbar-brand">
-                    	<img src="img/logo.png">
-                        Mazda <strong>CX8</strong>
+                        <img src="img/logo.png"> Mazda <strong>CX8</strong>
                     </a>
                     <nav class="collapse navbar-collapse" role="navigation">
                         <ul class="nav navbar-nav">
@@ -160,15 +161,15 @@
                             <div class="text"><img src="img/tl.png"></div>
                             <div><img src="img/p1.jpg" width="100%"></div>
                         </div>
-                                        </div>
-                                        <div class="item">
-                                            <div class="container">
+                    </div>
+                    <div class="item">
+                        <div class="container">
                             <div class="text"><img src="img/tl.png"></div>
                             <div><img src="img/slider2.jpg" width="100%"></div>
                         </div>
-                                        </div>
-                                        <div class="item">
-                                            <div class="container">
+                    </div>
+                    <div class="item">
+                        <div class="container">
                             <div class="text"><img src="img/tl.png"></div>
                             <div><img src="img/slider3.jpg" width="100%"></div>
                         </div>
@@ -188,24 +189,74 @@
                                     <div class="col-md-4">
                                         <label>Đăng ký để nhận Brochure & Báo giá chi tiết</label>
                                     </div>
-                                    <div class="col-md-3">
+                                    <div class="col-md-2">
                                         <div class="form-group has-feedback">
-                                            <input type="text" class="form-control" value="Email" name="name" id="txtEmail" placeholder="Email"></div>
+                                            <input type="text" class="form-control" onfocus="this.value=''" value="Họ tên" name="name" id="txtEmail" placeholder="Họ tên"></div>
                                     </div>
-                                    <div class="col-md-3">
+                                    <div class="col-md-2">
                                         <div class="form-group has-feedback">
-                                        <input type="text" class="form-control" value="Số điện thoại" name="phone" id="txtPhone" onkeypress="return AllowNumberOnly(event);"  placeholder="Số điện thoại"></div>
+                                            <input type="text" class="form-control" value="Số điện thoại" onfocus="this.value=''" name="phone" id="txtPhone" onkeypress="return AllowNumberOnly(event);" placeholder="Số điện thoại">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <select class="form-control" id="cboCity" name="cboCity">
+                                                <option value="">--- Tỉnh/thành phố ---</option>
+                                                <option value="Hà Nội">Hà Nội</option>
+                                                <option value="TP. HCM">TP. HCM</option>
+                                                <option value="An Giang">An Giang</option>
+                                                <option value="Bà Rịa Vũng Tàu">Bà Rịa Vũng Tàu</option>
+                                                <option value="Bạc Liêu">Bạc Liêu</option>
+                                                <option value="Bình Dương">Bình Dương</option>
+                                                <option value="Bình Định">Bình Định</option>
+                                                <option value="Bình Phước">Bình Phước</option>
+                                                <option value="Bình Thuận">Bình Thuận</option>
+                                                <option value="Bắc Ninh">Bắc Ninh</option>
+                                                <option value="Cần Thơ">Cần Thơ</option>
+                                                <option value="Đắk Lắk">Đắk Lắk</option>
+                                                <option value="Đà Nẵng">Đà Nẵng</option>
+                                                <option value="Đồng Nai">Đồng Nai</option>
+                                                <option value="Gia Lai">Gia Lai</option>
+                                                <option value="Hà Tĩnh">Hà Tĩnh</option>
+                                                <option value="Hải Dương">Hải Dương</option>
+                                                <option value="Hải Phòng">Hải Phòng</option>
+                                                <option value="Hòa Bình">Hòa Bình</option>
+                                                <option value="Kiên Giang">Kiên Giang</option>
+                                                <option value="Kon Tum">Kon Tum</option>
+                                                <option value="Khánh Hoà">Khánh Hoà</option>
+                                                <option value="Lạng Sơn">Lạng Sơn</option>
+                                                <option value="Lâm Đồng">Lâm Đồng</option>
+                                                <option value="Nghệ An">Nghệ An</option>
+                                                <option value="Phú Thọ">Phú Thọ</option>
+                                                <option value="Quảng Bình">Quảng Bình</option>
+                                                <option value="Quảng Nam">Quảng Nam</option>
+                                                <option value="Quảng Ninh">Quảng Ninh</option>
+                                                <option value="Quảng Ngãi">Quảng Ngãi</option>
+                                                <option value="Quảng Trị">Quảng Trị</option>
+                                                <option value="Sơn La">Sơn La</option>
+                                                <option value="Tây Ninh">Tây Ninh</option>
+                                                <option value="Tiền Giang">Tiền Giang</option>
+                                                <option value="Long An">Long An</option>
+                                                <option value="Tuyên Quang">Tuyên Quang</option>
+                                                <option value="Thái Bình">Thái Bình</option>
+                                                <option value="Thái Nguyên">Thái Nguyên</option>
+                                                <option value="Thanh Hóa">Thanh Hóa</option>
+                                                <option value="Thừa Thiên Huế">Thừa Thiên Huế</option>
+                                                <option value="Vĩnh Long">Vĩnh Long</option>
+                                                <option value="Vĩnh Phúc">Vĩnh Phúc</option>
+                                                <option value="Yên Bái">Yên Bái</option>
+                                                 <option value="Long An">Long An</option>
+                                            </select>
                                     </div>
                                     <div class="col-md-2">
                                         <div class="form-group text-center">
-                                    <button class="btn btn-register btn-block">Xác nhận</button>
-                                </div>
+                                            <button class="btn btn-register btn-block">Xác nhận</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div id="content-register"></div>
                         </form>
-                        
+
                     </div>
                 </div>
             </div>
@@ -250,11 +301,14 @@
                         <div style="max-width:200px; margin:0 auto;">
                             <div class="row">
                                 <div class="col-xs-5">Nâu 42S</div>
-                                <div class="col-xs-7"><img src="img/cl-1.png" width="100%" style="margin-right:-5px"></div>
+                                <div class="col-xs-7"><img src="img/cl-1.png" width="100%" style="margin-right:-5px">
+                                </div>
                                 <div class="col-xs-5">Xanh 42M</div>
-                                <div class="col-xs-7"><img src="img/cl-2.png" width="100%" style="margin-right:-5px"></div>
+                                <div class="col-xs-7"><img src="img/cl-2.png" width="100%" style="margin-right:-5px">
+                                </div>
                                 <div class="col-xs-5">Đen 41W</div>
-                                <div class="col-xs-7"><img src="img/cl-3.png" width="100%" style="margin-right:-5px"></div>
+                                <div class="col-xs-7"><img src="img/cl-3.png" width="100%" style="margin-right:-5px">
+                                </div>
                             </div>
                         </div>
 
@@ -265,8 +319,8 @@
         <div class="section wow fadeInUp" id="section3">
             <div class="container text-center">
                 <div class="row">
-                	<div class="col-sm-6">
-                    	<div class="inner">
+                    <div class="col-sm-6">
+                        <div class="inner">
                             <div class="wow fadeInUp"><img src="img/d-1.png" width="100%"></div>
                             <div class="text wow fadeInDown">
                                 <h2>Thiết kế tinh tế - kodo</h2>
@@ -283,16 +337,17 @@
                             <img src="img/d-3.png" width="100%">
                             <h2>Sang trọng mọi góc độ</h2>
                         </div>
-                        
+
                     </div>
                 </div>
             </div>
         </div>
         <div class="section wow fadeInUp" id="section4">
             <div class="container">
-            	<div class="inner">
+                <div class="inner">
                     <div class="wow fadeInRight"><img src="img/kg.png" width="100%"></div>
-                    <div class="text wow fadeInLeft">Với triết lý Human - Centricity lấy con người làm trung tâm của sự phất triển, kết hợp những giá trị nghệ thuật tinh xảo của người Nhật, Mazda CX-8 thấu hiểu những nhu cầu thiết thực nhất của người sử dụng là đảm bảo sự thoải mái, dễ chịu. Những chuyến đi dài sẽ là sự khám phá và trở nên thú vị hơn nhờ vào không gian nội thất sang trọng hướng đến sự tiện nghi hoàn hảo.</div>
+                    <div class="text wow fadeInLeft">Với triết lý Human - Centricity lấy con người làm trung tâm của sự phất triển, kết hợp những giá trị nghệ thuật tinh xảo của người Nhật, Mazda CX-8 thấu hiểu những nhu cầu thiết thực nhất của người sử dụng là đảm bảo sự thoải mái,
+                        dễ chịu. Những chuyến đi dài sẽ là sự khám phá và trở nên thú vị hơn nhờ vào không gian nội thất sang trọng hướng đến sự tiện nghi hoàn hảo.</div>
                 </div>
                 <div class="st-hd text-center wow fadeInDown">
                     <h3>KHÔNG GIAN SUV 7 CHỖ ĐÍCH THỰC</h3>
@@ -301,10 +356,10 @@
         </div>
         <div class="section wow fadeInUp" id="section5">
             <div class="container">
-            	<div class="row text-center">
-                	<div class="col-sm-12">
-                    	<div class="inner">
-                        	<h2>THOẢI MÁI TRONG MỌI HÀNH TRÌNH</h2>
+                <div class="row text-center">
+                    <div class="col-sm-12">
+                        <div class="inner">
+                            <h2>THOẢI MÁI TRONG MỌI HÀNH TRÌNH</h2>
                             <div><img src="img/ht.png" width="100%"></div>
                         </div>
                     </div>
@@ -337,15 +392,15 @@
                         </div>
                     </div>
                 </div>
-                
+
             </div>
         </div>
         <div class="section wow fadeInUp" id="section6">
             <div class="container">
-            	<div class="st-hd text-center">
+                <div class="st-hd text-center">
                     <h3>Hệ thống an toàn chủ động & Thông minh</h3>
                 </div>
-            	<div class="row">
+                <div class="row">
                     <div class="col-sm-6">
                         <div class="inner wow fadeInLeft">
                             <table width="100%" border="0" cellspacing="0" cellpadding="0">
@@ -353,7 +408,8 @@
                                     <tr>
                                         <td>
                                             <h2>Mazda Radar cruise control (MRC)</h2>
-                                            <div>Hệ thống MRCC tự động điều chỉnh tốc độ của xe để duy trì khoảng cách an toàn với phương tiện phía trước khi sử dụng Ga tự động. Hệ thống có 4 thiết lập mức độ khoảng cách: Long/Medium/Short/Extremely Short. Nếu phát hiện xe phía trước giảm vận tốc và dừng đột ngột, hệ thống sẽ hỗ trợ phanh gấp để giảm thiểu các nguy cơ va chạm.</div>
+                                            <div>Hệ thống MRCC tự động điều chỉnh tốc độ của xe để duy trì khoảng cách an toàn với phương tiện phía trước khi sử dụng Ga tự động. Hệ thống có 4 thiết lập mức độ khoảng cách: Long/Medium/Short/Extremely Short.
+                                                Nếu phát hiện xe phía trước giảm vận tốc và dừng đột ngột, hệ thống sẽ hỗ trợ phanh gấp để giảm thiểu các nguy cơ va chạm.</div>
                                         </td>
                                         <td width="110px" class="text-center"><img src="img/at-1.png"></td>
                                     </tr>
@@ -368,7 +424,8 @@
                                     <tr>
                                         <td>
                                             <h2>Forward obstruction warning (FOW)/Smart Brake Support (SBS)</h2>
-                                            <div>Hệ thống FOW và SBS hoạt động khi vận tốc trên 15 km/h, sử dụng Radar để giám sát khoảng cách và tốc độ của phương tiện phía trước. FOW phân tích khả năng va chạm và phát tín hiệu cảnh báo. Khi nguy cơ va chạm xảy ra, SBS lập tức kích hoạt hệ thống phanh, hỗ trợ giảm tốc để hạn chế các tổn hại.</div>
+                                            <div>Hệ thống FOW và SBS hoạt động khi vận tốc trên 15 km/h, sử dụng Radar để giám sát khoảng cách và tốc độ của phương tiện phía trước. FOW phân tích khả năng va chạm và phát tín hiệu cảnh báo. Khi nguy cơ va chạm
+                                                xảy ra, SBS lập tức kích hoạt hệ thống phanh, hỗ trợ giảm tốc để hạn chế các tổn hại.</div>
                                         </td>
                                         <td width="110px" class="text-center"><img src="img/at-2.png"></td>
                                     </tr>
@@ -383,7 +440,8 @@
                                     <tr>
                                         <td>
                                             <h2>DRIVER ATTENTION ALERT (DAA)</h2>
-                                            <div>Hệ thống DAA theo dõi quỹ đạo di chuyển của xe và hành vi của người lái để phán đoán và đưa ra tín hiệu cảnh báo nghỉ ngơi, nếu phát hiện người lái có sự mệt mỏi, mất tập trung (lái xe liên tục trên hai tiếng, hoặc lái xe trên 20 phút với vận tốc trên 65 km/h). </div>
+                                            <div>Hệ thống DAA theo dõi quỹ đạo di chuyển của xe và hành vi của người lái để phán đoán và đưa ra tín hiệu cảnh báo nghỉ ngơi, nếu phát hiện người lái có sự mệt mỏi, mất tập trung (lái xe liên tục trên hai tiếng,
+                                                hoặc lái xe trên 20 phút với vận tốc trên 65 km/h). </div>
                                         </td>
                                         <td width="110px" class="text-center"><img src="img/at-3.png"></td>
                                     </tr>
@@ -397,8 +455,9 @@
                                 <tbody>
                                     <tr>
                                         <td>
-                                            <h2>SMART CITY BRAKE SUPPORT (SCBS) & FRONT PEDESTRIAN DETECTION  </h2>
-                                            <div>Hệ thống SCBS nhận diện người đi bộ phía trước hoặc các vật chắn phía trước hoặc phía sau. Hoạt động trong dải tốcđộ thấp từ 4-80km/h, SCBS thu thập dữ liệu từ camera (phía trước) và cảm biến (phía sau) để nhận diện và tính toán các nguy cơ va chạm; Từ đó hỗ trợ phanh tự động khi cần thiết.  </div>
+                                            <h2>SMART CITY BRAKE SUPPORT (SCBS) & FRONT PEDESTRIAN DETECTION </h2>
+                                            <div>Hệ thống SCBS nhận diện người đi bộ phía trước hoặc các vật chắn phía trước hoặc phía sau. Hoạt động trong dải tốcđộ thấp từ 4-80km/h, SCBS thu thập dữ liệu từ camera (phía trước) và cảm biến (phía sau) để nhận
+                                                diện và tính toán các nguy cơ va chạm; Từ đó hỗ trợ phanh tự động khi cần thiết. </div>
                                         </td>
                                         <td width="110px" class="text-center"><img src="img/at-4.png"></td>
                                     </tr>
@@ -408,7 +467,7 @@
                     </div>
                 </div>
                 <ul>
-                	<li>
+                    <li>
                         <div class="inner wow fadeInDown">
                             <h2>LANE DEPARTURE WARNING (LDW)/<br />LANE-KEEP ASSIST SYSTEM (LAS)</h2>
                             <div><img src="img/at-5.png"></div>
@@ -443,13 +502,15 @@
         </div>
         <div class="section wow fadeInUp" id="section7">
             <div class="container">
-            	<div class="st-hd text-center"><h3><span>TIN TỨC & THÔNG TIN ƯU ĐÃI</span></h3></div>
+                <div class="st-hd text-center">
+                    <h3><span>TIN TỨC & THÔNG TIN ƯU ĐÃI</span></h3>
+                </div>
                 <div class="row wow fadeInDown">
                     <div class="col-sm-12">
                         <div class="inner">
-                            <h2>ƯU ĐÃI LỚN TỪ MAZDA CX-8 CHO NHỮNG KHÁCH HÀNG ĐẦU TIÊN</h2>
+                            <h2>MAZDA CX-8 NHẬN ĐƯỢC NHIỀU ĐÁNH GIÁ TÍCH CỰC TỪ GIỚI CHUYÊN GIA VÀ KHÁCH HÀNG.</h2>
                             <div>
-                                <a href="http://mazdamotors.vn/mazda-viet-nam/Tin-tuc-hoat-dong/0A820D/mazda-cx8-su-thay-the-xung-dang-cho-mazda-cx-9.aspx">
+                                <a href="http://mazdamotors.vn/mazda-viet-nam/Tin-tuc-hoat-dong/0E800C/mazda-cx-8-nhan-duoc-nhieu-danh-gia-tich-cuc-tu-gioi-chuyen-gia-va-khach-hang.aspx">
                                     <img src="img/ud-1.png" width="100%">
                                 </a>
                             </div>
@@ -460,29 +521,32 @@
                     <div class="row">
                         <div class="col-md-4 col-sm-4">
                             <div class="inner wow fadeInLeft">
-                                <a href="https://vnexpress.net/oto-xe-may/mazda-cx-8-nhieu-cai-tien-so-voi-cx-9-3941163.html">
+                                <a href="http://mazdamotors.vn/mazda-viet-nam/Tin-tuc-hoat-dong/0E800D/giai-dap-nhung-cau-hoi-lon-ve-mazda-cx-8-tai-viet-nam.aspx">
                                     <div>
 
                                         <img src="img/ud-2.png" width="100%">
                                     </div>
-                                    <h2>MAZDA CX-8 NHIỀU CẢI TIẾN HƠN MAZDA CX-9</h2>
+                                    <h2>GIẢI ĐÁP NHỮNG CÂU HỎI LỚN VỀ MAZDA CX-8 TẠI VIỆT NAM</h2>
                                 </a>
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-4">
                             <div class="inner wow fadeInUp">
-                                <a href="http://www.vnmedia.vn/oto-xe-may/201906/mazda-cx8-bang-xuong-bang-thit-truoc-ngay-ra-mat-635398/">
-                                    <div><img src="img/ud-3.png" width="100%"></div><h2>MAZDA CX-8 BẰNG XƯƠNG BẰNG THỊT TRƯỚC NGÀY RA MẮT</h2>
+                                <a href="https://nld.com.vn/kinh-te/thaco-tung-ra-thi-truong-xe-7-cho-mazda-cx-8-gia-hon-11-ti-dong-20190623085523456.htm">
+                                    <div><img src="img/ud-3.png" width="100%"></div>
+                                    <h2>MAZDA VIETNAM CHÍNH THỨC RA MẮT MAZDA CX-8 CẠNH TRANH Ở PHÂN KHÚC SUV 7 CHỖ
+                                    </h2>
                                 </a>
                             </div>
-                           
+
                         </div>
                         <div class="col-md-4 col-sm-4">
                             <div class="inner wow fadeInRight">
                                 <a href="http://cafef.vn/mazda-cx-8-chot-gia-tu-1149-ty-dong-tai-viet-nam-20190620112629734.chn">
-                                    <div><img src="img/ud-4.png" width="100%"></div><h2>MAZDA CX-8 CHỐT GIÁ TỪ 1,149 TỶ ĐỒNG TẠI</br> VIỆT NAM TỪ THÁNG 6.2019</h2>
+                                    <div><img src="img/ud-4.png" width="100%"></div>
+                                    <h2>MAZDA CX-8 CHỐT GIÁ TỪ 1,149 TỶ ĐỒNG TẠI</br> VIỆT NAM TỪ THÁNG 6.2019</h2>
                                 </a>
-</div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -490,8 +554,11 @@
         </div>
         <div class="section wow fadeInUp" id="section8">
             <div class="container">
-            	<div class="st-hd text-center"><h3><span>CÁC THÔNG TIN CẦN THIẾT KHÁC</span></h3></div>
+                <div class="st-hd text-center">
+                    <h3><span>CÁC THÔNG TIN CẦN THIẾT KHÁC</span></h3>
+                </div>
                 <div style="max-width:960px; margin:0 auto">
+<<<<<<< HEAD
             	<div class="row">
                     <div class="col-md-4 col-sm-4">
                         <table width="100%" border="0" cellspacing="0" cellpadding="0">
@@ -534,35 +601,92 @@
                             </tr>
                           </tbody>
                         </table>
+=======
+                    <div class="row">
+                        <div class="col-md-4 col-sm-4">
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tbody>
+                                    <tr>
+                                        <td width="60px"><img src="img/ic_dl.png"></td>
+                                        <td>
+                                            <h2>Tìm Đại Lý</h2>
+                                            <p>Tìm đại lý gần bạn nhất</p>
+                                            <p><a href="http://mazdamotors.vn/ho-tro/tim-kiem-showroom/">Tìm trên bản
+                                                    đồ</a></p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tbody>
+                                    <tr>
+                                        <td width="60px"><img src="img/ic_linhkien.png"></td>
+                                        <td>
+                                            <h2>Chi Phí Linh Kiện</h2>
+                                            <p>Danh sách các linh kiện, phụ tùng</p>
+                                            <p><a href="http://mazdamotors.vn/dich-vu-khach-hang/phu-tung-phu-kien/">Xem
+                                                    bảng giá</a></p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tbody>
+                                    <tr>
+                                        <td width="60px"><img src="img/ic_download.png" width="50px"></td>
+                                        <td>
+                                            <h2>Brochure</h2>
+                                            <p>...</p>
+                                            <p><a href="https://quyendn.github.io/mazdav2/img/BROCHURE v 5.pdf" target="_blank">Download</a></p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+>>>>>>> f7b368e6fe6080bed3986cdbe9906d7b21e3f501
                     </div>
                 </div>
-                </div>
-                
+
             </div>
         </div>
-        
-        
+
+
         <div id="footer">
             <div class="container">
-            	<address>
-                	<p>CÔNG TY TNHH MTV PHÂN PHỐI Ô TÔ DU LỊCH CHU LAI TRƯỜNG HẢI </p>
+                <address>
+                    <p>CÔNG TY TNHH MTV PHÂN PHỐI Ô TÔ DU LỊCH CHU LAI TRƯỜNG HẢI </p>
                     <p>Giấy CNĐKDN: 4000779880 Ngày cấp: 27/10/2010. </p>
                     <p>Cơ quan cấp: Phòng Đăng ký kinh doanh Sở Kế hoạch và Đầu tư tỉnh Quảng Nam. </p>
                     <p>Địa chỉ: Thôn 4. Xã Tam Hiệp, Huyện Núi Thành, Tỉnh Quảng Nam, Việt Nam </p>
                 </address>
-            	<ul>
-                	<li><a href="tel:1900545591"><img src="img/ic_phone.png"><span class="small">Hotline CSKH</span><br />1900 5455 91</a></li>
-                    <li><a href="http://mazdamotors.vn/"><img src="img/ic_web.png">www.mazdamotors.vn</a></li>
-                    <li><a href="https://www.facebook.com/mazdamotors.vn/"><img src="img/ic_fb.png">Mazda Vietnam</a></li>
-                    <li><a href="https://www.youtube.com/channel/UCS0mc7owoy6D5TKn0xGPpBQ"><img src="img/ic_yt.png">Mazda Vietnam</a></li>
-                    <li><a href="http://mazdamotors.vn/"><img src="img/ic_off.png">mazdavnofficial</a></li>
+                <ul>
+                    <li>
+                        <a href="tel:1900545591"><img src="img/ic_phone.png"><span class="small">Hotline
+                                CSKH</span><br />1900 5455 91</a>
+                    </li>
+                    <li>
+                        <a href="http://mazdamotors.vn/"><img src="img/ic_web.png">www.mazdamotors.vn</a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/mazdamotors.vn/"><img src="img/ic_fb.png">Mazda Vietnam</a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/channel/UCS0mc7owoy6D5TKn0xGPpBQ"><img src="img/ic_yt.png">Mazda Vietnam</a>
+                    </li>
+                    <li>
+                        <a href="http://mazdamotors.vn/"><img src="img/ic_off.png">mazdavnofficial</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </div>
-    
+
     <!---->
-    <input type="hidden" id="hdfTypeId" value="4" />
+    <input type="hidden" id="hdfTypeId" value="3" />
     <!---->
     <script src="js/smooth-scroll.js"></script>
     <script type="text/javascript" src="js/bootstrapValidator.min.js"></script>
@@ -570,6 +694,7 @@
     <script type="text/javascript" src="js/toastr.js"></script>
     <script type="text/javascript">
         new WOW().init();
+
         function AllowNumberOnly(evt) {
             evt = (evt) ? evt : event;
             var charCode = (evt.charCode) ? evt.charCode : ((evt.keyCode) ? evt.keyCode : ((evt.which) ? evt.which : 0));
@@ -578,7 +703,7 @@
             }
             return true;
         }
-        $(document).ready(function () {
+        $(document).ready(function() {
             $('.owl-carousel').owlCarousel({
                 loop: true,
                 margin: 0,
@@ -629,30 +754,31 @@
             easing: 'easeInOutCubic',
             offset: 70,
             updateURL: false,
-            callbackBefore: function (toggle, navbar1) { },
-            callbackAfter: function (toggle, navbar1) { }
+            callbackBefore: function(toggle, navbar1) {},
+            callbackAfter: function(toggle, navbar1) {}
         });
-
     </script>
     <script>
-    	$("button").click(function(){
-			$(".navbar-toggle").toggleClass("close");
-		});
+        $("button").click(function() {
+            $(".navbar-toggle").toggleClass("close");
+        });
 
-    	$(".navbar-toggle").click(function(){
-			$("#header").toggleClass("open");
-		});
-  
-    	$(".navbar-nav a").click(function(){
-			$(".navbar-collapse").removeClass("in");
-		
-			$(".navbar-toggle").removeClass("close");
-		});
+        $(".navbar-toggle").click(function() {
+            $("#header").toggleClass("open");
+        });
+
+        $(".navbar-nav a").click(function() {
+            $(".navbar-collapse").removeClass("in");
+
+            $(".navbar-toggle").removeClass("close");
+        });
     </script>
-    
+
 
     <script src="js/smooth-scrollbar.js"></script>
-    <script> Scrollbar.initAll(); </script>
+    <script>
+        Scrollbar.initAll();
+    </script>
     <link href="css/smooth-scrollbar.css" rel="stylesheet" type="text/css" />
 </body>
 

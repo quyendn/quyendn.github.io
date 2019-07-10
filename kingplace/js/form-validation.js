@@ -95,14 +95,14 @@ $(document).ready(function() {
                     $('#frmRegDownload').bootstrapValidator('resetForm', true);
                     hideLoadingContactImage('content-download', 'frmContentDownload');
                     toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', { timeOut: 5000 })
-                    location.href = "https://quyendn.github.io/kingplace/dang-ky-thanh-cong.html";
+                    location.href = "/dang-ky-thanh-cong.html";
                 }
             });
         }
     }).on('success.form.fv', function(e) {
 
     });
-   
+
     function showLoadingImage() {
 
         $('#content').empty().append('<div id="loading-image" align="center"><img src="img/ajax-loader.gif" alt="Loading..." /></div>');
@@ -126,6 +126,7 @@ $(document).ready(function() {
         $('#' + frmContent).show();
         $('#loading-image').remove();
     }
+
     function checkPhoneNumber() {
         var vnf_regex = /((09|03|07|08|05)+([0-9]{8})\b)/g;
         var mobile = $('#txtPhone').val();
@@ -143,6 +144,7 @@ $(document).ready(function() {
             return false;
         }
     }
+
     function checkPhoneNumber2() {
         var vnf_regex = /((09|03|07|08|05)+([0-9]{8})\b)/g;
         var mobile = $('#txtPhoneOff').val();
@@ -160,6 +162,7 @@ $(document).ready(function() {
             return false;
         }
     }
+
     function checkPhoneNumber3() {
         var vnf_regex = /((09|03|07|08|05)+([0-9]{8})\b)/g;
         var mobile = $('#txtPhoneDownload').val();

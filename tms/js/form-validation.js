@@ -5,7 +5,7 @@
 //
 // - ThemeOn.net -
 
-$(document).ready(function() {
+$(document).ready(function () {
 
 
     // FORM VALIDATION
@@ -16,18 +16,18 @@ $(document).ready(function() {
     // FORM VALIDATION FEEDBACK ICONS
     // =================================================================
     var faIcon = {
-            valid: 'fa fa-check-circle fa-lg text-success',
-            invalid: 'fa fa-times-circle fa-lg',
-            validating: 'fa fa-refresh'
-        }
-        // FORM VALIDATION ON ACCORDION
-        // =================================================================
-        // FORM VALIDATION CUSTOM ERROR CONTAINER
-        // =================================================================
-        // Indicate where the error messages are shown.
-        // Tooltip, Popover, Custom Container.
-        // =================================================================
-    
+        valid: 'fa fa-check-circle fa-lg text-success',
+        invalid: 'fa fa-times-circle fa-lg',
+        validating: 'fa fa-refresh'
+    }
+    // FORM VALIDATION ON ACCORDION
+    // =================================================================
+    // FORM VALIDATION CUSTOM ERROR CONTAINER
+    // =================================================================
+    // Indicate where the error messages are shown.
+    // Tooltip, Popover, Custom Container.
+    // =================================================================
+
     $('#frmMobile').bootstrapValidator({
         message: 'This value is not valid',
         excluded: [':disabled'],
@@ -73,7 +73,7 @@ $(document).ready(function() {
             var webdomain = "f5academy";
             var rederect = false;
             var dataJSON = { "name": name, "email": email, "phone": phone, "typeId": typeId, "emailto": emailto }
-            showLoadingContactImage('content-mobile','formContentContactMobile');
+            showLoadingContactImage('content-mobile', 'formContentContactMobile');
             $.ajax({
                 url: "https://alpha.f5academy.net/api/TSMservice",
                 type: "Post",
@@ -88,7 +88,7 @@ $(document).ready(function() {
                 },
                 error: function (ex) {
                     toastr.error('Đã có lỗi trong quá trình đăng ký, mời bạn thử lại.', { timeOut: 5000 })
-                    hideLoadingContactImage('content-mobile','formContentContactMobile');
+                    hideLoadingContactImage('content-mobile', 'formContentContactMobile');
                 },
                 complete: function (jqXHR, textStatus) {
                     $('#txtName').val('');
@@ -96,7 +96,7 @@ $(document).ready(function() {
                     $('#txtEmail').val('');
                     $('#frmMobile').bootstrapValidator('resetForm', true);
                     if (rederect == true)
-                        window.location.href = "dang-ky-thanh-cong.html";
+                        window.location.href = "http://tmsphucyen.com.vn/uu-dai/dang-ky-thanh-cong.html";
                 }
             });
         }
@@ -171,7 +171,7 @@ $(document).ready(function() {
                     $('#txtEmailContact').val('');
                     $('#frmContact').bootstrapValidator('resetForm', true);
                     if (rederect == true)
-                        window.location.href = "dang-ky-thanh-cong.html";
+                        window.location.href = "http://tmsphucyen.com.vn/uu-dai/dang-ky-thanh-cong.html";
                 }
             });
         }
@@ -246,7 +246,7 @@ $(document).ready(function() {
                     $('#email_modal').val('');
                     $('#frmRegModal').bootstrapValidator('resetForm', true);
                     if (rederect == true)
-                        window.location.href = "dang-ky-thanh-cong.html";
+                        window.location.href = "http://tmsphucyen.com.vn/uu-dai/dang-ky-thanh-cong.html";
                 }
             });
         }
@@ -321,7 +321,7 @@ $(document).ready(function() {
                     $('#email_modal_info').val('');
                     $('#frmRegModalInfo').bootstrapValidator('resetForm', true);
                     if (rederect == true)
-                        window.location.href = "dang-ky-thanh-cong.html";
+                        window.location.href = "http://tmsphucyen.com.vn/uu-dai/dang-ky-thanh-cong.html";
                 }
             });
         }
@@ -339,8 +339,8 @@ $(document).ready(function() {
         $('#formContentContact').show();
         $('#loading-image').remove();
     }
-   
-    function showLoadingContactImage(contentLoading,frmContent) {
+
+    function showLoadingContactImage(contentLoading, frmContent) {
 
         $('#' + contentLoading).empty().append('<div id="loading-image" align="center"><img src="img/ajax-loader.gif" alt="Loading..." /></div>');
         $('#' + frmContent).hide();
