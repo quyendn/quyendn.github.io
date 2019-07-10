@@ -91,7 +91,7 @@ $(document).ready(function() {
                     $('#frmRegDownload').bootstrapValidator('resetForm', true);
                     hideLoadingContactImage('content-register', 'frmContentReg');
                     toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', { timeOut: 5000 })
-                    location.href = "https://quyendn.github.io/mazdav2/dang-ky-thanh-cong.html";
+                    location.href = "http://cx-8.mazdamotors.vn/dang-ky-thanh-cong.html";
                 }
             });
         }
