@@ -373,22 +373,16 @@ img{
 	
 /*thanks*/
 #thanks{
-	background:#ab2081;
-	}
-#thanks .inner{
-	padding-bottom:30px;
-	padding-top:30px;
-	font-size:26px;
-	font-weight:bold;
-	color:#fec421;
+	padding:30px 0;
 	text-transform:uppercase;
-	background:url(../img/bg_slide_1.png) no-repeat 50% 100%;
+	font-weight:bold;
 	}
-
 #thanks .radius{
 	color:#8e1174;
-	padding-top:5px;
-	margin-bottom:10px;
+	padding:15px;
+	margin-bottom:15px;
+	
+	font-size:24px;
 	background: rgba(254,195,34,1);
 	background: -moz-linear-gradient(left, rgba(254,195,34,1) 0%, rgba(254,244,158,1) 50%, rgba(254,195,34,1) 100%);
 	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(254,195,34,1)), color-stop(50%, rgba(254,244,158,1)), color-stop(100%, rgba(254,195,34,1)));
@@ -399,13 +393,10 @@ img{
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fec322', endColorstr='#fec322', GradientType=1 );
 
 	}
-#thanks .tl2{
+#thanks p{
 	clear:both;
-	color:#fff;
-	font-size:40px;
-	background:#727070;
-	display:inline-block;
-	padding:10px 30px;
+	color:#fec523;
+	font-size:18px;
 	}
 
 
