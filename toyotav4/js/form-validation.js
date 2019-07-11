@@ -112,7 +112,90 @@ $(document).ready(function() {
     }).on('success.form.fv', function(e) {
 
     });
+    $('#frmMobilePrice').bootstrapValidator({
+        message: 'This value is not valid',
+        excluded: [':disabled'],
+        feedbackIcons: faIcon,
+        fields: {
+            email: {
+                validators: {
+                    notEmpty: {
+                        message: 'Địa chỉ email không được để trống.'
+                    },
+                    emailAddress: {
+                        message: 'Không đúng định dạng email'
+                    }
+                }
+            },
+            nameprice: {
+                validators: {
+                    notEmpty: {
+                        message: 'Họ tên không được để trống.'
+                    }
+                }
+            },
+            phoneprice: {
+                validators: {
+                    notEmpty: {
+                        message: 'Điện thoại không được để trống.'
+                    },
+                    stringLength: {
+                        min: 10,
+                        max: 11,
+                        message: 'Số điện thoại chỉ có thể là 10 hoặc 11 số.'
+                    }
+                }
+            }
+        },
+        onSuccess: function (e) {
 
+            var name = $('#txtNamePrice').val();
+            var location = $('#cboLocationPrice').val();
+            var phone = $('#txtPhonePrice').val();
+            var price = $('#cboPricePrice').val();
+            var isSend = 0;
+            var emailto = "quyendn84@gmail.com";
+            var dataJSON = {
+                "name": name,
+                "phone": phone,
+                "location": location,
+                "price": price,
+                "emailto": emailto,
+                "isSend": isSend
+            };
+            showLoadingContactImage('content-mobile-price', 'formContentContactMobilePrice');
+            $.ajax({
+                url: "https://alpha.f5academy.net/api/ToyotaConcertservice",
+                type: "Post",
+                async: false,
+                data: dataJSON,
+                contentType: 'application/json; charset=utf-8',
+                dataType: 'jsonp',
+                success: function (states) {
+                    $('#frmMobilePrice').bootstrapValidator('resetForm', true);
+                    hideLoadingContactImage('content-mobile-price', 'formContentContactMobilePrice');
+                },
+                error: function (ex) {
+                    toastr.error('Đã có lỗi trong quá trình đăng ký, mời bạn thử lại.', {
+                        timeOut: 5000
+                    })
+                    hideLoadingContactImage('content-mobile-price', 'formContentContactMobilePrice');
+                },
+                complete: function (jqXHR, textStatus) {
+                    $('#txtName').val('');
+                    $('#txtPhone').val('');
+                    $('#frmMobilePrice').bootstrapValidator('resetForm', true);
+                    toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', {
+                        timeOut: 5000
+                    })
+                    hideLoadingContactImage('content-mobile-price', 'formContentContactMobilePrice');
+                    window.location.href = "http://quyendn.github.io/toyotav4/dang-ky-thanh-cong.html";
+                }
+            });
+        }
+    }).on('success.form.fv', function (e) {
+
+    });
     function showLoadingImage() {
 
         $('#content').empty().append('<div id="loading-image" align="center"><img src="img/ajax-loader.gif" alt="Loading..." /></div>');

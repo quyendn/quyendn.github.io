@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>ĐÊM NHẠC CỔ ĐIỂN TOYOTA 2018</title>
-    <meta name="description" content="ĐÊM NHẠC CỔ ĐIỂN TOYOTA 2018">
-    <meta name="keywords" content="Toyota 2017">
-    <meta property="og:title" content="ĐÊM NHẠC CỔ ĐIỂN TOYOTA 2018" />
+    <title>ĐÊM NHẠC CỔ ĐIỂN TOYOTA CONCERT 2019</title>
+    <meta name="description" content="ĐÊM NHẠC CỔ ĐIỂN TOYOTA CONCERT 2019">
+    <meta name="keywords" content="TOYOTA CONCERT 2019">
+    <meta property="og:title" content="ĐÊM NHẠC CỔ ĐIỂN TOYOTA CONCERT 2019" />
     <meta property="og:url" content="http://toyotaclassics.com.vn/" />
-    <meta property="og:description" content="TOYOTA CLASSICS - ĐÊM NHẠC CỔ ĐIỂN TOYOTA 2018" />
+    <meta property="og:description" content="TOYOTA CLASSICS - ĐÊM NHẠC CỔ ĐIỂN TOYOTA CONCERT 2019" />
     <link rel="shortcut icon" href="images/icon-logo.png">
     <meta property="fb:app_id" content="890776717644660" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -161,21 +161,20 @@
                                                 <div class="form-group row">
                                                     <label class="control-label col-sm-4" for="prov">Địa điểm đặt vé:</label>
                                                     <div class="col-sm-8">
-                                                      <select name="prov" class="form-control">
-                                                      	<option>Hà Nội</option>
-                                                        <option>Hải Phòng</option>
-                                                        <option>Hồ Chí Minh</option>
-                                                      </select>
+                                                        <select name="cboLocation" id="cboLocation" class="form-control">
+                                                            <option>Hà Nội</option>
+                                                            <option>Hồ Chí Minh</option>
+                                                        </select>
                                                     </div>
                                                   </div>
                                                 <div class="form-group row">
                                                     <label class="control-label col-sm-4" for="lev">Hạng vé:</label>
                                                     <div class="col-sm-8">
-                                                      <select name="lev" class="form-control">
-                                                      	<option>S</option>
-                                                        <option>A</option>
-                                                        <option>B</option>
-                                                      </select>
+                                                        <select name="cboPrice" id="cboPrice" class="form-control">
+                                                            <option>S</option>
+                                                            <option>A</option>
+                                                            <option>B</option>
+                                                        </select>
                                                     </div>
                                                   </div>
                                             </div>
@@ -284,12 +283,11 @@ cùng những nghệ sĩ hàng đầu sẽ giới thiệu đên khán thính gi�
                     </div>
                     
                     <div class="col-sm-5 col-sm-push-2 text-right"><img src="img/Logo.png"></div>
-                    <div class="col-sm-2 col-sm-pull-5"><button class="btn btn-block btn-lg" data-toggle="modal" data-target="#dk_datve">Đặt vé ngay</button></div>
+                    
                 </div>
-                
-                
             </div>
         </div>
+        <div class="fixBt"><button class="btn btn-lg" data-toggle="modal" data-target="#dk_datve">Đặt vé ngay</button></div>
     </div>
     <div class="modal fade" id="dk_datve" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog modal-md" role="document">
@@ -299,40 +297,39 @@ cùng những nghệ sĩ hàng đầu sẽ giới thiệu đên khán thính gi�
                     <div>Đăng ký đặt vé</div>
                 </div>
                 <div class="modal-body">
-                    <form id="frmMobile" class="" autocomplete="off">
-                                        <div id="formContentContactMobile">
-                                        	<div class="border">
-                                                <div class="form-group">
-                                                    <input type="text" name="name" id="txtName" class="form-control" placeholder="Họ và tên">
-                                                </div>
-                                                <div class="form-group">
-                                                    <input type="text" name="phone" id="txtPhone" class="form-control" placeholder="Số điện thoại">
-                                                </div>
-                                                <div class="form-group row">
-                                                    <label class="control-label col-sm-4" for="prov">Địa điểm đặt vé:</label>
-                                                    <div class="col-sm-8">
-                                                      <select name="prov" class="form-control">
-                                                      	<option>Hà Nội</option>
-                                                        <option>Hải Phòng</option>
-                                                        <option>Hồ Chí Minh</option>
-                                                      </select>
-                                                    </div>
-                                                  </div>
-                                                <div class="form-group row">
-                                                    <label class="control-label col-sm-4" for="lev">Hạng vé:</label>
-                                                    <div class="col-sm-8">
-                                                      <select name="lev" class="form-control">
-                                                      	<option>S</option>
-                                                        <option>A</option>
-                                                        <option>B</option>
-                                                      </select>
-                                                    </div>
-                                                  </div>
-                                            </div>
-                                            <div class="form-group text-center"><button class="btn btn-submit"><img src="img/btn_datve.png"></button></div>
-                                      </div>
-                                        <div id="content-mobile"></div>
-                                    </form>
+                    <form id="frmMobilePrice" class="" autocomplete="off">
+                        <div id="formContentContactMobilePrice">
+                            <div class="border">
+                                <div class="form-group">
+                                    <input type="text" name="nameprice" id="txtNamePrice" class="form-control" placeholder="Họ và tên">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="phoneprice" id="txtPhonePrice" class="form-control" placeholder="Số điện thoại">
+                                </div>
+                                <div class="form-group row">
+                                    <label class="control-label col-sm-4" for="prov">Địa điểm đặt vé:</label>
+                                    <div class="col-sm-8">
+                                        <select name="cboLocationPrice" id="cboLocationPrice" class="form-control">
+                                            <option>Hà Nội</option>
+                                            <option>Hồ Chí Minh</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="control-label col-sm-4" for="lev">Hạng vé:</label>
+                                    <div class="col-sm-8">
+                                        <select name="cboPricePrice" id="cboPricePrice" class="form-control">
+                                            <option>S</option>
+                                            <option>A</option>
+                                            <option>B</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group text-center"><button class="btn btn-submit"><img src="img/btn_datve.png"></button></div>
+                        </div>
+                        <div id="content-mobile-price"></div>
+                    </form>
                 </div>
             </div>
         </div>

@@ -399,10 +399,19 @@ a, .btn, button{
 #footer p{
 	margin:0;
 	}
-#footer .btn{
+.fixBt{
+	position:fixed;
+	bottom:5px;
+	left:0;
+	right:0;
+	text-align:center;
+	}
+.fixBt .btn{
 	background:#f00;
 	color:#fff;
+	padding:10px 30px;
 	text-transform:uppercase;
+	
 	}
 
 
@@ -510,6 +519,8 @@ img{
 	#section2 li{
 		width:50%;
 		}
+	#footer{
+		padding-bottom:45px;}
 	#footer .col-sm-5.col-sm-push-2{
 		text-align:center !important;
 		margin-top:15px;
