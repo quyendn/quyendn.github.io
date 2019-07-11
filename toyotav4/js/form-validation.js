@@ -27,7 +27,7 @@ $(document).ready(function() {
         // Indicate where the error messages are shown.
         // Tooltip, Popover, Custom Container.
         // =================================================================
-   
+
     $('#frmMobile').bootstrapValidator({
         message: 'This value is not valid',
         excluded: [':disabled'],
@@ -63,7 +63,7 @@ $(document).ready(function() {
                 }
             }
         },
-        onSuccess: function (e) {
+        onSuccess: function(e) {
 
             var name = $('#txtName').val();
             var location = $('#cboLocation').val();
@@ -71,7 +71,14 @@ $(document).ready(function() {
             var price = $('#cboPrice').val();
             var isSend = 0;
             var emailto = "quyendn84@gmail.com";
-            var dataJSON = { "name": name, "phone": phone, "location": location, "price": price, "emailto": emailto, "isSend": isSend };
+            var dataJSON = {
+                "name": name,
+                "phone": phone,
+                "location": location,
+                "price": price,
+                "emailto": emailto,
+                "isSend": isSend
+            };
             showLoadingContactImage('content-mobile', 'formContentContactMobile');
             $.ajax({
                 url: "https://alpha.f5academy.net/api/ToyotaConcertservice",
@@ -80,41 +87,49 @@ $(document).ready(function() {
                 data: dataJSON,
                 contentType: 'application/json; charset=utf-8',
                 dataType: 'jsonp',
-                success: function (states) {
+                success: function(states) {
                     $('#frmMobile').bootstrapValidator('resetForm', true);
                     hideLoadingContactImage('content-mobile', 'formContentContactMobile');
-                 },
-                error: function (ex) {
-                    toastr.error('Đã có lỗi trong quá trình đăng ký, mời bạn thử lại.', { timeOut: 5000 })
+                },
+                error: function(ex) {
+                    toastr.error('Đã có lỗi trong quá trình đăng ký, mời bạn thử lại.', {
+                        timeOut: 5000
+                    })
                     hideLoadingContactImage('content-mobile', 'formContentContactMobile');
                 },
-                complete: function (jqXHR, textStatus) {
+                complete: function(jqXHR, textStatus) {
                     $('#txtName').val('');
                     $('#txtPhone').val('');
                     $('#frmMobile').bootstrapValidator('resetForm', true);
-                    toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', { timeOut: 5000 })
+                    toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', {
+                        timeOut: 5000
+                    })
                     hideLoadingContactImage('content-mobile', 'formContentContactMobile');
                     window.location.href = "http://quyendn.github.io/toyotav4/dang-ky-thanh-cong.html";
                 }
             });
         }
-    }).on('success.form.fv', function (e) {
+    }).on('success.form.fv', function(e) {
 
     });
+
     function showLoadingImage() {
 
         $('#content').empty().append('<div id="loading-image" align="center"><img src="img/ajax-loader.gif" alt="Loading..." /></div>');
         $('#formContentContact').hide();
     }
+
     function hideLoadingImage() {
         $('#formContentContact').show();
         $('#loading-image').remove();
     }
-    function showLoadingContactImage(contentLoading,frmContent) {
+
+    function showLoadingContactImage(contentLoading, frmContent) {
 
         $('#' + contentLoading).empty().append('<div id="loading-image" align="center"><img src="img/ajax-loader.gif" alt="Loading..." /></div>');
         $('#' + frmContent).hide();
     }
+
     function hideLoadingContactImage(contentLoading, frmContent) {
         $('#' + frmContent).show();
         $('#loading-image').remove();
