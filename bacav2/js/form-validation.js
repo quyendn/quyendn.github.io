@@ -60,8 +60,8 @@ $(document).ready(function() {
             var email = $('#txtEmail').val();
             var phone = $('#txtPhone').val();
             var question = $('#txtQuestion').val();
-            var isSend = 0;
-            var emailto = "quyendn84@gmail.com";
+            var isSend = 1;
+            var emailto = "callcenter@baca-bank.vn";
             var check = checkPhoneNumber();
             if (!check)
                 return;
@@ -90,7 +90,7 @@ $(document).ready(function() {
                     $('#frmDattiec').bootstrapValidator('resetForm', true);
                     toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', { timeOut: 5000 })
                     hideLoadingContactImage('content-download', 'frmContentDownload');
-                    window.location.href = "http://quyendn.github.io/bacav2/dang-ky-thanh-cong.html";
+                    window.location.href = "https://khuyenmai.baca-bank.vn/dang-ky-thanh-cong.html";
                 }
             });
         }
