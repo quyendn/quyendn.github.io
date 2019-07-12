@@ -105,7 +105,7 @@ $(document).ready(function() {
                         timeOut: 5000
                     })
                     hideLoadingContactImage('content-mobile', 'formContentContactMobile');
-                    window.location.href = "http://quyendn.github.io/toyotav4/dang-ky-thanh-cong.html";
+                    window.location.href = "http://www.toyotavn.com.vn/vi/dong-gop-xa-hoi/van-hoa-xa-hoi/toyota-concert-2019/dang-ky-thanh-cong.html";
                 }
             });
         }
@@ -189,7 +189,7 @@ $(document).ready(function() {
                         timeOut: 5000
                     })
                     hideLoadingContactImage('content-mobile-price', 'formContentContactMobilePrice');
-                    window.location.href = "http://quyendn.github.io/toyotav4/dang-ky-thanh-cong.html";
+                    window.location.href = "http://www.toyotavn.com.vn/vi/dong-gop-xa-hoi/van-hoa-xa-hoi/toyota-concert-2019/dang-ky-thanh-cong.html";
                 }
             });
         }
