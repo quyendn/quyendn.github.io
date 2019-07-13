@@ -55,7 +55,7 @@ $(document).ready(function() {
                 return;
             showLoadingContactImage('content-loading-off-content', 'frmContentRegSaleOffDauSo');
             $.ajax({
-                url: "http://localhost:50623/api/CMCservice",
+                url: "https://alpha.f5academy.net/api/CMCservice",
                 type: "Post",
                 async: false,
                 data: dataJSON,
@@ -109,7 +109,7 @@ $(document).ready(function() {
                 return;
             showLoadingContactImage('content-loading-off-left', 'frmContentRegSaleOffLeft');
             $.ajax({
-                url: "http://localhost:50623/api/CMCservice",
+                url: "https://alpha.f5academy.net/api/CMCservice",
                 type: "Post",
                 async: false,
                 data: dataJSON,
@@ -163,7 +163,7 @@ $(document).ready(function() {
                 return;
             showLoadingContactImage('content-loading-off-right', 'frmContentRegSaleOffRight');
             $.ajax({
-                url: "http://localhost:50623/api/CMCservice",
+                url: "https://alpha.f5academy.net/api/CMCservice",
                 type: "Post",
                 async: false,
                 data: dataJSON,
@@ -219,7 +219,7 @@ $(document).ready(function() {
                 return;
             showLoadingContactImage('content-loading-off', 'frmContentRegSaleOff');
             $.ajax({
-                url: "http://localhost:50623/api/CMCservice",
+                url: "https://alpha.f5academy.net/api/CMCservice",
                 type: "Post",
                 async: false,
                 data: dataJSON,
