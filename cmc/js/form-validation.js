@@ -26,20 +26,66 @@ $(document).ready(function() {
         // =================================================================
         // Indicate where the error messages are shown.
         // Tooltip, Popover, Custom Container.
-        // =================================================================
-
-    $('#frmRegDownload').bootstrapValidator({
+    // =================================================================
+    $('#frmSaleOffDauSo').bootstrapValidator({
         message: 'This value is not valid',
         excluded: [':disabled'],
         feedbackIcons: faIcon,
         fields: {
-            name: {
+            phone2: {
                 validators: {
                     notEmpty: {
-                        message: 'Họ tên không được để trống.'
+                        message: 'Điện thoại không được để trống.'
+                    },
+                    stringLength: {
+                        min: 10,
+                        message: 'Số điện thoại chỉ có thể là 10 số.'
                     }
                 }
-            },
+            }
+        },
+        onSuccess: function (e) {
+            var phone = $('#txtPhone2').val();
+            var typeId = 2;
+            var isSend = 0;
+            var emailto = "quyendn84@gmail.com";
+            var dataJSON = { "phone": phone, "typeId": typeId, "isSend": isSend, "emailto": emailto }
+            var check = checkPhoneNumber4();
+            if (!check)
+                return;
+            showLoadingContactImage('content-loading-off-content', 'frmContentRegSaleOffDauSo');
+            $.ajax({
+                url: "http://localhost:50623/api/CMCservice",
+                type: "Post",
+                async: false,
+                data: dataJSON,
+                contentType: 'application/json; charset=utf-8',
+                dataType: 'jsonp',
+                success: function (states) {
+                    $('#frmSaleOffDauSo').bootstrapValidator('resetForm', true);
+                    hideLoadingContactImage('content-loading-off-content', 'frmContentRegSaleOffDauSo');
+                },
+                error: function (ex) {
+                    toastr.error('Đã có lỗi trong quá trình đăng ký, mời bạn thử lại.', { timeOut: 5000 })
+                    hideLoadingContactImage('content-loading-off-content', 'frmContentRegSaleOffDauSo');
+                },
+                complete: function (jqXHR, textStatus) {
+                    $('#txtPhoneOffRight').val('');
+                    $('#frmSaleOffDauSo').bootstrapValidator('resetForm', true);
+                    hideLoadingContactImage('content-loading-off-content', 'frmContentRegSaleOffDauSo');
+                    toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', { timeOut: 5000 })
+                    location.href = "https://quyendn.github.io/cmc/dang-ky-thanh-cong.html";
+                }
+            });
+        }
+    }).on('success.form.fv', function (e) {
+
+    });
+    $('#frmSaleOffLeft').bootstrapValidator({
+        message: 'This value is not valid',
+        excluded: [':disabled'],
+        feedbackIcons: faIcon,
+        fields: {
             phone: {
                 validators: {
                     notEmpty: {
@@ -47,50 +93,100 @@ $(document).ready(function() {
                     },
                     stringLength: {
                         min: 10,
-                        message: 'Số điện thoại chỉ có thể là 10số.'
+                        message: 'Số điện thoại chỉ có thể là 10 số.'
                     }
                 }
             }
         },
-        onSuccess: function(e) {
-
-            var name = $('#txtName').val();
+        onSuccess: function (e) {
             var phone = $('#txtPhone').val();
-            var email = $('#txtEmail').val();
-            var address = $('#txtAdd').val();
-            var emailto = "phongtruyenthong@kosy.vn";
-            var check = checkPhoneNumber();
+            var typeId = 2;
+            var isSend = 0;
+            var emailto = "quyendn84@gmail.com";
+            var dataJSON = { "phone": phone, "typeId": typeId, "isSend": isSend, "emailto": emailto }
+            var check = checkPhoneNumber3();
             if (!check)
                 return;
-            var dataJSON = { "name": name, "phone": phone, "address": address, "email": email, "emailto": emailto }
-            showLoadingContactImage('content-register', 'frmContentReg');
+            showLoadingContactImage('content-loading-off-left', 'frmContentRegSaleOffLeft');
             $.ajax({
-                url: "https://alpha.f5academy.net/api/Kosyservice",
+                url: "http://localhost:50623/api/CMCservice",
                 type: "Post",
                 async: false,
                 data: dataJSON,
                 contentType: 'application/json; charset=utf-8',
                 dataType: 'jsonp',
-                success: function(states) {
-                    $('#frmMobile').bootstrapValidator('resetForm', true);
-                    hideLoadingContactImage('content-register', 'frmContentReg');
+                success: function (states) {
+                    $('#frmSaleOffRight').bootstrapValidator('resetForm', true);
+                    hideLoadingContactImage('content-loading-off-left', 'frmContentRegSaleOffLeft');
                 },
-                error: function(ex) {
+                error: function (ex) {
                     toastr.error('Đã có lỗi trong quá trình đăng ký, mời bạn thử lại.', { timeOut: 5000 })
-                    hideLoadingContactImage('content-register', 'frmContentReg');
+                    hideLoadingContactImage('content-loading-off-left', 'frmContentRegSaleOffLeft');
                 },
-                complete: function(jqXHR, textStatus) {
-                    $('#txtName').val('');
-                    $("#txtPhone").val('');
-                    $('#txtMail').val('');
-                    $('#frmRegDownload').bootstrapValidator('resetForm', true);
-                    hideLoadingContactImage('content-register', 'frmContentReg');
+                complete: function (jqXHR, textStatus) {
+                    $('#txtPhoneOffRight').val('');
+                    $('#frmSaleOffRight').bootstrapValidator('resetForm', true);
+                    hideLoadingContactImage('content-loading-off-left', 'frmContentRegSaleOffLeft');
                     toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', { timeOut: 5000 })
-                    location.href = "https://quyendn.github.io/kosy/dang-ky-thanh-cong.html";
+                    location.href = "https://quyendn.github.io/cmc/dang-ky-thanh-cong.html";
                 }
             });
         }
-    }).on('success.form.fv', function(e) {
+    }).on('success.form.fv', function (e) {
+
+    });
+    $('#frmSaleOffRight').bootstrapValidator({
+        message: 'This value is not valid',
+        excluded: [':disabled'],
+        feedbackIcons: faIcon,
+        fields: {
+            phoneoffright: {
+                validators: {
+                    notEmpty: {
+                        message: 'Điện thoại không được để trống.'
+                    },
+                    stringLength: {
+                        min: 10,
+                        message: 'Số điện thoại chỉ có thể là 10 số.'
+                    }
+                }
+            }
+        },
+        onSuccess: function (e) {
+            var phone = $('#txtPhoneOffRight').val();
+            var typeId = 1;
+            var isSend = 0;
+            var emailto = "quyendn84@gmail.com";
+            var dataJSON = { "phone": phone, "typeId": typeId, "isSend": isSend, "emailto": emailto }
+            var check = checkPhoneNumber();
+            if (!check)
+                return;
+            showLoadingContactImage('content-loading-off-right', 'frmContentRegSaleOffRight');
+            $.ajax({
+                url: "http://localhost:50623/api/CMCservice",
+                type: "Post",
+                async: false,
+                data: dataJSON,
+                contentType: 'application/json; charset=utf-8',
+                dataType: 'jsonp',
+                success: function (states) {
+                    $('#frmSaleOffRight').bootstrapValidator('resetForm', true);
+                    hideLoadingContactImage('content-loading-off-right', 'frmContentRegSaleOffRight');
+                },
+                error: function (ex) {
+                    toastr.error('Đã có lỗi trong quá trình đăng ký, mời bạn thử lại.', { timeOut: 5000 })
+                    hideLoadingContactImage('content-loading-off-right', 'frmContentRegSaleOffRight');
+                },
+                complete: function (jqXHR, textStatus) {
+                    $('#txtPhoneOffRight').val('');
+                    $('#frmSaleOffRight').bootstrapValidator('resetForm', true);
+                    hideLoadingContactImage('content-loading-off-right', 'frmContentRegSaleOffRight');
+                    toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', { timeOut: 5000 })
+                    location.href = "https://quyendn.github.io/cmc/dang-ky-thanh-cong.html";
+                }
+            });
+        }
+    }).on('success.form.fv', function (e) {
 
     });
     $('#frmSaleOff').bootstrapValidator({
@@ -98,14 +194,6 @@ $(document).ready(function() {
         excluded: [':disabled'],
         feedbackIcons: faIcon,
         fields: {
-           
-            nameoff: {
-                validators: {
-                    notEmpty: {
-                        message: 'Họ tên không được để trống.'
-                    }
-                }
-            },
             phoneoff: {
                 validators: {
                     notEmpty: {
@@ -120,18 +208,18 @@ $(document).ready(function() {
         },
         onSuccess: function(e) {
 
-            var name = $('#txtNameOff').val();
+    
             var phone = $('#txtPhoneOff').val();
-            var email = $('#txtEmailOff').val();
-            var address = $('#txtAddOff').val();
-            var emailto = "phongtruyenthong@kosy.vn";
-            var dataJSON = { "name": name, "phone": phone, "address": address, "email": email, "emailto": emailto }
-            var check = checkPhoneNumber2();
+            var typeId = 1;
+            var isSend = 0;
+            var emailto = "quyendn84@gmail.com";
+            var dataJSON = { "phone": phone, "typeId": typeId, "isSend": isSend, "emailto": emailto }
+            var check = checkPhoneNumber();
             if (!check)
                 return;
-            showLoadingContactImage('content-loading', 'frmContentRegSaleOff');
+            showLoadingContactImage('content-loading-off', 'frmContentRegSaleOff');
             $.ajax({
-                url: "https://alpha.f5academy.net/api/Kosyservice",
+                url: "http://localhost:50623/api/CMCservice",
                 type: "Post",
                 async: false,
                 data: dataJSON,
@@ -139,20 +227,18 @@ $(document).ready(function() {
                 dataType: 'jsonp',
                 success: function(states) {
                     $('#frmSaleOff').bootstrapValidator('resetForm', true);
-                    hideLoadingContactImage('content-loading', 'frmContentRegSaleOff');
+                    hideLoadingContactImage('content-loading-off', 'frmContentRegSaleOff');
                 },
                 error: function(ex) {
                     toastr.error('Đã có lỗi trong quá trình đăng ký, mời bạn thử lại.', { timeOut: 5000 })
-                    hideLoadingContactImage('content-loading', 'frmContentRegSaleOff');
+                    hideLoadingContactImage('content-loading-off', 'frmContentRegSaleOff');
                 },
                 complete: function(jqXHR, textStatus) {
-                    $('#txtNameOff').val('');
-                    $("#txtPhoneOff").val('');
-                    $('#txtEmailOff').val('');
+                    $('#txtPhoneOff').val('');
                     $('#frmSaleOff').bootstrapValidator('resetForm', true);
                     hideLoadingContactImage('content-loading-off', 'frmContentRegSaleOff');
                     toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', { timeOut: 5000 })
-                    location.href = "https://quyendn.github.io/kosy/dang-ky-thanh-cong.html";
+                    location.href = "https://quyendn.github.io/cmc/dang-ky-thanh-cong.html";
                 }
             });
         }
@@ -251,11 +337,11 @@ $(document).ready(function() {
     }
     function checkPhoneNumber() {
         var vnf_regex = /((09|03|07|08|05)+([0-9]{8})\b)/g;
-        var mobile = $('#txtPhone').val();
+        var mobile = $('#txtPhoneOffRight').val();
         if (mobile !== '') {
             if (vnf_regex.test(mobile) == false) {
                 toastr.error('Số điện thoại của bạn không đúng định dạng.', { timeOut: 5000 })
-                $("#txtPhone").focus();
+                $("#txtPhoneOffRight").focus();
                 return false;
 
             } else {
@@ -285,11 +371,28 @@ $(document).ready(function() {
     }
     function checkPhoneNumber3() {
         var vnf_regex = /((09|03|07|08|05)+([0-9]{8})\b)/g;
-        var mobile = $('#txtPhoneDownload').val();
+        var mobile = $('#txtPhone').val();
         if (mobile !== '') {
             if (vnf_regex.test(mobile) == false) {
                 toastr.error('Số điện thoại của bạn không đúng định dạng.', { timeOut: 5000 })
-                $("#txtPhoneDownload").focus();
+                $("#txtPhone").focus();
+                return false;
+
+            } else {
+                return true;
+            }
+        } else {
+            toastr.error('Bạn chưa điền số điện thoại.', { timeOut: 5000 })
+            return false;
+        }
+    }
+    function checkPhoneNumber4() {
+        var vnf_regex = /((09|03|07|08|05)+([0-9]{8})\b)/g;
+        var mobile = $('#txtPhone2').val();
+        if (mobile !== '') {
+            if (vnf_regex.test(mobile) == false) {
+                toastr.error('Số điện thoại của bạn không đúng định dạng.', { timeOut: 5000 })
+                $("#txtPhone2").focus();
                 return false;
 
             } else {
