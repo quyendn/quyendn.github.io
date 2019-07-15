@@ -144,10 +144,11 @@ a, .btn, button{
 	background:#eaeaea url(../img/ic_down.png) no-repeat 95% 50%;
 	}
 
-.panel-default > .panel-heading + .panel-collapse > .panel-body{
-	padding:15px;
-	line-height:26px;
-	}
+    .panel-default > .panel-heading + .panel-collapse > .panel-body {
+        padding: 15px;
+        line-height: 26px;
+        font-size: 15px;
+    }
 .pagination > li > a, .pagination > li > span{
 	margin:0 1px;
 	padding:10px 15px;

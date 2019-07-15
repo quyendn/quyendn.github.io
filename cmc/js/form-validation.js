@@ -214,7 +214,7 @@ $(document).ready(function() {
             var isSend = 0;
             var emailto = "quyendn84@gmail.com";
             var dataJSON = { "phone": phone, "typeId": typeId, "isSend": isSend, "emailto": emailto }
-            var check = checkPhoneNumber();
+            var check = checkPhoneNumber6();
             if (!check)
                 return;
             showLoadingContactImage('content-loading-off', 'frmContentRegSaleOff');
@@ -334,6 +334,23 @@ $(document).ready(function() {
     function hideLoadingContactImage(contentLoading, frmContent) {
         $('#' + frmContent).show();
         $('#loading-image').remove();
+    }
+    function checkPhoneNumber6() {
+        var vnf_regex = /((09|03|07|08|05)+([0-9]{8})\b)/g;
+        var mobile = $('#txtPhoneOff').val();
+        if (mobile !== '') {
+            if (vnf_regex.test(mobile) == false) {
+                toastr.error('Số điện thoại của bạn không đúng định dạng.', { timeOut: 5000 })
+                $("#txtPhoneOff").focus();
+                return false;
+
+            } else {
+                return true;
+            }
+        } else {
+            toastr.error('Bạn chưa điền số điện thoại.', { timeOut: 5000 })
+            return false;
+        }
     }
     function checkPhoneNumber() {
         var vnf_regex = /((09|03|07|08|05)+([0-9]{8})\b)/g;
