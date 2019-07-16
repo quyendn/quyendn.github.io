@@ -74,7 +74,7 @@ $(document).ready(function() {
                     $('#frmSaleOffDauSo').bootstrapValidator('resetForm', true);
                     hideLoadingContactImage('content-loading-off-content', 'frmContentRegSaleOffDauSo');
                     toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', { timeOut: 5000 })
-                    location.href = "https://quyendn.github.io/cmc/dang-ky-thanh-cong.html";
+                    location.href = "/dang-ky-thanh-cong.html";
                 }
             });
         }
@@ -128,7 +128,7 @@ $(document).ready(function() {
                     $('#frmSaleOffRight').bootstrapValidator('resetForm', true);
                     hideLoadingContactImage('content-loading-off-left', 'frmContentRegSaleOffLeft');
                     toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', { timeOut: 5000 })
-                    location.href = "https://quyendn.github.io/cmc/dang-ky-thanh-cong.html";
+                    location.href = "/dang-ky-thanh-cong.html";
                 }
             });
         }
@@ -182,7 +182,7 @@ $(document).ready(function() {
                     $('#frmSaleOffRight').bootstrapValidator('resetForm', true);
                     hideLoadingContactImage('content-loading-off-right', 'frmContentRegSaleOffRight');
                     toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', { timeOut: 5000 })
-                    location.href = "https://quyendn.github.io/cmc/dang-ky-thanh-cong.html";
+                    location.href = "/dang-ky-thanh-cong.html";
                 }
             });
         }
@@ -238,7 +238,7 @@ $(document).ready(function() {
                     $('#frmSaleOff').bootstrapValidator('resetForm', true);
                     hideLoadingContactImage('content-loading-off', 'frmContentRegSaleOff');
                     toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', { timeOut: 5000 })
-                    location.href = "https://quyendn.github.io/cmc/dang-ky-thanh-cong.html";
+                    location.href = "/dang-ky-thanh-cong.html";
                 }
             });
         }

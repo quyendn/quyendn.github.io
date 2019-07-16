@@ -144,11 +144,11 @@ a, .btn, button{
 	background:#eaeaea url(../img/ic_down.png) no-repeat 95% 50%;
 	}
 
-    .panel-default > .panel-heading + .panel-collapse > .panel-body {
-        padding: 15px;
-        line-height: 26px;
-        font-size: 15px;
-    }
+.panel-default > .panel-heading + .panel-collapse > .panel-body{
+	padding:15px;
+	line-height:26px;
+	font-size:15px;
+	}
 .pagination > li > a, .pagination > li > span{
 	margin:0 1px;
 	padding:10px 15px;
@@ -384,10 +384,10 @@ img{
 @media (max-width:768px){
 	#slide-wrap{
 		background-size:auto 100%;
-		height:700px !important;
+		height:650px !important;
 		}
 	#slide-wrap .container{
-		top:60px !important;
+		top:90px !important;
 		margin-top:0 !important;}
 	#slide-wrap p{
 		font-size:16px;
@@ -402,6 +402,10 @@ img{
 		padding:15px 15px 15px 80px;
 		min-height:auto;
 		text-align:left;
+		min-height:90px;
+		}
+	#section1 .textBox.box1{
+		background-position:10px 15px !important;
 		}
 	#section1 .textBox .info{
 		position:static;
