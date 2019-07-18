@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang="en" class="no-js" style="height:100%;">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -30,16 +31,24 @@
     <script type="text/javascript" src="js/bootstrap-datepicker/locales/bootstrap-datepicker.vi.min.js"></script>
     <!-- Google Tag Manager -->
     <script>
-    (function (w, d, s, l, i) {
-        w[l] = w[l] || []; w[l].push({
-            'gtm.start':
-                new Date().getTime(), event: 'gtm.js'
-        }); var f = d.getElementsByTagName(s)[0],
-            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-                'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-ND8V6Z3');</script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-ND8V6Z3');
+    </script>
     <!-- End Google Tag Manager -->
 </head>
+
 <body>
     <!-- Google Tag Manager (noscript) -->
     <noscript>
@@ -61,14 +70,18 @@
                     <div class="col-md-11 col-md-offset-1">
                         <div class="inner">
                             <div class="text" id="concert">
-                                <div class="tl-top"><h2><span class="f-aurora">21<sup>St</sup></span> TOYOTA CONCERT</h2></div>
+                                <div class="tl-top">
+                                    <h2><span class="f-aurora">21<sup>St</sup></span> TOYOTA CONCERT</h2>
+                                </div>
                                 <div class="tl-bt"></div>
                                 <div class="name f-copperp-b">Chương trình<br />hòa nhạc toyota 2019<br /><span>TOYOTA CONCERT 2019</span></div>
                                 <div class="artist"><span class="f-aurora">Honna tetsuji</span> / Conductor</div>
-                                <div class="artist"><span class="f-aurora">Do Phương Nhi</span> / Violin</div>
+                                <div class="artist"><span class="f-aurora">Do Phương Nhi</span> / Violin </div>
                                 <div class="artist"><span class="f-aurora">Pham Khanh Ngoc</span> / Soprano</div>
                                 <div class="artist"><span class="f-aurora">Fueda Hiroaki</span> / Tenor</div>
                                 <div class="artist"><span class="f-aurora">Suboi</span> / Rapper</div>
+                                <div class="artist"><span class="f-aurora">Lưu Quang Minh</span> / Nhạc sĩ</div>
+                                <div class="artist" style="font-size: 22px;">(Rapper Suboi biểu diễn trong đêm hòa nhạc tại HCM)</div>
                             </div>
                         </div>
                     </div>
@@ -160,6 +173,8 @@
                         <h3><span class="f-aurora">VÉ ĐƯỢC BÁN TỪ 22/7 TẠI</span> / TICKET AVAILABLE FROM 22TH JULY AT:</h3>
                         <p><span class="f-aurora">NHÀ HÁT LỚN HÀ NỘI</span> / HANOI OPERA HOUSE - <span class="f-aurora">LIÊN HỆ</span> / TEL : 0983 06 7996/ 0913 48 9858</p>
                         <p><span class="f-aurora">NHÀ HÁT TP. HỒ CHÍ MINH</span> / HO CHI MINH MUNICIPAL THEATRE - <span class="f-aurora">LIÊN HỆ</span> / TEL : 0989 87 4517/ 0903 60 4539 </p>
+                        <p><span class="f-aurora">LIÊN HỆ BÁN VÉ CHO NGƯỜI NƯỚC NGOÀI</span>: 0974 485 556 </p>
+                        <p><span class="f-aurora">MỌI THÔNG TIN LIÊN HỆ THEO SỐ HOTLINE</span> / FOR ANY QUERY, PLEASE CONTACT THE NUMBER: 0974 485 556</p>
                     </div>
                     <div class="col-sm-12" id="prices">
                         <div class="row">
@@ -358,17 +373,17 @@
     <script type="text/javascript" src="js/form-validation.js"></script>
     <script type="text/javascript" src="js/toastr.js"></script>
     <script>
-        $(document).ready(function () {
+        $(document).ready(function() {
             $('#txtDate').datepicker({
                 format: "dd/mm/yyyy",
                 todayBtn: "linked",
                 autoclose: true,
                 todayHighlight: true,
                 language: 'vi'
-            }).on('changeDate', function (e) {
-            });
+            }).on('changeDate', function(e) {});
         });
         new WOW().init();
+
         function AllowNumberOnly(evt) {
             evt = (evt) ? evt : event;
             var charCode = (evt.charCode) ? evt.charCode : ((evt.keyCode) ? evt.keyCode : ((evt.which) ? evt.which : 0));
@@ -382,18 +397,18 @@
             easing: 'easeInOutCubic',
             offset: 70,
             updateURL: false,
-            callbackBefore: function (toggle, navbar1) { },
-            callbackAfter: function (toggle, navbar1) { }
+            callbackBefore: function(toggle, navbar1) {},
+            callbackAfter: function(toggle, navbar1) {}
         });
-        $("button").click(function () {
+        $("button").click(function() {
             $(".navbar-toggle").toggleClass("close");
         });
 
-        $(".navbar-toggle").click(function () {
+        $(".navbar-toggle").click(function() {
             $("#header").toggleClass("open");
         });
 
-        $(".navbar-nav a").click(function () {
+        $(".navbar-nav a").click(function() {
             $(".navbar-collapse").removeClass("in");
 
             $(".navbar-toggle").removeClass("close");
@@ -401,4 +416,5 @@
     </script>
 
 </body>
+
 </html>
