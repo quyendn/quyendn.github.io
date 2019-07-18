@@ -5,7 +5,7 @@
 //
 // - ThemeOn.net -
 
-$(document).ready(function () {
+$(document).ready(function() {
 
 
     // FORM VALIDATION
@@ -16,17 +16,17 @@ $(document).ready(function () {
     // FORM VALIDATION FEEDBACK ICONS
     // =================================================================
     var faIcon = {
-        valid: 'fa fa-check-circle fa-lg text-success',
-        invalid: 'fa fa-times-circle fa-lg',
-        validating: 'fa fa-refresh'
-    }
-    // FORM VALIDATION ON ACCORDION
-    // =================================================================
-    // FORM VALIDATION CUSTOM ERROR CONTAINER
-    // =================================================================
-    // Indicate where the error messages are shown.
-    // Tooltip, Popover, Custom Container.
-    // =================================================================
+            valid: 'fa fa-check-circle fa-lg text-success',
+            invalid: 'fa fa-times-circle fa-lg',
+            validating: 'fa fa-refresh'
+        }
+        // FORM VALIDATION ON ACCORDION
+        // =================================================================
+        // FORM VALIDATION CUSTOM ERROR CONTAINER
+        // =================================================================
+        // Indicate where the error messages are shown.
+        // Tooltip, Popover, Custom Container.
+        // =================================================================
 
     $('#frmMobile').bootstrapValidator({
         message: 'This value is not valid',
@@ -61,18 +61,33 @@ $(document).ready(function () {
                         message: 'Số điện thoại chỉ có thể là 10 hoặc 11 số.'
                     }
                 }
+            },
+            cbotype: {
+                validators: {
+                    notEmpty: {
+                        message: 'Cần chọn nhu cầu tư vấn'
+                    }
+                }
             }
         },
-        onSuccess: function (e) {
+        onSuccess: function(e) {
 
             var name = $('#txtName').val();
             var phone = $('#txtPhone').val();
             var email = $('#txtEmail').val();
+            var tuvan = $('#cbotype').val();
             var emailto = "anhntt@tmsgroup.vn";
             var typeId = 1;
             var webdomain = "f5academy";
             var rederect = false;
-            var dataJSON = { "name": name, "email": email, "phone": phone, "typeId": typeId, "emailto": emailto }
+            var dataJSON = {
+                "name": name,
+                "email": email,
+                "phone": phone,
+                "tuvan": tuvan,
+                "typeId": typeId,
+                "emailto": emailto
+            }
             showLoadingContactImage('content-mobile', 'formContentContactMobile');
             $.ajax({
                 url: "https://alpha.f5academy.net/api/TSMservice",
@@ -81,16 +96,16 @@ $(document).ready(function () {
                 data: dataJSON,
                 contentType: 'application/json; charset=utf-8',
                 dataType: 'jsonp',
-                success: function (states) {
+                success: function(states) {
                     $('#frmMobile').bootstrapValidator('resetForm', true);
                     hideLoadingContactImage('formContentContactMobile', 'content-mobile');
                     rederect = true;
                 },
-                error: function (ex) {
+                error: function(ex) {
                     toastr.error('Đã có lỗi trong quá trình đăng ký, mời bạn thử lại.', { timeOut: 5000 })
                     hideLoadingContactImage('content-mobile', 'formContentContactMobile');
                 },
-                complete: function (jqXHR, textStatus) {
+                complete: function(jqXHR, textStatus) {
                     $('#txtName').val('');
                     $("#txtPhone").val('');
                     $('#txtEmail').val('');
@@ -100,7 +115,7 @@ $(document).ready(function () {
                 }
             });
         }
-    }).on('success.form.fv', function (e) {
+    }).on('success.form.fv', function(e) {
 
     });
     $('#frmContact').bootstrapValidator({
@@ -136,18 +151,33 @@ $(document).ready(function () {
                         message: 'Số điện thoại chỉ có thể là 10 hoặc 11 số.'
                     }
                 }
+            },
+            cboTypeContact: {
+                validators: {
+                    notEmpty: {
+                        message: 'Cần chọn nhu cầu tư vấn'
+                    }
+                }
             }
         },
-        onSuccess: function (e) {
+        onSuccess: function(e) {
 
             var name = $('#txtNameContact').val();
             var phone = $('#txtPhoneContact').val();
             var email = $('#txtEmailContact').val();
+            var tuvan = $('#cboTypeContact').val();
             var emailto = "anhntt@tmsgroup.vn";
             var typeId = 2;
             var webdomain = "f5academy";
             var rederect = false;
-            var dataJSON = { "name": name, "email": email, "phone": phone, "typeId": typeId, "emailto": emailto }
+            var dataJSON = {
+                "name": name,
+                "email": email,
+                "phone": phone,
+                "tuvan": tuvan,
+                "typeId": typeId,
+                "emailto": emailto
+            }
             showLoadingContactImage('content-contact', 'formContentContact');
             $.ajax({
                 url: "https://alpha.f5academy.net/api/TSMservice",
@@ -156,16 +186,16 @@ $(document).ready(function () {
                 data: dataJSON,
                 contentType: 'application/json; charset=utf-8',
                 dataType: 'jsonp',
-                success: function (states) {
+                success: function(states) {
                     $('#frmMobile').bootstrapValidator('resetForm', true);
                     hideLoadingContactImage('formContentContact', 'content-contact');
                     rederect = true;
                 },
-                error: function (ex) {
+                error: function(ex) {
                     toastr.error('Đã có lỗi trong quá trình đăng ký, mời bạn thử lại.', { timeOut: 5000 })
                     hideLoadingContactImage('content-contact', 'formContentContact');
                 },
-                complete: function (jqXHR, textStatus) {
+                complete: function(jqXHR, textStatus) {
                     $('#txtNameContact').val('');
                     $("#txtPhoneContact").val('');
                     $('#txtEmailContact').val('');
@@ -175,7 +205,7 @@ $(document).ready(function () {
                 }
             });
         }
-    }).on('success.form.fv', function (e) {
+    }).on('success.form.fv', function(e) {
 
     });
     $('#frmRegModal').bootstrapValidator({
@@ -211,18 +241,33 @@ $(document).ready(function () {
                         message: 'Số điện thoại chỉ có thể là 10 hoặc 11 số.'
                     }
                 }
+            },
+            cbotypemodal: {
+                validators: {
+                    notEmpty: {
+                        message: 'Cần chọn nhu cầu tư vấn'
+                    }
+                }
             }
         },
-        onSuccess: function (e) {
+        onSuccess: function(e) {
 
             var name = $('#name_modal').val();
             var phone = $('#phone_modal').val();
             var email = $('#email_modal').val();
+            var tuvan = $('#cbotypemodal').val();
             var emailto = "anhntt@tmsgroup.vn";
             var typeId = 1;
             var webdomain = "f5academy";
             var rederect = false;
-            var dataJSON = { "name": name, "email": email, "phone": phone, "typeId": typeId, "emailto": emailto }
+            var dataJSON = {
+                "name": name,
+                "email": email,
+                "phone": phone,
+                "tuvan": tuvan,
+                "typeId": typeId,
+                "emailto": emailto
+            }
             showLoadingContactImage('content-modal', 'frmContentModal');
             $.ajax({
                 url: "https://alpha.f5academy.net/api/TSMservice",
@@ -231,16 +276,16 @@ $(document).ready(function () {
                 data: dataJSON,
                 contentType: 'application/json; charset=utf-8',
                 dataType: 'jsonp',
-                success: function (states) {
+                success: function(states) {
                     $('#frmRegModal').bootstrapValidator('resetForm', true);
                     hideLoadingContactImage('frmContentModal', 'content-modal');
                     rederect = true;
                 },
-                error: function (ex) {
+                error: function(ex) {
                     toastr.error('Đã có lỗi trong quá trình đăng ký, mời bạn thử lại.', { timeOut: 5000 })
                     hideLoadingContactImage('content-modal', 'frmContentModal');
                 },
-                complete: function (jqXHR, textStatus) {
+                complete: function(jqXHR, textStatus) {
                     $('#name_modal').val('');
                     $("#phone_modal").val('');
                     $('#email_modal').val('');
@@ -250,7 +295,7 @@ $(document).ready(function () {
                 }
             });
         }
-    }).on('success.form.fv', function (e) {
+    }).on('success.form.fv', function(e) {
 
     });
     $('#frmRegModalInfo').bootstrapValidator({
@@ -286,18 +331,33 @@ $(document).ready(function () {
                         message: 'Số điện thoại chỉ có thể là 10 hoặc 11 số.'
                     }
                 }
+            },
+            cbotype_modal_info: {
+                validators: {
+                    notEmpty: {
+                        message: 'Cần chọn nhu cầu tư vấn'
+                    }
+                }
             }
         },
-        onSuccess: function (e) {
+        onSuccess: function(e) {
 
             var name = $('#name_modal_info').val();
             var phone = $('#phone_modal_info').val();
             var email = $('#email_modal_info').val();
+            var tuvan = $('#cbotype_modal_info').val();
             var emailto = "anhntt@tmsgroup.vn";
             var typeId = 2;
             var webdomain = "f5academy";
             var rederect = false;
-            var dataJSON = { "name": name, "email": email, "phone": phone, "typeId": typeId, "emailto": emailto }
+            var dataJSON = {
+                "name": name,
+                "email": email,
+                "phone": phone,
+                "tuvan": tuvan,
+                "typeId": typeId,
+                "emailto": emailto
+            }
             showLoadingContactImage('content-modal-info', 'frmContentModalInfo');
             $.ajax({
                 url: "https://alpha.f5academy.net/api/TSMservice",
@@ -306,16 +366,16 @@ $(document).ready(function () {
                 data: dataJSON,
                 contentType: 'application/json; charset=utf-8',
                 dataType: 'jsonp',
-                success: function (states) {
+                success: function(states) {
                     $('#frmRegModalInfo').bootstrapValidator('resetForm', true);
                     hideLoadingContactImage('frmContentModalInfo', 'content-modal-info');
                     rederect = true;
                 },
-                error: function (ex) {
+                error: function(ex) {
                     toastr.error('Đã có lỗi trong quá trình đăng ký, mời bạn thử lại.', { timeOut: 5000 })
                     hideLoadingContactImage('content-modal', 'frmContentModalInfo');
                 },
-                complete: function (jqXHR, textStatus) {
+                complete: function(jqXHR, textStatus) {
                     $('#name_modal_info').val('');
                     $("#phone_modal_info").val('');
                     $('#email_modal_info').val('');
@@ -325,9 +385,10 @@ $(document).ready(function () {
                 }
             });
         }
-    }).on('success.form.fv', function (e) {
+    }).on('success.form.fv', function(e) {
 
     });
+
     function showLoadingImage() {
 
         $('#content').empty().append('<div id="loading-image" align="center"><img src="img/ajax-loader.gif" alt="Loading..." /></div>');
