@@ -108,13 +108,9 @@ $(document).ready(function() {
                     $('#txtMail').val('');
                     $('#frmRegDownload').bootstrapValidator('resetForm', true);
                     hideLoadingContactImage('content-register', 'frmContentReg');
-<<<<<<< HEAD
-                    toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', { timeOut: 5000 })
-=======
                     toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', {
                         timeOut: 5000
                     })
->>>>>>> f7b368e6fe6080bed3986cdbe9906d7b21e3f501
                     location.href = "http://cx-8.mazdamotors.vn/dang-ky-thanh-cong.html";
                 }
             });
