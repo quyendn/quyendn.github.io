@@ -436,17 +436,22 @@ a, .btn, button{
 #footer .copy .social{
 	text-align:right;
 	}
-	
+#btn_datbanhngay{
+	position:fixed;
+	right:0;
+	bottom:0;
+	}
 /**/
 #thank{
-	padding-top:100px;
-	padding-bottom:100px;
-	background:#ffc522;
+	padding:0;
+	color:#fed23f;
+	background: url(../img/thank.jpg) no-repeat 50% 50%;
 	font-size:21px;
 	}
-#thank .thankImg{
-	margin-bottom:30px;
-	
+#thank .inner{
+	padding-top:150px;
+	padding-bottom:250px;
+	background: url(../img/bg_elip.png) no-repeat 50% 100%;
 	}
 #thank .thankImg img{
 	max-width:380px;}
@@ -502,7 +507,8 @@ img{
 		}
 	.navbar-collapse {
 		clear:both;
-		margin-top:170px;
+		float:none;
+		margin-top:100px;
 		}
 	.navbar-nav > li > a{
 		color:#fff;
@@ -510,22 +516,39 @@ img{
 		font-size:16px;
 		line-height:normal;
 		}
-	#section2 .inner {
-		background: url(../img/light.png) no-repeat 50% 100%;
-	}
-	#section2 .col-sm-6, #slide .col-sm-6{
-		text-align:center;
-		margin-top:30px;
-		}
-	#section3 .col-sm-7, #section1 .col-md-5{
+	#section1 .container{
+		background:none;}
+	#section1 .dance{
 		margin-bottom:30px;
+		background-size:80px auto;
+		padding-left:100px;
+		padding-top:0;
+		font-size:14px;
+		min-height:auto;
 		}
-	#formContact{
-		margin-bottom:30px;
+	.owl-loaded .owl-next{
+		right:0 !important;
 		}
-	#footer .copy, #footer .copy .social{
-		text-align:center !important;}
-		
+	.owl-loaded .owl-prev{
+		left:0 !important;
+		}
+	#section4{
+		background-size:auto 100%;
+		}
+	#section4 .text .p-t{
+		display:none;
+		}
+	#section4 .text{
+		font-size:14px;
+		padding:60px 15px 15px 15px;
+		}
+	#thank{
+	  font-size:16px;
+	  background:url(../img/thank_mb.jpg) no-repeat 0 0;}
+	 #thank .inner{
+		 text-align:center;
+		 padding-top:220px;
+		 padding-bottom:90px;}
 	}
 
 /*owl-carousel*/
@@ -533,7 +556,6 @@ img{
 	}
 .owl-carousel.owl-loaded, .owl-carousel-rate.owl-loaded {
   display: block;
-  overflow:hidden;
 }
 .owl-carousel .owl-stage-outer, .owl-carousel-rate .owl-stage-outer{
   position: relative;
