@@ -107,7 +107,7 @@ $(document).ready(function() {
                     toastr.success('Cảm ơn bạn đã đăng ký.</br>Chúng tôi sẽ liên hệ tư vấn sớm nhất!', {
                         timeOut: 5000
                     })
-                    window.location.href = "https://quyendn.github.io/richy2/dang-ky-thanh-cong.html";
+                    window.location.href = "http://trungthu.richy.com.vn/dang-ky-thanh-cong.html";
                 }
             });
         }
