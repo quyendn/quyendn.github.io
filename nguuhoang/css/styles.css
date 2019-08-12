@@ -503,7 +503,7 @@ img {
     color: #d42027;
     text-align: center;
     text-transform: uppercase;
-    font-size: 24px;
+    font-size: 20px;
     font-family: 'UTMHelveBold';
     position: relative;
     height: 87px;
@@ -836,51 +836,61 @@ i {
 .owl-carousel .owl-nav button.owl-prev span {
     display: none;
 }
+
+
 /**/
-#section6{
-	position:relative;
-	}
-#section6 .btnConnect{
-	display:inline-block;
-	padding:5px;
-	color:#fff;
-	-moz-border-radius:5px;
-	-webkit-border-radius:5px;
-	border-radius:5px;
-	background:#d42027;
-	border:3px solid #222;
-	overflow:hidden;
-	font-size:18px;
-	font-family: 'UTM HelveBold';
-	}
-#section6 .btnConnect{
-	position:absolute;
-	right:15px;
-	bottom:400px;
-	min-width:240px;
-	text-align:center;
-	text-transform:uppercase;color:#fff;
-	}
-#section6 .btnConnect img{
-	float:left;
-	margin-right:5px;
-	}
-#section6 .btnConnect:hover{
-	color:#fff;
-	}
-#thank .btnBack{
-	text-transform:none;
-	font-size:16px;
-	display:inline-block;
-	padding:10px 30px;
-	color:#fff;
-	-moz-border-radius:5px;
-	-webkit-border-radius:5px;
-	border-radius:5px;
-	background:#d42027;
-	border:3px solid #222;
-	font-family: 'UTM HelveBold';
-	}
+
+#section6 {
+    position: relative;
+}
+
+#section6 .btnConnect {
+    display: inline-block;
+    padding: 5px;
+    color: #fff;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    background: #d42027;
+    border: 3px solid #222;
+    overflow: hidden;
+    font-size: 18px;
+    font-family: 'UTM HelveBold';
+}
+
+#section6 .btnConnect {
+    position: absolute;
+    right: 15px;
+    bottom: 400px;
+    min-width: 240px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+#section6 .btnConnect img {
+    float: left;
+    margin-right: 5px;
+}
+
+#section6 .btnConnect:hover {
+    color: #fff;
+}
+
+#thank .btnBack {
+    text-transform: none;
+    font-size: 16px;
+    display: inline-block;
+    padding: 10px 30px;
+    color: #fff;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    background: #d42027;
+    border: 3px solid #222;
+    font-family: 'UTM HelveBold';
+}
+
 
 /*==========================*/
 
@@ -1029,17 +1039,17 @@ i {
         width: 70px;
         border: 2px solid #faec22;
     }
-	#section6 .btnConnect{
-		position:static;
-		margin:0 auto;
-		font-size:14px;
-		left:auto;
-		right:auto;
-		min-width:200px;
-		}
-	#section6 .btnConnect img{
-		width:40px;
-		}
+    #section6 .btnConnect {
+        position: static;
+        margin: 0 auto;
+        font-size: 14px;
+        left: auto;
+        right: auto;
+        min-width: 200px;
+    }
+    #section6 .btnConnect img {
+        width: 40px;
+    }
 }
 
 .has-error .form-control-feedback {
@@ -1049,4 +1059,6 @@ i {
 .has-success .form-control-feedback {
     padding-top: 10px;
 }
+
+
 /**/

@@ -33,30 +33,7 @@ $(document).ready(function() {
         excluded: [':disabled'],
         feedbackIcons: faIcon,
         fields: {
-            email: {
-                validators: {
-                    notEmpty: {
-                        message: 'Địa chỉ email không được để trống.'
-                    },
-                    emailAddress: {
-                        message: 'Không đúng định dạng email'
-                    }
-                }
-            },
-            name: {
-                validators: {
-                    notEmpty: {
-                        message: 'Họ tên không được để trống.'
-                    }
-                }
-            },
-            address: {
-                validators: {
-                    notEmpty: {
-                        message: 'Địa chỉ không được để trống.'
-                    }
-                }
-            },
+
             phone: {
                 validators: {
                     notEmpty: {
