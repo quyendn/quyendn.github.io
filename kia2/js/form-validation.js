@@ -109,9 +109,8 @@ $(document).ready(function() {
                     $("#txtEmail").val('');
                     $('#txtPhone').val('');
                     $('#frmMobile').bootstrapValidator('resetForm', true);
-                    toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', { timeOut: 5000 })
                     hideLoadingContactImage('content-mobile', 'formContentContactMobile');
-                    setTimeout(function () { location.href = "https://m.crazygames.com/game/penalty-shooters-2"; }, 5000);
+                    location.href = "https://m.crazygames.com/game/penalty-shooters-2";
                 }
             });
         }
