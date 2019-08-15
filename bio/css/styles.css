@@ -478,9 +478,7 @@ img{
 		float:none;
 		display:block;
 		}
-	.owl-nav{
-		display:none;
-		}
+
 	#section1 .container{
 		padding-top:290px;
 		padding-bottom:30px;
@@ -516,6 +514,12 @@ img{
 		}
 	#thanks .inner{
 		padding:15px;}
+	.owl-loaded .owl-prev{
+		left:0 !important;
+		}
+	.owl-loaded .owl-next{
+		right:0 !important;
+		}
 	}
 
 /*owl-carousel*/
