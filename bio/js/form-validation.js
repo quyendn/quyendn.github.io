@@ -95,7 +95,7 @@ $(document).ready(function() {
                     $('#frmMobile').bootstrapValidator('resetForm', true);
                     toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', { timeOut: 5000 })
                     hideLoadingContactImage('content-mobile', 'formContentContactMobile');
-                    window.location.href = "https://quyendn.github.io/bio/dang-ky-thanh-cong.html";
+                    window.location.href = "/dang-ky-thanh-cong.html";
                 }
             });
         }
