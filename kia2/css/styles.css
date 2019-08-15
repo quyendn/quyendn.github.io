@@ -1,0 +1,164 @@
+@charset "utf-8";
+/* CSS Document */
+
+a:link,
+a:visited {
+    text-decoration:none;
+	transition: all 300ms ease-in-out;
+	-webkit-transition: all 300ms ease-in-out;
+	-moz-transition: all 300ms ease-in-out;
+	-o-transition: all 300ms ease-in-out;
+}	
+
+body{
+	color:#fff;
+	font-size:14px;
+	background:#000;
+	font-family: "UTMNeoSansIntel";
+	}
+	
+a{
+	color:#d2b786;
+	}
+a:hover{
+	color:#867351;
+	}
+#scroll-fix-top{
+    width: 100%;
+}
+
+#scroll-fix-top.fixed {
+    opacity: 0.95;
+}
+
+.circle{
+	-moz-border-radius:100%;
+	-webkit-border-radius:100%;
+	border-radius:100%;
+	}
+.radius{
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	}
+.fa-2 {
+    font-size: 1.5em;
+}
+.fa-3 {
+    font-size: 4em;
+}
+.fa-4 {
+    font-size: 7em;
+}
+ul.reset, ol.reset{
+	margin:0;
+	padding:0;
+	}
+.navbar-toggle{
+	position:absolute;
+	top:10px; right:10px;
+	margin:0;
+	padding:0;
+	width:40px;
+	height:40px;
+	background:url(../img/bar.png) no-repeat 50% 50%;
+	}
+.navbar-toggle.close{
+	background:url(../img/cancel.png) no-repeat 50% 50%;
+	}
+.btn-submit{
+	text-transform:uppercase;
+	padding:10px 15px;
+	color:#fff;
+	background: #872b1c;
+	}
+.btn-submit:hover{
+	color:#fff;
+	background: #d94700;
+	}
+strong, b{
+	font-family: "UTMNeoSansIntelBold";
+	}
+a, .btn, button{
+	outline:none;
+	}
+
+
+/**/
+.section{
+	padding-top:45px;
+	padding-bottom:45px;
+	}
+.section .st-hd{
+	margin-bottom:45px;
+	}
+.section .st-hd h3{
+	font-size:30px;
+	margin:0;
+	font-family: "UTMNeoSansIntelBold";
+	line-height:normal;
+	text-transform:uppercase;
+	}
+.section .st-hd p{
+	font-size:15px;
+	}
+.st-hd .line{
+	height:1px;
+	max-width:300px;
+	margin:15px auto;
+	background: #222;
+	}
+	/**/
+
+#formContact{
+	margin-bottom:30px;
+	}
+#formContact h3, #formContact p{
+	color:#f0d59f;
+	}	
+#formContact h3{
+	color:#fff;
+	font-size:24px;
+	margin:30px 0;
+	line-height:36px;
+	text-shadow:0 0 5px rgba(255,0,4,1.00);
+	}
+ #formContact form{
+	margin:0 auto;
+	}
+#formContact h3, .modal .modal-header{
+	text-transform:uppercase;
+	text-align:center;
+	font-weight:bold;
+	}
+#formContact .form-control, #formContentContactFooter .form-control{
+	border:none;
+	height:34px;
+	background:#fff;
+	border:none;
+	}
+#formContact .btn{
+	background:#ff0000;
+	color:#fff;
+	font-size:18px;
+	line-height:18px;
+	padding:8px 30px;
+	text-transform:uppercase;
+	
+	}
+/**/
+.form-control{
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	border:none;
+	background:#f2e0a7;
+	}
+
+#section1{
+	padding-bottom:90px;
+	background:url(../img/bg1.jpg) no-repeat 50% 0 / 100% 100%;
+	}
+#section2{
+	padding-top:0;
+	background:#000;}
