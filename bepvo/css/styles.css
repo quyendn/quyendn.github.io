@@ -230,7 +230,7 @@ button {
 }
 
 #section1 .st1-bg-r {
-    background: url(../img/bg-t-r.png) no-repeat 100% 0;
+    background: url(../img/bg-t-r.png) no-repeat 100% 0 / 250px auto;
 }
 
 #section1 .st1-bg-l {
