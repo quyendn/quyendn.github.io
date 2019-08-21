@@ -259,32 +259,36 @@
             <div class="modal-content">
                 <div class="modal-header">Đặt mua</div>
                 <div class="modal-body">
-                    <form>
-                        <div class="form-group has-feedback">
-                            <input type="text" class="form-control" name="name" id="txtName" value="" placeholder="Họ và tên(*)">
+                    <form id="frmMobile" class="form-" autocomplete="off">
+                        <div id="formContentContactMobile">
+                            <div class="form-group has-feedback">
+                                <input type="text" class="form-control" name="name" id="txtName" value="" placeholder="Họ và tên(*)">
+                            </div>
+                            <div class="form-group has-feedback">
+                                <input type="text" class="form-control" name="phone" id="txtPhone" onkeypress="return AllowNumberOnly(event);" placeholder="Số điện thoại(*)">
+                            </div>
+                            <div class="form-group has-feedback">
+                                <select class="form-control" id="cbomenu" name="cbomenu">
+                                    <option value="">--- Chọn món ---</option>
+                                    <option value="Chả bò Đà Nẵng">Chả bò Đà Nẵng</option>
+                                    <option value="Bánh ít tôm thịt">Bánh ít tôm thịt</option>
+                                    <option value="Ram tôm đất loại nhỏ">Ram tôm đất loại nhỏ</option>
+                                    <option value="Ram tôm đất loại lớn">Ram tôm đất loại lớn</option>
+                                    <option value="Nem chợ Huyện">Nem chợ Huyện</option>
+                                    <option value="Tré Chợ Huyện">Tré Chợ Huyện</option>
+                                    <option value="Chả cá Quy Nhơn">Chả cá Quy Nhơn</option>
+                                    <option value="Bánh ít nhân đậu xanh dừa">Bánh ít nhân đậu xanh dừa</option>
+                                    <option value="Đậu đen xanh lòng">Đậu đen xanh lòng</option>
+                                    <option value="Các loại mắm cá cơm, mắm dưa đu đủ, cà pháo, mắm tôm chua">Các loại mắm cá cơm, mắm dưa đu đủ, cà pháo, mắm tôm chua</option>
+                                </select>
+                            </div>
+                            <div class="form-group has-feedback">
+                                <textarea class="form-control" placeholder="* Bếp sẽ sớm liên hệ để chốt đơn với Quý khách hàng " id="txtDescription"></textarea>
+                            </div>
+                            <div class="form-group text-center"><button class="btn"><img src="img/btn_datmon.png"></button></div>
                         </div>
-                        <div class="form-group has-feedback">
-                            <input type="text" class="form-control" name="phone" id="txtPhone" onkeypress="return AllowNumberOnly(event);" placeholder="Số điện thoại(*)">
-                        </div>
-                        <div class="form-group has-feedback">
-                            <select class="form-control" id="cbomenu" name="cbomenu">
-                                <option value="">--- Chọn món ---</option>
-                                <option value="Chả bò Đà Nẵng">Chả bò Đà Nẵng</option>
-                                <option value="Bánh ít tôm thịt">Bánh ít tôm thịt</option>
-                                <option value="Ram tôm đất loại nhỏ">Ram tôm đất loại nhỏ</option>
-                                <option value="Ram tôm đất loại lớn">Ram tôm đất loại lớn</option>
-                                <option value="Nem chợ Huyện">Nem chợ Huyện</option>
-                                <option value="Tré Chợ Huyện">Tré Chợ Huyện</option>
-                                <option value="Chả cá Quy Nhơn">Chả cá Quy Nhơn</option>
-                                <option value="Bánh ít nhân đậu xanh dừa">Bánh ít nhân đậu xanh dừa</option>
-                                <option value="Đậu đen xanh lòng">Đậu đen xanh lòng</option>
-                                <option value="Các loại mắm cá cơm, mắm dưa đu đủ, cà pháo, mắm tôm chua">Các loại mắm cá cơm, mắm dưa đu đủ, cà pháo, mắm tôm chua</option>
-                            </select>
-                        </div>
-                        <div class="form-group has-feedback">
-                            <textarea class="form-control" placeholder="* Bếp sẽ sớm liên hệ để chốt đơn với Quý khách hàng "></textarea>
-                        </div>
-                        <div class="form-group text-center"><button class="btn"><img src="img/btn_datmon.png"></button></div>
+                            <div id="content-mobile"></div>
+                            
                     </form>
                 </div>
             </div>
@@ -307,6 +311,14 @@
         });
     </script>
     <script>
+        function AllowNumberOnly(evt) {
+            evt = (evt) ? evt : event;
+            var charCode = (evt.charCode) ? evt.charCode : ((evt.keyCode) ? evt.keyCode : ((evt.which) ? evt.which : 0));
+            if ((charCode > 31) && (charCode < 48 || charCode > 57) && charCode != 8 && charCode != 37 && charCode != 39 && charCode != 45 && charCode != 46) {
+                return false;
+            }
+            return true;
+        }
         $("button").click(function() {
             $(".navbar-toggle").toggleClass("close");
         });
