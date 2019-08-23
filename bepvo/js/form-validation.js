@@ -76,7 +76,7 @@ $(document).ready(function() {
             var phone = $('#txtPhone').val();
             var product = $('#cbomenu').val();
             var description = $('#txtDescription').val();
-            var emailto = "quyendn84@gmail.com";
+            var emailto = "halong.ms@gmail.com";
             var webdomain = "f5academy";
             var dataJSON = { "name": name, "phone": phone, "product": product, "description": description, "emailto": emailto }
             var check = checkPhoneNumber();
