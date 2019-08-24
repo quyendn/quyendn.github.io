@@ -320,14 +320,7 @@ a, .btn, button{
 	font-size:14px;
 	line-height:18px;
 	}
-#section4 .row, #section4 .container-fluid{
-	margin-right:0;
-	margin-left:0;
-	}
-#section4 .col-md-6{
-	padding-right:0;
-	padding-left:0;
-	}
+
 #section5 .row>div:nth-child(2n+1){
 	clear:both;
 	}
@@ -416,8 +409,9 @@ a, .btn, button{
 #thanks{
 	position:relative;
 	height:100%;
-	padding:90px 0;
+	padding:90px 0 400px 0;
 	text-align:center;
+	background:url(../img/bg-dongco.jpg) no-repeat 50% 100%;
 	
 	}
 #thanks .inner{
@@ -431,7 +425,7 @@ a, .btn, button{
 	background:rgba(0,0,0,0.5);
 	}
 #thanks .text{
-	font-size:30px;
+	font-size:24px;
 	}
 #thanks .text .logo{
 	margin-top:30px;}
@@ -503,6 +497,7 @@ img{
 		}
 	#section4 .checker{
 		margin-top:30px;
+		padding:15px;
 		}
 	#section5 .col-sm-4{
 		padding-top:15px;
@@ -511,17 +506,38 @@ img{
 	#section5 .col-sm-4 p{
 		line-height:22px;
 		}
+	#section6{
+		padding-bottom:200px;
+		background:#56677b url(../img/bg-dongco.jpg) no-repeat 50% 100% / 100% auto;
+		}
 	#section6 .text{
 		margin-bottom:15px;
 		}
 	#section6 .col-sm-4{
 		text-align:left !important}
+	.carousel-indicators li .text{
+		max-width:300px !important;
+		margin-left:-150px !important;
+		}
+	#section7 img{
+		height:auto;}
 	#footer .col-md-3{
 		margin-bottom:30px;
 		}
 	.bgfix{
 		height:200px;
 		background-size:auto 100% !important}
+	#thanks{
+		background-color:#56677b;
+		background-size:100% auto;
+		padding-bottom:250px;
+		}
+	#thanks .text{
+		font-size:14px;
+		padding:0;
+		border:none;
+		background:none;
+		}
 
 	}
 
@@ -686,4 +702,7 @@ img{
 	}
 .carousel-indicators li.active .text, .carousel-fade  li.active .check:before{
 	display:block;
+	}
+.carousel-inner{
+	background:url(../img/bg_gradient.gif) repeat-x 50% 100%;
 	}
