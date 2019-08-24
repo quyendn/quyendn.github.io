@@ -97,7 +97,7 @@ $(document).ready(function () {
                     $("#txtPhone").val('');
                     $('#txtEmail').val('');
                     $('#frmMobile').bootstrapValidator('resetForm', true);
-                    toastr.success('Cảm ơn bạn đã đăng ký.</br>Chúng tôi sẽ sớm liên hệ lại với bạn!', {
+                    toastr.success('Cảm ơn bạn đã đăng ký.</br>Chúng tôi sẽ liên hệ với quý khách trong thời gian sớm nhất!', {
                         timeOut: 5000
                     })
                     window.location.href = "https://quyendn.github.io/bmw/dang-ky-thanh-cong.html";
