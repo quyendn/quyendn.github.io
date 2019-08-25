@@ -470,18 +470,19 @@ img{
 	}
 @media (max-width:768px){
 	#header, #header .affix{
-		min-height:86px;
+		min-height:60px;
 		}
+	
 	.navbar-toggle, .navbar-toggle.close{
 		width:140px;
 		background-position:10px 50%;
 		}
 	.navbar-brand{
-		top:15px;
-		right:15px;
+		top:10px;
+		right:10px;
 		}
 	.navbar-brand>img{
-		width:80px;
+		width:68px;
 		}
 	.section .st-hd h3{
 		font-size:30px;
@@ -526,7 +527,8 @@ img{
 		}
 	.bgfix{
 		height:200px;
-		background-size:auto 100% !important}
+		background-size:auto 100% !important;
+		background-attachment:scroll !important;}
 	#thanks{
 		background-color:#56677b;
 		background-size:100% auto;
@@ -538,7 +540,6 @@ img{
 		border:none;
 		background:none;
 		}
-
 	}
 
 /*owl-carousel*/
