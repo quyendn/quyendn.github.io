@@ -1,0 +1,17 @@
+
+@font-face {
+	font-family: 'Conv_UTM Amerika Sans';
+	src: url('../fonts/UTM Amerika Sans.eot');
+	src: local('☺'), url('../fonts/UTM Amerika Sans.woff') format('woff'), url('../fonts/UTM Amerika Sans.ttf') format('truetype'), url('../fonts/UTM Amerika Sans.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Conv_UTM Flavour';
+	src: url('fonts/UTM Flavour.eot');
+	src: local('☺'), url('../fonts/UTM Flavour.woff') format('woff'), url('../fonts/UTM Flavour.ttf') format('truetype'), url('../fonts/UTM Flavour.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
