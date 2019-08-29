@@ -91,7 +91,7 @@ $(document).ready(function() {
                 complete: function(jqXHR, textStatus) {
                     $('#txtName').val('');
                     $("#txtPhone").val('');
-                    $('#cboService').val('');
+                    $('#txtContent').val('');
                     $('#frmMobile').bootstrapValidator('resetForm', true);
                     toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', { timeOut: 5000 })
                     hideLoadingContactImage('content-mobile', 'formContentContactMobile');
