@@ -15,3 +15,27 @@
 	font-style: normal;
 }
 
+@font-face {
+  font-family: "TrajanPro-Bold";
+  src: url("../fonts/TrajanProBold.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/TrajanProBold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/TrajanProBold.otf") format("opentype"), /* Open Type Font */
+    url("../fonts/TrajanProBold.svg") format("svg"), /* Legacy iOS */
+    url("../fonts/TrajanProBold.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("../fonts/TrajanProBold.woff") format("woff"), /* Modern Browsers */
+    url("../fonts/TrajanProBold.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TrajanPro-Regular";
+  src: url("../fonts/TrajanProRegular.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/TrajanProRegular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/TrajanProRegular.otf") format("opentype"), /* Open Type Font */
+    url("../fonts/TrajanProRegular.svg") format("svg"), /* Legacy iOS */
+    url("../fonts/TrajanProRegular.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("../fonts/TrajanProRegular.woff") format("woff"), /* Modern Browsers */
+    url("../fonts/TrajanProRegular.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
