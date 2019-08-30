@@ -465,7 +465,15 @@ button {
     transform: scale(1.15);
 }
 
-
+#section6 .btn-thongso{
+	background:#0062ff;
+	color:#fff;
+	text-transform:uppercase;
+	max-width:360px;
+	font-weight:bold;
+	font-size:18px;
+	margin:10px auto;
+	}
 /**/
 
 #footer {
@@ -682,6 +690,8 @@ img {
 		margin-left:0;
 		max-width:100%;
 		}
+	#section6 .col-sm-pull-4.text-center{
+		text-align:center !important}
 }
 
 
