@@ -322,8 +322,6 @@ button {
     -webkit-border-radius: 0px;
     border-radius: 0px;
     background: #fff;
-    height: auto;
-    padding: 8px;
     border: 1px solid #000;
 }
 
@@ -374,12 +372,16 @@ button {
 }
 
 #section4 .checker {
-    max-width: 380px;
+    max-width: 250px;
     margin: 0 auto 30px auto;
     border: 1px solid #000;
-    padding: 15px 30px;
+    padding: 15px 15px;
     font-size: 14px;
     line-height: 18px;
+	position:absolute;
+	bottom:0;
+	left:50%;
+	margin-left:-125px;
 }
 
 #section4 .container-fluid,
@@ -545,7 +547,10 @@ button {
     margin-top: 30px;
 }
 
-
+#biker{
+	background: url(../img/bg_gradient.gif) repeat-x 50% 0%;
+	position:relative
+	}
 /**/
 
 img {
@@ -665,6 +670,18 @@ img {
         border: none;
         background: none;
     }
+	#VdoPlayr{
+		height:460px !important}
+	#biker{
+	background: none;
+	position:static
+	}
+	#section4 .checker{
+		position:static;
+		width:auto;
+		margin-left:0;
+		max-width:100%;
+		}
 }
 
 
@@ -775,12 +792,12 @@ img {
 
 .carousel-indicators {
     bottom: auto;
-    top: 100%;
+    top: 0;
     width: 100%;
     left: 0;
     right: 0;
     margin-left: 0;
-    margin-top: -45px;
+    margin-top: -15px;
     height: 250px;
     position: relative;
     z-index: 9;
@@ -846,12 +863,12 @@ img {
     font-size: 14px;
     line-height: 20px;
     margin-top: -1px;
-    padding: 15px 0;
+    padding: 15px 0 0 0;
     display: none;
-    border-top: 1px solid #eee;
-    border-bottom: 1px solid #eee;
-    max-width: 380px;
-    margin-left: -190px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    max-width: 300px;
+    margin-left: -150px;
 }
 
 .carousel-indicators li.active .text,
@@ -860,5 +877,5 @@ img {
 }
 
 .carousel-inner {
-    background: url(../img/bg_gradient.gif) repeat-x 50% 100%;
+    
 }

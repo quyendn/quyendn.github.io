@@ -65,13 +65,13 @@ $(document).ready(function() {
 
             var name = $('#txtName').val();
             var phone = $('#txtPhone').val();
-            var service = $('#txtContent').val();
+            var description = $('#txtContent').val();
             var emailto = "quyendn84@gmail.com";
             var typeId = 1;
             var check = checkPhoneNumber();
             if (!check)
                 return;
-            var dataJSON = { "name": name, "phone": phone, "service": service, "emailto": emailto };
+            var dataJSON = { "name": name, "phone": phone, "description": description, "emailto": emailto };
             showLoadingContactImage('content-mobile', 'formContentContactMobile');
             $.ajax({
                 url: "https://alpha.f5academy.net/api/Junheeservice",
@@ -95,7 +95,7 @@ $(document).ready(function() {
                     $('#frmMobile').bootstrapValidator('resetForm', true);
                     toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', { timeOut: 5000 })
                     hideLoadingContactImage('content-mobile', 'formContentContactMobile');
-                    window.location.href = "https://quyendn.github.io/junhee/dang-ky-thanh-cong.html";
+                    window.location.href = "/dang-ky-thanh-cong.html";
                 }
             });
         }

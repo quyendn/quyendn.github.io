@@ -19,9 +19,33 @@
     <link href="css/toastr.min.css" rel="stylesheet" type="text/css" />
     <link href="css/bootstrapValidator.min.css" rel="stylesheet" type="text/css" />
     <link href="css/font-face.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-MGNFWVV');
+    </script>
+    <!-- End Google Tag Manager -->
+
 </head>
 
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MGNFWVV" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
     <div id="container">
         <div id="header">
             <div class="affix" data-spy="affix" data-offset-top="79" id="">
@@ -310,6 +334,15 @@
         });
     </script>
     <script>
+        function AllowNumberOnly(evt) {
+            evt = (evt) ? evt : event;
+            var charCode = (evt.charCode) ? evt.charCode : ((evt.keyCode) ? evt.keyCode : ((evt.which) ? evt.which : 0));
+            if ((charCode > 31) && (charCode < 48 || charCode > 57) && charCode != 8 && charCode != 37 && charCode != 39 &&
+                charCode != 45 && charCode != 46) {
+                return false;
+            }
+            return true;
+        }
         $("button").click(function() {
             $(".navbar-toggle").toggleClass("close");
         });
