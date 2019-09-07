@@ -177,7 +177,7 @@ a, .btn, button{
 .section .st-hd h3{
 	font-size:36px;
 	margin:0;
-	font-family: 'Conv_UTM Amerika Sans';
+	font-family: "TrajanPro-Regular";
 	line-height:normal;
 	text-transform:uppercase;
 	}
@@ -289,9 +289,10 @@ a, .btn, button{
 	background:url(../img/bg_2.gif) repeat 50% 50%;
 	}
 #section2 h2{
-	font-size:30px;
+	font-size:20px;
 	margin:15px 0;
-	font-family: 'Conv_UTM Flavour';
+	text-transform:uppercase;
+	font-family: "TrajanPro-Bold";
 	}
 #section3 .item img{
 	background:url(../img/bg_rate.gif) no-repeat 50% 50% / 100% 100%;
@@ -303,9 +304,10 @@ a, .btn, button{
 	}
 #section3 .text{
 	position:relative;
-	margin-top:-30px;
-	margin-right:15px;
+	margin-top:10px;
+	margin-right:0px;
 	padding:15px 30px;
+	text-align:center;
 	background:url(../img/bg_cmt.png) no-repeat 50% 50% / 100% 100%;}
 #section3 .text .name{
 	font-family: 'Conv_UTM Flavour';
@@ -344,6 +346,14 @@ a, .btn, button{
 #price .inner .border{
 	border-right:2px solid #daca99;
 	padding-right:30px;
+	}
+#price .inner .border label{
+	width:45px;
+	margin:0;
+	font-weight:normal;
+	}
+#price .inner .border strong{
+	font-size:20px;
 	}
 #price .inner .col-sm-4:last-child .border{
 	border:none;
@@ -566,7 +576,7 @@ img{
 	}
 .owl-loaded .owl-prev{
 	left:-50px;
-	background:url(../img/priv.png) no-repeat 50% 50%
+	background:url(../img/prev.png) no-repeat 50% 50%
 	}
 .owl-loaded .owl-next{
 	right:-50px;
