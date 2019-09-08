@@ -462,7 +462,7 @@ img{
   color: #fff;
   position: fixed;
   right: 20px;
-  bottom: 90px;
+  bottom: 40%;
   padding: 10px;
   z-index: 99;
 }

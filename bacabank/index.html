@@ -170,7 +170,7 @@
         </div>
         <div class="section wow fadeInUp" id="section5">
             <div class="container">
-                <img src="img/video.png">
+                <iframe width="100%" height="600px" src="https://www.youtube.com/embed/7VDvsRwpQHU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 
             </div>
         </div>
@@ -215,8 +215,8 @@
                     	<h2>Liên hệ với <strong>BAC A BANK</strong></h2>
                     	<div class="social">
                             <a href="tel:1800588828" target="_blank"><img src="img/ic_phone.png"></a>
-                        	<a href="" target="_blank"><img src="img/ic_share.png"></a>
-                            <a href="" target="_blank"><img src="img/ic_send.png"></a>
+                            <a href="javascript:void(0);" onclick="share_google();"><img src="img/ic_share.png"></a>
+                            <a href="javascript:void(0);" onclick="share_facebook();"><img src="img/ic_send.png"></a>
                         </div>
                     </div>
                     
@@ -276,6 +276,26 @@
 
             $(".navbar-toggle").removeClass("close");
         });
+        function share_twitter() {
+            var u = location.href;
+            var t = document.title;
+            window.open("http://twitter.com/home?status=" + encodeURIComponent(u))
+        }
+        function share_facebook() {
+            var u = location.href;
+            var t = document.title;
+            window.open("https://www.facebook.com/share.php?u=" + encodeURIComponent(u) + "&t=" + encodeURIComponent(t))
+        }
+        function share_google() {
+            var u = location.href;
+            var t = document.title;
+            window.open("http://www.google.com/bookmarks/mark?op=edit&bkmk=" + encodeURIComponent(u) + "&title=" + t + "&annotation=" + t)
+        }
+        function share_buzz() {
+            var u = location.href;
+            var t = document.title;
+            window.open("http://buzz.yahoo.com/buzz?publisherurn=DanTri&targetUrl=" + encodeURIComponent(u))
+        }
     </script>
     
 </body>
