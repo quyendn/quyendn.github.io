@@ -52,6 +52,16 @@ $(document).ready(function() {
                         message: 'Số điện thoại chỉ có thể là 10 hoặc 11 số.'
                     }
                 }
+            },
+            email: {
+                validators: {
+                    notEmpty: {
+                        message: 'Địa chỉ email không được để trống.'
+                    },
+                    emailAddress: {
+                        message: 'Không đúng định dạng email'
+                    }
+                }
             }
         },
         onSuccess: function (e) {
@@ -59,16 +69,16 @@ $(document).ready(function() {
             var name = $('#txtName').val();
             var email = $('#txtEmail').val();
             var phone = $('#txtPhone').val();
-            var question = $('#txtQuestion').val();
+            var description = $('#txtDescription').val();
             var isSend = 0;
             var emailto = "quyendn84@gmail.com";
             var check = checkPhoneNumber();
             if (!check)
                 return;
-            var dataJSON = { "name": name, "phone": phone, "email": email, "question": question, "emailto": emailto, 'isSend': isSend };
-            showLoadingContactImage('content-download', 'frmContentDownload');
+            var dataJSON = { "name": name, "phone": phone, "email": email, "description": description, "emailto": emailto };
+            showLoadingContactImage('content-download', 'frmContentReg');
             $.ajax({
-                url: "https://alpha.f5academy.net/api/BacABankservice",
+                url: "http://localhost:50623/api/Flamingoservice",
                 type: "Post",
                 async: false,
                 data: dataJSON,
@@ -76,20 +86,20 @@ $(document).ready(function() {
                 dataType: 'jsonp',
                 success: function (states) {
                     $('#frmRegDownload').bootstrapValidator('resetForm', true);
-                    hideLoadingContactImage('content-download', 'frmContentDownload');
+                    hideLoadingContactImage('content-download', 'frmContentReg');
                  },
                 error: function (ex) {
                     toastr.error('Đã có lỗi trong quá trình đăng ký, mời bạn thử lại.', { timeOut: 5000 })
-                    hideLoadingContactImage('content-download', 'frmContentDownload');
+                    hideLoadingContactImage('content-download', 'frmContentReg');
                 },
                 complete: function (jqXHR, textStatus) {
                     $('#txtName').val('');
                     $("#txtEmail").val('');
                     $('#txtPhone').val('');
-                    $('#txtQuestion').val('');
-                    $('#frmDattiec').bootstrapValidator('resetForm', true);
+                    $('#txtDescription').val('');
+                    $('#frmRegDownload').bootstrapValidator('resetForm', true);
                     toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', { timeOut: 5000 })
-                    hideLoadingContactImage('content-download', 'frmContentDownload');
+                    hideLoadingContactImage('content-download', 'frmContentReg');
                     window.location.href = "/dang-ky-thanh-cong.html";
                 }
             });
