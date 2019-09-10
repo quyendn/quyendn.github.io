@@ -112,7 +112,7 @@ a, .btn, button{
 	min-height:100px;
 	background:#3fc0b7;
 	}
-#hdBottom{
+.navbar-collapse{
 	min-height:60px;
 	background:#f48120;
 	}
@@ -345,7 +345,7 @@ a, .btn, button{
 	background:#f57e26;
 	color:#fff;
 	}
-#section6 img{
+#section6 .col-sm-6 img{
 	width:100%;
 	}
 #section6 .col-sm-6 .f-20{
@@ -441,10 +441,10 @@ img{
 	}
 @media (max-width:768px){
 	#header, #header .affix{
-		min-height:70px;
+		min-height:68px;
 		}
 	#hdTop{
-		min-height:76px;
+		min-height:68px;
 		}
 	#hdTop .btn-buynow{
 		margin-top:10px;
@@ -475,6 +475,13 @@ img{
 	.navbar-brand{
 		padding:10px 0;
 		}
+	#section2{
+		padding-bottom:0px;
+		background:#fff;
+		}
+	#section2 .inner .text{
+		font-size:16px;
+		}
 	#section3 .col-sm-6, #section4 .col-sm-6, #section5 .col-sm-6, #section5 .col-sm-4{
 		margin-bottom:30px;
 		}
@@ -485,6 +492,44 @@ img{
 	#thanks p{
 		font-size:13px;
 		}
+	.section .st-hd .f-30{
+		font-size:24px;
+		line-height:30px;
+		}
+	.section .st-hd .f-20{
+		font-size:16px;
+		line-height:22px;
+		}
+	#section5{
+		padding-bottom:0;
+		}
+		
+	#section5 h3{
+		font-size:30px;
+		}
+	#section6 .st-hd{
+		margin-bottom:30px;
+		}
+	#section6 .col-sm-6 .f-20{
+		padding-top:0;
+		}
+	#section7 .col-sm-6{
+		margin-bottom:30px;
+		}
+	#section8 #map{
+		margin-top:30px;
+		}
+	#footer h2{
+		font-size:20px;
+		}
+	#footer p{
+		font-size:14px;
+		}
+	.social{
+		text-align:center;
+		margin-top:30px;
+		}
+		
 	}
 
 	
