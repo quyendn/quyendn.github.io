@@ -114,7 +114,7 @@ a, .btn, button{
 	padding:10px 0;
 	}
 #hdBottom{
-	background:url(../img/bg_nav.png) no-repeat 50% 0 /100% auto;
+	background:url(../img/bg_nav.png) no-repeat 50% 0;
 	}
 .navbar-nav > li > a{
 	text-transform:uppercase;
@@ -223,6 +223,7 @@ a, .btn, button{
 	-moz-border-radius:5px;
 	-webkit-border-radius:5px;
 	border-radius:5px;
+	width:100%;
 	}
 #section3 .ct{
 	padding:15px;
@@ -341,10 +342,17 @@ img{
   -webkit-transform: scale(1.10);
   transform: scale(1.10); /* (115% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
-@media (max-width:1336px){
+@media (max-width:1024px){
 	
-	
+	.nav>li>a{
+		padding-right:10px;
+		padding-left:10px;
+		}
+	#hdBottom {
+		background: url(../img/bg_nav.png) no-repeat 50% 0 ;
 	}
+	}
+	
 @media (max-width:768px){
 	#header, #header .affix{
 		min-height:70px;
@@ -356,7 +364,7 @@ img{
 		min-height:76px;
 		}
 	#hdBottom, #section3{
-		background-size:auto 100%;
+		background:#edc868;
 		}
 	.navbar-brand{
 		padding:10px 0;
@@ -371,6 +379,8 @@ img{
 	#section3 .col-sm-4, #section4 .col-sm-4{
 		margin-bottom:30px;
 		}
+	.boxCare .ct .text{
+		min-height:auto;}
 	
 	}
 
