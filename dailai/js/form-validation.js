@@ -27,13 +27,13 @@ $(document).ready(function() {
         // Indicate where the error messages are shown.
         // Tooltip, Popover, Custom Container.
         // =================================================================
-   
+
     $('#frmRegDownload').bootstrapValidator({
         message: 'This value is not valid',
         excluded: [':disabled'],
         feedbackIcons: faIcon,
         fields: {
-           
+
             name: {
                 validators: {
                     notEmpty: {
@@ -64,7 +64,7 @@ $(document).ready(function() {
                 }
             }
         },
-        onSuccess: function (e) {
+        onSuccess: function(e) {
 
             var name = $('#txtName').val();
             var email = $('#txtEmail').val();
@@ -78,21 +78,21 @@ $(document).ready(function() {
             var dataJSON = { "name": name, "phone": phone, "email": email, "description": description, "emailto": emailto };
             showLoadingContactImage('content-download', 'frmContentReg');
             $.ajax({
-                url: "http://localhost:50623/api/Flamingoservice",
+                url: "https://alpha.f5academy.net/api/Flamingoservice",
                 type: "Post",
                 async: false,
                 data: dataJSON,
                 contentType: 'application/json; charset=utf-8',
                 dataType: 'jsonp',
-                success: function (states) {
+                success: function(states) {
                     $('#frmRegDownload').bootstrapValidator('resetForm', true);
                     hideLoadingContactImage('content-download', 'frmContentReg');
-                 },
-                error: function (ex) {
+                },
+                error: function(ex) {
                     toastr.error('Đã có lỗi trong quá trình đăng ký, mời bạn thử lại.', { timeOut: 5000 })
                     hideLoadingContactImage('content-download', 'frmContentReg');
                 },
-                complete: function (jqXHR, textStatus) {
+                complete: function(jqXHR, textStatus) {
                     $('#txtName').val('');
                     $("#txtEmail").val('');
                     $('#txtPhone').val('');
@@ -104,7 +104,7 @@ $(document).ready(function() {
                 }
             });
         }
-    }).on('success.form.fv', function (e) {
+    }).on('success.form.fv', function(e) {
 
     });
 
@@ -113,19 +113,23 @@ $(document).ready(function() {
         $('#content').empty().append('<div id="loading-image" align="center"><img src="img/ajax-loader.gif" alt="Loading..." /></div>');
         $('#formContentContact').hide();
     }
+
     function hideLoadingImage() {
         $('#formContentContact').show();
         $('#loading-image').remove();
     }
-    function showLoadingContactImage(contentLoading,frmContent) {
+
+    function showLoadingContactImage(contentLoading, frmContent) {
 
         $('#' + contentLoading).empty().append('<div id="loading-image" align="center"><img src="img/ajax-loader.gif" alt="Loading..." /></div>');
         $('#' + frmContent).hide();
     }
+
     function hideLoadingContactImage(contentLoading, frmContent) {
         $('#' + frmContent).show();
         $('#loading-image').remove();
     }
+
     function checkPhoneNumber() {
         var vnf_regex = /((09|03|07|08|05)+([0-9]{8})\b)/g;
         var mobile = $('#txtPhone').val();

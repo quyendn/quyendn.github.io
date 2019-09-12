@@ -378,10 +378,10 @@ button {
     padding: 15px 15px;
     font-size: 14px;
     line-height: 18px;
-	position:absolute;
-	bottom:0;
-	left:50%;
-	margin-left:-125px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -125px;
 }
 
 #section4 .container-fluid,
@@ -465,15 +465,17 @@ button {
     transform: scale(1.15);
 }
 
-#section6 .btn-thongso{
-	background:#0062ff;
-	color:#fff;
-	text-transform:uppercase;
-	max-width:360px;
-	font-weight:bold;
-	font-size:18px;
-	margin:10px auto;
-	}
+#section6 .btn-thongso {
+    background: #0062ff;
+    color: #fff;
+    text-transform: uppercase;
+    max-width: 360px;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 10px auto;
+}
+
+
 /**/
 
 #footer {
@@ -555,10 +557,12 @@ button {
     margin-top: 30px;
 }
 
-#biker{
-	background: url(../img/bg_gradient.gif) repeat-x 50% 0%;
-	position:relative
-	}
+#biker {
+    background: url(../img/bg_gradient.gif) repeat-x 50% 0%;
+    position: relative
+}
+
+
 /**/
 
 img {
@@ -678,20 +682,22 @@ img {
         border: none;
         background: none;
     }
-	#VdoPlayr{
-		height:460px !important}
-	#biker{
-	background: none;
-	position:static
-	}
-	#section4 .checker{
-		position:static;
-		width:auto;
-		margin-left:0;
-		max-width:100%;
-		}
-	#section6 .col-sm-pull-4.text-center{
-		text-align:center !important}
+    #VdoPlayr {
+        height: 460px !important
+    }
+    #biker {
+        background: none;
+        position: static
+    }
+    #section4 .checker {
+        position: static;
+        width: auto;
+        margin-left: 0;
+        max-width: 100%;
+    }
+    #section6 .col-sm-pull-4.text-center {
+        text-align: center !important
+    }
 }
 
 
@@ -886,6 +892,26 @@ img {
     display: block;
 }
 
-.carousel-inner {
-    
+.carousel-inner {}
+
+.tv {
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    .screen {
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+        margin: auto;
+        opacity: 0;
+        transition: opacity .5s;
+        &.active {
+            opacity: 1;
+        }
+    }
 }
