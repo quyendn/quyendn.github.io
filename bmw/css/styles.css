@@ -342,6 +342,15 @@ button {
 
 #section1 {
     padding-top: 0;
+    padding-bottom: 0;
+    background: #000;
+    overflow: hidden;
+    margin-bottom: 0;
+}
+
+#section1 video {
+    margin-top: -9.5%;
+    margin-bottom: -6%;
 }
 
 .bgfix {
