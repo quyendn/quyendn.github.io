@@ -310,7 +310,7 @@
 
     </div>
 
-    <div id="popup" class="modal fade in" role="dialog" style="display: inline;">
+    <div id="popup" class="modal fade in" role="dialog" style="display: inline;opacity:0.9;">
         <div class="modal-dialog modal-lg">
 
             <!-- Modal content-->
@@ -324,16 +324,16 @@
                                 <div><img src="img/logo.png"></div>
                                 <div style="margin:15px 0">Nhận ngay E-voucher <strong class="c-red">300.000 VND</strong> tại Shopee khi đăng ký mở thẻ của SeABank </div>
                                 <div style="margin-bottom:30px"><img src="img/gift.png"></div>
-                                <form id="frmRegDownload" autocomplete="off" novalidate class="bv-form">
+                                <form id="frmRegPopupDownload" autocomplete="off" novalidate class="bv-form">
                                     <div id="frmContentReg">
-                                        <div class="form-group has-feedback"><input type="text" class="form-control" name="phone" id="txtPhone" placeholder="Số điện thoại"></div>
-                                        <div class="form-group has-feedback"><input type="text" class="form-control" name="email" id="txtEmail" placeholder="Email"></div>
-                                        <div class="form-group has-feedback"><input type="text" class="form-control" name="txtAdd" id="txtAdd" placeholder="Nơi làm việc"></div>
+                                        <div class="form-group has-feedback"><input type="text" class="form-control" name="phone_p" id="txtPhonePopup" placeholder="Số điện thoại"></div>
+                                        <div class="form-group has-feedback"><input type="text" class="form-control" name="email_p" id="txtEmailPopup" placeholder="Email"></div>
+                                        <div class="form-group has-feedback"><input type="text" class="form-control" name="addess_p" id="txtAddPopup" placeholder="Nơi làm việc"></div>
 
                                         <div class="form-group text-center"><button class="btn btn-register">Gửi đi</button>
                                         </div>
                                     </div>
-                                    <div id="content-download"></div>
+                                    <div id="content-popup-download"></div>
                                 </form>
                             </div>
                         </div>
@@ -384,7 +384,9 @@
         $(".navbar-toggle").click(function() {
             $("#header").toggleClass("open");
         });
-
+        $(".close").click(function () {
+            $("#popup").hide();
+        });
         $(".navbar-nav a").click(function() {
             $(".navbar-collapse").removeClass("in");
 

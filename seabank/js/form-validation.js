@@ -153,7 +153,103 @@ $(document).ready(function() {
     }).on('success.form.fv', function (e) {
 
     });
+    $('#frmRegPopupDownload').bootstrapValidator({
+        message: 'This value is not valid',
+        excluded: [':disabled'],
+        feedbackIcons: faIcon,
+        fields: {
 
+            name: {
+                validators: {
+                    notEmpty: {
+                        message: 'Họ tên không được để trống.'
+                    }
+                }
+            },
+            phone_p: {
+                validators: {
+                    notEmpty: {
+                        message: 'Điện thoại không được để trống.'
+                    },
+                    stringLength: {
+                        min: 10,
+                        max: 11,
+                        message: 'Số điện thoại chỉ có thể là 10 hoặc 11 số.'
+                    }
+                }
+            },
+            brith: {
+                validators: {
+                    notEmpty: {
+                        message: 'Ngày sinh không được để trống.'
+                    }
+                }
+            },
+            addess_p: {
+                validators: {
+                    notEmpty: {
+                        message: 'Địa chỉ không được để trống.'
+                    }
+                }
+            },
+            email_p: {
+                validators: {
+                    notEmpty: {
+                        message: 'Địa chỉ email không được để trống.'
+                    },
+                    emailAddress: {
+                        message: 'Không đúng định dạng email'
+                    }
+                }
+            }
+        },
+        onSuccess: function (e) {
+
+            var email = $('#txtEmailPopup').val();
+            var phone = $('#txtPhonePopup').val();
+            var address = $('#txtAddPopup').val();
+            var isSend = 0;
+            var emailto = "quyendn84@gmail.com";
+            var check = checkPhoneNumber2();
+            if (!check)
+                return;
+            var dataJSON = {
+                "phone": phone,
+                "email": email,
+                "address": address,
+                "emailto": emailto
+            };
+            showLoadingContactImage('content-popup-download', 'frmContent');
+            $.ajax({
+                url: "https://alpha.f5academy.net/api/Seabankvoucher",
+                type: "Post",
+                async: false,
+                data: dataJSON,
+                contentType: 'application/json; charset=utf-8',
+                dataType: 'jsonp',
+                success: function (states) {
+                    $('#frmRegPopupDownload').bootstrapValidator('resetForm', true);
+                    hideLoadingContactImage('content-popup-download', 'frmContent');
+                },
+                error: function (ex) {
+                    toastr.error('Đã có lỗi trong quá trình đăng ký, mời bạn thử lại.', { timeOut: 5000 })
+                    hideLoadingContactImage('content-popup-download', 'frmContent');
+                },
+                complete: function (jqXHR, textStatus) {
+                    $('#txtName').val('');
+                    $("#txtEmail").val('');
+                    $('#txtPhone').val('');
+                    $('#txtDescription').val('');
+                    $('#frmRegPopupDownload').bootstrapValidator('resetForm', true);
+                    toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', { timeOut: 5000 })
+                    hideLoadingContactImage('content-popup-download', 'frmContent');
+                    $("#popup").hide();
+                }
+            });
+        }
+    }).on('success.form.fv', function (e) {
+
+    });
     function showLoadingImage() {
 
         $('#content').empty().append('<div id="loading-image" align="center"><img src="img/ajax-loader.gif" alt="Loading..." /></div>');
@@ -186,6 +282,23 @@ $(document).ready(function() {
             if (vnf_regex.test(mobile) == false) {
                 toastr.error('Số điện thoại của bạn không đúng định dạng.', { timeOut: 5000 })
                 $("#txtPhone").focus();
+                return false;
+
+            } else {
+                return true;
+            }
+        } else {
+            toastr.error('Bạn chưa điền số điện thoại.', { timeOut: 5000 })
+            return false;
+        }
+    }
+    function checkPhoneNumber2() {
+        var vnf_regex = /((09|03|07|08|05)+([0-9]{8})\b)/g;
+        var mobile = $('#txtPhonePopup').val();
+        if (mobile !== '') {
+            if (vnf_regex.test(mobile) == false) {
+                toastr.error('Số điện thoại của bạn không đúng định dạng.', { timeOut: 5000 })
+                $("#txtPhonePopup").focus();
                 return false;
 
             } else {
