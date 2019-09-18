@@ -331,7 +331,7 @@ button {
 }
 
 .form-horizontal .btn {
-    background: #007fac;
+    background: #0062ff;
     color: #fff;
     text-transform: uppercase;
     font-weight: bold;
@@ -339,7 +339,12 @@ button {
     padding: 5px 30px;
     border: none;
 }
-
+.btn, .form-control{
+	-moz-border-radius:0;
+	-webkit-border-radius:0;
+	-border-radius:0;
+	-o-border-radius:0;
+	}
 #section1 {
     padding-top: 0;
     padding-bottom: 0;
@@ -429,13 +434,15 @@ button {
 
 #section6 {
     background: #fff url(../img/bg-dongco.jpg) no-repeat 50% 100%;
-    padding-bottom: 600px;
+    padding-bottom: 650px;
 }
 
 #section6 .text {
     margin-bottom: 60px;
 }
-
+#section6 .col-sm-4 .text:last-child {
+    margin-bottom: 30px;
+}
 #section6 .text h2 {
     font-weight: bold;
     border-bottom: 2px solid #000;
@@ -656,9 +663,12 @@ img {
         line-height: 22px;
     }
     #section6 {
-        padding-bottom: 200px;
+        padding-bottom: 170px;
         background: #56677b url(../img/bg-dongco.jpg) no-repeat 50% 100% / 100% auto;
     }
+	#section6 .row{
+		margin-bottom:30px;
+		}
     #section6 .text {
         margin-bottom: 15px;
     }
