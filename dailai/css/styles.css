@@ -250,9 +250,7 @@ a, .btn, button{
 #section2{
 	background:url(../img/bg_y.gif) repeat-x 0 100%;
 	}
-#section2.section .st-hd{
-	margin-bottom:30px;
-	}
+
 #section2 [class*="col-"]{
 	margin-bottom:20px;
 	}
@@ -441,10 +439,10 @@ img{
 	}
 @media (max-width:768px){
 	#header, #header .affix{
-		min-height:68px;
+		min-height:60px;
 		}
 	#hdTop{
-		min-height:68px;
+		min-height:60px;
 		}
 	#hdTop .btn-buynow{
 		margin-top:10px;
