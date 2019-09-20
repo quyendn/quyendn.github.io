@@ -326,7 +326,9 @@ button {
 #section2 .bg-tl {
     margin-top: 15px;
 }
-
+#section2.section .st-hd .f-20{
+	font-size:18px;
+	}
 #section2 .text,
 #section3 .text {
     padding: 15px;
@@ -394,10 +396,10 @@ button {
     -webkit-border-radius: 5px;
     -border-radius: 5px;
     background: #fff;
-    min-height: 330px;
     -moz-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
     -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+	min-height:350px;
 }
 
 #section4 .inner .thumb {
@@ -538,9 +540,9 @@ img {
 }
 
 .zoom:hover {
-    -moz-transform: scale(1.10);
-    -webkit-transform: scale(1.10);
-    transform: scale(1.10);
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
     /* (115% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
@@ -1257,4 +1259,13 @@ img {
 
 .owl-dot.active {
     background: #333;
-}
+}/**/
+#section4 .owl-item.active.center .item{
+	-moz-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+	}
+#section4 .owl-stage-outer{
+	padding-top:30px;
+	padding-bottom:30px;
+	}

@@ -19,6 +19,7 @@
     <link href="css/toastr.min.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" type="text/css" href="css/animate.css" />
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+    
     <link href="js/bootstrap-datepicker/bootstrap-datepicker.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="js/bootstrap-datepicker/bootstrap-datepicker.js"></script>
     <script type="text/javascript" src="js/bootstrap-datepicker/locales/bootstrap-datepicker.vi.min.js"></script>
@@ -31,7 +32,7 @@
 <body>
     <div id="container">
         <div id="header">
-            <div data-offset-top="79" id="">
+            <div  class="affix" data-spy="affix" data-offset-top="79" id="">
                 <div id="hdTop">
                     <div class="container">
                         <div class="row">
@@ -63,11 +64,11 @@
             <div class="container">
                 <div class="st-hd text-center text-uppercase">
                     <div class="f-30 c-red">Khám phá và tận hưởng!</div>
-                    <div class="f-20">Thỏa sức sử dụng ưu đãi mua sắm, ăn uống, giải trí, nhà hàng, khách sạn, du lịch, chăm sóc sức khỏe... tại các đối tác của SeABank</div>
+                    <div class="f-20">Thỏa sức sử dụng ưu đãi mua sắm, ăn uống, giải trí, nhà hàng, khách sạn, du lịch, chăm sóc sức khỏe...<br/>tại các đối tác của SeABank</div>
                     <div class="line"></div>
                 </div>
-                <div class="row">
-                    <div class="col-sm-4">
+                <div class="owl-carousel owl-carousel-st2">
+                        <div class="item">
                         <div class="shadow">
                             <div><img src="img/the1.png"></div>
                             <div class="bg-tl text-center">Thẻ Visa SeALady Cashback</div>
@@ -85,7 +86,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-4">
+                    <div class="item">
                         <div class="shadow">
                             <div><img src="img/the2.png"></div>
                             <div class="bg-tl text-center">Thẻ Visa Platinum</div>
@@ -102,7 +103,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-4">
+                    <div class="item">
                         <div class="shadow">
                             <div><img src="img/the3.png"></div>
                             <div class="bg-tl text-center">Thẻ Visa Classic</div>
@@ -117,6 +118,7 @@
                         </div>
                     </div>
                 </div>
+                
             </div>
         </div>
         <div class="section wow fadeInUp" id="section3">
@@ -206,10 +208,9 @@
                                 <img src="img/nguyenkim.png">
                             </div>
                             <p>Hệ thống Nguyễn Kim trên toàn quốc</li>
-                                <p>Trả góp lãi suất <strong class="c-red">0%</strong> trong vòng <strong class="c-red">3,6 tháng</strong>. Miễn lãi toàn bộ thời gian trả góp</p>
-                                <p>Áp dụng: Tất cả thẻ tín dụng SeABank</p>
-                                <pThời hạn: <strong class="c-red">22/10/2019 - 01/10/2019</strong>
-                            </p>
+                            <p>Trả góp lãi suất <strong class="c-red">0%</strong> trong vòng <strong class="c-red">3,6 tháng</strong>. Miễn lãi toàn bộ thời gian trả góp</p>
+                            <p>Áp dụng: Tất cả thẻ tín dụng SeABank</p>
+                            <p>Thời hạn: <strong class="c-red">22/10/2019 - 01/10/2019</strong></p>
                         </div>
                         <div class="item">
                             <div class="thumb">
@@ -245,6 +246,7 @@
                         </div>
 
                     </div>
+                    
                     <div class="text-center c-red">
                         <p class="f-30"><strong>Và hàng ngàn ưu đãi hấp dẫn khác</strong></p>
                         <p class="f-20">Chi tiết truy cập website <a href="https://seazone.seabank.com.vn/" target="_blank">https://seazone.seabank.com.vn/</a> để biết thêm thông tin về ưu đãi</p>
@@ -310,7 +312,7 @@
 
     </div>
 
-    <div id="popup" class="modal fade in" role="dialog" style="display: inline;opacity:0.9;">
+    <div id="popup" class="modal fade in" role="dialog" style="display: inline;opacity:1;">
         <div class="modal-dialog modal-lg">
 
             <!-- Modal content-->
@@ -320,7 +322,7 @@
                     <button type="button" class="close" data-dismiss="modal"><span style="color: red;">X</span></button>
                     <div class="row">
                         <div class="col-sm-6">
-                            <div style="padding:90px 30px 30px 30px; max-width:320px">
+                            <div style="padding:30px 30px 30px 30px; max-width:320px">
                                 <div><img src="img/logo.png"></div>
                                 <div style="margin:15px 0">Nhận ngay E-voucher <strong class="c-red">300.000 VND</strong> tại Shopee khi đăng ký mở thẻ của SeABank </div>
                                 <div style="margin-bottom:30px"><img src="img/gift.png"></div>
@@ -479,6 +481,10 @@
             }
         })
         $('.owl-carousel-st5-2').owlCarousel({
+			autoplay: true,
+			center: true,
+			loop: true,
+			nav: true,
             loop: true,
             margin: 10,
             responsiveClass: true,
@@ -495,11 +501,38 @@
                     items: 3,
                     nav: true,
                     loop: true,
-                    margin: 00,
+                    margin: 10,
+                }
+            }
+        })
+		$('.owl-carousel-st2').owlCarousel({
+			autoplay: true,
+			center: true,
+			loop: true,
+			nav: true,
+            loop: true,
+            margin: 10,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: true
+                },
+                768: {
+                    items: 2,
+                    nav: true,
+					margin: 30,
+                },
+                1000: {
+                    items: 3,
+                    nav: true,
+                    loop: true,
+                    margin: 30,
                 }
             }
         })
     </script>
+
 
 </body>
 
