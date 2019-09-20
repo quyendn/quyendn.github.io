@@ -105,7 +105,7 @@ button {
     right: 0;
     top: 0;
     z-index: 9999;
-    min-height: 160px;
+    min-height: 60px;
     background: #fff;
     -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
@@ -399,7 +399,7 @@ button {
     -moz-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
     -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-	min-height:350px;
+	min-height:380px;
 }
 
 #section4 .inner .thumb {
@@ -1261,11 +1261,25 @@ img {
     background: #333;
 }/**/
 #section4 .owl-item.active.center .item{
+	-moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+	}
+#section4 .owl-stage-outer, #section2 .owl-stage-outer{
+	padding-top:30px;
+	padding-bottom:30px;
+	}
+#section2 .owl-loaded .owl-prev, #section2 .owl-loaded .owl-next{
+	display:block;
+	width:30%;
+	background:none;
+	height:100%;
+	top:0;
+	bottom:0;
+	margin:0;
+	}
+#section2 .owl-item.active.center .item{
 	-moz-transform: scale(1.05);
     -webkit-transform: scale(1.05);
     transform: scale(1.05);
-	}
-#section4 .owl-stage-outer{
-	padding-top:30px;
-	padding-bottom:30px;
 	}

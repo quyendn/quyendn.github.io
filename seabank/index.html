@@ -32,17 +32,17 @@
 <body>
     <div id="container">
         <div id="header">
-            <div  class="affix" data-spy="affix" data-offset-top="79" id="">
-                <div id="hdTop">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm-6 col-xs-8 text-left">
-                                <a href="" class="navbar-brand"><img src="img/logo.png"></a>
-                            </div>
+            
+            <div id="hdTop">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-xs-8 text-left">
+                            <a href="" class="navbar-brand"><img src="img/logo.png"></a>
                         </div>
                     </div>
                 </div>
-
+            </div>
+            <div class="affix" data-spy="affix" data-offset-top="79" id="">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"></button>
                 <nav class="navbar-collapse collapse" role="navigation">
                     <div class="container">
@@ -62,8 +62,8 @@
         </div>
         <div class="section wow fadeInUp" id="section2">
             <div class="container">
-                <div class="st-hd text-center text-uppercase">
-                    <div class="f-30 c-red">Khám phá và tận hưởng!</div>
+                <div class="st-hd text-center">
+                    <div class="f-30 c-red text-uppercase">Khám phá và tận hưởng!</div>
                     <div class="f-20">Thỏa sức sử dụng ưu đãi mua sắm, ăn uống, giải trí, nhà hàng, khách sạn, du lịch, chăm sóc sức khỏe...<br/>tại các đối tác của SeABank</div>
                     <div class="line"></div>
                 </div>
@@ -374,7 +374,7 @@
         smoothScroll.init({
             speed: 1000,
             easing: 'easeInOutCubic',
-            offset: 160,
+            offset: 60,
             updateURL: false,
             callbackBefore: function(toggle, navbar1) {},
             callbackAfter: function(toggle, navbar1) {}
@@ -501,7 +501,7 @@
                     items: 3,
                     nav: true,
                     loop: true,
-                    margin: 10,
+                    margin: 30,
                 }
             }
         })
