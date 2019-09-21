@@ -100,7 +100,7 @@ $(document).ready(function() {
                     $('#frmRegDownload').bootstrapValidator('resetForm', true);
                     toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', { timeOut: 5000 })
                     hideLoadingContactImage('content-download', 'frmContentReg');
-                    window.location.href = "/dang-ky-thanh-cong.html";
+                    window.location.href = "http://resort.flamingodailai.com/HolistayVillas/dang-ky-thanh-cong.html";
                 }
             });
         }
