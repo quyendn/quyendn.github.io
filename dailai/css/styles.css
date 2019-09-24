@@ -88,8 +88,8 @@ a, .btn, button{
 	left:0;
 	right:0;
 	top:0;z-index:9999;
-	min-height:160px;
-	background: #fff;
+	min-height:60px;
+	background: #f48120;
 	-moz-box-shadow:0 0 5px rgba(0,0,0,0.3);
 	-webkit-box-shadow:0 0 5px rgba(0,0,0,0.3);
 	box-shadow:0 0 5px rgba(0,0,0,0.3);
@@ -874,20 +874,15 @@ img{
 .owl-loaded{
 	position:relative;
 	}
-    .owl-loaded .owl-prev, .owl-loaded .owl-next {
+.owl-loaded .owl-prev, .owl-loaded .owl-next {
 	width:44px;
 	height:44px;
 	position:absolute;
 	top: 50%;
 	margin-top: -22px;
 	text-indent: -1000em;
-	background-color:rgba(235, 66, 103, 0.6);
 	background-repeat:no-repeat;
 	background-position:50% 50%;
-	background-size:24px;
-	-moz-border-radius:50%;
-	-webkit-border-radius:50%;
-	border-radius:50%;
 	display:none;
     }
 .owl-loaded .owl-prev{
@@ -923,4 +918,8 @@ img{
 	background:#333;
 	}
 	
+/**/
+#section3 .owl-loaded .owl-prev, #section3 .owl-loaded .owl-next, #section4 .owl-loaded .owl-prev, #section4 .owl-loaded .owl-next,#section5 .owl-loaded .owl-prev, #section5 .owl-loaded .owl-next{
+	display:block;
 	
+	}
