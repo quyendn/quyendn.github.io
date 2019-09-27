@@ -528,7 +528,7 @@ img {
 
 #section3,
 #section7 {
-    background: url(../img/bg-doituong.png) no-repeat 50% 50%;
+    background: url(../img/bg-doituong.png) no-repeat 50% 50% /100% auto;
 }
 
 #section3 h3 {
