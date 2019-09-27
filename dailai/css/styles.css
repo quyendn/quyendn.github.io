@@ -885,11 +885,11 @@ img{
 	background-position:50% 50%;
 	display:none;
     }
-.owl-loaded .owl-prev{
+.owl-loaded .owl-prev, #section2 .carousel-control.left{
 	left:5px;
 	background-image:url(../img/arrow-long-left.png)
 	}
-.owl-loaded .owl-next{
+.owl-loaded .owl-next, #section2 .carousel-control.right{
 	right:5px;
 	background-image:url(../img/arrow-long-right.png)
 	}
@@ -919,7 +919,13 @@ img{
 	}
 	
 /**/
-#section3 .owl-loaded .owl-prev, #section3 .owl-loaded .owl-next, #section4 .owl-loaded .owl-prev, #section4 .owl-loaded .owl-next,#section5 .owl-loaded .owl-prev, #section5 .owl-loaded .owl-next{
+#section3 .owl-loaded .owl-prev, #section3 .owl-loaded .owl-next, #section4 .owl-loaded .owl-prev, #section4 .owl-loaded .owl-next,
+#section5 .owl-loaded .owl-prev, #section5 .owl-loaded .owl-next{
 	display:block;
-	
+	}
+#section2 .carousel-control.right, #section2 .carousel-control.left, #section5 .owl-loaded .owl-prev, #section5 .owl-loaded .owl-next{
+	background-position:50% 50%;
+	background-repeat:no-repeat;
+	background-size:30px 30px;
+	width:36px;
 	}
