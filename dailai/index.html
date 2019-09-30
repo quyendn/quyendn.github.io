@@ -192,22 +192,83 @@
                     <div class="f-20">biệt thự nghỉ dưỡng Flamingo Holistay Villas</div>
                     <div class="f-30">Hệ thống gần 50 biệt thự từ 2 đến 3 phòng ngủ với không gian thoáng rộng mà riêng tư, sức chứa từ 10 đến 15 người</div>
                 </div>
-                <div class="owl-carousel owl-carousel-st3">
-                    <div class="item">
-                    	<div class="thumb">
-                            <a href=""><img src="img/p5.jpg"></a>
+                <div class="row">
+                	<div class="col-sm-6">
+                    	<div class="owl-carousel owl-carousel-st3-1">
+                            <div class="item">
+                                <div class="thumb">
+                                    <a href=""><img src="img/villa2-1.jpg"></a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="thumb">
+                                    <a href=""><img src="img/villa2-2.jpg"></a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="thumb">
+                                    <a href=""><img src="img/villa2-3.jpg"></a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="thumb">
+                                    <a href=""><img src="img/villa2-4.jpg"></a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="thumb">
+                                    <a href=""><img src="img/villa2-5.jpg"></a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="thumb">
+                                    <a href=""><img src="img/villa2-6.jpg"></a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="thumb">
+                                    <a href=""><img src="img/villa2-7.jpg"></a>
+                                </div>
+                                
+                            </div>
                         </div>
                         <h2 text-center>Villa 2 phòng ngủ</h2>
                         <p>Tối đa 10 người</p>
                     </div>
-                    <div class="item">
-                    	<div class="thumb">
-                            <a href=""><img src="img/p6.jpg"></a>
+                    <div class="col-sm-6">
+                    	<div class="owl-carousel owl-carousel-st3-2">
+                            <div class="item">
+                                <div class="thumb">
+                                    <a href=""><img src="img/villa3-1.jpg"></a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="thumb">
+                                    <a href=""><img src="img/villa3-2.jpg"></a>
+                                </div>
+                                
+                            </div>
+                            <div class="item">
+                                <div class="thumb">
+                                    <a href=""><img src="img/villa3-3.jpg"></a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="thumb">
+                                    <a href=""><img src="img/villa3-4.jpg"></a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="thumb">
+                                    <a href=""><img src="img/villa3-5.jpg"></a>
+                                </div>
+                            </div>
                         </div>
                         <h2 text-center>Villa 3 phòng ngủ</h2>
                         <p>Tối đa 15 người</p>
                     </div>
                 </div>
+                
                 
             </div>
         </div>
@@ -493,7 +554,7 @@
                 }
             }
         })
-		$('.owl-carousel-st3').owlCarousel({
+		$('.owl-carousel-st3-1').owlCarousel({
             loop: true,
             margin: 10,
             responsiveClass: true,
@@ -503,14 +564,35 @@
                     nav: true
                 },
                 768: {
-                    items: 2,
+                    items: 1,
                     nav: true
                 },
                 1000: {
-                    items: 2,
+                    items: 1,
                     nav: true,
                     loop: true,
-                    margin: 20,
+                    margin: 0,
+                }
+            }
+        })
+		$('.owl-carousel-st3-2').owlCarousel({
+            loop: true,
+            margin: 10,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: true
+                },
+                768: {
+                    items: 1,
+                    nav: true
+                },
+                1000: {
+                    items: 1,
+                    nav: true,
+                    loop: true,
+                    margin: 0,
                 }
             }
         })
