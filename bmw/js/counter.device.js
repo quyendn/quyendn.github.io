@@ -17,7 +17,7 @@ $(function() {
             setTimeout(function() {
                 $this.data("isCounting", false);
                 count($this);
-            }, 10);
+            }, speed);
         }
     }
 
@@ -30,8 +30,8 @@ $(function() {
             var speed = $this.data('speed');
             setTimeout(function() {
                 $this.data("isCounting", false);
-                count($this);
-            }, 400);
+                count2($this);
+            }, 1);
         }
     }
     $(".c-section4").each(function() {
@@ -58,7 +58,7 @@ $(function() {
         $(".c-section5").each(function() {
             var speed = $(this).data('speed');
             $(this).data("speed", speed);
-            count2($(this), speed);
+            count2($(this), 500);
         });
     };
 
