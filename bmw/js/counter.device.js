@@ -1,4 +1,4 @@
-$(function() {
+$(function () {
     function isScrolledIntoView($elem) {
         var docViewTop = $(window).scrollTop();
         var docViewBottom = docViewTop + $(window).height();
@@ -7,64 +7,23 @@ $(function() {
         return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
     }
 
-    function count($this) {
-        var current = parseInt($this.html(), 10);
-
-        if (isScrolledIntoView($this) && !$this.data("isCounting") && current < $this.data('count')) {
-            $this.html(++current);
-            $this.data("isCounting", true);
-            var speed = $this.data('speed');
-            setTimeout(function() {
-                $this.data("isCounting", false);
-                count($this);
-            }, speed);
+    function start() {
+        if (isScrolledIntoView($('.count')) && !$('.count').data("isCounting")) {
+            $('.count').each(function () {
+                $(this).data("isCounting", true);
+                $(this).prop('Counter', 0).animate({
+                    Counter: $(this).text()
+                }, {
+                        duration: 3000,
+                        easing: 'swing',
+                        step: function (now) {
+                            $(this).text(Math.ceil(now));
+                            $(this).data("isCounting", false);
+                        }
+                    });
+            });
         }
-    }
-
-    function count2($this) {
-        var current = parseInt($this.html(), 10);
-
-        if (isScrolledIntoView($this) && !$this.data("isCounting") && current < $this.data('count')) {
-            $this.html(++current);
-            $this.data("isCounting", true);
-            var speed = $this.data('speed');
-            setTimeout(function() {
-                $this.data("isCounting", false);
-                count2($this);
-            }, 1);
-        }
-    }
-    $(".c-section4").each(function() {
-
-        $(this).data('count', parseInt($(this).html(), 10));
-        $(this).html('0');
-        $(this).data("isCounting", false);
-
-    });
-    $(".c-section5").each(function() {
-
-        $(this).data('count', parseInt($(this).html(), 10));
-        $(this).html('0');
-        $(this).data("isCounting", false);
-
-    });
-
-    function startCount() {
-        $(".c-section4").each(function() {
-            var speed = $(this).data('speed');
-            $(this).data("speed", speed);
-            count($(this), speed);
-        });
-        $(".c-section5").each(function() {
-            var speed = $(this).data('speed');
-            $(this).data("speed", speed);
-            count2($(this), 500);
-        });
     };
+    $(document).on("scroll", start);
 
-    $(window).scroll(function() {
-        startCount();
-    });
-
-    startCount();
 });
