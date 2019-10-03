@@ -566,7 +566,7 @@ img {
 }
 
 .modal.fade {
-    z-index: 99999999;
+    z-index: 9999;
     background: rgba(0, 0, 0, 0.9)
 }
 

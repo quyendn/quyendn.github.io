@@ -4,6 +4,7 @@
 .toast-message {
   -ms-word-wrap: break-word;
   word-wrap: break-word;
+ 
 }
 .toast-message a,
 .toast-message label {
@@ -90,7 +91,7 @@ button.toast-close-button {
 }
 #toast-container {
   position: fixed;
-  z-index: 999999;
+  z-index: 9999999;
   pointer-events: none;
   /*overrides*/
 }
