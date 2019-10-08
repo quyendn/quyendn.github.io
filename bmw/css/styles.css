@@ -432,9 +432,10 @@ button {
     line-height: 22px;
 }
 
-#section6 {
+#section6 .inner {
     background: #fff url(../img/bg-dongco.jpg) no-repeat 50% 100%;
     padding-bottom: 650px;
+	padding-top:30px;
 }
 
 #section6 .text {
@@ -662,9 +663,9 @@ img {
     #section5 .col-sm-4 p {
         line-height: 22px;
     }
-    #section6 {
+    #section6 .inner{
         padding-bottom: 170px;
-        background: #56677b url(../img/bg-dongco.jpg) no-repeat 50% 100% / 100% auto;
+        background: #f2f2f2;
     }
 	#section6 .row{
 		margin-bottom:30px;
@@ -675,6 +676,9 @@ img {
     #section6 .col-sm-4 {
         text-align: left !important
     }
+	#section6 .col-sm-push-4 img{
+		margin-top:0 !important;
+		margin-bottom:30px;}
     .carousel-indicators li .text {
         max-width: 300px !important;
         margin-left: -150px !important;
