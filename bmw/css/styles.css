@@ -664,16 +664,16 @@ img {
         line-height: 22px;
     }
     #section6 .inner{
-        padding-bottom: 170px;
+        padding-bottom: 30px;
         background: #f2f2f2;
     }
 	#section6 .row{
-		margin-bottom:30px;
+		margin-bottom:0;
 		}
     #section6 .text {
         margin-bottom: 15px;
     }
-    #section6 .col-sm-4 {
+    #section6 .col-sm-4.text-right{
         text-align: left !important
     }
 	#section6 .col-sm-push-4 img{
