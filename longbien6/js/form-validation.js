@@ -104,7 +104,7 @@ $(document).ready(function() {
                     $('#frmDattiec').bootstrapValidator('resetForm', true);
                     toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', { timeOut: 5000 })
                     hideLoadingContactImage('content-download', 'frmContentDownload');
-                    location.href = "/cam-on.html";
+                    location.href = "https://quyendn.github.io/longbien6/dang-ky-thanh-cong.html";
                 }
             });
         }
@@ -157,7 +157,7 @@ $(document).ready(function() {
                     $('#frmRegPromotion').bootstrapValidator('resetForm', true);
                     toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', { timeOut: 5000 })
                     hideLoadingContactImage('content-promotion', 'frmContentPromotion');
-                    location.href = "/cam-on.html";
+                    location.href = "https://quyendn.github.io/longbien6/dang-ky-thanh-cong.html";
                 }
             });
         }
@@ -221,7 +221,7 @@ $(document).ready(function() {
                     $('#frmRegDownload').bootstrapValidator('resetForm', true);
                     toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', { timeOut: 5000 })
                     hideLoadingContactImage('content-register', 'frmContentReg');
-                    location.href = "/cam-on.html";
+                    location.href = "https://quyendn.github.io/longbien6/dang-ky-thanh-cong.html";
                 }
             });
         }
