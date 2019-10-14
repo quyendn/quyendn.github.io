@@ -5,7 +5,7 @@
 //
 // - ThemeOn.net -
 
-$(document).ready(function () {
+$(document).ready(function() {
 
 
     // FORM VALIDATION
@@ -16,17 +16,17 @@ $(document).ready(function () {
     // FORM VALIDATION FEEDBACK ICONS
     // =================================================================
     var faIcon = {
-        valid: 'fa fa-check-circle fa-lg text-success',
-        invalid: 'fa fa-times-circle fa-lg',
-        validating: 'fa fa-refresh'
-    }
-    // FORM VALIDATION ON ACCORDION
-    // =================================================================
-    // FORM VALIDATION CUSTOM ERROR CONTAINER
-    // =================================================================
-    // Indicate where the error messages are shown.
-    // Tooltip, Popover, Custom Container.
-    // =================================================================
+            valid: 'fa fa-check-circle fa-lg text-success',
+            invalid: 'fa fa-times-circle fa-lg',
+            validating: 'fa fa-refresh'
+        }
+        // FORM VALIDATION ON ACCORDION
+        // =================================================================
+        // FORM VALIDATION CUSTOM ERROR CONTAINER
+        // =================================================================
+        // Indicate where the error messages are shown.
+        // Tooltip, Popover, Custom Container.
+        // =================================================================
 
     $('#frmMobile').bootstrapValidator({
         message: 'This value is not valid',
@@ -63,7 +63,7 @@ $(document).ready(function () {
                 }
             }
         },
-        onSuccess: function (e) {
+        onSuccess: function(e) {
 
             var name = $('#txtName').val();
             var phone = $('#txtPhone').val();
@@ -84,15 +84,15 @@ $(document).ready(function () {
                 data: dataJSON,
                 contentType: 'application/json; charset=utf-8',
                 dataType: 'jsonp',
-                success: function (states) {
+                success: function(states) {
                     $('#frmMobile').bootstrapValidator('resetForm', true);
                     hideLoadingContactImage('content-mobile', 'formContentContactMobile');
                 },
-                error: function (ex) {
+                error: function(ex) {
                     toastr.error('Đã có lỗi trong quá trình đăng ký, mời bạn thử lại.', { timeOut: 5000 })
                     hideLoadingContactImage('content-mobile', 'formContentContactMobile');
                 },
-                complete: function (jqXHR, textStatus) {
+                complete: function(jqXHR, textStatus) {
                     $('#txtName').val('');
                     $("#txtPhone").val('');
                     $('#txtEmail').val('');
@@ -100,13 +100,14 @@ $(document).ready(function () {
                     toastr.success('Cảm ơn bạn đã đăng ký.</br>Chúng tôi sẽ liên hệ với quý khách trong thời gian sớm nhất!', {
                         timeOut: 5000
                     })
-                    window.location.href = "https://quyendn.github.io/bmw/dang-ky-thanh-cong.html";
+                    window.location.href = "/dang-ky-thanh-cong.html";
                 }
             });
         }
-    }).on('success.form.fv', function (e) {
+    }).on('success.form.fv', function(e) {
 
     });
+
     function checkPhoneNumber() {
         var vnf_regex = /((09|03|07|08|05)+([0-9]{8})\b)/g;
         var mobile = $('#txtPhone').val();
@@ -124,6 +125,7 @@ $(document).ready(function () {
             return false;
         }
     }
+
     function showLoadingImage() {
 
         $('#content').empty().append('<div id="loading-image" align="center"><img src="img/ajax-loader.gif" alt="Loading..." /></div>');
@@ -147,5 +149,5 @@ $(document).ready(function () {
         $('#' + frmContent).show();
         $('#loading-image').remove();
     }
-   
+
 });
