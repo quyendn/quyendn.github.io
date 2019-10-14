@@ -100,7 +100,7 @@ $(document).ready(function () {
                     toastr.success('Cảm ơn bạn đã đăng ký.</br>Chúng tôi sẽ liên hệ với quý khách trong thời gian sớm nhất!', {
                         timeOut: 5000
                     })
-                    window.location.href = "https://quyendn.github.io/bmw/dang-ky-thanh-cong.html";
+                    window.location.href = "/dang-ky-thanh-cong.html";
                 }
             });
         }
