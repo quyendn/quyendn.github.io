@@ -76,8 +76,8 @@ $(document).ready(function() {
             var phone = $('#txtPhoneContact').val();
             var datecreate = $('#txtDate').val();
             var description = $('#txtDescription').val();
-            var typeId = 7;
-            var emailto = "baogiahn@longbiengolf.vn";
+            var typeId = 10;
+            var emailto = "baogiahcm@longbiengolf.vn";
             var dataJSON = { "name": name, "email": email, "phone": phone, "datecreate": datecreate, "description": description, 'typeId': typeId, "emailto": emailto };
             showLoadingContactImage('content-download', 'frmContentDownload');
             $.ajax({
@@ -133,8 +133,8 @@ $(document).ready(function() {
             var phone = '';
             var datecreate = '';
             var description = '';
-            var typeId = 9;
-            var emailto = "baogiahn@longbiengolf.vn";
+            var typeId = 12;
+            var emailto = "baogiahcm@longbiengolf.vn";
             var dataJSON = { "name": name, "email": email, "phone": phone, "datecreate": datecreate, "description": description, 'typeId': typeId, "emailto": emailto };
             showLoadingContactImage('content-promotion', 'frmContentPromotion');
             $.ajax({
@@ -196,8 +196,8 @@ $(document).ready(function() {
             var phone = $('#txtPhoneRG').val();
             var datecreate = '';
             var description = '';
-            var typeId = 8;
-            var emailto = "baogiahn@longbiengolf.vn";
+            var typeId = 11;
+            var emailto = "baogiahcm@longbiengolf.vn";
             var dataJSON = { "name": name, "email": email, "phone": phone, "datecreate": datecreate, "description": description, 'typeId': typeId, "emailto": emailto };
             showLoadingContactImage('content-register', 'frmContentReg');
             $.ajax({
