@@ -526,6 +526,12 @@ img{
 	.owl-loaded .owl-next{
 		right:0 !important;
 		}
+	#section1 .col-md-4 .inner{
+		border:none;
+		padding:0;
+		}
+		
+		
 	}
 
 /*owl-carousel*/
