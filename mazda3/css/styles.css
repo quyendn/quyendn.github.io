@@ -664,7 +664,6 @@ img{
 	
 /**/
 #formDownload .modal-content{
-
 	padding:30px 45px;
 	-moz-border-radius:45px 10px 45px 10px;
 	-webkit-border-radius:45px 10px 45px 10px;
@@ -702,6 +701,18 @@ img{
 	width:44px;
 	height:44px;
 	background:url(../img/cancel.png) no-repeat 50% 50% / 24px auto;
+	}
+#formRegister-popup .modal-content{
+	background:rgba(0,0,0,0.8);
+	}
+#formRegister-popup .formRegister {
+    background: none;
+}
+#formRegister-popup .formRegister .inner{
+	padding:30px;
+	}
+#formRegister-popup .modal-header{
+	border-bottom:1px solid #222;
 	}
 /**/
 #tabColor .nav-tabs, #section5  .nav-tabs, #section7 .nav-tabs{
@@ -1005,3 +1016,16 @@ transition: all 300ms ease-in-out;
 	-webkit-transition: all 300ms ease-in-out;
 	-moz-transition: all 300ms ease-in-out;
 	-o-transition: all 300ms ease-in-out;}
+.zoom {
+  -moz-transition: transform .3s;
+  -webkit-transition: transform .3s;
+  transition: transform .3s;
+  -o-transition: transform .3s;
+}
+
+.zoom:hover {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+}
