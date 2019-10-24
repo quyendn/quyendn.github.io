@@ -896,6 +896,16 @@ img{
 	.section .st-hd p{
 		font-size:12px;
 		}
+    .image-bg
+    {
+        width:240px;
+        text-align:center;
+        margin:0 auto;
+    }
+    .text-vehice
+    {
+        font-size:18px;
+    }
 	.formRegister .inner .btnRegister, #section6 .btn{
 		padding:10px 15px;
 		}
