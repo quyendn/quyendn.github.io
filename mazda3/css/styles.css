@@ -901,7 +901,12 @@ img{
         width:240px;
         text-align:center;
         margin:0 auto;
-    }
+	}
+	
+	#slide-wrap .text{
+		top: 10px !important;
+		position: absolute;
+	}
     .text-vehice
     {
         font-size:18px;
