@@ -1,0 +1,690 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="no-js" style="height:100%;">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Kosy</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.nanoscroller.min.js"></script>
+    <script type="text/javascript" src="js/wow/wow.min.js"></script>
+    <script src="js/jquery.fancybox.js" type="text/javascript"></script>
+    <script src="js/jquery.fancybox-thumbsER.js" type="text/javascript"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <link href="css/font-face.css" rel="stylesheet" type="text/css" />
+    <link href="css/toastr.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrapValidator.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/owl.carousel.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="css/animate.css" />
+    <link href="css/jquery.fancybox.css" rel="stylesheet" type="text/css" />
+    <link href="css/jquery.fancybox-thumbsER.css" rel="stylesheet" type="text/css" />
+
+    <!-- Facebook Pixel Code -->
+    <script>
+        ! function(f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function() {
+                n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '2623052867722937');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=2623052867722937&ev=PageView&noscript=1" />
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PWNJBSZ');
+    </script>
+    <!-- End Google Tag Manager -->
+
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PWNJBSZ" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div id="container">
+        <div id="header" class="bgGradient">
+            <div class="affix bgGradient" data-spy="affix" data-offset-top="79" id="">
+                <div class="container-fluid">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"></button>
+                    <a data-scroll="" data-options="easing: easeInQuad" href="#slide" class="navbar-brand">
+                        <img src="img/logo.png">
+                    </a>
+
+                    <nav class="collapse navbar-collapse" role="navigation">
+                        <ul class="nav navbar-nav">
+                            <li><a data-scroll="" data-options="easing: easeInQuad" href="#section2" class="navbar1">Tổng Quan</a></li>
+                            <li><a data-scroll="" data-options="easing: easeInQuad" href="#section3" class="navbar1">Vị
+                                    trí</a></li>
+                            <li><a data-scroll="" data-options="easing: easeInQuad" href="#section4" class="navbar1">Tiện Ích</a></li>
+                            <li><a data-scroll="" data-options="easing: easeInQuad" href="#section5" class="navbar1">Mặt
+                                    Bằng</a></li>
+                            <li><a data-scroll="" data-options="easing: easeInQuad" href="#section6" class="navbar1">Sản
+                                    Phẩm</a></li>
+                            <li><a data-scroll="" data-options="easing: easeInQuad" href="#section7" class="navbar1">Tiến độ</a></li>
+                            <li><a data-scroll="" data-options="easing: easeInQuad" href="#section7" class="navbar1">Tin
+                                    tức</a></li>
+                            <li><a data-scroll="" data-options="easing: easeInQuad" href="#section8" class="navbar1">Chủ
+                                    đầu tư</a></li>
+                            <li><a data-scroll="" data-options="easing: easeInQuad" href="#footer" class="navbar1">Liên
+                                    hệ</a></li>
+                            <li id="btnPhone" class="hidden-xs">
+                                <a href="tel:0964648447" class="btn btn-phone bgGradient-y"><img src="img/ic_phone-hd.png"> 09.64.64.84.47</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div id="slide-wrap" style="">
+            <div class="slide-wrap-bt"></div>
+            <div data-ride="carousel" class="owl-carousel slide" id="slide">
+                <div role="listbox" class="carousel-inner">
+                    <div class="item " id="slide1"><img src="img/sl_1.jpg" class="hidden-xs"><img src="img/slide1_mobile.png" class="visible-xs"></div>
+                    <div class="item" id="slide2"><img src="img/sl_2.jpg" class="hidden-xs"><img src="img/slide2_mobile.png" class="visible-xs"></div>
+                    <div class="item" id="slide3"><img src="img/sl_3.jpg" class="hidden-xs"><img src="img/slide3_mobile.png" class="visible-xs"></div>
+                </div>
+                <a data-slide="prev" role="button" href="#slide" class="left carousel-control"></a>
+                <a data-slide="next" role="button" href="#slide" class="right carousel-control"></a>
+            </div>
+            <div class="formRegister bgGradient wow fadeInRight" id="frm-register" style="visibility: visible; animation-name: fadeInRight;">
+                <div class="inner">
+                    <div class="tl text-center">
+                        <div>-KHU ĐÔ THỊ-</div>
+                        <div class="name"><strong>KOSY BẮC GIANG</strong></div>
+                        <div class="lg"><strong>CƠ HỘI ĐẦU TƯ SINH LỜI</strong></div>
+                        <div class="fontstyle">Hấp dẫn</div>
+                    </div>
+                    <form id="frmRegDownload" autocomplete="off" novalidate class="bv-form">
+
+                        <div id="frmContentReg">
+                            <div class="form-group has-feedback">
+                                <input type="text" class="form-control" name="name" id="txtName" value="" placeholder="Họ và tên(*)"></div>
+                            <div class="form-group has-feedback">
+                                <input type="text" class="form-control" name="address" id="txtAdd" placeholder="Địa chỉ"></div>
+                            <div class="form-group has-feedback">
+                                <div class="form-group has-feedback">
+                                    <input type="text" class="form-control" name="phone" id="txtPhone" onkeypress="return AllowNumberOnly(event);" placeholder="Số điện thoại(*)">
+                                </div>
+
+                                <input type="text" class="form-control" name="email" id="txtEmail" placeholder="Email">
+                            </div>
+                            <div class="form-group text-center">
+                                <button class="btn btn-block btn-register bgGradient-y">Đăng ký ngay</button>
+                            </div>
+                        </div>
+                        <div id="content-register"></div>
+                    </form>
+                    <div class="formRegister-bt">
+                        <div class="bank">
+                            Chiết khấu trực tiếp<br />
+                            <strong>240 triệu/</strong> Shophouse
+                        </div>
+                        <hr />
+                        <div class="redBook"><strong>Sổ đỏ vĩnh viễn</strong></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="section1">
+            <div class="container text-center">
+                <div class="st-hd">
+                    <h3>Chính sách bán hàng đặc biệt hấp dẫn</h3>
+                    <div class="line"></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 wow fadeInLeft">
+                        <div><img src="img/ic_1.png"></div>
+                        <p>Chiết khấu trực tiếp</p>
+                        <p> <span class="pink" style="font-weight: bold;">240 triệu VNĐ</span>/ Shophouse</p>
+                    </div>
+                    <div class="col-md-4 col-sm-6 wow fadeInUp">
+                        <div><img src="img/ic_2.png"></div>
+                        <p>Cơ hội Nhận xe <span class="pink" style="font-weight: bold;">Mazda 3</span></p>
+                        <p>và quà tặng hấp dẫn</p>
+                    </div>
+                    <!-- <div class="col-md-3 col-sm-6 wow fadeInDown">
+                        <div><img src="img/ic_3.png"></div>
+                        <p>Ngân hàng hỗ trợ vay 65%</p>
+                    </div> -->
+                    <div class="col-md-4 col-sm-6 wow fadeInRight">
+                        <div><img src="img/ic_4.png"></div>
+                        <p>Chiết khấu lên đến <span class="pink" style="font-weight: bold;">11%</span></p>
+                    </div>
+                </div>
+                <div class="text-center"><a data-scroll="" data-options="easing: easeInQuad" href="#frm-register" class="btn btn-style">Nhận thông tin ưu đãi</a></div>
+            </div>
+        </div>
+        <div class="section wow fadeInUp" id="section2">
+            <div class="container">
+                <div class="st-hd text-center">
+                    <h3>Tổng quan dự án</h3>
+                    <div class="line"></div>
+                </div>
+                <div class="text-center" style="margin-bottom:30px">
+                    <p class="pink" style="font-size:20px;"><strong>MỘT KHU ĐÔ THỊ ĐẲNG CẤP VÀ ĐÁNG SỐNG LÀ TÂM ĐIỂM
+                            PHÍA ĐÔNG CỦA THÀNH PHỐ BẮC GIANG</strong></p>
+                    <p class=""><strong>Khu đô thị Kosy Bắc Giang</strong> được quy hoạch để đem lại một không gian sống xanh, sạch đẹp và đầy tiện nghi, gia tăng giá trị sống mỗi cư dân. Khu đô thị sẽ bao gồm đầy đủ các hạng mục xây dựng như: các dãy shophouse,
+                        khu biệt thự, nhà liền kề, tổ hợp chung cư cao tầng và các tiện ích như công viên hồ điều hòa, công viên cây xanh, trường học, đất văn hóa, bãi đỗ xe... Mảng không gian sinh thái của khu đô thị tập trung xung quanh khu công viên
+                        - hồ điều hòa, công trình cao tầng và biệt thự, tạo thành lối không gian có mật độ xây dựng thấp, nhiều cây xanh, đem đến cảm giác thư thái, trong lành, khoáng đạt. Vành ngoài là các công trình nhà ở dạng shophouse và liền kề với
+                        mật độ xây dựng cao, tập trung cư dân tạo thành địa điểm buôn bán, kinh doanh sầm uất, náo nhiệt.
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="col-md-7 col-sm-6 wow fadeInLeft">
+                        <iframe width="100%" height="440" src="https://www.youtube.com/embed/a5r08rgy6T0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="col-md-5 col-sm-6 wow fadeInRight">
+                        <p class="pink"><strong>Tên dự án: Khu đô thị Kosy Bắc Giang</strong></p>
+                        <p><strong>Vị trí:</strong> Phường Xương Giang, thành phố Bắc Giang, tỉnh Bắc Giang</p>
+                        <p><strong>Chủ đầu tư:</strong> Tập đoàn Kosy</p>
+                        <p><strong>Quy mô dự án:</strong> 23,3 ha</p>
+                        <p><strong>Mật độ xây dựng</strong>: 33%</p>
+                        <p><strong>Đất công trình xây dựng công trình công cộng, dịch vụ - thương mại:</strong> 4,5 người/ m2</p>
+                        <p><strong>Đất đất giao thông, bãi đỗ xe:</strong> 28m2/ người</p>
+                        <p><strong>Đất cây xanh TDTT:</strong> 10m2/ người</p>
+                        <p><strong>Diện tích nhà chung cư, dịch vụ hỗn hợp:</strong> 80 – 150m2/hộ</p>
+                        <p><strong>Quy mô dân số:</strong> 3.500 người</p>
+                        <p><strong>Sản phẩm dự án:</strong></p>
+                        <p>Shophouse: 148 lô (90- 120 m2/ lô)</p>
+                        <p>Nhà biệt thự: 49 lô (200- 450 m2/ lô)</p>
+                        <p>Nhà liền kề: 557 lô (75- 100 m2/ lô)</p>
+                        <p><strong>Hình thức sở hữu:</strong> Vĩnh viễn</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section wow fadeInUp" id="section3">
+            <div class="container">
+                <div class="st-hd text-center">
+                    <h3>Vị trí vàng phía đông Thành phố Bắc Giang</h3>
+                    <div class="line"></div>
+                </div>
+                <div class="text-center" style="margin-bottom:30px">
+                    <p>Sở hữu vị trí đắc địa ở phía Đông thành phố Bắc Giang, Khu đô thị mới Kosy Bắc Giang tiếp giáp hai trục đường xương sống của thành phố Bắc Giang là đường Xương Giang và đường Nguyễn Chí Thanh (vành đai Đông Bắc). Sống tại đây, cư dân
+                        sẽ được hưởng lợi từ sự kết nối, di chuyển tiện lợi tới các tiện ích ngoại khu có sẵn của thành phố Bắc Giang. Vị trí của dự án không thể tiện lợi hơn:</p>
+
+                    <p>- Phía Bắc giáp cánh đồng Đồng Gốm;</p>
+                    <p>- Phía Nam giáp đường Xương Giang (Quốc lộ 1A cũ);</p>
+                    <p>- Phía Đông giáp khu dân cư Trại Bắc, phường Xương Giang;</p>
+                    <p>- Phía Tây giáp đường vành đai Đông Bắc (đường Nguyễn Chí Thanh), kết nối thẳng với đường cao tốc Hà Nội - Bắc Giang - Lạng Sơn.</p>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row" style="background:#051e38">
+                    <div class="col-md-7 col-sm-7 wow fadeInRight" style="background:#051e38">
+                        <img src="img/map.jpg">
+                    </div>
+                    <div class="col-md-5 col-sm-5 wow fadeInLeft" style="background:#ec2e71"><img src="img/sodo.jpg">
+                    </div>
+                </div>
+                <div class="text-center"><a data-scroll="" data-options="easing: easeInQuad" href="#frm-register" class="btn btn-style">ĐĂNG KÝ NHẬN THÔNG TIN PHÁP LÝ DỰ ÁN</a></div>
+            </div>
+        </div>
+        <div class="section wow fadeInUp" id="section4">
+            <div class="container">
+                <div class="st-hd text-center">
+                    <h3>Tiện ích nội khu vượt trội</h3>
+                    <div class="line"></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 wow fadeInLeft">
+                        <a href="img/tienich_1_big.jpg" class="lightfancybox" rel="tien_ich"><img src="img/tienich_1.jpg"></a>
+                    </div>
+                    <div class="col-md-6 col-sm-6 wow fadeInRight">
+                        <a href="img/tienich_2_big.png" class="lightfancybox" rel="tien_ich"><img src="img/tienich_2.jpg"></a>
+                    </div>
+                    <div class="col-md-6 col-sm-6 wow fadeInDown">
+                        <a href="img/tienich_3_big.jpg" class="lightfancybox" rel="tien_ich"><img src="img/tienich_3.jpg"></a>
+                    </div>
+                    <div class="col-md-6 col-sm-6 wow fadeInUp">
+                        <a href="img/tienich_4_big.jpg" class="lightfancybox" rel="tien_ich"><img src="img/tienich_4.jpg"></a>
+                    </div>
+                    <div class="col-md-6 col-sm-6 wow fadeInRight">
+                        <a href="img/tienich_5_big.png" class="lightfancybox" rel="tien_ich"><img src="img/tienich_5.jpg"></a>
+                    </div>
+                    <div class="col-md-6 col-sm-6 wow fadeInLeft">
+                        <a href="img/tienich_6_big.png" class="lightfancybox" rel="tien_ich"><img src="img/tienich_6.jpg"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section wow fadeInUp" id="section5">
+            <div class="container">
+                <div class="st-hd text-center">
+                    <h3>Mặt bằng dự án</h3>
+                    <div class="line"></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8 col-sm-7 wow fadeInLeft">
+                        <img src="img/matbang.png">
+                    </div>
+                    <div class="col-md-4 col-sm-5 text-center wow fadeInRight">
+                        <div style="margin-bottom:30px;"><img src="img/laban.png"></div>
+                        <div><a data-scroll="" data-options="easing: easeInQuad" href="#frm-register" class="btn btn-style">nhận thông tin bảng giá</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section wow fadeInUp" id="section6">
+            <div class="st-hd text-center">
+                <h3>Sản phẩm dự án</h3>
+                <div class="line"></div>
+            </div>
+            <div class="bgGradient">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-7 col-sm-6 wow fadeInRight">
+                            <div><img src="img/sl_view_1.jpg"></div>
+                            <div class="owl-carousel owl-carousel-product">
+                                <div class="item"><img src="img/sl_s-1.jpg"></div>
+                                <div class="item"><img src="img/sl_s-2.jpg"></div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-sm-6 wow fadeInLeft">
+                            <div class="text-center st6-tl">
+                                <p class="textStyle">Shophouse cam kết lợi nhuận 10tr/tháng</p>
+                                <p><strong>DUY NHẤT TẠI THÀNH PHỐ BẮC GIANG</strong></p>
+                            </div>
+                            <p>Được thiết kế tối ưu về kiến trúc và công năng sử dụng, Shophouse dự án Khu đô thị Bắc Giang có diện tích điển hình từ 90-120m2, chiều cao 4 tầng, tọa lạc trên những tuyến đường đắc địa nhất dự án.</p>
+                            <hr />
+                            <ul>
+                                <li>Diện tích lô đất: 90- 120 m2/ lô</li>
+                                <li>Mật độ xây dựng: 80-100%</li>
+                                <li>Số tầng: 04</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-7 col-sm-6 col-md-push-5 col-sm-push-6 wow fadeInLeft">
+                            <div><img src="img/sl_view_2.jpg"></div>
+                            <div class="owl-carousel owl-carousel-product">
+                                <div class="item"><img src="img/Biet_thu_ban_cong_phong_ngu.png"></div>
+                                <div class="item"><img src="img/Noi_that_phong_khach.jpg"></div>
+                                <div class="item"><img src="img/Noi_that_phong_an.jpg"></div>
+                                <div class="item"><img src="img/Noi_that_phong_ngu.jpg"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-sm-6 col-md-pull-7 col-sm-pull-6 wow fadeInRight">
+                            <div class="text-center st6-tl">
+                                <p class="textStyle">Biệt thự phong thủy</p>
+                                <p><strong>Đẹp nhất TP. Bắc Giang</strong></p>
+                            </div>
+                            <p>Sang trọng, hiện đại, đẳng cấp xứng đáng dành cho những chủ nhân thành đạt. Những căn biệt thự của dự án không chỉ là tổ ấm, mà còn thể hiện sự đẳng cấp của gia chủ, niềm tự hào khi sở hữu.</p>
+                            <hr />
+                            <ul>
+                                <li>Diện tích lô đất: 200- 450 m2/ lô</li>
+                                <li>Mật độ xây dựng: 40-45%</li>
+                                <li>Số tầng: 04</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section wow fadeInUp" id="section7">
+            <div class="container">
+                <div class="st-hd text-center">
+                    <h3>Tin tức & Sự kiện</h3>
+                    <div class="line"></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 wow fadeInRight">
+                        <div class="inner bgGray">
+                            <h3>Tiến độ thi công</h3>
+                            <div data-ride="carousel" class="owl-carousel slide" id="slide">
+                                <div role="listbox" class="carousel-inner">
+                                    <div class="item " id="slide1">
+                                        <img src="img/tiendo_1.jpg">
+                                        <p>Động thổ - khởi công dự án khu đô thi Kosy bắc Giang</p>
+                                    </div>
+                                    <div class="item" id="slide2"><img src="img/a2cce6a3bb6d5e33077c.jpg"></div>
+                                    <div class="item" id="slide3"><img src="img/ae55bc36e1f804a65de9.jpg"></div>
+                                    <div class="item" id="slide4"><img src="img/b82172bf2e71cb2f9260.jpg"></div>
+                                    <div class="item" id="slide5"><img src="img/cba1f9d0a41e4140180f.jpg"></div>
+                                    <div class="item" id="slide6"><img src="img/d512054b5885bddbe494.jpg"></div>
+                                    <div class="item" id="slide7"><img src="img/z1223005535278_c913e2d710be0ae65f7dc604a8a91507.jpg"></div>
+                                    <div class="item" id="slide8"><img src="img/z1223067303337_516cb9b24159dbf1c2c796eb5828cacf.jpg"></div>
+                                    <div class="item" id="slide9"><img src="img/z1223067354488_6b737a6dde7af30ea03de667e74344fc.jpg"></div>
+                                </div>
+                                <a data-slide="prev" role="button" href="#slide" class="left carousel-control"></a>
+                                <a data-slide="next" role="button" href="#slide" class="right carousel-control"></a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 wow fadeInLeft">
+                        <div class="inner bgGradient">
+                            <h3>Tin tức dự án</h3>
+                            <ul>
+                                <li>
+                                    <a href="https://tinnhanhchungkhoan.vn/chuyen-dong-doanh-nghiep/quy-ii2019-dat-o-do-thi-tinh-le-se-tiep-tuc-hap-dan-nha-dau-tu-264136.html?fbclid=IwAR0Wp68DlWD8eCrVEORVVYm4BZKKwQ17C0Uqp-agpKMyzw9isFiFPlymEXc">
+                                        <img src="img/tin1.jpg">
+                                    </a>
+                                    <h2><a href="https://tinnhanhchungkhoan.vn/chuyen-dong-doanh-nghiep/quy-ii2019-dat-o-do-thi-tinh-le-se-tiep-tuc-hap-dan-nha-dau-tu-264136.html?fbclid=IwAR0Wp68DlWD8eCrVEORVVYm4BZKKwQ17C0Uqp-agpKMyzw9isFiFPlymEXc">Quý
+                                            II/2019: Đất ở đô thị tỉnh lẻ sẽ tiếp tục hấp dẫn nhà đầu tư</a></h2>
+                                    <p>(ĐTCK) Diễn biến thị trường BĐS quý 1/2019 không có sự khác biệt nhiều so với các năm trước đây với sự sôi động diễn ra tập trung ở các phân khúc trung cấp và giá rẻ...
+                                    </p>
+                                </li>
+                                <li>
+                                    <a href="http://vneconomy.vn/song-dat-o-do-thi-suc-hut-do-ve-bac-giang-20190425103107349.htm?fbclid=IwAR0C-M5T5M5ZKk9CNEh0rmxe76FVZNps-w4Y4WCYMjo_T9e8g9qZvryA8L4">
+                                        <img src="img/tin2.jpg">
+                                    </a>
+                                    <h2><a href="http://vneconomy.vn/song-dat-o-do-thi-suc-hut-do-ve-bac-giang-20190425103107349.htm?fbclid=IwAR0C-M5T5M5ZKk9CNEh0rmxe76FVZNps-w4Y4WCYMjo_T9e8g9qZvryA8L4">Bất
+                                            động sản Bắc Giang - “Gió thuận chiều” cho các nhà đầu tư</a></h2>
+                                    <p>(ĐTCK) Cùng với những chính sách thông thoáng và cạnh tranh trong thu hút đầu tư của chính quyền tỉnh, thị trường bất động sản Bắc Giang đang ngày một trở nên sôi động.</p>
+                                </li>
+                                <li>
+                                    <a href="http://www.baoxaydung.com.vn/news/vn/bat-dong-san/don-dau-co-hoi-dau-tu-bat-dong-san-do-thi-tai-bac-giang.html  ">
+                                        <img src="img/tin3.jpg">
+                                    </a>
+                                    <h2><a href="http://www.baoxaydung.com.vn/news/vn/bat-dong-san/don-dau-co-hoi-dau-tu-bat-dong-san-do-thi-tai-bac-giang.html  ">Đón
+                                            đầu cơ hội đầu tư bất động sản đô thị tại Bắc Giang</a></h2>
+                                    <p>(Xây dựng) - Là thị trường tỉnh lẻ, nhưng nhờ có nhiều lợi thế, nên thị trường và sức hút đầu tư bất động sản Bắc Giang phát triển khá mạnh trong những năm gần đây...
+                                    </p>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section wow fadeInUp" id="section8">
+            <div class="container">
+                <div class="st-hd text-center">
+                    <h3>Chủ đầu tư uy tín - Tập đoàn Kosy</h3>
+                    <div class="line"></div>
+                </div>
+                <div class="text-center" style="margin-bottom:30px;">
+                    <div style="margin-bottom:30px;"><img src="img/logo_blue.png"></div>
+                    <p>Tập đoàn Kosy được thành lập năm 2008, hoạt động trong các lĩnh vực: Bất động sản, Xây dựng và Năng lượng - Thủy điện, trong đó, Bất động sản được xác định là lĩnh vực mũi nhọn. Hiện Kosy đang là chủ đầu tư và phát triển nhiều dự án
+                        bất động sản tại các tỉnh, thành trên cả nước như: Lào Cai, Bắc Giang, Thái Nguyên, Sông Công,... và nhiều dự án khác sắp được triển khai trong tương lai gần như Hà Nội, Lào Cai, Sapa, Phú Thọ, Hà Nam, Ninh Bình, Quảng Ngãi, Vinh
+                        (Nghệ An), ,...</p>
+                    <p>Các dự án do Kosy làm chủ đầu tư đều có vị trí đắc địa, nằm ở khu vực trung tâm, thuận lợi cho việc sinh hoạt, đi lại của người dân. Mỗi khu đô thị đều được quy hoạch hợp lý, hiện đại với đầy đủ các khu chức năng. Những yếu tố trên
+                        không những đem đến một cuộc sống tiện nghi cho cư dân mà còn góp phần tạo nên diện mạo đô thị mới ở các địa phương.</p>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 col-sm-12 col-md-push-3 wow fadeInLeft"><img src="img/gioithieu2.png"></div>
+                    <div class="col-md-3 col-sm-6 col-xs-6 col-md-pull-6 wow fadeInDown"><img src="img/gioithieu1.png">
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-6 wow fadeInRight"><img src="img/gioithieu3.png"></div>
+                </div>
+            </div>
+        </div>
+        <div class="section wow fadeInUp" id="section9">
+            <div class="container">
+                <div class="st-hd text-center">
+                    <p>ĐĂNG KÝ ĐỂ NHẬN</p>
+                    <h3>Ưu đãi và tư vấn miễn phí</h3>
+                </div>
+                <form id="frmSaleOff" autocomplete="off" novalidate class="bv-form">
+                    <div id="frmContentRegSaleOff row">
+                        <div class="form-group has-feedback col-md-3 col-sm-6">
+                            <input type="text" class="form-control" name="nameoff" id="txtNameOff" value="" placeholder="Họ và tên(*)">
+                        </div>
+                        <div class="form-group has-feedback col-md-3 col-sm-6">
+                            <input type="text" class="form-control" name="txtAdd" id="txtAddOff" placeholder="Địa chỉ">
+                        </div>
+                        <div class="form-group has-feedback col-md-3 col-sm-6">
+                            <input type="text" class="form-control" name="phoneoff" id="txtPhoneOff" placeholder="Số điện thoại(*)">
+                        </div>
+
+                        <div class="form-group has-feedback col-md-3 col-sm-6">
+                            <input type="text" class="form-control" name="email" id="txtEmailOff" placeholder="Email">
+                        </div>
+                        <div class="form-group text-center  col-md-4 col-sm-6 col-md-offset-4">
+                            <button class="btn btn-block btn-style">ĐĂNG KÝ tham quan DỰ ÁN</button>
+                        </div>
+                    </div>
+                    <div id="content-loading-off"></div>
+                </form>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6"><img src="img/logo_ft.png"></div>
+                    <div class="col-md-3 col-sm-6 social">
+                        <a href="https://www.youtube.com/channel/UCoDRrD4CtkEMj4OBBUw_Tiw"><img src="img/ic_yt.png"></a>
+                        <a href="https://www.facebook.com/KosyBacGiang.cdt/"><img src="img/ic_fb.png"></a>
+                    </div>
+                    <div class="col-md-5 col-sm-12 col-md-offset-1 address">
+                        <p><img src="img/ic_home.png"> <strong>Chủ đầu tư :</strong> Tập đoàn Kosy - ban QLDA Bắc Giang
+                        </p>
+                        <p><img src="img/ic_add.png"> <strong>Địa chỉ :</strong> Phường Xương Giang, Thành phố Bắc Giang
+                        </p>
+                        <p><img src="img/ic_phone.png"> <strong>Hotline :</strong> <a href="tel:0964648447">09.64.64.84.47</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="tel:0964648447" class="btn btn-phone bgGradient-y visible-xs"><img src="img/ic_phone-hd.png"> 09.64.64.84.47
+        </a>
+        <a href="javascript:void(0);" class="btn btn-download bgGradient-y hidden-xs" data-toggle="modal" data-target="#formDownload">Download<br />tài liệu</a>
+    </div>
+    <!---->
+    <div class="modal fade" id="formDownload" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content bgGradient">
+                <div class="modal-body ">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                    <div class="formRegister" id="" style="visibility: visible; animation-name: fadeInRight;">
+                        <div class="inner">
+                            <div class="tl text-center">
+                                <div>-KHU ĐÔ THỊ-</div>
+                                <div class="name"><strong>KOSY BẮC GIANG</strong></div>
+                                <div class="lg"><strong>ĐĂNG KÝ ĐỂ <span>DOWNLOAD TÀI LIỆU</span></strong></div>
+                            </div>
+                            <form id="frmRegContentDownload" autocomplete="off" novalidate class="bv-form">
+
+                                <div id="frmContentDownloadReg">
+                                    <div class="form-group has-feedback"><input type="text" class="form-control" name="namedownload" id="txtNameDownload" value="" placeholder="Họ và tên(*)"></div>
+                                    <div class="form-group has-feedback"><input type="text" class="form-control" name="phonedownload" id="txtPhoneDownload" onkeypress="return AllowNumberOnly(event);" placeholder="Số điện thoại(*)">
+                                    </div>
+
+                                    <div class="form-group has-feedback"><input type="text" class="form-control" name="emaildownload" id="txtEmailDownload" placeholder="Email"></div>
+                                    <div class="form-group text-center">
+                                        <button class="btn btn-register bgGradient-y"><img src="img/ic_download.png"
+                                                width="24px"> Download tài liệu</button>
+                                    </div>
+                                </div>
+                                <div id="content-download"></div>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---->
+    <script src="js/smooth-scroll.js"></script>
+    <script type="text/javascript" src="js/bootstrapValidator.min.js"></script>
+    <script type="text/javascript" src="js/form-validation.js"></script>
+    <script type="text/javascript" src="js/toastr.js"></script>
+    <script type="text/javascript">
+        new WOW().init();
+
+        function AllowNumberOnly(evt) {
+            evt = (evt) ? evt : event;
+            var charCode = (evt.charCode) ? evt.charCode : ((evt.keyCode) ? evt.keyCode : ((evt.which) ? evt.which :
+                0));
+            if ((charCode > 31) && (charCode < 48 || charCode > 57) && charCode != 8 && charCode != 37 && charCode !=
+                39 && charCode != 45 && charCode != 46) {
+                return false;
+            }
+            return true;
+        }
+
+
+        $(document).ready(function() {
+            var owl = $('.carousel-inner');
+            owl.owlCarousel({
+                navText: [$('.left'), $('.right')],
+                nav: false,
+                loop: true,
+                autoHeight: true,
+                transitionStyle: "fade",
+                stopOnHover: true,
+                singleItem: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 1
+                    },
+                    1000: {
+                        items: 1
+                    }
+                }
+            });
+            $(".lightfancybox").fancybox({
+                autoScale: true,
+                //openEffect 	:	'elastic',
+                //closeEffect 	:	'elastic',
+                fitToView: true,
+                scrolling: 'no',
+                //type: 'image',
+                helpers: {
+                    title: {
+                        type: 'over'
+                    },
+                    thumbs: {
+                        width: 76,
+                        height: 56,
+                        position: 'bottom'
+                    }
+                },
+                beforeLoad: function() {
+                    if (this.title == "") {
+                        if ($(this.element).attr('caption') == "") {
+                            this.title = "Marina Complex Da Nang City";
+                        } else {
+                            this.title = $(this.element).attr('caption');
+                        }
+                    }
+
+                }
+            });
+
+        });
+    </script>
+    <script>
+        smoothScroll.init({
+            speed: 1000,
+            easing: 'easeInOutCubic',
+            offset: 40,
+            updateURL: false,
+            callbackBefore: function(toggle, navbar1) {},
+            callbackAfter: function(toggle, navbar1) {}
+        });
+    </script>
+    <script>
+        $("button").click(function() {
+            $(".navbar-toggle").toggleClass("close");
+        });
+
+        $(".navbar-toggle").click(function() {
+            $("#header").toggleClass("open");
+        });
+
+        $(".navbar-nav a").click(function() {
+            $(".navbar-collapse").removeClass("in");
+
+            $(".navbar-toggle").removeClass("close");
+        });
+    </script>
+    <script>
+        $('.owl-carousel-product').owlCarousel({
+            loop: true,
+            margin: 10,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 2,
+                    nav: true
+                },
+                768: {
+                    items: 2,
+                    nav: true
+                },
+                1000: {
+                    items: 2,
+                    nav: true,
+                    loop: true,
+                    margin: 10,
+                }
+            }
+        })
+        $('.owl-carousel-sound').owlCarousel({
+            loop: true,
+            margin: 0,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: true
+                },
+                768: {
+                    items: 1,
+                    nav: true
+                },
+                1000: {
+                    items: 1,
+                    nav: true,
+                    loop: true,
+                    margin: 0,
+                }
+            }
+        })
+    </script>
+
+    <script src="js/smooth-scrollbar.js"></script>
+    <script>
+        Scrollbar.initAll();
+    </script>
+    <link href="css/smooth-scrollbar.css" rel="stylesheet" type="text/css" />
+</body>
+
+
+</html>

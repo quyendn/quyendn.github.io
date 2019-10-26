@@ -1,0 +1,14 @@
+
+/* font converted using font-converter.net. thank you! */
+@font-face {
+  font-family: "appleberry";
+  src: url("../fonts/appleberry.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/appleberry.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/appleberry.otf") format("opentype"), /* Open Type Font */
+    url("../fonts/appleberry.svg") format("svg"), /* Legacy iOS */
+    url("../fonts/appleberry.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("../fonts/appleberry.woff") format("woff"), /* Modern Browsers */
+    url("../fonts/appleberry.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}

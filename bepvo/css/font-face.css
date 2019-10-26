@@ -1,0 +1,71 @@
+@font-face {
+  font-family: "SVN-AgencyFB";
+  src: url("../fonts/SVN-AgencyFB.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/SVN-AgencyFB.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/SVN-AgencyFB.otf") format("opentype"), /* Open Type Font */
+    url("../fonts/SVN-AgencyFB.svg") format("svg"), /* Legacy iOS */
+    url("../fonts/SVN-AgencyFB.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("../fonts/SVN-AgencyFB.woff") format("woff"), /* Modern Browsers */
+    url("../fonts/SVN-AgencyFB.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}t-style: normal;
+}
+/* font converted using font-converter.net. thank you! */
+@font-face {
+  font-family: "iCielCadena";
+  src: url("../fonts/icielCadena.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/icielCadena.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/icielCadena.otf") format("opentype"), /* Open Type Font */
+    url("../fonts/icielCadena.svg") format("svg"), /* Legacy iOS */
+    url("../fonts/icielCadena.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("../fonts/icielCadena.woff") format("woff"), /* Modern Browsers */
+    url("../fonts/icielCadena.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+	font-family: 'Conv_Averta Bold';
+	src: url('../fonts/Averta Bold.eot');
+	src: local('☺'),
+	url('../fonts/Averta Bold.woff') format('woff'),
+	url('../fonts/Averta Bold.ttf') format('truetype'),
+	url('../fonts/Averta Bold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Conv_AvertaDemo-Regular';
+	src: url('../fonts/AvertaDemo-Regular.eot');
+	src: local('☺'),
+	url('../fonts/AvertaDemo-Regular.woff') format('woff'),
+	url('../fonts/AvertaDemo-Regular.ttf') format('truetype'),
+	url('../fonts/AvertaDemo-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+  font-family: "SVN-Channel";
+  src: url("../fonts/SVN-Channel.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/SVN-Channel.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/SVN-Channel.otf") format("opentype"), /* Open Type Font */
+    url("../fonts/SVN-Channel.svg") format("svg"), /* Legacy iOS */
+    url("../fonts/SVN-Channel.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("../fonts/SVN-Channel.woff") format("woff"), /* Modern Browsers */
+    url("../fonts/SVN-Channel.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "iCielBrushUp";
+  src: url("../fonts/iCielBrushUp.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/iCielBrushUp.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/iCielBrushUp.otf") format("opentype"), /* Open Type Font */
+    url("../fonts/iCielBrushUp.svg") format("svg"), /* Legacy iOS */
+    url("../fonts/iCielBrushUp.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("../fonts/iCielBrushUp.woff") format("woff"), /* Modern Browsers */
+    url("../fonts/iCielBrushUp.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}

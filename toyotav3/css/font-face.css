@@ -1,0 +1,92 @@
+
+
+@font-face {
+  font-family: 'UTM Avo';
+  src: url('../font/UTM Avo.eot');
+  src: url('../font/UTM Avo.eot?#iefix') format('embedded-opentype'),
+       url('../font/UTM Avo.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'UTMAvo';
+  src: url('../font/UTMAvo.svg#UTMAvo') format('svg'),
+       url('../font/UTMAvo.ttf') format('truetype'),
+       url('../font/UTMAvo.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'UTM AvoItalic';
+  src: url('../font/UTM AvoItalic.eot');
+  src: url('../font/UTM AvoItalic.eot?#iefix') format('embedded-opentype'),
+       url('../font/UTM AvoItalic.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'UTMAvo-Italic';
+  src: url('../font/UTMAvo-Italic.svg#UTMAvo-Italic') format('svg'),
+       url('../font/UTMAvo-Italic.ttf') format('truetype'),
+       url('../font/UTMAvo-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'UTM AvoBold';
+  src: url('../font/UTM AvoBold.eot');
+  src: url('../font/UTM AvoBold.eot?#iefix') format('embedded-opentype'),
+       url('../font/UTM AvoBold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'UTMAvoBold';
+  src: url('../font/UTMAvoBold.svg#UTMAvoBold') format('svg'),
+       url('../font/UTMAvoBold.ttf') format('truetype'),
+       url('../font/UTMAvoBold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'UTM AvoBold_Italic';
+  src: url('../font/UTM AvoBold_Italic.eot');
+  src: url('../font/UTM AvoBold_Italic.eot?#iefix') format('embedded-opentype'),
+       url('../font/UTM AvoBold_Italic.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'UTMAvo-BoldItalic';
+  src: url('../font/UTMAvo-BoldItalic.svg#UTMAvo-BoldItalic') format('svg'),
+       url('../font/UTMAvo-BoldItalic.ttf') format('truetype'),
+       url('../font/UTMAvo-BoldItalic.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SVN-SAF';
+  src: url('../font/SVN-SAF.svg#SVN-SAF') format('svg'),
+       url('../font/SVN-SAF.ttf') format('truetype'),
+       url('../font/SVN-SAF.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SVN-SAF_0';
+  src: url('../font/SVN-SAF_0.eot');
+  src: url('../font/SVN-SAF_0.eot?#iefix') format('embedded-opentype'),
+       url('../font/SVN-SAF_0.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}

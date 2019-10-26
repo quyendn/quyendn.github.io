@@ -1,0 +1,686 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="no-js" style="height:100%;">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Crurma fizzy</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.nanoscroller.min.js"></script>
+    <script type="text/javascript" src="js/wow/wow.min.js"></script>
+    <script src="js/jquery.fancybox.js" type="text/javascript"></script>
+    <script src="js/jquery.fancybox-thumbsER.js" type="text/javascript"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <link href="css/font-face.css" rel="stylesheet" type="text/css" />
+    <link href="css/toastr.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrapValidator.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/owl.carousel.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="css/animate.css" />
+    <link href="css/jquery.fancybox.css" rel="stylesheet" type="text/css" />
+    <link href="css/jquery.fancybox-thumbsER.css" rel="stylesheet" type="text/css" />
+    <!-- Google Tag Manager -->
+    <script>
+    (function (w, d, s, l, i) {
+    w[l] = w[l] || []; w[l].push({
+    'gtm.start':
+    new Date().getTime(), event: 'gtm.js'
+    }); var f = d.getElementsByTagName(s)[0],
+    j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-TL3H3FB');</script>
+        <!-- End Google Tag Manager -->
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TL3H3FB"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div id="container">
+        <div id="header" class="">
+        	<div class="affix" data-spy="affix" data-offset-top="79" id="">
+                <div class="container">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"></button>
+                    <a data-scroll="" data-options="easing: easeInQuad" href="#slide" class="navbar-brand">
+                    	<img src="img/logo.png">
+                    </a>
+                   
+                    <nav class="collapse navbar-collapse" role="navigation">
+                        <ul class="nav navbar-nav">
+                            <li><a data-scroll="" data-options="easing: easeInQuad" href="#header" class="navbar1">Trang chủ</a></li>
+                            <li><a data-scroll="" data-options="easing: easeInQuad" href="#section4" class="navbar1">tác dụng</a></li>
+                            <li><a data-scroll="" data-options="easing: easeInQuad" href="#section5" class="navbar1">ưu điểm</a></li>
+                            <li><a data-scroll="" data-options="easing: easeInQuad" href="#section10" class="navbar1">liệu trình</a></li>
+                            <li><a data-scroll="" data-options="easing: easeInQuad" href="#slide-wrap" class="navbar1">đặt mua</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div id="slide-wrap" style="">
+        	<div class="container">
+            	<div class="row">
+                	<div class="col-md-7 col-sm-7"><img src="img/slide_1.png"></div>
+                    <div class="col-md-5 col-sm-5">
+                    	<div class="formRegister wow fadeInRight" id="frm-register" style="visibility: visible; animation-name: fadeInRight;">
+                            <div class="inner">
+                                <div class="tl text-center">
+                                    <h3 class="f-neu"><strong>ĐĂNG KÝ ĐẶT HÀNG</strong></h3>
+                                    <p>Sau khi đăng ký, dược sĩ tư vấn sẽ liên hệ xác nhận liệu trình, hướng dẫn sử dụng. Khách hàng thanh toán trực tiếp khi nhận được sản phẩm trên tay.</p>
+                                    <div class="price f-neu"><strong>Giá: 295.000 VNĐ/ Hộp/20 Viên</strong></div>
+                                </div>
+                                <form id="frmRegDownload" autocomplete="off" novalidate class="bv-form">
+            
+                                    <div id="frmContentReg">
+                                        <div class="form-group has-feedback">
+                                            <input type="text" class="form-control" name="name" id="txtName" value="" placeholder="Họ và tên"></div>
+                                        <div class="form-group has-feedback">
+                                            <input type="text" class="form-control" name="phone" id="txtPhone" onkeypress="return AllowNumberOnly(event);"  placeholder="Số điện thoại"></div>
+                                        <div class="form-group has-feedback">
+                                        <select class="form-control" name="type" id="cboType">
+                                        	<option value="">Chọn liệu trình</option>
+                                            <option value="Liệu trình Công phá">Liệu trình Công Phá (4 hộp)</option>
+                                            <option value="Liệu trình Phát huy">Liệu trình Phát Huy (5 hộp)</option>
+                                            <option value="Liệu trình Toàn diện">Liệu trình Toàn Diện (9 hộp - tặng ngay 1 hộp)</option>
+                                            <option value="Liệu trình khác">Liệu trình khác</option>
+                                        </select>
+                                        </div>
+                                        <div class="form-group has-feedback" id="form-number">
+                                            <input type="text" class="form-control" name="number" id="txtNumber" onkeypress="return AllowNumberOnly(event);" placeholder="Số lượng">
+                                        </div>
+                                        <div class="form-group has-feedback">
+                                            <input type="text" class="form-control" name="address" id="txtAdd" placeholder="Địa chỉ"></div>
+                                        <div class="form-group text-center">
+                                            <button class="btn btn-register btn-lg">Gửi đi</button>
+                                        </div>
+                                    </div>
+                                    <div id="content-register"></div>
+                                </form>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section bg1" id="section1">
+        	<div class="inner">
+                <div class="container text-center">
+                    <div class="st-hd">
+                        <div><img src="img/tl_1.png"></div>
+                        <p>NẾU GẶP CÁC TRIỆU CHỨNG SAU</p>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6 wow fadeInLeft">
+                                <div><img src="img/st1.jpg" class="circle"></div>
+                            </div>
+                            <div class="col-md-6 col-sm-6 wow fadeInUp">
+                                <ul>
+                                    <li><strong>Đau vùng bụng trên kèm theo nóng</strong></li>
+                                    <li><strong>Chán ăn đầy bụng ăn không tiêu</strong></li>
+                                    <li><strong>Ợ hơi, ợ chua, buồn nôn</strong></li>
+                                    <li><strong>Đau sau ăn từ 30 phút - 3 giờ đau lúc đói hoặc nửa đêm về sáng</strong></li>
+                                    <li><strong>Đi khám có vi khuẩn HP</strong></li>
+                                    <li><strong>Nôn ra máu hoặc đi ngoài ra máu</strong></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section wow fadeInUp" id="section2">
+        	<div class="inner">
+                <div class="container text-center">
+                    <div class="st-hd"><div><img src="img/tl_2.png"></div></div>
+                    <div class="row f-neu">
+                    	<div class="col-sm-4">
+                        	<div><img src="img/st2_1.png"></div>
+                            <h2>Xuất huyết tiêu hóa</h2>
+                        </div>
+                        <div class="col-sm-4">
+                        	<div><img src="img/st2_2.png"></div>
+                            <h2>Thủng ống tiêu hóa</h2>
+                        </div>
+                        <div class="col-sm-4">
+                        	<div><img src="img/st2_3.png"></div>
+                            <h2>Ung thư dạ dày</h2>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="section bg1 wow fadeInUp" id="section3">
+        	<div class="inner">
+                <div class="container">
+                    <div class="st-hd text-center"><div><img src="img/tl_3.png"></div></div>
+                    <div class="text" style="margin:0 auto; max-width:940px">
+                        <div class="row">
+                        	<div class="col-sm-8">
+                            	<ul class="list-arrow">
+                                	<li>Chế độ ăn uống, sinh hoạt không hợp lý làm tăng tiết acid gây tổn thương niêm mạc dạ dày.</li>
+
+                                    <li>Nhiễm vi khuẩn HP phá hủy lớp chất nhầy dẫn đến tổn thương niêm mạc dạ dày.</li>
+                                    
+                                    <li>Thường xuyên bị căng thẳng thần kinh (Stress)  làm tăng tiết acid dạ dày.</li>
+                                    
+                                    <li>Sử dụng thuốc chống viêm không steroid NSAIDs cũng là nguyên nhân chính dẫn đến các triệu chứng.</li>
+                                </ul>
+                                <p>Chỉ khi hiểu rõ căn nguyên mới đưa ra giải pháp phù hợp !</p>
+                            </div>
+                            <div class="col-sm-4"><img src="img/st3.png"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="section wow fadeInUp" id="section4">
+        	<div class="inner">
+                <div class="container">
+                    <div class="st-hd text-center">
+                        <div><img src="img/tl_4.png"></div>
+                        <p>ĐỘT PHÁ CÔNG NGHỆ CURCUMIN HƯỚNG ĐÍCH SẼ GIÚP BẠN</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 wow fadeInLeft"><img src="img/st4.png"></div>
+                        <div class="col-md-6 col-sm-6 wow fadeInRight">
+                        	<ul class="list-arrow">
+                            	<li>Hỗ trợ ức chế sự phát triển của 65 chủng vi khuẩn HP, ngăn ngừa ung thư dạ dày do vi khuẩn HP.</li>
+
+                                <li>Hỗ trợ giảm các yếu tố tấn công niêm mạc dạ dày như giảm tiết axit dạ dày.</li>
+                                
+                                <li>Tăng tiết mucin tạo lớp màng nhầy bảo vệ dạ dày và hỗ trợ chống lại các kích thích với dạ dày do rượu bia, thuốc lá, thuốc chống viêm.</li>
+                                
+                                <li>Hỗ trợ chống viêm, giảm các chất gây viêm (IL, PG, cytokines, peroxid…) do đó hỗ trợ điều trị ổ viêm, nhanh lành vết loét.</li>
+                                
+                                <li>Khả năng chống oxy hóa, loại bỏ gốc tự do gây hại tế bào biểu mô dạ dày, giảm nguy cơ xuất huyết dạ dày, ngăn ngừa tiến triển thành ung thư dạ dày.</li>
+                            </ul>
+                            <div class="text-center"><button class="btn btn-lg" data-toggle="modal" data-target="#formbuynow">ĐẶT MUA NGAY</button></div>
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section wow fadeInUp" id="section5">
+        	<div class="inner">
+            	<div class="text-center hidden-xs"><img src="img/st5-pc.png"></div>
+                <div class="container visible-xs">
+                    <div class="st-hd text-center">
+                    	<img src="img/tl_5_l.png"> <img src="img/tl_5_r.png">
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-md-4 col-sm-4 wow fadeInLeft">
+                            <img src="img/st5.png">
+                        </div>
+                        <div class="col-md-8 col-sm-7 wow fadeInRight">
+                            <ul>
+                            	<li>
+                                	<p><strong>CƠ SỞ UY TÍN</strong></p>
+                                    <p>Nguyên liệu là kết quả chuyển giao từ để tài nghiên cứu của ĐH Quốc gia HN và viện Hàn lâm KH-CN Việt Nam</p>
+                                </li>
+                                <li>
+                                	<p><strong>CHUYÊN GIA ĐẦU NGÀNH</strong></p>
+                                    <p>Bào chế bởi TS. Nguyễn Phúc Nghĩa – nhiều năm nghiên cứu khoa học tại Đại học Strasbourg, Pháp</p>
+                                </li>
+                                <li>
+                                	<p><strong>CÔNG NGHỆ HƯỚNG ĐÍCH</strong></p>
+                                    <p>Curcumin được gắn thêm Acid Folic HƯỚNG ĐÍCH tế bào ung thư, tiền ung thư: làm tăng hiệu quả, giảm liều lượng, rút ngắn thời gian sử dụng</p>
+                                </li>
+                                <li>
+                                	<p><strong>CURCUMIN SIÊU NHỎ</strong></p>
+                                    <p>Hạt Curcumin thế hệ mới nhất 30-50nm –> tăng khả năng hấp thu, tăng sinh khả dụng của curcumin</p>
+                                </li>
+                                <li>
+                                	<p><strong>DẠNG VIÊN SỦI</strong></p>
+                                    <p>Hỗ trợ tăng khả năng tấn công vào vùng viêm tại dạ dày và tốc độ hấp thu vào máu nhanh</p>
+                                </li>
+                                <li>
+                                	<p><strong>HIỆU QUẢ NHANH</strong></p>
+                                    <p>Hỗ trợ giảm nhanh các triệu chứng: Hỗ trợ chữa trào ngược dạ dày thực quản, đau rát thượng vị, rối loạn tiêu hoá</p>
+                                </li>
+                                <li>
+                                	<p><strong>PHONG VỊ PHÁP</strong></p>
+                                    <p>Mùi thơm ngậy tự nhiên, dễ uống cho cả trẻ em và người khó nuốt</p>
+                                </li>
+                                <li>
+                                	<p><strong>NGUYÊN LIỆU THIÊN NHIÊN</strong></p>
+                                    <p>Chiết xuất 100% từ củ nghệ vàng, không đường sinh năng lượng, không chất bảo quản, hàm lượng muối Natri thấp, phù hợp cho cả người tiểu đường, cao huyết áp, thận.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section wow fadeInUp" id="section6">
+            <div class="inner">
+                <div class="container">
+                    <div class="st-hd text-center"><div><img src="img/tl_6.png"></div></div>
+                    <div class="text-center"><img src="img/st6.png"></div>
+                    <div class="text">
+                    	<h2>Curcumin Hướng Đích</h2>
+                        <p>Nguồn nguyên liệu Curcumin Đích là thế hệ cải tiến mới nhất của dòng Nano Curcumin từ Viện Hàn Lâm Khoa Học và Công nghệ Việt Nam. Curcumin Hướng Đích có trong SCurma Fizzy có kích thước nhỏ nhất thị trường hiện nay, hàm lượng Curcumin cao, khả năng hòa tan tốt trong nước. SCurma Fizzy là sản phẩm Curcumin Hướng Đích đầu tiên có gắn Axit Folic lên bề mặt giúp tăng các tác dụng sinh học của Curcumin, đặc biệt là khả năng hướng đích vùng viêm loét và tế bào bị bệnh.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section wow fadeInUp bg1" id="section7">
+        	<div class="inner">
+                <div class="container">
+                    <div class="st-hd text-center">
+                        <div><img src="img/tl_7.png"></div>
+                        <p>DẠNG SỦI ƯU VIỆT</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 wow fadeInRight">
+                            <img src="img/st8_1.png">
+                        </div>
+                        <div class="col-md-6 col-sm-6 wow fadeInLeft">
+                            <img src="img/st8_2.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section wow fadeInUp bg2" id="section8">
+        	<div class="inner">
+                <div class="container text-center">
+                    <div class="st-hd">
+                    	<div><img src="img/tl_8.png"></div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-md-6 col-sm-6 wow fadeInLeft">
+                            <iframe width="100%" height="280" src="https://www.youtube.com/embed/B5WWjkLM-nc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="col-md-6 col-sm-6 wow fadeInRight">
+                        	<iframe width="100%" height="280" src="https://www.youtube.com/embed/Rf-45BHSy20" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="col-md-6 col-sm-6 wow fadeInLeft">
+                        	<iframe width="100%" height="280" src="https://www.youtube.com/embed/eSZ1Xvn2MzA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="col-md-6 col-sm-6 wow fadeInRight">
+                        	<iframe width="100%" height="280" src="https://www.youtube.com/embed/2jchiYjrei0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="col-md-12 col-sm-12 wow fadeInRight">
+                        	<div class="st-hd text-center">
+                                <div><img src="img/tl_9_1.png"></div>
+                            </div>
+                        	<div><img src="img/dantri.png"></div>
+                        </div>
+                        <div class="col-md-12 col-sm-12 wow fadeInLeft">
+                        	<div class="st-hd text-center">
+                                <div><img src="img/tl_9_2.png"></div>
+                            </div>
+                        	<div><img src="img/suckhoedoisong.png"></div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 wow fadeInRight">
+                        	<div class="st-hd text-center">
+                                <p>PHIẾU KIỂM NGHIỆM HÀM LƯỢNG<br/>CURCUMIN TRONG SCURMA FIZZY CỦA BỘ Y TẾ</p>
+                            </div>
+                            <div><img src="img/phieu.jpg"></div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 wow fadeInRight">
+                        	<div class="st-hd text-center">
+                                <p>GIẤY CHỨNG NHẬN VỆ SINH AN TOÀN THỰC PHẨM<br/>SẢN PHẨM SCURMA FIZZY CỦA BỘ Y TẾ</p>
+                            </div>
+                            <div><img src="img/xacnhan.jpg"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section wow fadeInUp bg1" id="section9">
+        	<div class="inner">
+                <div class="container text-center">
+                    <div class="st-hd">
+                        <div><img src="img/tl10.png"></div>
+                    </div>
+                    <div class="row">
+                    	<div class="col-md-4 col-sm-4">
+                        	<div><img src="img/dg1.png"></div>
+                            <p class="rate">"Tôi bị đau dạ dày đã hơn 3 năm nay, tôi thường xuyên bị ợ hơi nóng và đau thượng vị khi đói, khi no. Tôi đã từng sử dụng nhiều phương pháp đông, tây y nhưng đều không hiệu quả. Thật may mắn, tôi được đồng nghiệp giới thiệu SCurma Fizzy, nơi đây có dược sĩ tư vấn nhiệt tình, bệnh dạ dày của tôi đã dần dần thuyên giảm sau 1 tháng"</p>
+
+                            <p class="name">ANH LÊ MINH QUÂN, 33 TUỔI</p>
+                            
+                            <p>HOÀN KIẾM, HÀ NỘI.</p>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                        	<div><img src="img/dg2.png"></div>
+                            <p class="rate">"Tôi bị viêm loét dạ dày, HP dương tính kèm theo trào ngược. Tôi rất lo lắng và hoang mang. Nhờ sự tư vấn của bác sĩ, tôi đã mua 3 hộp sủi Scurma Fizzy về dùng kết hợp với việc thuốc theo kê đơn bác sĩ. Sau khi uống hết hộp thứ nhất tuần đầu, các triệu chứng giảm nhiều. Dạ dày hết đau, thỉnh thoảng mới có ợ hơi. Cảm giác dạ dày êm hơn, nhẹ cả người.” </p>
+                            <p class="name">CHỊ NGUYỄN THỊ OANH, 21 TUỔI</p>
+                            <p>ĐÔNG ANH, HÀ NỘI.</p>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                        	<div><img src="img/dg3.png"></div>
+                            <p class="rate">"Tôi thực sự hài lòng về trải nghiệm sản phẩm mà công ty mang lại. Chất lượng sản phẩm hoàn hảo, dịch vụ chăm sóc khách hàng tận tâm. Giá cả sản phẩm hợp lý. Nhờ có SCurma Fizzy mà giờ đây bệnh đau dạ dày thâm niên của tôi đã giảm đi rất nhiều. Tôi sẽ tiếp tục dùng SCurma Fizzy để chăm sóc sức khỏe cho mình và gia đình.”</p>
+
+                            <p class="name">CHỊ ĐINH T. HỒNG HUẾ, 30 TUỔI </p>
+                            
+                            <p>THANH LIÊM, HÀ NAM.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section wow fadeInUp bg2" id="section10">
+        	<div class="inner">
+                <div class="container">
+                    <div class="st-hd text-center">
+                        <div><img src="img/tl11.png"></div>
+                    </div>
+                    <div class="row">
+                    	<div class="col-md-4 col-sm-4">
+                        	<div class="text radius">
+                                <h2 class="f-neu">CÔNG PHÁ</h2>
+                                <p>- 3 tuần x 4 hộp x 20 viên</p>
+                                <p>- Mỗi ngày 4 viên</p>
+                                <p>- Miễn phí giao hàng toàn quốc</p>
+                                <p>- Hỗ trợ giảm nhanh các triệu chứng đau và nóng rát khó chịu</p>
+                                <p>- Trung hòa và giảm tiết acid, hỗ trợ giảm nhanh các triệu chứng trào ngược nặng</p>
+                                <div class="f-neu">1.180.000 VNĐ </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                        	<div class="text radius">
+                                <h2 class="f-neu">PHÁT HUY</h2>
+                                <p>- 5 tuần x 5 hộp x 20 viên</p>
+                                <p>- Mỗi ngày 3 viên</p>
+                                <p>- Miễn phí giao hàng toàn quốc</p>
+                                <p>- Hỗ trợ giảm ợ hơi, ợ chua, hỗ trợ lành ổ viêm, xung huyết, vết loét</p>
+                                <p>- Hỗ trợ giảm tiết acid bảo vệ dạ dày, ức chế sự phát triển vi khuẩn HP</p>
+                                <div class="f-neu">1.475.000 VNĐ</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                        	<div class="text radius">
+                                <h2 class="f-neu">TOÀN DIỆN</h2>
+                                <p>- 10 tuần x 10 Hộp x 20 viên</p>
+                                <p>- Mỗi ngày 3 viên</p>
+                                <p>- Miễn phí giao hàng toàn quốc</p>
+                                <p>- Hỗ trợ làm lành các tổn thương trên niêm mạc dạ dày</p>
+                                <p>- Hỗ trợ ngăn ngừa tái phát và biến chứng</p>
+                                <p>- Cho hiệu quả tốt nhất</p>
+                                <p class="red">- Mua 9 hộp tặng 1 hộp</p>
+                                <div class="f-neu">2.655.000 VNĐ</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center note">Khuyến nghị khách hàng nên sử dụng liệu trình TOÀN DIỆN để có kết quả tốt nhất</div>
+                    <div class="text-center"><button class="btn btn-lg" data-toggle="modal" data-target="#formbuynow">ĐẶT MUA NGAY</button></div>
+                </div>
+            </div>
+        </div>
+        <div class="section wow fadeInUp bg1" id="section11">
+        	<div class="inner">
+                <div class="container">
+                    <div class="st-hd text-center">
+                        <div><img src="img/tl12.png"></div>
+                    </div>
+                    <ul>
+                    	<li>
+                        	<h2>1. SCurma Fizzy là gì?</h2>
+                            <p>SCurma Fizzy là sản phẩm Viên sủi curcumin hướng đích đầu tiên tại Việt Nam. Nguyên liệu của sản phẩm là kết quả chuyển giao từ để tài nghiên cứu của ĐH Quốc gia HN và viện Hàn lâm KH-CN Việt Nam. Sản phẩm là bước đột phá trong công nghệ bào chế và viên sủi curcumin đích đầu tiên Việt Nam.</p>
+                        </li>
+                        <li>
+                        	<h2>2. Curcumin là gì? Có tác dụng gì?</h2>
+                            <p>Curcumin là hoạt chất quý nhất trong củ Nghệ, có màu vàng. Đây là thành phần quyết định giá trị của củ Nghệ với nhiều tác dụng như: Hỗ trợ làm lành tổn thương niêm mạc dạ dày, tá tràng và đường tiêu hóa.</p>
+                        </li>
+                        <li>
+                        	<h2>3. Nguồn gốc nguyên liệu của sản phẩm có đảm bảo không?</h2>
+                            <p>Nguyên liệu Curcumin sạch, đảm bảo từ cánh đồng nghệ thiên nhiên với hàm lượng Curcumin cao. Mỗi thành phần sản xuất SCurma Fizzy đều có nguồn gốc rõ ràng, đạt chứng nhận An toàn thực phẩm của Cục An toàn thực phẩm – Bộ Y tế.</p>
+                        </li>
+                        <li>
+                        	<h2>4. Sản phẩm có tốt thật không? Có đạt chất lượng không?</h2>
+                            <p>Đã có nhiều nghiên cứu trong và ngoài nước chứng minh hiệu quả, tác dụng của Curcumin trong phòng và hỗ trợ điều trị bệnh. Cùng với sự kết hợp của công nghệ bào chế viên sủi hiện đại, SCurma Fizzy thực sự là sản phẩm được nghiên cứu và đánh giá tác dụng sinh học bài bản. Hãy yên tâm sử dụng và cảm nhận hiệu quả của sản phẩm.</p>
+                        </li>
+                        <li>
+                        	<h2>5. pH sản phẩm có ảnh hưởng tới người bị viêm loét dạ dày không?</h2>
+                            <p>pH sản phẩm hơi kiềm. Không những không ảnh hưởng tới dạ dày mà sản phẩm còn hỗ trợ điều trị viêm, loét dạ dày tá tràng rất tốt nhờ khả năng tăng lớp nhầy bảo vệ dạ dày, ức chế vi khuẩn Hp, chống viêm, chống oxy hóa làm liền vết loét.</p>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="container">
+            	<div class="row">
+                	<div class="col-md-4 col-sm-4 text-center">
+                    	<div style="margin-bottom:15px;"><img src="img/logo_ele.png"></div>
+                        <div><img src="img/dabao_bct.png"></div>
+                    </div>
+                    
+                    <div class="col-md-8 col-sm-8">
+                    	<h3>CÔNG TY CỔ PHẦN ELEPHARMA</h3>
+                        <address>
+                        	<p>Số nhà 38, Ngõ 57, Nguyễn Khánh Toàn, Q.Cầu Giấy, Hà Nội</p>
+                            <p>Điện thoại: 0868 131 338 - 1800 6091</p>
+                            <p>GPKD số 0107844969 do sở KH & ĐT TP Hà Nội cấp ngày 15/01/2015</p>
+                        </address>
+                        <h4>BẠN CẦN TƯ VẤN, ĐỪNG NGẠI GỌI NGAY</h4>
+                        <div class="hotline">
+                        	<a href="tel:18006091"><img src="img/tongdai_1.png"></a>
+                            <a href="tel:0869105735"><img src="img/tongdai_2.png"></a>
+                        	
+                            
+                        </div>
+                        <div><img src="img/logo_dmca.png"></div>
+                        <p style="margin-top:30px;"><em>--- Sản phẩm này không phải là thuốc và không có tác dụng thay thế thuốc chữa bệnh ---</em></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!---->
+    <a href="" class="btn btnBuyfix visible-xs" data-toggle="modal" data-target="#formbuynow">Đặt mua</a>
+    
+    <!---->
+    <div class="modal fade" id="formbuynow" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+                <div class="modal-body ">
+                	<button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                    <div class="formRegister" id="frm-register">
+                            <div class="inner">
+                                <div class="tl text-center">
+                                    <h3 class="f-neu"><strong>ĐĂNG KÝ ĐẶT HÀNG</strong></h3>
+                                    <div class="price f-neu"><strong>Giá: 295.000 VNĐ/ Hộp/20 Viên</strong></div>
+                                </div>
+                                <form id="frmRegScrumaDownload" autocomplete="off" novalidate class="bv-form">
+            
+                                    <div id="frmContentScurmaReg">
+                                        <div class="form-group has-feedback">
+                                            <input type="text" class="form-control" name="nameScruma" id="txtNameScruma" value="" placeholder="Họ và tên"></div>
+                                        <div class="form-group has-feedback">
+                                            <input type="text" class="form-control" name="phoneScruma" id="txtPhoneScruma" onkeypress="return AllowNumberOnly(event);" placeholder="Số điện thoại"></div>
+                                        <div class="form-group has-feedback">
+                                            <select class="form-control" name="TypeScurma" id="cboTypeScurma">
+                                                <option value="">Chọn liệu trình</option>
+                                                <option value="Liệu trình Công phá">Liệu trình Công Phá (4 hộp)</option>
+                                                <option value="Liệu trình Phát huy">Liệu trình Phát Huy (5 hộp)</option>
+                                                <option value="Liệu trình Toàn diện">Liệu trình Toàn Diện (9 hộp - tặng ngay 1 hộp)</option>
+                                                <option value="Liệu trình khác">Liệu trình khác</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group has-feedback" id="form-number-view">
+                                            <input type="text" class="form-control" name="number" id="txtNumberView" onkeypress="return AllowNumberOnly(event);" placeholder="Số lượng">
+                                        </div>    
+                                        <div class="form-group has-feedback">
+                                            <input type="text" class="form-control" name="addressScruma" id="txtAddScruma" placeholder="Địa chỉ">
+                                        </div>
+                                        
+                                        <div class="form-group text-center">
+                                            <button class="btn btn-register btn-lg">Gửi đi</button>
+                                        </div>
+                                    </div>
+                                    <div id="content-register-scurma"></div>
+                                </form>
+                                
+                            </div>
+                        </div>
+                </div>
+            </div>
+      </div>
+    </div>
+    
+    <!---->
+    <script src="js/smooth-scroll.js"></script>
+    <script type="text/javascript" src="js/bootstrapValidator.min.js"></script>
+    <script type="text/javascript" src="js/form-validation.js"></script>
+    <script type="text/javascript" src="js/toastr.js"></script>
+    <script type="text/javascript">
+        new WOW().init();
+        function AllowNumberOnly(evt) {
+            evt = (evt) ? evt : event;
+            var charCode = (evt.charCode) ? evt.charCode : ((evt.keyCode) ? evt.keyCode : ((evt.which) ? evt.which : 0));
+            if ((charCode > 31) && (charCode < 48 || charCode > 57) && charCode != 8 && charCode != 37 && charCode != 39 && charCode != 45 && charCode != 46) {
+                return false;
+            }
+            return true;
+        }
+
+        
+        $(document).ready(function () {
+            var owl = $('.carousel-inner');
+            owl.owlCarousel({
+                navText: [$('.left'), $('.right')],
+                nav: false,
+                loop: true,
+                autoHeight: true,
+                transitionStyle: "fade",
+                stopOnHover: true,
+                singleItem: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 1
+                    },
+                    1000: {
+                        items: 1
+                    }
+                }
+            });
+            $(".lightfancybox").fancybox({
+                autoScale: true,
+                //openEffect 	:	'elastic',
+                //closeEffect 	:	'elastic',
+                fitToView: true,
+                scrolling: 'no',
+                //type: 'image',
+                helpers: {
+                    title: {
+                        type: 'over'
+                    },
+                    thumbs: {
+                        width: 76,
+                        height: 56,
+                        position: 'bottom'
+                    }
+                },
+                beforeLoad: function () {
+                    if (this.title == "") {
+                        if ($(this.element).attr('caption') == "") {
+                            this.title = "Marina Complex Da Nang City";
+                        } else {
+                            this.title = $(this.element).attr('caption');
+                        }
+                    }
+
+                }
+            });
+            
+        });
+        
+    </script>
+    <script>
+        smoothScroll.init({
+            speed: 1000,
+            easing: 'easeInOutCubic',
+            offset: 70,
+            updateURL: false,
+            callbackBefore: function (toggle, navbar1) { },
+            callbackAfter: function (toggle, navbar1) { }
+        });
+
+    </script>
+    <script>
+    	$("button").click(function(){
+			$(".navbar-toggle").toggleClass("close");
+		});
+
+    	$(".navbar-toggle").click(function(){
+			$("#header").toggleClass("open");
+		});
+  
+    	$(".navbar-nav a").click(function(){
+			$(".navbar-collapse").removeClass("in");
+		
+			$(".navbar-toggle").removeClass("close");
+		});
+    </script>
+    <script>
+		$('.owl-carousel-product').owlCarousel({
+				loop: true,
+				margin: 10,
+				responsiveClass: true,
+				responsive: {
+					0: {
+						items: 2,
+						nav: true
+					},
+					768: {
+						items: 2,
+						nav: true
+					},
+					1000: {
+						items: 2,
+						nav: true,
+						loop: true,
+						margin: 10,
+					}
+				}
+			})
+			$('.owl-carousel-sound').owlCarousel({
+				loop: true,
+				margin: 0,
+				responsiveClass: true,
+				responsive: {
+					0: {
+						items: 1,
+						nav: true
+					},
+					768: {
+						items: 1,
+						nav: true
+					},
+					1000: {
+						items: 1,
+						nav: true,
+						loop: true,
+						margin: 0,
+					}
+				}
+			})
+		
+		</script>
+
+    <script src="js/smooth-scrollbar.js"></script>
+    <script> Scrollbar.initAll(); </script>
+    <link href="css/smooth-scrollbar.css" rel="stylesheet" type="text/css" />
+</body>
+
+
+</html>

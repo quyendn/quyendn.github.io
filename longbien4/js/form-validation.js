@@ -69,7 +69,7 @@ $(document).ready(function() {
                 }
             }
         },
-        onSuccess: function (e) {
+        onSuccess: function(e) {
 
             var name = $('#txtNameContact').val();
             var email = $('#txtMail').val();
@@ -81,21 +81,21 @@ $(document).ready(function() {
             var dataJSON = { "name": name, "email": email, "phone": phone, "datecreate": datecreate, "description": description, 'typeId': typeId, "emailto": emailto };
             showLoadingContactImage('content-download', 'frmContentDownload');
             $.ajax({
-                url: "https://alpha.f5academy.net/api/Longbienservice",
+                url: "http://localhost:50623/api/Longbienservice",
                 type: "Post",
                 async: false,
                 data: dataJSON,
                 contentType: 'application/json; charset=utf-8',
                 dataType: 'jsonp',
-                success: function (states) {
+                success: function(states) {
                     $('#frmDattiec').bootstrapValidator('resetForm', true);
                     hideLoadingContactImage('content-download', 'frmContentDownload');
                 },
-                error: function (ex) {
+                error: function(ex) {
                     toastr.error('Đã có lỗi trong quá trình đăng ký, mời bạn thử lại.', { timeOut: 5000 })
                     hideLoadingContactImage('content-download', 'frmContentDownload');
                 },
-                complete: function (jqXHR, textStatus) {
+                complete: function(jqXHR, textStatus) {
                     $('#txtNameContact').val('');
                     $("#txtMail").val('');
                     $('#txtPhoneContact').val('');
@@ -104,11 +104,11 @@ $(document).ready(function() {
                     $('#frmDattiec').bootstrapValidator('resetForm', true);
                     toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', { timeOut: 5000 })
                     hideLoadingContactImage('content-download', 'frmContentDownload');
-                    location.href = "https://quyendn.github.io/longbien4/cam-on.html";
+                    //location.href = "/cam-on.html";
                 }
             });
         }
-    }).on('success.form.fv', function (e) {
+    }).on('success.form.fv', function(e) {
 
     });
     $('#frmRegPromotion').bootstrapValidator({
@@ -127,7 +127,7 @@ $(document).ready(function() {
                 }
             }
         },
-        onSuccess: function (e) {
+        onSuccess: function(e) {
             var name = '';
             var email = $('#txtEmailPromotion').val();
             var phone = '';
@@ -144,24 +144,24 @@ $(document).ready(function() {
                 data: dataJSON,
                 contentType: 'application/json; charset=utf-8',
                 dataType: 'jsonp',
-                success: function (states) {
+                success: function(states) {
                     $('#frmRegPromotion').bootstrapValidator('resetForm', true);
                     hideLoadingContactImage('content-promotion', 'frmContentPromotion');
                 },
-                error: function (ex) {
+                error: function(ex) {
                     toastr.error('Đã có lỗi trong quá trình đăng ký, mời bạn thử lại.', { timeOut: 5000 })
                     hideLoadingContactImage('content-promotion', 'frmContentPromotion');
                 },
-                complete: function (jqXHR, textStatus) {
+                complete: function(jqXHR, textStatus) {
                     $('#txtEmailPromotion').val('');
                     $('#frmRegPromotion').bootstrapValidator('resetForm', true);
                     toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', { timeOut: 5000 })
                     hideLoadingContactImage('content-promotion', 'frmContentPromotion');
-                    location.href = "https://quyendn.github.io/longbien4/cam-on.html";
+                    location.href = "/cam-on.html";
                 }
             });
         }
-    }).on('success.form.fv', function (e) {
+    }).on('success.form.fv', function(e) {
 
     });
     $('#frmRegDownload').bootstrapValidator({
@@ -189,7 +189,7 @@ $(document).ready(function() {
                 }
             }
         },
-        onSuccess: function (e) {
+        onSuccess: function(e) {
 
             var name = $('#txtNameRG').val();
             var email = '';
@@ -207,41 +207,45 @@ $(document).ready(function() {
                 data: dataJSON,
                 contentType: 'application/json; charset=utf-8',
                 dataType: 'jsonp',
-                success: function (states) {
+                success: function(states) {
                     $('#frmRegDownload').bootstrapValidator('resetForm', true);
                     hideLoadingContactImage('content-register', 'frmContentReg');
                 },
-                error: function (ex) {
+                error: function(ex) {
                     toastr.error('Đã có lỗi trong quá trình đăng ký, mời bạn thử lại.', { timeOut: 5000 })
                     hideLoadingContactImage('content-register', 'frmContentReg');
                 },
-                complete: function (jqXHR, textStatus) {
+                complete: function(jqXHR, textStatus) {
                     $('#txtNameContact').val('');
                     $('#txtPhoneContact').val('');
                     $('#frmRegDownload').bootstrapValidator('resetForm', true);
                     toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', { timeOut: 5000 })
                     hideLoadingContactImage('content-register', 'frmContentReg');
-                    location.href = "https://quyendn.github.io/longbien4/cam-on.html";
+                    location.href = "/cam-on.html";
                 }
             });
         }
-    }).on('success.form.fv', function (e) {
+    }).on('success.form.fv', function(e) {
 
     });
+
     function showLoadingImage() {
 
         $('#content').empty().append('<div id="loading-image" align="center"><img style="min-width:32px" src="img/ajax-loader.gif" alt="Loading..." /></div>');
         $('#formContentContact').hide();
     }
+
     function hideLoadingImage() {
         $('#formContentContact').show();
         $('#loading-image').remove();
     }
-    function showLoadingContactImage(contentLoading,frmContent) {
+
+    function showLoadingContactImage(contentLoading, frmContent) {
 
         $('#' + contentLoading).empty().append('<div id="loading-image" align="center"><img style="min-width:32px" src="img/ajax-loader.gif" alt="Loading..." /></div>');
         $('#' + frmContent).hide();
     }
+
     function hideLoadingContactImage(contentLoading, frmContent) {
         $('#' + frmContent).show();
         $('#loading-image').remove();

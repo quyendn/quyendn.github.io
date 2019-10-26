@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang="en" class="no-js" style="height:100%;">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -12,6 +13,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.tmpl.min.js"></script>
     <script src="js/jquery.nanoscroller.min.js"></script>
     <script type="text/javascript" src="js/wow/wow.min.js"></script>
     <script src="js/jquery.zoom.min.js"></script>
@@ -21,22 +23,47 @@
     <link href="css/toastr.min.css" rel="stylesheet" type="text/css" />
     <link href="css/bootstrapValidator.min.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" type="text/css" href="css/animate.css" />
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-T7NHLXC');
+    </script>
+    <!-- End Google Tag Manager -->
 </head>
 
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T7NHLXC"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <div id="container">
         <div id="header">
-        	<div class="affix" data-spy="affix" data-offset-top="79" id="">
+            <div class="affix" data-spy="affix" data-offset-top="79" id="">
                 <div class="container">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"></button>
                     <a data-scroll="" data-options="easing: easeInQuad" href="#slide" class="navbar-brand"><img src="img/logo.png"></a>
                     <nav class="collapse navbar-collapse" role="navigation">
                         <ul class="nav navbar-nav navbar-right">
-                            <li class=""><a  href="http://tmsphucyen.com.vn" target="blank" class="navbar1">TRANG CHỦ</a></li>
+                            <li class=""><a href="http://tmsphucyen.com.vn" target="blank" class="navbar1">TRANG CHỦ</a></li>
                             <li class=""><a data-scroll="" data-options="easing: easeInQuad" href="#section3" class="navbar1">VỊ TRÍ</a></li>
                             <li class=""><a data-scroll="" data-options="easing: easeInQuad" href="#section4" class="navbar1">MẶT BẰNG</a></li>
                             <li class=""><a data-scroll="" data-options="easing: easeInQuad" href="#section5" class="navbar1">CƠ HỘI ĐẦU TƯ</a></li>
                             <li class=""><a data-scroll="" data-options="easing: easeInQuad" href="#section6" class="navbar1">TIỆN ÍCH</a></li>
+                            <li class=""><a data-scroll="" data-options="easing: easeInQuad" href="#section7" class="navbar1">TIN TỨC</a></li>
                             <li class=""><a data-scroll="" data-options="easing: easeInQuad" href="#footer" class="navbar1">LIÊN HỆ</a></li>
                         </ul>
                     </nav>
@@ -44,23 +71,32 @@
             </div>
         </div>
         <div id="slide" style="">
-        	<div data-ride="carousel" class="carousel slide" id="heartbanner-slide">
+            <div data-ride="carousel" class="carousel slide" id="heartbanner-slide">
                 <!-- Indicators -->
-                <ol class="carousel-indicators">
+                <ol class="carousel-indicators" style="display:none;">
                     <li class="active" data-slide-to="0" data-target="#heartbanner-slide"></li>
-                    <li data-slide-to="1" data-target="#heartbanner-slide" class=""></li>
-                    <li data-slide-to="2" data-target="#heartbanner-slide" class=""></li>
+                    <!--<li data-slide-to="1" data-target="#heartbanner-slide" class=""></li>
+                    <li data-slide-to="2" data-target="#heartbanner-slide" class=""></li>-->
                 </ol>
                 <div role="listbox" class="carousel-inner">
-                    <div class="item active"><img src="img/anh-bia-1.jpg"></div>
-                    <div class="item"><img src="img/bannerTop-1.jpg"></div>
-                    <div class="item"><img src="img/bannerTop-2.jpg"></div>
+                    <div class="item active">
+                        <img src="img/thuecuahang.jpg" style="width:100%" class="hidden-xs">
+                        <img src="img/thuecuahang_mb.png" class="visible-xs">
+                    </div>
+                    <!--<div class="item">
+                        <img src="img/bannerTop-1.jpg" style="width:100%" class="hidden-xs">
+                        <img src="img/bannerTop-1_mb.jpg" class="visible-xs">
+                    </div>
+                    <div class="item">
+                        <img src="img/vuoncay_banner.jpg" style="width:100%" class="hidden-xs">
+                        <img src="img/vuoncay_mb.jpg" class="visible-xs">
+                    </div>-->
                 </div>
                 <a data-slide="prev" role="button" href="#heartbanner-slide" class="left carousel-control hidden"></a>
                 <a data-slide="next" role="button" href="#heartbanner-slide" class="right carousel-control hidden"></a>
             </div>
             <div id="formContact" class="hidden-xs" style="display:none;">
-            	<div class="text-center"><img src="img/logo.png"></div>
+                <div class="text-center"><img src="img/logo.png"></div>
                 <h3 class="text-center">Đăng ký nhận Ưu đãi:</h3>
                 <form id="frmMobile" class="" autocomplete="off">
                     <div id="formContentContactMobile">
@@ -70,57 +106,75 @@
                         <div class="form-group">
                             <input type="text" class="form-control" id="txtEmail" name="email" placeholder="Email">
                         </div>
+
                         <div class="form-group">
                             <input type="text" class="form-control" id="txtPhone" onkeypress="return AllowNumberOnly(event);" name="phone" placeholder="Số điện thoại">
                         </div>
+                        <div class="form-group">
+                            <select id="cbotype" name="cbotype" class="form-control">
+                                <option value="">Nhu cầu tư vấn</option>
+                                <option value="Mua để ở">Mua để ở</option>
+                                <option value="Mua để đầu tư">Mua để đầu tư</option>
+                                <option value="Cần thuê Shophouse">Cần thuê Shophouse</option>
+                            </select>
+                        </div>
                         <div class="form-group text-center"><button class="btn">Gửi đăng ký</button></div>
-                        
+
                     </div>
                     <div id="content-mobile"></div>
                 </form>
             </div>
         </div>
         <div id="fontline">
-        	<a href="tel:0933511818"><span><img src="img/icon_phone.png">&nbsp;Cenland</span><strong>: 0933.511.818</strong></a><a href="tel:0987884666"><span><img src="img/icon_phone.png">&nbsp;HST LAND</span><strong>: 0987.884.666</strong></a>
+            <a href="tel:0848273388"><span><img src="img/icon_phone.png">&nbsp;VJ Homes</span><strong>: 084 827 33 88</strong></a><a href="tel:0987884666"><span><img src="img/icon_phone.png">&nbsp;VẠN PHÚC LAND</span><strong>: 0987 884 666</strong></a>
         </div>
-        
+
         <div class="section text-center wow fadeInUp" id="section1">
             <div class="container">
-                <h3>Quý khách vui lòng nhập thông tin liên hệ<br/>để nhận được tư vấn 24/24h</h3>
+                <h3>Quý khách vui lòng nhập thông tin liên hệ<br />để nhận được tư vấn 24/24h</h3>
                 <div class="inner">
                     <div class="row">
-                            <form id="frmContact" class="" autocomplete="off">
-                                <div id="formContentContact">
-                                    <div class="form-group col-sm-6">
-                                        <input type="text" class="form-control" id="txtNameContact" name="name_contact" placeholder="Họ và tên">
-                                    </div>
-                                    <div class="form-group col-sm-6">
-                                        <input type="text" class="form-control" id="txtEmailContact" name="email_contact" placeholder="Email">
-                                    </div>
-                                    <div class="form-group col-sm-12">
-                                        <input type="text" class="form-control" id="txtPhoneContact" onkeypress="return AllowNumberOnly(event);" name="phone_contact" placeholder="Số điện thoại">
-                                    </div>
-                                    <div class="form-group text-center"><button class="btn">Đăng ký</button></div>
+                        <form id="frmContact" class="" autocomplete="off">
+                            <div id="formContentContact">
+                                <div class="form-group col-sm-6">
+                                    <input type="text" class="form-control" id="txtNameContact" name="name_contact" placeholder="Họ và tên">
                                 </div>
-                                <div id="content-contact"></div>
-                            </form>
-                        </form> 
+                                <div class="form-group col-sm-6">
+                                    <input type="text" class="form-control" id="txtEmailContact" name="email_contact" placeholder="Email">
+                                </div>
+
+                                <div class="form-group col-sm-6">
+                                    <input type="text" class="form-control" id="txtPhoneContact" onkeypress="return AllowNumberOnly(event);" name="phone_contact" placeholder="Số điện thoại">
+                                </div>
+                                <div class="form-group col-sm-6">
+                                    <select id="cboTypeContact" name="cboTypeContact" class="form-control">
+                                        <option value="">Nhu cầu tư vấn</option>
+                                        <option value="Mua để ở">Mua để ở</option>
+                                        <option value="Mua để đầu tư">Mua để đầu tư</option>
+                                        <option value="Cần thuê Shophouse">Cần thuê Shophouse</option>
+                                    </select>
+                                </div>
+                                <div class="form-group text-center  col-sm-12"><button class="btn">Đăng ký</button></div>
+                            </div>
+                            <div id="content-contact"></div>
+                        </form>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
         <div class="section" id="section2">
             <div class="container-fluid">
-            	<div class="row">
-                	<div class="col-md-6 wow fadeInLeft"><img src="img/p1.jpg" width="100%"></div>
-                	<div class="col-md-6 innerText wow fadeInRight">
-                    	<div class="st-hd">
-                        	<img src="img/bullit_tl.png">
-                            <h3><span>5</span> LÝ DO KHÔNG THỂ BỎ LỠ<br/>CƠ HỘI ĐẦU TƯ TẠI <br/>TMS GRAND CITY PHUC YEN</h3>
+                <div class="row">
+                    <div class="col-md-6 wow fadeInLeft"><img src="img/p1.jpg" width="100%"></div>
+                    <div class="col-md-6 innerText wow fadeInRight">
+                        <div class="st-hd">
+                            <img src="img/bullit_tl.png">
+                            <h3><span>5</span> LÝ DO KHÔNG THỂ BỎ LỠ<br />CƠ HỘI ĐẦU TƯ TẠI <br />TMS GRAND CITY PHUC YEN</h3>
                             <div class="clearfix"></div>
                         </div>
-                    	<ul>
-                        	<li><span>1</span>Tâm điểm vàng kết nối hạ tầng hoàn chỉnh</li>
+                        <ul>
+                            <li><span>1</span>Tâm điểm vàng kết nối hạ tầng hoàn chỉnh</li>
                             <li><span>2</span>Phong cách chuẩn Nhật với hệ thống tiện ích đồng bộ</li>
                             <li><span>3</span>Cơ hội đón sóng đầu tư vùng cận đô </li>
                             <li><span>4</span>Chủ đầu tư uy tín với hàng loạt dự án đã và đang triển khai trên khắp tỉnh thành cả nước</li>
@@ -128,27 +182,33 @@
                             <li><a class="btn" data-toggle="modal" data-target="#popModal">Đăng ký nhận ưu đãi</a></li>
                         </ul>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
         <div class="section" id="section3">
             <div class="container-fluid">
-            	<div class="st-hd row">
-                	<div class="col-md-8 col-md-offset-4"><img src="img/bullit_tl.png" width="40px"> VỊ TRÍ ĐẮC ĐỊA TRÊN TRỤC GIAO THƯƠNG HUYẾT MẠCH</div>
+                <div class="st-hd row">
+                    <div class="col-md-8 col-md-offset-4"><img src="img/bullit_tl.png" width="40px"> VỊ TRÍ ĐẮC ĐỊA TRÊN TRỤC GIAO THƯƠNG HUYẾT MẠCH</div>
                 </div>
-            	<div class="row wow fadeInUp">
-                	<div class="col-md-4 col-sm-6 map"></div>
+                <div class="row wow fadeInUp">
+                    <div class="col-md-4 col-sm-6 map"></div>
                     <div class="col-md-3 col-sm-6 st3Text">
-                    	<div class=""><p>Tọa lạc tại mảnh đất “VÀNG” tại trung tâm thành phố Phúc Yên, ngay mặt đường Lý Nam Đế, phường Hùng Vương, kết nối dễ dàng thuận tiện tới các trục đường nội đô và các tỉnh lân cận nên cư dân TMS Grand City Phuc Yen thừa hưởng trọn vẹn các tiện ích “Điện – Đường – Trường – Trạm” phục vụ cuộc sống trong tầm tay. </p></div>
+                        <div class="">
+                            <p>
+                                Tọa lạc tại mảnh đất “VÀNG” tại trung tâm thành phố Phúc Yên, ngay mặt đường Lý Nam Đế, phường Hùng Vương, kết nối dễ dàng thuận tiện tới các trục đường nội đô và các tỉnh lân cận nên cư dân TMS Grand City Phuc Yen thừa hưởng
+                                trọn vẹn các tiện ích “Điện – Đường – Trường – Trạm” phục vụ cuộc sống trong tầm tay.
+                            </p>
+                        </div>
                     </div>
                     <div class="col-md-5 col-sm-12 st3List">
-                    	<ul>
-                        	<li>Sân vận động thành phố Phúc Yên: 1 phút</li>
+                        <ul>
+                            <li>Sân vận động thành phố Phúc Yên: 1 phút</li>
                             <li>Ủy ban Nhân dân phường Hùng Vương: 2 phút</li>
                             <li>Bến xe bus nội ngoại tuyến: 3 phút</li>
                             <li>Bến xe Phúc yên: 3 phút</li>
-                            <li>Sân bay Nội Bài: 15 phút</li></li>
+                            <li>Sân bay Nội Bài: 15 phút</li>
+                            </li>
                             <li>Bệnh viện đa khoa Phúc Yên: 3 phút
                             <li>Bệnh viện 74 trung ương: 3 phút</li>
                             <li>Trường cấp 1 – 3: 2 phút</li>
@@ -156,39 +216,42 @@
                             <li>Siêu thị Big C: 15 phút</li>
                             <li>Thiền viện Trúc Lâm Tây Thiên: 50 phút</li>
                         </ul>
-                        <div><a class="btn"  data-toggle="modal" data-target="#popModalInfo">Đăng ký tham quan dự án</a></div>
+                        <div><a class="btn" data-toggle="modal" data-target="#popModalInfo">Đăng ký tham quan dự án</a></div>
                     </div>
                 </div>
-            	
+
             </div>
         </div>
         <div class="section" id="section4">
             <div class="container">
-            	
-            	<div class="row">
-                	<div class="col-sm-6 wow fadeInLeft">
-                    	<div class="st-hd">
+
+                <div class="row">
+                    <div class="col-sm-6 wow fadeInLeft">
+                        <div class="st-hd">
                             <h3>MẶT BẰNG TỔNG THỂ</h3>
                             <p>Quy hoạch hạ tầng đồng bộ</p>
                         </div>
                         <ul>
-                        	<li>Dự án TMS Grand City Phuc Yen có quy mô 18,57 ha tại Thành phố Phúc Yên, tỉnh Vĩnh Phúc, với tổng mức đầu tư khoảng 1.500 tỉ đồng do Công ty Cổ phần TMS Bất động sản (Thành viên Tập đoàn TMS) làm chủ đầu tư.</li>
+                            <li>Dự án TMS Grand City Phuc Yen có quy mô 18,57 ha tại Thành phố Phúc Yên, tỉnh Vĩnh Phúc, với tổng mức đầu tư khoảng 1.500 tỉ đồng do Công ty Cổ phần TMS Bất động sản (Thành viên Tập đoàn TMS) làm chủ đầu tư.</li>
                             <li>
-                            	<p>Dự án dành phần lớn diện tích cho đất giao thông, hạ tầng kỹ thuật hiện đại, công trình công cộng và ba sản phẩm chính của dự án, bao gồm: nhà phố liền kế, nhà phố thương mại, biệt thự, được quy hoạch quanh hồ điều hòa BIWACO trung tâm tạo nên không gian sống lý tưởng, đồng thời cung cấp đầy đủ những dịch vụ tiện ích chất lượng cao.</p>
+                                <p>
+                                    Dự án dành phần lớn diện tích cho đất giao thông, hạ tầng kỹ thuật hiện đại, công trình công cộng và ba sản phẩm chính của dự án, bao gồm: nhà phố liền kế, nhà phố thương mại, biệt thự, được quy hoạch quanh hồ điều hòa
+                                    BIWACO trung tâm tạo nên không gian sống lý tưởng, đồng thời cung cấp đầy đủ những dịch vụ tiện ích chất lượng cao.
+                                </p>
                                 <p>Hệ thống các hồ nước tự nhiên, công viên nằm trong quần thể hồ điều hòa của vùng tạo bầu không khí trong lành cho toàn khu đô thị.</p>
                             </li>
                         </ul>
                         <div><a class="btn" data-target="#popModalInfo" data-toggle="modal">Tải trọn bộ tài liệu về dự án</a></div>
                     </div>
                     <div class="col-sm-6 wow fadeInRight photo">
-                    	<img   src="img/batbang.jpg">
+                        <img src="img/batbang.jpg">
                     </div>
-                    
+
                 </div>
             </div>
         </div>
-        <div class="section wow fadeInUp" id="section5" >
-            <div data-ride="carousel" class="carousel slide" id="st5-slide" data-interval="false" >
+        <div class="section wow fadeInUp" id="section5">
+            <div data-ride="carousel" class="carousel slide" id="st5-slide" data-interval="false">
                 <!-- Indicators -->
                 <ol class="carousel-indicators">
                     <li class="active" data-slide-to="0" data-target="#st5-slide"></li>
@@ -210,13 +273,19 @@
                                     <div><strong>Diện tích: 75 - 150 m2</strong></div>
                                     <div><strong>Số tầng: 4 - 5 tầng</strong></div>
                                     <p>&nbsp;</p>
-                                    <p>Nhà phố thương mại sở hữu mặt tiền lớn, có vị trí nằm dọc theo các trục đường sầm uất, huyết mạch của
-                                        khu đô thị TMS Grand City Phuc Yen.</p>
-                                    <p>Kết hợp hài hòa giữa quy hoạch, hạ tầng, giá trị thương mại và không gian sống, nhà phố thương mại sở
-                                        hữu chức năng kép là chốn an cư đồng thời là chốn sinh lời bền vững cho gia chủ.</p>
-                                    <div><a type="button" class="btn btn-submit btn-lg" data-toggle="modal" data-target="#popModalInfo">Đăng
-                                            ký chuyên gia tư vấn</a></div>
-                    
+                                    <p>
+                                        Nhà phố thương mại sở hữu mặt tiền lớn, có vị trí nằm dọc theo các trục đường sầm uất, huyết mạch của khu đô thị TMS Grand City Phuc Yen.
+                                    </p>
+                                    <p>
+                                        Kết hợp hài hòa giữa quy hoạch, hạ tầng, giá trị thương mại và không gian sống, nhà phố thương mại sở hữu chức năng kép là chốn an cư đồng thời là chốn sinh lời bền vững cho gia chủ.
+                                    </p>
+                                    <div>
+                                        <a type="button" class="btn btn-submit btn-lg" data-toggle="modal" data-target="#popModalInfo">
+                                            Đăng
+                                            ký chuyên gia tư vấn
+                                        </a>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
@@ -235,7 +304,11 @@
                                     <div><strong>Diện tích: 70 - 123 m2</strong></div>
                                     <div><strong>Số tầng: 4 – 5 tầng</strong></div>
                                     <p>&nbsp;</p>
-                                    <p>Biệt thự song lập sở hữu vị trí tuyệt đẹp với tầm nhìn hướng mặt hồ Biwaco – trái tim của khu đô thị - vừa tạo nên giá trị khác biệt nhưng vẫn hài hòa với tự nhiên. Các chủ nhân tương lai được thụ hưởng cuộc sống trong một không gian sang trọng, đẳng cấp nhưng vẫn đảm bảo được sự riêng tư với an ninh nội khu riêng biệt. Kết hợp hài hòa giữa phong Phuc Yen được hưởng trọn vẹn không gian xanh, trong một cộng đồng văn minh, đẳng cấp được xã hội công nhận.</p>
+                                    <p>
+                                        Biệt thự song lập sở hữu vị trí tuyệt đẹp với tầm nhìn hướng mặt hồ Biwaco – trái tim của khu đô thị - vừa tạo nên giá trị khác biệt nhưng vẫn hài hòa với tự nhiên. Các chủ nhân tương lai được thụ hưởng cuộc sống trong
+                                        một không gian sang trọng, đẳng cấp nhưng vẫn đảm bảo được sự riêng tư với an ninh nội khu riêng biệt. Kết hợp hài hòa giữa phong Phuc Yen được hưởng trọn vẹn không gian xanh, trong một cộng đồng văn minh, đẳng
+                                        cấp được xã hội công nhận.
+                                    </p>
                                     <div><a type="button" class="btn btn-submit btn-lg" data-toggle="modal" data-target="#popModalInfo">Đăng ký chuyên gia tư vấn</a></div>
                                 </div>
                             </div>
@@ -255,34 +328,38 @@
                                     <div><strong>Diện tích: 70 - 123 m2</strong></div>
                                     <div><strong>Số tầng: 4 – 5 tầng</strong></div>
                                     <p>&nbsp;</p>
-                                    <p>Nhà phố liền kề tại TMS Grand City Phuc Yen với đa dạng diện tích theo nhu cầu của chủ nhân, được quy hoạch khoa học, thuận tiện kết nối với tiện ích nội khu đồng bộ.<p>
+                                    <p>Nhà phố liền kề tại TMS Grand City Phuc Yen với đa dạng diện tích theo nhu cầu của chủ nhân, được quy hoạch khoa học, thuận tiện kết nối với tiện ích nội khu đồng bộ.
+                                    <p>
                                     <p>Đây không chỉ là nơi lý tưởng để an cư xây dựng tổ ấm bình yên mà còn là nơi để các thành viên trong gia đình cùng nhau trải nghiệm hạnh phúc mỗi ngày trong không gian xanh.</p>
-    							<div><a type="button" class="btn btn-submit btn-lg" data-toggle="modal" data-target="#popModalInfo">Đăng ký chuyên gia tư vấn</a></div>
+                                    <div><a type="button" class="btn btn-submit btn-lg" data-toggle="modal" data-target="#popModalInfo">Đăng ký chuyên gia tư vấn</a></div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    
+
                 </div>
                 <a data-slide="prev" role="button" href="#st5-slide" class="left carousel-control hidden"></a>
                 <a data-slide="next" role="button" href="#st5-slide" class="right carousel-control hidden"></a>
             </div>
-            
+
         </div>
         <div class="section" id="section6">
             <div class="container-fluid">
-            	<div class="row">
-                	<div class="col-md-6 wow fadeInLeft">
-                    	<div class="st6Text">
+                <div class="row">
+                    <div class="col-md-6 wow fadeInLeft">
+                        <div class="st6Text">
                             <div><img src="img/bullit_tl_w.png"></div>
-                            <h3>ĐẶC QUYỀN CỦA CƯ DÂN KHU ĐÔ THỊ<br/>TMS GRAND CITY PHUC YEN</h3>
-                            <p>TMS Grand City Phuc Yen là điểm đến cho cộng đồng cư dân mong muốn phong cách sống chuẩn Nhật Bản hiện đại, hòa với thiên nhiên. Với trên 30 tiện ích đồng bộ tập trung trong nội khu đáp ứng mọi nhu cầu của từng thành viên trong gia đình. Nơi đây hội tụ đầy đủ mọi yếu tố để tạo nên chất lượng cuộc sống viên mãn cho một cộng đồng vui khỏe, hạnh phúc. </p>
+                            <h3>ĐẶC QUYỀN CỦA CƯ DÂN KHU ĐÔ THỊ<br />TMS GRAND CITY PHUC YEN</h3>
+                            <p>
+                                TMS Grand City Phuc Yen là điểm đến cho cộng đồng cư dân mong muốn phong cách sống chuẩn Nhật Bản hiện đại, hòa với thiên nhiên. Với trên 30 tiện ích đồng bộ tập trung trong nội khu đáp ứng mọi nhu cầu của từng thành viên trong
+                                gia đình. Nơi đây hội tụ đầy đủ mọi yếu tố để tạo nên chất lượng cuộc sống viên mãn cho một cộng đồng vui khỏe, hạnh phúc.
+                            </p>
                             <div><a class="btn" data-target="#popModalInfo" data-toggle="modal">KHÁM PHÁ HƠN 30 TIỆN ÍCH ĐẲNG CẤP</a></div>
                         </div>
-                        
+
                     </div>
                     <div class="col-md-6 wow fadeInRight">
-                    	<div data-ride="carousel" class="carousel slide" id="st6-slide">
+                        <div data-ride="carousel" class="carousel slide" id="st6-slide">
                             <!-- Indicators -->
                             <ol class="carousel-indicators hidden">
                                 <li class="active" data-slide-to="0" data-target="#st6-slide"></li>
@@ -290,11 +367,24 @@
                             </ol>
                             <div role="listbox" class="carousel-inner">
                                 <div class="item active" id="slide1">
-                                	<div>Bể Bơi</div>
-                                	<img src="img/tienich1.jpg">
+                                    <div>Bể Bơi</div>
+                                    <img src="img/beboi1.jpg">
                                 </div>
-                                <div class="item" id="slide2"><div>Sân tập yoga</div><img src="img/tienich2.jpg"></div>
-                                <div class="item" id="slide3"><div>Hệ thống máy tập ngoài trời</div><img src="img/tienich3.jpg"></div>
+                                <div class="item" id="slide2">
+                                    <div>Sân tập yoga</div><img src="img/tienich2.jpg">
+                                </div>
+                                <div class="item" id="slide3">
+                                    <div>Hệ thống máy tập ngoài trời</div><img src="img/tienich3.jpg">
+                                </div>
+                                <div class="item" id="slide4">
+                                    <div>Khu vui chơi</div><img src="img/vuichoi1.jpg">
+                                </div>
+                                <div class="item" id="slide5">
+                                    <div>Khu vui chơi</div><img src="img/vuichoi2.jpg">
+                                </div>
+                                <div class="item" id="slide6">
+                                    <div>Vườn cây</div><img src="img/vuoncay.jpg">
+                                </div>
                             </div>
                             <a data-slide="prev" role="button" href="#st6-slide" class="left carousel-control"></a>
                             <a data-slide="next" role="button" href="#st6-slide" class="right carousel-control"></a>
@@ -303,77 +393,137 @@
                 </div>
             </div>
         </div>
-        
+        <div class="section" id="section7">
+            <div class="container">
+                <div class="st-hd text-center">
+                    <h3>Tin tức</h3>
+                </div>
+                <div class="row" id="list-article-box">
+                    <script type="text/javascript">
+                        $(function () {
+                            var url =
+                                'https://alpha.f5academy.net/api/articleservice/?listArticle&userName=tms&pageSize=3';
+                            $.ajax({
+                                type: 'GET',
+                                url: url,
+                                async: false,
+                                contentType: "json",
+                                dataType: 'jsonp',
+                                success: function (data) {
+                                    $.each(data, function (index, item) {
+                                        $("#itemTemplateArticleTop").tmpl(item)
+                                            .appendTo("#list-article-box");
+                                    });
+                                },
+                                error: function (data, status, jqXHR) { }
+                            });
+                        });
+                    </script>
+                    <script id="itemTemplateArticleTop" type="text/x-jquery-tmpl">
+                        <div class="col-sm-4 wow fadeInUp">
+                            <div>
+                                <a href="${link}"><img src="https://alpha.f5academy.net${imagePath}"></a>
+                            </div>
+                            <div class="text">
+                                <h2><a href="${link}">${title}</a></h2>
+                                <hr />
+                                <p>${description}</p>
+                            </div>
+                        </div>
+                    </script>
+                </div>
+                <div class="text-center"><a data-toggle="modal" data-target="#popModalInfo" class="btn btn-viewall">CLICK NGAY NHẬN ƯU ĐÃI</a></div>
+            </div>
+        </div>
         <div id="footer">
             <div class="container wow fadeInUp">
-            	<div class="row">
-                	<div class="col-sm-6">
-                    	<h3>CÔNG TY CỔ PHẦN TMS BẤT ĐỘNG SẢN</h3>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h3>CÔNG TY CỔ PHẦN TMS BẤT ĐỘNG SẢN</h3>
                         <p><img src="img/i_home.png"> Tầng 3, tòa nhà VIMECO, lô E9, đường Phạm Hùng, phường Trung Hòa, Quận Cầu Giấy, Thành phố Hà Nội, Việt Nam</p>
-                        <p><img src="img/i_phone.png"> Điện thoại: (+84) 24 376 90088 / Fax: (+84) 24 376 90019</p>
+                        <!--<p><img src="img/i_phone.png"> Điện thoại: (+84) 24 376 90088 / Fax: (+84) 24 376 90019</p>-->
                         <p><img src="img/i_mail.png"> Email: <a href="mailto:info@tmsgroup.vn">info@tmsgroup.vn</a> / Website: <a href="http://tmsphucyen.com.vn" target="blank">tmsphucyen.com.vn</a></p>
                         <p><img src="img/i_fb.png"> Fanpage: <a target="blank" href="https://www.facebook.com/tmsgrandcityphucyen.chudautu">fb.com/tmsgrandcityphucyen.chudautu</a></p>
                     </div>
                     <div class="col-sm-6 text-center">
-                    	<img src="img/logo_tmsgr.png">&nbsp;&nbsp;
+                        <img src="img/logo_tmsgr.png">&nbsp;&nbsp;
                         <img src="img/logo_tmsgrand.png">
                     </div>
                 </div>
             </div>
         </div>
         <div id="noteFt" class="hidden-xs">(*) Mọi thông tin và hình ảnh chỉ mang tính chất tham khảo. Vui lòng liên hệ bộ phận kinh doanh để biết thêm thông tin chi tiết.</div>
-        
+
         <div id="popModal" class="modal fade" role="dialog" style="">
             <div class="modal-dialog modal-md">
-    
+
                 <!-- Modal content-->
                 <div class="modal-content">
                     <div class="modal-header text-center">
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                         <div><img src="img/logo.png"></div>
-                        
+
                         <h4 class="modal-title"><strong>QUÝ KHÁCH VUI LÒNG NHẬP THÔNG TIN NHẬN ƯU ĐÃI</strong></h4>
                     </div>
                     <div class="modal-body" style="padding:15px 30px;">
                         <form id="frmRegModal" class="form-horizontal" autocomplete="off">
-                            <div id="frmContentModal" >
+                            <div id="frmContentModal">
                                 <div class="form-group"><input type="text" name="name_modal" id="name_modal" placeholder="Họ và tên"></div>
                                 <div class="form-group"><input type="text" name="email_modal" id="email_modal" placeholder="Email"></div>
+
                                 <div class="form-group"><input type="text" name="phone_modal" id="phone_modal" onkeypress="return AllowNumberOnly(event);" placeholder="Số điện thoại"></div>
                                 <div class="form-group">
-                                    <div class="text-center"><button class="btn btn-submit btn-lg btn-block" >Gửi đăng ký</button></div>
+                                    <select id="cbotypemodal" name="cbotypemodal" class="form-control">
+                                        <option value="">Nhu cầu tư vấn</option>
+                                        <option value="Mua để ở">Mua để ở</option>
+                                        <option value="Mua để đầu tư">Mua để đầu tư</option>
+                                        <option value="Cần thuê Shophouse">Cần thuê Shophouse</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <div class="text-center"><button class="btn btn-submit btn-lg btn-block">Gửi đăng ký</button></div>
                                 </div>
                             </div>
                         </form>
                         <div id="content-modal"></div>
                     </div>
                 </div>
-    
+
             </div>
         </div>
-        <div id="popModalInfo"  class="modal fade" role="dialog" style="">
+        <div id="popModalInfo" class="modal fade" role="dialog" style="">
             <div class="modal-dialog modal-md">
                 <!-- Modal content-->
                 <div class="modal-content">
                     <div class="modal-header text-center">
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                         <div><img src="img/logo.png"></div>
-        
+
                         <h4 class="modal-title">
-                                <strong>
+                            <strong>
                                 QUÝ KHÁCH VUI LÒNG NHẬP THÔNG TIN LIÊN HỆ
-                                <br/>
-                                ĐỂ NHẬN ĐƯỢC TƯ VẤN 24/24h</strong>
-                    </h4>
+                                <br />
+                                ĐỂ NHẬN ĐƯỢC TƯ VẤN 24/24h
+                            </strong>
+                        </h4>
                     </div>
                     <div class="modal-body" style="padding:15px 30px;">
                         <form id="frmRegModalInfo" class="form-horizontal" autocomplete="off">
                             <div id="frmContentModalInfo">
                                 <div class="form-group"><input type="text" name="name_modal_info" id="name_modal_info" placeholder="Họ và tên"></div>
                                 <div class="form-group"><input type="text" name="email_modal_info" id="email_modal_info" placeholder="Email"></div>
-                                <div class="form-group"><input type="text" name="phone_modal_info" onkeypress="return AllowNumberOnly(event);" id="phone_modal_info" placeholder="Số điện thoại">
+
+                                <div class="form-group">
+                                    <input type="text" name="phone_modal_info" onkeypress="return AllowNumberOnly(event);" id="phone_modal_info" placeholder="Số điện thoại">
                                 </div>
-        
+                                <div class="form-group">
+                                    <select id="cbotype_modal_info" name="cbotype_modal_info" class="form-control">
+                                        <option value="">Nhu cầu tư vấn</option>
+                                        <option value="Mua để ở">Mua để ở</option>
+                                        <option value="Mua để đầu tư">Mua để đầu tư</option>
+                                        <option value="Cần thuê Shophouse">Cần thuê Shophouse</option>
+                                    </select>
+                                </div>
                                 <div class="form-group">
                                     <div class="text-center"><button class="btn btn-submit btn-lg btn-block">Gửi đăng ký</button></div>
                                 </div>
@@ -382,7 +532,7 @@
                         <div id="content-modal-info"></div>
                     </div>
                 </div>
-        
+
             </div>
         </div>
     </div>
@@ -396,11 +546,14 @@
             $('.photo').zoom({
                 url: 'img/anh-du-an.jpg',
                 callback: function () {
-                    $(this).colorbox({ href: this.src });
+                    $(this).colorbox({
+                        href: this.src
+                    });
                 }
             });
         });
         new WOW().init();
+
         function AllowNumberOnly(evt) {
             evt = (evt) ? evt : event;
             var charCode = (evt.charCode) ? evt.charCode : ((evt.keyCode) ? evt.keyCode : ((evt.which) ? evt.which : 0));
@@ -419,22 +572,21 @@
             callbackBefore: function (toggle, navbar1) { },
             callbackAfter: function (toggle, navbar1) { }
         });
-
     </script>
     <script>
-    	$("button").click(function(){
-			$(".navbar-toggle").toggleClass("close");
-		});
+        $("button").click(function () {
+            $(".navbar-toggle").toggleClass("close");
+        });
 
-    	$(".navbar-toggle").click(function(){
-			$("#header").toggleClass("open");
-		});
-  
-    	$(".navbar-nav a").click(function(){
-			$(".navbar-collapse").removeClass("in");
-		
-			$(".navbar-toggle").removeClass("close");
-		});
+        $(".navbar-toggle").click(function () {
+            $("#header").toggleClass("open");
+        });
+
+        $(".navbar-nav a").click(function () {
+            $(".navbar-collapse").removeClass("in");
+
+            $(".navbar-toggle").removeClass("close");
+        });
     </script>
 </body>
 

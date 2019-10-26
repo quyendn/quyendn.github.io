@@ -1,0 +1,104 @@
+@font-face {
+  font-family: 'iCielBambola';
+  src: url('../fonts/../fonts/iCielBambola.eot');
+  src: url('../fonts/../fonts/iCielBambola.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/../fonts/iCielBambola.svg#iCielBambola') format('svg'),
+       url('../fonts/../fonts/iCielBambola.ttf') format('truetype'),
+       url('../fonts/../fonts/iCielBambola.woff') format('woff'),
+       url('../fonts/../fonts/iCielBambola.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+@font-face {
+  font-family: 'UTM Dax';
+  src: url('../fonts/UTM Dax.eot');
+  src: url('../fonts/UTM Dax.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/UTM Dax.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'UTMDaxline';
+  src: url('../fonts/UTMDaxline.svg#UTMDaxline') format('svg'),
+       url('../fonts/UTMDaxline.ttf') format('truetype'),
+       url('../fonts/UTMDaxline.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'UTM DaxBold';
+  src: url('../fonts/UTM DaxBold.eot');
+  src: url('../fonts/UTM DaxBold.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/UTM DaxBold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'UTMDaxlineBold';
+  src: url('../fonts/UTMDaxlineBold.svg#UTMDaxlineBold') format('svg'),
+       url('../fonts/UTMDaxlineBold.ttf') format('truetype'),
+       url('../fonts/UTMDaxlineBold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'UTM DaxMedium';
+  src: url('../fonts/UTM DaxMedium.eot');
+  src: url('../fonts/UTM DaxMedium.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/UTM DaxMedium.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'UTMDaxlineMedium';
+  src: url('../fonts/UTMDaxlineMedium.svg#UTMDaxlineMedium') format('svg'),
+       url('../fonts/UTMDaxlineMedium.ttf') format('truetype'),
+       url('../fonts/UTMDaxlineMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'UTM EdwardianB';
+  src: url('../fonts/UTM EdwardianB.eot');
+  src: url('../fonts/UTM EdwardianB.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/UTM EdwardianB.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'UTMEdwardianBold';
+  src: url('../fonts/UTMEdwardianBold.svg#UTMEdwardianBold') format('svg'),
+       url('../fonts/UTMEdwardianBold.ttf') format('truetype'),
+       url('../fonts/UTMEdwardianBold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'UTM EdwardianKT';
+  src: url('../fonts/UTM EdwardianKT.eot');
+  src: url('../fonts/UTM EdwardianKT.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/UTM EdwardianKT.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'UTMEdwardian';
+  src: url('../fonts/UTMEdwardian.svg#UTMEdwardian') format('svg'),
+       url('../fonts/UTMEdwardian.ttf') format('truetype'),
+       url('../fonts/UTMEdwardian.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
