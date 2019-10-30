@@ -287,6 +287,10 @@ img{
 #slide-wrap .f-4{
 	font-size:26px;
 	}
+.f-6 {
+    font-size: 26px;
+    margin-bottom:5px;
+}
 #slide-wrap .f-5{
 	color:#7e8083;
 	font-size:18px;
@@ -394,7 +398,10 @@ img{
 	#slide-wrap .f-5{
 		font-size:16px;
 		}
-
+    .f-6 {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
 
 	}
 
