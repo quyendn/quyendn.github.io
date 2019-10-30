@@ -1,0 +1,402 @@
+a:link,
+a:visited {
+    text-decoration:none;
+	transition: all 300ms ease-in-out;
+	-webkit-transition: all 300ms ease-in-out;
+	-moz-transition: all 300ms ease-in-out;
+	-o-transition: all 300ms ease-in-out;
+}	
+
+body{
+	color:#fff;
+	font-size:14px;
+	background:#000;
+	font-family: 'MazdaTypeUnicode-Bold';
+	}
+	
+a{
+	color:#fff;
+	}
+a:hover{
+	color:#fff;
+	}
+#scroll-fix-top{
+    width: 100%;
+}
+
+#scroll-fix-top.fixed {
+    opacity: 0.95;
+}
+
+.circle{
+	-moz-border-radius:100%;
+	-webkit-border-radius:100%;
+	border-radius:100%;
+	}
+.radius{
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	}
+.fa-2 {
+    font-size: 1.5em;
+}
+.fa-3 {
+    font-size: 4em;
+}
+.fa-4 {
+    font-size: 7em;
+}
+ul.reset, ol.reset{
+	margin:0;
+	padding:0;
+	}
+.navbar-toggle{
+	position:absolute;
+	top:10px; right:10px;
+	margin:0;
+	padding:0;
+	width:40px;
+	height:40px;
+	background:url(../img/bar.png) no-repeat 50% 50%;
+	}
+.navbar-toggle.close{
+	background:url(../img/cancel.png) no-repeat 50% 50%;
+	}
+.btn-submit{
+	text-transform:uppercase;
+	padding:10px 15px;
+	color:#fff;
+	background: #872b1c;
+	}
+.btn-submit:hover{
+	color:#fff;
+	background: #d94700;
+	}
+strong, b{
+	}
+a, .btn, button{
+	outline:none;
+	}
+.bgGradient{
+	background: rgba(0,0,0,0);
+	background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,0,0,0)), color-stop(100%, rgba(0,0,0,1)));
+	background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+	background: -o-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+	background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+	background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0 );
+	}
+.bgGradient-y{
+	background: rgba(201,170,93,1);
+	background: -moz-linear-gradient(left, rgba(201,170,93,1) 0%, rgba(237,220,167,1) 51%, rgba(201,170,93,1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(201,170,93,1)), color-stop(51%, rgba(237,220,167,1)), color-stop(100%, rgba(201,170,93,1)));
+	background: -webkit-linear-gradient(left, rgba(201,170,93,1) 0%, rgba(237,220,167,1) 51%, rgba(201,170,93,1) 100%);
+	background: -o-linear-gradient(left, rgba(201,170,93,1) 0%, rgba(237,220,167,1) 51%, rgba(201,170,93,1) 100%);
+	background: -ms-linear-gradient(left, rgba(201,170,93,1) 0%, rgba(237,220,167,1) 51%, rgba(201,170,93,1) 100%);
+	background: linear-gradient(to right, rgba(201,170,93,1) 0%, rgba(237,220,167,1) 51%, rgba(201,170,93,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c9aa5d', endColorstr='#c9aa5d', GradientType=1 );
+	}
+.f-neu{
+	}
+.bg1, .bg2{
+	background-size:100% auto;
+	}
+.bg1{
+	background:url(../img/bg.jpg) no-repeat 50% 0;
+	background-size:100% auto;
+	}
+.bg2{
+	background:url(../img/bg2.gif) no-repeat 50% 0;
+	background-size:100% auto;
+	}
+.red{
+	color:#f00;
+	}
+/*header=================================*/
+
+/**/	
+#slide-wrap{
+	position:relative;
+	}
+#slide-wrap .text{
+	position:absolute;
+	top:30px;
+	right:0;
+	left:0;
+	text-align:center;
+	}
+.formRegister{
+	background:rgba(0,0,0,0.7);
+	}
+.formRegister .inner{
+	padding: 45px;
+	}
+.formRegister .inner h3{
+	margin:0 0 30px 0;
+	color:#fff;
+	font-size:16px;
+	text-transform:uppercase;
+	text-align:center;
+	}
+.formRegister .inner p{
+	margin:0 0 15px 0;text-align:center;
+	}
+.formRegister .inner .form-control, .formRegister .inner .btn, #frmDattiec .form-control {
+	border:none;
+	padding:6px;
+	height:auto;
+	-moz-border-radius:0;
+	-webkit-border-radius:0;
+	-o-border-radius:0;
+	border-radius:0;
+	}
+.formRegister .inner .form-group:last-child{
+	margin-bottom:0;
+	}
+.formRegister .inner .btnRegister, #section6 .btn{
+	background:#b20301;
+	color:#fff;
+	font-size:16px;
+	padding:5px 45px;
+	text-transform:uppercase;
+	border:1px solid #fff;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	-o-border-radius:5px;
+	border-radius:5px;
+	}
+.formRegister .inner .btnRegister:hover, #section6 .btn:hover{
+	background:#d41614;
+	color:#fff;
+	}
+.formRegister .inner hr{
+	margin:10px 0;
+	border-top:1px solid #8b8b8b;
+	}
+
+#slide-wrap .owl-dots{
+	display:none;
+	}
+
+/**/
+.section{
+	padding-top:30px;
+	padding-bottom:30px;
+	}
+.section .st-hd{
+	margin-bottom:30px;
+	}
+.section .st-hd h3{
+	font-size:26px;
+	font-weight:bold;
+	text-transform:uppercase;
+	}
+.section .st-hd h3 span{
+	margin:0 30px;
+	}
+
+.section .st-hd p{
+	font-size:15px;
+	margin:15px auto;
+	line-height:20px;
+	max-width:860px;
+	}
+/**/
+
+#section4 .bg{
+	background:url(../img/bg_dangky.jpg) no-repeat 50% 50% / 100% auto;
+
+	padding:30px;
+	}
+
+/**/
+img{
+	max-width:100%}
+.modal{
+	padding-top:100px;
+	}
+
+
+#formDownload .modal-content{
+	padding:30px 45px;
+	-moz-border-radius:45px 10px 45px 10px;
+	-webkit-border-radius:45px 10px 45px 10px;
+	-moz-border-radius:45px 10px 45px 10px;
+	}
+#formDownload .tl .lg{
+	margin:30px 0;
+	}
+#formDownload .tl .lg span{
+	color:#dbc483;
+	}
+#formDownload .btn{
+	margin-top:30px;
+	text-transform:uppercase;
+	padding:15px 30px;
+	font-family: 'UTM DaxBold';
+	-moz-box-shadow:0 1px 2px rgba(0,0,0,0.5);
+	-webkit-box-shadow:0 1px 2px rgba(0,0,0,0.5);
+	box-shadow:0 1px 2px rgba(0,0,0,0.5);
+	}
+#formDownload .form-control{
+	-moz-border-radius:30px;
+	-webkit-border-radius:30px;
+	-moz-border-radius:30px;
+	padding:10px 15px;
+	height:auto;
+	border:none;
+	
+	}
+#formDownload .close{
+	position:absolute;
+	top:-20px;
+	right:-25px;
+	color:#fff;
+	width:44px;
+	height:44px;
+	background:url(../img/cancel.png) no-repeat 50% 50% / 24px auto;
+	}
+#formRegister-popup .modal-content{
+	background:rgba(0,0,0,0.8);
+	}
+#formRegister-popup .formRegister {
+    background: none;
+}
+#formRegister-popup .formRegister .inner{
+	padding:30px;
+	}
+#formRegister-popup .modal-header{
+	border-bottom:1px solid #222;
+	}
+/**/
+#slide-wrap .text p{
+	margin-bottom:5px;
+	line-height:normal;}
+#slide-wrap .f-1{
+	font-size:30px;
+	}
+#slide-wrap .f-2{
+	font-size:26px;
+	}
+#slide-wrap .f-3{
+	font-size:46px;
+	color:#e11f26;
+	}
+#slide-wrap .f-4{
+	font-size:26px;
+	}
+#slide-wrap .f-5{
+	color:#7e8083;
+	font-size:18px;
+	margin-top:15px !important;
+	}
+#thank{
+	text-transform:uppercase;
+	padding-top:100px;
+	padding-bottom:50px;
+	}
+#thank .inner{
+	background:rgba(255,255,255, 0.5);
+	color:#4a4a4a;
+	padding:30px;
+	font-size:24px;
+	}
+#thank .inner .bg{
+	background:rgba(255,255,255, 0.5);
+	padding:30px;
+	border:3px solid #fff;
+	}
+.logoThaco, .logoMazda{
+	position:absolute;
+	top:30px;
+	}
+.logoThaco{
+	left:30px;
+	}
+.logoMazda{
+	right:30px;
+	}
+#slide-wrap .container{
+	position:relative;
+	}
+@media (max-width: 1199px) {
+}
+
+@media (max-width: 992px) {
+}
+
+@media (max-width: 768px) {
+
+
+	.formRegister{
+		padding:15px !important;
+		}
+	.formRegister h3{
+		font-size:14px !important;
+		}
+	.section .st-hd h3{
+		font-size:20px;
+		line-height:normal;
+		line-height:30px;
+		}
+	.section .st-hd h3 img{
+		display:none;
+		}
+	.section .st-hd h3 span{
+		margin:0;
+		}
+	.section .st-hd p{
+		font-size:12px;
+		}
+	.formRegister .inner .btnRegister, #section6 .btn{
+		padding:10px 15px;
+		}
+	#section4 .bg {
+		background: url(../img/bg_dangky.jpg) no-repeat 50% 50% / auto 100%;
+		padding: 15px;
+		}
+	.formRegister{
+		padding:15px !important;
+		}
+
+	.formRegister .inner{
+		padding:0;
+		}
+
+	#thank .inner{
+		font-size:14px;
+		}
+		
+	#slide-wrap .text{
+		position:relative;
+		top:0;
+		right:0;
+		left:0;
+		padding:120px 0 30px 0;
+		text-align:center;
+		}
+
+	#slide-wrap .f-1{
+		font-size:30px;
+		}
+	#slide-wrap .f-2{
+		font-size:20px;
+		}
+	#slide-wrap .f-3{
+		font-size:36px;
+		margin:15px 0 !important
+		}
+	#slide-wrap .f-4{
+		font-size:18px;
+		}
+	#slide-wrap .f-5{
+		font-size:16px;
+		}
+
+
+	}
+
+/**/
+
