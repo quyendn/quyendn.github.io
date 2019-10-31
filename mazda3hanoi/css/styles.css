@@ -274,23 +274,24 @@ img{
 #slide-wrap .text p{
 	margin-bottom:5px;
 	line-height:normal;}
-#slide-wrap .f-1{
+#slide-wrap .f-1, #section1 .f-1{
 	font-size:30px;
 	}
 #slide-wrap .f-2{
 	font-size:26px;
 	}
+#slide-wrap .f-3, #section1 .f-3{
+	color:#e11f26;
+	}
 #slide-wrap .f-3{
 	font-size:46px;
-	color:#e11f26;
+	}
+#section1 .f-3{
+	font-size:36px;
 	}
 #slide-wrap .f-4{
 	font-size:26px;
 	}
-.f-6 {
-    font-size: 26px;
-    margin-bottom:5px;
-}
 #slide-wrap .f-5{
 	color:#7e8083;
 	font-size:18px;
@@ -333,7 +334,8 @@ img{
 
 @media (max-width: 768px) {
 
-
+	body{
+		background-size:auto 100% !important}
 	.formRegister{
 		padding:15px !important;
 		}
@@ -398,10 +400,9 @@ img{
 	#slide-wrap .f-5{
 		font-size:16px;
 		}
-    .f-6 {
-        font-size: 18px;
-        margin-bottom: 5px;
-    }
+	#thank .inner, #thank .inner .bg{
+		padding:15px;
+		}
 
 	}
 
