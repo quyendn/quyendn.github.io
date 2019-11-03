@@ -857,6 +857,9 @@ img{
 }
 
 @media (max-width: 768px) {
+    body {
+        background-size: auto 100% !important
+    }
 	#header{
 		min-height:80px;
 		}
@@ -979,7 +982,9 @@ img{
 		font-size:16px;
 		line-height:22px;
 		}
-
+    #thank .inner, #thank .inner .bg {
+        padding: 15px;
+    }
 	}
 
 /**/
