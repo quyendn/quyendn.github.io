@@ -1,0 +1,64 @@
+
+
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("../fonts/Montserrat-Bold.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/Montserrat-Bold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/Montserrat-Bold.otf") format("opentype"), /* Open Type Font */
+    url("../fonts/Montserrat-Bold.svg") format("svg"), /* Legacy iOS */
+    url("../fonts/Montserrat-Bold.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("../fonts/Montserrat-Bold.woff") format("woff"), /* Modern Browsers */
+    url("../fonts/Montserrat-Bold.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("../fonts/Montserrat-Regular.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/Montserrat-Regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/Montserrat-Regular.otf") format("opentype"), /* Open Type Font */
+    url("../fonts/Montserrat-Regular.svg") format("svg"), /* Legacy iOS */
+    url("../fonts/Montserrat-Regular.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("../fonts/Montserrat-Regular.woff") format("woff"), /* Modern Browsers */
+    url("../fonts/Montserrat-Regular.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "UTMAquarelle";
+  src: url("../fonts/UTMAQUARELLE.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/UTMAQUARELLE.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/UTMAQUARELLE.otf") format("opentype"), /* Open Type Font */
+    url("../fonts/UTMAQUARELLE.svg") format("svg"), /* Legacy iOS */
+    url("../fonts/UTMAQUARELLE.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("../fonts/UTMAQUARELLE.woff") format("woff"), /* Modern Browsers */
+    url("../fonts/UTMAQUARELLE.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "UVNBachDangBold";
+  src: url("../fonts/UVNBachDang.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/UVNBachDang.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/UVNBachDang.otf") format("opentype"), /* Open Type Font */
+    url("../fonts/UVNBachDang.svg") format("svg"), /* Legacy iOS */
+    url("../fonts/UVNBachDang.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("../fonts/UVNBachDang.woff") format("woff"), /* Modern Browsers */
+    url("../fonts/UVNBachDang.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "UVNBachDang";
+  src: url("../fonts/UVNBachDangR.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/UVNBachDangR.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/UVNBachDangR.otf") format("opentype"), /* Open Type Font */
+    url("../fonts/UVNBachDangR.svg") format("svg"), /* Legacy iOS */
+    url("../fonts/UVNBachDangR.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("../fonts/UVNBachDangR.woff") format("woff"), /* Modern Browsers */
+    url("../fonts/UVNBachDangR.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}

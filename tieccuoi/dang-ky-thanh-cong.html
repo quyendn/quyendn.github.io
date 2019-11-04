@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="no-js" style="height:100%;">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Flamingo</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.nanoscroller.min.js"></script>
+    <script src="js/jquery.tmpl.min.js"></script>
+    <script type="text/javascript" src="js/wow/wow.min.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <link href="css/font-face.css" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrapValidator.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/toastr.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+    <link href="js/bootstrap-datepicker/bootstrap-datepicker.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="js/bootstrap-datepicker/bootstrap-datepicker.js"></script>
+    <script type="text/javascript" src="js/bootstrap-datepicker/locales/bootstrap-datepicker.vi.min.js"></script>
+
+    
+</head>
+<body>
+    <div id="container">
+        
+        <div id="thanks" class="f-bac-b">
+        	<div class="inner">
+                <div class="container">
+                    <img src="img/slide1.jpg">
+                </div>
+            </div>
+            <div class="text text-center">
+            	<div class="container">
+                	<h1>FLAMINGO WEDDING</h1>
+                    <p>Cám ơn quý khách đã để lại thông tin tư vấn. Chúng tôi sẽ liên hệ với quý khách trong thời gian sớm nhất</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---->
+    <script src="js/smooth-scroll.js"></script>
+    <script type="text/javascript" src="js/bootstrapValidator.min.js"></script>
+    <script type="text/javascript" src="js/form-validation.js"></script>
+    <script type="text/javascript" src="js/toastr.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#txtDate').datepicker({
+                format: "dd/mm/yyyy",
+                todayBtn: "linked",
+                autoclose: true,
+                todayHighlight: true,
+                language: 'vi'
+            }).on('changeDate', function (e) {
+            });
+        });
+        new WOW().init();
+        function AllowNumberOnly(evt) {
+            evt = (evt) ? evt : event;
+            var charCode = (evt.charCode) ? evt.charCode : ((evt.keyCode) ? evt.keyCode : ((evt.which) ? evt.which : 0));
+            if ((charCode > 31) && (charCode < 48 || charCode > 57) && charCode != 8 && charCode != 37 && charCode != 39 && charCode != 45 && charCode != 46) {
+                return false;
+            }
+            return true;
+        }
+        smoothScroll.init({
+            speed: 1000,
+            easing: 'easeInOutCubic',
+            offset: 70,
+            updateURL: false,
+            callbackBefore: function (toggle, navbar1) { },
+            callbackAfter: function (toggle, navbar1) { }
+        });
+        $("button").click(function () {
+            $(".navbar-toggle").toggleClass("close");
+        });
+
+        $(".navbar-toggle").click(function () {
+            $("#header").toggleClass("open");
+        });
+
+        $(".navbar-nav a").click(function () {
+            $(".navbar-collapse").removeClass("in");
+
+            $(".navbar-toggle").removeClass("close");
+        });
+    </script>
+    
+</body>
+</html>
