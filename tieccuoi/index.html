@@ -20,16 +20,32 @@
     <link rel="stylesheet" type="text/css" href="css/animate.css" />
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
     <link href="js/bootstrap-datepicker/bootstrap-datepicker.css" rel="stylesheet" type="text/css" />
-    
-    
     <link rel="stylesheet" type="text/css" href="css/all-animation.css" />
-                     
-                     
+
     <script type="text/javascript" src="js/bootstrap-datepicker/bootstrap-datepicker.js"></script>
     <script type="text/javascript" src="js/bootstrap-datepicker/locales/bootstrap-datepicker.vi.min.js"></script>
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,700&display=swap&subset=vietnamese" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald:400,700&display=swap&subset=vietnamese" rel="stylesheet">
+    <script type="text/javascript" src="jwplayer/jwplayer.js"></script>
+    <script type="text/javascript">
+        jwplayer.key = "XumejFo+svwQswRJ3Mi++itror5V6+6q+6I7MQ==";
+    </script>
+    <script type="text/javascript">
+        var primaryCookie = 'html5';
+        var skinURL = "/jwplayer/skins/five/five.xml";
+        var cookies = document.cookie.split(";");
+        for (i = 0; i < cookies.length; i++) {
+            var x = cookies[i].substr(0, cookies[i].indexOf("="));
+            var y = cookies[i].substr(cookies[i].indexOf("=") + 1);
+            x = x.replace(/^\s+|\s+$/g, "");
+            if (x == 'primaryCookie') {
+                primaryCookie = y;
+            } else if (x == 'skinURL') {
+                skinURL = y;
+            }
+        }
+    </script>
 
 </head>
 
@@ -244,7 +260,8 @@ Chẳng cần suy nghĩ, chẳng chút lo âu, trải nghiệm ngày chung đôi
                     </div>
                     <div class="item">
                         <div class="thumb">
-                            <img src="img/tn-sl3.jpg">
+                            <img src="img/tn-sl4.jpg">
+                           
                         </div>
                         <div class="text">
                         	<h2>Hoa tươi trang trí trên bàn tiệc</h2>
@@ -252,7 +269,7 @@ Chẳng cần suy nghĩ, chẳng chút lo âu, trải nghiệm ngày chung đôi
                     </div>
                     <div class="item">
                         <div class="thumb">
-                            <img src="img/tn-sl4.jpg">
+                            <img src="img/tn-sl3.jpg">
                         </div>
                         <div class="text">
                         	<h2>Bánh cưới trang trí hoa tươi</h2>
@@ -377,7 +394,21 @@ Chẳng cần suy nghĩ, chẳng chút lo âu, trải nghiệm ngày chung đôi
             	<div class="st-hd text-center">
                     <div class=""><img src="img/tl7.jpg"></div>
                 </div>
-                <div style="margin-bottom:30px;"><img src="img/video.gif"></div>
+                <div style="margin-bottom:30px;">
+                    <div class="player text-center" id="VdoPlayr" style="text-align:center;"></div>
+                    <script type='text/javascript'>
+                        jwplayer('VdoPlayr').setup({
+                            autostart: false,
+                            file: 'https://youtu.be/gxRzjDMi5mk',
+                            width: '100%',
+                            aspectratio: '16:9',
+                            controls: true,
+                            skin: 'seven',
+                            mute: false,
+                            primary: 'html5'
+                        });
+                    </script>
+                </div>
                 <div class="owl-carousel owl-carousel-tv">
                     <div class="item"><img src="img/tv1.jpg"></div>
                     <div class="item"><img src="img/tv2.jpg"></div>
