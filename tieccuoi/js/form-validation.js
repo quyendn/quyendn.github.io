@@ -69,16 +69,15 @@ $(document).ready(function() {
             var name = $('#txtName').val();
             var email = $('#txtEmail').val();
             var phone = $('#txtPhone').val();
-            var description = $('#txtDescription').val();
             var isSend = 0;
             var emailto = "quyendn84@gmail.com";
             var check = checkPhoneNumber();
             if (!check)
                 return;
-            var dataJSON = { "name": name, "phone": phone, "email": email, "description": description, "emailto": emailto };
+            var dataJSON = { "name": name, "phone": phone, "email": email, "emailto": emailto };
             showLoadingContactImage('content-download', 'frmContentReg');
             $.ajax({
-                url: "https://alpha.f5academy.net/api/Flamingoservice",
+                url: "http://localhost:50623/api/FlamingoWeddingservice",
                 type: "Post",
                 async: false,
                 data: dataJSON,
@@ -96,7 +95,6 @@ $(document).ready(function() {
                     $('#txtName').val('');
                     $("#txtEmail").val('');
                     $('#txtPhone').val('');
-                    $('#txtDescription').val('');
                     $('#frmRegDownload').bootstrapValidator('resetForm', true);
                     toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', { timeOut: 5000 })
                     hideLoadingContactImage('content-download', 'frmContentReg');

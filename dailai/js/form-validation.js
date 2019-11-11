@@ -78,7 +78,7 @@ $(document).ready(function() {
             var dataJSON = { "name": name, "phone": phone, "email": email, "description": description, "emailto": emailto };
             showLoadingContactImage('content-download', 'frmContentReg');
             $.ajax({
-                url: "https://alpha.f5academy.net/api/Flamingoservice",
+                url: "http://localhost:50623/api/Flamingoservice",
                 type: "Post",
                 async: false,
                 data: dataJSON,
