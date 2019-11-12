@@ -85,15 +85,15 @@ Fortuner 2.4 MT 4x2 (FG), Innova E 2.0 MT (IE&IEB) và hoàn tất thủ tục t
                     <div class="owl-carousel owl-carousel-cars">
                         <div class="item">
                             <div><img src="img/vios.png"></div>
-                            <button class="btn">ĐĂNG KÝ NHẬN BÁO GIÁ</button>
+                            <a data-scroll="" data-options="easing: easeInQuad" href="#section3" class="btn">ĐĂNG KÝ NHẬN BÁO GIÁ</a>
                         </div>
                         <div class="item">
                             <div><img src="img/altis.png"></div>
-                            <button class="btn">ĐĂNG KÝ NHẬN BÁO GIÁ</button>
+                            <a data-scroll="" data-options="easing: easeInQuad" href="#section3" class="btn">ĐĂNG KÝ NHẬN BÁO GIÁ</a>
                         </div>
                         <div class="item">
                             <div><img src="img/fortuner.png"></div>
-                            <button class="btn">ĐĂNG KÝ NHẬN BÁO GIÁ</button>
+                            <a data-scroll="" data-options="easing: easeInQuad" href="#section3" class="btn">ĐĂNG KÝ NHẬN BÁO GIÁ</a>
                         </div>
                     </div>
                 </div>
@@ -106,20 +106,20 @@ Fortuner 2.4 MT 4x2 (FG), Innova E 2.0 MT (IE&IEB) và hoàn tất thủ tục t
                 <form id="frmRegDownload" autocomplete="off" novalidate class="bv-form"><button type="submit" class="bv-hidden-submit" style="display: none; width: 0px; height: 0px;"></button><button type="submit" class="bv-hidden-submit" style="display: none; width: 0px; height: 0px;"></button>
                     <div id="frmContentReg">
                     	<div class="form-group has-feedback">
-                        <select class="form-control" name="cars" id="txtCars" value="" placeholder="Họ và tên" data-bv-field="cars">
-                        	<option>TOYOTA VIOS</option>
-                            <option>TOYOTA CORROLLA ALTIS</option>
-                            <option>Fortuner 2.4 AT 4x2 (FK)</option>
-                            <option>Fortuner 2.4 MT 4x2 (FG)</option>
+                        <select class="form-control" name="cars" id="cboCars" data-bv-field="cars">
+                            <option value="TOYOTA VIOS">TOYOTA VIOS</option>
+                            <option value="TOYOTA CORROLLA ALTIS">TOYOTA CORROLLA ALTIS</option>
+                            <option value="Fortuner 2.4 AT 4x2 (FK)">Fortuner 2.4 AT 4x2 (FK)</option>
+                            <option value="Fortuner 2.4 MT 4x2 (FG)">Fortuner 2.4 MT 4x2 (FG)</option>
                         </select>
-                        <i style="display: none;" class="form-control-feedback bv-no-label" data-bv-icon-for="cars"></i><small style="display: none;" class="help-block" data-bv-validator="notEmpty" data-bv-for="cars" data-bv-result="NOT_VALIDATED">Dòng xe không được bỏng trống</small></div>
-                        <div class="form-group has-feedback"><input type="text" class="form-control" name="name" id="txtName" value="" placeholder="Họ và tên" data-bv-field="name"><i style="display: none;" class="form-control-feedback bv-no-label" data-bv-icon-for="name"></i><small style="display: none;" class="help-block" data-bv-validator="notEmpty" data-bv-for="name" data-bv-result="NOT_VALIDATED">Họ tên không được để trống.</small></div>
-                        <div class="form-group has-feedback"><input type="text" class="form-control" name="phone" id="txtPhone" placeholder="Số điện thoại" data-bv-field="phone"><i style="display: none;" class="form-control-feedback bv-no-label" data-bv-icon-for="phone"></i><small style="display: none;" class="help-block" data-bv-validator="notEmpty" data-bv-for="phone" data-bv-result="NOT_VALIDATED">Điện thoại không được để trống.</small><small style="display: none;" class="help-block" data-bv-validator="stringLength" data-bv-for="phone" data-bv-result="NOT_VALIDATED">Số điện thoại chỉ có thể là 10 hoặc 11 số.</small></div>
-                        <div class="form-group has-feedback"><input type="text" class="form-control" name="email" id="txtEmail" placeholder="Email" data-bv-field="email"><i style="display: none;" class="form-control-feedback bv-no-label" data-bv-icon-for="email"></i><small style="display: none;" class="help-block" data-bv-validator="notEmpty" data-bv-for="email" data-bv-result="NOT_VALIDATED">Địa chỉ email không được để trống.</small><small style="display: none;" class="help-block" data-bv-validator="emailAddress" data-bv-for="email" data-bv-result="NOT_VALIDATED">Không đúng định dạng email</small></div>
+                        </div>
+                        <div class="form-group has-feedback"><input type="text" class="form-control" name="name" id="txtName" value="" placeholder="Họ và tên" data-bv-field="name"></div>
+                        <div class="form-group has-feedback"><input type="text" class="form-control" name="phone" id="txtPhone" placeholder="Số điện thoại" data-bv-field="phone"></div>
+                        <div class="form-group has-feedback"><input type="text" class="form-control" name="email" id="txtEmail" placeholder="Email" data-bv-field="email"></div>
                         <div class="form-group text-center"><button class="btn btn-register btn-lg">Đăng ký</button>
                         </div>
                     </div>
-                    <div id="content-download"></div>
+                    <div id="content-register"></div>
                 </form>
                 </div>
                 
@@ -144,8 +144,8 @@ Fortuner 2.4 MT 4x2 (FG), Innova E 2.0 MT (IE&IEB) và hoàn tất thủ tục t
         <div id="footer">
             <div class="container">
             	<div class="row">
-                	<div class="col-sm-4"><a href=""><img src="img/ic_web.png"> www.toyota.com.vn</a></div>
-                    <div class="col-sm-4"><a href=""><img src="img/ic_fb.png"> TOYOTA Việt Nam</a></div>
+                	<div class="col-sm-4"><a href="https://www.toyota.com.vn/"><img src="img/ic_web.png"> www.toyota.com.vn</a></div>
+                    <div class="col-sm-4"><a href="https://www.facebook.com/ToyotaVietnam/"><img src="img/ic_fb.png"> TOYOTA Việt Nam</a></div>
                     <div class="col-sm-4"><a href=""><img src="img/ic_yt.png"> Toyota Motor Vietnam</a></div>
                 </div>
             </div>
