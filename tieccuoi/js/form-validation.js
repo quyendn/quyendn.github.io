@@ -77,7 +77,7 @@ $(document).ready(function() {
             var dataJSON = { "name": name, "phone": phone, "email": email, "emailto": emailto };
             showLoadingContactImage('content-download', 'frmContentReg');
             $.ajax({
-                url: "http://localhost:50623/api/FlamingoWeddingservice",
+                url: "http://alpha.f5academy.net/api/FlamingoWeddingservice",
                 type: "Post",
                 async: false,
                 data: dataJSON,
@@ -98,7 +98,7 @@ $(document).ready(function() {
                     $('#frmRegDownload').bootstrapValidator('resetForm', true);
                     toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', { timeOut: 5000 })
                     hideLoadingContactImage('content-download', 'frmContentReg');
-                    window.location.href = "http://resort.flamingodailai.com/HolistayVillas/dang-ky-thanh-cong.html";
+                    window.location.href = "http://resort.flamingodailai.com/Wedding/dang-ky-thanh-cong.html";
                 }
             });
         }
