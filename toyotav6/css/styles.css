@@ -311,6 +311,7 @@ a, .btn, button{
 	right:0;
 	top:50%;
 	margin-top:-120px;
+	z-index: 99999;
 	}
 #fixRight a{
 	display:block;
