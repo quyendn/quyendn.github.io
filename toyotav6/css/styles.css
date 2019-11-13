@@ -305,6 +305,52 @@ a, .btn, button{
     }
 
 /**/
+/**/
+#fixRight{
+	position:fixed;
+	right:0;
+	top:50%;
+	margin-top:-120px;
+	}
+#fixRight a{
+	display:block;
+	position:relative;
+	background:#4D4D4D;
+	width:35px;
+	height:40px;
+	border-bottom:1px solid #444;
+	}
+#fixRight a span{
+	position:absolute;
+	height:40px;
+	line-height:40px;
+	font-size:12px;
+	color:#fff;
+	background:#F41A1E;
+	padding:0 10px;
+	transition: all 300ms ease-in-out;
+	-webkit-transition: all 300ms ease-in-out;
+	-moz-transition: all 300ms ease-in-out;
+	-o-transition: all 300ms ease-in-out;
+	right:0%;
+	left:100%;
+	top:0;
+	bottom:0;
+	display:block;
+	width:150px;
+	opacity:0;
+	text-wrap:normal;
+	}
+#fixRight a:hover span{
+	opacity:1;
+	width:150px;
+	right:100%;
+	left:auto;
+	}
+#fixRight a:hover{
+	background:#222;
+	}
+
 img{
 	max-width:100%}
 .modal{
