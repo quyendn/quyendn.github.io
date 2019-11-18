@@ -112,7 +112,7 @@ $(document).ready(function() {
                     $('#frmRegDownload').bootstrapValidator('resetForm', true);
                     toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', { timeOut: 5000 })
                     hideLoadingContactImage('content-register', 'frmContentReg');
-                    window.location.href = "/dang-ky-thanh-cong.html";
+                    window.location.href = "https://quyendn.github.io/toyotav6/dang-ky-thanh-cong.html";
                 }
             });
         }
