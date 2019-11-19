@@ -82,16 +82,16 @@ $(document).ready(function() {
             var name = $('#txtName').val();
             var email = $('#txtEmail').val();
             var phone = $('#txtPhone').val();
-            var partner = $('#cboCars').val();
+            var description = '';
             var emailto = "quyendn84@gmail.com";
             var typeId = 1;
             var check = checkPhoneNumber();
             if (!check)
                 return;
-            var dataJSON = { "name": name, "phone": phone, "showroom": partner, "email": email, "emailto": emailto, "typeId": typeId };
+            var dataJSON = { "name": name, "phone": phone,  "email": email,"description": description, "emailto": emailto, "typeId": typeId };
             showLoadingContactImage('content-register', 'frmContentReg');
             $.ajax({
-                url: "https://alpha.f5academy.net/api/ToyotaVehicleservice",
+                url: "http://localhost:50623/api/Xuanhoaservice",
                 type: "Post",
                 async: false,
                 data: dataJSON,
@@ -171,19 +171,18 @@ $(document).ready(function() {
         onSuccess: function(e) {
 
             var name = $('#txtNameSub').val();
-            var email = $('#txtEmailSub').val();
+            var email = '';
             var phone = $('#txtPhoneSub').val();
-            var city = $('#cboSubCity').val();
-            var partner = $('#cboSubPartner').val();
+            var description = $('#txtDescription').val();
             var emailto = "quyendn84@gmail.com";
             var typeId = 1;
             var check = checkPhoneNumber2();
             if (!check)
                 return;
-            var dataJSON = { "city": city, "partner": partner, "name": name, "phone": phone, "email": email, "emailto": emailto, "typeId": typeId };
-            showLoadingContactImage('content-register-sub', 'frmContentReg');
+            var dataJSON = { "name": name, "phone": phone,  "email": email,"description": description, "emailto": emailto, "typeId": typeId };
+            showLoadingContactImage('content-register-sub', 'frmContentRegSub');
             $.ajax({
-                url: "https://alpha.f5academy.net/api/Mazdaservice",
+                url: "http://localhost:50623/api/Xuanhoaservice",
                 type: "Post",
                 async: false,
                 data: dataJSON,
