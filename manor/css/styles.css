@@ -327,15 +327,17 @@ a, .btn, button{
 	-o-transform: scale(1.15);
 	transform: scale(1.15);
 	}
-#section4 .row, #section4 .container-fluid{
-	margin-right:-5px;
-	margin-left:-5px;
-	}
-#section4 [class*="col-"]{
-	padding-right:5px;
-	padding-left:5px;
-	margin-bottom:10px;
-	}
+	#section4 .row{
+		margin-right:-5px;
+		margin-left:-5px;
+		}
+	#section4 .container-fluid, #section4 [class*="col-"]{
+		padding-right:5px;
+		padding-left:5px;
+		}
+	#section4 [class*="col-"]{
+		margin-bottom:10px;
+		}
 #section4 .inner{
 	position:relative;
 	overflow:hidden;
