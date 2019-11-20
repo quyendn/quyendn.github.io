@@ -228,6 +228,35 @@ a, .btn, button{
 #frmRegDownload .btn:hover, .btn-default:hover{
 	background:#8c7733;
 	color:#fff;}
+#frmRegDownloadSub .btn, .btn-default{
+	color:#fff;
+	background:#ae9649;
+	padding:10px 45px;
+	-moz-border-radius:0;
+	-webkit-border-radius:0;
+	border-radius:0;
+	-o-border-radius:0;
+	font-weight:500;
+	border:none;
+	}
+#frmRegDownloadSub .btn:hover, .btn-default:hover{
+	background:#8c7733;
+	color:#fff;}
+
+#frmRegContact .btn, .btn-default{
+	color:#fff;
+	background:#ae9649;
+	padding:10px 45px;
+	-moz-border-radius:0;
+	-webkit-border-radius:0;
+	border-radius:0;
+	-o-border-radius:0;
+	font-weight:500;
+	border:none;
+	}
+#frmRegContact .btn:hover, .btn-default:hover{
+	background:#8c7733;
+	color:#fff;}
 .formBt{
 	padding:0 30px 15px 30px;
 	border:10px solid #ae9649;
