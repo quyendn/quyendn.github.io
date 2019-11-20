@@ -1,0 +1,518 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="no-js" style="height:100%;">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>The Manor Central Park</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.nanoscroller.min.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <link href="css/font-face.css" rel="stylesheet" type="text/css" />
+    <link href="css/toastr.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrapValidator.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/owl.carousel.css" rel="stylesheet" type="text/css" />
+    
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i,600,600i,700&display=swap&subset=vietnamese" rel="stylesheet"> 
+    
+    
+</head>
+
+<body>
+    <div id="container">
+    	<div style="min-height:90px">
+            <div id="header">
+                <div class="affix" data-spy="affix" data-offset-top="79" id="">
+                    <div class="container">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"></button>
+                        <a data-scroll="" data-options="easing: easeInQuad" href="#slide" class="navbar-brand">
+                            <img src="img/logo.png">
+                        </a>
+                       <div class="pull-right" id="hdBt">
+                        <a href=""  data-toggle="modal" data-target="#formRegister">Đăng ký tư vấn</a>
+                        <a href="tel:0948562345"><span class="hidden-xs">Hotline:</span> 094 856 2345</a>
+                       </div>
+                        <nav class="collapse navbar-collapse" role="navigation">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a data-scroll="" data-options="easing: easeInQuad" href="#section1" class="navbar1">Tổng quan</a></li>
+                                <li><a data-scroll="" data-options="easing: easeInQuad" href="#section2" class="navbar1">Loại hình sản phẩm</a></li>
+                                <li><a data-scroll="" data-options="easing: easeInQuad" href="#section3" class="navbar1">Tiện ích khu đô thị</a></li>
+                                <li><a data-scroll="" data-options="easing: easeInQuad" href="#section5" class="navbar1">Chính sách bán hàng</a></li>
+                                <li><a data-scroll="" data-options="easing: easeInQuad" href="#footer" class="navbar1">Liên hệ</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="slide-wrap" style="">
+        	<div class="slg">
+            	<div class="container text-center">
+                    <div class="row">
+                        <div class="col-md-8 col-sm-7 text-uppercase ">
+                            <h4>THE MANOR CENTRAL PARK</h4>
+                            <h3>Khu đô thị mở thông minh<br/><span>Mang tầm quốc tế</span></h3>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="formSlide hidden-xs">
+            	<div class="container text-center">
+                	<div class="row">
+                    	<div class="col-md-4 col-sm-5 col-md-offset-8 col-sm-offset-7">
+                        	<div class="innerForm">
+                            	<div class="hd">
+                                    <h3>ƯU ĐÃI TỪ CHỦ ĐẦU TƯ<br/>BITEXCO</h3>
+                                    <p>Đăng ký nhận thông tin </p>
+                                </div>
+                                <form id="frmRegDownload" autocomplete="off" novalidate class="bv-form">
+                                    <button type="submit" class="bv-hidden-submit" style="display: none; width: 0px; height: 0px;"></button><button type="submit" class="bv-hidden-submit" style="display: none; width: 0px; height: 0px;"></button>
+                                    <div id="frmContentReg">
+                                        <div class="form-group has-feedback"><input type="text" class="form-control" name="name" id="txtName" value="" placeholder="Họ và tên" data-bv-field="name"></div>
+                                        <div class="form-group has-feedback"><input type="text" class="form-control" name="email" id="txtEmail" placeholder="Email" data-bv-field="email"></div>
+                                        <div class="form-group has-feedback"><input type="text" class="form-control" name="phone" id="txtPhone" placeholder="Số điện thoại" data-bv-field="phone"></div>
+                                        <div class="form-group text-center"><button class="btn">Đăng ký</button></div>
+                                    </div>
+                                    <div class="formBt">
+                                    	<p>Chúng tôi sẽ cố gắng liên lạc với<br/>Quý khách sớm nhất.</p>
+                                        <p class="phone">Hotine: 094 856 2345</p>
+                                    </div>
+                                    <div id="content-register"></div>
+                                </form>
+                            </div>
+                        	
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div data-ride="carousel" class="owl-carousel slide" id="slide">
+                <div role="listbox" class="carousel-inner">
+                    <div class="item active" id=""><img src="img/banner1.png" width="100%"></div>
+                    <div class="item" id=""><img src="img/banner1.png" width="100%"></div>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="section1">
+            <div class="container">
+            	<div class="st-hd"><h3><img src="img/parternt.png"> TỔNG QUAN DỰ ÁN</h3></div>
+                <div class="row" id="tongquan">
+                	<div class="col-sm-6">
+                        <ul class="list" style="font-style:italic;">
+                            <li><span>Vị trí:</span> Đường Nguyễn Xiển, Quận Hoàng Mai, Hà Nội.</li>
+                            <li><span>Tổng diện tích quy hoạch:</span> 89.7 ha</li>
+                            <li><span>Diện tích sản phẩm thấp tầng:</span> 72,8 – 705 m2/ căn.</li>
+                            <li><span>Mật độ xây dựng:</span> 20,8 %</li>
+                            <li><span>Điều kiện bàn giao:</span> Hoàn thiện với nội thất gắn tường cao cấp.</li>
+                            <li><span>Sản phẩm:</span> Biệt thự, Nhà liền kề, Nhà phố thương mại, Chung cư, Văn phòng.</li>
+                            <li><span>Tiện ích nổi trội:</span> Phố đi bộ, Công viên Trung tâm 6,6 ha, 5 công viên nội khu, Trường liên cấp, Trung tâm chăm sóc sức khỏe, Trung tâm thương mại, liền kề Công viên Chu Văn An rộng 100ha.</li>
+                            <li><span>Thời gian bàn giao:</span> Từ quý I/2019.</li>
+                            <li><span>Chủ đầu tư:</span> Bitexco Group</li>
+                        </ul>
+                        <div style="border-top:1px dashed #a1a1a1; margin:30px 0;"></div>
+                        <p><em>"Lấy cảm hứng từ tinh hoa văn hóa nghìn năm của Hà Nội cổ, hài hòa cùng nét hiện đại, văn minh đến từ những khu đô thị sầm uất với giá trị bất động sản luôn tăng theo thời gian như: khu Lower Manhattan, Soho Manhattan – New York, Boston Newbury - Massachusetts, Phố Ginza – Tokyo, Đại lộ Las Ramblas - Barcelona  hay Montaigne - Paris, The Manor Central Park tự hào mang đến cho bạn những trải nghiệm tuyệt vời nhất về một môi trường sống lý tưởng, chốn làm việc tiện nghi và địa điểm kinh doanh sầm uất."</em></p>
+                    </div>
+                    <div class="col-sm-6"><img src="img/tonquan.jpg" width="100%"></div>
+                    
+                    <div class="col-sm-6">
+                    	<div><img src="img/lienket.jpg"></div>
+                        <div class="st-hd" style="margin-bottom:15px;"><h3><img src="img/parternt.png"> LIÊN KẾT VÙNG THUẬN LỢI</h3></div>
+                        <div class="row" id="lienket">
+                        	<div class="col-sm-6"><div class="inner"><img src="img/ic_1.jpg"> 20' | Trung tâm thành phố</div></div>
+                            <div class="col-sm-6"><div class="inner"><img src="img/ic_1.jpg"> 05' | Trung tâm hội nghị Quốc gia</div></div>
+                            <div class="col-sm-6"><div class="inner"><img src="img/ic_2.jpg"> 30' | Sân bay quốc tế Nội bài</div></div>
+                            <div class="col-sm-6"><div class="inner"><img src="img/ic_3.jpg"> 15' | Bệnh viện Quân đội 103</div></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                    	<div class="st-hd" style="margin-bottom:15px;"><h3><img src="img/parternt.png"> VỊ TRÍ HIẾM CÓ</h3></div>
+                        <p><em>Tọa lạc đắc địa tại cửa ngõ phía Tây Nam thủ đô, The Manor Central Park sở hữu liên kết vùng linh hoạt khi tiếp giáp với các đại lộ lớn (đường vành đai 3, Nguyễn Xiển, Xa La) và được đồng bộ về cơ sở hạ tầng theo quy hoạch đến năm 2030, tầm nhìn 2050 được UBND Hà Nội phê duyệt.</em></p>
+                        <div><img src="img/vitri.jpg"></div>
+                    </div>
+                    <div class="col-sm-7">
+                    	<div class="text-uppercase" style="font-size:46px; margin-bottom:30px; font-weight:300;">Quy hoạch tổng thể</div>
+                        <div><img src="img/tongthe.jpg"></div>
+                    </div>
+                    <div class="col-sm-5"><img src="img/quyhoach.jpg"></div>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="section2">
+            <div class="container">
+            	<div class="st-hd"><h3><img src="img/parternt.png"> LOẠI HÌNH SẢN PHẨM</h3></div>
+                <div class="row">
+                	<div class="col-sm-6">
+                    	<div class="text-uppercase">
+                        	<p>NHÀ PHỐ THƯƠNG MẠI: BẠCH KIM - VÀNG - BẠC</p>
+                            <p>NHÀ LIỀN KỀ : BẠCH KIM - VÀNG</p>
+                            <p>BIỆT THỰ SONG LẬP : BẠCH KIM - VÀNG</p>
+                            <p>BIỆT THỰ ĐƠN LẬP : BẠCH KIM - KIM CƯƠNG</p>
+                        </div>
+                        <div style="margin:30px 0; font-weight:700; font-size:20px;">QUY HOẠCH  ĐỘC ĐÁO - KIẾN TRÚC ẤN TƯỢNG</div>
+                        <p><em>Tại The Manor Central Park, từ bất cứ vị trí nào bạn cũng có thể thụ hưởng hệ tiện ích toàn diện xứng tầm, đồng thời tạo lập nhiều trải nghiệm sống khác biệt, phong phú tựa những khu đô thị đẳng cấp trên thế giới thông qua lối quy hoạch bài bản của chủ đầu tư Bitexco.</em></p>
+                        <div class="text-center" style="margin-top:30px;"><button class="btn btn-default"  data-toggle="modal" data-target="#formRegister">Đăng ký tham quan nhà mẫu</button></div>
+                    </div>
+                    <div class="col-sm-6">
+                    	<div data-ride="carousel" class="owl-carousel slide" id="slide">
+                            <div role="listbox" class="carousel-inner">
+                                <div class="item active" id=""><img src="img/nhaphothuongmai.jpg" width="100%"></div>
+                                <div class="item" id=""><img src="img/nhaphothuongmai.jpg" width="100%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="section3">
+            <div style="max-width:1700px; margin:0 auto">
+                <div class="container-fluid">
+                    <div class="st-hd"><h3><img src="img/parternt.png"> TIỆN ÍCH</h3></div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div><img src="img/phodibo.jpg"></div>
+                            <div class="st3-tl text-uppercase">
+                                <p>Phố đi bộ</p>
+                                <p>Âm hưởng tấp nập của 36 phố phường</p>
+                            </div>
+                            <p>Không còn nữa những hối hả còi xe mà đổi lại là sự thảnh thơi, thư giãn, tại The Manor Central Park, có một con phố đi bộ cuối tuần chỉ dành riêng cho bạn tản bộ thong dong.</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="st3-tl text-uppercase">
+                                <p>CÔNG VIÊN TRUNG TÂM</p>
+                                <p>“TRÁI TIM XANH” CỦA KỶ NGUYÊN PHỐ MỚI</p>
+                            </div>
+                            <p style="margin-bottom:30px;">Bắt đầu từ đại lộ Nguyễn Xiển, kéo dài xuyên suốt trung tâm dự án theo trục Bắc Nam, kết nối 100ha không gian xanh và mặt nước của Công viên Chu Văn An, Công viên Trung Tâm tiếp tục lan tỏa theo trục Đông Tây từ đại lộ Hoàng Mai rợp bóng mát tới Phố đi bộ với những quảng trường nhỏ và các công viên ngón tay, tạo nên một “nhịp đập xanh” xuyên suốt khu đô thị.</p>
+                            <div><img src="img/congvientrungtam.jpg"></div>
+                        </div>
+                        <div class="col-sm-6"><img src="img/quangtruong.jpg"></div>
+                        <div class="col-sm-6">
+                            <div class="st3-tl text-uppercase" style="margin-top:100px;">
+                                <p>Quảng trường Châu Âu </p>
+                                <p>Hoa lệ và khoáng đạt</p>
+                            </div>
+                            <p style="margin-bottom:30px;">Được ví như một cộng đồng nhỏ ngoài trời ngay trong lòng một khu đô thị lớn, Quảng trường Châu Âu tại The Manor Central Park được thiết kế rộng mở dựa trên nguồn cảm hứng đến từ những quảng trường tráng lệ chốn trời Tây.</p>
+                            <div class="row">
+                                <div class="col-sm-6"><img src="img/beboi.jpg"></div>
+                                <div class="col-sm-6">
+                                    <div class="st3-tl text-uppercase"  style="margin-top:60px;">
+                                        <p>Bể bơi ngoài trời</p>
+                                    </div>
+                                    <p>Thỏa sức đắm mình trong làn nước trong xanh</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-top:45px;">
+                        <div class="col-sm-4">
+                            <div><img src="img/khusinhhoat.jpg"></div>
+                            <div class="st3-tl text-uppercase"  style="margin-top:30px;">
+                                <p>Khu vực sinh hoạt cộng đồng </p>
+                            </div>
+                            <p>Kết nối mọi người bằng những không gian sinh hoạt chung đa dạng</p>
+                        </div>
+                        <div class="col-sm-4">
+                            <div><img src="img/truonghoc.jpg"></div>
+                            <div class="st3-tl text-uppercase"  style="margin-top:30px;">
+                                <p>Trường học quốc tế</p>
+                            </div>
+                            <p>Môi trường giáo dục đẳng cấp</p>
+                        </div>
+                        <div class="col-sm-4">
+                            <div><img src="img/trungtamthuongmai.jpg"></div>
+                            <div class="st3-tl text-uppercase"  style="margin-top:30px;">
+                                <p>Trung tâm thương mại sầm uất </p>
+                            </div>
+                            <p>Thiên đường mua sắm, vui chơi giải trí bất tận</p>
+                        </div>
+                    </div>
+                    <div class="text-center" style="margin-top:30px;"><button class="btn btn-default"  data-toggle="modal" data-target="#formRegister">Đăng ký nhận tư vấn</button></div>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="section4">
+            <div class="container">
+            	<div class="st-hd"><h3><img src="img/parternt.png"> PHONG CÁCH SỐNG TRẢI NGHIỆM SỐNG KHÁC BIỆT</h3></div>
+            </div>
+            <div style="max-width:1700px; margin:0 auto">
+            	<div class="container-fluid">
+                    <div class="row" style="">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="row">
+                            <div class="col-sm-12">
+                                <div class="inner">
+                                    <div class="text top" style="right:60px; text-align:center">
+                                        <p>Đầy sôi động &amp;<br/>có tính kết nối cao</p>
+                                    </div>
+                                    <div class="thumb"><img src="img/pc1.jpg"></div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                            	<div class="inner">
+                                    <div class="text bottom" style="right:30px; text-align:right; color:#fff">
+                                        <p>Điểm đến thương mại<br/>NHỘN NHỊP, SẦM UẤT</p>
+                                    </div>
+                                    <div class="thumb"><img src="img/pc3.jpg"></div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                            	<div class="inner">
+                                    <div class="text top" style="left:30px; text-align:left">
+                                        <p>Không gian mua sắm<br/>Bất tận</p>
+                                    </div>
+                                    <div class="thumb"><img src="img/pc4.jpg"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                    	<div class="row">
+                            <div class="col-sm-6">
+                                <div class="inner">
+                                    <div class="text top" style="right:30px; text-align:center">
+                                        <p>Điểm đến văn hóa<br/>KẾT NỐI CỘNG ĐỒNG</p>
+                                    </div>
+                                    <div class="thumb"><img src="img/pc5.jpg"></div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                            	<div class="row">
+                                    <div class="col-sm-7 col-xs-6">
+                                        <div class="inner">
+                                            <div class="thumb"><img src="img/pc6.jpg"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-5 col-xs-6">
+                                    	<div class="inner">
+                                            <div class="thumb"><img src="img/pc8.jpg"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-5 col-xs-6">
+                                    	<div class="inner">
+                                            <div class="thumb"><img src="img/pc9.jpg"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-7 col-xs-6">
+                                        <div class="inner">
+                                            <div class="thumb"><img src="img/pc7.jpg"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                            	<div class="inner">
+                                    <div class="text top" style="left:30px; text-align:center">
+                                        <p><span style="color:#ad964a">Sôi động ban ngày</span><br/><strong style="font-size:30px; color:#fff">Rực rỡ ban đêm</strong></p>
+                                    </div>
+                                    <div class="thumb"><img src="img/pc2.jpg"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="section5">
+            <div class="container">
+            	<div class="st-hd"><h3><img src="img/parternt.png"> CHÍNH SÁCH BÁN HÀNG ĐẶC BIỆT</h3></div>
+                <div class="row">
+                	<div class="col-sm-6">
+                    	<ul>
+                        	<li>Cơ hội Bốc thăm trúng thưởng 01 Mercedes GLC 200 2019 cho 30 khách hàng đầu tiên giao dịch thành công các sản phẩm tại The Manor Central Park.</li>
+                            <li>Tặng 04 lượng vàng SJC 9999 cho khách hàng giao dịch thành công Biệt thự song lập hoặc Nhà phố thương mại Bạch kim.</li>
+                            <li>Tặng 02 lượng vàng SJC 9999 cho khách hàng giao dịch thành công sản phẩm Nhà phố thương mại hoặc Nhà liền kề.</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6">
+                    	<ul>
+                        	<li>Chiết khấu ngay 12% giá trị sản phẩm cho khách hàng thanh toán sớm 95% giá trị hợp đồng mua bán (trước ngày 10/11/2019).</li>
+                            <li>Hỗ trợ lãi suất 0% lên tới 36 tháng kể từ ngày giải ngân đầu tiên.</li>
+                            <li>Tặng Thẻ hội viên Marriott Club.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="container">
+            	<div class="row">
+                	<div class="col-sm-3"><img src="img/ft_logo.png"></div>
+                    <div class="col-sm-4 col-sm-offset-1">
+                    	<h3 style="margin-top:0;">The Manor Central Park</h3>
+                        <p>Kỷ nguyên mới của 36 phố phường</p>
+                        <address>
+                        	<p><span style="color:#fff;">Địa chỉ:</span>  Nguyễn Xiển, quận Hoàng Mai, Hà Nội. </p>
+                            <p><span style="color:#fff;">Điện thoại:</span> 094 856 2345 - 1900 299 999</p>
+                            <p><span style="color:#fff;">Email:</span>  sales.hn@bitexco.com.vn</p>
+                        </address>
+                        <div class="social">
+                        	<a href="https://www.facebook.com/manorcentralpark/"><img src="img/ic_fb.png"></a>
+                            <a href=""><img src="img/ic_gl.png"></a>
+                            <a href="https://www.youtube.com/watch?v=PU0RLhwgqHk"><img src="img/ic_yt.png"></a>
+                        </div>
+                    </div>
+                    <div class="col-sm-3  col-sm-offset-1">
+                    	<h4 style="margin-top:0;">LIÊN HỆ VỚI CHÚNG TÔI</h4>
+                    	<form id="frmRegDownload" autocomplete="off" novalidate class="bv-form">
+                            <button type="submit" class="bv-hidden-submit" style="display: none; width: 0px; height: 0px;"></button><button type="submit" class="bv-hidden-submit" style="display: none; width: 0px; height: 0px;"></button>
+                            <div id="frmContentReg">
+                                <div class="form-group has-feedback"><input type="text" class="form-control" name="name" id="txtName" value="" placeholder="Họ và tên" data-bv-field="name"></div>
+                                <div class="form-group has-feedback"><input type="text" class="form-control" name="email" id="txtEmail" placeholder="Email" data-bv-field="email"></div>
+                                <div class="form-group has-feedback"><input type="text" class="form-control" name="phone" id="txtPhone" placeholder="Số điện thoại" data-bv-field="phone"></div>
+                                <div class="form-group text-center"><button class="btn">Đăng ký</button></div>
+                            </div>
+                            
+                            <div id="content-register"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---->
+    <div class="modal fade" id="formRegister" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+            	<button type="button" class="close" data-dismiss="modal" aria-label="Close">x</button>
+                <div class="modal-body">
+                	<div style="max-width:600px; margin:0 auto 30px auto">
+                        <div style="text-align:center; margin-bottom:30px">
+                            <h3><strong>ƯU ĐÃI TỪ CHỦ ĐẦU TƯ BITEXCO</strong></h3>
+                            <p>Đăng ký nhận thông tin </p>
+                        </div>
+                        <form id="frmRegDownload" autocomplete="off" novalidate class="bv-form">
+                            <button type="submit" class="bv-hidden-submit" style="display: none; width: 0px; height: 0px;"></button><button type="submit" class="bv-hidden-submit" style="display: none; width: 0px; height: 0px;"></button>
+                            <div id="frmContentReg">
+                                <div class="form-group has-feedback"><input type="text" class="form-control" name="name" id="txtName" value="" placeholder="Họ và tên" data-bv-field="name"></div>
+                                <div class="form-group has-feedback"><input type="text" class="form-control" name="email" id="txtEmail" placeholder="Email" data-bv-field="email"></div>
+                                <div class="form-group has-feedback"><input type="text" class="form-control" name="phone" id="txtPhone" placeholder="Số điện thoại" data-bv-field="phone"></div>
+                                <div class="form-group text-center"><button class="btn">Đăng ký</button></div>
+                            </div>
+                            
+                            <div id="content-register"></div>
+                        </form>
+                    </div>
+                    <div class="row">
+                	<div class="col-sm-6">
+                    	<ul>
+                        	<li>Cơ hội Bốc thăm trúng thưởng 01 Mercedes GLC 200 2019 cho 30 khách hàng đầu tiên giao dịch thành công các sản phẩm tại The Manor Central Park.</li>
+                            <li>Tặng 04 lượng vàng SJC 9999 cho khách hàng giao dịch thành công Biệt thự song lập hoặc Nhà phố thương mại Bạch kim.</li>
+                            <li>Tặng 02 lượng vàng SJC 9999 cho khách hàng giao dịch thành công sản phẩm Nhà phố thương mại hoặc Nhà liền kề.</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6">
+                    	<ul>
+                        	<li>Chiết khấu ngay 12% giá trị sản phẩm cho khách hàng thanh toán sớm 95% giá trị hợp đồng mua bán (trước ngày 10/11/2019).</li>
+                            <li>Hỗ trợ lãi suất 0% lên tới 36 tháng kể từ ngày giải ngân đầu tiên.</li>
+                            <li>Tặng Thẻ hội viên Marriott Club.</li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+            </div>
+      </div>
+    </div>
+    
+    
+    
+    <script src="js/smooth-scroll.js"></script>
+    <script type="text/javascript" src="js/bootstrapValidator.min.js"></script>
+    <script type="text/javascript" src="js/form-validation.js"></script>
+    <script type="text/javascript" src="js/toastr.js"></script>
+    <script type="text/javascript">
+        function AllowNumberOnly(evt) {
+            evt = (evt) ? evt : event;
+            var charCode = (evt.charCode) ? evt.charCode : ((evt.keyCode) ? evt.keyCode : ((evt.which) ? evt.which : 0));
+            if ((charCode > 31) && (charCode < 48 || charCode > 57) && charCode != 8 && charCode != 37 && charCode != 39 && charCode != 45 && charCode != 46) {
+                return false;
+            }
+            return true;
+        }
+        $(document).ready(function () {
+            var owl = $('.carousel-inner');
+            owl.owlCarousel({
+                navText: [$('.left'), $('.right')],
+                nav: false,
+                loop: true,
+                autoHeight: true,
+                transitionStyle: "fade",
+                stopOnHover: true,
+                singleItem: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 1
+                    },
+                    1000: {
+                        items: 1
+                    }
+                }
+            });
+            $('.slogan').click(function () { owl.trigger('to.owl.carousel',1); });
+            $('.about').click(function () { owl.trigger('to.owl.carousel', 2); });
+        });
+        
+    </script>
+    <script>
+        smoothScroll.init({
+            speed: 1000,
+            easing: 'easeInOutCubic',
+            offset: 70,
+            updateURL: false,
+            callbackBefore: function (toggle, navbar1) { },
+            callbackAfter: function (toggle, navbar1) { }
+        });
+
+    </script>
+    <script>
+		$('.owl-carousel-cars').owlCarousel({
+            loop: true,
+            margin: 10,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: true
+                },
+                768: {
+                    items: 2,
+                    nav: true
+                },
+                1000: {
+                    items: 3,
+                    nav: true,
+                    loop: true,
+                    margin: 30,
+                }
+            }
+        })
+    </script>
+    <script>
+    	$("button").click(function(){
+			$(".navbar-toggle").toggleClass("close");
+		});
+
+    	$(".navbar-toggle").click(function(){
+			$("#header").toggleClass("open");
+		});
+  
+    	$(".navbar-nav a").click(function(){
+			$(".navbar-collapse").removeClass("in");
+		
+			$(".navbar-toggle").removeClass("close");
+		});
+    </script>
+    <script src="js/smooth-scrollbar.js"></script>
+    <script> Scrollbar.initAll(); </script>
+    <link href="css/smooth-scrollbar.css" rel="stylesheet" type="text/css" />
+</body>
+
+
+</html>
