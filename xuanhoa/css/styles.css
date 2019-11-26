@@ -454,10 +454,10 @@ img{
 	#footer .col-sm-5{
 		margin-bottom:30px;
 		}
-	#section3 .inner, .owl-carousel .item{
+	#section3 .inner{
 		height:320px;
 		}
-	#section3 .inner img, .owl-carousel .item img{
+	#section3 .inner img{
 		object-fit: cover;
 		height:320px;}
 	#thanks{
