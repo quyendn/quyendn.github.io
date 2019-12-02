@@ -48,6 +48,13 @@ $(document).ready(function() {
                     }
                 }
             },
+            cboLocation: {
+                validators: {
+                    notEmpty: {
+                        message: 'Cần chọn khu vực đăng ký'
+                    }
+                }
+            },
             phone: {
                 validators: {
                     notEmpty: {
@@ -67,13 +74,14 @@ $(document).ready(function() {
             var email = $('#txtEmail').val();
             var phone = $('#txtPhone').val();
             var emailto = "onecontact@mobifone.vn";
+            var typeId = $('#cboLocation').val();
             var check = checkPhoneNumber();
             if (!check)
                 return;
-            var dataJSON = { "name": name, "phone": phone, "email": email, "emailto": emailto };
+            var dataJSON = { "name": name, "phone": phone, "email": email,"typeId":typeId, "emailto": emailto };
             showLoadingContactImage('content-register', 'frmContentReg');
             $.ajax({
-                url: "https://alpha.f5academy.net/api/MobifoneOCservice",
+                url: "http://localhost:50623/api/MobifoneContactService",
                 type: "Post",
                 async: false,
                 data: dataJSON,

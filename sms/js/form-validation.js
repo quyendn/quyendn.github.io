@@ -59,6 +59,13 @@ $(document).ready(function() {
                         message: 'Số điện thoại chỉ có thể là 10 số.'
                     }
                 }
+            },
+            cboLocation: {
+                validators: {
+                    notEmpty: {
+                        message: 'Cần chọn khu vực đăng ký'
+                    }
+                }
             }
         },
         onSuccess: function(e) {
@@ -67,13 +74,14 @@ $(document).ready(function() {
             var email = $('#txtEmailDownload').val();
             var phone = $('#txtPhoneDownload').val();
             var emailto = "linh.nth@mobifone.vn";
+            var typeId = $('#cboLocation').val();
             var check = checkPhoneNumber();
             if (!check)
                 return;
-            var dataJSON = { "name": name, "phone": phone, "email": email, "emailto": emailto };
+            var dataJSON = { "name": name, "phone": phone, "email": email,"typeId":typeId, "emailto": emailto };
             showLoadingContactImage('content-register', 'frmContentDownloadReg');
             $.ajax({
-                url: "https://alpha.f5academy.net/api/MobifoneSMSservice",
+                url: "https://alpha.f5academy.net/api/MobifoneContactService",
                 type: "Post",
                 async: false,
                 data: dataJSON,
@@ -134,6 +142,13 @@ $(document).ready(function() {
                         message: 'Số điện thoại chỉ có thể là 10 số.'
                     }
                 }
+            },
+            cboLocation2: {
+                validators: {
+                    notEmpty: {
+                        message: 'Cần chọn khu vực đăng ký'
+                    }
+                }
             }
         },
         onSuccess: function (e) {
@@ -142,13 +157,14 @@ $(document).ready(function() {
             var email = $('#txtEmail').val();
             var phone = $('#txtPhone').val();
             var emailto = "linh.nth@mobifone.vn";
+            var typeId = $('#cboLocation2').val();
             var check = checkPhoneNumber2();
             if (!check)
                 return;
-            var dataJSON = { "name": name, "phone": phone, "email": email, "emailto": emailto };
+            var dataJSON = { "name": name, "phone": phone, "email": email,"typeId":typeId, "emailto": emailto };
             showLoadingContactImage('content-user-register', 'frmContentDownloadUserReg');
             $.ajax({
-                url: "https://alpha.f5academy.net/api/MobifoneSMSservice",
+                url: "https://alpha.f5academy.net/api/MobifoneContactService",
                 type: "Post",
                 async: false,
                 data: dataJSON,
