@@ -75,7 +75,7 @@ $(document).ready(function() {
             var name = $('#txtName').val();
             var phone = $('#txtPhone').val();
             var email = $('#txtEmail').val();
-            var vehicle = $('#cboVehicle').val();
+            var vehicle = "";
             var address = $('#cboLocation').val();
             var emailto = "quyendn84@gmail.com";
             var webdomain = "f5academy";
@@ -85,7 +85,7 @@ $(document).ready(function() {
                 return;
             showLoadingContactImage('content-mobile', 'formContentContactMobile');
             $.ajax({
-                url: "https://alpha.f5academy.net/api/BMWservice",
+                url: "https://alpha.f5academy.net/api/BMWX3service",
                 type: "Post",
                 async: false,
                 data: dataJSON,
@@ -107,7 +107,7 @@ $(document).ready(function() {
                     toastr.success('Cảm ơn bạn đã đăng ký.</br>Chúng tôi sẽ liên hệ với quý khách trong thời gian sớm nhất!', {
                         timeOut: 5000
                     })
-                    window.location.href = "/dang-ky-thanh-cong.html";
+                    window.location.href = "https://quyendn.github.io/bwmx3/dang-ky-thanh-cong.html";
                 }
             });
         }
