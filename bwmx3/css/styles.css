@@ -12,7 +12,7 @@ color: #4c4848;
 font-size: 16px;
 line-height: 26px;
 background: #fff;
-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-family: "HelveticaNeue-Light";
 }
 
 a {
@@ -237,7 +237,11 @@ position:relative;
 background:#b72133;
 padding:15px 30px;
 }
-.form-control, .btn{
+#section3 .btn, #banner .btn, .form-control, .btn{
+	-moz-border-radius:0;
+	-webkit-border-radius:0;
+	-o-border-radius:0;
+	border-radius:0;
 }
 #section3 .form-control{
 background:#f2f2f2;
@@ -248,10 +252,7 @@ text-transform:uppercase;
 color:#fff;
 background:#1c69d4;
 padding:10px 30px;
--moz-border-radius:0;
--webkit-border-radius:0;
--o-border-radius:0;
-border-radius:0;
+
 }	
 
 #slide-wrap-bt{
@@ -272,14 +273,13 @@ padding-bottom:60px;
 }
 .section .st-hd{
 margin-bottom:30px;
-font-family: 'UTMNeoSansIntelBold';
+
 }
 .section .st-hd h3{
 font-size:30px;
-margin0;
+margin:0;
 line-height:normal;
 display:inline-block;
-padding-left:170px;
 padding-bottom:10px;
 }
 
@@ -291,6 +291,7 @@ background:#f2f2f2;
 #section1 .text{
 padding:30px;
 background:#fff;
+min-height:315px;
 }
 #section1 .carousel-control{
 width:44px;
@@ -336,7 +337,6 @@ font-size:16px;
 #footer h4{
 font-size:18px;
 margin:0 0 10px 0;
-font-family: 'UTMNeoSansIntelBold';
 }
 #footer p{
 margin:0;
@@ -389,6 +389,8 @@ margin-top: 30px;
 #header, #header .affix {
 	min-height: 60px;
 }
+#section1 .text{
+	min-height:0 !important;}
 
 .navbar-brand {
 	float: none;
@@ -535,7 +537,6 @@ right: 10px;
 top: 50%;
 margin-top: -153px;
 z-index: 998;
-font-family: 'UTMNeoSansIntelBold';
 }
 
 #pagination-st li {
@@ -684,7 +685,7 @@ font-family: 'UTMNeoSansIntelBold';
 		border-radius: 5px;
 		text-transform: uppercase;
 		text-align: center;
-		font-family: 'UTMNeoSansIntelBold';
+		
 		background: url(../img/bg_linkft.png) repeat-x 50% 50%;
 	}
 
