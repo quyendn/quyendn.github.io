@@ -15,6 +15,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.tmpl.min.js"></script>
     <script src="js/jquery.nanoscroller.min.js"></script>
     <script type="text/javascript" src="js/wow/wow.min.js"></script>
     <script src="js/jquery.fancybox.js" type="text/javascript"></script>
@@ -510,54 +511,67 @@ j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; 
             </div>
         </div>
         <div class="section wow fadeInUp" id="section7">
+            <script type="text/javascript">
+                $(function () {
+                    var url =
+                        'https://alpha.f5academy.net/api/articleservice/?listArticle&userName=mazda8&pageSize=4';
+                    $.ajax({
+                        type: 'GET',
+                        url: url,
+                        async: false,
+                        contentType: "json",
+                        dataType: 'jsonp',
+                        success: function (data) {
+                            $.each(data, function (index, item) {
+                                if (index == 0) {
+                                     $("#itemTemplateArticle").tmpl(item)
+                                        .appendTo("#list-article-box-top");
+                                }
+                                else {
+                                    $("#itemTemplateArticleTop").tmpl(item)
+                                        .appendTo("#list-article-box");
+                                }
+
+                            });
+                        },
+                        error: function (data, status, jqXHR) { }
+                    });
+                });
+            </script>
             <div class="container">
                 <div class="st-hd text-center">
                     <h3><span>TIN TỨC & THÔNG TIN ƯU ĐÃI</span></h3>
                 </div>
                 <div class="row wow fadeInDown">
                     <div class="col-sm-12">
-                        <div class="inner">
-                            <h2>MAZDA CX-8 NHẬN ĐƯỢC NHIỀU ĐÁNH GIÁ TÍCH CỰC TỪ GIỚI CHUYÊN GIA VÀ KHÁCH HÀNG.</h2>
-                            <div>
-                                <a href="http://mazdamotors.vn/mazda-viet-nam/Tin-tuc-hoat-dong/0E800C/mazda-cx-8-nhan-duoc-nhieu-danh-gia-tich-cuc-tu-gioi-chuyen-gia-va-khach-hang.aspx">
-                                    <img src="img/ud-1.png" width="100%">
-                                </a>
-                            </div>
+                        <div class="inner" id="list-article-box-top">
+             
+                        <script id="itemTemplateArticle" type="text/x-jquery-tmpl">
+                            <a href="${link}">
+                                <h2>${title}</h2>
+                                <div style="overflow:hidden"><img src="https://alpha.f5academy.net${imagePath}" class="zoom" width="100%"></div>
+                            </a>
+                            
+                        </script>
                         </div>
+                      
                     </div>
                 </div>
                 <div style="background:#333132; padding:10px 10px 0 10px">
-                    <div class="row">
-                        <div class="col-md-4 col-sm-4">
-                            <div class="inner wow fadeInLeft">
-                                <a href="http://mazdamotors.vn/mazda-viet-nam/Tin-tuc-hoat-dong/0E800D/giai-dap-nhung-cau-hoi-lon-ve-mazda-cx-8-tai-viet-nam.aspx">
-                                    <div>
-
-                                        <img src="img/ud-2.png" width="100%">
-                                    </div>
-                                    <h2>GIẢI ĐÁP NHỮNG CÂU HỎI LỚN VỀ MAZDA CX-8 TẠI VIỆT NAM</h2>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-4">
-                            <div class="inner wow fadeInUp">
-                                <a href="https://nld.com.vn/kinh-te/thaco-tung-ra-thi-truong-xe-7-cho-mazda-cx-8-gia-hon-11-ti-dong-20190623085523456.htm">
-                                    <div><img src="img/ud-3.png" width="100%"></div>
-                                    <h2>
-                                        MAZDA VIETNAM CHÍNH THỨC RA MẮT MAZDA CX-8 CẠNH TRANH Ở PHÂN KHÚC SUV 7 CHỖ
-                                    </h2>
-                                </a>
+                    <div class="row" id="list-article-box">
+                        <script id="itemTemplateArticleTop" type="text/x-jquery-tmpl">
+                            <div class="col-md-4 col-sm-4">
+                                <div class="inner wow fadeInLeft">
+                                    <a href="${link}">
+                                        
+                                        <div style="overflow:hidden"><img src="https://alpha.f5academy.net${imagePath}" class="zoom" width="100%"></div>
+                                        <h2>${title}</h2>
+                                    </a>
+                                </div>
                             </div>
 
-                        </div>
-                        <div class="col-md-4 col-sm-4">
-                            <div class="inner wow fadeInRight">
-                                <a href="http://cafef.vn/mazda-cx-8-chot-gia-tu-1149-ty-dong-tai-viet-nam-20190620112629734.chn">
-                                    <div><img src="img/ud-4.png" width="100%"></div>
-                                    <h2>MAZDA CX-8 CHỐT GIÁ TỪ 1,149 TỶ ĐỒNG TẠI</br> VIỆT NAM TỪ THÁNG 6.2019</h2>
-                                </a>
-                            </div>
-                        </div>
+                        </script>
+                        
                     </div>
                 </div>
             </div>
@@ -615,7 +629,7 @@ j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; 
                                         <td>
                                             <h2>Brochure</h2>
                                             <p>...</p>
-                                            <p><a href="http://cx-8.mazdamotors.vn/img/BROCHURE v 5.pdf" target="_blank">Download</a></p>
+                                            <p><a href="http://cx-8.mazdamotors.vn/img/BROCHURE CX-8 FINAL.pdf" target="_blank">Download</a></p>
                                         </td>
                                     </tr>
                                 </tbody>
