@@ -12,7 +12,7 @@ color: #4c4848;
 font-size: 16px;
 line-height: 26px;
 background: #fff;
-font-family: "HelveticaNeue-Light";
+font-family:Arial, "HelveticaNeue-Light";
 }
 
 a {
@@ -235,7 +235,7 @@ color: #4c4848
 .affix .navbar-brand {
 	float: none;
 	display: block;
-	width: 80px;
+	/* width: 80px; */
 }
 
 /**/
