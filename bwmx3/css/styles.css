@@ -366,8 +366,8 @@ margin-bottom:15px;
 #section2 .nav-tabs > li > a{
 padding:5px;
 border:none;
-width:54px;
-height:54px;
+width:44px;
+height:44px;
 margin:0 5px;
 border:1px solid transparent;
 -moz-border-radius:50%;
@@ -396,7 +396,7 @@ clear:both;
 	font-weight:lighter;
 	}
 #section2 .tab-pane img {
-    width: 800px;
+    width: 700px;
     max-width: 100%;
 }
 
