@@ -462,24 +462,24 @@ position: relative;
 height: 100%;
 padding: 90px 0 400px 0;
 text-align: center;
-background: url(../img/banner.png) no-repeat 50% 50%;
+
 }
 
 #thanks .inner {
-border: 1px solid #fff;
-padding: 30px;
+
+padding: 0;
 }
 
 #thanks .text {
-color: #fff;
-border: 1px solid #fff;
-padding: 30px;
-background: rgba(0, 0, 0, 0.5);
-}
-
-#thanks .text {
-font-size: 24px;
-}
+	color: #fff;
+	
+	padding: 30px;
+	
+	}
+	
+	#thanks .text {
+	font-size: 24px;
+	}
 
 #thanks .text .logo {
 margin-top: 30px;

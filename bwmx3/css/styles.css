@@ -442,15 +442,15 @@ padding: 30px;
 }
 
 #thanks .text {
-color: #fff;
-
-padding: 30px;
-
-}
-
-#thanks .text {
-font-size: 24px;
-}
+	color: #fff;
+	border: 1px solid #fff;
+	padding: 30px;
+	background: rgba(0, 0, 0, 0.5);
+	}
+	
+	#thanks .text {
+	font-size: 24px;
+	}
 
 #thanks .text .logo {
 margin-top: 30px;
