@@ -188,8 +188,25 @@
             </div>
         </div>
         <div class="section wow fadeInUp animated" id="section2">
-           
             <div class="container">
+                <div class="text-center price">
+                    <a href="javascript:void(0);" class="btn-520">520i</a> | <a href="javascript:void(0);" class="btn-530">530i</a>
+                </div>
+                <script type="text/javascript">
+                $(document).ready(function(){
+                    $(".btn-520").click(function(){
+                        $('#content-car').load('https://quyendn.github.io/bwmx5/car.html #520HtmlContent');
+                        return false;    
+                    });
+                    $(".btn-530").click(function(){
+                        $('#content-car').load('https://quyendn.github.io/bwmx5/car.html #530HtmlContent');
+                        return false;    
+                    });
+                });
+                </script>
+
+            </div>
+            <div class="container" id="content-car">
                 <ul class="nav nav-tabs">
                     <li class="active"><a data-toggle="tab" href="#tabs1"><img src="img/Atlas-Cedar.png"></a></li>
                     <li><a data-toggle="tab" href="#tabs2"><img src="img/Jatoba.png"></a></li>
@@ -426,6 +443,7 @@
             </div>
         </div>
     </div>
+    <div id="myHtmlContent">This is my html content.</div>
     <!---->
     <script src="js/smooth-scroll.js"></script>
     <script type="text/javascript" src="js/bootstrapValidator.min.js"></script>
