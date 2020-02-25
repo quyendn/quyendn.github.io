@@ -34,24 +34,23 @@
 <body>
     <div id="container">
         <div id="header">
-
             <div class="affix-top" data-spy="affix" data-offset-top="79" id="">
                 <div id="hdTop">
                     <div class="container">
-                    	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"></button>
+                    	
                         <div class="row">
                             <div class="col-sm-4"><a class="navbar-brand" href="#"><img src="img/logo-top.png"></a></div>
                             <div class="col-sm-8 slogan">ĐẠI HỌC TRẢI NGHIỆM - <strong>HIỆN THỰC HÓA TIỀM NĂNG</strong></div>
                         </div>
                     </div>
-                </div>
+                </div><button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"></button>
                 <nav class="navbar-collapse collapse" role="navigation">
                     <div class="container">
                         <ul class="nav navbar-nav navbar-right">
                             <li class=""><a data-scroll="" data-options="easing: easeInQuad" href="#section2" class="navbar1">CHƯƠNG TRÌNH HỌC</a></li>
                             <li class=""><a data-scroll="" data-options="easing: easeInQuad" href="#section3" class="navbar1">CƠ HỘI NGHỀ NGHIỆP</a></li>
                             <li class=""><a data-scroll="" data-options="easing: easeInQuad" href="#section4" class="navbar1">HỌC BỔNG</a></li>
-                            <li class=""><a data-scroll="" data-options="easing: easeInQuad" href="#slide" class="btn navbar1">ĐĂNG KÝ TƯ VẤN</a></li>
+                            <li class=""><a  class="btn navbar1"  data-toggle="modal" data-target="#exampleModal">ĐĂNG KÝ TƯ VẤN</a></li>
                         </ul>
                     </div>
                 </nav>
@@ -59,7 +58,7 @@
         </div>
         <div id="slide" class="wow fadeInUp">
         
-            <div data-ride="carousel" class="carousel slide" id="heartbanner-slide">
+            <div data-ride="carousel" class="carousel slide" id="heartbanner-slide" style="height:600px; overflow:hidden">
                 <!-- Indicators -->
                 <ol class="carousel-indicators">
                     <li class="active" data-slide-to="0" data-target="#heartbanner-slide"></li>
@@ -67,12 +66,31 @@
                     <li data-slide-to="2" data-target="#heartbanner-slide" class=""></li>
                 </ol>
                 <div role="listbox" class="carousel-inner">
-                    <div class="item active"><img src="img/slide.png"></div>
-                    <div class="item">
+                    <div class="item active">
+                    	<div style="position:absolute; top:50px; width:100%">
+                            <div style="" class="container">
+                                <div class="radius pull-right" style="padding:15px; background:#ea8142; color:#fff; max-width:600px"><strong>Cơ hội việc làm ngay</strong> sau khi tốt nghiệp tại Tập đoàn <strong>Phenikaa</strong> và các doanh nghiệp đối tác.</div>
+                            </div>
+                        </div>
                     	<img src="img/slide.png">
                     </div>
                     <div class="item">
-                    	<img src="img/slide.png">
+                    	
+                    	<img src="img/slide1.png">
+                    </div>
+                    <div class="item">
+                    	<div style="position:absolute; top:50px; width:100%">
+                            <div style="" class="container">
+                                <div class="radius pull-right" style="padding:15px; background:#ea8142; color:#fff; max-width:600px">
+                                	<div style="text-transform:uppercase; color:fff; border-bottom:1px solid #fff; text-align:right; margin-bottom:15px;font-size:18px"><strong>THÔNG TIN TUYỂN SINH 2020</strong></div>
+                                    <p style="text-align:right"><strong>1720</strong> chỉ tiêu</p>
+                                    <p style="text-align:right"><strong>04</strong> nhóm ngành</p>
+                                    <p style="text-align:right"><strong>20</strong> ngành/chương trình đào tạo</p>
+                                    <p style="text-align:right"><strong>03</strong> phương thức xét tuyển</p>
+                                </div>
+                            </div>
+                        </div>
+                    	<img src="img/slide2.png">
                     </div>
                 </div>
                 <a data-slide="prev" role="button" href="#heartbanner-slide" class="left carousel-control"></a>
@@ -81,7 +99,10 @@
             <div class="inner">
             	<div class="container">
                     <div class="row">
-                        <div class="col-sm-4">
+                    	<div class="col-sm-6 col-sm-push-6">
+                        	
+                        </div>
+                        <div class="col-sm-4 col-sm-pull-6">
                             <form id="frmRegDownload" autocomplete="off" novalidate class="bv-form">
                             	<h3>ĐĂNG KÝ TƯ VẤN TUYỂN SINH</h3>
                                 <div id="frmContentReg">
@@ -145,7 +166,7 @@
                             </div>
                         </div>
                     </div>
-                    <div style="margin-top:30px; text-align:center;"><a class="btn" data-scroll="" data-options="easing: easeInQuad" href="#slide">Đăng ký nhận tư vấn</a></div>
+                    <div style="margin-top:30px; text-align:center;"><a class="btn" data-toggle="modal" data-target="#exampleModal">Đăng ký nhận tư vấn</a></div>
                     
                     
                 </div>
@@ -210,7 +231,7 @@
                         <li>Giao lưu, chia sẻ kinh nghiệm thực tiễn với các chuyên gia kinh kế, chủ doanh nghiệp</li>
                         <li>Thực tập và làm việc ngay sau khi tốt nghiệp tại Tập đoàn Phenikaa và các doanh nghiệp đối tác khác</li>
                     </ul>
-                    <div style="margin-bottom:-50px; text-align:center;"><button class="btn">Đăng ký nhận tư vấn</button></div>
+                    <div style="margin-bottom:-50px; text-align:center;"><button class="btn" data-toggle="modal" data-target="#exampleModal">Đăng ký nhận tư vấn</button></div>
                 </div>
                 
             </div>
@@ -246,7 +267,7 @@
                     </div>
                 </div>
                 <p class="text-center" style="margin-top:15px;"><em><strong>Hỗ trợ 20% học phí toàn khóa học và dành tặng các suất bổng hấp dẫn</strong> cho các bạn đăng ký nguyện vọng hoặc đăng ký xét tuyển vào Trường Đại học Phenikaa trước ngày 30/6/2020</em></p>
-                <div style="margin-top:30px; text-align:center;"><button class="btn">Đăng ký nhận tư vấn</button></div>
+                <div style="margin-top:30px; text-align:center;"><button class="btn" data-toggle="modal" data-target="#exampleModal">Đăng ký nhận tư vấn</button></div>
             </div>
         </div>
         <div class="section" id="section5">
@@ -260,14 +281,14 @@
                 <p><em>(kèm ngưỡng đảm bảo chất lượng của Trường Đại học Phenikaa)</em></p>
                 <p class="time"><strong>Thời gian nộp hồ sơ 01/03 - 15/08/2020</strong></p>
                 </div>
-                <div style="margin-top:30px; text-align:center;"><button class="btn">Đăng ký nhận tư vấn</button></div>
+                <div style="margin-top:30px; text-align:center;"><button class="btn" data-toggle="modal" data-target="#exampleModal">Đăng ký nhận tư vấn</button></div>
             </div>
         </div>
         <div class="section text-center" id="section6">
             <h3>CHỌN <strong>PHENIKAA UNIVERSITY</strong> - HỌC TỪ <strong>TRẢI NGHIỆM</strong></h3>
             <div style="background:#8098aa">
                 <div class="container">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/F1k3eFzeqZ8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/F1k3eFzeqZ8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -318,6 +339,43 @@
 
             </div>
         </div>
+        <!---->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              
+              <div class="modal-body">
+                <form id="frmRegDownload" autocomplete="off" novalidate class="bv-form">
+                            	<h3>ĐĂNG KÝ TƯ VẤN TUYỂN SINH</h3>
+                                <div id="frmContentReg">
+                                    <div class="form-group has-feedback"><input type="text" class="form-control" name="name" id="txtName" value="" placeholder="Họ và tên"></div>
+                                    <div class="form-group has-feedback"><input type="text" class="form-control" name="phone" id="txtPhone" placeholder="Số điện thoại"></div>
+                                    <div class="form-group has-feedback"><input type="text" class="form-control" name="phone" id="txtMail" placeholder="Email"></div>
+                                    <div class="form-group has-feedback">
+                                        <select id="cboStatus" name="cboStatus" class="form-control">
+                                            <option value="" selected>Ngành học</option>
+                                            <option value="0">Nhận ưu đãi</option>
+                                            <option value="1">Làm đại lý</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group has-feedback">
+                                        <select id="cboStatus" name="cboStatus" class="form-control">
+                                            <option value="" selected>Loại hình xét tuyển</option>
+                                            <option value="0">Nhận ưu đãi</option>
+                                            <option value="1">Làm đại lý</option>
+                                        </select>
+                                    </div>
+                                    <div class="text-center">
+                                        <button class="btn"><img src="img/btn-dangky.png"></button>
+                                    </div>
+                                </div>
+                                <div id="content-register"></div>
+                            </form>
+              </div>
+              
+            </div>
+          </div>
+        </div>
 
 
 
@@ -329,7 +387,7 @@
         smoothScroll.init({
             speed: 1000,
             easing: 'easeInOutCubic',
-            offset: 90,
+            offset: 170,
             updateURL: false,
             callbackBefore: function(toggle, navbar1) {},
             callbackAfter: function(toggle, navbar1) {}

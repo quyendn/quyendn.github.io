@@ -241,29 +241,17 @@ img {
 #slide,
 #thank {
     position: relative;
-    background-size: cover;
 }
-
 #thank h1 {
-    font-size: 90px;
-    color: #fff;
+    font-size: 40px;
+    color: #ffd200;
     text-align: center;
-    margin: 00px 0 45px 0;
-    font-family: 'UTM HelvetIns';
+    margin: px 0 45px 0;
 }
-
-#thank .col-sm-6 {
-    font-size: 46px;
-    color: #fff;
-    text-align: center;
-    padding-top: 45px;
-    text-transform: uppercase;
-    font-family: 'UTM HelvetIns';
-}
-
 #thank {
-    padding: 90px 0 30px 0;
-    background: url(../img/bg-st-1.jpg) no-repeat 50% 50% / 100% 100%;
+    padding: 150px 0;
+    color:#fff;
+	background:url(../img/bg-thank.jpg) no-repeat 50% 00% / 100% auto
 }
 
 #slide {
@@ -564,6 +552,15 @@ img {
 	}
 #section8 a{
 	color:#fff;}
+.modal-body, .modal-content{
+	padding:0;
+	background:none;
+	-moz-border-radius: 30px;
+	-webkit-border-radius: 30px;
+	-o-border-radius: 30px;
+	border-radius: 30px;
+	background: rgba(0,61,107, 1);
+	}
 /**/
 .carousel-control.left, .carousel-control.right{
 	width:69px;top:0;
@@ -632,7 +629,7 @@ img {
 	#section8 .col-md-3 {
 		margin-bottom:30px;
 		}
-	#section3 li{
+	#section3 li, #thank p{
 		font-size:14px;
 		}
 	#section8 .pull-left, #section8 .pull-right{
@@ -641,6 +638,25 @@ img {
 		}
 	#frmRegDownload{
 		padding:15px;
+		}
+	#slide .inner{
+		padding-top:30px;
+		}
+	#slide .col-sm-6{
+		margin-bottom:30px;
+		text-align:center;
+		}
+	#thank {
+		padding: 60px 0;
+		background:url(../img/bg-thank.jpg) no-repeat 50% 00% / auto 100% 
+		}
+	#thank h1{
+		font-size:23px;
+		line-height:normal;
+		}
+	#thank h3{
+		font-size:18px;
+		line-height:normal;
 		}
 
 }
