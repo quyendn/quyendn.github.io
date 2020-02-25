@@ -110,7 +110,9 @@ button {
 img {
     max-width: 100%;
 }
-
+.navbar-right{
+	margin-right:0;
+	}
 
 /*header=================================*/
 
@@ -588,6 +590,15 @@ img {
 		text-align:center;
 		font-size:11px;
 		margin-top:0px;}
+	#slide .inner{
+		position:static;
+		padding:0 !important;
+		}
+	#slide #heartbanner-slide .item, #heartbanner-slide{
+		height:auto !important;
+		}
+	#slide #heartbanner-slide .item img{
+		max-width:100%;}
 	#section1 .inner h3{
 		padding-right:15px;
 		padding-left:15px;
@@ -597,6 +608,7 @@ img {
 		position:static;
 		margin-top:-15px;
 		}
+	
 	#section1 .inner .radius .text{
 		min-height:auto;}
 	#section1 .inner .radius .col-sm-3{
