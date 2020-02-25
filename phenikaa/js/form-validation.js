@@ -80,7 +80,7 @@ $(document).ready(function() {
             var dataJSON = { "name": name, "phone": phone, "email": email,"nganhhoc":nganhhoc,"loaihinh":loaihinh, "emailto": emailto,"typeId" :1 }
             showLoadingContactImage('content-register', 'frmContentReg');
             $.ajax({
-                url: "http://alpha.f5academy.net/api/Phenikaaservice",
+                url: "https://alpha.f5academy.net/api/Phenikaaservice",
                 type: "Post",
                 async: false,
                 data: dataJSON,
@@ -162,7 +162,7 @@ $(document).ready(function() {
             var dataJSON = { "name": name, "phone": phone, "email": email,"nganhhoc":nganhhoc,"loaihinh":loaihinh, "emailto": emailto,"typeId" :1 }
             showLoadingContactImage('content-register2', 'frmContentReg2');
             $.ajax({
-                url: "http://alpha.f5academy.net/api/Phenikaaservice",
+                url: "https://alpha.f5academy.net/api/Phenikaaservice",
                 type: "Post",
                 async: false,
                 data: dataJSON,
