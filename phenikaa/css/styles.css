@@ -306,6 +306,30 @@ img {
 	padding:0;
 	background:none !important}
 /**/
+#frmRegDownload2{
+	padding:30px;
+	background:rgba(0,61,107, 0.8);
+	border:2px solid #c4c4c5;
+	
+	}
+#frmRegDownload2, .form-control{
+	-moz-border-radius:30px;
+	-webkit-border-radius:30px;
+	-o-border-radius:30px;
+	border-radius:30px;
+	}
+#frmRegDownload2 h3 {
+    text-transform: uppercase;
+    font-family: 'MyriadPro-Bold';
+	font-size:18px;
+	color:#fff;
+	text-align:center;
+	margin:0 0 15px 0;
+}
+#frmRegDownload2 .btn{
+	padding:0;
+	background:none !important}
+/**/
 
 #section1 {
     padding: 0;

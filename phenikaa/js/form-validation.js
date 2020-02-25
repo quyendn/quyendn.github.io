@@ -33,10 +33,10 @@ $(document).ready(function() {
         excluded: [':disabled'],
         feedbackIcons: faIcon,
         fields: {
-            cboStatus: {
+            cboNganhHoc: {
                 validators: {
                     notEmpty: {
-                        message: 'Cần lựa chọn nhu cầu.'
+                        message: 'Cần lựa chọn ngành học.'
                     }
                 }
             },
@@ -58,25 +58,36 @@ $(document).ready(function() {
                         message: 'Số điện thoại chỉ có thể là 10 hoặc 11 số.'
                     }
                 }
+            },email: {
+                validators: {
+                    notEmpty: {
+                        message: 'Địa chỉ email không được để trống.'
+                    },
+                    emailAddress: {
+                        message: 'Không đúng định dạng email'
+                    }
+                }
             }
         },
         onSuccess: function(e) {
 
             var name = $('#txtName').val();
             var phone = $('#txtPhone').val();
-            var email = $('#cboStatus').val();
+            var email = $('#txtMail').val();
+            var nganhhoc = $('#cboNganhHoc').val();
+            var loaihinh = $('#cboLoaiHinh').val();
             var emailto = "quyendn84@gmail.com";
-            var dataJSON = { "name": name, "phone": phone, "email": email, "emailto": emailto }
+            var dataJSON = { "name": name, "phone": phone, "email": email,"nganhhoc":nganhhoc,"loaihinh":loaihinh, "emailto": emailto,"typeId" :1 }
             showLoadingContactImage('content-register', 'frmContentReg');
             $.ajax({
-                url: "https://alpha.f5academy.net//api/NguuHoangservice",
+                url: "http://alpha.f5academy.net/api/Phenikaaservice",
                 type: "Post",
                 async: false,
                 data: dataJSON,
                 contentType: 'application/json; charset=utf-8',
                 dataType: 'jsonp',
                 success: function(states) {
-                    $('#frmMobile').bootstrapValidator('resetForm', true);
+                    $('#frmRegDownload').bootstrapValidator('resetForm', true);
                     hideLoadingContactImage('content-register', 'frmContentReg');
                 },
                 error: function(ex) {
@@ -87,36 +98,38 @@ $(document).ready(function() {
                     $('#txtName').val('');
                     $("#txtPhone").val('');
                     $('#txtMail').val('');
+                    $('#cboNganhHoc').val('');
+                    $('#cboLoaiHinh').val('');
                     $('#frmRegDownload').bootstrapValidator('resetForm', true);
                     hideLoadingContactImage('content-register', 'frmContentReg');
                     toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', { timeOut: 5000 })
-                    location.href = "https://nguuhoangthanhtam.vn/nguuhoang/dang-ky-thanh-cong.html";
+                    location.href = "https://quyendn.github.io/phenikaa/dang-ky-thanh-cong.html";
                 }
             });
         }
     }).on('success.form.fv', function(e) {
 
     });
-    $('#frmSaleOff').bootstrapValidator({
+    $('#frmRegDownload2').bootstrapValidator({
         message: 'This value is not valid',
         excluded: [':disabled'],
         feedbackIcons: faIcon,
         fields: {
-            cboStatusSaleOff: {
+            cboNganhHoc2: {
                 validators: {
                     notEmpty: {
-                        message: 'Cần lựa chọn nhu cầu.'
+                        message: 'Cần lựa chọn ngành học.'
                     }
                 }
             },
-            namesaleoff: {
+            name2: {
                 validators: {
                     notEmpty: {
                         message: 'Họ tên không được để trống.'
                     }
                 }
             },
-            phonesaleoff: {
+            phone2: {
                 validators: {
                     notEmpty: {
                         message: 'Điện thoại không được để trống.'
@@ -127,40 +140,52 @@ $(document).ready(function() {
                         message: 'Số điện thoại chỉ có thể là 10 hoặc 11 số.'
                     }
                 }
+            },email2: {
+                validators: {
+                    notEmpty: {
+                        message: 'Địa chỉ email không được để trống.'
+                    },
+                    emailAddress: {
+                        message: 'Không đúng định dạng email'
+                    }
+                }
             }
         },
         onSuccess: function(e) {
 
-            var name = $('#txtNameSaleoff').val();
-            var phone = $('#txtPhoneSaleoff').val();
-            var email = $('#cboStatusSaleOff').val();
+            var name = $('#txtName2').val();
+            var phone = $('#txtPhone2').val();
+            var email = $('#txtMail2').val();
+            var nganhhoc = $('#cboNganhHoc2').val();
+            var loaihinh = $('#cboLoaiHinh2').val();
             var emailto = "quyendn84@gmail.com";
-            var dataJSON = { "name": name, "phone": phone, "email": email, "emailto": emailto }
-            showLoadingContactImage('content-loading', 'frmContentRegSaleOff');
+            var dataJSON = { "name": name, "phone": phone, "email": email,"nganhhoc":nganhhoc,"loaihinh":loaihinh, "emailto": emailto,"typeId" :1 }
+            showLoadingContactImage('content-register2', 'frmContentReg2');
             $.ajax({
-                url: "https://alpha.f5academy.net//api/NguuHoangservice",
+                url: "http://alpha.f5academy.net/api/Phenikaaservice",
                 type: "Post",
                 async: false,
                 data: dataJSON,
                 contentType: 'application/json; charset=utf-8',
                 dataType: 'jsonp',
                 success: function(states) {
-                    $('#frmSaleOff').bootstrapValidator('resetForm', true);
-                    hideLoadingContactImage('content-loading', 'frmContentRegSaleOff');
+                    $('#frmRegDownload2').bootstrapValidator('resetForm', true);
+                    hideLoadingContactImage('content-register2', 'frmContentReg2');
                 },
                 error: function(ex) {
                     toastr.error('Đã có lỗi trong quá trình đăng ký, mời bạn thử lại.', { timeOut: 5000 })
-                    hideLoadingContactImage('content-loading', 'frmContentRegSaleOff');
+                    hideLoadingContactImage('content-register', 'frmContentReg');
                 },
                 complete: function(jqXHR, textStatus) {
-                    $('#txtName').val('');
-                    $("#txtPhone").val('');
-                    $('#txtMail').val('');
-                    $('#txtBirthday').val('');
-                    $('#frmSaleOff').bootstrapValidator('resetForm', true);
-                    hideLoadingContactImage('content-loading', 'frmContentRegSaleOff');
-                    toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', { timeOut: 5000 });
-                    location.href = "https://nguuhoangthanhtam.vn/nguuhoang/dang-ky-thanh-cong.html";
+                    $('#txtName2').val('');
+                    $("#txtPhone2").val('');
+                    $('#txtMail2').val('');
+                    $('#cboNganhHoc2').val('');
+                    $('#cboLoaiHinh2').val('');
+                    $('#frmRegDownload2').bootstrapValidator('resetForm', true);
+                    hideLoadingContactImage('content-register2', 'frmContentReg2');
+                    toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', { timeOut: 5000 })
+                    location.href = "https://quyendn.github.io/phenikaa/dang-ky-thanh-cong.html";
                 }
             });
         }
@@ -186,7 +211,40 @@ $(document).ready(function() {
         $('#' + frmContent).hide();
 
     }
+    function checkPhoneNumber() {
+        var vnf_regex = /((09|03|07|08|05)+([0-9]{8})\b)/g;
+        var mobile = $('#txtPhone').val();
+        if (mobile !== '') {
+            if (vnf_regex.test(mobile) == false) {
+                toastr.error('Số điện thoại của bạn không đúng định dạng.', { timeOut: 5000 })
+                $("#txtPhone").focus();
+                return false;
 
+            } else {
+                return true;
+            }
+        } else {
+            toastr.error('Bạn chưa điền số điện thoại.', { timeOut: 5000 })
+            return false;
+        }
+    }
+    function checkPhoneNumber2() {
+        var vnf_regex = /((09|03|07|08|05)+([0-9]{8})\b)/g;
+        var mobile = $('#txtPhone2').val();
+        if (mobile !== '') {
+            if (vnf_regex.test(mobile) == false) {
+                toastr.error('Số điện thoại của bạn không đúng định dạng.', { timeOut: 5000 })
+                $("#txtPhone2").focus();
+                return false;
+
+            } else {
+                return true;
+            }
+        } else {
+            toastr.error('Bạn chưa điền số điện thoại.', { timeOut: 5000 })
+            return false;
+        }
+    }
     function hideLoadingContactImage(contentLoading, frmContent) {
         $('#' + frmContent).show();
         $('#loading-image').remove();
