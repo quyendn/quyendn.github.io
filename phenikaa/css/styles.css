@@ -634,11 +634,13 @@ img {
 		}
 	
 	#section1 .inner .radius .text{
-		min-height:auto;}
+		padding: 5px 0;
+		min-height:auto;
+	}
 	#section1 .inner .radius .col-sm-3{
 		border:none;}
 	#section2 h3, #section3 h3, #section4 h3, #section5 h3,#section6 h3, #section7 h3{
-		font-size:16px;
+		font-size:13px;
 		line-height:normal;
 		}
 	#section3 .inner{

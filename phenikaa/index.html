@@ -26,6 +26,7 @@
     <script type="text/javascript" src="js/jquery.countdown.js"></script>
     <link href="css/jquery.fancybox.css" rel="stylesheet" type="text/css" />
     <link href="css/jquery.fancybox-thumbsER.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.4/mobile-detect.min.js"></script>
     <script type="text/javascript" src="jwplayer/jwplayer.js"></script>
     <script type="text/javascript">
         jwplayer.key = "XumejFo+svwQswRJ3Mi++itror5V6+6q+6I7MQ==";
@@ -67,6 +68,10 @@
                 </ol>
                 <div role="listbox" class="carousel-inner">
                     <div class="item active">
+                    	<img src="img/slide1.png" class="hidden-xs">
+                        <img src="img/slide1-mb.jpg" class="visible-xs">
+                    </div>
+                    <div class="item ">
                     	<div class="hidden-xs">
                         <div style="position:absolute; top:50px; width:100%">
                             <div style="" class="container">
@@ -77,10 +82,7 @@
                         </div>
                         <img src="img/slide-mb.jpg" class="visible-xs">
                     </div>
-                    <div class="item">
-                    	<img src="img/slide1.png" class="hidden-xs">
-                        <img src="img/slide1-mb.jpg" class="visible-xs">
-                    </div>
+                   
                     <div class="item">
                     	<div class="hidden-xs">
                             <div style="position:absolute; top:50px; width:100%">
@@ -298,7 +300,33 @@
             <h3>CHỌN <strong>PHENIKAA UNIVERSITY</strong> - HỌC TỪ <strong>TRẢI NGHIỆM</strong></h3>
             <div style="background:#8098aa">
                 <div class="container">
-                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/F1k3eFzeqZ8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="player text-center" id="VdoPlayr" style="text-align:center;"></div>
+                    <script type='text/javascript'>
+                        var vHeight = "550px";
+                        var md = new MobileDetect(window.navigator.userAgent);
+                        if (md.mobile()) {
+                            vHeight = "250px";
+                        }
+                        if (md.tablet()) {
+                            vHeight = "350px";
+                        }
+                        jwplayer('VdoPlayr').setup({
+            
+                            file: 'https://youtu.be/F1k3eFzeqZ8',
+                            image: "img/video.png",
+                            width: '100%',
+                            height: vHeight,
+                            
+                            stretching: "exactfit",
+                            repeat: true,
+                            controls: true,
+                            skin: 'seven',
+                            autostart: false,
+                            mute: true,
+                            primary: 'html5'
+                        });
+                    </script>
+                    
                 </div>
             </div>
         </div>
@@ -389,18 +417,13 @@
             </div>
           </div>
         </div>
-
-
-
-        
-
     </div>
     <script>
-        new WOW().init();
-        smoothScroll.init({
+          new WOW().init();
+          smoothScroll.init({
             speed: 1000,
             easing: 'easeInOutCubic',
-            offset: 170,
+            offset: 250,
             updateURL: false,
             callbackBefore: function(toggle, navbar1) {},
             callbackAfter: function(toggle, navbar1) {}
