@@ -343,7 +343,7 @@
                 	<div class="col-sm-3">
                     	<div class="avatar text-center"><img src="img/sv-1.png" class="circle"></div>
                         <div class="name text-center">Hoàng Khắc Phúc</div>
-                        <div class="comment">"Trường mới xây cơ sở vật chất cực kì xịn xò nhé. Đã vậy còn có cơ hội nhận học bổng nữa, chỉ việc chuyên tâm học thì k lo mất suất học bổng năm sau nhé. Thi thoảng còn được tham gia các event của trường và các CLB nữa"</div>
+                        <div class="comment">"Trường mới xây cơ sở vật chất cực kì xịn xò nhé. Đã vậy còn có cơ hội nhận <span id="dots">...</span><span id="more"> học bổng nữa, chỉ việc chuyên tâm học thì k lo mất suất học bổng năm sau nhé. Thi thoảng còn được tham gia các event của trường và các CLB nữa"</span><a href="javascript:void(0);" onclick="readMoreFunction()" id="myBtn">xem thêm</a></div>
                     </div>
                     <div class="col-sm-3">
                     	<div class="avatar text-center"><img src="img/sv-2.png" class="circle"></div>
@@ -353,8 +353,7 @@
                     <div class="col-sm-3">
                     	<div class="avatar text-center"><img src="img/sv-3.png" class="circle"></div>
                         <div class="name text-center">Hải Vân</div>
-                        <div class="comment">"Các thầy cô  luôn vui vẻ❤️ nhiệt tình ❤️ giúp đỡ các sv trong tất cả mọi lĩnh vực❤️ đặc biệt các thầy cô khoa : Khoa học và kỹ thuật vật liệu rất là cuteee❤️
-"</div>
+                        <div class="comment">"Các thầy cô  luôn vui vẻ❤️ nhiệt tình ❤️ giúp đỡ các sv trong tất cả mọi lĩnh vực❤️ <span id="dots2">...</span><span id="more2">đặc biệt các thầy cô khoa : Khoa học và kỹ thuật vật liệu rất là cuteee❤️"</span><a href="javascript:void(0);" onclick="readMoreFunction2()" id="myBtn2">xem thêm</a></div>
                     </div>
                     <div class="col-sm-3">
                     	<div class="avatar text-center"><img src="img/sv-4.png" class="circle"></div>
@@ -444,6 +443,36 @@
         }
     </script>
     <script>
+        function readMoreFunction() {
+            var dots = document.getElementById("dots");
+            var moreText = document.getElementById("more");
+            var btnText = document.getElementById("myBtn");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = " xem thêm"; 
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = " thu gọn"; 
+                moreText.style.display = "inline";
+            }
+            }
+        function readMoreFunction2() {
+            var dots = document.getElementById("dots2");
+            var moreText = document.getElementById("more2");
+            var btnText = document.getElementById("myBtn2");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = " xem thêm"; 
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = " thu gọn"; 
+                moreText.style.display = "inline";
+            }
+            }
         $("button").click(function() {
             $(".navbar-toggle").toggleClass("close");
         });
