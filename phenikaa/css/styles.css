@@ -261,22 +261,23 @@ img {
 	position:relative;
 	
 }
-#slide #heartbanner-slide .item{
+#slide #heartbanner-slide .item .pic{
 	height:600px;
-	overflow:hidden}
+	overflow:hidden;
+	position:relative;
+	}
 #slide #heartbanner-slide .item img{
-	max-width:none;}
+	max-width:none;
+	height:600px;}
 #slide .inner {
    position:absolute;
    padding:70px 0;
-   left:0;
-   right:0;
+   left:60px;
+   right:60px;
    top:0;
    bottom:0;
 }
-#heartbanner-slide .item{
-	position:relative;
-	}
+
 #heartbanner-slide .item img {
 	object-fit: cover;
 	width:100%;
@@ -695,6 +696,16 @@ img {
 	#thank h3{
 		font-size:18px;
 		line-height:normal;
+		}
+	#section1 .inner .radius strong{
+		margin:0;
+		font-size:24px;
+		}
+	#section1 .inner .radius p{
+		font-size:14px;
+		}
+	#slide #heartbanner-slide .item img, #slide #heartbanner-slide .item .pic{
+		height:auto;
 		}
 
 }

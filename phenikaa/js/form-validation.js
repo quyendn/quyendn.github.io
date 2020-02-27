@@ -58,7 +58,8 @@ $(document).ready(function() {
                         message: 'Số điện thoại chỉ có thể là 10 hoặc 11 số.'
                     }
                 }
-            },email: {
+            },
+            email: {
                 validators: {
                     notEmpty: {
                         message: 'Địa chỉ email không được để trống.'

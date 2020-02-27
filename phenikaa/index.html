@@ -68,10 +68,13 @@
                 </ol>
                 <div role="listbox" class="carousel-inner">
                     <div class="item active">
-                    	<img src="img/slide1.png" class="hidden-xs">
+                    	<div class="pic">
+                        <img src="img/slide1.png" class="hidden-xs">
                         <img src="img/slide1-mb.jpg" class="visible-xs">
+                        </div>
                     </div>
                     <div class="item ">
+                    	<div class="pic">
                     	<div class="hidden-xs">
                         <div style="position:absolute; top:50px; width:100%">
                             <div style="" class="container">
@@ -81,9 +84,11 @@
                     	<img src="img/slide.png">
                         </div>
                         <img src="img/slide-mb.jpg" class="visible-xs">
+                        </div>
                     </div>
                    
                     <div class="item">
+                    	<div class="pic">
                     	<div class="hidden-xs">
                             <div style="position:absolute; top:50px; width:100%">
                                 <div style="" class="container">
@@ -99,6 +104,7 @@
                             <img src="img/slide2.png">
                         </div>
                         <img src="img/slide2-mb.jpg" class="visible-xs">
+                        </div>
                     </div>
                 </div>
                 <a data-slide="prev" role="button" href="#heartbanner-slide" class="left carousel-control"></a>
@@ -302,7 +308,7 @@
                 <div class="container">
                     <div class="player text-center" id="VdoPlayr" style="text-align:center;"></div>
                     <script type='text/javascript'>
-                        var vHeight = "550px";
+                        var vHeight = "500px";
                         var md = new MobileDetect(window.navigator.userAgent);
                         if (md.mobile()) {
                             vHeight = "250px";
@@ -423,7 +429,7 @@
           smoothScroll.init({
             speed: 1000,
             easing: 'easeInOutCubic',
-            offset: 250,
+            offset: 170,
             updateURL: false,
             callbackBefore: function(toggle, navbar1) {},
             callbackAfter: function(toggle, navbar1) {}
