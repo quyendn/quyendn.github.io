@@ -447,6 +447,25 @@ img {
 	-o-transition: all 300ms ease-in-out;
 	cursor:pointer;
 	}
+	#section2 .inner .text-center-p{
+		position:absolute;
+		background:rgba(0,0,0,0.8);
+		text-align:center;
+		padding-top: 80px;
+		right:0;
+		left:0;
+		top:100%;
+		bottom:0;
+		font-size: 12px;;
+		 transition: all 300ms ease-in-out;
+		-webkit-transition: all 300ms ease-in-out;
+		-moz-transition: all 300ms ease-in-out;
+		-o-transition: all 300ms ease-in-out;
+		cursor:pointer;
+		}
+	#section2 .inner:hover .text-center-p{
+		top:0;
+		}
 #section2 .inner .text p{
 	margin: 0 0 8px;
 }
@@ -454,6 +473,7 @@ img {
 	color:#f26922;
 	font-weight: bold;
 	padding-top: 10px;
+	padding-bottom: 10px;
 	font-size: 18px;
 }	
 #section2 .inner:hover .text{
