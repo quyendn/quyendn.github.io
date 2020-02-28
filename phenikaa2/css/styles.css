@@ -452,8 +452,8 @@ img {
 	#section2 .inner .text-center-p{
 		position:absolute;
 		background:rgba(0,0,0,0.8);
-		text-align:center;
-		padding-top: 80px;
+		padding-left: 40px;
+		padding-top: 100px;
 		right:0;
 		left:0;
 		top:100%;
@@ -468,6 +468,25 @@ img {
 	#section2 .inner:hover .text-center-p{
 		top:0;
 		}
+		#section2 .inner .text-right-p{
+			position:absolute;
+			background:rgba(0,0,0,0.8);
+			padding-left: 40px;
+			padding-top: 60px;
+			right:0;
+			left:0;
+			top:100%;
+			bottom:0;
+			font-size: 12px;;
+			 transition: all 300ms ease-in-out;
+			-webkit-transition: all 300ms ease-in-out;
+			-moz-transition: all 300ms ease-in-out;
+			-o-transition: all 300ms ease-in-out;
+			cursor:pointer;
+			}
+		#section2 .inner:hover .text-right-p{
+			top:0;
+			}
 #section2 .inner .text p{
 	margin: 0 0 8px;
 }
@@ -687,6 +706,8 @@ img {
 		}
 	#section3 .inner h3 span{
 		display:inline-block;
+		font-size: 12px;
+		padding: 0;
 		}
 	#section1 .btn, #section2 .btn, #section3 .btn, #section4 .btn, #section5 .btn{
 		padding:7px 10px;
