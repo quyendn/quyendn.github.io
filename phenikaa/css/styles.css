@@ -653,6 +653,8 @@ img {
 		}
 	#section3 .inner h3 span{
 		display:inline-block;
+		font-size: 12px;
+		padding: 0;
 		}
 	#section1 .btn, #section2 .btn, #section3 .btn, #section4 .btn, #section5 .btn{
 		padding:7px 10px;
