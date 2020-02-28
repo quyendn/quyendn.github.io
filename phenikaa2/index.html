@@ -73,12 +73,12 @@
                     <div class="item ">
                     	<div class="pic">
                     	<div class="hidden-xs">
-                        <div style="position:absolute; top:50px; width:100%">
+                        <!-- <div style="position:absolute; top:50px; width:100%">
                             <div style="" class="container">
                                 <div class="radius pull-right" style="padding:15px; background:#ea8142; color:#fff; max-width:600px"><strong>Cơ hội việc làm ngay</strong> sau khi tốt nghiệp tại Tập đoàn <strong>Phenikaa</strong> và các doanh nghiệp đối tác.</div>
                             </div>
-                        </div>
-                    	<img src="img/slide.png">
+                        </div> -->
+                    	<img src="img/kinhte-2.jpg">
                         </div>
                         <img src="img/slide-mb.jpg" class="visible-xs">
                         </div>
@@ -353,22 +353,22 @@
                 	<div class="col-sm-3">
                     	<div class="avatar text-center"><img src="img/sv-1.png" class="circle"></div>
                         <div class="name text-center">Trần Mạnh Hùng</div>
-                        <div class="comment">Trường đại học hiện đại, trẻ trung, năng động với đội ngũ giảng viên tài năng và đầy tâm huyết</div>
+                        <div class="comment">Trường đại học hiện đại, trẻ trung, năng động với đội ngũ giảng viên<span id="dots">...</span><span id="more"> tài năng và đầy tâm huyết</span><a href="javascript:void(0);" onclick="readMoreFunction(dots,more,myBtn)" id="myBtn"> xem thêm</a></div>
                     </div>
                     <div class="col-sm-3">
                     	<div class="avatar text-center"><img src="img/sv-2.png" class="circle"></div>
                         <div class="name text-center">Thanh Tra Pham</div>
-                        <div class="comment">Ngôi trường thân thiện. Ngoài việc học tập trên lớp , trường tổ chức rất nhìu các hoạt động cho SV phát huy và thể hiện tài năng của mình</div>
+                        <div class="comment">Ngôi trường thân thiện. Ngoài việc học tập trên lớp , trường tổ chức rất nhìu <span id="dots2">...</span><span id="more2">các hoạt động cho SV phát huy và thể hiện tài năng của mình</span><a href="javascript:void(0);" onclick="readMoreFunction(dots2,more2,myBtn2)" id="myBtn2"> xem thêm</a></div>
                     </div>
                     <div class="col-sm-3">
                     	<div class="avatar text-center"><img src="img/sv-3.png" class="circle"></div>
                         <div class="name text-center">Hồng Mây</div>
-                        <div class="comment">Ngôi trường đại học thân thiện. Các thầy cô giảng viên hòa đồng-nhiệt huyết-trẻ trung xinh đẹp. Giảng viên có nhiều kinh nghiệm, nhiệt tình với sinh viên</div>
+                        <div class="comment">Ngôi trường đại học thân thiện. Các thầy cô giảng viên hòa đồng<span id="dots3">...</span><span id="more3">-nhiệt huyết-trẻ trung xinh đẹp. Giảng viên có nhiều kinh nghiệm, nhiệt tình với sinh viên</span><a href="javascript:void(0);" onclick="readMoreFunction(dots3,more3,myBtn3)" id="myBtn3"> xem thêm</a></div>
                     </div>
                     <div class="col-sm-3">
                     	<div class="avatar text-center"><img src="img/sv-4.png" class="circle"></div>
                         <div class="name text-center">Ngọc Oanh</div>
-                        <div class="comment">Đây là môi trường học tập dễ chịu, đảm bảo nhiều lợi ích đầu ra cho sinh viên các ngành đào tạo do tập đoàn Phenikaa đứng ra bảo lãnh</div>
+                        <div class="comment">Đây là môi trường học tập dễ chịu, đảm bảo nhiều lợi ích đầu ra cho <span id="dots4">...</span><span id="more4">sinh viên các ngành đào tạo do tập đoàn Phenikaa đứng ra bảo lãnh</span><a href="javascript:void(0);" onclick="readMoreFunction(dots4,more4,myBtn4)" id="myBtn4"> xem thêm</a></div>
                     </div>
                 </div>
             </div>
@@ -451,19 +451,19 @@
         }
     </script>
     <script>
-        function readMoreFunction() {
-            var dots = document.getElementById("dots");
-            var moreText = document.getElementById("more");
-            var btnText = document.getElementById("myBtn");
+        function readMoreFunction(dotsId,moreId,myBtnId) {
+            //var dots = document.getElementById(dotsId);
+            //var moreText = document.getElementById(moreId);
+            //var btnText = document.getElementById(myBtnId);
 
-            if (dots.style.display === "none") {
-                dots.style.display = "inline";
-                btnText.innerHTML = " xem thêm"; 
-                moreText.style.display = "none";
+            if (dotsId.style.display === "none") {
+                dotsId.style.display = "inline";
+                myBtnId.innerHTML = " xem thêm"; 
+                moreId.style.display = "none";
             } else {
-                dots.style.display = "none";
-                btnText.innerHTML = " thu gọn"; 
-                moreText.style.display = "inline";
+                dotsId.style.display = "none";
+                myBtnId.innerHTML = " thu gọn"; 
+                moreId.style.display = "inline";
             }
             }
         function readMoreFunction2() {
