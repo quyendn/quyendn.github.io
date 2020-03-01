@@ -290,6 +290,9 @@ position:relative;
 background:#b72133;
 padding:15px 30px;
 }
+#section3{
+	padding-top:0;
+	}
 #section3 .btn, #banner .btn, .form-control, .btn{
 	-moz-border-radius:0;
 	-webkit-border-radius:0;
@@ -432,7 +435,21 @@ text-align:center;
 	max-width: 100%;
 }
 /**/
-
+#section2 hr{
+	border-top:1px solid #4c4848}
+.infoMachine{
+	}
+.infoMachine ul{
+	padding:0;
+	margin:15px 0 0 30px;
+	}
+.infoMachine ul li{
+	margin-bottom:5px;
+	font-size:16px;
+	}
+.infoPrice td{
+	text-align:right}
+/**/
 #footer{
 padding:30px 0;
 font-size:16px;
@@ -489,6 +506,16 @@ margin-top: 30px;
 
 }
 @media (max-width:768px) {
+	#section2 .nav-tabs > li > a {
+    border: none;
+    width: 30px;
+    height: 30px;
+    margin: 0 2px;
+    padding: 2px;
+	}
+#section2 .nav-tabs > li > a img {
+    width: 24px;
+}
 #header, #header .affix {
 	min-height: 60px;
 	
