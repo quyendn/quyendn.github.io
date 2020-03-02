@@ -78,7 +78,13 @@ $(document).ready(function() {
             var nganhhoc = $('#cboNganhHoc').val();
             var loaihinh = $('#cboLoaiHinh').val();
             var emailto = "quyendn84@gmail.com";
-            var dataJSON = { "name": name, "phone": phone, "email": email,"nganhhoc":nganhhoc,"loaihinh":loaihinh, "emailto": emailto,"typeId" :3 }
+            var url_source = "lp_phenikaa";
+            var source = getUrlParameter('utm_source');
+            if (isEmpty(source))
+                url_source = "lp_phenikaa";
+            else
+                url_source = source;
+            var dataJSON = { "name": name, "phone": phone, "email": email,"nganhhoc":nganhhoc,"loaihinh":loaihinh,"source": url_source, "emailto": emailto,"typeId" :3 }
             showLoadingContactImage('content-register', 'frmContentReg');
             $.ajax({
                 url: "https://alpha.f5academy.net/api/Phenikaaservice",
@@ -104,7 +110,7 @@ $(document).ready(function() {
                     $('#frmRegDownload').bootstrapValidator('resetForm', true);
                     hideLoadingContactImage('content-register', 'frmContentReg');
                     toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', { timeOut: 5000 })
-                    location.href = "https://quyendn.github.io/phenikaa/dang-ky-thanh-cong.html";
+                    location.href = "/dang-ky-thanh-cong.html";
                 }
             });
         }
@@ -160,7 +166,13 @@ $(document).ready(function() {
             var nganhhoc = $('#cboNganhHoc2').val();
             var loaihinh = $('#cboLoaiHinh2').val();
             var emailto = "quyendn84@gmail.com";
-            var dataJSON = { "name": name, "phone": phone, "email": email,"nganhhoc":nganhhoc,"loaihinh":loaihinh, "emailto": emailto,"typeId" :3 }
+            var url_source = "lp_phenikaa";
+            var source = getUrlParameter('utm_source');
+            if (isEmpty(source))
+                url_source = "lp_phenikaa";
+            else
+                url_source = source;
+            var dataJSON = { "name": name, "phone": phone, "email": email,"nganhhoc":nganhhoc,"loaihinh":loaihinh,"source": url_source, "emailto": emailto,"typeId" :3 }
             showLoadingContactImage('content-register2', 'frmContentReg2');
             $.ajax({
                 url: "https://alpha.f5academy.net/api/Phenikaaservice",
@@ -186,7 +198,7 @@ $(document).ready(function() {
                     $('#frmRegDownload2').bootstrapValidator('resetForm', true);
                     hideLoadingContactImage('content-register2', 'frmContentReg2');
                     toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', { timeOut: 5000 })
-                    location.href = "https://quyendn.github.io/phenikaa/dang-ky-thanh-cong.html";
+                    location.href = "/dang-ky-thanh-cong.html";
                 }
             });
         }
@@ -250,4 +262,25 @@ $(document).ready(function() {
         $('#' + frmContent).show();
         $('#loading-image').remove();
     }
+    function isEmpty(item) {
+        if (item) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+    var getUrlParameter = function getUrlParameter(sParam) {
+        var sPageURL = window.location.search.substring(1),
+            sURLVariables = sPageURL.split('&'),
+            sParameterName,
+            i;
+
+        for (i = 0; i < sURLVariables.length; i++) {
+            sParameterName = sURLVariables[i].split('=');
+
+            if (sParameterName[0] === sParam) {
+                return sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
+            }
+        }
+    };
 });
