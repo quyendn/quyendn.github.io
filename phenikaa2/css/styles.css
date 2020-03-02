@@ -686,6 +686,7 @@ img {
 		font-size:11px;
 		position:static;
 		margin-top:-25px;
+		padding: 0px;
 		}
     #section1 .inner .radius .text{
 		padding: 5px 0;
