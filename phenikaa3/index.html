@@ -504,10 +504,15 @@
     </div>
     <script>
           new WOW().init();
+          var vOffset = 250;
+            var md = new MobileDetect(window.navigator.userAgent);
+            if (md.mobile()) {
+                vOffset = 200;
+            }
           smoothScroll.init({
             speed: 1000,
             easing: 'easeInOutCubic',
-            offset: 250,
+            offset: vOffset,
             updateURL: false,
             callbackBefore: function(toggle, navbar1) {},
             callbackAfter: function(toggle, navbar1) {}
