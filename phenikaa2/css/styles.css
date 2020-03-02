@@ -685,10 +685,9 @@ img {
 	#section1 .inner h3 span{
 		font-size:11px;
 		position:static;
-		margin-top:-15px;
+		margin-top:-25px;
 		}
-	
-	#section1 .inner .radius .text{
+    #section1 .inner .radius .text{
 		padding: 5px 0;
 		min-height:auto;
 	}
