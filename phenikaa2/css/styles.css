@@ -768,7 +768,6 @@ img {
 		}
 
 }
-
 .has-error .form-control-feedback {
     padding-top: 10px;
 }
@@ -776,6 +775,4 @@ img {
 .has-success .form-control-feedback {
     padding-top: 10px;
 }
-
-
 /**/
