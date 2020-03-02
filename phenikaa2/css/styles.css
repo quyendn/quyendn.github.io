@@ -679,11 +679,11 @@ img {
 	#slide #heartbanner-slide .item img{
 		max-width:100%;}
 	#section1 .inner h3{
-		padding-right:15px;
-		padding-left:15px;
+		padding-right:5px;
+		padding-left:5px;
 		padding-bottom:30px;}
 	#section1 .inner h3 span{
-		font-size:14px;
+		font-size:11px;
 		position:static;
 		margin-top:-15px;
 		}
@@ -715,9 +715,12 @@ img {
 	#section4 h2, #section8 .name{
 		font-size:16px;
 		}
-	#section4 p, #section5 p{
+	#section4 p{
 		font-size:14px;
 		}
+#section5 p{
+			font-size:12px;
+			}
 	#section4 .col-sm-4, #section7 .col-sm-3, #section2 .col-sm-3{
 		margin-top:15px;
 		margin-bottom:15px;}
