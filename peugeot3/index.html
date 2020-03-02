@@ -71,28 +71,41 @@
                                         <div class="form-group has-feedback">
                                             <input type="text" class="form-control" name="phone" id="txtPhone" onkeypress="return AllowNumberOnly(event);"  placeholder="Số điện thoại"></div>
                                         <div class="form-group has-feedback" style="margin-bottom:0px;">
-                                            <input type="text" class="form-control" name="address" id="txtMail" placeholder="Email"></div>
+                                            <input type="text" class="form-control" name="email" id="txtEmail" placeholder="Email"></div>
                                         
                                         <div><img src="img/line.png"></div>
                                         <div class="form-group has-feedback">
-                                            <select class="form-control" name="" id="txtcourse" onkeypress=";"  placeholder="">
-                                                <option>Dòng xe</option>
+                                            <select class="form-control" name="cboDongXe" id="cboDongXe">
+                                                <option value="">Dòng xe</option>
                                                 <option>3008</option>
                                                 <option>5008</option>
                                             </select>
                                         </div>
                                         <div class="form-group has-feedback">
-                                            <select class="form-control" name="" id="txtcourse" onkeypress=";"  placeholder="">
-                                                <option>--- Tỉnh/ Thành phố ---</option>
-                                                <option>1</option>
-                                                <option>2</option>
+                                            <select class="form-control" name="cboCity" id="cboCity">
+                                                <option value="">--- Tỉnh/ Thành phố ---</option>
+                                                <option value="Hà Nội">Hà Nội</option>
+                                                <option value="Bắc Ninh">Bắc Ninh</option>
+                                                <option value="Quảng Ninh">Quảng Ninh</option>
+                                                <option value="Thái Nguyên">Thái Nguyên</option>
+                                                <option value="Vinh">Vinh</option>
+                                                <option value="TP. Hồ Chí Minh">TP. Hồ Chí Minh</option>
+                                                <option value="Bà Rịa Vũng Tàu">Bà Rịa Vũng Tàu</option>
+                                                <option value="An Giang">An Giang</option>
+                                                <option value="Bình Dương">Bình Dương</option>
+                                                <option value="Đồng Nai">Đồng Nai</option>
+                                                <option value="Cần Thơ">Cần Thơ</option>
+                                                <option value="Gia Lai">Gia Lai</option>
+                                                <option value="Lâm Đồng">Lâm Đồng</option>
+                                                <option value="Khánh Hoà">Khánh Hoà</option>
+                                                <option value="Đà Nẵng">Đà Nẵng</option>
+                                                <option value="Bình Định">Bình Định</option>
+                                                <option value="Quảng Bình">Quảng Bình</option>
                                             </select>
                                         </div>
                                         <div class="form-group has-feedback">
-                                            <select class="form-control" name="" id="txtcourse" onkeypress=";"  placeholder="">
-                                                <option>--- Showroom/ Đại lý ---</option>
-                                                <option>3</option>
-                                                <option>4</option>
+                                            <select class="form-control" name="cboPartner" id="cboPartner">
+                                                <option value="">--- Showroom/ Đại lý ---</option>
                                             </select>
                                         </div>
                                         <div class="text-center">
@@ -360,7 +373,7 @@
                             </div>
                             <div class="item">
                                 <div class="row">
-                                	<div class="col-sm-8 col-sm-push-4"><img src="img/gtsp1.png"></div>
+                                	<div class="col-sm-8 col-sm-push-4"><img src="img/gtsp3.png"></div>
                                 	<div class="col-sm-4 col-sm-pull-8">
                                         <div style="padding:15px 15px 30px 15px; background:#000">
                                             <p>Giá Trị trải nghiệm “New i-Cockpit - Amplified Experience”: Với triết lý lấy người lái làm trọng tâm và Peugeot New i-Cockpit® đem đến những trải nghiệm khác biệt đặc trưng từ thương hiệu Pháp thông qua 3 yếu tố: Nhìn, Nghe, Chạm. Bước vào bên trong khoang lái, mọi giác quan cảm xúc của bạn sẽ được đánh thức/ khơi dậy bởi khả năng vận hành chuẩn mực bên cạnh 2 chế độ lái “Boots” & “Relax” kết hợp hệ thống loa Focal đẳng cấp giúp trọn vẹn hưởng thụ những tinh hoa âm thanh đến từ nước Pháp. Đồng thời, dàn phím chức năng tựa phím đàn Piano mang đến cảm giác lái chân thật và hành trình êm ái, thoải mái hơn khi chinh phục mọi cung đường với bộ đôi SUVs PEUGEOT. Sở hữu một không gian nội thất đầy tính công nghệ và sáng tạo với cần số điện tử lần đầu tiên được trang bị, vô-lăng thể thao nhỏ gọn cắt vác sang trọng giúp gia tăng sự linh hoạt và thoải mái trong những khúc cua gấp hay khu vực giao thông phức tạp. Phía trên tay lái, cụm đồng hồ còn hiển thị ứng dụng công nghệ kỹ thuật số với kích thước màn hình HUD lên đến 12.3" kèm tích hợp bộ điều khiển hệ thống giải trí đỉnh cao tại khu vực trung tâm mang lại sự thuận tiện tối đa trong suốt quá trình vận hành.</p>
@@ -474,7 +487,7 @@
                 <ul style="font-weight:600">
                 	<li><a href=""><img src="img/ic_hotline.png"> Hotline CSKH: 1900 1101</a></li>
                     <li><a href=""><img src="img/ic_web.png"> www.peugeotvietnam.vn</a></li>
-                    <li><a href=""><img src="img/ic_fb.png"> Peugeot</a></li>
+                    <li><a href=""><img src="img/ic_fb.png"> peugeot</a></li>
                     <li><a href=""><img src="img/ic_yt.png"> Peugeot Vietnam</a></li>
                     <li><a href=""><img src="img/ic_home.png"> Danh sách đại lý</a></li>
                 </ul>
@@ -571,9 +584,6 @@
     </div>
     <!---->
     <script src="js/smooth-scroll.js"></script>
-    <script type="text/javascript" src="js/bootstrapValidator.min.js"></script>
-    <script type="text/javascript" src="js/form-validation.js"></script>
-    <script type="text/javascript" src="js/toastr.js"></script>
     <script type="text/javascript">
         new WOW().init();
         function AllowNumberOnly(evt) {
@@ -584,58 +594,84 @@
             }
             return true;
         }
-
-        
+       
         $(document).ready(function () {
-            var owl = $('.carousel-inner');
-            owl.owlCarousel({
-                navText: [$('.left'), $('.right')],
-                nav: false,
-                loop: true,
-                autoHeight: true,
-                transitionStyle: "fade",
-                stopOnHover: true,
-                singleItem: true,
-                responsive: {
-                    0: {
-                        items: 1
-                    },
-                    600: {
-                        items: 1
-                    },
-                    1000: {
-                        items: 1
-                    }
-                }
-            });
-            $(".lightfancybox").fancybox({
-                autoScale: true,
-                //openEffect 	:	'elastic',
-                //closeEffect 	:	'elastic',
-                fitToView: true,
-                scrolling: 'no',
-                //type: 'image',
-                helpers: {
-                    title: {
-                        type: 'over'
-                    },
-                    thumbs: {
-                        width: 76,
-                        height: 56,
-                        position: 'bottom'
-                    }
-                },
-                beforeLoad: function () {
-                    if (this.title == "") {
-                        if ($(this.element).attr('caption') == "") {
-                            this.title = "Marina Complex Da Nang City";
-                        } else {
-                            this.title = $(this.element).attr('caption');
-                        }
-                    }
-
-                }
-            });
+            $('#cboCity').change(function() {
+            var value = $("#cboCity").val();
+            switch (value) {
+                case "Hà Nội":
+                    // code block
+                    $("#cboPartner").html("<option value='PEUGEOT Thanh Xuân'>PEUGEOT Thanh Xuân</option><option value='PEUGEOT Long Biên'>PEUGEOT Long Biên</option><option value='PEUGEOT Giải Phóng'>PEUGEOT Giải Phóng</option><option value='PEUGEOT Phạm Văn Đồng'>PEUGEOT Phạm Văn Đồng</option>");
+                    break;
+                case "Bắc Ninh":
+                    // code block
+                    $("#cboPartner").html("<option value='PEUGEOT Bắc Ninh'>PEUGEOT Bắc Ninh</option>");
+                    break;
+                case "Quảng Ninh":
+                    $("#cboPartner").html("<option value='PEUGEOT Quảng Ninh'>PEUGEOT Quảng Ninh</option>");
+                    // code block
+                    break;
+                case "Thái Nguyên":
+                    $("#cboPartner").html("<option value='PEUGEOT Thái Nguyên'>PEUGEOT Thái Nguyên</option>");
+                    // code block
+                    break;
+                case "Vinh":
+                    $("#cboPartner").html("<option value='PEUGEOT Vinh'>PEUGEOT Vinh</option>");
+                    // code block
+                    break;
+                case "TP. Hồ Chí Minh":
+                    $("#cboPartner").html("<option value='PEUGEOT Phú Mỹ Hưng'>PEUGEOT Phú Mỹ Hưng</option><option value='PEUGEOT Bình Tân'>PEUGEOT Bình Tân</option><option value='PEUGEOT Cộng Hòa'>PEUGEOT Cộng Hòa</option>");
+                    // code block
+                    break;
+                case "Bà Rịa Vũng Tàu":
+                    $("#cboPartner").html("<option value='PEUGEOT Vũng Tàu'>PEUGEOT Vũng Tàu</option>");
+                    // code block
+                    break;
+                case "An Giang":
+                    $("#cboPartner").html("<option value='PEUGEOT An Giang'>PEUGEOT An Giang</option>");
+                    // code block
+                    break;
+                case "Bình Dương":
+                    $("#cboPartner").html("<option value='PEUGEOT Bình Dương'>PEUGEOT Bình Dương</option>");
+                    // code block
+                    break;
+                case "Đồng Nai":
+                    $("#cboPartner").html("<option value='PEUGEOT Biên Hòa'>PEUGEOT Biên Hòa</option>");
+                    // code block
+                    break;
+                case "Cần Thơ":
+                    $("#cboPartner").html("<option value='PEUGEOT Cần Thơ'>PEUGEOT Cần Thơ</option>");
+                    // code block
+                    break;
+                case "Gia Lai":
+                    $("#cboPartner").html("<option value='PEUGEOT Gia Lai'>PEUGEOT Gia Lai</option>");
+                    // code block
+                    break;
+                case "Lâm Đồng":
+                    $("#cboPartner").html("<option value='PEUGEOT Đà Lạt'>PEUGEOT Đà Lạt</option>");
+                    // code block
+                    break;
+                case "Khánh Hoà":
+                    $("#cboPartner").html("<option value='PEUGEOT Nha Trang'>PEUGEOT Nha Trang</option>");
+                    // code block
+                    break;
+                case "Đà Nẵng":
+                    $("#cboPartner").html("<option value='PEUGEOT Đà Nẵng'>PEUGEOT Đà Nẵng</option>");
+                    // code block
+                    break;
+                case "Bình Định":
+                    $("#cboPartner").html("<option value='PEUGEOT Bình Định'>PEUGEOT Bình Định</option>");
+                    // code block
+                    break
+                case "Quảng Bình":
+                    $("#cboPartner").html("<option value='PEUGEOT Quảng Bình'>PEUGEOT Quảng Bình</option>");
+                    // code block
+                    break;
+                default:
+                    // code block
+                    break;
+            }
+        });
             
         });
         
@@ -666,62 +702,20 @@
 			$(".navbar-toggle").removeClass("close");
 		});
     </script>
-    <script>
-		$('.owl-carousel-product').owlCarousel({
-				loop: true,
-				margin: 10,
-				responsiveClass: true,
-				responsive: {
-					0: {
-						items: 2,
-						nav: true
-					},
-					768: {
-						items: 2,
-						nav: true
-					},
-					1000: {
-						items: 2,
-						nav: true,
-						loop: true,
-						margin: 10,
-					}
-				}
-			})
-			$('.owl-carousel-sound').owlCarousel({
-				loop: true,
-				margin: 0,
-				responsiveClass: true,
-				responsive: {
-					0: {
-						items: 1,
-						nav: true
-					},
-					768: {
-						items: 1,
-						nav: true
-					},
-					1000: {
-						items: 1,
-						nav: true,
-						loop: true,
-						margin: 0,
-					}
-				}
-			})
-		
-		</script>
+    
 
-    <script src="js/smooth-scrollbar.js"></script>
-    <script> Scrollbar.initAll(); </script>
-    <link href="css/smooth-scrollbar.css" rel="stylesheet" type="text/css" />
+   
     
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
     <script src="js/script-parallax.js" type="text/javascript"></script>
     <link href="css/style-parallax.css" rel="stylesheet" type="text/css" />
-    
+    <script src="js/smooth-scroll.js"></script>
+    <script type="text/javascript" src="js/bootstrapValidator.min.js"></script>
+    <script type="text/javascript" src="js/form-validation.js"></script>
+    <script type="text/javascript" src="js/toastr.js"></script>
     <script defer type="text/javascript" src="https://pbutcher.uk/credit-tag/credit-tag-white-2.js">
     </script><link href="css/style_gtcl.css" rel="stylesheet" type="text/css" />
+
 </body>
 
 
