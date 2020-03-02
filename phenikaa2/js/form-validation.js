@@ -78,7 +78,7 @@ $(document).ready(function() {
             var nganhhoc = $('#cboNganhHoc').val();
             var loaihinh = $('#cboLoaiHinh').val();
             var emailto = "quyendn84@gmail.com";
-            var dataJSON = { "name": name, "phone": phone, "email": email,"nganhhoc":nganhhoc,"loaihinh":loaihinh, "emailto": emailto,"typeId" :1 }
+            var dataJSON = { "name": name, "phone": phone, "email": email,"nganhhoc":nganhhoc,"loaihinh":loaihinh, "emailto": emailto,"typeId" :2 }
             showLoadingContactImage('content-register', 'frmContentReg');
             $.ajax({
                 url: "https://alpha.f5academy.net/api/Phenikaaservice",
@@ -160,7 +160,7 @@ $(document).ready(function() {
             var nganhhoc = $('#cboNganhHoc2').val();
             var loaihinh = $('#cboLoaiHinh2').val();
             var emailto = "quyendn84@gmail.com";
-            var dataJSON = { "name": name, "phone": phone, "email": email,"nganhhoc":nganhhoc,"loaihinh":loaihinh, "emailto": emailto,"typeId" :1 }
+            var dataJSON = { "name": name, "phone": phone, "email": email,"nganhhoc":nganhhoc,"loaihinh":loaihinh, "emailto": emailto,"typeId" :2 }
             showLoadingContactImage('content-register2', 'frmContentReg2');
             $.ajax({
                 url: "https://alpha.f5academy.net/api/Phenikaaservice",
