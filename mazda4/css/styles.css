@@ -184,7 +184,8 @@ a, .btn, button{
 	-webkit-transform: scale(1.15);
 	-moz-transform: scale(1.15);
 	transform: scale(1.15);
-	z-index: 99999;
+	z-index: 10000;
+	position: relative;
 	}
 
 .panel-default{
