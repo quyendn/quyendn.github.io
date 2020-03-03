@@ -235,7 +235,7 @@ a, .btn, button{
 	position:relative;
 	padding-top:60px;
 	padding-bottom:30px;
-	background:url(../img/bg-slide.jpg) no-repeat 50% 50%;
+	background:url(../img/bg-slide.jpg) no-repeat 50% 50% / 100% 100%;
 	}
 #slide-wrap .text{
 	position:absolute;
