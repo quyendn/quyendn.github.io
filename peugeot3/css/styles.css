@@ -493,6 +493,10 @@ img{
 		margin-top: 15px;
 		
 		}
+		#section6 .image
+		{
+			height: auto;
+		}
 	#section6 .text{
 		position:inherit;
 		margin-top:15px;
