@@ -427,6 +427,10 @@ img{
 }
 
 @media (max-width: 767px) {
+	.formRegister .inner h3
+	{
+		font-size: 16px;
+	}
 	#header{
 		min-height:80px;
 		padding-top:0;
