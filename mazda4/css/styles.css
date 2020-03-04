@@ -473,9 +473,11 @@ img{
 }
 
 @media (max-width: 992px) {
+	#section2 img{
+		margin-top:0;}
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 	#header{
 		min-height:80px;
 		padding-top:0;
@@ -496,7 +498,6 @@ img{
 	.navbar-nav>li>a{
 		float:none;
 		display:block;
-		padding:10px 15px;
 		float:none !important;
 		}
 	#car{
@@ -507,13 +508,18 @@ img{
 		}
 	#frm-register{
 		padding:15px !important;
-		margin:0 30px 15px 30px !important;
+		margin:0 15px 15px 15px !important;
 		}
 	.formRegister h3{
 		font-size:20px;
 		}
 	
-		
+	#section2 .st-hd{
+		margin-left:0 !important;
+		margin-right:0 !important }	
+	#section2 .btnRegister{
+		font-size:14px;
+		}
 	.section .st-hd h3{
 		font-size:20px;
 		line-height:normal;
@@ -531,7 +537,7 @@ img{
 		}
 
 	.formRegister .inner {
-		padding: 15px;
+		padding: 15px 0;
 		}
 	#section1 .inner{
 		position:static;
@@ -547,6 +553,7 @@ img{
 		clear:both;
 		overflow:hidden;
 		margin-bottom:10px;
+	
 		}
 	#thank .inner{
 		font-size:14px;
