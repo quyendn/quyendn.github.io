@@ -581,6 +581,13 @@ img{
 		font-size:16px;
 		line-height:22px;
 		}
+		.formRegister .inner h3{
+			font-size: 16px;
+		}
+		#section2.section .st-hd h3
+		{
+			font-size: 20px;
+		}
 
 	}
 
