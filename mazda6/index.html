@@ -1,0 +1,638 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="no-js" style="height:100%;">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>MAZDA</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.nanoscroller.min.js"></script>
+    <script type="text/javascript" src="js/wow/wow.min.js"></script>
+    <script src="js/jquery.fancybox.js" type="text/javascript"></script>
+    <script src="js/jquery.fancybox-thumbsER.js" type="text/javascript"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <link href="css/font-face.css" rel="stylesheet" type="text/css" />
+    <link href="css/toastr.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrapValidator.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/owl.carousel.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="css/animate.css" />
+    <link href="css/jquery.fancybox.css" rel="stylesheet" type="text/css" />
+    <link href="css/jquery.fancybox-thumbsER.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div id="container">
+    	<div id="fixButton">
+        	<div><a href="tel:1900545591"><img src="img/ic_phone-right.png"> <span>Hotline</span></a></div>
+            <div><a href=""><img src="img/ic_download-br.png"> <span>TẢI BROCHURE</span></a></div>
+            <div><a data-scroll="" data-options="easing: easeInQuad" href="#frm-register"><img src="img/ic_contact-right.png"> <span>đăng ký </span></a></div>
+        </div>
+        <div id="header" class="">
+        	<div class="affix" data-spy="affix" data-offset-top="79" id="">
+                <div class="container">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"></button>
+                    <a data-scroll="" data-options="easing: easeInQuad" href="#slide" class="navbar-brand">
+                    	<img src="img/mazda_logo.png">
+                    </a>
+                   
+                    <nav class="collapse navbar-collapse" role="navigation">
+                        <ul class="nav navbar-nav">
+                            <li><a data-scroll="" data-options="easing: easeInQuad" href="#section2" class="navbar1 ">CÁC PHIÊN BẢN	</a></li>
+                            <li><a data-scroll="" data-options="easing: easeInQuad" href="#section3" class="navbar1 ">ĐỘT PHÁ<br class="hidden-xs"> PHÂN KHÚC</a></li>
+                            <li><a data-scroll="" data-options="easing: easeInQuad" href="#slide5" class="navbar1 ">trang bị mới<br class="hidden-xs"> vượt chuẩn</a></li>
+                            <li><a data-scroll="" data-options="easing: easeInQuad" href="#section5" class="navbar1 ">thiết kế cá tính</a></li>
+                            <li><a data-scroll="" data-options="easing: easeInQuad" href="#section4" class="navbar1 ">công nghệ vượt trội</a></li>
+                            <li><a data-scroll="" data-options="easing: easeInQuad" href="#section1" class="navbar1">đăng ký nhận báo giá	</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div id="slide-wrap" class="section">
+        	<div class="container text-center">
+                <img src="img/video1.jpg">
+            </div>
+        </div>
+        <div id="section1" class="section" style="position:relative">
+            <div class="container">
+            	<div class="st-hd wow fadeInUp text-center">
+                    <div><img src="img/line-graiden-l.png" class="hidden-xs"><img src="img/tl1.png"><img src="img/line-graiden-r.png" class="hidden-xs"></div>
+                </div>
+            	<div style="position:relative">
+                	<div><img src="img/pc1.jpg"></div>
+                    <div class="formRegister wow fadeInRight" id="frm-register" style=" margin-bottom:30px">
+                        <div class="inner">
+                            <h3>ĐĂNG KÝ NHẬN THÔNG TIN</h3>
+                            <form id="frmRegDownload" autocomplete="off" novalidate class="bv-form">
+                                <div id="frmContentReg">
+                                    
+                                    
+                                    <div class="form-group has-feedback">
+                                        <input type="text" class="form-control" name="name" id="txtName" value="" placeholder="Họ và tên(*)">
+                                    </div>
+                                    <div class="form-group has-feedback">
+                                        <input type="text" class="form-control" name="phone" id="txtPhone" onkeypress="return AllowNumberOnly(event);" placeholder="Số điện thoại(*)">
+                                    </div>
+                                    <div class="form-group has-feedback">
+                                        <input type="text" class="form-control" name="email" id="txtEmail" placeholder="Email">
+                                    </div>
+                                    <div class="form-group has-feedback">
+                                        <select class="form-control" id="cboCity" name="cboCity">
+                                            <option value="">--- Tỉnh/thành phố ---</option>
+                                            <option value="Hà Nội">Hà Nội</option>
+                                            <option value="TP. HCM">TP. HCM</option>
+                                            <option value="An Giang">An Giang</option>
+                                            <option value="Bà Rịa Vũng Tàu">Bà Rịa Vũng Tàu</option>
+                                            <option value="Bạc Liêu">Bạc Liêu</option>
+                                            <option value="Bình Dương">Bình Dương</option>
+                                            <option value="Bình Định">Bình Định</option>
+                                            <option value="Bình Phước">Bình Phước</option>
+                                            <option value="Bình Thuận">Bình Thuận</option>
+                                            <option value="Cần Thơ">Cần Thơ</option>
+                                            <option value="Đắk Lắk">Đắk Lắk</option>
+                                            <option value="Đà Nẵng">Đà Nẵng</option>
+                                            <option value="Đồng Nai">Đồng Nai</option>
+                                            <option value="Gia Lai">Gia Lai</option>
+                                            <option value="Hà Tĩnh">Hà Tĩnh</option>
+                                            <option value="Hải Dương">Hải Dương</option>
+                                            <option value="Hải Phòng">Hải Phòng</option>
+                                            <option value="Hòa Bình">Hòa Bình</option>
+                                            <option value="Kiên Giang">Kiên Giang</option>
+                                            <option value="Kon Tum">Kon Tum</option>
+                                            <option value="Khánh Hoà">Khánh Hoà</option>
+                                            <option value="Lạng Sơn">Lạng Sơn</option>
+                                            <option value="Lâm Đồng">Lâm Đồng</option>
+                                            <option value="Nghệ An">Nghệ An</option>
+                                            <option value="Phú Thọ">Phú Thọ</option>
+                                            <option value="Quảng Bình">Quảng Bình</option>
+                                            <option value="Quảng Nam">Quảng Nam</option>
+                                            <option value="Quảng Ninh">Quảng Ninh</option>
+                                            <option value="Quảng Ngãi">Quảng Ngãi</option>
+                                            <option value="Quảng Trị">Quảng Trị</option>
+                                            <option value="Sơn La">Sơn La</option>
+                                            <option value="Tây Ninh">Tây Ninh</option>
+                                            <option value="Tiền Giang">Tiền Giang</option>
+                                            <option value="Long An">Long An</option>
+                                            <option value="Tuyên Quang">Tuyên Quang</option>
+                                            <option value="Thái Bình">Thái Bình</option>
+                                            <option value="Thái Nguyên">Thái Nguyên</option>
+                                            <option value="Thanh Hóa">Thanh Hóa</option>
+                                            <option value="Thừa Thiên Huế">Thừa Thiên Huế</option>
+                                            <option value="Vĩnh Long">Vĩnh Long</option>
+                                            <option value="Vĩnh Phúc">Vĩnh Phúc</option>
+                                            <option value="Yên Bái">Yên Bái</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group text-center">
+                                        <button class="btn btnRegister">Đăng ký ngay</button>
+                                    </div>
+                                </div>
+                                <div id="content-register"></div>
+                            </form>
+            
+                        </div>
+                        <p class="text-center">Quà tặng đặc biệt cho khách hàng đăng ký thông tin tại new-mazda2.mazdamotors.vn</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="section text-center" id="section2">
+            <div class="container ">
+            	<div class="st-hd wow fadeInUp">
+                    <div><img src="img/line-graiden-l.png" class="hidden-xs"><img src="img/tl2.png"><img src="img/line-graiden-r.png" class="hidden-xs"></div>
+                </div>
+                
+                
+            </div>
+            <div id="st2Bt">
+            	<div class="container">
+                	<div class="row">
+                    	<div class="col-sm-6">
+                        	<div class="">
+                            	<h2>NEW MAZDA2</h2>
+                                <p><em><strong>- Phong cách & năng động -</strong></em></p>
+                                <p>New Mazda2 Sport 1.5L Premium | New Mazda2 Sport 1.5L Luxury <br> New Mazda2 Sport 1.5L Deluxe</p>
+                            </div>
+                            <div class="tab-content">
+                              <div id="tab1-1" class="tab-pane fade in active"><img src="img/xe1.png"></div>
+                              <div id="tab1-2" class="tab-pane fade"><img src="img/xe1-2.png"></div>
+                              <div id="tab1-3" class="tab-pane fade"><img src="img/xe1-3.png"></div>
+                              <div id="tab1-4" class="tab-pane fade"><img src="img/xe1-4.png"></div>
+                            </div>
+                            <ul class="nav nav-tabs">
+                              <li class="active"><a data-toggle="tab" href="#tab1-1"><img src="img/mau1.png"></a></li>
+                              <li><a data-toggle="tab" href="#tab1-2"><img src="img/mau2.png"></a></li>
+                              <li><a data-toggle="tab" href="#tab1-3"><img src="img/mau3.png"></a></li>
+                              <li><a data-toggle="tab" href="#tab1-4"><img src="img/mau4.png"></a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6">
+                        	<div class="">
+                            	<h2>NEW MAZDA2 SPORT</h2>
+                                <p><em><strong>- Tự tin & năng động -</strong></em></p>
+                                <p>New Mazda2 1.5L Premium | New Mazda2 1.5L Luxury <br> New Mazda2 1.5L Deluxe | New Mazda2 1.5L AT</p>
+                            </div>
+                            <div class="tab-content">
+                              <div id="tab2-1" class="tab-pane fade in active"><img src="img/xe2.png"></div>
+                              <div id="tab2-2" class="tab-pane fade"><img src="img/xe2-2.png"></div>
+                              <div id="tab2-3" class="tab-pane fade"><img src="img/xe2-3.png"></div>
+                              <div id="tab2-4" class="tab-pane fade"><img src="img/xe2-4.png"></div>
+                            </div>
+                            <ul class="nav nav-tabs">
+                              <li class="active"><a data-toggle="tab" href="#tab2-1"><img src="img/mau1.png"></a></li>
+                              <li><a data-toggle="tab" href="#tab2-2"><img src="img/mau2.png"></a></li>
+                              <li><a data-toggle="tab" href="#tab2-3"><img src="img/mau3.png"></a></li>
+                              <li><a data-toggle="tab" href="#tab2-4"><img src="img/mau4.png"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section text-center" id="section3">
+            <div class="container ">
+            	<div class="st-hd wow fadeInUp">
+                    <div><img src="img/line-graiden-l.png" class="hidden-xs"><img src="img/tl3.png"><img src="img/line-graiden-r.png" class="hidden-xs"></div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="text-bt">
+                            <div><img src="img/tamnhin1.png"></div>
+                            <div class="text">
+                                <h4>Nâng cấp thiết kế KODO</h4>
+                                <p>- Tinh giản và tinh tế -</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="text-bt">
+                            <div><img src="img/tamnhin2.png"></div>
+                            <div class="text">
+                                <h4>Nâng tầm giá trị tiện nghi</h4>
+                                <p>Tiện nghi cao cấp hơn - Lái hứng khởi hơn</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="text-bt">
+                            <div><img src="img/tamnhin3.png"></div>
+                            <div class="text">
+                                <h4>Nâng cao chất lượng vận hành</h4>
+                                <p>Mang đến “Cảm giác lái đầy cảm hứng và thú vị”</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section text-center" id="section4">
+            <div class="container ">
+            	<div class="st-hd wow fadeInUp">
+                    <div><img src="img/line-graiden-l.png" class="hidden-xs"><img src="img/tl4.png"><img src="img/line-graiden-r.png" class="hidden-xs"></div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-8">
+                        <div id="slide1" class="carousel slide" data-ride="carousel">
+                          <div class="carousel-inner">
+                            <div class="item active">
+                            	  <div class="text-bt">
+                                      <img src="img/trangbi1.png">
+                                      <div class="text text-uppercase">GVC Plus giúp xe vận hành ổn định</div>
+                                  </div>
+                            </div>
+                        
+                            <div class="item">
+                            	  <div class="text-bt">
+                                      <img src="img/trangbi2.png">
+                                      <div class="text text-uppercase">Tiện nghi cao cấp luôn nằm trong tầm tay</div>
+                                  </div>
+                            </div>
+                        
+                            <div class="item">
+                            	  <div class="text-bt">
+                                      <img src="img/trangbi3.png">
+                                      <div class="text text-uppercase">Công nghệ an toàn i-Activsense mang đến sự an tâm</div>
+                                  </div>
+                            </div>
+                          </div>
+                          <a class="left carousel-control" href="#slide1" data-slide="prev"></a>
+                          <a class="right carousel-control" href="#slide1" data-slide="next"></a>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 text-center" style="padding-top:45px">
+                        <p style="font-size:18px; margin-bottom:30px">Mang đến cảm giác lái thoải mái và khởi nguồn cảm hứng sống tích cực bằng công nghệ tối tân. </p>
+                        <button class="btn btnRegister" data-scroll="" data-options="easing: easeInQuad" href="#section1" class="navbar1">Đăng ký nhận thông báo</button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="section text-center" id="section5">
+            <div class="container ">
+            	<div class="st-hd wow fadeInUp">
+                    <div><img src="img/line-graiden-l.png" class="hidden-xs"><img src="img/tl5.png"><img src="img/line-graiden-r.png" class="hidden-xs"></div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                    	<h2 class="text-uppercase" style="margin:0 0 30px 0">ngoại thất new mazda2</h2>
+                        <div id="slide2" class="carousel slide" data-ride="carousel">
+                          <div class="carousel-inner">
+                            <div class="item active">
+                            	  <div class="text-bt">
+                                      <img src="img/ngoaithat1.jpg">
+                                      <div class="text text-uppercase">Thiết kế thân xe mở rộng</div>
+                                  </div>
+                            </div>
+                        
+                            <div class="item">
+                            	  <div class="text-bt">
+                                      <img src="img/ngoaithat2.jpg">
+                                      <div class="text text-uppercase">Lưới tản nhiệt họa tiết đinh tán ấn tượng</div>
+                                  </div>
+                            </div>
+                        
+                            <div class="item">
+                            	  <div class="text-bt">
+                                      <img src="img/ngoaithat3.jpg">
+                                      <div class="text text-uppercase">Cụm đèn pha LED sắc nét tạo cảm giác xe mở rộng ra hai bên</div>
+                                  </div>
+                            </div>
+                          </div>
+                          <a class="left carousel-control" href="#slide2" data-slide="prev"></a>
+                          <a class="right carousel-control" href="#slide2" data-slide="next"></a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                    	<h2 class="text-uppercase" style="margin:0 0 30px 0">ngoại thất new mazda2 sport</h2>
+                        <div id="slide3" class="carousel slide" data-ride="carousel">
+                          <div class="carousel-inner">
+                            <div class="item active">
+                            	  <div class="text-bt">
+                                      <img src="img/ngoaithat4.jpg">
+                                      <div class="text text-uppercase">Thiết kế thân xe mở rộng</div>
+                                  </div>
+                            </div>
+                        
+                            <div class="item">
+                            	  <div class="text-bt">
+                                      <img src="img/ngoaithat5.jpg">
+                                      <div class="text text-uppercase">Lưới tản nhiệt họa tiết đinh tán ấn tượng</div>
+                                  </div>
+                            </div>
+                        
+                            <div class="item">
+                            	  <div class="text-bt">
+                                      <img src="img/ngoaithat6.jpg">
+                                      <div class="text text-uppercase">Cụm đèn pha LED sắc nét tạo cảm giác xe mở rộng ra hai bên</div>
+                                  </div>
+                            </div>
+                          </div>
+                          <a class="left carousel-control" href="#slide3" data-slide="prev"></a>
+                          <a class="right carousel-control" href="#slide3" data-slide="next"></a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                    	<div class="st-hd wow fadeInUp">
+                            <h3><img src="img/line-graiden-l.png" class="hidden-xs">thiết kế<img src="img/line-graiden-r.png" class="hidden-xs"></h3>
+                        </div>
+                        <p class="text-uppercase" style="font-size:18px; margin-bottom:30px">New Mazda2 với thiết kế lay động và gợi lên sự thích thú ngay từ cái nhìn đầu tiên</p>
+                        <div><button class="btn btnRegister" data-scroll="" data-options="easing: easeInQuad" href="#section1" class="navbar1">Đăng ký nhận thông báo</button></div>
+                    </div>
+                    <div class="col-sm-6">
+                    	<h2 class="text-uppercase" style="margin:0 0 30px 0; font-size:16px">Chất liệu và sắc màu kiến tạo không gian nội thất đẳng cấp</h2>
+                        <div id="slide5" class="carousel slide" data-ride="carousel">
+                          <div class="carousel-inner">
+                            <div class="item active">
+                            	  <div class="text-bt">
+                                      <img src="img/chatlieu.jpg">
+                                      <div class="text">
+                                            <h4 class="text-uppercase">Nội thất màu xám xanh</h4>
+                                            <p>Không khí trong lành của buổi bình minh</p>
+                                      </div>
+                                  </div>
+                            </div>
+                        
+                            <div class="item">
+                            	  <div class="text-bt">
+                                      <img src="img/chatlieu2.jpg">
+                                      <div class="text">
+                                            <h4 class="text-uppercase">Nội thất màu nâu</h4>
+                                            <p>Ánh sáng êm dịu của căn phòng</p>
+                                      </div>
+                                  </div>
+                            </div>
+                        
+                            
+                          </div>
+                          <a class="left carousel-control" href="#slide5" data-slide="prev"></a>
+                          <a class="right carousel-control" href="#slide5" data-slide="next"></a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                    	<h2 class="text-uppercase" style="margin:0 0 30px 0; font-size:16px">vận hành ổn định và linh hoạt</h2>
+                        <div id="slide5" class="carousel slide" data-ride="carousel">
+                          <div class="text-bt">
+                              <img src="img/vanhanh.jpg">
+                              <div class="text">
+                                <p>Thiết kế kiến trúc xe dựa trên công nghệ SkyActiv</p>
+                              </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                    	<h2 class="text-uppercase" style="margin:0 0 30px 0; font-size:16px">An toàn chuẩn NCAP quốc tế</h2>
+                        <div id="slide5" class="carousel slide" data-ride="carousel">
+                          <div class="text-bt">
+                              <img src="img/antoan.jpg">
+                              <div class="text">
+                                <p>Hệ thống hỗ trợ an toàn chủ động i-Activsense</p>
+                              </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section text-center" id="section6">
+            <div class="container ">
+            	<div class="st-hd wow fadeInUp">
+                    <div><img src="img/line-graiden-l.png" class="hidden-xs"><img src="img/tl6.png"><img src="img/line-graiden-r.png" class="hidden-xs"></div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="text-bt">
+                              <a href=""><img src="img/tintuc.jpg"></a>
+                              <div class="text text-uppercase text-left">tin tức 1</div>
+                          </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="text-bt">
+                              <a href=""><img src="img/tintuc.jpg"></a>
+                              <div class="text text-uppercase text-left">tin tức 2</div>
+                          </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="text-bt">
+                              <a href=""><img src="img/tintuc.jpg"></a>
+                              <div class="text text-uppercase text-left">tin tức 3</div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="container">
+            	<address>
+                	<p>CÔNG TY TNHH MTV PHÂN PHỐI Ô TÔ DU LỊCH CHU LAI TRƯỜNG HẢI </p>
+                    <p>Giấy CNĐKDN: 4000779880 Ngày cấp: 27/10/2010. </p>
+                    <p>Cơ quan cấp: Phòng Đăng ký kinh doanh Sở Kế hoạch và Đầu tư tỉnh Quảng Nam. </p>
+                    <p>Địa chỉ: Thôn 4. Xã Tam Hiệp, Huyện Núi Thành, Tỉnh Quảng Nam, Việt Nam </p>
+                </address>
+            	<ul>
+                    <li>
+                        <a href="tel:1900545591"><img src="img/ic_phone.png"><span class="small">Hotline
+                                CSKH</span><br>1900 5455 91</a>
+                    </li>
+                    <li>
+                        <a href="http://mazdamotors.vn/"><img src="img/ic_web.png">www.mazdamotors.vn</a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/mazdamotors.vn/"><img src="img/ic_fb.png">Mazda Vietnam</a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/channel/UCS0mc7owoy6D5TKn0xGPpBQ"><img src="img/ic_yt.png">Mazda Vietnam</a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/mazdavnofficial/"><img src="img/ic_off.png">mazdavnofficial</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        
+    </div>
+    
+    <!---->
+    <div class="modal fade in" id="formRegister-popup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            	<div class="modal-header">
+                	ĐĂNG KÝ NHẬN BÁO GIÁ VÀ ƯU ĐÃI MỚI NHẤT
+                	<button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                	<div class="formRegister">
+                        <div class="inner">
+                            <form id="frmRegDownload" autocomplete="off" novalidate class="bv-form">
+                                <div id="frmContentReg">
+                                    <div class="form-group has-feedback">
+                                        <select class="form-control" id="cboCity" name="cboCity">
+                                            <option value="">--- Tỉnh/thành phố ---</option>
+                                            <option value="Hà Nội">Hà Nội</option>
+                                            <option value="TP. HCM">TP. HCM</option>
+                                            <option value="An Giang">An Giang</option>
+                                            <option value="Bà Rịa Vũng Tàu">Bà Rịa Vũng Tàu</option>
+                                            <option value="Bạc Liêu">Bạc Liêu</option>
+                                            <option value="Bình Dương">Bình Dương</option>
+                                            <option value="Bình Định">Bình Định</option>
+                                            <option value="Bình Phước">Bình Phước</option>
+                                            <option value="Bình Thuận">Bình Thuận</option>
+                                            <option value="Cần Thơ">Cần Thơ</option>
+                                            <option value="Đắk Lắk">Đắk Lắk</option>
+                                            <option value="Đà Nẵng">Đà Nẵng</option>
+                                            <option value="Đồng Nai">Đồng Nai</option>
+                                            <option value="Gia Lai">Gia Lai</option>
+                                            <option value="Hà Tĩnh">Hà Tĩnh</option>
+                                            <option value="Hải Dương">Hải Dương</option>
+                                            <option value="Hải Phòng">Hải Phòng</option>
+                                            <option value="Hòa Bình">Hòa Bình</option>
+                                            <option value="Kiên Giang">Kiên Giang</option>
+                                            <option value="Kon Tum">Kon Tum</option>
+                                            <option value="Khánh Hoà">Khánh Hoà</option>
+                                            <option value="Lạng Sơn">Lạng Sơn</option>
+                                            <option value="Lâm Đồng">Lâm Đồng</option>
+                                            <option value="Nghệ An">Nghệ An</option>
+                                            <option value="Phú Thọ">Phú Thọ</option>
+                                            <option value="Quảng Bình">Quảng Bình</option>
+                                            <option value="Quảng Nam">Quảng Nam</option>
+                                            <option value="Quảng Ninh">Quảng Ninh</option>
+                                            <option value="Quảng Ngãi">Quảng Ngãi</option>
+                                            <option value="Quảng Trị">Quảng Trị</option>
+                                            <option value="Sơn La">Sơn La</option>
+                                            <option value="Tây Ninh">Tây Ninh</option>
+                                            <option value="Tiền Giang">Tiền Giang</option>
+                                            <option value="Long An">Long An</option>
+                                            <option value="Tuyên Quang">Tuyên Quang</option>
+                                            <option value="Thái Bình">Thái Bình</option>
+                                            <option value="Thái Nguyên">Thái Nguyên</option>
+                                            <option value="Thanh Hóa">Thanh Hóa</option>
+                                            <option value="Thừa Thiên Huế">Thừa Thiên Huế</option>
+                                            <option value="Vĩnh Long">Vĩnh Long</option>
+                                            <option value="Vĩnh Phúc">Vĩnh Phúc</option>
+                                            <option value="Yên Bái">Yên Bái</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group has-feedback">
+                                        <select class="form-control" id="cboPartner" name="cboPartner">
+                                            <option value="">--- Showroom/Đại lý ---</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group has-feedback">
+                                        <input type="text" class="form-control" name="name" id="txtName" value="" placeholder="Họ và tên(*)">
+                                    </div>
+                                    <div class="form-group has-feedback">
+                                        <input type="text" class="form-control" name="phone" id="txtPhone" onkeypress="return AllowNumberOnly(event);" placeholder="Số điện thoại(*)">
+                                    </div>
+                                    <div class="form-group has-feedback">
+                                        <input type="text" class="form-control" name="email" id="txtEmail" placeholder="Email">
+                                    </div>
+                                    <div class="form-group text-center">
+                                        <button class="btn btnRegister">Đăng ký</button>
+                                    </div>
+                                </div>
+                                <div id="content-register"></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+      </div>
+    </div>
+    <!---->
+    <script src="js/smooth-scroll.js"></script>
+    <script type="text/javascript" src="js/bootstrapValidator.min.js"></script>
+    <script type="text/javascript" src="js/form-validation.js"></script>
+    <script type="text/javascript" src="js/toastr.js"></script>
+    <script type="text/javascript">
+        new WOW().init();
+        function AllowNumberOnly(evt) {
+            evt = (evt) ? evt : event;
+            var charCode = (evt.charCode) ? evt.charCode : ((evt.keyCode) ? evt.keyCode : ((evt.which) ? evt.which : 0));
+            if ((charCode > 31) && (charCode < 48 || charCode > 57) && charCode != 8 && charCode != 37 && charCode != 39 && charCode != 45 && charCode != 46) {
+                return false;
+            }
+            return true;
+        }
+        $(document).ready(function () {
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 0,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: true
+                    },
+                    768: {
+                        items: 2,
+                        nav: true
+                    },
+                    1000: {
+                        items: 3,
+                        nav: true,
+                        loop: false,
+                        margin: 30,
+                    }
+                }
+            })
+            $('.owl-carousel-rate').owlCarousel({
+                loop: true,
+                margin: 10,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: true
+                    },
+                    768: {
+                        items: 2,
+                        nav: true
+                    },
+                    1000: {
+                        items: 2,
+                        nav: true,
+                        loop: true,
+                        margin: 0,
+                    }
+                }
+            })
+        })
+    </script>
+    <script>
+        smoothScroll.init({
+            speed: 1000,
+            easing: 'easeInOutCubic',
+            offset: 90,
+            updateURL: false,
+            callbackBefore: function (toggle, navbar1) { },
+            callbackAfter: function (toggle, navbar1) { }
+        });
+
+    </script>
+    <script>
+    	$("button").click(function(){
+			$(".navbar-toggle").toggleClass("close");
+		});
+
+    	$(".navbar-toggle").click(function(){
+			$("#header").toggleClass("open");
+		});
+  
+    	$(".navbar-nav a").click(function(){
+			$(".navbar-collapse").removeClass("in");
+		
+			$(".navbar-toggle").removeClass("close");
+		});
+        
+    </script>
+    
+
+    <script src="js/smooth-scrollbar.js"></script>
+    <link href="css/smooth-scrollbar.css" rel="stylesheet" type="text/css" />
+</body>
+
+
+</html>
