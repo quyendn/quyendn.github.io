@@ -248,7 +248,7 @@ a, .btn, button{
 	padding-bottom:45px;
 	}
 .section .st-hd{
-	margin-bottom:45px;
+	margin-bottom:60px;
 	}
 .section .st-hd h3{
 	font-size:26px;
@@ -276,10 +276,15 @@ a, .btn, button{
 #section1{
 	padding-bottom:0;
 	}
-#section1  .col-sm-4,
-#section2 .col-sm-6{
+#section1  .col-sm-4
+{
 	margin-bottom:45px;
+
 	}
+	#section2 .col-sm-6{
+		margin-bottom:120px;
+		
+		}
 #section2 .col-sm-6:nth-child(3){
 	clear:both
 	}
