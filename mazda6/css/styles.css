@@ -526,16 +526,19 @@ img{
 }
 
 @media (max-width: 992px) {
-	#section2 img{
-		margin-top:0;}
+	.navbar-nav > li > a{
+		font-size:11px;
+		padding-right:5px;
+		padding-left:5px;}
 }
 
 @media (max-width: 767px) {
-	#header{
-		min-height:80px;
+
+	#header, #header .affix{
+		min-height:66px;
 		padding-top:0;
 		}
-	#header .navbar-brand img{
+	#header .navbar-brand img, #header .affix .navbar-brand img{
 		height:60px;
 		}
 	.navbar-collapse{
@@ -552,6 +555,7 @@ img{
 		float:none;
 		display:block;
 		float:none !important;
+		font-size:14px;
 		}
 	.navbar-nav>li:nth-child(2),.navbar-nav>li:nth-child(3){
 		margin-top:0px;}
@@ -596,6 +600,13 @@ img{
 		}
 	#section5 h2{
 		font-size:16px;
+		}
+	#footer ul li{
+		width:100%;
+		float:none;
+		clear:both;
+		margin-bottom:10px;
+		overflow:hidden;
 		}
 
 	}
