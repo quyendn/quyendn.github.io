@@ -318,21 +318,7 @@
                         if (md.tablet()) {
                             vHeight = "350px";
                         }
-                        jwplayer('VdoPlayr').setup({
-            
-                            file: 'https://youtu.be/F1k3eFzeqZ8',
-                            image: "img/video.png",
-                            width: '100%',
-                            height: vHeight,
-                            
-                            stretching: "exactfit",
-                            repeat: true,
-                            controls: true,
-                            skin: 'seven',
-                            autostart: false,
-                            mute: true,
-                            primary: 'html5'
-                        });
+                        $('#VdoPlayr').html('<iframe width="100%" height="'+vHeight+'" src="https://www.youtube.com/embed/1hScVU_YXlo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>')
                     </script>
                     
                 </div>

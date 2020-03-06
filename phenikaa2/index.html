@@ -328,6 +328,7 @@
             <h3>CHỌN <strong>PHENIKAA UNIVERSITY</strong> - HỌC TỪ <strong>TRẢI NGHIỆM</strong></h3>
             <div style="background:#8098aa">
                 <div class="container">
+                    
                     <div class="player text-center" id="VdoPlayr" style="text-align:center;"></div>
                     <script type='text/javascript'>
                         var vHeight = "500px";
@@ -338,21 +339,7 @@
                         if (md.tablet()) {
                             vHeight = "350px";
                         }
-                        jwplayer('VdoPlayr').setup({
-            
-                            file: 'https://youtu.be/F1k3eFzeqZ8',
-                            image: "img/video.png",
-                            width: '100%',
-                            height: vHeight,
-                            
-                            stretching: "exactfit",
-                            repeat: true,
-                            controls: true,
-                            skin: 'seven',
-                            autostart: false,
-                            mute: true,
-                            primary: 'html5'
-                        });
+                        $('#VdoPlayr').html('<iframe width="100%" height="'+vHeight+'" src="https://www.youtube.com/embed/1hScVU_YXlo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>')
                     </script>
                     
                 </div>
