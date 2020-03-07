@@ -106,7 +106,7 @@ $(document).ready(function() {
                     $('#frmRegDownload').bootstrapValidator('resetForm', true);
                     toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', { timeOut: 5000 })
                     hideLoadingContactImage('content-register', 'frmContentReg');
-                    window.location.href = "https://quyendn.github.io/mazda6/dang-ky-thanh-cong.html";
+                    window.location.href = "/dang-ky-thanh-cong.html";
                 }
             });
         }
@@ -191,7 +191,7 @@ $(document).ready(function() {
                     $('#frmRegDownloadSub').bootstrapValidator('resetForm', true);
                     toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', { timeOut: 5000 })
                     hideLoadingContactImage('content-register-sub', 'frmContentRegSub');
-                    window.location.href = "https://quyendn.github.io/mazda6/dang-ky-thanh-cong.html";
+                    window.location.href = "/dang-ky-thanh-cong.html";
                 }
             });
         }
@@ -240,7 +240,7 @@ $(document).ready(function() {
                     $('#frmMobile').bootstrapValidator('resetForm', true);
                     toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', { timeOut: 5000 })
                     hideLoadingContactImage('content-mobile', 'formContentContactMobile');
-                    window.location.href = "http://cx-8.mazdamotors.vn/dang-ky-thanh-cong.html";
+                    window.location.href = "/dang-ky-thanh-cong.html";
                 }
             });
         }
