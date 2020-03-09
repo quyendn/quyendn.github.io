@@ -68,6 +68,13 @@ $(document).ready(function() {
                         message: 'Cần chọn Tỉnh/thành phố'
                     }
                 }
+            },
+            cboVehice: {
+                validators: {
+                    notEmpty: {
+                        message: 'Cần chọn dòng xe'
+                    }
+                }
             }
         },
         onSuccess: function(e) {
@@ -76,7 +83,8 @@ $(document).ready(function() {
             var email = $('#txtEmail').val();
             var phone = $('#txtPhone').val();
             var city = $('#cboCity').val();
-            var partner = "";
+            var vehice = $('#cboVehice').val();
+            var partner = $('#cboVehice').val();
             var emailto = "quyendn84@gmail.com";
             var typeId = 1;
             var check = checkPhoneNumber();
@@ -85,7 +93,7 @@ $(document).ready(function() {
             var dataJSON = { "city": city, "partner": partner, "name": name, "phone": phone, "email": email, "emailto": emailto, "typeId": typeId };
             showLoadingContactImage('content-register', 'frmContentReg');
             $.ajax({
-                url: "https://alpha.f5academy.net/api/Mazda2service",
+                url: "https://alpha.f5academy.net/api/Mazda2Sportservice",
                 type: "Post",
                 async: false,
                 data: dataJSON,
