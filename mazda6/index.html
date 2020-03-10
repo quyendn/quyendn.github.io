@@ -18,7 +18,6 @@
     <link href="css/font-face.css" rel="stylesheet" type="text/css" />
     <link href="css/toastr.min.css" rel="stylesheet" type="text/css" />
     <link href="css/bootstrapValidator.min.css" rel="stylesheet" type="text/css" />
-    <link href="css/owl.carousel.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" type="text/css" href="css/animate.css" />
     <link href="css/jquery.fancybox.css" rel="stylesheet" type="text/css" />
     <link href="css/jquery.fancybox-thumbsER.css" rel="stylesheet" type="text/css" />
@@ -39,7 +38,7 @@
     <div id="container">
     	<div id="fixButton">
         	<div><a href="tel:1900545591"><img src="img/ic_phone-right.png"> <span>Hotline</span></a></div>
-            <div><a href=""><img src="img/ic_download-br.png"> <span>TẢI BROCHURE</span></a></div>
+            <div><a href="files/Brochure-Mazda2-Sedan-Sport.zip"><img src="img/ic_download-br.png"> <span>TẢI BROCHURE</span></a></div>
             <div><a data-scroll="" data-options="easing: easeInQuad" href="#frm-register"><img src="img/ic_contact-right.png"> <span>đăng ký </span></a></div>
         </div>
         <div id="header" class="">
@@ -64,7 +63,7 @@
             </div>
         </div>
         <div id="slide-wrap" class="section">
-        	<div class="container text-center">
+        	<div class="container text-center zoom">
                 <img src="img/slide.png" class="hidden-xs">
                 <img src="img/slide_mobi.png" class="visible-xs">
                 
@@ -92,6 +91,13 @@
                                     </div>
                                     <div class="form-group has-feedback">
                                         <input type="text" class="form-control" name="email" id="txtEmail" placeholder="Email">
+                                    </div>
+                                    <div class="form-group has-feedback">
+                                        <select class="form-control" id="cboVehice" name="cboVehice">
+                                            <option value="">--- Chọn dòng xe ---</option>
+                                            <option value="New Mazda2">New Mazda2</option>
+                                            <option value="New Mazda2 Sport">New Mazda2 Sport</option>
+                                        </select>
                                     </div>
                                     <div class="form-group has-feedback">
                                         <select class="form-control" id="cboCity" name="cboCity">
@@ -170,7 +176,7 @@
                             </form>
             
                         </div>
-                        <p class="text-center"><span><strong style="color: gold;font-size: 20px;">&#10037;</strong></span>Quà tặng đặc biệt cho khách hàng đăng ký thông tin tại<br> new-mazda2.mazdamotors.vn</p>
+                        <div class="text-center wow fadeInUp"><span><strong>*</strong></span>Quà tặng đặc biệt cho khách hàng đăng ký thông tin<br class="visible-xs"> và mua xe tại đây</div>
                     </div>
                     
                 </div>
@@ -281,11 +287,22 @@
                         
                             <div class="item">
                             	  <div class="text-bt">
-                                      <img src="img/trangbi2.png">
-                                      <div class="text text-uppercase">Tiện nghi cao cấp luôn nằm trong tầm tay</div>
+                                      <img src="img/trangbi2_1.png">
+                                      <div class="text text-uppercase">Apple CarPlay/Android Auto</div>
                                   </div>
                             </div>
-                        
+                            <div class="item">
+                                <div class="text-bt">
+                                    <img src="img/trangbi2_2.png">
+                                    <div class="text text-uppercase">Màn hình HUD</div>
+                                </div>
+                          </div>
+                          <div class="item">
+                            <div class="text-bt">
+                                <img src="img/trangbi2_3.png">
+                                <div class="text text-uppercase">Gương tự động chống chói</div>
+                            </div>
+                      </div>
                             <div class="item">
                             	  <div class="text-bt">
                                       <img src="img/trangbi3.png">
@@ -298,7 +315,7 @@
                         </div>
                     </div>
                     <div class="col-sm-4 text-center" style="padding-top:45px">
-                        <p style="font-size:18px; margin-bottom:30px">Mang đến cảm giác lái thoải mái và khởi nguồn cảm hứng sống tích cực bằng công nghệ tối tân. </p>
+                        <p style="font-size:18px; margin-bottom:30px">Mang đến cảm giác lái thoải mái và<br class="visible-xs"> khởi nguồn cảm hứng sống tích cực<br class="visible-xs"> bằng công nghệ tối tân. </p>
                         <a class="btn btnRegister" data-scroll="" data-options="easing: easeInQuad" href="#section1" class="navbar1">Đăng ký nhận báo giá</a>
                     </div>
                     
@@ -332,7 +349,7 @@
                             <div class="item">
                             	  <div class="text-bt">
                                       <img src="img/ngoaithat3.jpg">
-                                      <div class="text text-uppercase">Cụm đèn pha LED sắc nét tạo cảm giác xe mở rộng ra hai bên</div>
+                                      <div class="text text-uppercase">Cụm đèn LED sắc nét tạo cảm giác xe mở rộng<br class="visible-xs"> ra hai bên</div>
                                   </div>
                             </div>
                           </div>
@@ -360,8 +377,8 @@
                         
                             <div class="item">
                             	  <div class="text-bt">
-                                      <img src="img/ngoaithat6.jpg">
-                                      <div class="text text-uppercase">Mâm xe 16 inch vỏ kim loại bạc mang đến cảm giác táo bạo</div>
+                                      <img src="img/ngoaithat6.png">
+                                      <div class="text text-uppercase" style="font-size: 13px;">Cụm đèn LED sau kết nối liền mạch với thân xe<br> tạo cảm giác đồng nhất và xuyên suốt</div>
                                   </div>
                             </div>
                           </div>
@@ -373,11 +390,11 @@
                     	<div class="st-hd wow fadeInUp">
                             <h3><img src="img/line-graiden-l.png" class="hidden-xs">thiết kế<img src="img/line-graiden-r.png" class="hidden-xs"></h3>
                         </div>
-                        <p class="text-uppercase" style="font-size:18px; margin-bottom:30px">New Mazda2 với thiết kế lay động và gợi lên sự thích thú ngay từ cái nhìn đầu tiên</p>
+                        <p class="text-uppercase" style="font-size:18px; margin-bottom:30px">New Mazda2 với thiết kế lay động và gợi lên sự thích thú<br class="visible-xs"> ngay từ cái nhìn đầu tiên</p>
                         <div><a class="btn btnRegister" data-scroll="" data-options="easing: easeInQuad" href="#section1" class="navbar1">Đăng ký nhận báo giá</a></div>
                     </div>
                     <div class="col-sm-6 wow fadeInLeft">
-                    	<h2 class="text-uppercase" style="margin:0 0 30px 0; font-size:16px">Chất liệu và sắc màu kiến tạo không gian nội thất đẳng cấp</h2>
+                    	<h2 class="text-uppercase" style="margin:0 0 30px 0; font-size:16px">Chất liệu và sắc màu<br class="visible-xs"> kiến tạo không gian nội thất đẳng cấp</h2>
                         <div id="slide5" class="carousel slide" data-ride="carousel">
                           <div class="carousel-inner">
                             <div class="item active">
@@ -418,13 +435,13 @@
                         </div>
                     </div>
                     <div class="col-sm-6 wow fadeInUp">
-                    	<h2 class="text-uppercase" style="margin:0 0 30px 0; font-size:16px">An toàn chuẩn NCAP quốc tế</h2>
+                    	<h2 class="text-uppercase" style="margin:0 0 30px 0; font-size:16px">AN TOÀN CHUẨN NCAP QUỐC TẾ</h2>
                         <div id="slide5" class="carousel slide" data-ride="carousel">
                           <div class="text-bt zoom">
-                             <img src="img/RCTA.jpg">
+                             <img src="img/RCTA.png">
                               <div class="text">
                                 <p>
-                                    Rear cross traffic alert (RCTA)
+                                    Hệ thống đèn Led thích ứng thông minh hiện đại nhất
                                 </p>
                               </div>
                           </div>
@@ -448,7 +465,6 @@
                                 <div class="text text-uppercase text-left">${title}</div>
                             </div>
                         </div>
-
                     </script>
                 </div>
                 <script type="text/javascript">
@@ -500,10 +516,7 @@
                 </ul>
             </div>
         </div>
-        
-        
     </div>
-    
     <!---->
     <div class="modal fade in" id="formRegister-popup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
@@ -699,7 +712,5 @@
 		});
         
     </script>
-    <script src="js/smooth-scrollbar.js"></script>
-    <link href="css/smooth-scrollbar.css" rel="stylesheet" type="text/css" />
 </body>
 </html>
