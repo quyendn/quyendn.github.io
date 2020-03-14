@@ -1,0 +1,45 @@
+/* Webfont: VN_MINISansSerif-Bold */@font-face {
+    font-family: 'VN_MINISansSerif';
+    src: url('../fonts/VI_MINI Sans Serif-Bold.woff2') format('woff2'), /* Modern Browsers */
+         url('../fonts/VI_MINI Sans Serif-Bold.otf') format('opentype'); /* Safari, Android, iOS */
+             font-style: normal;
+    font-weight: bold;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: VN_MINISansSerif-Regular */@font-face {
+    font-family: 'VN_MINISansSerif';
+    src: url('../fonts/VI_MINI Sans Serif-Regular.woff2') format('woff2'), /* Modern Browsers */
+         url('../fonts/VI_MINI Sans Serif-Regular.otf') format('opentype'); /* Safari, Android, iOS */
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: VN_MINISerif-Bold */@font-face {
+    font-family: 'VN_MINISerif';
+    src: url('../fonts/VI_MINI Serif-Bold.woff2') format('woff2'), /* Modern Browsers */
+         url('../fonts/VI_MINI Serif-Bold.otf') format('opentype'); /* Safari, Android, iOS */
+             font-style: normal;
+    font-weight: bold;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: VN_MINISerif-Italic */@font-face {
+    font-family: 'VN_MINISerif';
+    src: url('../fonts/VI_MINI Serif-Italic.woff2') format('woff2'), /* Modern Browsers */
+         url('../fonts/VI_MINI Serif-Italic.otf') format('opentype'); /* Safari, Android, iOS */
+             font-style: italic;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: VN_MINISerif-Regular */@font-face {
+    font-family: 'VN_MINISerif';
+    src: url('../fonts/VI_MINI Serif-Regular.woff2') format('woff2'), /* Modern Browsers */
+         url('../fonts/VI_MINI Serif-Regular.otf') format('opentype'); /* Safari, Android, iOS */
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

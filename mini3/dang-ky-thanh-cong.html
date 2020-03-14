@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="no-js" style="height:100%;">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <link href="css/font-face.css" rel="stylesheet" type="text/css" />
+    <link href="css/toastr.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrapValidator.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/owl.carousel.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="css/animate.css" />
+</head>
+
+<body>
+    <div id="container">
+    	<div id="thank">
+        	<div style="background:rgba(0,0,0,0.3);">
+        	<div class="container">
+            	<div class="bder" style="">
+                <div class="inner text-center">
+                	<p>Chúc mừng bạn đã đăng ký lái thử thành công<br/>THE NEW MINI CLUBMAN.</p>
+                    <p>Mini VIệt Nam sẽ liên hệ với bạn trong thời gian sớm nhất</p>
+                    <div class="logo"><img src="img/logo.png"></div>
+                </div>
+                </div>
+            </div>
+            <script>
+            	$(window).resize(function() {
+					$('#thank .container').height($(window).height() - 0);
+				});
+				
+				$(window).trigger('resize');
+            </script>
+            </div>
+        </div>
+    </div>
+    <!---->
+    
+    <!---->
+    <script src="js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/wow/wow.min.js"></script>
+    <script src="js/smooth-scroll.js"></script>
+    <script src="js/bootstrapValidator.min.js"></script>
+    <script src="js/form-validation.js"></script>
+    <script type="text/javascript" src="js/toastr.js"></script>
+    <script type="text/javascript">
+        smoothScroll.init({
+            speed: 1000,
+            easing: 'easeInOutCubic',
+            offset: 80,
+            updateURL: false
+
+        });
+        new WOW().init();
+        $(document).ready(function () {
+            $('.carousel-inner').owlCarousel({
+                nav: false,
+                loop: true,
+                autoHeight: true,
+                autoplay: true,
+                transitionStyle: "fade",
+                stopOnHover: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 1
+                    },
+                    1000: {
+                        items: 1
+                    }
+                }
+            });
+        });
+        function AllowNumberOnly(evt) {
+            evt = (evt) ? evt : event;
+            var charCode = (evt.charCode) ? evt.charCode : ((evt.keyCode) ? evt.keyCode : ((evt.which) ? evt.which : 0));
+            if ((charCode > 31) && (charCode < 48 || charCode > 57) && charCode != 8 && charCode != 37 && charCode != 39 && charCode != 45 && charCode != 46) {
+                return false;
+            }
+            return true;
+        }
+        $("button").click(function() {
+            $(".navbar-toggle").toggleClass("close");
+        });
+
+        $(".navbar-toggle").click(function() {
+            $("#header").toggleClass("open");
+        });
+
+        $(".navbar-nav a").click(function() {
+            $(".navbar-collapse").removeClass("in");
+
+            $(".navbar-toggle").removeClass("close");
+        });
+       
+        $('.owl-carousel-partner').owlCarousel({
+            loop: true,
+            margin: 10,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 2,
+                    nav: true
+                },
+                768: {
+                    items: 4,
+                    nav: true
+                },
+                1000: {
+                    items: 6,
+                    nav: true,
+                    loop: true,
+                    margin: 15,
+                }
+            }
+        });
+    </script>
+
+</body>
+
+
+</html>
