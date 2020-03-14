@@ -1,5 +1,0 @@
---- Giải nén các folder rồi copy đè vào thư mục css của web site-----
-Có thể copy cả folder hoặc 1 file styles.css vào thư mục css của web
-
-
-css/styles.css
