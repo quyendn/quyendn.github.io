@@ -12,7 +12,7 @@ color: #4c4848;
 font-size: 16px;
 line-height: 26px;
 background: #fff;
-font-family: Arial,"HelveticaNeue-Light";
+font-family: "VN_BMWTypeNextLatin-Regular";
 }
 
 a {
@@ -99,7 +99,8 @@ background: #d94700;
 }
 
 strong,
-b {}
+b {
+	font-family: "VN_BMWTypeNextLatin-Bold";}
 
 a,
 .btn,
@@ -198,6 +199,7 @@ position: absolute;
 top: 15px;
 right: 15px;
 z-index:99;
+width:110px;
 }
 
 .navbar-collapse {

@@ -82,7 +82,7 @@ $(document).ready(function() {
             var dataJSON = { "name": name, "email": email, "phone": phone, "datecreate": datecreate, "description": description, 'typeId': typeId, "emailto": emailto };
             showLoadingContactImage('content-download', 'frmContentDownload');
             $.ajax({
-                url: "https://alpha.f5academy.net/api/Longbienservice",
+                url: "http://localhost:50623/api/Longbienservice",
                 type: "Post",
                 async: false,
                 data: dataJSON,
