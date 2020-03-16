@@ -1,0 +1,9 @@
+/* Webfont: VN_MINISerif-Italic */@font-face {
+    font-family: 'VN_MINISerif';
+    src: url('VI_MINI Serif-Italic.woff2') format('woff2'), /* Modern Browsers */
+         url('VI_MINI Serif-Italic.otf') format('opentype'); /* Safari, Android, iOS */
+             font-style: italic;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

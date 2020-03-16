@@ -1,0 +1,9 @@
+/* Webfont: VN_MINISansSerif-Bold */@font-face {
+    font-family: 'VN_MINISansSerif';
+    src: url('VI_MINI Sans Serif-Bold.woff2') format('woff2'), /* Modern Browsers */
+         url('VI_MINI Sans Serif-Bold.otf') format('opentype'); /* Safari, Android, iOS */
+             font-style: normal;
+    font-weight: bold;
+    text-rendering: optimizeLegibility;
+}
+

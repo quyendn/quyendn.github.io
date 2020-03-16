@@ -1,0 +1,9 @@
+/* Webfont: VN_MINISansSerif-Regular */@font-face {
+    font-family: 'VN_MINISansSerif';
+    src: url('VI_MINI Sans Serif-Regular.woff2') format('woff2'), /* Modern Browsers */
+         url('VI_MINI Sans Serif-Regular.otf') format('opentype'); /* Safari, Android, iOS */
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
