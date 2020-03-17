@@ -52,6 +52,13 @@ $(document).ready(function() {
                     }
                 }
             },
+            address: {
+                validators: {
+                    notEmpty: {
+                        message: 'Địa chỉ không được để trống.'
+                    }
+                }
+            },
             phone: {
                 validators: {
                     notEmpty: {
@@ -61,6 +68,13 @@ $(document).ready(function() {
                         min: 10,
                         max: 10,
                         message: 'Số điện thoại chỉ có thể là 10 số.'
+                    }
+                }
+            },
+            location: {
+                validators: {
+                    notEmpty: {
+                        message: 'Tỉnh/Thành phố không được để trống.'
                     }
                 }
             }

@@ -109,7 +109,8 @@ ol.reset {
 
 
 #banner{
-	border-bottom:5px solid #A92C29}
+    /* border-bottom:5px solid #A92C29 */
+}
 
 
 /**/
@@ -451,3 +452,13 @@ img {
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
 }
+
+#footer {
+    padding: 30px 0;
+    font-size: 16px;
+}
+#footer a{
+	color:#111;
+    margin-right:30px;
+    font-size: 18px;
+	}
