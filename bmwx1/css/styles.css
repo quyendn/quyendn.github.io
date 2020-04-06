@@ -533,6 +533,7 @@ margin-top: 30px;
 	float: none;
 	display: block;
 	width: 80px;
+	top: 4px;
 }
 
 .navbar-collapse {
