@@ -68,6 +68,13 @@ $(document).ready(function() {
                         message: 'Địa điểm không được để trống.'
                     }
                 }
+            },
+            cboNhuCau: {
+                validators: {
+                    notEmpty: {
+                        message: 'Cần chọn nhu cầu.'
+                    }
+                }
             }
         },
         onSuccess: function(e) {
@@ -77,6 +84,7 @@ $(document).ready(function() {
             var email = $('#txtEmail').val();
             var vehicle = "";
             var address = $('#cboLocation').val();
+            var nhucau = $('#cboNhuCau').val();
             var emailto = "quyendn84@gmail.com";
             var webdomain = "f5academy";
             var dataJSON = { "name": name, "phone": phone, "email": email, "vehicle": vehicle, "address": address, "emailto": emailto }

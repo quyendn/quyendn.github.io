@@ -12,7 +12,7 @@ color: #4c4848;
 font-size: 16px;
 line-height: 26px;
 background: #fff;
-font-family: "VN_BMWTypeNextLatin-Regular";
+font-family: "VNBMWTypeNextLatin-Light";
 }
 
 a {
@@ -100,7 +100,7 @@ background: #d94700;
 
 strong,
 b {
-	font-family: "VN_BMWTypeNextLatin-Bold";}
+	font-family: "VNBMWTypeNextLatin-Regular";}
 
 a,
 .btn,
@@ -167,7 +167,7 @@ outline: none;
 #header {
 border: none;
 z-index: 9999;
-min-height: 86px;
+min-height: 145px;
 transition: all 300ms ease-in-out;
 -webkit-transition: all 300ms ease-in-out;
 -moz-transition: all 300ms ease-in-out;
@@ -175,7 +175,7 @@ transition: all 300ms ease-in-out;
 -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-background: #f2f2f2;
+background: #fff;
 
 }
 #header .container{
@@ -186,30 +186,34 @@ left: 0;
 right: 0;
 top: 0;
 z-index: 9999;
-min-height: 86px;
-background: #f2f2f2;
+min-height: 70px;
+background: #fff;
 -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 
 .navbar-brand {
-padding: 0px;
-position: absolute;
-top: 15px;
-right: 15px;
 z-index:99;
-width:110px;
+position:absolute;
+top:0px;
+right:0;
 }
-
+#header .affix .navbar-brand > img{
+	height:60px;
+}
 .navbar-collapse {
-margin-top: 20px;
+margin-top: 60px;
 webkit-overflow-scrolling: touch;
 border: none;
 -webkit-box-shadow: none;
 box-shadow: none;
 moz-box-shadow: none;
+float:left
 }
+#header .affix .navbar-collapse{
+	margin-top:15px;
+	}
 .navbar-nav>li {
 margin: 0 15px;
 }
@@ -219,7 +223,7 @@ text-align: center;
 outline: none;
 float: left;
 padding: 0px;
-font-size: 18px;
+font-size: 22px;
 text-transform: uppercase;
 line-height: 42px;
 }
@@ -234,9 +238,7 @@ background: none !important;
 color: #4c4848
 }
 .affix .navbar-brand {
-	float: none;
-	display: block;
-	/* width: 80px; */
+	padding:5px 15px;
 }
 
 /**/
@@ -274,27 +276,25 @@ position:relative;
 	left:0;
 	padding:30px 0;
 	color:#fff;
-	text-transform:uppercase;
+	
 	}
 #banner #text h3{
-	font-size:46px;
+	font-size:120px;
 	margin:0 0 15px 0;
 	}
 #banner #text p{
-	font-size:24px;
+	font-size:24px;text-transform:uppercase;
 	}
 #banner #text .btn{
 	margin-top:15px;
 	
-	font-size:16px;
+	font-size:22px;
 	}
 #frm-register{
 background:#b72133;
 padding:15px 30px;
 }
-#section3{
-	padding-top:0;
-	}
+
 #section3 .btn, #banner .btn, .form-control, .btn{
 	-moz-border-radius:0;
 	-webkit-border-radius:0;
@@ -302,19 +302,22 @@ padding:15px 30px;
 	border-radius:0;
 }
 #section3 .form-control{
-background:#f2f2f2;
-color:#000;
-border:1px solid #ccc;
-padding:10px 15px;
-height:auto;
-}
+	background:#f2f2f2;
+	color:#000;
+	border:1px solid #ccc;
+	padding:15px 30px;
+	height:auto;
+	}
 #section3 .btn, #banner .btn{
-text-transform:uppercase;
+
 color:#fff;
 background:#1c69d4;
-padding:10px 30px;
-
-}	
+padding:10px 45px;
+font-family: "VNBMWTypeNextLatin-Regular";
+}
+#section3 .btn{
+	text-transform:uppercase;
+	}
 #section3 .btn{
 	padding:10px 45px;
 	font-size:18px;
@@ -364,12 +367,13 @@ background:#f2f2f2;
 	padding:5px 10px;
 	background:rgba(0,0,0,0.5);
 	color:#fff;
-	font-size:18px;
+	font-size:20px;
 	text-align:center;
 	text-transform:uppercase;
 	}
 #section1 .text h2{
 	margin-top:0;
+	line-height:36px;
 	}
 #section1 .text{
 padding:30px;
@@ -387,18 +391,45 @@ background:url(../img/arrow-long-right.png) no-repeat 50% 50%;
 left:-22px;
 background:url(../img/arrow-long-left.png) no-repeat 50% 50%;
 }
+ #section2 #nav-tabs-select.nav-tabs, #nav-tabs-prices.nav-tabs{
+	 margin-bottom:30px;
+	 }
+ #section2 #nav-tabs-select.nav-tabs > li, #nav-tabs-prices.nav-tabs > li{
+	 border-right:1px solid #4c4848 !important;
+	 }
+#section2 #nav-tabs-select.nav-tabs > li:last-child, #nav-tabs-prices.nav-tabs > li:last-child{
+	 border-right:none !important;}
+ #section2 #nav-tabs-select.nav-tabs > li > a, #nav-tabs-prices.nav-tabs > li>a{
+	 width:auto;
+	 padding:0 15px;
+	 font-size:24px;
+	 text-transform:uppercase;
+	 color:#4c4848;
+	 border:none;
+	 
+	-moz-border-radius:0;
+	-webkit-border-radius:0%;
+	-o-border-radius:0%;
+	border-radius:0%;
+	 }
+ #section2 #nav-tabs-select.nav-tabs > li > a:hover, #nav-tabs-prices.nav-tabs > li>a:hover{
+	 background:none;
+	 }
 
-#section2 .nav-tabs{
+
+#section2 .nav-tabs, #nav-tabs-prices.nav-tabs{
 border:none;
-margin-top:30px;
+
 text-align:center;
 }
-#section2 .nav-tabs > li{
+#section2 .nav-tabs{
+	margin-top:30px;
+	}
+#section2 .nav-tabs > li, #nav-tabs-prices.nav-tabs>li{
 	float:none;
 	display:inline-block}
 #section2 .nav-tabs > li > a{
 padding:0;
-border:none;
 width:50px;
 margin:0 5px;
 padding:5px;
@@ -410,6 +441,9 @@ border-radius:50%;
 }
 #section2 .nav-tabs > li.active > a{
 	border:1px solid #444;}
+.nav-tabs > li.active > a{
+	font-family: "VNBMWTypeNextLatin-Bold";
+	}
 #section2 .nav-tabs > li > a img{
 width:38px;
 -moz-border-radius:50%;
@@ -436,6 +470,32 @@ text-align:center;
 	width: 700px;
 	max-width: 100%;
 }
+#tabs-noithat p{
+	font-size:24px;
+	margin-top:15px;
+	}
+.infoPrice{
+	margin-top:60px;
+	}
+.infoPrice .table{
+	background:#f2f2f2;
+	margin:0;
+	}
+.infoPrice .table th, .infoPrice .note span strong{
+	font-family: "VNBMWTypeNextLatin-Regular";
+	}
+.table > tbody > tr:first-child > td, .table > tbody > tr:first-child > th{
+	border:none;
+	}
+.infoPrice .note{
+	margin-top:15px;
+	}
+.infoPrice .note span{
+	display:inline-block;
+	padding:5px 15px;
+	background:#4c4848;
+	color:#fff
+	}
 /**/
 #section2 hr{
 	border-top:1px solid #4c4848}
@@ -503,6 +563,8 @@ padding: 0;
 #thanks .text .logo {
 margin-top: 30px;
 }
+hr{
+	border-top:1px solid #4c4848}
 @media (max-width:1336px){
 
 
@@ -522,18 +584,54 @@ margin-top: 30px;
 	min-height: 60px;
 	
 }
+#header .affix .navbar-brand{
+	padding:0;
+	}
+#header .affix .navbar-brand > img{
+	height:50px;
+}
+
 #section2 .colorName {
     font-size: 18px;
     
 }
+#banner #text h3{
+	font-size:90px;
+	}
+#section1 .col-sm-6 .note{
+	font-size:13px;
+	padding:5px 0;
+	}
+#section1 .text{
+	padding:15px;
+	}
+#section1 .text h2{
+	font-size:22px;
+	line-height:30px;
+	font-family: "VNBMWTypeNextLatin-Regular";
+	}
 #section1 .text{
 	min-height:0 !important;}
-
+.infoMachine h1{
+	font-size:24px;
+	}
+#section2 #nav-tabs-select.nav-tabs > li > a, #nav-tabs-prices.nav-tabs > li > a{
+	font-size:13px;
+	padding:5px 5px;
+	}
+#footer h2{
+	font-size:22px;
+	line-height:normal;
+	}
+#footer h3{
+	font-size:18px;
+	line-height:normal;
+	}
 .navbar-brand {
-	float: none;
-	display: block;
-	width: 80px;
-	top: 4px;
+	width: 50px;
+	padding:0;
+	top:5px;
+	right:10px;
 }
 
 .navbar-collapse {
