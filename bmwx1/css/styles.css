@@ -167,7 +167,8 @@ outline: none;
 #header {
 border: none;
 z-index: 9999;
-min-height: 145px;
+min-height: 70px;
+background: #fff;
 transition: all 300ms ease-in-out;
 -webkit-transition: all 300ms ease-in-out;
 -moz-transition: all 300ms ease-in-out;
@@ -175,7 +176,6 @@ transition: all 300ms ease-in-out;
 -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-background: #fff;
 
 }
 #header .container{
@@ -198,12 +198,13 @@ z-index:99;
 position:absolute;
 top:0px;
 right:0;
+padding:5px 15px;
 }
-#header .affix .navbar-brand > img{
+.navbar-brand > img{
 	height:60px;
 }
 .navbar-collapse {
-margin-top: 60px;
+margin-top: 15px;
 webkit-overflow-scrolling: touch;
 border: none;
 -webkit-box-shadow: none;
@@ -211,7 +212,7 @@ box-shadow: none;
 moz-box-shadow: none;
 float:left
 }
-#header .affix .navbar-collapse{
+#header .navbar-collapse{
 	margin-top:15px;
 	}
 .navbar-nav>li {
@@ -237,8 +238,8 @@ background: none !important;
 .affix .navbar-nav .active a {
 color: #4c4848
 }
-.affix .navbar-brand {
-	padding:5px 15px;
+.navbar-brand {
+	
 }
 
 /**/
