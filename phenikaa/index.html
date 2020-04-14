@@ -32,6 +32,39 @@
     <script type="text/javascript">
         jwplayer.key = "XumejFo+svwQswRJ3Mi++itror5V6+6q+6I7MQ==";
     </script>
+	<!-- Subiz -->
+<script>
+(function(s, u, b, i, z){
+  u[i]=u[i]||function(){
+    u[i].t=+new Date();
+    (u[i].q=u[i].q||[]).push(arguments);
+  };
+  z=s.createElement('script');
+  var zz=s.getElementsByTagName('script')[0];
+  z.async=1; z.src=b; z.id='subiz-script';
+  zz.parentNode.insertBefore(z,zz);
+})(document, window, 'https://widgetv4.subiz.com/static/js/app.js', 'subiz');
+subiz('setAccount', 'acqgsaenbrthdntikotq');
+</script>
+<!-- End Subiz -->
+
+<!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '2401591663235947');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=2401591663235947&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -130,9 +163,10 @@
                         <div class="col-md-4 col-sm-12 col-md-pull-6">
                             <form id="frmRegDownload" autocomplete="off" novalidate class="bv-form">
                             	<h3>ĐĂNG KÝ TƯ VẤN TUYỂN SINH</h3>
+								<h4>HỆ ĐẠI HỌC CHÍNH QUY</h4>
                                 <div id="frmContentReg">
                                     <div class="form-group has-feedback"><input type="text" class="form-control" name="name" id="txtName" value="" placeholder="Họ và tên"></div>
-                                    <div class="form-group has-feedback"><input type="text" class="form-control" name="phone" id="txtPhone" placeholder="Số điện thoại"></div>
+                                    <div class="form-group has-feedback"><input type="text" class="form-control" name="phone" id="txtPhone" onkeypress="return AllowNumberOnly(event);" placeholder="Số điện thoại"></div>
                                     <div class="form-group has-feedback"><input type="text" class="form-control" name="email" id="txtMail" placeholder="Email"></div>
                                     <div class="form-group has-feedback">
                                         <select id="cboNganhHoc" name="cboNganhHoc" class="form-control">
@@ -148,8 +182,8 @@
                                         <select id="cboLoaiHinh" name="cboLoaiHinh" class="form-control">
                                             <option value="" selected>Loại hình xét tuyển</option>
                                             <option value="Xét tuyển thẳng">Xét tuyển thẳng</option>
-                                            <option value="Xét tuyển học bạ lớp 12">Xét tuyển học bạ lớp 12</option>
-                                            <option value="Xét tuyển theo kết quả kỳ thi THPT">Xét tuyển theo kết quả kỳ thi THPT</option>
+                                            <option value="Xét tuyển theo kết quả học bạ THPT">Xét tuyển theo kết quả học bạ THPT</option>
+                                            <option value="Xét tuyển theo kết quả kỳ thi THPT Quốc gia">Xét tuyển theo kết quả kỳ thi THPT Quốc gia</option>
                                         </select>
                                     </div>
                                     <div class="text-center">
@@ -386,9 +420,10 @@
               <div class="modal-body">
                 <form id="frmRegDownload2" autocomplete="off" novalidate class="bv-form">
                     <h3>ĐĂNG KÝ TƯ VẤN TUYỂN SINH</h3>
+					<h4>HỆ ĐẠI HỌC CHÍNH QUY</h4>
                     <div id="frmContentReg2">
                         <div class="form-group has-feedback"><input type="text" class="form-control" name="name2" id="txtName2" value="" placeholder="Họ và tên"></div>
-                        <div class="form-group has-feedback"><input type="text" class="form-control" name="phone2" id="txtPhone2" placeholder="Số điện thoại"></div>
+                        <div class="form-group has-feedback"><input type="text" class="form-control" name="phone2" id="txtPhone2" onkeypress="return AllowNumberOnly(event);" placeholder="Số điện thoại"></div>
                         <div class="form-group has-feedback"><input type="text" class="form-control" name="email2" id="txtMail2" placeholder="Email"></div>
                         <div class="form-group has-feedback">
                             <select id="cboNganhHoc2" name="cboNganhHoc2" class="form-control">
@@ -403,8 +438,8 @@
                             <select id="cboLoaiHinh2" name="cboLoaiHinh2" class="form-control">
                                 <option value="" selected>Loại hình xét tuyển</option>
                                 <option value="Xét tuyển thẳng">Xét tuyển thẳng</option>
-                                <option value="Xét tuyển học bạ lớp 12">Xét tuyển học bạ lớp 12</option>
-                                <option value="Xét tuyển theo kết quả kỳ thi THPT">Xét tuyển theo kết quả kỳ thi THPT</option>
+                                <option value="Xét tuyển theo kết quả học bạ THPT">Xét tuyển theo kết quả học bạ THPT</option>
+								<option value="Xét tuyển theo kết quả kỳ thi THPT Quốc gia">Xét tuyển theo kết quả kỳ thi THPT Quốc gia</option>
                             </select>
                         </div>
                         <div class="text-center">
