@@ -1,6 +1,14 @@
 ﻿<!DOCTYPE html>
 <html lang="en" class="no-js" style="height:100%;">
 <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WZ5FSVL');</script>
+    <!-- End Google Tag Manager -->
+    
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -42,6 +50,11 @@
     </script>
 </head>
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WZ5FSVL"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    
     <div id="container">
         <div id="fixButton">
         	<div><a data-scroll="" data-options="easing: easeInQuad" href="#section3" class="navbar1"><img src="img/ic-laithu.png"> <span>Đăng ký</span></a></div>
@@ -413,7 +426,7 @@
                             <input type="text" class="form-control" name="name" id="txtName" placeholder="Họ và tên">
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" id="txtPhone" name="phone" placeholder="Số điện thoại">
+                            <input type="text" class="form-control" id="txtPhone" onkeypress="return AllowNumberOnly(event);" name="phone" placeholder="Số điện thoại">
                         </div>
                         <div class="form-group">
                             <input type="email" class="form-control" id="txtEmail" name="email" placeholder="Email">
@@ -504,8 +517,8 @@
         </div>
         <div id="video" class="wow fadeInUp animated">
             <div class="video-wrapper">
-                <video src="https://quyendn.github.io/bmwx1/video/bmwx1.mp4" poster="img/video.png" controls width="100%" height="100%" autoplay muted loop onclick="this.paused ? this.play() : this.pause(); return true;">
-                    <source src="https://quyendn.github.io/bmwx1/video/bmwx1.mp4"
+                <video src="/video/bmwx1.mp4" poster="img/video.png" controls width="100%" height="100%" autoplay muted loop onclick="this.paused ? this.play() : this.pause(); return true;">
+                    <source src="/video/bmwx1.mp4"
                             type="video/mp4">
                     Your browser does not support HTML5 video.
                 </video>
@@ -722,6 +735,14 @@
                 }
             }
         })
+        function AllowNumberOnly(evt) {
+            evt = (evt) ? evt : event;
+            var charCode = (evt.charCode) ? evt.charCode : ((evt.keyCode) ? evt.keyCode : ((evt.which) ? evt.which : 0));
+            if ((charCode > 31) && (charCode < 48 || charCode > 57) && charCode != 8 && charCode != 37 && charCode != 39 && charCode != 45 && charCode != 46) {
+                return false;
+            }
+            return true;
+        }
     </script>
 
 </body>
