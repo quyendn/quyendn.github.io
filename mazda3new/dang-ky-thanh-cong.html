@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="no-js" style="height:100%;">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Mazda 3</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.nanoscroller.min.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <link href="css/font-face.css" rel="stylesheet" type="text/css" />
+    <link href="css/toastr.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrapValidator.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/owl.carousel.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body style="background:url(img/bg.jpg) no-repeat 50% 50%">
+    <div id="container">
+        <div id="thank" class="section text-center">
+        	<div class="container">
+                <div class="inner">
+                	<div class="bg">
+                        <div class="" style="margin-bottom:45px;"><img src="img/logo.png"></div>
+                        <p>CÁM ƠN QUÝ KHÁCH ĐÃ ĐỂ LẠI THÔNG TIN ĐĂNG KÝ.</p>
+                        <p>CHÚNG TÔI SẼ LIÊN HỆ VỚI QUÝ KHÁCH TRONG THỜI GIAN SỚM NHẤT!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <!---->
+    
+    
+    
+    
+    <script src="js/smooth-scroll.js"></script>
+    <script type="text/javascript" src="js/bootstrapValidator.min.js"></script>
+    <script type="text/javascript" src="js/form-validation.js"></script>
+    <script type="text/javascript" src="js/toastr.js"></script>
+    <script type="text/javascript">
+        function AllowNumberOnly(evt) {
+            evt = (evt) ? evt : event;
+            var charCode = (evt.charCode) ? evt.charCode : ((evt.keyCode) ? evt.keyCode : ((evt.which) ? evt.which : 0));
+            if ((charCode > 31) && (charCode < 48 || charCode > 57) && charCode != 8 && charCode != 37 && charCode != 39 && charCode != 45 && charCode != 46) {
+                return false;
+            }
+            return true;
+        }
+        $(document).ready(function () {
+            var owl = $('.carousel-inner');
+            owl.owlCarousel({
+                navText: [$('.left'), $('.right')],
+                nav: false,
+                loop: true,
+                autoHeight: true,
+                transitionStyle: "fade",
+                stopOnHover: true,
+                singleItem: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 1
+                    },
+                    1000: {
+                        items: 1
+                    }
+                }
+            });
+            $('.slogan').click(function () { owl.trigger('to.owl.carousel',1); });
+            $('.about').click(function () { owl.trigger('to.owl.carousel', 2); });
+        });
+        
+    </script>
+    <script>
+        smoothScroll.init({
+            speed: 1000,
+            easing: 'easeInOutCubic',
+            offset: 30,
+            updateURL: false,
+            callbackBefore: function (toggle, navbar1) { },
+            callbackAfter: function (toggle, navbar1) { }
+        });
+
+    </script>
+    <script>
+    	$("button").click(function(){
+			$(".navbar-toggle").toggleClass("close");
+		});
+
+    	$(".navbar-toggle").click(function(){
+			$("#header").toggleClass("open");
+		});
+  
+    	$(".navbar-nav a").click(function(){
+			$(".navbar-collapse").removeClass("in");
+		
+			$(".navbar-toggle").removeClass("close");
+		});
+    </script>
+    <script>
+		$('.owl-carousel-product').owlCarousel({
+				loop: true,
+				margin: 10,
+				responsiveClass: true,
+				responsive: {
+					0: {
+						items: 2,
+						nav: true
+					},
+					768: {
+						items: 2,
+						nav: true
+					},
+					1000: {
+						items: 2,
+						nav: true,
+						loop: true,
+						margin: 10,
+					}
+				}
+			})
+			$('.owl-carousel-sound').owlCarousel({
+				loop: true,
+				margin: 0,
+				responsiveClass: true,
+				responsive: {
+					0: {
+						items: 1,
+						nav: true
+					},
+					768: {
+						items: 1,
+						nav: true
+					},
+					1000: {
+						items: 1,
+						nav: true,
+						loop: true,
+						margin: 0,
+					}
+				}
+			})
+		
+		</script>
+	</script>
+    <script src="js/smooth-scrollbar.js"></script>
+    <script> Scrollbar.initAll(); </script>
+    <link href="css/smooth-scrollbar.css" rel="stylesheet" type="text/css" />
+</body>
+
+
+</html>

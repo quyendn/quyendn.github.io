@@ -40,6 +40,13 @@ $(document).ready(function() {
                     }
                 }
             },
+            cboLoaiHinh: {
+                validators: {
+                    notEmpty: {
+                        message: 'Cần lựa chọn loại hình xét tuyển.'
+                    }
+                }
+            },
             name: {
                 validators: {
                     notEmpty: {
@@ -84,6 +91,9 @@ $(document).ready(function() {
                 url_source = "lp_phenikaa";
             else
                 url_source = source;
+            var check = checkPhoneNumber();
+            if (!check)
+                return;
             var dataJSON = { "name": name, "phone": phone, "email": email,"nganhhoc":nganhhoc,"loaihinh":loaihinh,"source": url_source, "emailto": emailto,"typeId" :2 }
             showLoadingContactImage('content-register', 'frmContentReg');
             $.ajax({
@@ -126,6 +136,13 @@ $(document).ready(function() {
                 validators: {
                     notEmpty: {
                         message: 'Cần lựa chọn ngành học.'
+                    }
+                }
+            },
+            cboLoaiHinh2: {
+                validators: {
+                    notEmpty: {
+                        message: 'Cần lựa chọn loại hình xét tuyển.'
                     }
                 }
             },
@@ -172,6 +189,9 @@ $(document).ready(function() {
                 url_source = "lp_phenikaa";
             else
                 url_source = source;
+            var check = checkPhoneNumber2();
+            if (!check)
+                return;
             var dataJSON = { "name": name, "phone": phone, "email": email,"nganhhoc":nganhhoc,"loaihinh":loaihinh,"source": url_source, "emailto": emailto,"typeId" :2 }
             showLoadingContactImage('content-register2', 'frmContentReg2');
             $.ajax({
