@@ -92,7 +92,11 @@ $(document).ready(function() {
             var dataJSON = { "city": city, "partner": partner, "name": name, "phone": phone, "email": email, "emailto": emailto, "typeId": typeId };
             showLoadingContactImage('content-register', 'frmContentReg');
             $.ajax({
+<<<<<<< HEAD
                 url: "https://alpha.f5academy.net/api/Mazdaservice7",
+=======
+                url: "https://alpha.f5academy.net/api/Mazda3Newservice",
+>>>>>>> 5006fbc2aeff656c3a9882fa127638f957ed4afc
                 type: "Post",
                 async: false,
                 data: dataJSON,
@@ -113,7 +117,7 @@ $(document).ready(function() {
                     $('#frmRegDownload').bootstrapValidator('resetForm', true);
                     toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', { timeOut: 5000 })
                     hideLoadingContactImage('content-register', 'frmContentReg');
-                    window.location.href = "https://quyendn.github.io/mazda3/dang-ky-thanh-cong.html";
+                    window.location.href = "https://quyendn.github.io/mazda3new/dang-ky-thanh-cong.html";
                 }
             });
         }
