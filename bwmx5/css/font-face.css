@@ -1,13 +1,37 @@
-/* font converted using font-converter.net. thank you! */
+
 @font-face {
-  font-family: "HelveticaNeue-Light";
-  src: url("../fonts/HelveticaNeue-Light.eot"); /* IE9 Compat Modes */
-  src: url("../fonts/HelveticaNeue-Light.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-    url("../fonts/HelveticaNeue-Light.otf") format("opentype"), /* Open Type Font */
-    url("../fonts/HelveticaNeue-Light.svg") format("svg"), /* Legacy iOS */
-    url("../fonts/HelveticaNeue-Light.ttf") format("truetype"), /* Safari, Android, iOS */
-    url("../fonts/HelveticaNeue-Light.woff") format("woff"), /* Modern Browsers */
-    url("../fonts/HelveticaNeue-Light.woff2") format("woff2"); /* Modern Browsers */
+  font-family: "VNBMWTypeNextLatin-Light";
+  src: url("../fonts/VIBMWTypeNextLatin-Light.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/VIBMWTypeNextLatin-Light.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/VIBMWTypeNextLatin-Light.otf") format("opentype"), /* Open Type Font */
+    url("../fonts/VIBMWTypeNextLatin-Light.svg") format("svg"), /* Legacy iOS */
+    url("../fonts/VIBMWTypeNextLatin-Light.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("../fonts/VIBMWTypeNextLatin-Light.woff") format("woff"), /* Modern Browsers */
+    url("../fonts/VIBMWTypeNextLatin-Light.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "VNBMWTypeNextLatin-Bold";
+  src: url("../fonts/VIBMWTypeNextLatin-Bold.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/VIBMWTypeNextLatin-Bold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/VIBMWTypeNextLatin-Bold.otf") format("opentype"), /* Open Type Font */
+    url("../fonts/VIBMWTypeNextLatin-Bold.svg") format("svg"), /* Legacy iOS */
+    url("../fonts/VIBMWTypeNextLatin-Bold.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("../fonts/VIBMWTypeNextLatin-Bold.woff") format("woff"), /* Modern Browsers */
+    url("../fonts/VIBMWTypeNextLatin-Bold.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "VNBMWTypeNextLatin-Regular";
+  src: url("../fonts/VIBMWTypeNextLatin-Regular.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/VIBMWTypeNextLatin-Regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/VIBMWTypeNextLatin-Regular.otf") format("opentype"), /* Open Type Font */
+    url("../fonts/VIBMWTypeNextLatin-Regular.svg") format("svg"), /* Legacy iOS */
+    url("../fonts/VIBMWTypeNextLatin-Regular.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("../fonts/VIBMWTypeNextLatin-Regular.woff") format("woff"), /* Modern Browsers */
+    url("../fonts/VIBMWTypeNextLatin-Regular.woff2") format("woff2"); /* Modern Browsers */
   font-weight: normal;
   font-style: normal;
 }

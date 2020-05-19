@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>BMW Series 5</title>
+    <title>BMW X5</title>
     <link rel="shortcut icon" href="https://bmw-motorcycles.vn/wp-content/uploads/2018/04/4226-16x16x32.png">
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
@@ -22,24 +22,6 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i&amp;subset=vietnamese" rel="stylesheet">
     <link href="css/font-face.css" rel="stylesheet" type="text/css" media="all" />
     <script type="text/javascript" src="jwplayer/jwplayer.js"></script>
-    <script type="text/javascript">
-        jwplayer.key = "XumejFo+svwQswRJ3Mi++itror5V6+6q+6I7MQ==";
-    </script>
-    <script type="text/javascript">
-        var primaryCookie = 'html5';
-        var skinURL = "/jwplayer/skins/five/five.xml";
-        var cookies = document.cookie.split(";");
-        for (i = 0; i < cookies.length; i++) {
-            var x = cookies[i].substr(0, cookies[i].indexOf("="));
-            var y = cookies[i].substr(cookies[i].indexOf("=") + 1);
-            x = x.replace(/^\s+|\s+$/g, "");
-            if (x == 'primaryCookie') {
-                primaryCookie = y;
-            } else if (x == 'skinURL') {
-                skinURL = y;
-            }
-        }
-    </script>
 </head>
 <body>
     <div id="container">
@@ -52,9 +34,8 @@
                 <div class="container">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"></button>
                     <a data-scroll="" data-options="easing: easeInQuad" href="#slide" class="navbar-brand">
-                        <img src="img/logo.png" style="max-width: 80%;">
+                        <img src="img/logo.png">
                     </a>
-    
                     <nav class="collapse navbar-collapse" role="navigation">
                         <ul class="nav navbar-nav">
                             <li><a data-scroll="" data-options="easing: easeInQuad" href="#section1" class="navbar1">Đặc điểm nổi bật</a></li>
@@ -62,227 +43,590 @@
                             <li><a data-scroll="" data-options="easing: easeInQuad" href="#section3" class="navbar1">Đăng ký nhận ưu đãi</a></li>
                         </ul>
                     </nav>
+                    
                 </div>
             </div>
         </div>
         <div id="banner">
             <a data-scroll="" data-options="easing: easeInQuad" href="#section3">
-                <img src="img/banner.png">
+                <img src="img/banner.jpg" class="hidden-xs">
+                <img src="img/banner_mb.jpg" class="visible-xs">
             </a>    
             <!-- <img src="img/banner_mb.png" class="visible-xs"> -->
             <div id="text">
             	<div class="container">
-                	<h3>BMW Series 5</h3>
-                    <p>Giá ưu đãi từ 2,099 tỷ</p>
-                    <div><button class="btn navbar1"  data-scroll="" data-options="easing: easeInQuad" href="#section3">Đăng ký lái thử</button></div>
+                	<h3>THE 5</h3>
+                    <p>Gói ưu đãi 179 triệu</p>
+                    <p>và 01 năm bảo hiểm vật chất và bảo dưỡng miến phí 03 năm</p>
+                    <div><button class="btn navbar1"  data-scroll="" data-options="easing: easeInQuad" href="#section3">Đăng ký nhận ưu đãi</button></div>
                 </div>
             </div>
         </div>
         <div class="section wow fadeInUp animated" id="section1">
             <div class="container">
-            	<div data-ride="carousel" class="carousel slide" id="slide1" style="margin-bottom:30px;">
-                    <!-- Indicators -->
-                    <ol class="carousel-indicators" style="display:none">
-                        <li class="active" data-slide-to="0" data-target="#slide1"></li>
-                        <li data-slide-to="1" data-target="#slide1" class=""></li>
-                    </ol>
-                    <div role="listbox" class="carousel-inner">
-                        <div class="item active">
-                            <div class="row">
-                                <div class="col-sm-6"><img src="img/p1-1.png"></div>
-                                <div class="col-sm-6">
-                                    <div class="text">
-                                        <h2>Cụm đèn trước LED thích ứng.</h2>
-                                        <p>Sở hữu nguồn sáng tương tự như ánh sáng ban ngày, giúp cải thiện tầm nhìn và tăng sự thoải mái cho người lái, đặc biệt khi di chuyển vào ban đêm. Bên cạnh đó, tính năng điều chỉnh pha/cốt tự động có thể nhận diện và theo dõi phương tiện di chuyển ở phía trước hoặc ở chiều đối diện, từ đó thay đổi vùng chiếu sáng tương ứng của đèn, đảm bảo an toàn tối đa khi lái xe trong đêm tối.</p>
-                                    </div>
+            	<div id="myCarousel-1" class="carousel slide" data-ride="carousel">
+                  <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                    <li data-target="#myCarousel-1" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel-1" data-slide-to="1"></li>
+                  </ol>
+                
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner">
+                    <div class="item active">
+                    	<div class="row">
+                        	<div class="col-sm-6"><img src="img/antoan1.jpg"></div>
+                            <div class="col-sm-6">
+                                <div class="text">
+                                    <h2>Cụm đèn trước LED thích ứng.</h2>
+                                    <p>Đèn trước của BMW Series 5 sở hữu nguồn sáng tương tự như ánh sáng ban ngày, giúp tăng tầm nhìn và sự thoải mái cho người lái khi di chuyển vào ban đêm. Bên cạnh đó, tính năng điều chỉnh pha/cốt tự động có thể nhận diện và theo dõi phương tiện di chuyển ở phía trước hoặc ở chiều đối diện, từ đó thay đổi vùng chiếu sáng tương ứng của đèn, đảm bảo an toàn tối đa khi lái xe trong đêm tối.</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="item">
-                            <div class="row">
-                                <div class="col-sm-6"><img src="img/p1-2.png"></div>
-                                <div class="col-sm-6">
-                                    <div class="text">
-                                        <h2>Kiểu dáng nổi bật.</h2>
-                                        <p>Thể thao và phong cách trong mọi tình huống: Chiếc BMW Series 5 luôn nổi trội trong mọi cuộc đua nhờ vẻ ngoài đậm chất thể thao. Tuy nhiên, xét cho cùng, thành công không chỉ đến từ kiểu dáng đặc trưng bề ngoài – mà còn từ sự chau chuốt đến từng chi tiết bên trong.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
                     </div>
-                    <a data-slide="prev" role="button" href="#slide1" class="left carousel-control"></a>
-                    <a data-slide="next" role="button" href="#slide1" class="right carousel-control"></a>
+                    <div class="item">
+                    	<div class="row">
+                        	<div class="col-sm-6"><img src="img/antoan2.jpg"></div>
+                            <div class="col-sm-6">
+                                <div class="text">
+                                    <h2>Kiểu dáng nổi bật.</h2>
+                                    <p>Thể thao và phong cách trong mọi tình huống: Chiếc BMW Series 5 luôn nổi trội trong mọi cuộc đua nhờ vẻ ngoài đậm chất thể thao. Tuy nhiên, xét cho cùng, thành công không chỉ đến từ kiểu dáng đặc trưng bề ngoài – mà còn từ sự chau chuốt đến từng chi tiết bên trong.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                
+                  <!-- Left and right controls -->
+                  <a class="left carousel-control" href="#myCarousel-1" data-slide="prev"></a>
+                  <a class="right carousel-control" href="#myCarousel-1" data-slide="next"></a>
                 </div>
-                <div data-ride="carousel" class="carousel slide" id="slide2"  style="margin-bottom:30px;">
-                    <!-- Indicators -->
-                    <ol class="carousel-indicators" style="display:none">
-                        <li class="active" data-slide-to="0" data-target="#slide1"></li>
-                        <li data-slide-to="1" data-target="#slide1" class=""></li>
-                        <li data-slide-to="2" data-target="#slide1" class=""></li>
-                        <li data-slide-to="3" data-target="#slide1" class=""></li>
-                        
-                    </ol>
-                    <div role="listbox" class="carousel-inner">
-                        <div class="item active">
-                            <div class="row">
-                               <div class="col-sm-6 col-sm-push-6"><img src="img/p2-1.png"></div>
-                                <div class="col-sm-6 col-sm-pull-6">
-                                    <div class="text">
-                                        <h2>Chức năng lựa chọn chế độ vận hành Driving experience control.</h2>
-                                        <p>Hệ thống chuyển đổi chế độ vận hành Driving Experience Control mang lại cho người lái sự lựa chọn giữa chế độ COMFORT êm ái, chế độ ECO PRO giúp tiết kiệm nhiên liệu tối đa, và chế độ SPORT đem tới trải nghiệm lái xe phấn khích và đầy tự tin.</p>
-                                    </div>
-                                </div>
-                                
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="row">
-                                
-                                <div class="col-sm-6 col-sm-push-6"><img src="img/p2-2.png"></div>
-                                <div class="col-sm-6 col-sm-pull-6">
-                                    <div class="text">
-                                        <h2>Hệ thống chuyển đổi chế độ vận hành Driving Experience Control.</h2>
-                                        <p>Hệ thống chuyển đổi chế độ vận hành Driving Experience Control cho phép người điều khiển lựa chọn giữa chế độ COMFORT tiêu chuẩn, chế độ ECO PRO hiệu quả hơn, chế độ SPORT, để bạn có lái xe chủ động hơn nữa. Chức năng Chế độ thích ứng với tương tác mới liên tục điều chỉnh hệ thống treo thích ứng, hệ thống lái và hệ thống..</p>
-                                    </div>
+                <div id="myCarousel-2" class="carousel slide" data-ride="carousel">
+                  <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                    <li data-target="#myCarousel-2" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel-2" data-slide-to="1"></li>
+                  </ol>
+                
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner">
+                    <div class="item active">
+                    	<div class="row">
+                        	<div class="col-sm-6 col-sm-push-6"><img src="img/vanhanh1.jpg"></div>
+                            <div class="col-sm-6 col-sm-pull-6">
+                                <div class="text">
+                                    <h2>Chức năng lựa chọn chế độ vận hành Driving Experience Control.</h2>
+                                    <p>Hệ thống chuyển đổi chế độ vận hành Driving Experience Control mang lại cho người lái sự lựa chọn giữa chế độ COMFORT êm ái, chế độ ECO PRO giúp tiết kiệm nhiên liệu tối đa, và chế độ SPORT đem tới trải nghiệm lái xe phấn khích và đầy tự tin.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <a data-slide="prev" role="button" href="#slide2" class="left carousel-control"></a>
-                    <a data-slide="next" role="button" href="#slide2" class="right carousel-control"></a>
+                    <div class="item">
+                    	<div class="row">
+                        	<div class="col-sm-6 col-sm-push-6"><img src="img/vanhanh2.jpg"></div>
+                            <div class="col-sm-6 col-sm-pull-6">
+                                <div class="text">
+                                    <h2>Hệ thống chuyển đổi chế độ vận hành Driving Experience Control.</h2>
+                                    <p>Hệ thống chuyển đổi chế độ vận hành Driving Experience Control cho phép người điều khiển lựa chọn giữa chế độ COMFORT tiêu chuẩn, chế độ ECO PRO hiệu quả hơn, chế độ SPORT, để bạn có lái xe chủ động hơn nữa. Chức năng Chế độ thích ứng với tương tác mới liên tục điều chỉnh hệ thống treo thích ứng, hệ thống lái và hệ thống..</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                
+                  <!-- Left and right controls -->
+                  <a class="left carousel-control" href="#myCarousel-2" data-slide="prev"></a>
+                  <a class="right carousel-control" href="#myCarousel-2" data-slide="next"></a>
                 </div>
-                <div data-ride="carousel" class="carousel slide" id="slide3">
-                    <!-- Indicators -->
-                    <ol class="carousel-indicators" style="display:none">
-                        <li class="active" data-slide-to="0" data-target="#slide1"></li>
-                        <li data-slide-to="1" data-target="#slide1" class=""></li>
-                    </ol>
-                    <div role="listbox" class="carousel-inner">
-                        <div class="item active">
-                            <div class="row">
-                                <div class="col-sm-6"><img src="img/p3-1.png"></div>
-                                <div class="col-sm-6">
-                                    <div class="text">
-                                        <h2>Hệ thống âm thanh vòm Harman Kardon.</h2>
-                                        <p>Hệ thống âm thanh vòm Harman Kardon trên BMW Series 5 sẽ đem tới những màn trình diễn tuyệt vời nhất dù ở bất kì dòng nhạc yêu thích nào của bạn. Bộ khuếch đại đa kênh DSP với công suất lên tới 600 watt, cùng dàn âm thanh 16 loa được bố trí tinh tế và chuẩn xác bên trong khoang nội thất sang trọng của Series 5 sẽ mang đến những cung âm đặc sắc, thuần khiết và sống động nhất. </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="row">
-                                <div class="col-sm-6"><img src="img/p3-2.png"></div>
-                                <div class="col-sm-6">
-                                    <div class="text">
-                                        <h2>Không gian sang trọng.</h2>
-                                        <p>Nội thất của xe vẫn được thiết kế theo hướng công nghệ và sang trọng bọc da ốp gỗ và kim loại đi kèm khu vực điều khiển trung tâm khá góc cạnh được làm mới,BMW Series 5 trang bị màn hình giải trí trung tâm điều khiển cảm ứng với kích thước 10.25 inch.</p>
-                                    </div>
+                <div id="myCarousel-3" class="carousel slide" data-ride="carousel">
+                  <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                    <li data-target="#myCarousel-3" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel-3" data-slide-to="1"></li>
+                  </ol>
+                
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner">
+                    <div class="item active">
+                    	<div class="row">
+                        	<div class="col-sm-6"><img src="img/noithat1.jpg"></div>
+                            <div class="col-sm-6">
+                                <div class="text">
+                                    <h2>Nội thất cao cấp và nổi bật.</h2>
+                                    <p>Từ sự kết hợp tinh tế giữa các chất liệu da, gỗ và kim loại, cho tới tính năng tạo hương thơm Ambient Air và đèn viền nội thất sang trọng, tất cả tạo nên một không gian cao cấp chạm đến từng giác quan của bạn trên BMW Series 5. Hơn nữa, BMW Series 5 còn đi cùng những công nghệ hàng đầu của BMW như bảng đồng hồ kỹ thuật số 12,3 inch và màn hình cảm ứng trung tâm với kích thước 10,25 inch.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <a data-slide="prev" role="button" href="#slide3" class="left carousel-control"></a>
-                    <a data-slide="next" role="button" href="#slide3" class="right carousel-control"></a>
+                    <div class="item">
+                    	<div class="row">
+                        	<div class="col-sm-6"><img src="img/noithat2.jpg"></div>
+                            <div class="col-sm-6">
+                                <div class="text">
+                                    <h2>Hệ thống âm thanh vòm Harman Kardon.</h2>
+                                    <p>Hệ thống âm thanh vòm Harman Kardon trên BMW Series 5 sẽ đem tới những màn trình diễn tuyệt vời nhất dù ở bất kì dòng nhạc yêu thích nào của bạn. Bộ khuếch đại đa kênh DSP với công suất lên tới 600 watt, cùng dàn âm thanh 16 loa được bố trí tinh tế và chuẩn xác bên trong khoang nội thất sang trọng của Series 5 sẽ mang đến những cung âm đặc sắc, thuần khiết và sống động nhất. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                
+                  <!-- Left and right controls -->
+                  <a class="left carousel-control" href="#myCarousel-3" data-slide="prev"></a>
+                  <a class="right carousel-control" href="#myCarousel-3" data-slide="next"></a>
                 </div>
             </div>
         </div>
         <div class="section wow fadeInUp animated" id="section2">
             <div class="container">
-                <div class="text-center price">
-                    <a href="javascript:void(0);" class="btn-520">520i</a> | <a href="javascript:void(0);" class="btn-530">530i</a>
-                </div>
-                <script type="text/javascript">
-                $(document).ready(function(){
-                    $(".btn-520").click(function(){
-                        $('#content-car').load('https://quyendn.github.io/bwmx5/car.html #520HtmlContent');
-                        return false;    
-                    });
-                    $(".btn-530").click(function(){
-                        $('#content-car').load('https://quyendn.github.io/bwmx5/car.html #530HtmlContent');
-                        return false;    
-                    });
-                });
-                </script>
-
-            </div>
-            <div class="container" id="content-car">
-                <ul class="nav nav-tabs">
-                    <li class="active"><a data-toggle="tab" href="#tabs1"><img src="img/Atlas-Cedar.png"></a></li>
-                    <li><a data-toggle="tab" href="#tabs2"><img src="img/Jatoba.png"></a></li>
-                    <li ><a data-toggle="tab" href="#tabs3"><img src="img/Bluestone.png"></a></li>
-                    <li><a data-toggle="tab" href="#tabs4"><img src="img/Sophisto-Grey.png"></a></li>
-                    <li><a data-toggle="tab" href="#tabs5"><img src="img/Imperial-Blue.png"></a></li>
-                    <li><a data-toggle="tab" href="#tabs6"><img src="img/Black-Sapphire.png"></a></li>
-                    <li><a data-toggle="tab" href="#tabs7"><img src="img/Mediterranean-Blue.png"></a></li>
-                    <li><a data-toggle="tab" href="#tabs8"><img src="img/Glacier-Silver.png"></a></li>
-                    <li><a data-toggle="tab" href="#tabs9"><img src="img/Cashmere-Silver.png"></a></li>
-                    <li><a data-toggle="tab" href="#tabs10"><img src="img/Mineral-White.png"></a></li>
-                    <li><a data-toggle="tab" href="#tabs11"><img src="img/Alpine-White.png"></a></li>
-                    
+            	<ul class="nav nav-tabs" id="nav-tabs-name">
+                    <li class="active"><a data-toggle="tab" href="#tab520">520i</a></li>
+                    <li><a data-toggle="tab" href="#tab530">530i</a></li>
                 </ul>
-                <div class="clearfix"></div>
-                <div class="tab-content" style="padding-top: 60px;">
-                    <div id="tabs1" class="tab-pane fade text-center">
-                        <div class="colorName">C2P-Atlas Cedar</div>
-                        <div class="price">GIÁ ƯU ĐÃI TỪ 2,099 TỶ</div>
-                        <div class="container"><img src="img/C2P - Atlas Cedar.png"></div>
+                <div class="tab-content">
+                    <div id="tab520" class="tab-pane fade in active">
+                        <ul class="nav nav-tabs" id="nav-tabs-select">
+                            <li class="active"><a data-toggle="tab" href="#tabs-ngoaithat-520">Màu ngoại thất</a></li>
+                            <li><a data-toggle="tab" href="#tabs-noithat-520">Màu nội thất</a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div id="tabs-ngoaithat-520" class="tab-pane fade in active">
+                                <ul class="nav nav-tabs" id="nav-tabs-cars">
+                                    <li class="active"><a data-toggle="tab" href="#tabs1-1"><span>Xanh Stone</span></a></li>
+                                    <li><a data-toggle="tab" href="#tabs1-2"><span>Bạc Atlas Cedar</span></a></li>
+                                    <li><a data-toggle="tab" href="#tabs1-3"><span>Gỗ Jatoba</span></a></li>
+                                    <li><a data-toggle="tab" href="#tabs1-4"><span>Bạc Sophisto</span></a></li>
+                                    <li><a data-toggle="tab" href="#tabs1-5"><span>Đen Sapphire</span></a></li>
+                                    <li><a data-toggle="tab" href="#tabs1-6"><span>Xanh Mediterranean</span></a></li>
+                                    <li><a data-toggle="tab" href="#tabs1-7"><span>Bạc Glacier</span></a></li>
+                                    <li><a data-toggle="tab" href="#tabs1-8"><span>Bạc Cashmere</span></a></li>
+                                    <li><a data-toggle="tab" href="#tabs1-9"><span>Trắng Mineral</span></a></li>
+                                    <li><a data-toggle="tab" href="#tabs1-10"><span>Trắng Alpine</span></a></li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div id="tabs1-1" class="tab-pane fade in active"><img src="img/Xanh-Stone.png"></div>
+                                    <div id="tabs1-2" class="tab-pane fade"><img src="img/Bạc-Atlas-Cedar.png"></div>
+                                    <div id="tabs1-3" class="tab-pane fade"><img src="img/Gỗ-Jatoba.png"></div>
+                                    <div id="tabs1-4" class="tab-pane fade"><img src="img/Bạc-Sophisto.png"></div>
+                                    <div id="tabs1-5" class="tab-pane fade"><img src="img/Đen-Sapphire.png"></div>
+                                    <div id="tabs1-6" class="tab-pane fade"><img src="img/XanhMediterranean.png"></div>
+                                    <div id="tabs1-7" class="tab-pane fade"><img src="img/Bạc-Glacier.png"></div>
+                                    <div id="tabs1-8" class="tab-pane fade"><img src="img/Bạc-Cashmere.png"></div>
+                                    <div id="tabs1-9" class="tab-pane fade"><img src="img/Trắng-Mineral.png"></div>
+                                    <div id="tabs1-10" class="tab-pane fade"><img src="img/Trắng-Mineral.png"></div>
+                                </div>
+                                
+                            </div>
+                            <div id="tabs-noithat-520" class="tab-pane fade">
+                                <p style="margin-top:30px">Màu kem (520i - LCCY)</p>
+                                <div><img src="img/noithat520.png"></div>
+                            </div>
+                        </div>
                     </div>
-                    <div id="tabs2" class="tab-pane fade text-center">
-                        <div class="colorName">B65-Jatoba</div>
-                        <div class="price">GIÁ ƯU ĐÃI TỪ 2,099 TỶ</div>
-                        <div class="container"><img src="img/B65 - Jatoba.png"></div>
+                    <div id="tab530" class="tab-pane fade">
+                        <ul class="nav nav-tabs" id="nav-tabs-select">
+                            <li class="active"><a data-toggle="tab" href="#tabs-ngoaithat-530">Màu ngoại thất</a></li>
+                            <li><a data-toggle="tab" href="#tabs-noithat-530">Màu nội thất</a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div id="tabs-ngoaithat-530" class="tab-pane fade in active">
+                                <ul class="nav nav-tabs" id="nav-tabs-cars">
+                                    <li class="active"><a data-toggle="tab" href="#tabs2-1"><span>Xanh Stone</span></a></li>
+                                    <li><a data-toggle="tab" href="#tabs2-2"><span>Bạc Atlas Cedar</span></a></li>
+                                    <li><a data-toggle="tab" href="#tabs2-3"><span>Gỗ Jatoba</span></a></li>
+                                    <li><a data-toggle="tab" href="#tabs2-4"><span>Bạc Sophisto</span></a></li>
+                                    <li><a data-toggle="tab" href="#tabs2-5"><span>Đen Sapphire</span></a></li>
+                                    <li><a data-toggle="tab" href="#tabs2-6"><span>Xanh Mediterranean</span></a></li>
+                                    <li><a data-toggle="tab" href="#tabs2-7"><span>Bạc Glacier</span></a></li>
+                                    <li><a data-toggle="tab" href="#tabs2-8"><span>Bạc Cashmere</span></a></li>
+                                    <li><a data-toggle="tab" href="#tabs2-9"><span>Trắng Mineral</span></a></li>
+                                    <li><a data-toggle="tab" href="#tabs2-10"><span>Trắng Alpine</span></a></li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div id="tabs2-1" class="tab-pane fade in active"><img src="img/Xanh-Stone.png"></div>
+                                    <div id="tabs2-2" class="tab-pane fade"><img src="img/Bạc-Atlas-Cedar.png"></div>
+                                    <div id="tabs2-3" class="tab-pane fade"><img src="img/Gỗ-Jatoba.png"></div>
+                                    <div id="tabs2-4" class="tab-pane fade"><img src="img/Bạc-Sophisto.png"></div>
+                                    <div id="tabs2-5" class="tab-pane fade"><img src="img/Đen-Sapphire.png"></div>
+                                    <div id="tabs2-6" class="tab-pane fade"><img src="img/XanhMediterranean.png"></div>
+                                    <div id="tabs2-7" class="tab-pane fade"><img src="img/Bạc-Glacier.png"></div>
+                                    <div id="tabs2-8" class="tab-pane fade"><img src="img/Bạc-Cashmere.png"></div>
+                                    <div id="tabs2-9" class="tab-pane fade"><img src="img/Trắng-Mineral.png"></div>
+                                    <div id="tabs2-10" class="tab-pane fade"><img src="img/Trắng-Mineral.png"></div>
+                                </div>
+                                
+                            </div>
+                            <div id="tabs-noithat-530" class="tab-pane fade text-center">
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <p style="margin-top:30px">Màu kem (530i - LCDO)</p>
+                                        <div><img src="img/noithat530-1.png"></div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <p style="margin-top:30px">Màu đen (530i - LCFK)</p>
+                                        <div><img src="img/noithat530-2.png"></div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <p style="margin-top:30px">Màu nâu (530i - LCRO)</p>
+                                        <div><img src="img/noithat530-3.png"></div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
                     </div>
-                    <div id="tabs3" class="tab-pane fade in active text-center">
-                        <div class="colorName">C2Y-Bluestone</div>
-                        <div class="price">GIÁ ƯU ĐÃI TỪ 2,099 TỶ</div>
-                        <div class="container"><img src="img/C2Y - Bluestone.png"></div>
-
+                </div>
+                
+            </div>
+            
+            
+        </div>
+        <div class="section wow fadeInUp animated" id="section2-2" style="visibility: visible; animation-name: fadeInUp;">
+        	<div class="container">
+                
+                <div class="infoPrice">
+                    <h2 class="text-center">BẢNG TÍNH GIÁ XE BMW 520i</h2>
+                	<ul class="nav nav-tabs text-center nav-tabs-prices" id="nav-tabs-prices">
+                        <li class="active"><a data-toggle="tab" href="#tabs-prices-520-1">HÀ NỘI</a></li>
+                        <li><a data-toggle="tab" href="#tabs-prices-520-2">TP.HCM</a></li>
+                        <li><a data-toggle="tab" href="#tabs-prices-520-3">CÁC TỈNH THÀNH KHÁC</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="tabs-prices-520-1" class="tab-pane fade in active">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <table class="table" width="100%" cellspacing="0" cellpadding="0" border="0">
+                                        <tbody>
+                                        <tr>
+                                        <th>Giá xe công bố</th>
+                                        <td>2,389,000,000</td>
+                                        </tr>
+                                        <tr>
+                                        <th>Giá xe ưu đãi</th>
+                                        <td>2,210,000,000</td>
+                                        </tr>
+                                        <tr>
+                                        <th>Phí trước bạ (12%)</th>
+                                        <td>286,680,000</td>
+                                        </tr>
+                                        <tr>
+                                        <th>Phí sử dụng đường bộ (01 năm)</th>
+                                        <td>1,560,000</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+								<div class="col-sm-6">
+                                    <table class="table" width="100%" cellspacing="0" cellpadding="0" border="0">
+                                    <tbody><tr>
+                                    <th>Bảo hiểm trách nhiệm dân sự (01 năm)</th>
+                                    <td> 530,000</td>
+                                    </tr>
+                                    <tr>
+                                    <th>Phí đăng ký biển số xe ở TP.HCM</th>
+                                    <td>20,000,000</td>
+                                    </tr>
+                                    <tr>
+                                    <th>Phí đăng kiểm xe</th>
+                                    <td>340,000</td>
+                                    </tr>
+                                    <tr>
+                                    <th>Các CTKM kèm theo hiện hữu</th>
+                                    <td>
+                                    	<p>Tặng 01 năm bảo hiểm vật chất</p>
+                                        <p>và bảo dưỡng 03 năm miễn phí (30,000 Km).</p>
+                                    </td>
+                                    </tr>
+                                    </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="text-center note">
+                                <span>
+                                    <strong>Tổng cộng (phí + xe) tạm tính:</strong> 2,519,110,000
+                                </span>
+                            </div>
+                        </div>
+                        <div id="tabs-prices-520-2" class="tab-pane fade">
+                        	<div class="row">
+                                <div class="col-sm-6">
+                                    <table class="table" width="100%" cellspacing="0" cellpadding="0" border="0">
+                                        <tbody>
+                                        <tr>
+                                        <th>Giá xe công bố</th>
+                                        <td>2,389,000,000</td>
+                                        </tr>
+                                        <tr>
+                                        <th>Giá xe ưu đãi</th>
+                                        <td>2,210,000,000</td>
+                                        </tr>
+                                        <tr>
+                                        <th>Phí trước bạ (12%)</th>
+                                        <td>238,900,000</td>
+                                        </tr>
+                                        <tr>
+                                        <th>Phí sử dụng đường bộ (01 năm)</th>
+                                        <td>1,560,000</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="col-sm-6">
+                                    <table class="table" width="100%" cellspacing="0" cellpadding="0" border="0">
+                                    <tbody><tr>
+                                    <th>Bảo hiểm trách nhiệm dân sự (01 năm)</th>
+                                    <td>530,000</td>
+                                    </tr>
+                                    <tr>
+                                    <th>Phí đăng ký biển số xe ở TP.HCM</th>
+                                    <td>20,000,000</td>
+                                    </tr>
+                                    <tr>
+                                    <th>Phí đăng kiểm xe</th>
+                                    <td>340,000</td>
+                                    </tr>
+                                    <tr>
+                                    <th>Các CTKM kèm theo hiện hữu</th>
+                                    <td>
+                                    	<p>Tặng 01 năm bảo hiểm vật chất</p>
+                                        <p>và bảo dưỡng 03 năm miễn phí (30,000 Km).</p>
+                                    </td>
+                                    </tr></tbody></table>
+                                </div>
+                            </div>
+                            <div class="text-center note">
+                                <span>
+                                    <strong>Tổng cộng (phí + xe) tạm tính:</strong> 2,471,330,000
+                                </span>
+                            </div>
+                        </div>
+                        <div id="tabs-prices-520-3" class="tab-pane fade">
+                        	<div class="row">
+                                <div class="col-sm-6">
+                                    <table class="table" width="100%" cellspacing="0" cellpadding="0" border="0">
+                                        <tbody>
+                                        <tr>
+                                        <th>Giá xe công bố</th>
+                                        <td>2,389,000,000</td>
+                                        </tr>
+                                        <tr>
+                                        <th>Giá xe ưu đãi</th>
+                                        <td>2,210,000,000</td>
+                                        </tr>
+                                        <tr>
+                                        <th>Phí trước bạ (10%)</th>
+                                        <td>286,680,000</td>
+                                        </tr>
+                                        <tr>
+                                        <th>Phí sử dụng đường bộ (01 năm)</th>
+                                        <td>1,560,000</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="col-sm-6">
+                                    <table class="table" width="100%" cellspacing="0" cellpadding="0" border="0">
+                                    <tbody><tr>
+                                    <th>Bảo hiểm trách nhiệm dân sự (01 năm)</th>
+                                    <td>530,000</td>
+                                    </tr>
+                                    <tr>
+                                    <th>Phí đăng ký biển số xe ở Tỉnh thành khác</th>
+                                    <td>1,000,000</td>
+                                    </tr>
+                                    <tr>
+                                    <th>Phí đăng kiểm xe</th>
+                                    <td>340,000</td>
+                                    </tr>
+                                    <tr>
+                                    <th>Các CTKM kèm theo hiện hữu</th>
+                                    <td>
+                                    	<p>Tặng 01 năm bảo hiểm vật chất</p>
+                                        <p>và bảo dưỡng 03 năm miễn phí (30,000 Km).</p>
+                                    </td>
+                                    </tr></tbody></table>
+                                </div>
+                            </div>
+                            <div class="text-center note">
+                                <span style="">
+                                    <strong>Tổng cộng (phí + xe) tạm tính:</strong> 2,500,110,000
+                                </span>
+                            </div>
+                        </div>
                     </div>
-                    <div id="tabs4" class="tab-pane fade text-center">
-                        <div class="colorName">A90-Sophisto Grey</div>
-                        <div class="price">GIÁ ƯU ĐÃI TỪ 2,099 TỶ</div>
-                        <div class="container"><img src="img/A90 - Sophisto Grey.png"></div>
+                	
+                </div>
+                <div class="infoPrice">
+                    <h2 class="text-center">BẢNG TÍNH GIÁ XE BMW 530i</h2>
+                	<ul class="nav nav-tabs text-center nav-tabs-prices" id="nav-tabs-prices">
+                        <li class="active"><a data-toggle="tab" href="#tabs-prices-530-1">HÀ NỘI</a></li>
+                        <li><a data-toggle="tab" href="#tabs-prices-530-2">TP.HCM</a></li>
+                        <li><a data-toggle="tab" href="#tabs-prices-530-3">CÁC TỈNH THÀNH KHÁC</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="tabs-prices-530-1" class="tab-pane fade in active">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <table class="table" width="100%" cellspacing="0" cellpadding="0" border="0">
+                                        <tbody>
+                                        <tr>
+                                        <th>Giá xe công bố</th>
+                                        <td>3,069,000,000</td>
+                                        </tr>
+                                        <tr>
+                                        <th>Giá xe ưu đãi</th>
+                                        <td>2,961,000,000</td>
+                                        </tr>
+                                        <tr>
+                                        <th>Phí trước bạ (12%)</th>
+                                        <td>368,280,000</td>
+                                        </tr>
+                                        <tr>
+                                        <th>Phí sử dụng đường bộ (01 năm)</th>
+                                        <td>1,560,000</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+								<div class="col-sm-6">
+                                    <table class="table" width="100%" cellspacing="0" cellpadding="0" border="0">
+                                    <tbody><tr>
+                                    <th>Bảo hiểm trách nhiệm dân sự (01 năm)</th>
+                                    <td> 530,000</td>
+                                    </tr>
+                                    <tr>
+                                    <th>Phí đăng ký biển số xe ở TP.HCM</th>
+                                    <td>20,000,000</td>
+                                    </tr>
+                                    <tr>
+                                    <th>Phí đăng kiểm xe</th>
+                                    <td>340,000</td>
+                                    </tr>
+                                    <tr>
+                                    <th>Các CTKM kèm theo hiện hữu</th>
+                                    <td>
+                                    	<p>Tặng 01 năm bảo hiểm vật chất</p>
+                                        <p>và bảo dưỡng 03 năm miễn phí (30,000 Km).</p>
+                                    </td>
+                                    </tr>
+                                    </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="text-center note">
+                                <span>
+                                    <strong>Tổng cộng (phí + xe) tạm tính:</strong> 3,351,710,000
+                                </span>
+                            </div>
+                        </div>
+                        <div id="tabs-prices-530-2" class="tab-pane fade">
+                        	<div class="row">
+                                <div class="col-sm-6">
+                                    <table class="table" width="100%" cellspacing="0" cellpadding="0" border="0">
+                                        <tbody>
+                                        <tr>
+                                        <th>Giá xe công bố</th>
+                                        <td>3,069,000,000</td>
+                                        </tr>
+                                        <tr>
+                                        <th>Giá xe ưu đãi</th>
+                                        <td>2,961,000,000</td>
+                                        </tr>
+                                        <tr>
+                                        <th>Phí trước bạ (10%)</th>
+                                        <td>306,900,000</td>
+                                        </tr>
+                                        <tr>
+                                        <th>Phí sử dụng đường bộ (01 năm)</th>
+                                        <td>1,560,000</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="col-sm-6">
+                                    <table class="table" width="100%" cellspacing="0" cellpadding="0" border="0">
+                                    <tbody><tr>
+                                    <th>Bảo hiểm trách nhiệm dân sự (01 năm)</th>
+                                    <td>530,000</td>
+                                    </tr>
+                                    <tr>
+                                    <th>Phí đăng ký biển số xe ở TP.HCM</th>
+                                    <td>20,000,000</td>
+                                    </tr>
+                                    <tr>
+                                    <th>Phí đăng kiểm xe</th>
+                                    <td>340,000</td>
+                                    </tr>
+                                    <tr>
+                                    <th>Các CTKM kèm theo hiện hữu</th>
+                                    <td>
+                                    	<p>Tặng 01 năm bảo hiểm vật chất</p>
+                                        <p>và bảo dưỡng 03 năm miễn phí (30,000 Km).</p>
+                                    </td>
+                                    </tr></tbody></table>
+                                </div>
+                            </div>
+                            <div class="text-center note">
+                                <span>
+                                    <strong>Tổng cộng (phí + xe) tạm tính:</strong> 3,290,330,000
+                                </span>
+                            </div>
+                        </div>
+                        <div id="tabs-prices-530-3" class="tab-pane fade">
+                        	<div class="row">
+                                <div class="col-sm-6">
+                                    <table class="table" width="100%" cellspacing="0" cellpadding="0" border="0">
+                                        <tbody>
+                                        <tr>
+                                        <th>Giá xe công bố</th>
+                                        <td>3,069,000,000</td>
+                                        </tr>
+                                        <tr>
+                                        <th>Giá xe ưu đãi</th>
+                                        <td>2,961,000,000</td>
+                                        </tr>
+                                        <tr>
+                                        <th>Phí trước bạ (10%)</th>
+                                        <td>306,900,000</td>
+                                        </tr>
+                                        <tr>
+                                        <th>Phí sử dụng đường bộ (01 năm)</th>
+                                        <td>1,560,000</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="col-sm-6">
+                                    <table class="table" width="100%" cellspacing="0" cellpadding="0" border="0">
+                                    <tbody><tr>
+                                    <th>Bảo hiểm trách nhiệm dân sự (01 năm)</th>
+                                    <td>530,000</td>
+                                    </tr>
+                                    <tr>
+                                    <th>Phí đăng ký biển số xe ở Tỉnh thành khác</th>
+                                    <td>1,000,000</td>
+                                    </tr>
+                                    <tr>
+                                    <th>Phí đăng kiểm xe</th>
+                                    <td>340,000</td>
+                                    </tr>
+                                    <tr>
+                                    <th>Các CTKM kèm theo hiện hữu</th>
+                                    <td>
+                                    	<p>Tặng 01 năm bảo hiểm vật chất</p>
+                                        <p>và bảo dưỡng 03 năm miễn phí (30,000 Km).</p>
+                                    </td>
+                                    </tr></tbody></table>
+                                </div>
+                            </div>
+                            <div class="text-center note">
+                                <span style="">
+                                    <strong>Tổng cộng (phí + xe) tạm tính:</strong> 3,332,710,000
+                                </span>
+                            </div>
+                        </div>
                     </div>
-                    <div id="tabs5" class="tab-pane fade text-center">
-                        <div class="colorName">A89-Imperial Blue</div>
-                        <div class="price">GIÁ ƯU ĐÃI TỪ 2,099 TỶ</div>
-                        <div class="container"><img src="img/A89 - Imperial Blue.png"></div>
-                    </div>
-                    <div id="tabs6" class="tab-pane fade text-center">
-                        <div class="colorName">475-Black Sapphire</div>
-                        <div class="price">GIÁ ƯU ĐÃI TỪ 2,099 TỶ</div>
-                        <div class="container"><img src="img/475 - Black Sapphire.png"></div>
-                     </div>
-                    <div id="tabs7" class="tab-pane fade text-center">
-                        <div class="colorName">C10-Mediterranean Blue</div>
-                        <div class="price">GIÁ ƯU ĐÃI TỪ 2,099 TỶ</div>
-                        <div class="container"><img src="img/C10-Mediterranean Blue.png"></div>
-                    </div>
-                    <div id="tabs8" class="tab-pane fade text-center">
-                        <div class="colorName">A83-Glacier Silver</div>
-                        <div class="price">GIÁ ƯU ĐÃI TỪ 2,099 TỶ</div>
-                        <div class="container"><img src="img/A83 - Glacier Silver.png"></div>
-                    </div>
-                    <div id="tabs9" class="tab-pane fade text-center">
-                        <div class="colorName">A72-Cashmere Silver</div>
-                        <div class="price">GIÁ ƯU ĐÃI TỪ 2,099 TỶ</div>
-                        <div class="container"><img src="img/A72 - Cashmere Silver.png"></div>
-                        
-                    </div>
-                    <div id="tabs10" class="tab-pane fade text-center">
-                        <div class="colorName">A96-Mineral White</div>
-                        <div class="price">GIÁ ƯU ĐÃI TỪ 2,099 TỶ</div>
-                        <div class="container"><img src="img/A96 - Mineral White.png"></div>
-                        
-                    </div>
-                    <div id="tabs11" class="tab-pane fade text-center">
-                        <div class="colorName">300-Alpine White</div>
-                        <div class="price">GIÁ ƯU ĐÃI TỪ 2,099 TỶ</div>
-                        <div class="container"><img src="img/300 - Alpine White.png"></div>
-                        
-                    </div>
-                    
+                	
                 </div>
             </div>
         </div>
@@ -290,160 +634,192 @@
         	<div class="container">
                 <div class="st-hd text-center">
                     <h3>ĐĂNG KÝ LÁI THỬ</h3>
-                   
                 </div>
-                <form class="form-horizontal" style="max-width:680px; margin:0 auto;" id="frmMobile">
-                        <div id="formContentContactMobile">
-                            <div class="form-group">
-                                <input type="text" class="form-control" name="name" id="txtName" placeholder="Họ và tên">
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="txtPhone" name="phone" placeholder="Số điện thoại">
-                            </div>
-                            <div class="form-group">
-                                <input type="email" class="form-control" id="txtEmail" name="email" placeholder="Email">
-                            </div>
-                            <div class="form-group">
-                                <select class="form-control" id="cboLocation" name="cboLocation">
-                                        <option value="">Chọn Tỉnh/Thành phố</option>
-                                        <option value="HÀ NỘI">HÀ NỘI</option>
-                                        <option value="HỒ CHÍ MINH">HỒ CHÍ MINH</option>
-                                        <option value="AN GIANG">AN GIANG</option>
-                                        <option value="BẮC CẠN">BẮC CẠN</option>
-                                        <option value="BẮC GIANG">BẮC GIANG</option>
-                                        <option value="BẠC LIÊU">BẠC LIÊU</option>
-                                        <option value="BẮC NINH">BẮC NINH</option>
-                                        <option value="BẾN TRE">BẾN TRE</option>
-                                        <option value="BÌNH ĐỊNH">BÌNH ĐỊNH</option>
-                                        <option value="BÌNH DƯƠNG">BÌNH DƯƠNG</option>
-                                        <option value="BÌNH PHƯỚC">BÌNH PHƯỚC</option>
-                                        <option value="BÌNH THUẬN">BÌNH THUẬN</option>
-                                        <option value="VŨNG TÀU">VŨNG TÀU</option>
-                                        <option value="CÀ MAU">CÀ MAU</option>
-                                        <option value="CẦN THƠ">CẦN THƠ</option>
-                                        <option value="CAO BẰNG">CAO BẰNG</option>
-                                        <option value="ĐÀ NẴNG">ĐÀ NẴNG</option>
-                                        <option value="ĐẮK LẮK">ĐẮK LẮK</option>
-                                        <option value="ĐẮK NÔNG">ĐẮK NÔNG</option>
-                                        <option value="ĐIỆN BIÊN">ĐIỆN BIÊN</option>
-                                        <option value="ĐỒNG NAI">ĐỒNG NAI</option>
-                                        <option value="ĐỒNG THÁP">ĐỒNG THÁP</option>
-                                        <option value="GIA LAI">GIA LAI</option>
-                                        <option value="HÀ GIANG">HÀ GIANG</option>
-                                        <option value="HÀ NAM">HÀ NAM</option>
-                                        <option value="HÀ TĨNH">HÀ TĨNH</option>
-                                        <option value="HẢI DƯƠNG">HẢI DƯƠNG</option>
-                                        <option value="HẢI PHÒNG">HẢI PHÒNG</option>
-                                        <option value="HẬU GIANG">HẬU GIANG</option>
-                                        <option value="HÒA BÌNH">HÒA BÌNH</option>
-                                        <option value="HƯNG YÊN">HƯNG YÊN</option>
-                                        <option value="KHÁNH HÒA">KHÁNH HÒA</option>
-                                        <option value="KIÊN GIANG">KIÊN GIANG</option>
-                                        <option value="KON TUM">KON TUM</option>
-                                        <option value="LAI CHÂU">LAI CHÂU</option>
-                                        <option value="LÂM ĐỒNG">LÂM ĐỒNG</option>
-                                        <option value="LẠNG SƠN">LẠNG SƠN</option>
-                                        <option value="LÀO CAI">LÀO CAI</option>
-                                        <option value="LONG AN">LONG AN</option>
-                                        <option value="NAM ĐỊNH">NAM ĐỊNH</option>
-                                        <option value="NGHỆ AN">NGHỆ AN</option>
-                                        <option value="NINH BÌNH">NINH BÌNH</option>
-                                        <option value="NINH THUẬN">NINH THUẬN</option>
-                                        <option value="PHÚ THỌ">PHÚ THỌ</option>
-                                        <option value="PHÚ YÊN">PHÚ YÊN</option>
-                                        <option value="QUẢNG BÌNH">QUẢNG BÌNH</option>
-                                        <option value="QUẢNG NAM">QUẢNG NAM</option>
-                                        <option value="QUẢNG NGÃI">QUẢNG NGÃI</option>
-                                        <option value="QUẢNG NINH">QUẢNG NINH</option>
-                                        <option value="QUẢNG TRỊ">QUẢNG TRỊ</option>
-                                        <option value="SÓC TRĂNG">SÓC TRĂNG</option>
-                                        <option value="SƠN LA">SƠN LA</option>
-                                        <option value="TÂY NINH">TÂY NINH</option>
-                                        <option value="THÁI BÌNH">THÁI BÌNH</option>
-                                        <option value="THÁI NGUYÊN">THÁI NGUYÊN</option>
-                                        <option value="THANH HÓA">THANH HÓA</option>
-                                        <option value="HUẾ">HUẾ</option>
-                                        <option value="TIỀN GIANG">TIỀN GIANG</option>
-                                        <option value="TRÀ VINH">TRÀ VINH</option>
-                                        <option value="TUYÊN QUANG">TUYÊN QUANG</option>
-                                        <option value="VĨNH LONG">VĨNH LONG</option>
-                                        <option value="VĨNH PHÚC">VĨNH PHÚC</option>
-                                        <option value="YÊN BÁI">YÊN BÁI</option>
-                                    </select>
-                            </div>
-                            <div class="form-group text-center">
-                                <button class="btn btn-default">Đăng ký</button>
-                            </div>
+                <form class="" style="max-width:680px; margin:0 auto;" id="frmMobile">
+                    <div id="formContentContactMobile">
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="name" id="txtName" placeholder="Họ và tên">
                         </div>
-                        <div id="content-mobile"></div>
-                    </form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="txtPhone" name="phone" placeholder="Số điện thoại">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="txtEmail" name="email" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control" id="cboLocation" name="cboLocation">
+                                <option value="">Chọn Tỉnh/Thành phố</option>
+                                <option value="HÀ NỘI">HÀ NỘI</option>
+                                <option value="HỒ CHÍ MINH">HỒ CHÍ MINH</option>
+                                <option value="AN GIANG">AN GIANG</option>
+                                <option value="BẮC CẠN">BẮC CẠN</option>
+                                <option value="BẮC GIANG">BẮC GIANG</option>
+                                <option value="BẠC LIÊU">BẠC LIÊU</option>
+                                <option value="BẮC NINH">BẮC NINH</option>
+                                <option value="BẾN TRE">BẾN TRE</option>
+                                <option value="BÌNH ĐỊNH">BÌNH ĐỊNH</option>
+                                <option value="BÌNH DƯƠNG">BÌNH DƯƠNG</option>
+                                <option value="BÌNH PHƯỚC">BÌNH PHƯỚC</option>
+                                <option value="BÌNH THUẬN">BÌNH THUẬN</option>
+                                <option value="VŨNG TÀU">VŨNG TÀU</option>
+                                <option value="CÀ MAU">CÀ MAU</option>
+                                <option value="CẦN THƠ">CẦN THƠ</option>
+                                <option value="CAO BẰNG">CAO BẰNG</option>
+                                <option value="ĐÀ NẴNG">ĐÀ NẴNG</option>
+                                <option value="ĐẮK LẮK">ĐẮK LẮK</option>
+                                <option value="ĐẮK NÔNG">ĐẮK NÔNG</option>
+                                <option value="ĐIỆN BIÊN">ĐIỆN BIÊN</option>
+                                <option value="ĐỒNG NAI">ĐỒNG NAI</option>
+                                <option value="ĐỒNG THÁP">ĐỒNG THÁP</option>
+                                <option value="GIA LAI">GIA LAI</option>
+                                <option value="HÀ GIANG">HÀ GIANG</option>
+                                <option value="HÀ NAM">HÀ NAM</option>
+                                <option value="HÀ TĨNH">HÀ TĨNH</option>
+                                <option value="HẢI DƯƠNG">HẢI DƯƠNG</option>
+                                <option value="HẢI PHÒNG">HẢI PHÒNG</option>
+                                <option value="HẬU GIANG">HẬU GIANG</option>
+                                <option value="HÒA BÌNH">HÒA BÌNH</option>
+                                <option value="HƯNG YÊN">HƯNG YÊN</option>
+                                <option value="KHÁNH HÒA">KHÁNH HÒA</option>
+                                <option value="KIÊN GIANG">KIÊN GIANG</option>
+                                <option value="KON TUM">KON TUM</option>
+                                <option value="LAI CHÂU">LAI CHÂU</option>
+                                <option value="LÂM ĐỒNG">LÂM ĐỒNG</option>
+                                <option value="LẠNG SƠN">LẠNG SƠN</option>
+                                <option value="LÀO CAI">LÀO CAI</option>
+                                <option value="LONG AN">LONG AN</option>
+                                <option value="NAM ĐỊNH">NAM ĐỊNH</option>
+                                <option value="NGHỆ AN">NGHỆ AN</option>
+                                <option value="NINH BÌNH">NINH BÌNH</option>
+                                <option value="NINH THUẬN">NINH THUẬN</option>
+                                <option value="PHÚ THỌ">PHÚ THỌ</option>
+                                <option value="PHÚ YÊN">PHÚ YÊN</option>
+                                <option value="QUẢNG BÌNH">QUẢNG BÌNH</option>
+                                <option value="QUẢNG NAM">QUẢNG NAM</option>
+                                <option value="QUẢNG NGÃI">QUẢNG NGÃI</option>
+                                <option value="QUẢNG NINH">QUẢNG NINH</option>
+                                <option value="QUẢNG TRỊ">QUẢNG TRỊ</option>
+                                <option value="SÓC TRĂNG">SÓC TRĂNG</option>
+                                <option value="SƠN LA">SƠN LA</option>
+                                <option value="TÂY NINH">TÂY NINH</option>
+                                <option value="THÁI BÌNH">THÁI BÌNH</option>
+                                <option value="THÁI NGUYÊN">THÁI NGUYÊN</option>
+                                <option value="THANH HÓA">THANH HÓA</option>
+                                <option value="HUẾ">HUẾ</option>
+                                <option value="TIỀN GIANG">TIỀN GIANG</option>
+                                <option value="TRÀ VINH">TRÀ VINH</option>
+                                <option value="TUYÊN QUANG">TUYÊN QUANG</option>
+                                <option value="VĨNH LONG">VĨNH LONG</option>
+                                <option value="VĨNH PHÚC">VĨNH PHÚC</option>
+                                <option value="YÊN BÁI">YÊN BÁI</option>
+                            </select>
+                    </div>
+                    <div class="form-group">
+                    <select class="form-control" id="" name="">
+                        <option value="">Nhu cầu của bạn</option>
+                        <option value="">Đăng ký lái thử</option>
+                        <option value="">Nhận Ưu Đãi</option>
+                        <option value="">Nhận Thông Số Kỹ Thuật</option>
+                    </select>
+                    </div>
+                    <div class="form-group text-center">
+                        <button class="btn btn-default">Đăng ký</button>
+                    </div>
+                </div>
+                    <div id="content-mobile"></div>
+                </form>
             </div>
         </div>
-        <div id="video" class="wow fadeInUp animated">
+        <div id="video">
             <div class="video-wrapper">
-                <video src="https://quyendn.github.io/bwmx5/video/5Series-2nd-post.mp4" poster="img/video.png" width="100%" height="100%" loop onclick="this.paused ? this.play() : this.pause(); return true;">
-                    <source src="https://quyendn.github.io/bwmx5/video/5Series-2nd-post.mp4"
+                <video src="https://quyendn.github.io/bmwx1/video/bmwx1.mp4" poster="img/video.png" width="100%" height="100%" autoplay muted loop onclick="this.paused ? this.play() : this.pause(); return true;">
+                    <source src="https://quyendn.github.io/bmwx1/video/bmwx1.mp4"
                             type="video/mp4">
                     Your browser does not support HTML5 video.
                 </video>
             </div>
         </div>
-        <div id="footer" class="wow fadeInUp animated">
-            <div class="container">
+        <div id="footer">
+            <div class="container wow fadeInUp animated">
             	<h2 class="text-uppercase"><strong>BMW được phân phối tại việt nam bởi thaco.</strong></h2>
                 <div class="row">
                     <div class="col-md-4 col-sm-4">
                         <h3 class="text-uppercase"><strong>Khu vực miền bắc</strong></h3>
                         <address>
-                        	<h4>BMW Lê Duẩn.</h4>
+                        	<h4><strong>BMW Lê Duẩn.</strong> <a href="https://www.facebook.com/Official.BMWLeDuan" target="_blank"><img src="img/ic_fb_2.png"></a> <a href="http://bmwleduan.vn/" target="_blank"><img src="img/ic_web.png"></a></h4>
                             <p>132 Lê Duẩn, Q. Hai Bà Trưng, Hà Nội.</p>
-                            <p>Hotline: <a href="tel:0938880262" style="">0938 880 262</a></p>
+                            <p><a href=""><img src="img/ic_hotline.png"></a> Hotline: <a href="tel:0938880262" style="">0938 880 262</a></p>
                         </address>
                         <address>
-                        	<h4>BMW Lê Văn Lương.</h4>
+                        	<h4><strong>BMW Lê Văn Lương.</strong> <a href="https://www.facebook.com/official.bmwlevanluong" target="_blank"><img src="img/ic_fb_2.png"></a> <a href="http://bmwlevanluong.vn/" target="_blank"><img src="img/ic_web.png"></a></h4>
                             <p>68 Lê Văn Lương, Q. Thanh Xuân, Hà Nội.</p>
-                            <p>Hotline: <a href="tel:0938881836" style="">0938 881 836</a></p>
+                            <p><a href=""><img src="img/ic_hotline.png"></a> Hotline: <a href="tel:0938881836" style="">0938 881 836</a></p>
                         </address>
                         <address>
-                        	<h4>BMW Long Biên.</h4>
+                        	<h4><strong>BMW Long Biên.</strong> <a href="https://www.facebook.com/official.bmwlongbien" target="_blank"><img src="img/ic_fb_2.png"></a> <a href="http://bmw-longbien.com.vn/" target="_blank"><img src="img/ic_web.png"></a></h4>
                             <p>01 Ngô Gia Tự, Q. Long Biên, Hà Nội.</p>
-                            <p>Hotline: <a href="tel:0938908488" style="">0938 908 488</a></p>
+                            <p><a href=""><img src="img/ic_hotline.png"></a> Hotline: <a href="tel:0938908488" style="">0938 908 488</a></p>
+                        </address>
+                        <address>
+                        	<h4><strong>BMW Hải Phòng.</strong> <a href=" https://www.facebook.com/Official.BMWHaiPhong/" target="_blank"><img src="img/ic_fb_2.png"></a> <a href="http://bmwhaiphong.vn" target="_blank"><img src="img/ic_web.png"></a></h4>
+                            <p>08 Nguyễn Trãi, P. Máy Tơ, Q. Ngô Quyền, TP. Hải Phòng.</p>
+                            <p><a href="tel:0938809727"><img src="img/ic_hotline.png"></a> Hotline: <a href="tel:0938809727" style="">0938 809 727</a></p>
+                        </address>
+                        <address>
+                        	<h4><strong>BMW Vinh.</strong> <a href="https://www.facebook.com/Official.BMWVinh" target="_blank"><img src="img/ic_fb_2.png"></a> <a href="http://bmw-vinh.vn/" target="_blank"><img src="img/ic_web.png"></a></h4>
+                            <p>Đường 46, Xóm 3, Xã Nghi Phú, TP. Vinh, Nghệ An.</p>
+                            <p><a href=""><img src="img/ic_hotline.png"></a> Hotline: <a href="tel:0901828618" style="">0901 828 618</a></p>
                         </address>
 
                     </div>
                     <div class="col-md-4 col-sm-4">
-                        <h3 class="text-uppercase"><strong>khu vực miền Trung</strong></h3>
+                        <h3 class="text-uppercase"><strong>khu vực miền Nam</strong></h3>
                         <address>
-                        	<h4>BMW Đà Nẵng.</h4>
+                        	<h4><strong>BMW Đà Nẵng.</strong> <a href="https://www.facebook.com/Official.BMWDaNang/" target="_blank"><img src="img/ic_fb_2.png"></a> <a href="http://bmw-danang.vn/" target="_blank"><img src="img/ic_web.png"></a></h4>
                             <p>356 Điện Biên Phủ, Q. Thanh Khê, Đà Nẵng.</p>
-                            <p>Hotline: <a href="tel:0909779356" style="">0909 779 356</a></p>
+                            <p><a href=""><img src="img/ic_hotline.png"></a > Hotline: <a href="tel:0909779356" style="">0909 779 356</a></p>
+                        </address>
+                        <address>
+                        	<h4><strong>BMW Nguyễn Văn Trỗi.</strong> <a href="https://www.facebook.com/BMWNguyenVanTroi/" target="_blank"><img src="img/ic_fb_2.png"></a> <a href="http://bmwnguyenvantroi.vn/" target="_blank"><img src="img/ic_web.png"></a></h4>
+                            <p>80 Nguyễn Văn Trỗi, P. 8, Q.Phú Nhuận, TP. HCM.</p>
+                            <p><a href=""><img src="img/ic_hotline.png"></a> Hotline: <a href="tel:0938889572" style="">0938 889 572</a></p>
+                        </address>
+                        <address>
+                        	<h4><strong>BMW Phú Mỹ Hưng.</strong> <a href="https://www.facebook.com/Official.BMWPhuMyHung/" target="_blank"><img src="img/ic_fb_2.png"></a> <a href="http://bmw-phumyhung.vn/" target="_blank"><img src="img/ic_web.png"></a></h4>
+                            <p>808 Nguyễn Văn Linh, P. Tân Phú, Q.7, TP. HCM.</p>
+                            <p><a href=""><img src="img/ic_hotline.png"></a> Hotline: <a href="tel:0938901800" style="">0938 901 800</a></p>
+                        </address>
+                        <address>
+                        	<h4><strong>BMW Sala.</strong> <a href="https://www.facebook.com/Official.BMWSala/" target="_blank"><img src="img/ic_fb_2.png"></a> <a href="http://bmwquan2.vn/" target="_blank"><img src="img/ic_web.png"></a></h4>
+                            <p>12 Mai Chí Thọ, P. An Lợi Đông, Quận 2, TP. HCM.</p>
+                            <p><a href=""><img src="img/ic_hotline.png"></a> Hotline: <a href="tel:0907808880" style="">0907 808 880</a></p>
                         </address>
                     </div>
                     <div class="col-md-4 col-sm-4">
-                        <h3 class="text-uppercase"><strong>khu vực miền Nam</strong></h3>
+                        <h3 class="text-uppercase"><strong>&nbsp;</strong></h3>
                         <address>
-                        	<h4>BMW Nguyễn Văn Trỗi.</h4>
-                            <p>80 Nguyễn Văn Trỗi, P. 8, Q.Phú Nhuận, Tp.HCM.</p>
-                            <p>Hotline: <a href="tel:0938889572" style="">0938 889 572</a></p>
+                        	<h4><strong>BMW Biên Hòa.</strong> <a href="https://www.facebook.com/Official.BMWBienHoa/" target="_blank"><img src="img/ic_fb_2.png"></a> <a href="http://bmwbienhoa.vn/" target="_blank"><img src="img/ic_web.png"></a></h4>
+                            <p>Số 18, Đường 2A, p. An Bình, TP. Biên Hòa, Đồng Nai.</p>
+                            <p><a href="tel:0901889686"><img src="img/ic_hotline.png"></a > Hotline: <a href="tel:0901889686" style="">0901 88 96 86</a></p>
                         </address>
                         <address>
-                        	<h4>BMW Phú Mỹ Hưng.</h4>
-                            <p>808 Nguyễn Văn Linh, P. Tân Phú, Q.7, Tp.HCM.</p>
-                            <p>Hotline: <a href="tel:0938901800" style="">0938 901 800</a></p>
+                        	<h4><strong>BMW Bình Dương.</strong> <a href="https://www.facebook.com/Official.BMWBinhDuong/" target="_blank"><img src="img/ic_fb_2.png"></a> <a href="http://bmw-binhduong.com.vn/" target="_blank"><img src="img/ic_web.png"></a></h4>
+                            <p>56/9 Đại lộ Bình Dương, Thuận An, Bình Dương.</p>
+                            <p><a href="tel:0901889798"><img src="img/ic_hotline.png"></a > Hotline: <a href="tel:0901889798" style="">0901 889 798</a></p>
                         </address>
                         <address>
-                        	<h4>BMW Sala.</h4>
-                            <p>12 Mai Chí Thọ, P. An Lợi Đông, Quận 2, Tp.HCM.</p>
-                            <p>Hotline: <a href="tel:0907808880" style="">0907 808 880</a></p>
+                        	<h4><strong>BMW Cần Thơ.</strong> <a href="https://www.facebook.com/Official.BMWCanTho/" target="_blank"><img src="img/ic_fb_2.png"></a> <a href="http://bmwcantho.vn" target="_blank"><img src="img/ic_web.png"></a></h4>
+                            <p>Đường Quang Trung, KDC Hưng Phú 1, P. Hưng Phú, Q. Cái Răng, TP. Cần Thơ .</p>
+                            <p><a href="tel:0901806689"><img src="img/ic_hotline.png"></a> Hotline: <a href="tel:0901806689" style="">0901 806 689</a></p>
                         </address>
                     </div>
+                    
                     
                 </div>
 
             </div>
         </div>
     </div>
-    <div id="myHtmlContent">This is my html content.</div>
     <!---->
     <script src="js/smooth-scroll.js"></script>
     <script type="text/javascript" src="js/bootstrapValidator.min.js"></script>
@@ -552,7 +928,7 @@
                     video.setAttribute('controls', 'controls')
                 }
             }
-        videoMethods.renderVideoPlayButton()
+        //videoMethods.renderVideoPlayButton()
         $('.owl-carousel').owlCarousel({
             loop: true,
             margin: 10,
