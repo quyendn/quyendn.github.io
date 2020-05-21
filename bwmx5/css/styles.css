@@ -586,16 +586,7 @@ hr{
 
 }
 @media (max-width:768px) {
-	#section2 .nav-tabs > li > a {
-    border: none;
-    width: 30px;
-    height: 30px;
-    margin: 0 2px;
-    padding: 2px;
-	}
-#section2 .nav-tabs > li > a img {
-    width: 24px;
-}
+
 #header, #header .affix {
 	min-height: 60px;
 	
@@ -606,34 +597,75 @@ hr{
 #header .affix .navbar-brand > img{
 	height:50px;
 }
-
-#section2 .colorName {
-    font-size: 18px;
-    
-}
 #banner #text h3{
-	font-size:90px;
+	font-size:86px;
 	}
-#section1 .col-sm-6 .note{
-	font-size:13px;
-	padding:5px 0;
+#banner .btn{
+	padding:10px 15px;
 	}
-#section1 .text{
-	padding:15px;
-	}
-#section1 .text h2{
-	font-size:22px;
-	line-height:30px;
-	font-family: "VNBMWTypeNextLatin-Regular";
-	}
-#section1 .text{
-	min-height:0 !important;}
 .infoMachine h1{
 	font-size:24px;
 	}
-#section2 #nav-tabs-select.nav-tabs > li > a, #nav-tabs-prices.nav-tabs > li > a{
-	font-size:13px;
-	padding:5px 5px;
+#section1 .text h2{
+	font-size:18px;
+	line-height:24px;
+	}
+#section1 .col-sm-6{
+	margin-bottom:0;}
+#section1 .carousel-inner{
+	margin-bottom:45px;
+	}
+#section1 .carousel-control.left{
+	left:0;
+	}
+#section1 .carousel-control.right{
+	right:0;
+	}
+#nav-tabs-cars a{
+	width:24px;
+	height:24px;
+	background:none !important
+	}
+#nav-tabs-select > li{
+	margin:0;
+	font-size:12px;}
+#nav-tabs-cars a::before{
+	top:8px;
+	margin:0;
+	}
+#nav-tabs-cars a::after {
+    width: 24px;
+    height: 24px;
+    top: 0px;
+    margin-left: -7px;
+}
+#nav-tabs-cars li a span{
+	top:25px;
+	font-size:12px;
+	width:100px;
+	margin-left:-50px;}
+#nav-tabs-cars li:first-child a span{
+	left:0;
+	margin-left:0;
+	text-align:left;}
+#nav-tabs-cars li:last-child a span{
+	right:0;
+	left:auto;
+	margin-left:0;
+	margin-right:0;
+	text-align:right;}
+#nav-tabs-cars{
+	background-size:100% 2px;}
+.infoPrice{
+	margin-top:0;
+	margin-bottom:30px;
+	}
+.infoPrice h2{
+	font-size:18px;
+	margin-top:0;
+	}
+.section .st-hd h3{
+	font-size:18px;
 	}
 #footer h2{
 	font-size:22px;
@@ -688,6 +720,7 @@ hr{
 #banner #text p{
 	font-size:16px;
 	}
+}
 /*owl-carousel*/
 .owl-carousel {
 }
