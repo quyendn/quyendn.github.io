@@ -243,9 +243,12 @@ a, .btn, button{
 	}
 /**/
 #section1{
-	background:url(../img/bg.jpg) no-repeat 0 0;
-	background-size:;
-	padding:150px 0;
+	position:relative;
+	overflow:hidden}
+#section1 .bg{
+	position:absolute;
+	top:150px;
+	width:100%;
 	}
 .bgall{
 	background:url(../img/bgall.gif) no-repeat 50% 50%;
@@ -427,6 +430,8 @@ a, .btn, button{
 		z-index: 9999;
 		position: relative;
 	}
+	#section1 .bg{
+		position:static;}
 
 }
 
