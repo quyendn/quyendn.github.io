@@ -430,6 +430,9 @@ a, .btn, button{
 		z-index: 9999;
 		position: relative;
 	}
+	#section1{
+		padding-top: 80px !important;
+	}
 	#section1 .bg{
 		position:static;}
 
