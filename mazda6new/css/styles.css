@@ -244,11 +244,19 @@ a, .btn, button{
 /**/
 #section1{
 	position:relative;
-	overflow:hidden}
+	overflow:hidden;
+	padding:0;}
+#section1 h2{
+	text-transform:uppercase;
+	font-size:40px;
+	margin:0 0 60px 0;
+	line-height:normal
+	}
 #section1 .bg{
 	position:absolute;
 	top:150px;
 	width:100%;
+	z-index:99;
 	}
 .bgall{
 	background:url(../img/bgall.gif) no-repeat 50% 50%;
@@ -394,7 +402,9 @@ a, .btn, button{
 	.formRegister .inner {
 		padding: 15px;
 		}
-		
+	#section1 h2{
+		font-size:14px;
+		}
 	#footer address p{
 		font-size:13px;
 		}
