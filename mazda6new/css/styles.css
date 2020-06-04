@@ -246,15 +246,20 @@ a, .btn, button{
 	position:relative;
 	overflow:hidden;
 	padding:0;}
-#section1 h2{
+#section1 .text{
 	text-transform:uppercase;
 	font-size:40px;
 	margin:0 0 60px 0;
-	line-height:normal
+	line-height:normal;
+	position:absolute;
+	left:0;
+	right:0;
+	top:90px;
+	text-align:center;
 	}
 #section1 .bg{
 	position:absolute;
-	top:150px;
+	top:250px;
 	width:100%;
 	z-index:99;
 	}
@@ -402,7 +407,7 @@ a, .btn, button{
 	.formRegister .inner {
 		padding: 15px;
 		}
-	#section1 h2{
+	#section1 .text{
 		font-size:14px;
 		}
 	#footer address p{
