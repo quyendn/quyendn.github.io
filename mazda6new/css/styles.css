@@ -408,7 +408,8 @@ a, .btn, button{
 		padding: 15px;
 		}
 	#section1 .text{
-		font-size:14px;
+		font-size:12px;
+		padding-top:65px;
 		}
 	#footer address p{
 		font-size:13px;
