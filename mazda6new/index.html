@@ -50,7 +50,7 @@
         </div>
         <div class="section wow fadeInUp" id="section1">
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
+                <div class="carousel-inner ">
                     <div class="item active">
                     	<div class="text" class="text-center">Sản phẩm Thế Hệ Mới<br/>Kỷ Nguyên Mới Thương hiệu Mazda</div>
                     	<img src="img/bg.jpg">
@@ -162,7 +162,7 @@
                                     </form>
     
                                 </div>
-                                <div class="text-center" style="padding-top:5px;">
+                                <div class="text-center text-note" style="padding-top:5px;">
                                     *Quà tặng đặc biệt cho khách hàng đăng ký thông tin và mua xe tại đây
                                 </div>
                             </div>
@@ -188,7 +188,7 @@
                         </div>
                         <div class="col-sm-4">
                             <div><img src="img/xe3.png" class="zoom"></div>
-                            <h2>Mẫu sedan thế hệ mới</h2>
+                            <h2>Mẫu xe sedan thế hệ mới</h2>
                             <div><a class="btn navbar1 btnRegister " data-scroll="" data-options="easing: easeInQuad" href="#section1">Đăng ký thông tin</a></div>
                         </div>
                     </div>
@@ -359,48 +359,9 @@
             return true;
         }
         $(document).ready(function () {
-            $('.owl-carousel').owlCarousel({
-                loop: true,
-                margin: 0,
-                responsiveClass: true,
-                responsive: {
-                    0: {
-                        items: 1,
-                        nav: true
-                    },
-                    768: {
-                        items: 2,
-                        nav: true
-                    },
-                    1000: {
-                        items: 3,
-                        nav: true,
-                        loop: false,
-                        margin: 30,
-                    }
-                }
-            })
-            $('.owl-carousel-rate').owlCarousel({
-                loop: true,
-                margin: 10,
-                responsiveClass: true,
-                responsive: {
-                    0: {
-                        items: 1,
-                        nav: true
-                    },
-                    768: {
-                        items: 2,
-                        nav: true
-                    },
-                    1000: {
-                        items: 2,
-                        nav: true,
-                        loop: true,
-                        margin: 0,
-                    }
-                }
-            })
+            $('.carousel').carousel({
+            interval: 3000
+            });
         })
     </script>
     <script>
@@ -428,182 +389,6 @@
 		
 			$(".navbar-toggle").removeClass("close");
 		});
-        $('#cboCity').change(function() {
-            var value = $("#cboCity").val();
-            switch (value) {
-                case "Hà Nội":
-                    // code block
-                    $("#cboPartner").html("<option value=''>---Chọn Showrom/Đại lý-</option><option value='Mazda Giải Phóng'>Mazda Giải Phóng</option><option value='Mazda Hà Đông'>Mazda Hà Đông</option><option value='Mazda Lê Văn Lương'>Mazda Lê Văn Lương</option><option value='Mazda Long Biên'>Mazda Long Biên</option><option value='Mazda Nguyễn Trãi'>Mazda Nguyễn Trãi</option><option value='Mazda Phạm Văn Đồng'>Mazda Phạm Văn Đồng</option><option value='Mazda Trần Khát Chân'>Mazda Trần Khát Chân</option>");
-                    break;
-                case "An Giang":
-                    // code block
-                    $("#cboPartner").html("<option value='Mazda An Giang'>Mazda An Giang</option>");
-                    break;
-                case "Bà Rịa Vũng Tàu":
-                    $("#cboPartner").html("<option value='Mazda Vũng Tàu'>Mazda Vũng Tàu</option>");
-                    // code block
-                    break;
-                case "Bạc Liêu":
-                    $("#cboPartner").html("<option value='Mazda Bạc Liêu'>Mazda Bạc Liêu</option>");
-                    // code block
-                    break;
-                case "Bình Dương":
-                    $("#cboPartner").html("<option value='Mazda Bình Dương'>Mazda Bình Dương</option>");
-                    // code block
-                    break;
-                case "Bình Định":
-                    $("#cboPartner").html("<option value='Mazda Bình Định'>Mazda Bình Định</option>");
-                    // code block
-                    break;
-                case "Bình Phước":
-                    $("#cboPartner").html("<option value='Mazda Bình Phước'>Mazda Bình Phước</option>");
-                    // code block
-                    break;
-                case "Bình Thuận":
-                    $("#cboPartner").html("<option value='Mazda Phan Thiết'>Mazda Phan Thiết</option>");
-                    // code block
-                    break;
-                case "Cần Thơ":
-                    $("#cboPartner").html("<option value='Mazda Cần Thơ'>Mazda Cần Thơ</option>");
-                    // code block
-                    break;
-                case "Đắk Lắk":
-                    $("#cboPartner").html("<option value='Mazda Đắk Lắk'>Mazda Đắk Lắk</option>");
-                    // code block
-                    break;
-                case "Đà Nẵng":
-                    $("#cboPartner").html("<option value='Mazda Đà Nẵng'>Mazda Đà Nẵng</option>");
-                    // code block
-                    break;
-                case "Đồng Nai":
-                    $("#cboPartner").html("<option value='Mazda Biên Hòa'>Mazda Biên Hòa</option>");
-                    // code block
-                    break;
-                case "Gia Lai":
-                    $("#cboPartner").html("<option value='Mazda Gia Lai'>Mazda Gia Lai</option>");
-                    // code block
-                    break;
-                case "Hà Tĩnh":
-                    $("#cboPartner").html("<option value='Mazda Hà Tĩnh'>Mazda Hà Tĩnh</option>");
-                    // code block
-                    break;
-                case "Hải Dương":
-                    $("#cboPartner").html("<option value='Mazda Hải Dương'>Mazda Hải Dương</option>");
-                    // code block
-                    break;
-                case "Hải Phòng":
-                    $("#cboPartner").html("<option value='Mazda Hải Phòng'>Mazda Hải Phòng</option>");
-                    // code block
-                    break
-                case "Hòa Bình":
-                    $("#cboPartner").html("<option value='Mazda Hòa Bình'>Mazda Hòa Bình</option>");
-                    // code block
-                    break;
-                case "Kiên Giang":
-                    $("#cboPartner").html("<option value='Mazda Cơ Khí Kiên Giang'>Mazda Cơ Khí Kiên Giang</option>");
-                    // code block
-                    break;
-                case "Kon Tum":
-                    $("#cboPartner").html("<option value='Mazda Kon Tum'>Mazda Kon Tum</option>");
-                    // code block
-                    break;
-                case "Khánh Hoà":
-                    $("#cboPartner").html("<option value='Mazda Nha Trang'>Mazda Nha Trang</option>");
-                    // code block
-                    break;
-                case "Lạng Sơn":
-                    $("#cboPartner").html("<option value='Mazda Lạng Sơn'>Mazda Lạng Sơn</option>");
-                    // code block
-                    break;
-                case "Lâm Đồng":
-                    $("#cboPartner").html("<option value='Mazda Đà Lạt'>Mazda Đà Lạt</option>");
-                    // code block
-                    break;
-                case "Nghệ An":
-                    $("#cboPartner").html("<option value='Mazda Vinh'>Mazda Vinh</option>");
-                    // code block
-                    break;
-                case "Phú Thọ":
-                    $("#cboPartner").html("<option value='Mazda Phú Thọ'>Mazda Phú Thọ</option>");
-                    // code block
-                    break;
-                case "Quảng Bình":
-                    $("#cboPartner").html("<option value='Mazda Quảng Bình'>Mazda Quảng Bình</option>");
-                    // code block
-                    break;
-                case "Quảng Nam":
-                    $("#cboPartner").html("<option value='Mazda Quảng Nam'>Mazda Quảng Nam</option>");
-                    // code block
-                    break;
-                case "Quảng Ninh":
-                    $("#cboPartner").html("<option value='Mazda Quảng Ninh'>Mazda Quảng Ninh</option>");
-                    // code block
-                    break;
-                case "Quảng Ngãi":
-                    $("#cboPartner").html("<option value='Mazda Quảng Ngãi'>Mazda Quảng Ngãi</option>");
-                    // code block
-                    break;
-                case "Quảng Trị":
-                    $("#cboPartner").html("<option value='Mazda Quảng Trị'>Mazda Quảng Trị</option>");
-                    // code block
-                    break;
-                case "Sơn La":
-                    $("#cboPartner").html("<option value='Mazda Sơn La'>Mazda Sơn La</option>");
-                    // code block
-                    break;
-                case "Tây Ninh":
-                    $("#cboPartner").html("<option value='Mazda Tây Ninh'>Mazda Tây Ninh</option>");
-                    // code block
-                    break;
-                case "Tiền Giang":
-                    $("#cboPartner").html("<option value='Mazda Tiền Giang'>Mazda Tiền Giang</option>");
-                    // code block
-                    break;
-                case "TP. HCM":
-                    $("#cboPartner").html("<option value=''>---Chọn Showrom/Đại lý-</option><option value='Mazda Bình Triệu'>Mazda Bình Triệu</option><option value='Mazda Cộng Hòa'>Mazda Cộng Hòa</option><option value='Mazda Gò Vấp'>Mazda Gò Vấp</option><option value='Mazda Phú Mỹ Hưng'>Mazda Phú Mỹ Hưng</option><option value='Mazda Võ Văn Kiệt'>Mazda Võ Văn Kiệt</option>");
-                    // code block
-                    break;
-                case "Tuyên Quang":
-                    $("#cboPartner").html("<option value='Mazda Tuyên Quang'>Mazda Tuyên Quang</option>");
-                    // code block
-                    break;
-                case "Thái Bình":
-                    $("#cboPartner").html("<option value='Mazda Thái Bình'>Mazda Thái Bình</option>");
-                    // code block
-                    break;
-                case "Thái Nguyên":
-                    $("#cboPartner").html("<option value='Mazda Thái Nguyên'>Mazda Thái Nguyên</option>");
-                    // code block
-                    break;
-                case "Thanh Hóa":
-                    $("#cboPartner").html("<option value='Mazda Thanh Hoá'>Mazda Thanh Hoá</option>");
-                    // code block
-                    break;
-                case "Thừa Thiên Huế":
-                    $("#cboPartner").html("<option value='Mazda Thanh Hoá'>Mazda Huế</option>");
-                    // code block
-                    break;
-                case "Long An":
-                    $("#cboPartner").html("<option value='Mazda Long An'>Mazda Long An</option>");
-                    // code block
-                    break;
-                case "Vĩnh Long":
-                    $("#cboPartner").html("<option value='Mazda Vĩnh Long'>Mazda Vĩnh Long</option>");
-                    // code block
-                    break;
-                case "Vĩnh Phúc":
-                    $("#cboPartner").html("<option value='Mazda Vĩnh Phúc'>Mazda Vĩnh Phúc</option>");
-                    // code block
-                    break;
-                case "Yên Bái":
-                    $("#cboPartner").html("<option value='Mazda Yên Bái'>Mazda Yên Bái</option>");
-                    // code block
-                    break;
-                default:
-                    // code block
-                    break;
-            }
-        });
     </script>
 </body>
 </html>

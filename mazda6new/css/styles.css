@@ -450,6 +450,10 @@ a, .btn, button{
 	}
 	#section1 .bg{
 		position:static;}
+		.text-note
+		{
+			font-size: 10px;
+		}
 
 }
 
