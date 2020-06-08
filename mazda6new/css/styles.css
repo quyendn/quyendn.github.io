@@ -296,6 +296,10 @@ a, .btn, button{
 #section3 .p30{
 	padding-left:30px;
 	}
+.text-note
+{
+	font-size: 13px;
+}
 /**/
 /* #section1 img,#section2 img{
 	transition: all 300ms ease-in-out;
