@@ -467,6 +467,49 @@ img{
 }
 
 @media (max-width: 767px) {
+	.navbar-collapse,.navbar-nav > li > a{
+		float:none;
+		clear:both
+		}
+	.navbar-nav > li > a{
+		padding:15px;
+		}
+	.navbar-nav{
+		margin:0;
+		}
+	.slogan{
+		font-size:14px;
+		}
+	.slogan .container img{
+		width:180px;
+		top:-40px;
+		}
+	#bg1{
+		font-size:18px;
+		height:200px;
+		background-position:75% 50%;
+		background-size:auto 100%;
+		}
+	.listType li{
+		width:50%;
+		
+		}
+	.listType li .inner{
+		font-size:16px;
+		}
+	#section2 [class*="col-"], #section3 [class*="col-"], #section4 [class*="col-"], #section5 [class*="col-"]{
+		margin-bottom:30px;
+		}
+	#ftTop .col-sm-4.text-right{
+		text-align:left !important}
+	#ftBt .navbar-nav > li > a{
+		text-align:left;
+		border:none;
+		padding:5px 10px;
+		}
+	.bdProd-l:before, .bdProd-r:after{
+		display:none;
+		}
 
 
 	}
