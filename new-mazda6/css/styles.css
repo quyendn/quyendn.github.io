@@ -183,21 +183,7 @@ a, .btn, button{
 
 /**/
 
-	/**/
-.zoom{
-	transition: all 300ms ease-in-out;
-	-webkit-transition: all 300ms ease-in-out;
-	-moz-transition: all 300ms ease-in-out;
-	-o-transition: all 300ms ease-in-out;
-	cursor: pointer;
-	}
-.zoom:hover{
-	-webkit-transform: scale(1.15);
-	-moz-transform: scale(1.15);
-	transform: scale(1.15);
-	z-index: 10000;
-	position: relative;
-	}
+
 
 .panel-default{
 	border:none;
@@ -295,11 +281,12 @@ a, .btn, button{
 	margin:10px 0;
 	border-top:1px solid #8b8b8b;
 	}
-	.inner-wrapper-sticky
-	{
-		background: #131313;
-		color: #fff;
-	}
+.inner-wrapper-sticky
+{
+	background: #131313;
+	color: #fff;
+	z-index:999;
+}
 
 /**/
 .section{
@@ -354,12 +341,17 @@ a, .btn, button{
 	outline:none;}
 #tabCar-nav.nav-tabs > li.active > a, #tabCar-nav.nav-tabs > li.active > a:focus, #tabCar-nav.nav-tabs > li.active > a:hover{
 	border:2px solid #fff;}
-
+.carousel-control.right, .carousel-control.left{
+	height:50px;
+	width:30px;
+	top:50%;
+	margin-top:-25px;
+	}
 .carousel-control.right{
-	background:url(../img/ic_next.png) no-repeat 50% 50%;
+	background:#000 url(../img/ic_next.png) no-repeat 50% 50%;
 	}
 .carousel-control.left{
-	background:url(../img/ic_prev.png) no-repeat 50% 50%;
+	background:#000 url(../img/ic_prev.png) no-repeat 50% 50%;
 	}
 /**/
 .fixTop {
@@ -714,7 +706,7 @@ a{
 	#myTab2.tabFixtop-nav.nav-tabs > li{
 		width:50%;
 		}
-	#tabFixtop label{
+	.fixTop  label{
 		margin:0;
 		padding:15px 0;
 		}
@@ -737,7 +729,9 @@ a{
 		}
 	.carousel-indicators{
 		bottom:-15px;}
-		
+	.slideMb .text{
+		min-height:130px;
+		}
 		
 	#footer address{
 		text-align:center;
