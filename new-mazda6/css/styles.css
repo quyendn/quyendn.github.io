@@ -80,6 +80,14 @@ strong, b{
 a, .btn, button{
 	outline:none;
 	}
+.modal-header{
+	position:relative}
+.modal-header .close{
+	background:#E81619 url(../img/cancel.png) no-repeat 50% 50%;
+	width:40px;
+	height:40px;
+	opacity:1;
+	}
 /*header=================================*/
 
 #header{
@@ -426,7 +434,11 @@ a, .btn, button{
 .textAbs.bottom{
 	bottom:30px;}
 .textAbs .inner{
-	max-width:500px;
+	max-width:600px;
+	}
+.textAbs .inner h3{
+	line-height:normal;
+	font-size:21px;
 	}
 .btn-hover{
 	width:30px;
@@ -487,6 +499,7 @@ a, .btn, button{
 	padding-top:0;}
 .tabLib-content .col-sm-6{
 	margin-bottom:20px;
+	overflow:hidden
 	}
 /**/
 
@@ -618,7 +631,17 @@ img{
 	}
 
 /**/
-
+a{
+	cursor:pointer}
+.modal-dialog{
+	margin-top:100px;
+	}
+.videoModal{
+	padding:0 !important; }
+.videoModal .modal-body, .videoModal .modal-content{
+	padding:0;
+	background:none;
+	}
 @media (max-width: 1199px) {
 }
 

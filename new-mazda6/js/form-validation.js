@@ -43,13 +43,7 @@ $(document).ready(function() {
             //         }
             //     }
             // },
-            name: {
-                validators: {
-                    notEmpty: {
-                        message: 'Họ tên không được để trống.'
-                    }
-                }
-            },
+          
             phone: {
                 validators: {
                     notEmpty: {
@@ -59,20 +53,6 @@ $(document).ready(function() {
                         min: 10,
                         max: 10,
                         message: 'Số điện thoại chỉ có thể là 10 số.'
-                    }
-                }
-            },
-            cboCity: {
-                validators: {
-                    notEmpty: {
-                        message: 'Cần chọn Tỉnh/thành phố'
-                    }
-                }
-            },
-            cboPartner: {
-                validators: {
-                    notEmpty: {
-                        message: 'Cần chọn Showroom/Đại lý'
                     }
                 }
             }
