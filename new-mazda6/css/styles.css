@@ -727,6 +727,11 @@ a{
 	.slideMb h3, .slideMb .text{
 		padding:15px;
 		}
+		.slideMb h3, .slideMb .text2{
+			padding-left:15px;
+			padding-right:15px;
+			padding-bottom: 10px;
+			}
 	.carousel-indicators{
 		bottom:-15px;}
 	.slideMb .text{
@@ -756,6 +761,7 @@ a{
 	top:50%;
 	margin-top:50px;
 	z-index:999;
+	padding-right: 6px;
 	}
 #fixButton>div{
 	float:right;
