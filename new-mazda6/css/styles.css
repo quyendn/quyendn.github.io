@@ -377,7 +377,7 @@ a, .btn, button{
 	font-size:20px;
 	margin:0;
 	}
-.sticky .tabFixtop-nav.nav-tabs > li > a, {
+.sticky .tabFixtop-nav.nav-tabs > li > a {
 	padding:15px 30px;
 	}
 .tabFixtop-nav.nav-tabs{
@@ -758,8 +758,8 @@ a{
 #fixButton{
 	position:fixed;
 	right:0;
-	top:50%;
-	margin-top:50px;
+	top:70%;
+	
 	z-index:999;
 	padding-right: 6px;
 	}
