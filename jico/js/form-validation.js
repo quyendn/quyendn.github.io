@@ -59,7 +59,7 @@ $(document).ready(function () {
             var fullname = $('#fullname').val();
             var phone = $('#phone').val();
             var email = $('#email').val();
-            var emailto = "phamkhanhlam93@gmail.com";
+            var emailto = "maipham108@gmail.com";
             var descripton = $('#txtContent').val();
             var rederect = false;
             var dataJSON = { "name": fullname, "email": email, "phone": phone, "description": descripton, "emailto": emailto }
@@ -89,7 +89,7 @@ $(document).ready(function () {
                     $('#address').val('');
                     $('#frmMobile').bootstrapValidator('resetForm', true);
                     if (rederect == true)
-                        window.location.href = "dang-ky-thanh-cong.html";
+                        window.location.href = "https://ipjico.vn/uu-dai-bao-hiem-vat-chat-xe-o-to/dang-ky-thanh-cong.html";
 
                 }
             });
