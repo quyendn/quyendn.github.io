@@ -43,7 +43,13 @@ $(document).ready(function() {
             //         }
             //     }
             // },
-          
+            cboCity: {
+                validators: {
+                    notEmpty: {
+                        message: 'Cần chọn Tỉnh/thành phố'
+                    }
+                }
+            },
             phone: {
                 validators: {
                     notEmpty: {
