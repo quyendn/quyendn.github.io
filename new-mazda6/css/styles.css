@@ -690,6 +690,10 @@ a{
 .owl-carousel .item{
 	
 	}
+	.owl-carousel-review .owl-item{
+		width : 360px !important;
+		margin-left: 16px !important;
+	}
 .owl-carousel .item img{
 	-moz-transition: all 300ms ease-out 0s;
 	-webkit-transition: all 300ms ease-out 0s;
@@ -879,7 +883,7 @@ a{
 		right:0;
 		top:70px
 		}
-
+		
 
 	}
 
