@@ -342,7 +342,7 @@
                                 </div>
                                 <div class="item">
                                     <h3 class="text-uppercase">Màu Sơn</h3>
-                                    <div><img src="img/ngoai_that_mb_8.jpg"></div>
+                                    <div><img src="img/ngoai_that_mb_8.png"></div>
                                     <p class="text">Màu sơn cao cấp tôn vinh thiết kế tổng thể</p>
                                 </div>
                               </div>
@@ -785,31 +785,32 @@
                 </div>
             </div>
             <div class="container" style="margin-top:30px">
-            	<div class="owl-carousel-review">
-                	<div class="item">
-                    	<div>
-                            <iframe width="340" height="210" src="https://www.youtube.com/embed/GiEE5gRi-WU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            	<div class="inner">
+                    <div class="owl-carousel-review">
+                        <div class="item">
+                            <div id="video-autodaily">
+                                video loading...
+                            </div>
+                            <h2><a href="javascript:void(0);">Đẹp ở đây là bao gồm cả phần bên ngoài, chi tiết bên trong và cả công nghệ.</a></h2>
+                            <div class="text-uppercase">Autodaily</div>
                         </div>
-                        <h2><a href="javascript:void(0);">Đẹp ở đây là bao gồm cả phần bên ngoài, chi tiết bên trong và cả công nghệ.</a></h2>
-                        <div class="text-uppercase">Autodaily</div>
-                    </div>
-                    <div class="item">
-                    	<div><iframe width="340" height="210" src="https://www.youtube.com/embed/gF8TsNsuwCk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-                        <h2><a href="javascript:void(0);">Nói về phong cách trẻ trung và thời trang của xe hạng D, chúng ta có thể nói tới ngay chiếc New Mazda6.</a></h2>
-                        <div class="text-uppercase">Xế cưng</div>
-                    </div>
-                    <div class="item">
-                    	<div><iframe width="340" height="210" src="https://www.youtube.com/embed/V5Gf2rhIS_M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-                        <h2><a href="javascript:void(0);">Mazda đã thổi thêm giá trị nghệ thuật vào những giá trị cốt lõi của một mẫu xe.</a></h2>
-                        <div class="text-uppercase">Vlog Xe</div>
-                    </div>
-                    <div class="item">
-                    	<div><iframe width="340" height="210" src="https://www.youtube.com/embed/eXKINHlNHW8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-                        <h2><a href="javascript:void(0);">Các phiên bản có sự thay đổi tích cực về phần ngoại hình bắt mắt hơn, thu hút hơn và cập nhật nhiều công nghệ hơn.</a></h2>
-                        <div class="text-uppercase">Xe tinh tế</div>
+                        <div class="item">
+                            <div id="video-xecung">video loading...</div>
+                            <h2><a href="javascript:void(0);">Nói về phong cách trẻ trung và thời trang của xe hạng D, chúng ta có thể nói tới ngay chiếc New Mazda6.</a></h2>
+                            <div class="text-uppercase">Xế cưng</div>
+                        </div>
+                        <div class="item">
+                            <div id="video-vlog">video loading...</div>
+                            <h2><a href="javascript:void(0);">Mazda đã thổi thêm giá trị nghệ thuật vào những giá trị cốt lõi của một mẫu xe.</a></h2>
+                            <div class="text-uppercase">Vlog Xe</div>
+                        </div>
+                        <div class="item">
+                            <div id="video-tinhte">video loading...</div>
+                            <h2><a href="javascript:void(0);">Các phiên bản có sự thay đổi tích cực về phần ngoại hình bắt mắt hơn, thu hút hơn và cập nhật nhiều công nghệ hơn.</a></h2>
+                            <div class="text-uppercase">Xe tinh tế</div>
+                        </div>
                     </div>
                 </div>
-                
             </div>
         </div>
         <div id="footer">
@@ -1015,33 +1016,24 @@
                 function () {
                     $(this).removeClass('open');
                 });
+        var vWidth = "100%";
+        var vHeight = "200px";
+        var md = new MobileDetect(window.navigator.userAgent);
+        if (md.mobile()) {
+            vHeight = "190px";
+            vWidth = "100%";
+        }
+        if (md.tablet()) {
+            vHeight = "200px";
+            vWidth = "100%";
+        }
+        $('#video-autodaily').html('<iframe width="'+vWidth+'" height="' + vHeight + '" src="https://www.youtube.com/embed/GiEE5gRi-WU?autoplay=0&modestbranding=0&mute=1&enablejsapi=1&loop=1&version=3&playlist=vEEwfNmF0Cg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>')
+        $('#video-xecung').html('<iframe width="'+vWidth+'" height="' + vHeight + '" src="https://www.youtube.com/embed/gF8TsNsuwCk?autoplay=0&modestbranding=0&mute=1&enablejsapi=1&loop=1&version=3&playlist=vEEwfNmF0Cg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>')
+        $('#video-vlog').html('<iframe width="'+vWidth+'" height="' + vHeight + '" src="https://www.youtube.com/embed/V5Gf2rhIS_M?autoplay=0&modestbranding=0&mute=1&enablejsapi=1&loop=1&version=3&playlist=vEEwfNmF0Cg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>')
+        $('#video-tinhte').html('<iframe width="'+vWidth+'" height="' + vHeight + '" src="https://www.youtube.com/embed/eXKINHlNHW8?autoplay=0&modestbranding=0&mute=1&enablejsapi=1&loop=1&version=3&playlist=vEEwfNmF0Cg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>')
         });
     </script>
-    <script type="text/javascript">
-        // var vTopSpacing = 90;
-        // var md = new MobileDetect(window.navigator.userAgent);
-        // if (md.mobile()) {
-        //     vTopSpacing = 66;
-        // }
-        // if (md.tablet()) {
-        //     vTopSpacing = 90;
-        // }
-        // var a = new StickySidebar('#tabFixtop', {
-        //     topSpacing: vTopSpacing,
-        //     bottomSpacing: 20,
-        //     containerSelector: '.container-1',
-        //     innerWrapperSelector: '.fixTop',
-        //     stickyClass: 'sticky'
-        // });
-        // var b = new StickySidebar('#tabFixtop2', {
-        //     topSpacing: vTopSpacing,
-        //     bottomSpacing: 20,
-        //     containerSelector: '.container-2',
-        //     innerWrapperSelector: '.fixTop-2',
-        //     stickyClass: 'sticky'
-        // });
-    </script>
-    
+   
     <script>
         smoothScroll.init({
             speed: 1000,

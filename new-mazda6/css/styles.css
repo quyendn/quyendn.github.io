@@ -645,19 +645,22 @@ a{
 	border-top:1px solid #777;
 	padding-top:10px;
 	}
-#section4 .owl-carousel-review:before, #section4 .owl-carousel-review:after{
+#section4 .inner{
+	margin:0 20px;
+	position:relative}
+#section4 .inner:before, #section4 .inner:after{
 	content:"";
 	height:80px;
 	width:80px;
 	position:absolute;
 	}
-#section4 .owl-carousel-review:before{
-	left:-00px;
+#section4 .inner:before{
+	left:-20px;
 	top:-20px;
 	background:url(../img/bd-l.png) no-repeat 0 0;
 	}
-#section4 .owl-carousel-review:after{
-	right:-00px;
+#section4 .inner:after{
+	right:-20px;
 	bottom:140px;
 	background:url(../img/bd-r.png) no-repeat 100% 100%;
 	}
@@ -673,7 +676,6 @@ a{
   -moz-transform: translate3d(0px,0,0);
   -webkit-transform: translate3d(0px,0,0);
   transform: translate3d(0px,0,0);
-  margin:20px;
 }
 .owl-carousel .owl-item, .owl-carousel-review .owl-item{
   position: relative;
@@ -832,7 +834,10 @@ a{
 			color: #fff !important;
 
 		}
-	
+		#section4 h2{
+			font-size: 16px;
+			
+		}
 	#myTab2.tabFixtop-nav.nav-tabs > li > a{
 		font-size:14px;
 		padding:10px 10px;
