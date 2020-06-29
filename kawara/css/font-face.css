@@ -1,0 +1,49 @@
+
+@font-face {
+  font-family: "PalatinoLinotype-Roman";
+  src: url("../font/palatino-linotype.eot"); /* IE9 Compat Modes */
+  src: url("../font/palatino-linotype.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../font/palatino-linotype.otf") format("opentype"), /* Open Type Font */
+    url("../font/palatino-linotype.svg") format("svg"), /* Legacy iOS */
+    url("../font/palatino-linotype.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("../font/palatino-linotype.woff") format("woff"), /* Modern Browsers */
+    url("../font/palatino-linotype.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PalatinoLinotype-BoldItalic";
+  src: url("../font/palatino-linotype-grassetto-corsivo.eot"); /* IE9 Compat Modes */
+  src: url("../font/palatino-linotype-grassetto-corsivo.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../font/palatino-linotype-grassetto-corsivo.otf") format("opentype"), /* Open Type Font */
+    url("../font/palatino-linotype-grassetto-corsivo.svg") format("svg"), /* Legacy iOS */
+    url("../font/palatino-linotype-grassetto-corsivo.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("../font/palatino-linotype-grassetto-corsivo.woff") format("woff"), /* Modern Browsers */
+    url("../font/palatino-linotype-grassetto-corsivo.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SFUGoudyMedium";
+  src: url("../font/SFUGoudyMedium.eot"); /* IE9 Compat Modes */
+  src: url("../font/SFUGoudyMedium.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../font/SFUGoudyMedium.otf") format("opentype"), /* Open Type Font */
+    url("../font/SFUGoudyMedium.svg") format("svg"), /* Legacy iOS */
+    url("../font/SFUGoudyMedium.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("../font/SFUGoudyMedium.woff") format("woff"), /* Modern Browsers */
+    url("../font/SFUGoudyMedium.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PalatinoLinotype-Italic";
+  src: url("../font/palatino-linotype-corsivo.eot"); /* IE9 Compat Modes */
+  src: url("../font/palatino-linotype-corsivo.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../font/palatino-linotype-corsivo.otf") format("opentype"), /* Open Type Font */
+    url("../font/palatino-linotype-corsivo.svg") format("svg"), /* Legacy iOS */
+    url("../font/palatino-linotype-corsivo.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("../font/palatino-linotype-corsivo.woff") format("woff"), /* Modern Browsers */
+    url("../font/palatino-linotype-corsivo.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
