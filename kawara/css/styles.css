@@ -312,21 +312,7 @@ a, .btn, button{
 	color: #fff;
 	z-index:999;
 }
-.zoom {
-	-moz-transition: transform .3s;
-	-webkit-transition: transform .3s;
-	transition: transform .3s;
-	-o-transition: transform .3s;
-  }
-  
-  .zoom:hover {
-	-moz-transform: scale(1.1);
-	-webkit-transform: scale(1.1);
-	-o-transform: scale(1.1);
-	transform: scale(1.1);
-	cursor: pointer;
-	z-index: 99999;
-  }
+
 /**/
 .section{
 	padding-top:60px;
@@ -518,7 +504,6 @@ i,em{
 	top:50%;
 	margin-top:-27px;
 	text-indent:-1000em;
-	cursor: pointer;
 	}
 .owl-loaded .owl-prev{
 	left:-60px;
@@ -643,7 +628,10 @@ img{
 	padding:0 30px 30px 30px;
 	border:1px solid #777;
 	}
-	
+
+/**/
+.owl-carousel-service img, .owl-carousel-villa img, .owl-carousel-onsen  img{
+		width:100%}
 
 
 /**/
@@ -651,9 +639,16 @@ img{
 /**/
 
 @media (max-width: 1199px) {
+	#section6 li{
+		width:33%;
+		}
 }
 
 @media (max-width: 992px) {
+	#section2 li{
+		width:33%;
+		}
+	
 }
 
 @media (max-width: 767px) {
@@ -700,7 +695,7 @@ img{
 		letter-spacing: 2px;
 		}
 	#section2 li, #section6 li{
-		width:100%;
+		width:50%;
 		}
 	.owl-loaded .owl-prev{
 		left:0;}
@@ -727,9 +722,22 @@ img{
 		margin-bottom:15px;
 		height:60px;
 		}
+	#section2{
+		background-size:560px auto;
+		padding-bottom:15px}
+	#section2 .textBt{
+		margin-top:200px;
+		font-size:14px;
+		}
 
 
 
 	}
+@media (max-width: 460px){
+	#section2 li, #section6 li{
+		width:100%;
+		}
+		}
+
 
 /**/
