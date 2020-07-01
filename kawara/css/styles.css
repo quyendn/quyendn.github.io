@@ -17,7 +17,7 @@ body{
 a{
 	color:#b4902f;
 	}
-a:hover{
+a:hover, a:link, a:visited{
 	color:#b4902f;
 	}
 #scroll-fix-top{
@@ -93,6 +93,25 @@ a, .btn, button{
   width:1340px
  }
 }
+.owl-item .item{overflow:hidden;
+	border:2px solid transparent;
+	
+	}
+.owl-item .item.active{
+	border:2px solid #fff;
+	-moz-box-shadow:0 0 10px rgba(0,0,0,0.5);
+	-webkit-box-shadow:0 0 10px rgba(0,0,0,0.5);
+	-o-box-shadow:0 0 10px rgba(0,0,0,0.5);
+	box-shadow:0 0 10px rgba(0,0,0,0.5);
+	}
+.owl-item .item.current{
+	border:2px solid #b4902f;
+	-moz-box-shadow:0 0 10px rgba(0,0,0,0.5);
+	-webkit-box-shadow:0 0 10px rgba(0,0,0,0.5);
+	-o-box-shadow:0 0 10px rgba(0,0,0,0.5);
+	box-shadow:0 0 10px rgba(0,0,0,0.5);
+	}
+	
 /*header=================================*/
 
 #header{
@@ -456,7 +475,7 @@ i,em{
 	border-radius:3px;
 	}
 /*owl-carousel*/
-.owl-carousel{
+.owl-carousel{padding:20px;
 	}
 .owl-carousel.owl-loaded, .owl-carousel-rate.owl-loaded {
   display: block;
@@ -464,6 +483,7 @@ i,em{
 .owl-carousel .owl-stage-outer, .owl-carousel-onsen .owl-stage-outer, .owl-carousel-villa .owl-stage-outer, .owl-carousel-service .owl-stage-outer, .owl-carousel-shop .owl-stage-outer, 
 .owl-carousel-onsen-menu .owl-stage-outer{
   position: relative;
+  
   overflow:hidden;
   -moz-transform: translate3d(0px,0,0);
   -webkit-transform: translate3d(0px,0,0);
@@ -506,18 +526,22 @@ i,em{
 	text-indent:-1000em;
 	}
 .owl-loaded .owl-prev{
+	cursor: pointer;
 	left:-60px;
-	background:url(../img/ic_prev.png) no-repeat 50% 50%
+	background:url(../img/ic_prev.png) no-repeat 50% 50%;
 	}
 .owl-loaded .owl-next{
+	cursor: pointer;
 	right:-60px;
-	background:url(../img/ic_next.png) no-repeat 50% 50%
+	background:url(../img/ic_next.png) no-repeat 50% 50%;
 	}
 #section6 .owl-loaded .owl-prev{
-	background:url(../img/ic_prev_2.png) no-repeat 50% 50%
+	cursor: pointer;
+	background:url(../img/ic_prev_2.png) no-repeat 50% 50%;
 	}
 #section6 .owl-loaded .owl-next{
-	background:url(../img/ic_next_2.png) no-repeat 50% 50%
+	cursor: pointer;
+	background:url(../img/ic_next_2.png) no-repeat 50% 50%;
 	}
 
 .owl-dots{
@@ -737,7 +761,21 @@ img{
 	#section2 li, #section6 li{
 		width:100%;
 		}
+	}
+	.zoom {
+		-moz-transition: transform .3s;
+		-webkit-transition: transform .3s;
+		transition: transform .3s;
+		-o-transition: transform .3s;
 		}
-
+	
+	.zoom:hover {
+	-moz-transform: scale(1.03);
+	-webkit-transform: scale(1.03);
+	-o-transform: scale(1.03);
+	transform: scale(1.03);
+	cursor: pointer;
+	z-index: 99999;
+	}
 
 /**/
