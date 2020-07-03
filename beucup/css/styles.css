@@ -418,6 +418,8 @@ a, .btn, button{
 #section6 .col-sm-3{
 	margin-bottom:30px;
 	}
+#section6 .col-sm-3 img{
+	width:100%;}
 #section6 .text{
 	margin-top:30px;
 	background:rgba(63,176,174,0.2);
@@ -470,14 +472,10 @@ img{
 #thank .inner{
 	background:rgba(255,255,255, 0.5);
 	color:#3fb0ae;
-	padding:30px;
-	font-size:24px;
+	padding:45px;
+	font-size:36px;
 	}
-#thank .inner .bg{
-	background:rgba(255,255,255, 0.5);
-	padding:30px;
-	border:1px solid #3fb0ae;
-	}
+
 
 
 /**/
@@ -545,15 +543,12 @@ img{
 		font-size:20px;
 		margin-top:30px;
 		}
+	#thank .inner{
+		font-size:20px;
+		}
 	
 
 
-	}
-@media (max-width: 460px){
-	#section2 li, #section6 li{
-		width:100%;
-		}
-	}
 	.zoom {
 		-moz-transition: transform .3s;
 		-webkit-transition: transform .3s;

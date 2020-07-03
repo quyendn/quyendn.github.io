@@ -47,6 +47,7 @@
             </div>
         </div>
         <div id="slide-wrap" class="section wow fadeInUp">
+        	
             <div id="banner" class="carousel slide" data-ride="carousel">
                   <div class="carousel-inner">
                     <div class="item active">
@@ -436,6 +437,7 @@
                 var elemBottom = elemTop + $elem.height();
                 return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
             }
+
             function start() {
                 if (isScrolledIntoView($('#section1')) && !$('#section1').data("isCounting")) {
                     $("#section1").data("isCounting", true);
