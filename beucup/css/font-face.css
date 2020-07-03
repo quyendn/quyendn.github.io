@@ -1,0 +1,18 @@
+
+@font-face {
+  font-family: 'iCiel Altus Serif';
+  src: url('../font/iCiel Altus Serif.eot');
+  src: url('../font/iCiel Altus Serif.eot?#iefix') format('embedded-opentype'),
+       url('../font/iCiel Altus Serif.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'iCielAltusSerif';
+  src: url('../font/iCielAltusSerif.svg#iCielAltusSerif') format('svg'),
+       url('../font/iCielAltusSerif.ttf') format('truetype'),
+       url('../font/iCielAltusSerif.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
