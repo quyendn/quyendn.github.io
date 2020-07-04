@@ -283,7 +283,8 @@ a, .btn, button{
 	border:none;
 	height:auto;
 	color:#fff;
-	background:#33acaa
+	background:#33acaa;
+	font-size: 18px;
 	}
 
 	::placeholder{
@@ -418,7 +419,7 @@ opacity: 1; /* Firefox */
 	border-radius:10px;
 	}
 #section3 h2{
-	font-size:24px;
+	font-size:26px;
 	margin:15px 0 0 0;
 	font-weight:bold;
 	}
@@ -569,7 +570,7 @@ img{
 		font-size:20px;
 		}
 	
-
+	}
 
 	.zoom {
 		-moz-transition: transform .3s;
