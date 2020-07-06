@@ -79,7 +79,7 @@ $(document).ready(function() {
             var dataJSON = { "name": name, "phone": phone, "source": url_source, "product": product, "isSendMail": isSendMail, "emailto": emailto};
             showLoadingContactImage('content-register', 'frmContentReg');
             $.ajax({
-                url: "https://alpha.f5academy.net/api/Beucupservice",
+                url: "http://alpha.f5academy.net/api/Beucupservice",
                 type: "Post",
                 async: false,
                 data: dataJSON,
@@ -100,7 +100,7 @@ $(document).ready(function() {
                     $('#frmRegDownload').bootstrapValidator('resetForm', true);
                     toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', { timeOut: 5000 })
                     hideLoadingContactImage('content-register', 'frmContentReg');
-                    window.location.href = "https://quyendn.github.io/beucup//dang-ky-thanh-cong.html";
+                    window.location.href = "/dang-ky-thanh-cong.html";
                 }
             });
         }
