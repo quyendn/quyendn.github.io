@@ -47,7 +47,7 @@
             </div>
         </div>
         <div id="video" class="section wow fadeInUp">
-        	<img src="img/video.jpg" width="100%">
+        	
         </div>
         <div id="section1" class="section wow fadeInUp" style="position:relative">
         	<div class="st-pic"><img src="img/st1.jpg"></div>
@@ -160,7 +160,7 @@
     </script>
     <script>
         var vWidth = "100%";
-        var vHeight = "460px";
+        var vHeight = "600px";
         var md = new MobileDetect(window.navigator.userAgent);
         if (md.mobile()) {
             vHeight = "200px";
@@ -170,25 +170,7 @@
             vHeight = "260px";
             vWidth = "100%";
         }
-        $('#video-home').html('<iframe width="'+vWidth+'" height="' + vHeight + '" src="https://www.youtube.com/embed/MklXmYpmYEc?autoplay=0&modestbranding=0&mute=1&enablejsapi=1&loop=1&version=3&playlist=MklXmYpmYEc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>')   
-        $(function () {
-            function isScrolledIntoView($elem) {
-                var docViewTop = $(window).scrollTop();
-                var docViewBottom = docViewTop + $(window).height();
-                var elemTop = $elem.offset().top;
-                var elemBottom = elemTop + $elem.height();
-                return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
-            }
-
-            function start() {
-                if (isScrolledIntoView($('#section1')) && !$('#section1').data("isCounting")) {
-                    $("#section1").data("isCounting", true);
-                    $('#video-home').html('<iframe width="'+vWidth+'" height="' + vHeight + '" src="https://www.youtube.com/embed/MklXmYpmYEc?autoplay=1&modestbranding=0&mute=1&enablejsapi=1&loop=1&version=3&playlist=MklXmYpmYEc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>')
-
-                }
-            };
-            $(document).on("scroll", start);
-        });
+        $('#video').html('<iframe width="'+vWidth+'" height="' + vHeight + '" src="https://www.youtube.com/embed/lWsDxCtTD6U?autoplay=0&modestbranding=0&mute=1&enablejsapi=1&loop=1&version=3&playlist=lWsDxCtTD6U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>')   
     </script>
     <script>
     	$("button").click(function(){
@@ -205,102 +187,7 @@
 			$(".navbar-toggle").removeClass("close");
 		});
      </script>
-    <script>
-		$(document).ready(function() {
-      var owlonsen = $('.owl-carousel-onsen');
-		  owlonsen.owlCarousel({
-			loop: false,
-			padding: 20,
-		  lazyLoad : true,
-		  transitionStyle: "fade",
-		  stopOnHover: true,
-			responsiveClass: true,
-			responsive: {
-			  0: {
-				items: 1,
-				nav: true
-			  },
-			  768: {
-				items: 2,
-				nav: true
-			  },
-			  1000: {
-				items: 4,
-				nav: true,
-				loop:false,
-				margin: 20,
-			  }
-			}
-		  }).on('click', '.owl-item', function(e) {
-        var carousel = $('.owl-carousel-onsen').data('owl.carousel');
-        e.preventDefault();
-        //carousel.to(carousel.relative($(this).index()));
-        console.log(carousel.relative($(this).index()));
-      });
-      $('.slide1').click(function () {
-        var itemId = $(this).attr("rel");
-        var imagePath = $(this).attr("rev");
-        var html = '<div class="item active"><img src="'+imagePath+'" class="zoom"></div>'; 
-        $(".owl-carousel-onsen .item" ).each(function( i ) {
-          $(this).removeClass("active");
-        });
-        owlonsen.data('owl.carousel').to(itemId, 100, true);
-        owlonsen
-        .find(".owl-item")
-        .removeClass("active")
-        .eq(itemId)
-        .children()
-        .addClass("active");
-      });
-
-		})
-		$(document).ready(function() {
-		  $('.owl-carousel-villa').owlCarousel({
-			loop: true,
-			margin: 20,
-			responsiveClass: true,
-			responsive: {
-			  0: {
-				items: 1,
-				nav: true
-			  },
-			  768: {
-				items: 2,
-				nav: true
-			  },
-			  1000: {
-				items: 2,
-				nav: true,
-				loop:true,
-				margin: 20,
-			  }
-			}
-		  })
-		})
-		$(document).ready(function() {
-		  $('.owl-carousel-service').owlCarousel({
-			loop: true,
-			margin: 20,
-			responsiveClass: true,
-			responsive: {
-			  0: {
-				items: 1,
-				nav: true
-			  },
-			  768: {
-				items: 2,
-				nav: true
-			  },
-			  1000: {
-				items: 3,
-				nav: true,
-				loop:true,
-				margin: 20,
-			  }
-			}
-		  })
-		})
-    </script>
+    
     <script src="js/smooth-scrollbar.js"></script>
     <link href="css/smooth-scrollbar.css" rel="stylesheet" type="text/css" />
 </body>
