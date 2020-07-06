@@ -76,7 +76,7 @@ $(document).ready(function() {
             var email = $('#txtEmail').val();
             var phone = $('#txtPhone').val();
             var city = $('#cboCity').val();
-            var emailto = "quyendn84@gmail.com";
+            var emailto = "sales@kawaramyanresort.com";
             var isSendMail = 1;
             var url_source = "lp_kawara";
             var source = getUrlParameter('utm_source');
@@ -90,7 +90,7 @@ $(document).ready(function() {
             var dataJSON = { "name": name, "phone": phone, "source": url_source, "email": email, "location": city, "isSendMail": isSendMail, "emailto": emailto };
             showLoadingContactImage('content-register', 'frmContentReg');
             $.ajax({
-                url: "http://alpha.f5academy.net/api/Kawaraservice",
+                url: "https://alpha.f5academy.net/api/Kawaraservice",
                 type: "Post",
                 async: false,
                 data: dataJSON,
