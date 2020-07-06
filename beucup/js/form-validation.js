@@ -65,7 +65,7 @@ $(document).ready(function() {
             var name = $('#txtName').val();
             var phone = $('#txtPhone').val();
             var product = $('#cboCity').val();
-            var emailto = "quyendn84@gmail.com";
+            var emailto = "sales@kawaramyanresort.com";
             var isSendMail = 0;
             var url_source = "lp_beucup";
             var source = getUrlParameter('utm_source');
@@ -79,7 +79,7 @@ $(document).ready(function() {
             var dataJSON = { "name": name, "phone": phone, "source": url_source, "product": product, "isSendMail": isSendMail, "emailto": emailto};
             showLoadingContactImage('content-register', 'frmContentReg');
             $.ajax({
-                url: "http://alpha.f5academy.net/api/Beucupservice",
+                url: "https://alpha.f5academy.net/api/Beucupservice",
                 type: "Post",
                 async: false,
                 data: dataJSON,
