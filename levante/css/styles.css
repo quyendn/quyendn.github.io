@@ -126,6 +126,7 @@ a, .btn, button{
 	}
 .navbar-brand img{
 	float:left;
+	height:60px;
 	margin-right:15px;
 	}
 .navbar-brand strong{
@@ -694,10 +695,23 @@ a, .btn, button{
 		}
 	.owl-carousel-st5 .st-pic, .owl-carousel-st6 .st-pic{
 		height:290px !important;}
+	#thank .inner{
+		padding:45px 15px;
+		font-size:14px;
+		}
+	#thank{
+		background:url(../img/banner.jpeg) no-repeat 50% 50% / auto 100% !important;
+		background-size:cover;}
+	#thank .inner h2{
+		font-size:18px;
+		padding:30px 0;}
 
 
 
 	}
+	#thank{
+		height:100vh;
+		background:url(../img/banner.jpeg) no-repeat 50% 50%/100% auto;}
 	
 
 /**/
@@ -828,21 +842,4 @@ display: none;
 }
  
  
-}
-
-
-.zoom {
-	-moz-transition: transform .3s;
-	-webkit-transition: transform .3s;
-	transition: transform .3s;
-	-o-transition: transform .3s;
-	}
-
-.zoom:hover {
--moz-transform: scale(1.03);
--webkit-transform: scale(1.03);
--o-transform: scale(1.03);
-transform: scale(1.03);
-cursor: pointer;
-z-index: 99999;
 }
