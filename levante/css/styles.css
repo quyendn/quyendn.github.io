@@ -829,3 +829,20 @@ display: none;
  
  
 }
+
+
+.zoom {
+	-moz-transition: transform .3s;
+	-webkit-transition: transform .3s;
+	transition: transform .3s;
+	-o-transition: transform .3s;
+	}
+
+.zoom:hover {
+-moz-transform: scale(1.03);
+-webkit-transform: scale(1.03);
+-o-transform: scale(1.03);
+transform: scale(1.03);
+cursor: pointer;
+z-index: 99999;
+}
