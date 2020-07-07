@@ -78,7 +78,7 @@ $(document).ready(function() {
             var vehice = $('#txtColor').val();
             var city = $('#cboCity').val();
             var emailto = "quyendn84@gmail.com";
-            var isSendMail = 1;
+            var isSendMail = 0;
             var url_source = "lp_levante";
             var source = getUrlParameter('utm_source');
             if (isEmpty(source))
