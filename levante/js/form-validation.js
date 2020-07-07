@@ -34,16 +34,15 @@ $(document).ready(function() {
         feedbackIcons: faIcon,
         fields: {
             // email: {
-            //     validators: {
-            //         notEmpty: {
-            //             message: 'Địa chỉ email không được để trống.'
-            //         },
-            //         emailAddress: {
-            //             message: 'Không đúng định dạng email'
-            //         }
-            //     }
-            // },
-          
+            //      validators: {
+            //          notEmpty: {
+            //              message: 'Địa chỉ email không được để trống.'
+            //          },
+            //          emailAddress: {
+            //              message: 'Không đúng định dạng email'
+            //          }
+            //      }
+            //  },
             phone: {
                 validators: {
                     notEmpty: {
@@ -55,24 +54,44 @@ $(document).ready(function() {
                         message: 'Số điện thoại chỉ có thể là 10 số.'
                     }
                 }
-            }
+            },
+            name: {
+                validators: {
+                    notEmpty: {
+                        message: 'Họ tên không được để trống.'
+                    }
+                }
+            },
+            cboCity: {
+                validators: {
+                    notEmpty: {
+                        message: 'Cần chọn Tỉnh/thành phố'
+                    }
+                }
+            },
         },
         onSuccess: function(e) {
 
             var name = $('#txtName').val();
             var email = $('#txtEmail').val();
             var phone = $('#txtPhone').val();
+            var vehice = $('#txtColor').val();
             var city = $('#cboCity').val();
-            var partner = "new-mazda6";
             var emailto = "quyendn84@gmail.com";
-            var typeId = 1;
+            var isSendMail = 1;
+            var url_source = "lp_levante";
+            var source = getUrlParameter('utm_source');
+            if (isEmpty(source))
+                url_source = "lp_levante";
+            else
+                url_source = source;
             var check = checkPhoneNumber();
             if (!check)
                 return;
-            var dataJSON = { "city": city, "partner": partner, "name": name, "phone": phone, "email": email, "emailto": emailto, "typeId": typeId };
+            var dataJSON = { "name": name, "phone": phone,"email": email, "source": url_source, "vehice": vehice, "option": city, "isSendMail": isSendMail, "emailto": emailto };
             showLoadingContactImage('content-register', 'frmContentReg');
             $.ajax({
-                url: "https://alpha.f5academy.net/api/Mazda3Newservice",
+                url: "https://alpha.f5academy.net/api/Levanteservice",
                 type: "Post",
                 async: false,
                 data: dataJSON,
@@ -81,10 +100,12 @@ $(document).ready(function() {
                 success: function(states) {
                     $('#frmRegDownload').bootstrapValidator('resetForm', true);
                     hideLoadingContactImage('content-register', 'frmContentReg');
+                    $('#formModal').hide();
                 },
                 error: function(ex) {
                     toastr.error('Đã có lỗi trong quá trình đăng ký, mời bạn thử lại.', { timeOut: 5000 })
                     hideLoadingContactImage('content-register', 'frmContentReg');
+                    $('#formModal').hide();
                 },
                 complete: function(jqXHR, textStatus) {
                     $('#txtName').val('');
@@ -93,7 +114,7 @@ $(document).ready(function() {
                     $('#frmRegDownload').bootstrapValidator('resetForm', true);
                     toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', { timeOut: 5000 })
                     hideLoadingContactImage('content-register', 'frmContentReg');
-                    window.location.href = "https://quyendn.github.io/new-mazda6/dang-ky-thanh-cong.html";
+                    window.location.href = "https://quyendn.github.io/levante/dang-ky-thanh-cong.html";
                 }
             });
         }
@@ -299,4 +320,25 @@ $(document).ready(function() {
             return false;
         }
     }
+    function isEmpty(item) {
+        if (item) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+    var getUrlParameter = function getUrlParameter(sParam) {
+        var sPageURL = window.location.search.substring(1),
+            sURLVariables = sPageURL.split('&'),
+            sParameterName,
+            i;
+
+        for (i = 0; i < sURLVariables.length; i++) {
+            sParameterName = sURLVariables[i].split('=');
+
+            if (sParameterName[0] === sParam) {
+                return sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
+            }
+        }
+    };
 });

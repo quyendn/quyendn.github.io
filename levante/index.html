@@ -687,21 +687,21 @@ V6 và V8 trong các phiên bản Levante khác nhau cung cấp mọi điều b�
                         <input type="text" class="form-control" name="name" id="txtName" value="" placeholder="Họ và tên(*)">
                     </div>
                     <div class="form-group has-feedback">
-                        <input type="text" class="form-control" name="name" id="txtEmail" value="" placeholder="Email">
+                        <input type="text" class="form-control" name="email" id="txtEmail" value="" placeholder="Email">
                     </div>
                     <div class="form-group has-feedback">
                         <input type="text" class="form-control" name="phone" id="txtPhone" onkeypress="return AllowNumberOnly(event);" placeholder="Số điện thoại(*)" value="" data-bv-field="phone"><i style="display: none;" class="form-control-feedback bv-no-label" data-bv-icon-for="phone"></i>
                     	<small style="display: none;" class="help-block" data-bv-validator="notEmpty" data-bv-for="phone" data-bv-result="NOT_VALIDATED">Điện thoại không được để trống.</small><small style="display: none;" class="help-block" data-bv-validator="stringLength" data-bv-for="phone" data-bv-result="NOT_VALIDATED">Số điện thoại chỉ có thể là 10 số.</small>
                     </div>
                     <div class="form-group has-feedback">
-                        <input type="text" class="form-control" name="name" id="txtColor" value="" placeholder="Mẫu xe quý khách đang sử dụng (nếu có)">
+                        <input type="text" class="form-control" name="vehice" id="txtColor" value="" placeholder="Mẫu xe quý khách đang sử dụng (nếu có)">
                     </div>
                     <div class="form-group has-feedback">
                         <select class="form-control" id="cboCity" name="cboCity">
-                            <option>Yêu cầu của quý khách *</option>
-                            <option>Yêu cầu báo giá</option>
-                            <option>Đăng ký lái thử</option>
-                            <option>Đặt lịch tư vấn</option>
+                            <option value="">Yêu cầu của quý khách *</option>
+                            <option value="Yêu cầu báo giá">Yêu cầu báo giá</option>
+                            <option value="Đăng ký lái thử">Đăng ký lái thử</option>
+                            <option value="Đặt lịch tư vấn">Đặt lịch tư vấn</option>
                             
                         </select>
                     </div>
