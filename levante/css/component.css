@@ -52,12 +52,20 @@
 
 .grid figure {
 	padding: 10px;
-	-webkit-transition: opacity 0.2s;
-	transition: opacity 0.2s;
+	
 }
-
-.grid li:hover figure {
-	opacity: 0.7;
+.grid figure img{
+	-moz-transition: transform .3s;
+	-webkit-transition: transform .3s;
+	transition: transform .3s;
+	-o-transition: transform .3s;
+	}
+.grid li:hover figure img {
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	transform: scale(1.1);
+	
 }
 
 .grid figcaption {

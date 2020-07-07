@@ -26,9 +26,20 @@
     <link href="css/jquery.fancybox.css" rel="stylesheet" type="text/css" />
     <link href="css/jquery.fancybox-thumbsER.css" rel="stylesheet" type="text/css" />
     <link href="css/magnific-popup.css" rel="stylesheet" type="text/css" />
+    
+    
+
+    
 </head>
 <body>
     <div id="container">
+    	<div id="fixButton">
+            <div><a href=""><img src="img/ic_daily.png"> <span>Tìm đại lý gần nhất</span></a></div>
+            <div><a href="" data-toggle="modal" data-target="#formModal"><img src="img/ic_laithu.png"> <span>Đăng ký lái thử</span></a></div>
+            <div><a href=""><img src="img/ic_hotline.png"> <span>Hotline: 098 155 22 55</span></a></div>
+            <div><a href=""><img src="img/ic_trochuyen.png"> <span>Trò chuyện trực tiếp</span></a></div>
+        </div>
+        
         <div id="header" class="">
         	<div class="affix" data-spy="affix" data-offset-top="79" id="">
             	<div class="component">
@@ -39,18 +50,20 @@
                         </a>
                         <nav class="collapse navbar-collapse" role="navigation">
                             <ul class="nav navbar-nav">
-                                <li><a href="">Thông tin</a></li>
-                                <li><a href="">Thiết kế &amp; Chế tác</a></li>
-                                <li><a href="">Phiên bản</a></li>
-                                <li><a href="">Tính năng  &amp; Trang bị</a></li>
-                                <li><a href="">An toàn  &amp; Hệ thống hỗ trợ lái</a></li>
-                                <li><a href="tel:0981552255" class="btn">Hotline: 098 155 22 55</a></li>
+                                <li><a data-scroll="" data-options="easing: easeInQuad" href="#section2" class="navbar1 ">Thông tin</a></li>
+                                <li><a data-scroll="" data-options="easing: easeInQuad" href="#section3" class="navbar1 ">Thiết kế &amp; Chế tác</a></li>
+                                <li><a data-scroll="" data-options="easing: easeInQuad" href="#section4" class="navbar1 ">Phiên bản</a></li>
+                                <li><a data-scroll="" data-options="easing: easeInQuad" href="#section5" class="navbar1 ">Tính năng  &amp; Trang bị</a></li>
+                                <li><a data-scroll="" data-options="easing: easeInQuad" href="#section6" class="navbar1 ">An toàn  &amp; Hệ thống hỗ trợ lái</a></li>
+                                <li><a class="btn" data-toggle="modal" data-target="#formModal">Yêu cầu tư vấn</a></li>
+                                
                             </ul>
                         </nav>
                     </div>
                 </div>
             </div>
         </div>
+        
         <div id="section1" class="section wow fadeInUp" style="position:relative">
         	<div class="st-pic"><img src="img/banner.jpeg"></div>
             <script>
@@ -75,7 +88,7 @@
                     <div class="visible-xs">
                         <h3>Levante</h3>
                         <p>Kiệt tác SUV danh tiếng của Maserati</p>
-                        <div><a href="" class="btn btn-default text-uppercase">Yêu cầu tư vấn</a></div>
+                        <div><a href="" class="btn btn-default text-uppercase"  data-toggle="modal" data-target="#formModal">Yêu cầu tư vấn</a></div>
                     </div>
                 </div>
                 </div>
@@ -197,6 +210,7 @@
                 </div>
             </div>
         </div>
+        
         <div class="section wow fadeInUp" id="section4"  style="position:relative">
         	<div class="component">
                 <div class="container-fluid">
@@ -281,10 +295,7 @@ V6 và V8 trong các phiên bản Levante khác nhau cung cấp mọi điều b�
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="row">
-                                    	<div class="col-sm-3 col-sm-offset-3"><a href="" class="btn btn-block btn-primary btn-lg text-uppercase">Yêu cầu tư vấn</a></div>
-                                        <div class="col-sm-3"><a href="" class="btn  btn-block btn-default btn-lg text-uppercase">Tải Brochure</a></div>
-                                    </div>
+                                    
                                 </div> 
                                 <div role="tabpanel" class="tab-pane fade" id="levante-s" aria-labelledby="levante-s-tab"> 
                                 	<h3 class="tl">Levante S</h3>
@@ -331,10 +342,7 @@ V6 và V8 trong các phiên bản Levante khác nhau cung cấp mọi điều b�
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="row">
-                                    	<div class="col-sm-3 col-sm-offset-3"><a href="" class="btn btn-block btn-primary btn-lg text-uppercase">Yêu cầu tư vấn</a></div>
-                                        <div class="col-sm-3"><a href="" class="btn  btn-block btn-default btn-lg text-uppercase">Tải Brochure</a></div>
-                                    </div>
+                                    
                                 </div>
                                 <div role="tabpanel" class="tab-pane fade" id="levante-gts" aria-labelledby="levante-gts-tab"> 
                                 	<h3 class="tl">Levante GTS</h3>
@@ -381,10 +389,7 @@ V6 và V8 trong các phiên bản Levante khác nhau cung cấp mọi điều b�
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="row">
-                                    	<div class="col-sm-3 col-sm-offset-3"><a href="" class="btn btn-block btn-primary btn-lg text-uppercase">Yêu cầu tư vấn</a></div>
-                                        <div class="col-sm-3"><a href="" class="btn  btn-block btn-default btn-lg text-uppercase">Tải Brochure</a></div>
-                                    </div>
+                                    
                                 </div>
                                 <div role="tabpanel" class="tab-pane fade" id="levante-trofeo" aria-labelledby="levante-trofeo-tab"> 
                                 	<h3 class="tl">Levante Trofeo</h3>
@@ -431,12 +436,13 @@ V6 và V8 trong các phiên bản Levante khác nhau cung cấp mọi điều b�
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="row">
-                                    	<div class="col-sm-3 col-sm-offset-3"><a href="" class="btn btn-block btn-primary btn-lg text-uppercase">Yêu cầu tư vấn</a></div>
-                                        <div class="col-sm-3"><a href="" class="btn  btn-block btn-default btn-lg text-uppercase">Tải Brochure</a></div>
-                                    </div>
+                                    
                                 </div>
-                            </div> 
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-3 col-sm-offset-3"><a href="" class="btn btn-block btn-primary btn-lg text-uppercase"  data-toggle="modal" data-target="#formModal">Yêu cầu tư vấn</a></div>
+                                <div class="col-sm-3"><a href="" class="btn  btn-block btn-default btn-lg text-uppercase">Tải Brochure</a></div>
+                            </div>
                         </div>
                     </div> 
                     <script language="javascript">
@@ -606,7 +612,7 @@ V6 và V8 trong các phiên bản Levante khác nhau cung cấp mọi điều b�
             <div class="component">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-sm-4"><a href="" class="btn btn-block btn-primary btn-lg text-uppercase">Yêu cầu tư vấn</a></div>
+                        <div class="col-sm-4"><a href="" class="btn btn-block btn-primary btn-lg text-uppercase" data-toggle="modal" data-target="#formModal">Yêu cầu tư vấn</a></div>
                         <div class="col-sm-4"><a href="" class="btn  btn-block btn-primary btn-lg text-uppercase">Tải Brochure</a></div>
                         <div class="col-sm-4"><a href="" class="btn  btn-block btn-primary btn-lg text-uppercase">Tìm đại lý gần nhất</a></div>
                     </div>
@@ -637,6 +643,64 @@ V6 và V8 trong các phiên bản Levante khác nhau cung cấp mọi điều b�
         </div>
     
     <!---->
+    <div class="modal fade" id="formModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+          <div class="modal-body">
+            <div class="text-center"><img src="img/logo.png"></div>
+            <h3 class="text-center">Quý khách vui lòng đăng ký thông tin để yêu cầu tư vấn</h3>
+            <form id="frmRegDownload" autocomplete="off" novalidate class="bv-form"><button type="submit" class="bv-hidden-submit" style="display: none; width: 0px; height: 0px;"></button>
+                <div id="frmContentReg">
+                	<div class="row hidden">
+                    	<div class="col-sm-6">
+                        	<label>
+                            	<input type="checkbox">
+                                <span>Showroom <br/>Maserati HCM</span>
+                            </label>
+                        </div>
+                        <div class="col-sm-6">
+                        	<label>
+                            	<input type="checkbox">
+                                <span>Showroom <br/>Maserati HCM</span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="form-group has-feedback">
+                        <input type="text" class="form-control" name="name" id="txtName" value="" placeholder="Họ và tên(*)">
+                    </div>
+                    <div class="form-group has-feedback">
+                        <input type="text" class="form-control" name="name" id="txtEmail" value="" placeholder="Email">
+                    </div>
+                    <div class="form-group has-feedback">
+                        <input type="text" class="form-control" name="phone" id="txtPhone" onkeypress="return AllowNumberOnly(event);" placeholder="Số điện thoại(*)" value="" data-bv-field="phone"><i style="display: none;" class="form-control-feedback bv-no-label" data-bv-icon-for="phone"></i>
+                    	<small style="display: none;" class="help-block" data-bv-validator="notEmpty" data-bv-for="phone" data-bv-result="NOT_VALIDATED">Điện thoại không được để trống.</small><small style="display: none;" class="help-block" data-bv-validator="stringLength" data-bv-for="phone" data-bv-result="NOT_VALIDATED">Số điện thoại chỉ có thể là 10 số.</small>
+                    </div>
+                    <div class="form-group has-feedback">
+                        <input type="text" class="form-control" name="name" id="txtColor" value="" placeholder="Mẫu xe quý khách đang sử dụng (nếu có)">
+                    </div>
+                    <div class="form-group has-feedback">
+                        <select class="form-control" id="cboCity" name="cboCity">
+                            <option>Yêu cầu của quý khách *</option>
+                            <option>Yêu cầu báo giá</option>
+                            <option>Đăng ký lái thử</option>
+                            <option>Đặt lịch tư vấn</option>
+                            
+                        </select>
+                    </div>
+                    <div class="text-center">
+                        <button class="btn btn-primary btn-block text-uppercase btn-lg">Yêu cầu tư vấn</button>
+                    </div>
+                </div>
+                <div id="content-register"></div>
+            </form>
+          </div>
+          
+        </div>
+      </div>
+    </div>
     
     
     <!---->

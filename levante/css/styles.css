@@ -199,6 +199,7 @@ a, .btn, button{
 /**/
 .st-pic{
 	position:relative;
+	overflow:hidden
 	}
 .st-pic  img{
     position: absolute;
@@ -351,6 +352,7 @@ a, .btn, button{
 	}
 .owl-carousel-st5 .st-pic, .owl-carousel-st6 .st-pic{
 	height:400px;
+	z-index:9;
 	}
 .owl-carousel-st5 .text, .owl-carousel-st6 .text{
 	position:absolute;
@@ -360,6 +362,7 @@ a, .btn, button{
 	font-size:24px;
 	color:#fff;
 	padding:15px;
+	z-index:999;
 	background: rgba(0,0,0,0);
 	background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
 	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,0,0,0)), color-stop(100%, rgba(0,0,0,1)));
@@ -402,6 +405,36 @@ a, .btn, button{
 	border:1px solid #fff;}
 #footer  .social{
 	margin:30px 0;
+	}
+/**/
+#frmContentReg{
+	padding:30px;
+	}
+#frmContentReg .form-control{
+	padding:10px;
+	height:auto;
+	}
+#frmContentReg .col-sm-6{
+	margin-bottom:15px;
+	}
+#frmContentReg .col-sm-6 label{
+	position:relative;
+	display:block;
+	padding-left:25px;
+	}
+#frmContentReg .col-sm-6 span{
+	display:block;
+	padding:10px;
+	background:#223583;
+	color:#fff;
+	text-transform:uppercase;
+	text-align:center
+	}
+#frmContentReg .col-sm-6 label input{
+	position:absolute;
+	top:50%;
+	left:0;
+	margin-top:-10px;
 	}
 /**/
 
@@ -505,7 +538,77 @@ a, .btn, button{
 .owl-carousel-shop .owl-stage-outer{
 	padding-top:30px;}
 	
+.owl-item .item{
+	overflow:hidden}
+.zoom, .owl-item .item .st-pic img{
+	-moz-transition: transform .3s;
+	-webkit-transition: transform .3s;
+	transition: transform .3s;
+	-o-transition: transform .3s;
+	}
 
+.zoom:hover, .owl-item .item .st-pic:hover img{
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	transform: scale(1.1);
+	cursor: pointer;
+	z-index: 99999;
+}
+#fixButton{
+	position:fixed;
+	right:0;
+	top:50%;
+	margin-top:-80px;
+	z-index:999;
+	padding-right: 6px;
+	}
+#fixButton>div{
+	float:right;
+	clear:both;
+	}
+#fixButton a{
+	display:block;
+	clear:both;
+	font-size:12px;
+	height:36px;
+	overflow:hidden;
+	margin-bottom:5px;
+	width:auto;
+	transition: all 300ms ease-in-out;
+	-webkit-transition: all 300ms ease-in-out;
+	-moz-transition: all 300ms ease-in-out;
+	-o-transition: all 300ms ease-in-out;
+	}
+#fixButton a img{
+	float:left;
+	height:36px;
+	-moz-border-radius:3px 0 0 3px;
+	-webkit-border-radius:3px 0 0 3px;
+	border-radius:3px 0 0 3px;
+	}
+#fixButton a span{
+	color:#fff;
+	background:#061C35;
+	line-height:36px;
+	padding:0 0px;
+	float:left;
+	text-transform:uppercase;
+	display:block;
+	width:0;
+	transition: all 300ms ease-in-out;
+	-webkit-transition: all 300ms ease-in-out;
+	-moz-transition: all 300ms ease-in-out;
+	-o-transition: all 300ms ease-in-out;
+	}
+#fixButton a:hover span{
+	width:auto;
+	opacity:1;
+	padding:0 10px;
+	transition: all 300ms ease-in-out;
+	-webkit-transition: all 300ms ease-in-out;
+	-moz-transition: all 300ms ease-in-out;
+	-o-transition: all 300ms ease-in-out;}
 
 /**/
 
@@ -595,24 +698,7 @@ a, .btn, button{
 
 
 	}
-@media (max-width: 460px){
-
-	.zoom {
-		-moz-transition: transform .3s;
-		-webkit-transition: transform .3s;
-		transition: transform .3s;
-		-o-transition: transform .3s;
-		}
 	
-	.zoom:hover {
-	-moz-transform: scale(1.03);
-	-webkit-transform: scale(1.03);
-	-o-transform: scale(1.03);
-	transform: scale(1.03);
-	cursor: pointer;
-	z-index: 99999;
-	}
-}
 
 /**/
 @media screen and (max-width: 767px) { 
