@@ -167,7 +167,7 @@
                                     <figure><div class="st-pic" style="height:580px;"><img src="img/st2-4.jpeg"></div></figure>
                                 </li>
                                 <li class="width">
-                                    <figure><div class="st-pic" style="height:290px;"><img src="img/video.jpeg"></div></figure>
+                                    <figure><div class="st-pic" style="height:290px;" id="video-mobile"><img src="img/video.jpeg"></div></figure>
                                 </li>
                                 
                                 <li>
@@ -756,6 +756,7 @@ V6 và V8 trong các phiên bản Levante khác nhau cung cấp mọi điều b�
             vWidth = "100%";
         }
         $('#video-home').html('<iframe width="'+vWidth+'" height="' + vHeight + '" src="https://www.youtube.com/embed/oXO23JzUmVw?autoplay=0&modestbranding=0&mute=1&enablejsapi=1&loop=1&version=3&playlist=oXO23JzUmVw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>')   
+        $('#video-mobile').html('<iframe width="'+vWidth+'" height="' + vHeight + '" src="https://www.youtube.com/embed/oXO23JzUmVw?autoplay=0&modestbranding=0&mute=1&enablejsapi=1&loop=1&version=3&playlist=oXO23JzUmVw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>')   
         $(function () {
             function isScrolledIntoView($elem) {
                 var docViewTop = $(window).scrollTop();
