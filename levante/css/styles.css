@@ -687,7 +687,7 @@ a, .btn, button{
 	#myTabContent img{
 		width:100%;
 		}
-	.nav-tabs > li.active > a{
+	.nav-tabs > li.active > a, #section5 .t1{
 		font-size:24px;
 		}
 	.row-value > div{
@@ -705,7 +705,15 @@ a, .btn, button{
 	#thank .inner h2{
 		font-size:18px;
 		padding:30px 0;}
-
+	#section5 .absolute.top{
+		position:static;
+		color:#222;
+		}
+	#section5 .t1{
+		margin-top:15px;}
+	#section5 .t3{
+		font-size:16px;
+		}
 
 
 	}

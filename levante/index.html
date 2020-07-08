@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>Levante - Thương hiệu xe thể thao hiệu suất cao đến từ Ý</title>
-    <meta name="description" content="Levante - một chiếc SUV sang trọng phản ánh hoàn hảo triết lý và các giá trị di sản không thể phai mờ của Maserati.">
+    <meta name="description" content="Levante - một chiếc SUV sang trọng phản ánh hoàn hảo triết lý và các giá trị di sản không thể phai mờ của Maserati.">
     <meta name="robots" content="index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Thương hiệu xe thể thao hiệu suất cao đến từ Ý">
@@ -22,7 +22,7 @@
     <meta property="og:image:type" content="image/png">
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:title" content="Levante - Thương hiệu xe thể thao hiệu suất cao đến từ Ý">
-    <meta property="twitter:description" content="Levante - một chiếc SUV sang trọng phản ánh hoàn hảo triết lý và các giá trị di sản không thể phai mờ của Maserati.">
+    <meta property="twitter:description" content="Levante - một chiếc SUV sang trọng phản ánh hoàn hảo triết lý và các giá trị di sản không thể phai mờ của Maserati.">
     <meta property="twitter:image" content="https://quyendn.github.io/levante/img/levante-ava-fb.jpg">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -112,7 +112,7 @@
         	<div class="component">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-sm-6"><img src="img/st1.jpeg" width="100%" class="zoom"></div>
+                        <div class="col-sm-6"><div style="overflow:hidden"><img src="img/st1.jpeg" width="100%" class="zoom"></div></div>
                         <div class="col-sm-6">
                             <div class="st-hd"><h3>Sức mạnh của tự nhiên</h3></div>
                             <p>
@@ -130,7 +130,7 @@
                 <div class="container-fluid">
                 	<div class="st-hd">
                     	<h3>Thiết kế & Chế tác</h3>
-                        <p>Levante thể hiện rõ nét bản sắc ngôn ngữ thiết kế của Maserati. Thiết kế, tính độc đáo và hiệu suất vận hành vượt trội mang đậm chất thể thao là những tố chất chủ đạo ở Maserati Levante.</p>
+                        <p>Levante thể hiện rõ nét bản sắc ngôn ngữ thiết kế của Maserati. Thiết kế, tính độc đáo và hiệu suất vận hành vượt trội mang đậm chất thể thao là những tố chất chủ đạo ở Maserati Levante.</p>
                     </div>
                     <div id="grid-gallery" class="grid-gallery">
                         <section class="grid-wrap">
@@ -140,7 +140,9 @@
                                     <figure><div class="st-pic" style="height:580px;"><img src="img/st2-1.jpeg"></div></figure>
                                 </li>
                                 <li>
-                                    <figure><div class="st-pic" style="height:290px;"><img src="img/video.jpeg"></div></figure>
+                                    <figure>
+                                        <div class="st-pic" style="height:290px;" id="video-home"><img src="img/video.jpeg"></div>
+                                    </figure>
                                 </li>
                                 <li>
                                     <figure><div class="st-pic" style="height:580px;"><img src="img/st2-4.jpeg"></div></figure>
@@ -496,18 +498,24 @@ V6 và V8 trong các phiên bản Levante khác nhau cung cấp mọi điều b�
         </div>
         </div>
         <div id="section5" class="section wow fadeInUp" style="position:relative">
-            <div class="st-pic"><img src="img/st4.jpg"></div>
+            <div class="st-pic" id="st5-pic"><img src="img/st4.jpg"></div>
             <div class="absolute top">
-                <div class="component">
-                <div class="container-fluid">
-                    <div class="t1">Tính năng & Trang bị</div>
-                    <div class="t3">
-                        <p>Levante là một chiếc SUV sang trọng phản ánh hoàn hảo triết lý và các giá trị di sản không thể phai mờ của Maserati.</p>
-                        <p>Đúng như những gì bạn mong đợi, Levante đáp ứng tất cả các nhu cầu khi nói đến sự thoải mái, tiện lợi và trải nghiệm lái độc đáo.</p>
+                    <div class="component">
+                    <div class="container-fluid">
+                        <div class="t1">Tính năng & Trang bị</div>
+                        <div class="t3">
+                            <p>Levante là một chiếc SUV sang trọng phản ánh hoàn hảo triết lý và các giá trị di sản không thể phai mờ của Maserati.</p>
+                            <p>Đúng như những gì bạn mong đợi, Levante đáp ứng tất cả các nhu cầu khi nói đến sự thoải mái, tiện lợi và trải nghiệm lái độc đáo.</p>
+                        </div>
                     </div>
                 </div>
-                </div>
             </div>
+            <script>
+				$(window).resize(function() {
+					$('#st5-pic').height($(window).height() -90);
+				});
+				$(window).trigger('resize');
+			</script>
             <div class="component">
                 <div class="container-fluid">
                     <div class="owl-carousel-st5">
@@ -556,26 +564,26 @@ V6 và V8 trong các phiên bản Levante khác nhau cung cấp mọi điều b�
                             </div>
                             <div class="col-sm-6">
                                 <h4>Sự an toàn tuyệt đối</h4>
-                                <p>Maserati đặt an toàn là tiêu chuẩn hàng đầu khi thiết kế Quattroporte. Không những đem đến sự sang trọng đẳng cấp trên từng cây số, Quattroporte còn khiến bạn hoàn toàn yên tâm khi trải nghiệm đằng sau tay lái.</p>
+                                <p>Maserati đặt an toàn là tiêu chuẩn hàng đầu khi thiết kế Quattroporte. Không những đem đến sự sang trọng đẳng cấp trên từng cây số, Quattroporte còn khiến bạn hoàn toàn yên tâm khi trải nghiệm đằng sau tay lái.</p>
                                 
                                 <h4>Hệ thống hỗ trợ lái tiên tiến</h4>
                                 
-                                <p>Quattroporte được trang bị hàng loạt Hệ thống hỗ trợ lái tiên tiến, ấn tượng. Điều đó có nghĩa bạn sẽ hoàn toàn yên tâm dù đang thong dong trên một hành trình dài hay vội vã lái xe trong phố.</p>
+                                <p>Quattroporte được trang bị hàng loạt Hệ thống hỗ trợ lái tiên tiến, ấn tượng. Điều đó có nghĩa bạn sẽ hoàn toàn yên tâm dù đang thong dong trên một hành trình dài hay vội vã lái xe trong phố.</p>
                             	<a class="btn" data-toggle="collapse" href="#collapse-st6" role="button" aria-expanded="false" aria-controls="collapseExample">Xem thêm +</a>
                             </div>
                             <div class="col-sm-12 collapse" id="collapse-st6">
                             	<div class="row">
                                 	<div class="col-sm-6">
                                     	<h4>Hệ thống ổn định thân xe Maserati</h4>
-                                        <p>Phát triển từ các điều kiện kiểm tra khắc nghiệt nhất, Hệ thống ổn định thân xe Maserati (MSP) sử dụng một dải cảm biến để liên tục theo dõi tình trạng lái xe. Sau đó, hệ thống sẽ phối hợp các hệ thống an toàn và hiệu suất phù hợp để duy trì độ bám đường và khả năng điều khiển.</p>
+                                        <p>Phát triển từ các điều kiện kiểm tra khắc nghiệt nhất, Hệ thống ổn định thân xe Maserati (MSP) sử dụng một dải cảm biến để liên tục theo dõi tình trạng lái xe. Sau đó, hệ thống sẽ phối hợp các hệ thống an toàn và hiệu suất phù hợp để duy trì độ bám đường và khả năng điều khiển.</p>
                                     	<h4>Cảm biến đỗ xe trước và sau</h4>
-                                        <p>Để hỗ trợ điều khiển trong không gian chật hẹp, các cảm biến đỗ xe được trang bị theo tiêu chuẩn ở cản trước và sau cảnh báo người lái về chướng ngại vật bằng tiếng bíp, cùng với các biểu tượng trên màn hình TFT</p>
+                                        <p>Để hỗ trợ điều khiển trong không gian chật hẹp, các cảm biến đỗ xe được trang bị theo tiêu chuẩn ở cản trước và sau cảnh báo người lái về chướng ngại vật bằng tiếng bíp, cùng với các biểu tượng trên màn hình TFT</p>
                                     </div>
                                     <div class="col-sm-6">
                                     	<h4>Hệ thống điều khiển thân xe tích hợp (IVC)</h4>
-                                        <p>Luôn tốt hơn nếu chúng ta có thể chủ động, hơn là phản ứng lại – đặc biệt khi nói đến tính năng động trong việc cầm lái. Hệ thống kiểm soát xe tích hợp (IVC) dự đoán bất kì vấn đề nào có thể gây mất ổn định và thực hiện điều chỉnh chống lại chúng nhanh chóng. Hệ thống hoạt động bằng cách chọn lọc giảm mô-men xoắn động cơ và áp dụng lực phanh cho từng bánh xe theo yêu cầu. Kết quả giúp tăng độ an toàn, cảm giác lái tuyệt hơn và khả năng tăng tốc cao hơn, dù trên đường bằng hay tại những đoạn cua khúc khuỷu.</p>
+                                        <p>Luôn tốt hơn nếu chúng ta có thể chủ động, hơn là phản ứng lại – đặc biệt khi nói đến tính năng động trong việc cầm lái. Hệ thống kiểm soát xe tích hợp (IVC) dự đoán bất kì vấn đề nào có thể gây mất ổn định và thực hiện điều chỉnh chống lại chúng nhanh chóng. Hệ thống hoạt động bằng cách chọn lọc giảm mô-men xoắn động cơ và áp dụng lực phanh cho từng bánh xe theo yêu cầu. Kết quả giúp tăng độ an toàn, cảm giác lái tuyệt hơn và khả năng tăng tốc cao hơn, dù trên đường bằng hay tại những đoạn cua khúc khuỷu.</p>
                                     	<h4>Công nghệ đèn Full-Led Adaptive Headlights</h4>
-                                        <p>Tăng thêm tính an toàn với công nghệ đèn Full-Led Adaptive Headlights. Với 15 đèn LED hoạt động hết công suất, bộ đèn pha này cho ra tầm nhìn tốt hơn 200% so với đèn halogen truyền thống.</p>
+                                        <p>Tăng thêm tính an toàn với công nghệ đèn Full-Led Adaptive Headlights. Với 15 đèn LED hoạt động hết công suất, bộ đèn pha này cho ra tầm nhìn tốt hơn 200% so với đèn halogen truyền thống.</p>
                                     </div>
                                 </div>
                             </div>
@@ -735,7 +743,38 @@ V6 và V8 trong các phiên bản Levante khác nhau cung cấp mọi điều b�
         });
         
     </script>
-    
+    <script>
+        var vWidth = "100%";
+        var vHeight = "290px";
+        var md = new MobileDetect(window.navigator.userAgent);
+        if (md.mobile()) {
+            vHeight = "200px";
+            vWidth = "100%";
+        }
+        if (md.tablet()) {
+            vHeight = "260px";
+            vWidth = "100%";
+        }
+        $('#video-home').html('<iframe width="'+vWidth+'" height="' + vHeight + '" src="https://www.youtube.com/embed/oXO23JzUmVw?autoplay=0&modestbranding=0&mute=1&enablejsapi=1&loop=1&version=3&playlist=oXO23JzUmVw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>')   
+        $(function () {
+            function isScrolledIntoView($elem) {
+                var docViewTop = $(window).scrollTop();
+                var docViewBottom = docViewTop + $(window).height();
+                var elemTop = $elem.offset().top;
+                var elemBottom = elemTop + $elem.height();
+                return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+            }
+
+            function start() {
+                if (isScrolledIntoView($('#section1')) && !$('#section1').data("isCounting")) {
+                    $("#section1").data("isCounting", true);
+                    $('#video-home').html('<iframe width="'+vWidth+'" height="' + vHeight + '" src="https://www.youtube.com/embed/oXO23JzUmVw?autoplay=1&modestbranding=0&mute=1&enablejsapi=1&loop=1&version=3&playlist=oXO23JzUmVw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>')
+
+                }
+            };
+            $(document).on("scroll", start);
+        });
+    </script>
     <script>
     	$("button").click(function(){
 			$(".navbar-toggle").toggleClass("close");
