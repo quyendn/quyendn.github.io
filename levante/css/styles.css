@@ -628,6 +628,18 @@ a, .btn, button{
 }
 
 @media (max-width: 767px) {
+	#section1 .absolute .t1{
+		font-size: 24px;
+	}
+	#section1 .absolute .t2
+	{
+		font-size: 18px;
+		margin-bottom: 10px;
+	}
+	#section1 .absolute .t3
+	{
+		font-size: 14px;
+	}
 	.component{
 		padding:0;}
 
