@@ -79,10 +79,10 @@ $(document).ready(function() {
             var city = $('#cboCity').val();
             var emailto = "quyendn84@gmail.com";
             var isSendMail = 0;
-            var url_source = "lp_levante";
+            var url_source = "lp_quattroporte";
             var source = getUrlParameter('utm_source');
             if (isEmpty(source))
-                url_source = "lp_levante";
+                url_source = "lp_quattroporte";
             else
                 url_source = source;
             var check = checkPhoneNumber();
@@ -91,7 +91,7 @@ $(document).ready(function() {
             var dataJSON = { "name": name, "phone": phone,"email": email, "source": url_source, "vehice": vehice, "option": city, "isSendMail": isSendMail, "emailto": emailto };
             showLoadingContactImage('content-register', 'frmContentReg');
             $.ajax({
-                url: "https://alpha.f5academy.net/api/Levanteservice",
+                url: "https://alpha.f5academy.net/api/Quattroporteservice",
                 type: "Post",
                 async: false,
                 data: dataJSON,
