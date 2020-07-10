@@ -113,7 +113,9 @@ a, .btn, button{
 	}
 	
 /*header=================================*/
-
+.navbar-nav > li.langue > a {
+	padding:10px 3px;
+	}
 #header{
 	border:none;
 	z-index:9999;
@@ -676,7 +678,11 @@ img{
 }
 
 @media (max-width: 767px) {
-
+	.navbar-nav > li.langue{
+		text-align:center;}
+	.navbar-nav > li.langue > a {
+	display:inline-block !important
+	}
 	#header, #header .affix{
 		min-height:56px;
 		padding:0;
