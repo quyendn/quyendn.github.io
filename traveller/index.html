@@ -100,7 +100,7 @@
             </div>
         </div>
         <div class="section wow fadeInUp" id="section3"  style="position:relative">
-        	<div class="st-pic"><img src="img/noithat-2.jpg"></div>
+        	<div class="st-pic"><img src="img/noithat-2.png"></div>
         	<div class="inner">
                 <div class="container">
                     <div class="text">
@@ -156,7 +156,12 @@
             callbackBefore: function (toggle, navbar1) { },
             callbackAfter: function (toggle, navbar1) { }
         });
-        
+        $('.dropdown').hover(function () {
+                $(this).addClass('open');
+        },
+            function () {
+                $(this).removeClass('open');
+            });
     </script>
     <script>
         var vWidth = "100%";
