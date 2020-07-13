@@ -91,7 +91,7 @@ $(document).ready(function() {
             var dataJSON = { "name": name, "phone": phone,"email": email, "source": url_source, "vehice": vehice, "option": city, "isSendMail": isSendMail, "emailto": emailto };
             showLoadingContactImage('content-register', 'frmContentReg');
             $.ajax({
-                url: "http://localhost:50623/api/Quattroporteservice",
+                url: "https://alpha.f5academy.net/api/Quattroporteservice",
                 type: "Post",
                 async: false,
                 data: dataJSON,
