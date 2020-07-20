@@ -37,10 +37,9 @@
                     </a>
                     <nav class="collapse navbar-collapse" role="navigation">
                         <ul class="nav navbar-nav">
-                            <li class="active"><a href="https://quyendn.github.io/traveller/">Trang chủ </a></li>
-                            <li><a href="https://quyendn.github.io/traveller/thuong-hieu.html">Thương hiệu</a></li>
-                            <li><a href="">3008</a></li>
-                            <li><a href="">5008</a></li>
+                            <li ><a href="https://quyendn.github.io/traveller/">Trang chủ </a></li>
+                            <li class="active"><a href="https://quyendn.github.io/traveller/thuong-hieu.html">Thương hiệu</a></li>
+                            <li><a href="">Traveller Premium</a></li>
                             <li><a href="https://quyendn.github.io/traveller/traveller-luxury">Traveller Luxury</a></li>
                             <li><a href="https://quyendn.github.io/traveller/lien-he.html">Liên hệ</a></li>
                         </ul>
@@ -56,7 +55,7 @@
         	<div class="inner">
                 <div class="container">
                     <div class="text">
-                        <h3>HOÀN HẢO - EXCELLENCE</h3>
+                        <h3><b>HOÀN HẢO - EXCELLENCE</b></h3>
                         <p>Với tôn chỉ đảm bảo đúng quy trình chất lượng theo tiêu chuẩn Pháp và tinh thần liên tục đổi mới, mỗi chiếc xe Peugeot đều là sự kết hợp hoàn hảo giữa tính thẩm mỹ cao và khả năng vận hành thực tế, mang đến những trải nghiệm lái đầy phấn khích.</p>
                     </div>
                 </div>
@@ -73,7 +72,7 @@
         	<div class="inner">
                 <div class="container">
                     <div class="text">
-                        <h3>CUỐN HÚT - ALLURE</h3>
+                        <h3><b>CUỐN HÚT - ALLURE</b></h3>
                         <p>Phong cách Paris thời thượng trong thiết kế Peugeot tạo hình xe ấn tượng với những đường nét tinh xảo đến hoàn mỹ, rút gọn những chi tiết không quá cầu kỳ nhưng vẫn toát lên sự mạnh mẽ đầy uy lực, đẳng cấp và riêng biệt đậm chất Pháp.</p>
                     </div>
                 </div>
@@ -90,7 +89,7 @@
         	<div class="inner">
                 <div class="container">
                     <div class="text">
-                        <h3>CẢM XÚC - EMOTION</h3>
+                        <h3><b>CẢM XÚC - EMOTION</b></h3>
                         <p>Nâng cao sự trải nghiệm sau tay lái thông qua thiết kế khoang lái rất trực quan và khoa học.</p>
 						<p>Đây là sự giao thoa, kết hợp của công nghệ cùng các giác quan mang đến cho người lái cảm giác phấn khích và trọn vẹn theo từng cung bậc cảm xúc.</p>
                     </div>
@@ -162,17 +161,26 @@
     </script>
     <script>
         var vWidth = "100%";
-        var vHeight = "600px";
+        var vHeight = "800px";
         var md = new MobileDetect(window.navigator.userAgent);
         if (md.mobile()) {
             vHeight = "200px";
             vWidth = "100%";
+            $('#video').html('<iframe width="'+vWidth+'" height="' + vHeight + '" src="https://www.youtube.com/embed/iUlC5IQHFsk?autoplay=0&modestbranding=0&mute=1&enablejsapi=1&loop=1&version=3&playlist=iUlC5IQHFsk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>')   
         }
-        if (md.tablet()) {
+        else if (md.tablet()) {
             vHeight = "260px";
             vWidth = "100%";
+            $('#video').html('<iframe width="'+vWidth+'" height="' + vHeight + '" src="https://www.youtube.com/embed/iUlC5IQHFsk?autoplay=0&modestbranding=0&mute=1&enablejsapi=1&loop=1&version=3&playlist=iUlC5IQHFsk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>')   
         }
-        $('#video').html('<iframe width="'+vWidth+'" height="' + vHeight + '" src="https://www.youtube.com/embed/lWsDxCtTD6U?autoplay=0&modestbranding=0&mute=1&enablejsapi=1&loop=1&version=3&playlist=lWsDxCtTD6U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>')   
+        else{
+            $(window).resize(function() {
+                var mHeight = $(window).height();
+                $('#video').html('<iframe width="'+vWidth+'" height="' + mHeight + '" src="https://www.youtube.com/embed/iUlC5IQHFsk?autoplay=0&modestbranding=0&mute=1&enablejsapi=1&loop=1&version=3&playlist=iUlC5IQHFsk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>')   
+            });
+            $(window).trigger('resize');
+            
+        }  
     </script>
     <script>
     	$("button").click(function(){

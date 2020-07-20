@@ -37,11 +37,10 @@
                     </a>
                     <nav class="collapse navbar-collapse" role="navigation">
                         <ul class="nav navbar-nav">
-                            <li class="active"><a href="https://quyendn.github.io/traveller/">Trang chủ </a></li>
+                            <li ><a href="https://quyendn.github.io/traveller/">Trang chủ </a></li>
                             <li><a href="https://quyendn.github.io/traveller/thuong-hieu.html">Thương hiệu</a></li>
-                            <li><a href="">3008</a></li>
-                            <li><a href="">5008</a></li>
-                            <li><a href="https://quyendn.github.io/traveller/traveller-luxury">Traveller Luxury</a></li>
+                            <li><a href="">Traveller Premium</a></li>
+                            <li class="active"><a href="https://quyendn.github.io/traveller/traveller-luxury">Traveller Luxury</a></li>
                             <li><a href="https://quyendn.github.io/traveller/lien-he.html">Liên hệ</a></li>
                         </ul>
                     </nav>
@@ -167,17 +166,26 @@
     </script>
     <script>
         var vWidth = "100%";
-        var vHeight = "600px";
+        var vHeight = "800px";
         var md = new MobileDetect(window.navigator.userAgent);
         if (md.mobile()) {
             vHeight = "200px";
             vWidth = "100%";
+            $('#video').html('<iframe width="'+vWidth+'" height="' + vHeight + '" src="https://www.youtube.com/embed/iUlC5IQHFsk?autoplay=0&modestbranding=0&mute=1&enablejsapi=1&loop=1&version=3&playlist=iUlC5IQHFsk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>')   
         }
-        if (md.tablet()) {
+        else if (md.tablet()) {
             vHeight = "260px";
             vWidth = "100%";
+            $('#video').html('<iframe width="'+vWidth+'" height="' + vHeight + '" src="https://www.youtube.com/embed/iUlC5IQHFsk?autoplay=0&modestbranding=0&mute=1&enablejsapi=1&loop=1&version=3&playlist=iUlC5IQHFsk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>')   
         }
-        $('#video').html('<iframe width="'+vWidth+'" height="' + vHeight + '" src="https://www.youtube.com/embed/lWsDxCtTD6U?autoplay=0&modestbranding=0&mute=1&enablejsapi=1&loop=1&version=3&playlist=lWsDxCtTD6U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>')   
+        else{
+            $(window).resize(function() {
+                var mHeight = $(window).height();
+                $('#video').html('<iframe width="'+vWidth+'" height="' + mHeight + '" src="https://www.youtube.com/embed/iUlC5IQHFsk?autoplay=0&modestbranding=0&mute=1&enablejsapi=1&loop=1&version=3&playlist=iUlC5IQHFsk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>')   
+            });
+            $(window).trigger('resize');
+            
+        }
     </script>
     <script>
     	$("button").click(function(){
