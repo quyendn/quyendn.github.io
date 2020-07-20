@@ -37,77 +37,131 @@
                     </a>
                     <nav class="collapse navbar-collapse" role="navigation">
                         <ul class="nav navbar-nav">
-                            <li><a href="">Trang chủ </a></li>
-                            <li><a href="">Thương hiệu</a></li>
-                            <li class="active"><a href="">Traveller Luxury</a></li>
-                            <li><a href="">Liên hệ</a></li>
+                            <li class="active"><a href="https://quyendn.github.io/traveller/">Trang chủ </a></li>
+                            <li><a href="https://quyendn.github.io/traveller/thuong-hieu.html">Thương hiệu</a></li>
+                            <li><a href="">3008</a></li>
+                            <li><a href="">5008</a></li>
+                            <li><a href="https://quyendn.github.io/traveller/traveller-luxury">Traveller Luxury</a></li>
+                            <li><a href="https://quyendn.github.io/traveller/lien-he.html">Liên hệ</a></li>
                         </ul>
                     </nav>
                 </div>
             </div>
         </div>
-        <div id="video" class="section wow fadeInUp">
-        	
-        </div>
-        <div id="section1" class="section wow fadeInUp" style="position:relative">
-        	<div class="st-pic"><img src="img/st1.jpg"></div>
+        
+        <div id="section-fix" class="section wow fadeInUp" style="position:relative">
+        	<div class="st-pic"><img src="img/trangchu.jpg"></div>
         	<div class="inner">
                 <div class="container">
                     <div class="text">
-                        Tận hưởng những hành trình thú vị cùng người bạn đồng hành Peugeot Traveller. Với thiết kế thanh lịch, không gian rộng rãi cùng những trang bị an toàn tối ưu, tất cả hòa quyện để mang đến cho bạn những chuyến đi thoải mái và đầy ý nghĩa
+                        <div class="formRegister">
+                            <div class="formRegister-inner">
+                                <div class="text-center"><h3>ĐĂNG KÝ NHẬN BÁO GIÁ / LÁI THỬ</h3></div>
+                                <form id="frmRegDownload" autocomplete="off" novalidate class="bv-form"><button type="submit" class="bv-hidden-submit" style="display: none; width: 0px; height: 0px;"></button>
+                                    <div id="frmContentReg">
+                                        <div class="form-group has-feedback">
+                                            <input type="text" class="form-control" name="name" id="txtName" value="" placeholder="Họ và tên(*)" data-bv-field="name"><i style="display: none;" class="form-control-feedback bv-no-label" data-bv-icon-for="name"></i>
+                                        <small style="display: none;" class="help-block" data-bv-validator="notEmpty" data-bv-for="name" data-bv-result="NOT_VALIDATED">Họ tên không được để trống.</small></div>
+                                        <div class="form-group has-feedback">
+                                            <input type="text" class="form-control" name="email" id="txtEmail" placeholder="Email" data-bv-field="email"><i style="display: none;" class="form-control-feedback bv-no-label" data-bv-icon-for="email"></i>
+                                        <small style="display: none;" class="help-block" data-bv-validator="notEmpty" data-bv-for="email" data-bv-result="NOT_VALIDATED">Địa chỉ email không được để trống.</small><small style="display: none;" class="help-block" data-bv-validator="emailAddress" data-bv-for="email" data-bv-result="NOT_VALIDATED">Không đúng định dạng email</small></div>
+                                        <div class="form-group has-feedback">
+                                            <input type="text" class="form-control" name="phone" id="txtPhone" onkeypress="return AllowNumberOnly(event);" placeholder="Số điện thoại(*)" data-bv-field="phone"><i style="display: none;" class="form-control-feedback bv-no-label" data-bv-icon-for="phone"></i>
+                                        <small style="display: none;" class="help-block" data-bv-validator="notEmpty" data-bv-for="phone" data-bv-result="NOT_VALIDATED">Điện thoại không được để trống.</small><small style="display: none;" class="help-block" data-bv-validator="stringLength" data-bv-for="phone" data-bv-result="NOT_VALIDATED">Số điện thoại chỉ có thể là 10 số.</small></div>
+                                        <div class="line"></div>
+                                        <div class="form-group has-feedback">
+                                            <select class="form-control" id="cboCity" name="cboCity" data-bv-field="cboCity">
+                                                      <option value="">--- Tỉnh/thành phố ---</option>
+                                                      <option value="Lào Cai">Lào Cai</option>
+                                                        <option value="Yên Bái">Yên Bái</option>
+                                                        <option value="Điện Biên">Điện Biên</option>
+                                                        <option value="Hoà Bình">Hoà Bình</option>
+                                                        <option value="Lai Châu">Lai Châu</option>
+                                                        <option value="Sơn La">Sơn La</option>
+                                                        <option value="Hà Giang">Hà Giang</option>
+                                                        <option value="Cao Bằng">Cao Bằng</option>
+                                                        <option value="Bắc Kạn">Bắc Kạn</option>
+                                                        <option value="Lạng Sơn">Lạng Sơn</option>
+                                                        <option value="Tuyên Quang">Tuyên Quang</option>
+                                                        <option value="Thái Nguyên">Thái Nguyên</option>
+                                                        <option value="Phú Thọ">Phú Thọ</option>
+                                                        <option value="Bắc Giang">Bắc Giang</option>
+                                                        <option value="Quảng Ninh">Quảng Ninh</option>
+                                                        <option value="Bắc Ninh">Bắc Ninh</option>
+                                                        <option value="Hà Nam">Hà Nam</option>
+                                                        <option value="Hà Nội">Hà Nội</option>
+                                                        <option value="Hải Dương">Hải Dương</option>
+                                                        <option value="Hải Phòng">Hải Phòng</option>
+                                                        <option value="Hưng Yên">Hưng Yên</option>
+                                                        <option value="Nam Định">Nam Định</option>
+                                                        <option value="Ninh Bình">Ninh Bình</option>
+                                                        <option value="Thái Bình">Thái Bình</option>
+                                                        <option value="Vĩnh Phúc">Vĩnh Phúc</option>
+                                                        <option value="Thanh Hoá">Thanh Hoá</option>
+                                                        <option value="Nghệ An">Nghệ An</option>
+                                                        <option value="Hà Tĩnh">Hà Tĩnh</option>
+                                                        <option value="Hà Tĩnh">Quảng Bình</option>
+                                                        <option value="Quảng Trị">Quảng Trị</option>
+                                                        <option value="Thừa Thiên - Huế">Thừa Thiên - Huế</option>
+                                                        <option value="Đà Nẵng">Đà Nẵng</option>
+                                                        <option value="Quảng Nam">Quảng Nam</option>
+                                                        <option value="Quảng Ngãi">Quảng Ngãi</option>
+                                                        <option value="Bình Định">Bình Định</option>
+                                                        <option value="Phú Yên">Phú Yên</option>
+                                                        <option value="Khánh Hoà">Khánh Hoà</option>
+                                                        <option value="Ninh Thuận">Ninh Thuận</option>
+                                                        <option value="Bình Thuận">Bình Thuận</option>
+                                                        <option value="Kon Tum">Kon Tum</option>
+                                                        <option value="Gia Lai">Gia Lai</option>
+                                                        <option value="Đắk Lắk">Đắk Lắk</option>
+                                                        <option value="Đắk Nông">Đắk Nông</option>
+                                                        <option value="Lâm Đồng">Lâm Đồng</option>
+                                                        <option value="Hồ Chí Minh">Hồ Chí Minh</option>
+                                                        <option value="Bình Dương">Bình Dương</option>
+                                                        <option value="Bình Phước">Bình Phước</option>
+                                                        <option value="Tây Ninh">Tây Ninh</option>
+                                                        <option value="Đồng Nai">Đồng Nai</option>
+                                                        <option value="Vũng Tàu">Vũng Tàu</option>
+                                                        <option value="Cần Thơ">Cần Thơ</option>
+                                                        <option value="Long An">Long An</option>
+                                                        <option value="An Giang">An Giang</option>
+                                                        <option value="Đồng Tháp">Đồng Tháp</option>
+                                                        <option value="Tiền Giang">Tiền Giang</option>
+                                                        <option value="Bến Tre">Bến Tre</option>
+                                                        <option value="Vĩnh Long">Vĩnh Long</option>
+                                                        <option value="Trà Vinh">Trà Vinh</option>
+                                                        <option value="Hậu Giang">Hậu Giang</option>
+                                                        <option value="Kiên Giang">Kiên Giang</option>
+                                                        <option value="Sóc Trăng">Sóc Trăng</option>
+                                                        <option value="Bạc Liêu">Bạc Liêu</option>
+                                                        <option value="Cà Mau">Cà Mau</option>
+                                                        <option value="Bà Rịa">Bà Rịa</option>
+                                            </select><i style="display: none;" class="form-control-feedback bv-no-label" data-bv-icon-for="cboCity"></i>
+                                        <small style="display: none;" class="help-block" data-bv-validator="notEmpty" data-bv-for="cboCity" data-bv-result="NOT_VALIDATED">Cần chọn Tỉnh/thành phố</small></div>
+                                        <div class="form-group has-feedback">
+                                            <select class="form-control" id="cboCar" name="cboCar" data-bv-field="cboCity">
+                                            	<option>Dòng xe</option>
+                                            </select>
+                                            <i style="display: none;" class="form-control-feedback bv-no-label" data-bv-icon-for="cboCar"></i>
+                                        <small style="display: none;" class="help-block" data-bv-validator="notEmpty" data-bv-for="cboCar" data-bv-result="NOT_VALIDATED">Cần chọn dòng xe</small></div>
+                                        <div class="text-center">
+                                            <button class="btn btnRegister">Đăng ký ngay</button>
+                                        </div>
+                                    </div>
+                                    <div id="content-register"></div>
+                                </form>
+                            </div>
+                        </div>
+                        
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="section wow fadeInUp" id="section2">
-        	<div id="banner" class="carousel slide" data-ride="carousel">
-                  <div class="carousel-inner">
-                    <div class="item ">
-                    	<div><img src="img/ngoaithat-1.jpg"></div>
-                        <div class="dropdown" style="position:absolute;top:55%; left:49%">
-                            <a  class="btn btn-hover dropdown-toggle" type="button" data-toggle="dropdown" id="drop-0" href="#ngoaithat-1-1" role="button" aria-expanded="false" aria-controls="thietketongthe" style="top:65%; left:20%;">1</a>
-                            <div class="img-hover dropdown-menu dropdown-menu-left" aria-labelledby="drop-1" style="top:-330px;left:-190px; width:407px"><img src="img/ngoaithat-1-1.png"></div>
-                        </div>
-                        <div class="dropdown" style="position:absolute;top:65%; left:46%">
-                            <a  class="btn btn-hover dropdown-toggle" type="button" data-toggle="dropdown" id="drop-0" href="#ngoaithat-1-2" role="button" aria-expanded="false" aria-controls="thietketongthe" style="top:65%; left:20%;">2</a>
-                            <div class="img-hover dropdown-menu dropdown-menu-left" aria-labelledby="drop-1" style="top:-150px;left:50px; width:407px"><img src="img/ngoaithat-1-2.png"></div>
-                        </div>
-                    </div>
-                    <div class="item active">
-                    	<div><img src="img/ngoaithat-2.jpg"></div>
-                        <div class="dropdown" style="position:absolute;top:53%; left:38%">
-                            <a  class="btn btn-hover dropdown-toggle" type="button" data-toggle="dropdown" id="drop-0" href="#ngoaithat-1-1" role="button" aria-expanded="false" aria-controls="thietketongthe" style="top:65%; left:20%;">1</a>
-                            <div class="img-hover dropdown-menu dropdown-menu-left" aria-labelledby="drop-1" style="top:-150px;left:50px; width:407px"><img src="img/ngoaithat-2-1.png"></div>
-                        </div>
-                        <div class="dropdown" style="position:absolute;top:46%; left:36%">
-                            <a  class="btn btn-hover dropdown-toggle" type="button" data-toggle="dropdown" id="drop-0" href="#ngoaithat-1-1" role="button" aria-expanded="false" aria-controls="thietketongthe" style="top:65%; left:20%;">2</a>
-                            <div class="img-hover dropdown-menu dropdown-menu-left" aria-labelledby="drop-1" style="top:-330px;left:-190px; width:407px"><img src="img/ngoaithat-2-2.png"></div>
-                        </div>
-                    </div>
-                </div>
-                <a class="left carousel-control" href="#banner" data-slide="prev"></a>
-                <a class="right carousel-control" href="#banner" data-slide="next"></a>
-            </div>
-        </div>
-        <div class="section wow fadeInUp" id="section3"  style="position:relative">
-        	<div class="st-pic"><img src="img/noithat-1.jpg"></div>
-        	<div class="inner">
-                <div class="container">
-                    <div class="text">
-                        Không gian hàng ghế trước được chú trọng để mang lại sự thoải mái cho người lái và hành khách đi cùng. Khu vực ghế ngồi được bố trí rộng rãi cùng các ghế chỉnh điện đầy thuận tiện
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="section wow fadeInUp" id="section3"  style="position:relative">
-        	<div class="st-pic"><img src="img/noithat-2.png"></div>
-        	<div class="inner">
-                <div class="container">
-                    <div class="text">
-                        Peugeot Traveller chú trọng vào không gian nội thất thế nên không ngạc nhiên khi 7 ghế trên xe đều được bố trí rộng rãi, mang đến những chuyến đi tiện nghi và thư giãn. Đặc biệt, hàng ghế 2 và 3 có thể gập, trượt và tháo rời, dễ dàng đáp ứng mọi nhu cầu từ hành khách
-                    </div>
-                </div>
-            </div>
+            <script>
+				$(window).resize(function() {
+					$('#section-fix .st-pic').height($(window).height() -107);
+				});
+				$(window).trigger('resize');
+			</script>
         </div>
         <div id="footer">
             <div class="container" style="border-top : solid 1px #fff;">

@@ -72,7 +72,7 @@ $(document).ready(function() {
             var dataJSON = { "city": city, "partner": partner, "name": name, "phone": phone, "email": email, "emailto": emailto, "typeId": typeId };
             showLoadingContactImage('content-register', 'frmContentReg');
             $.ajax({
-                url: "https://alpha.f5academy.net/api/Mazda3Newservice",
+                url: "https://alpha.f5academy.net/api/TravellerNewservice",
                 type: "Post",
                 async: false,
                 data: dataJSON,
@@ -164,7 +164,7 @@ $(document).ready(function() {
             var dataJSON = { "city": city, "partner": partner, "name": name, "phone": phone, "email": email, "emailto": emailto, "typeId": typeId };
             showLoadingContactImage('content-register-sub', 'frmContentReg');
             $.ajax({
-                url: "https://alpha.f5academy.net/api/Mazdaservice",
+                url: "https://alpha.f5academy.net/api/TravellerNewservice",
                 type: "Post",
                 async: false,
                 data: dataJSON,
@@ -215,7 +215,7 @@ $(document).ready(function() {
             var dataJSON = { "city": "", "partner": "", "name": "", "phone": "", "email": email, "emailto": emailto, "typeId": typeId };
             showLoadingContactImage('content-mobile', 'formContentContactMobile');
             $.ajax({
-                url: "https://alpha.f5academy.net/api/Mazdaservice",
+                url: "https://alpha.f5academy.net/api/TravellerNewservice",
                 type: "Post",
                 async: false,
                 data: dataJSON,

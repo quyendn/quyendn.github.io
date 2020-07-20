@@ -1,0 +1,253 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="no-js" style="height:100%;">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Traveller</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.nanoscroller.min.js"></script>
+    <script type="text/javascript" src="js/wow/wow.min.js"></script>
+    <script src="js/jquery.fancybox.js" type="text/javascript"></script>
+    <script src="js/jquery.fancybox-thumbsER.js" type="text/javascript"></script>
+    <script src="js/sticky-sidebar.js"></script>
+    <script src="js/mobile-detect.min.js"></script>
+    <script src="js/jquery.magnific-popup.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <link href="css/font-face.css" rel="stylesheet" type="text/css" />
+    <link href="css/toastr.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrapValidator.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/owl.carousel.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="css/animate.css" />
+    <link href="css/jquery.fancybox.css" rel="stylesheet" type="text/css" />
+    <link href="css/jquery.fancybox-thumbsER.css" rel="stylesheet" type="text/css" />
+    <link href="css/magnific-popup.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div id="container">
+        <div id="header" class="">
+        	<div class="affix" data-spy="affix" data-offset-top="79" id="">
+                <div class="container">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"></button>
+                    <a data-scroll="" data-options="easing: easeInQuad" href="#slide" class="navbar-brand">
+                    	<img src="img/lg-t.png">
+                    </a>
+                    <nav class="collapse navbar-collapse" role="navigation">
+                        <ul class="nav navbar-nav">
+                            <li><a href="">Trang chủ </a></li>
+                            <li><a href="">Thương hiệu</a></li>
+                            <li><a href="">3008</a></li>
+                            <li><a href="">5008</a></li>
+                            <li><a href="">Traveller Luxury</a></li>
+                            <li class="active"><a href="">Liên hệ</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        
+        <div id="section-fix" class="section wow fadeInUp section-contact" style="position:relative">
+        	<div class="st-pic"><img src="img/lienhe.jpg"></div>
+        	<div class="inner">
+                <div class="container">
+                    <div class="text">
+                        <div class="formRegister">
+                            <div class="formRegister-inner">
+                                <div class="text-center"><h3>ĐĂNG KÝ NHẬN BÁO GIÁ / LÁI THỬ</h3></div>
+                                <form id="frmRegDownload" autocomplete="off" novalidate class="bv-form"><button type="submit" class="bv-hidden-submit" style="display: none; width: 0px; height: 0px;"></button>
+                                    <div id="frmContentReg">
+                                        <div class="form-group has-feedback">
+                                            <input type="text" class="form-control" name="name" id="txtName" value="" placeholder="Họ và tên(*)" data-bv-field="name"><i style="display: none;" class="form-control-feedback bv-no-label" data-bv-icon-for="name"></i>
+                                        <small style="display: none;" class="help-block" data-bv-validator="notEmpty" data-bv-for="name" data-bv-result="NOT_VALIDATED">Họ tên không được để trống.</small></div>
+                                        <div class="form-group has-feedback">
+                                            <input type="text" class="form-control" name="email" id="txtEmail" placeholder="Email" data-bv-field="email"><i style="display: none;" class="form-control-feedback bv-no-label" data-bv-icon-for="email"></i>
+                                        <small style="display: none;" class="help-block" data-bv-validator="notEmpty" data-bv-for="email" data-bv-result="NOT_VALIDATED">Địa chỉ email không được để trống.</small><small style="display: none;" class="help-block" data-bv-validator="emailAddress" data-bv-for="email" data-bv-result="NOT_VALIDATED">Không đúng định dạng email</small></div>
+                                        <div class="form-group has-feedback">
+                                            <input type="text" class="form-control" name="phone" id="txtPhone" onkeypress="return AllowNumberOnly(event);" placeholder="Số điện thoại(*)" data-bv-field="phone"><i style="display: none;" class="form-control-feedback bv-no-label" data-bv-icon-for="phone"></i>
+                                        <small style="display: none;" class="help-block" data-bv-validator="notEmpty" data-bv-for="phone" data-bv-result="NOT_VALIDATED">Điện thoại không được để trống.</small><small style="display: none;" class="help-block" data-bv-validator="stringLength" data-bv-for="phone" data-bv-result="NOT_VALIDATED">Số điện thoại chỉ có thể là 10 số.</small></div>
+                                        <div class="line"></div>
+                                        <div class="form-group has-feedback">
+                                            <select class="form-control" id="cboCity" name="cboCity" data-bv-field="cboCity">
+                                                      <option value="">--- Tỉnh/thành phố ---</option>
+                                                      <option value="Lào Cai">Lào Cai</option>
+                                                        <option value="Yên Bái">Yên Bái</option>
+                                                        <option value="Điện Biên">Điện Biên</option>
+                                                        <option value="Hoà Bình">Hoà Bình</option>
+                                                        <option value="Lai Châu">Lai Châu</option>
+                                                        <option value="Sơn La">Sơn La</option>
+                                                        <option value="Hà Giang">Hà Giang</option>
+                                                        <option value="Cao Bằng">Cao Bằng</option>
+                                                        <option value="Bắc Kạn">Bắc Kạn</option>
+                                                        <option value="Lạng Sơn">Lạng Sơn</option>
+                                                        <option value="Tuyên Quang">Tuyên Quang</option>
+                                                        <option value="Thái Nguyên">Thái Nguyên</option>
+                                                        <option value="Phú Thọ">Phú Thọ</option>
+                                                        <option value="Bắc Giang">Bắc Giang</option>
+                                                        <option value="Quảng Ninh">Quảng Ninh</option>
+                                                        <option value="Bắc Ninh">Bắc Ninh</option>
+                                                        <option value="Hà Nam">Hà Nam</option>
+                                                        <option value="Hà Nội">Hà Nội</option>
+                                                        <option value="Hải Dương">Hải Dương</option>
+                                                        <option value="Hải Phòng">Hải Phòng</option>
+                                                        <option value="Hưng Yên">Hưng Yên</option>
+                                                        <option value="Nam Định">Nam Định</option>
+                                                        <option value="Ninh Bình">Ninh Bình</option>
+                                                        <option value="Thái Bình">Thái Bình</option>
+                                                        <option value="Vĩnh Phúc">Vĩnh Phúc</option>
+                                                        <option value="Thanh Hoá">Thanh Hoá</option>
+                                                        <option value="Nghệ An">Nghệ An</option>
+                                                        <option value="Hà Tĩnh">Hà Tĩnh</option>
+                                                        <option value="Hà Tĩnh">Quảng Bình</option>
+                                                        <option value="Quảng Trị">Quảng Trị</option>
+                                                        <option value="Thừa Thiên - Huế">Thừa Thiên - Huế</option>
+                                                        <option value="Đà Nẵng">Đà Nẵng</option>
+                                                        <option value="Quảng Nam">Quảng Nam</option>
+                                                        <option value="Quảng Ngãi">Quảng Ngãi</option>
+                                                        <option value="Bình Định">Bình Định</option>
+                                                        <option value="Phú Yên">Phú Yên</option>
+                                                        <option value="Khánh Hoà">Khánh Hoà</option>
+                                                        <option value="Ninh Thuận">Ninh Thuận</option>
+                                                        <option value="Bình Thuận">Bình Thuận</option>
+                                                        <option value="Kon Tum">Kon Tum</option>
+                                                        <option value="Gia Lai">Gia Lai</option>
+                                                        <option value="Đắk Lắk">Đắk Lắk</option>
+                                                        <option value="Đắk Nông">Đắk Nông</option>
+                                                        <option value="Lâm Đồng">Lâm Đồng</option>
+                                                        <option value="Hồ Chí Minh">Hồ Chí Minh</option>
+                                                        <option value="Bình Dương">Bình Dương</option>
+                                                        <option value="Bình Phước">Bình Phước</option>
+                                                        <option value="Tây Ninh">Tây Ninh</option>
+                                                        <option value="Đồng Nai">Đồng Nai</option>
+                                                        <option value="Vũng Tàu">Vũng Tàu</option>
+                                                        <option value="Cần Thơ">Cần Thơ</option>
+                                                        <option value="Long An">Long An</option>
+                                                        <option value="An Giang">An Giang</option>
+                                                        <option value="Đồng Tháp">Đồng Tháp</option>
+                                                        <option value="Tiền Giang">Tiền Giang</option>
+                                                        <option value="Bến Tre">Bến Tre</option>
+                                                        <option value="Vĩnh Long">Vĩnh Long</option>
+                                                        <option value="Trà Vinh">Trà Vinh</option>
+                                                        <option value="Hậu Giang">Hậu Giang</option>
+                                                        <option value="Kiên Giang">Kiên Giang</option>
+                                                        <option value="Sóc Trăng">Sóc Trăng</option>
+                                                        <option value="Bạc Liêu">Bạc Liêu</option>
+                                                        <option value="Cà Mau">Cà Mau</option>
+                                                        <option value="Bà Rịa">Bà Rịa</option>
+                                            </select><i style="display: none;" class="form-control-feedback bv-no-label" data-bv-icon-for="cboCity"></i>
+                                        <small style="display: none;" class="help-block" data-bv-validator="notEmpty" data-bv-for="cboCity" data-bv-result="NOT_VALIDATED">Cần chọn Tỉnh/thành phố</small></div>
+                                        <div class="form-group has-feedback">
+                                            <select class="form-control" id="cboCar" name="cboCar" data-bv-field="cboCity">
+                                            	<option>Dòng xe</option>
+                                            </select>
+                                            <i style="display: none;" class="form-control-feedback bv-no-label" data-bv-icon-for="cboCar"></i>
+                                        <small style="display: none;" class="help-block" data-bv-validator="notEmpty" data-bv-for="cboCar" data-bv-result="NOT_VALIDATED">Cần chọn dòng xe</small></div>
+                                        <div class="text-center">
+                                            <button class="btn btnRegister">Đăng ký ngay</button>
+                                        </div>
+                                    </div>
+                                    <div id="content-register"></div>
+                                </form>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <script>
+				$(window).resize(function() {
+					$('#section-fix .st-pic').height($(window).height() -107);
+				});
+				$(window).trigger('resize');
+			</script>
+        </div>
+        <div id="footer">
+            <div class="container" style="border-top : solid 1px #fff;">
+                <div class="row" style="padding-top : 20px;">
+                    <div class="col-md-1 col-sm-2 col-xs-3 text-center">
+                        <div style="margin-bottom:15px;"><img src="img/lg-ft.png"></div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-5 col-xs-9">
+                        <address>
+                            <p><strong>Peugeot Việt Nam</strong></p>
+                            <p>Địa chỉ: Số 10 đường Mai Chí Thọ, phường An Lợi Đông, Quận 2, Tp. Hồ Chí Minh.</p>
+                        </address>
+                    </div>
+                    <div class="col-md-5 col-sm-5 text-right">
+                        <div id="fb-root"></div>
+                        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v6.0"></script>
+                        <div class="fb-page" data-href="https://www.facebook.com/Peugeotvn" data-tabs="timeline" data-width="500" data-height="72" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false">
+                            <blockquote cite="https://www.facebook.com/Peugeotvn" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Peugeotvn">Peugeot</a></blockquote>
+                        </div>
+                    </div>
+                </div>
+                <ul style="font-weight:600">
+                    <li><a href="tel:19001101"><img src="img/ic_hotline.png"> Hotline CSKH: 1900 1101</a></li>
+                    <li><a href="http://peugeotvietnam.vn"><img src="img/ic_web.png"> www.peugeotvietnam.vn</a></li>
+                    <li><a href="https://www.facebook.com/Peugeotvn/?fref=ts"><img src="img/ic_fb.png"> Peugeot</a></li>
+                    <li><a href="https://www.youtube.com/user/peugeotvietnam"><img src="img/ic_yt.png"> Peugeot Vietnam</a></li>
+                    <li><a href="http://www.peugeotvietnam.vn/vi/dai-ly.html"><img src="img/ic_home.png"> Danh sách đại lý</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!---->
+    <!---->
+    <script src="js/smooth-scroll.js"></script>
+    <script type="text/javascript" src="js/bootstrapValidator.min.js"></script>
+    <script type="text/javascript" src="js/form-validation.js"></script>
+    <script type="text/javascript" src="js/toastr.js"></script>
+    <script>
+      new WOW().init();
+        smoothScroll.init({
+            speed: 1000,
+            easing: 'easeInOutCubic',
+            offset: 90,
+            updateURL: false,
+            callbackBefore: function (toggle, navbar1) { },
+            callbackAfter: function (toggle, navbar1) { }
+        });
+        $('.dropdown').hover(function () {
+                $(this).addClass('open');
+        },
+            function () {
+                $(this).removeClass('open');
+            });
+    </script>
+    <script>
+        var vWidth = "100%";
+        var vHeight = "600px";
+        var md = new MobileDetect(window.navigator.userAgent);
+        if (md.mobile()) {
+            vHeight = "200px";
+            vWidth = "100%";
+        }
+        if (md.tablet()) {
+            vHeight = "260px";
+            vWidth = "100%";
+        }
+        $('#video').html('<iframe width="'+vWidth+'" height="' + vHeight + '" src="https://www.youtube.com/embed/lWsDxCtTD6U?autoplay=0&modestbranding=0&mute=1&enablejsapi=1&loop=1&version=3&playlist=lWsDxCtTD6U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>')   
+    </script>
+    <script>
+    	$("button").click(function(){
+			$(".navbar-toggle").toggleClass("close");
+		});
+
+    	$(".navbar-toggle").click(function(){
+			$("#header").toggleClass("open");
+		});
+  
+    	$(".navbar-nav a").click(function(){
+			$(".navbar-collapse").removeClass("in");
+		
+			$(".navbar-toggle").removeClass("close");
+		});
+     </script>
+    
+    <script src="js/smooth-scrollbar.js"></script>
+    <link href="css/smooth-scrollbar.css" rel="stylesheet" type="text/css" />
+</body>
+</html>
