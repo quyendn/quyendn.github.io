@@ -290,11 +290,20 @@ a, .btn, button{
 	margin-top:-100px;
 	}
 #section3 .inner, #section4 .inner, #st-thuonghieu-1 .inner, #st-thuonghieu-2 .inner, #st-thuonghieu-3 .inner{
-	bottom:60px;}
+	bottom:60px;
+}
 #section1 .inner .text, #section3 .inner .text, #section4 .inner .text, #st-thuonghieu-1 .inner .text, #st-thuonghieu-2 .inner .text, #st-thuonghieu-3 .inner .text{
 	background:rgba(0,0,0,0.6);
 	padding:30px;
 	
+	}
+#st-thuonghieu-3 .inner .text{
+	background:rgba(0,0,0,0.6);
+	padding:20px;
+	
+	}
+	#st-thuonghieu-3 .inner{
+		bottom:10px;
 	}
 #section1 .inner .text, #st-thuonghieu-3 .inner .text{
 	width:400px;
