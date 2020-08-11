@@ -47,7 +47,7 @@
                             <li><a data-scroll="" data-options="easing: easeInQuad" href="#section2" class="navbar1">ĐIỂM VƯỢT TRỘI</a></li>
                             <li><a data-scroll="" data-options="easing: easeInQuad" href="#section2" class="navbar1">ĐÁNH GIÁ</a></li>
                             <li><a data-scroll="" data-options="easing: easeInQuad" href="#section2" class="navbar1">ƯU ĐÃI</a></li>
-                            <li><a data-scroll="" data-options="easing: easeInQuad" href="#section2" class="navbar1">LIÊN HỆ</a></li>
+                            <li><a data-scroll="" data-options="easing: easeInQuad" href="#footer" class="navbar1">LIÊN HỆ</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -519,6 +519,15 @@ tại trường Tiểu học Lê Lai - HCM</a></h2>
     
     
     <script>
+         new WOW().init();
+         smoothScroll.init({
+            speed: 1000,
+            easing: 'easeInOutCubic',
+            offset: 60,
+            updateURL: false,
+            callbackBefore: function (toggle, navbar1) { },
+            callbackAfter: function (toggle, navbar1) { }
+        });
         $('.owl-carousel-st5').owlCarousel({
             loop: true,
             margin: 10,
