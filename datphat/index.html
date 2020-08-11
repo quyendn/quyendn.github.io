@@ -476,7 +476,8 @@
                     <div class="col-sm-12">
                         <div><img src="img/p12.jpg"></div>
                         <div class="info">
-                            <div class="st-hd"><h3>lễ hộp hoàng kim 810</h3></div>
+                            <div class="st-hd"><h3 class="hoang-kim-click" style="cursor: pointer;">lễ hộp hoàng kim 810</h3></div>
+                            <div class="hoang-kim">
                             <p>1 Bánh Trăng Tròn Hạt Sen Nhãn 55g</p>
                             <p>1 Bánh Hoàng Kim Sen Dứa 55g</p>
                             <p>1 Bánh Hoàng Kim Sầu Riêng 65g</p>
@@ -488,6 +489,7 @@
                             <p>1 Bánh Quý Phi Phù Dung 55g</p>
                             <p class="price">Giá: 973.000đ</p>
                             <div><a class="btn btnBuynow" href="https://trungthudaiphat.vn/san-pham/le-hop-trung-thu/le-hop-hoang-kim/le-hop-hoang-kim-810.html">Đặt mua ngay</a></div>
+                        </div>
                         </div>
                     </div>
                     <div class="col-sm-6" style="background:#400000">
@@ -920,6 +922,7 @@
         $(".thu-nguyet").hide();
         $(".hoang-trieu").hide();
         $(".minh-long").hide();
+        $(".hoang-kim").hide();
         var vWidth = "1000px";
         var vHeight = "480px";
         var md = new MobileDetect(window.navigator.userAgent);
@@ -986,6 +989,10 @@
         });
         $(".trong-dong-click").click(function(){
             $("#trong-dong").show();
+
+        });
+        $(".hoang-kim-click").click(function(){
+            $(".hoang-kim").show();
 
         });
         $(".thu-nguyet-click").click(function(){
