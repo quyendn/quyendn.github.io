@@ -541,6 +541,10 @@ img{
 @media (max-width:991px){
 	}
 @media (max-width:768px){
+	#video-avata img
+	{
+		width: 70%;
+	}
 	#hdTop{
 		display:none;
 		}

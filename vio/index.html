@@ -18,6 +18,9 @@
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/jquery.nanoscroller.min.js"></script>
     <script src="js/jquery.tmpl.min.js"></script>
+    <script src="js/mobile-detect.min.js"></script>
+    <script type="text/javascript" src="js/jquery.plugin.min.js"></script>
+    <script type="text/javascript" src="js/jquery.countdown.js"></script>
     <script type="text/javascript" src="js/wow/wow.min.js"></script>
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="css/styles.css" rel="stylesheet" type="text/css" />
@@ -26,10 +29,7 @@
     <link href="css/toastr.min.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" type="text/css" href="css/animate.css" />
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
-    
-    
 </head>
-
 <body>
     <div id="container">
         <div id="header">
@@ -44,9 +44,9 @@
                     <nav class="collapse navbar-collapse navbar-right" role="navigation">
                         <ul class="nav navbar-nav">
                             <li><a data-scroll="" data-options="easing: easeInQuad" href="#section2" class="navbar1">GIỚI THIỆU</a></li>
-                            <li><a data-scroll="" data-options="easing: easeInQuad" href="#section2" class="navbar1">ĐIỂM VƯỢT TRỘI</a></li>
-                            <li><a data-scroll="" data-options="easing: easeInQuad" href="#section2" class="navbar1">ĐÁNH GIÁ</a></li>
-                            <li><a data-scroll="" data-options="easing: easeInQuad" href="#section2" class="navbar1">ƯU ĐÃI</a></li>
+                            <li><a data-scroll="" data-options="easing: easeInQuad" href="#section3" class="navbar1">ĐIỂM VƯỢT TRỘI</a></li>
+                            <li><a data-scroll="" data-options="easing: easeInQuad" href="#section5" class="navbar1">ĐÁNH GIÁ</a></li>
+                            <li><a data-scroll="" data-options="easing: easeInQuad" href="#section8" class="navbar1">ƯU ĐÃI</a></li>
                             <li><a data-scroll="" data-options="easing: easeInQuad" href="#footer" class="navbar1">LIÊN HỆ</a></li>
                         </ul>
                     </nav>
@@ -75,12 +75,16 @@
                                         </div>
                                         <div class="form-group has-feedback">
                                             <select class="form-control" id="cboPartner" name="cboPartner">
-                                                <option value="">Bạn là ...</option>
+                                                <option value="">---Bạn là---</option>
+                                                <option value="Học sinh">Học sinh</option>
+                                                <option value="Phụ huynh">Phụ huynh</option>
+                                                <option value="Giáo viên">Giáo viên</option>
+                                                <option value="Khác">Khác</option>
                                             </select>
 
                                         </div>
                                         <div class="form-group text-center">
-                                            <button class="btn btnRegister">Gưi ngay</button>
+                                            <button class="btn btnRegister">Gửi ngay</button>
                                         </div>
                                     </div>
                                     <div id="content-register"></div>
@@ -113,8 +117,7 @@
                     	<p class="number">30</p>
                         <p>Giây</p>
                     </div>
-                	
-                    
+              
                 </div>
             </div>
 
@@ -158,8 +161,14 @@
                         <div class="number">3.000.000</div>
                         <p>Lượt thực hành trên hệ thống</p>
                     </div>
-                    <div class="col-sm-8"><img src="img/video.jpg"></div>
-                    <div class="col-sm-4"><img src="img/mome.png"></div>
+                    <div class="col-sm-8" id="video">
+                        <div id="video-home" class="video">
+                        <img src="img/video.jpg">
+                    </div>
+                    </div>
+                    <div class="col-sm-4" id="video-avata">
+                        <img src="img/mome.png">
+                    </div>
                     
                 </div>
             </div>
@@ -216,7 +225,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="text-center"><button class="btn">Nhận tư vấn</button></div>
+                <div class="text-center"><a class="btn" data-scroll="" data-options="easing: easeInQuad" href="#frm-register">Nhận tư vấn</a></div>
             </div>
         </div>
         <div class="section wow fadeInUp" id="section4">
@@ -242,7 +251,7 @@
                         </div>
                         
                     </div>
-                    <div class="text-center"><button class="btn">Nhận tư vấn</button></div>
+                    <div class="text-center"><a class="btn"  data-scroll="" data-options="easing: easeInQuad" href="#frm-register">Nhận tư vấn</a></div>
                 </div>
             </div>
         </div>
@@ -269,7 +278,7 @@
                         <p>Chủ tịch Tập đoàn FPT</p>
                     </div>
                     <div class="item">
-                    	<p class="text">Chúng tôi hiểu rằng việc ứng dụng công nghệ vào giảng dạy, học tập là vô cùng cần thiết nên từ những năm 1998 nhà trường đã có những bước đi đầu tiên cho việc ứng dụng công nghệ thông tin vào giảng dạy. Tôi tin với nền tảng công nghệ của FPT, VioEdu chắc chắn sẽ phát triển tốt nên quyết định rất nhanh việc sử dụng VioEdu so các chương trình nước ngoài.</p>
+                    	<p class="text">Chúng tôi hiểu rằng việc ứng dụng công nghệ vào giảng dạy, học tập là vô cùng cần thiết nên từ những năm 1998 nhà trường đã có những bước đi đầu tiên cho việc ứng dụng công nghệ thông tin vào giảng dạy. Tôi tin với nền tảng công nghệ của FPT, VioEdu chắc chắn sẽ phát triển tốt nên quyết định rất nhanh việc sử dụng VioEdu so với các chương trình nước ngoài.</p>
                         <div class="avatar"><img src="img/cg4.jpg"></div>
                         <p>Bà <strong class="text-uppercase">Nguyễn Thị Hiền</strong></p>
                         <p>Nhà giáo Nhân dân, chủ tịch HĐQT trường Tiểu học Đoàn Thị Điểm, Hà Nội.</p>
@@ -374,7 +383,7 @@
                                 <li>Cộng ngay <strong>50 kim cương</strong> vào tài khoản</li>
                                 <li>Học và luyện tập không giới hạn</li>
                             </ul>
-                            <div class="text-center"><button class="btn">nhận ưu đãi ngay</button></div>
+                            <div class="text-center"><a class="btn"  data-scroll="" data-options="easing: easeInQuad" href="#frm-register">nhận ưu đãi ngay</a></div>
                         </div>
                     </div>
                     <div class="col-sm-6">
@@ -389,7 +398,7 @@
                                 <li>Tặng thêm <strong>01 tháng</strong> học khi giới thiệu thành công</li>
                                 <li>Học và luyện tập không giới hạn</li>
                             </ul>
-                            <div class="text-center"><button class="btn">nhận ưu đãi ngay</button></div>
+                            <div class="text-center"><a class="btn"  data-scroll="" data-options="easing: easeInQuad" href="#frm-register">nhận ưu đãi ngay</a></div>
                         </div>
                     </div>
                 </div>
@@ -419,18 +428,66 @@
                     <div class="col-sm-6">
                     	<div class="st-hd"><h3>BÁO CHÍ NÓI VỀ VIOEDU</h3></div>
                         <div class="row">
-                            <div class="col-sm-3 col-xs-4"><img src="img/lg1.jpg"></div>
-                            <div class="col-sm-3 col-xs-4"><img src="img/lg2.jpg"></div>
-                            <div class="col-sm-3 col-xs-4"><img src="img/lg3.jpg"></div>
-                            <div class="col-sm-3 col-xs-4"><img src="img/lg4.jpg"></div>
-                            <div class="col-sm-3 col-xs-4"><img src="img/lg5.jpg"></div>
-                            <div class="col-sm-3 col-xs-4"><img src="img/lg6.jpg"></div>
-                            <div class="col-sm-3 col-xs-4"><img src="img/lg7.jpg"></div>
-                            <div class="col-sm-3 col-xs-4"><img src="img/lg8.jpg"></div>
-                            <div class="col-sm-3 col-xs-4"><img src="img/lg9.jpg"></div>
-                            <div class="col-sm-3 col-xs-4"><img src="img/lg10.jpg"></div>
-                            <div class="col-sm-3 col-xs-4"><img src="img/lg11.jpg"></div>
-                            <div class="col-sm-3 col-xs-4"><img src="img/lg12.jpg"></div>
+                            <div class="col-sm-3 col-xs-4">
+                                <a href="http://video.andi.vn/?v=tvnews/2019/0827/VTV1-230817130">
+                                    <img src="img/lg1.jpg">
+                                </a>
+                            </div>
+                            <div class="col-sm-3 col-xs-4">
+                                <a href="http://video.andi.vn/?v=tvnews/2019/0829/VTV3-070354101">
+                                    <img src="img/lg2.jpg">
+                                </a>
+                            </div>
+                            <div class="col-sm-3 col-xs-4">
+                                <a href="https://vnexpress.net/giao-duc/fpt-ra-mat-ung-dung-vioedu-tro-ly-hoc-tap-thong-minh-ung-dung-ai-3973772.html">
+                                <img src="img/lg3.jpg">
+                            </a>
+                            </div>
+                            <div class="col-sm-3 col-xs-4">
+                                <a href="https://dantri.com.vn/giao-duc-khuyen-hoc/ra-mat-vio-edu-tro-ly-hoc-tap-thong-minh-ung-dung-tri-tue-nhan-tao-dau-tien-tai-viet-nam-20190827160324920.htm">
+                                <img src="img/lg4.jpg">
+                            </a>
+                            </div>
+                            <div class="col-sm-3 col-xs-4">
+                                <a href="http://cafebiz.vn/fpt-ra-mat-he-thong-hoc-truc-tuyen-ung-dung-ai-dau-tien-tai-viet-nam-20190827154004906.chn">
+                                <img src="img/lg5.jpg">
+                            </a>
+                            </div>
+                            <div class="col-sm-3 col-xs-4">
+                                <a href="https://www.tienphong.vn/giao-duc/lan-dau-tien-co-tro-ly-giao-duc-ung-dung-tri-tue-nhan-tao-1457158.tpo">
+                                    <img src="img/lg6.jpg">
+                                </a>
+                                </div>
+                            <div class="col-sm-3 col-xs-4">
+                                <a href="https://www.facebook.com/watch/?v=147085296309886">
+                                <img src="img/lg7.jpg">
+                            </a>
+                            </div>
+                            <div class="col-sm-3 col-xs-4">
+                                <a href="https://giaoduc.net.vn/giao-duc-24h/kiem-tra-online-giua-hoc-ky-2-dat-chat-luong-kha-quan-tai-truong-tieu-hoc-newton-post207760.gd">
+                                <img src="img/lg8.jpg">
+                            </a>
+                            </div>
+                            <div class="col-sm-3 col-xs-4">
+                                <a href="https://vtc.vn/tin-tuc-su-kien/day-hoc-online-tranh-dich-truong-lien-cap-dat-ket-qua-kiem-tra-vuot-mong-doi-ar532914.html">
+                                <img src="img/lg9.jpg">
+                            </a>
+                            </div>
+                            <div class="col-sm-3 col-xs-4">
+                                <a href="https://anninhthudo.vn/doi-song/cap-nhat-xu-huong-moi-nhat-ve-cong-nghe-40-dac-biet-la-cong-nghe-loi-ai-ung-dung-trong-giao-duc/858432.antd">
+                                    <img src="img/lg10.jpg">
+                                </a>
+                                </div>
+                            <div class="col-sm-3 col-xs-4">
+                                <a href="https://ictnews.vietnamnet.vn/cuoc-song-so/san-pham-giao-duc-viet-duy-nhat-nhan-giai-thuong-quoc-te-apicta-2019-38591.html">
+                                    <img src="img/lg11.jpg">
+                                </a>
+                                </div>
+                            <div class="col-sm-3 col-xs-4">
+                                <a href="https://laodong.vn/kinh-te/doanh-nghiep-trien-khai-nhieu-bien-phap-phong-tranh-virus-corona-782282.ldo">
+                                <img src="img/lg12.jpg">
+                            </a>
+                            </div>
                         </div>
                     	
                     </div>
@@ -504,8 +561,8 @@ tại trường Tiểu học Lê Lai - HCM</a></h2>
                         <p>GPĐKKD số 0101248141 do Sở KHĐT TP Hà Nội cấp ngày 13/05/2002</p>
                         <address>
                             <p><img src="img/ic-home.jpg"> Tòa nhà FPT, số 17 Duy Tân, phường Dịch Vọng Hậu, quận Cầu Giấy, Hà Nội</p>
-                            <p><img src="img/ic-phone.jpg"> Hỗ trợ trực tuyến: 1900 636 111 hoặc 0353055060 (8h30-21h (thứ 2 - thứ 6), 8h30-11h30 thứ 7)</p>
-                            <p><img src="img/ic-mail.jpg"> Support@vio.edu.vn</p>
+                            <p><img src="img/ic-phone.jpg"> Hỗ trợ trực tuyến: <a href="tel:1900636111">1900 636 111</a> hoặc <a href="tel:0353055060">0353055060</a> (8h30-21h (thứ 2 - thứ 6), 8h30-11h30 thứ 7)</p>
+                            <p><img src="img/ic-mail.jpg"><a href="tel:support@vio.edu.vn">&nbsp;support@vio.edu.vn</a></p>
                         </address>
                     </div>
                 </div>
@@ -520,6 +577,14 @@ tại trường Tiểu học Lê Lai - HCM</a></h2>
     
     <script>
          new WOW().init();
+         function AllowNumberOnly(evt) {
+            evt = (evt) ? evt : event;
+            var charCode = (evt.charCode) ? evt.charCode : ((evt.keyCode) ? evt.keyCode : ((evt.which) ? evt.which : 0));
+            if ((charCode > 31) && (charCode < 48 || charCode > 57) && charCode != 8 && charCode != 37 && charCode != 39 && charCode != 45 && charCode != 46) {
+                return false;
+            }
+            return true;
+        }
          smoothScroll.init({
             speed: 1000,
             easing: 'easeInOutCubic',
@@ -527,6 +592,50 @@ tại trường Tiểu học Lê Lai - HCM</a></h2>
             updateURL: false,
             callbackBefore: function (toggle, navbar1) { },
             callbackAfter: function (toggle, navbar1) { }
+        });
+        $(document).ready(function() {
+            var timeServer = '08/31/2020 00:00:00';
+            var serverTime = new Date('08/31/2020 00:00:00');
+            var newYear = new Date(timeServer);
+            $('#timeout').countdown({
+                until: newYear,
+                serverSync: serverTime,
+                compact: true,
+                layout:'<div><p class="number">{d10}{d1}</p><p>Ngày</p></div>' +
+                    '<div><p class="number">{h10}{h1}</p><p>Giờ</p></div>' +
+                    '<div><p class="number">{m10}{m1}</p><p>Phút</p></div>' +
+                    '<div><p class="number">{s10}{s1}</p><p>Giây</p></div>'
+            });
+        });
+        var vWidth = "780px";
+        var vHeight = "440px";
+        var md = new MobileDetect(window.navigator.userAgent);
+        if (md.mobile()) {
+            vHeight = "200px";
+            vWidth = "100%";
+        }
+        if (md.tablet()) {
+            vHeight = "350px";
+            vWidth = "500px";
+        }
+        // $('#video-home').html('<iframe width="'+vWidth+'" height="' + vHeight + '" src="https://www.youtube.com/embed/5xMD1WjiVyE?autoplay=0&modestbranding=0&mute=1&enablejsapi=1&loop=1&version=3&playlist=5xMD1WjiVyE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>')   
+        $(function () {
+            function isScrolledIntoView($elem) {
+                var docViewTop = $(window).scrollTop();
+                var docViewBottom = docViewTop + $(window).height();
+                var elemTop = $elem.offset().top;
+                var elemBottom = elemTop + $elem.height();
+                return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+            }
+
+            function start() {
+                if (isScrolledIntoView($('#video')) && !$('#video').data("isCounting")) {
+                    $("#video").data("isCounting", true);
+                    $('#video-home').html('<iframe width="'+vWidth+'" height="' + vHeight + '" src="https://www.youtube.com/embed/52ATFJW5-A4?autoplay=1&modestbranding=0&mute=1&enablejsapi=1&loop=1&version=3&playlist=52ATFJW5-A4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>')   
+
+                }
+            };
+            $(document).on("scroll", start);
         });
         $('.owl-carousel-st5').owlCarousel({
             loop: true,
