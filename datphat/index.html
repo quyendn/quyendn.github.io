@@ -483,8 +483,8 @@
                     </div>
                     <div class="col-sm-6" style="background:#400000">
                         <div><img src="img/trongdong.jpg" width="100%"></div>
-                        <div class="st-hd"><h3>lễ hộp TRỐNG ĐỒNG</h3></div>
-                        <div class="row">
+                        <div class="st-hd"><h3 class="trong-dong-click" style="cursor: pointer;">lễ hộp TRỐNG ĐỒNG</h3></div>
+                        <div class="row" id="trong-dong">
                         	<div class="col-sm-6">
                             	<h4><strong>LỄ HỘP TRỐNG ĐỒNG 881</strong></h4>
                                 <div class="info">
@@ -509,20 +509,20 @@
                     </div>
                     <div class="col-sm-6">
                         <div><img src="img/thunguyet.jpg" width="100%"></div>
-                        <div class="st-hd"><h3>lễ hộp thu NGUYỆT</h3></div>
-                        <div class="info">
+                        <div class="st-hd"><h3 class="thu-nguyet-click" style="cursor: pointer;">lễ hộp thu NGUYỆT</h3></div>
+                        <div class="info thu-nguyet">
                             <p>1 Bánh Thu Nguyệt Thập Cẩm</p>
                             <p>Thịt Nướng Vi Cá 400g(4 Trứng)</p>
                         </div>
-                        <p class="price">Giá: 350.000đ</p>
-                        <div><a class="btn btnBuynow btn-sm" href="https://trungthudaiphat.vn/san-pham/le-hop-trung-thu/le-hop-thu-nguyet/le-hop-thu-nguyet-883.html">Đặt mua ngay</a></div>
+                        <p class="price thu-nguyet">Giá: 350.000đ</p>
+                        <div class="thu-nguyet"><a class="btn btnBuynow btn-sm" href="https://trungthudaiphat.vn/san-pham/le-hop-trung-thu/le-hop-thu-nguyet/le-hop-thu-nguyet-883.html">Đặt mua ngay</a></div>
                         
                     </div>
                     <div class="col-sm-6" style="background:#400000">
                         <div><img src="img/hoangtrieu.jpg" width="100%"></div>
-                        <div class="st-hd"><h3>lễ hộp hoàng triều</h3></div>
-                        <h4><strong>lễ hộp hoàng triều 902</strong></h4>
-                        <div class="owl-carousel">
+                        <div class="st-hd"><h3 class="hoang-trieu-click" style="cursor: pointer;">lễ hộp hoàng triều</h3></div>
+                        <h4 class="hoang-trieu"><strong>lễ hộp hoàng triều 902</strong></h4>
+                        <div class="owl-carousel hoang-trieu">
                             <div class="item">
                             	<div><img src="img/902-1.png"></div>
                                 <div class="info">
@@ -554,15 +554,15 @@
                                 </div>
                             </div>
                         </div>
-                        <p class="price">Giá: 1.680.000đ</p>
-                        <div><a class="btn btnBuynow btn-sm" href="https://trungthudaiphat.vn/san-pham/le-hop-trung-thu/le-hop-hoang-trieu/le-hop-hoang-trieu-902.html">Đặt mua ngay</a></div>
+                        <p class="price hoang-trieu">Giá: 1.680.000đ</p>
+                        <div class="hoang-trieu"><a class="btn btnBuynow btn-sm" href="https://trungthudaiphat.vn/san-pham/le-hop-trung-thu/le-hop-hoang-trieu/le-hop-hoang-trieu-902.html">Đặt mua ngay</a></div>
                         
                         
                     </div>
                     <div class="col-sm-6">
                         <div><img src="img/minhlong.jpg" width="100%"></div>
-                        <div class="st-hd"><h3>lễ hộp minh long</h3></div>
-                        <div class="info">
+                        <div class="st-hd"><h3 class="minh-long-click" style="cursor: pointer;">lễ hộp minh long</h3></div>
+                        <div class="info minh-long">
                             <p>1 Hộp Gốm Sứ Minh Long - Túi Trà Ô Long 50g</p>
                             <p>Bánh Trung Thu Cầu Vồng 187g Phun Vàng</p>
                             <p>1 Bánh Yến Sào Táo Đỏ 2 Trứng</p>
@@ -571,8 +571,8 @@
                             <p>1 Bánh Sữa Dừa Mứt Cam</p>
                             <p>1 Bánh Macadamia Xoài</p>
                         </div>
-                        <p class="price">Giá: 1.680.000đ</p>
-                        <div><a class="btn btnBuynow btn-sm" href="https://trungthudaiphat.vn/san-pham/le-hop-trung-thu/le-hop-minh-long/le-hop-minh-long-930.html">Đặt mua ngay</a></div>
+                        <p class="price minh-long">Giá: 1.680.000đ</p>
+                        <div class="minh-long"><a class="btn btnBuynow btn-sm" href="https://trungthudaiphat.vn/san-pham/le-hop-trung-thu/le-hop-minh-long/le-hop-minh-long-930.html">Đặt mua ngay</a></div>
                         
                     </div>
                 </div>
@@ -1014,6 +1014,10 @@
             callbackBefore: function (toggle, navbar1) { },
             callbackAfter: function (toggle, navbar1) { }
         });
+        $("#trong-dong").hide();
+        $(".thu-nguyet").hide();
+        $(".hoang-trieu").hide();
+        $(".minh-long").hide();
         var vWidth = "1000px";
         var vHeight = "480px";
         var md = new MobileDetect(window.navigator.userAgent);
@@ -1076,6 +1080,22 @@
             var sectionId = $(this).attr("rev");
             $(".bg-show-section-"+sectionId).hide();
             $("#bgShow"+Id).show();
+
+        });
+        $(".trong-dong-click").click(function(){
+            $("#trong-dong").show();
+
+        });
+        $(".thu-nguyet-click").click(function(){
+            $(".thu-nguyet").show();
+
+		});
+        $(".hoang-trieu-click").click(function(){
+            $(".hoang-trieu").show();
+
+		});
+        $(".minh-long-click").click(function(){
+            $(".minh-long").show();
 
 		});
     	$("button").click(function(){
