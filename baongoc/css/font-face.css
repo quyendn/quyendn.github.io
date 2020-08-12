@@ -1,0 +1,38 @@
+
+@font-face {
+  font-family: 'UTM AvoBold';
+  src: url('../font/UTM AvoBold.eot');
+  src: url('../font/UTM AvoBold.eot?#iefix') format('embedded-opentype'),
+       url('../font/UTM AvoBold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'UTMAvoBold';
+  src: url('../font/UTMAvoBold.svg#UTMAvoBold') format('svg'),
+       url('../font/UTMAvoBold.ttf') format('truetype'),
+       url('../font/UTMAvoBold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'iCielCadena';
+  src: url('../font/iCielCadena.svg#iCielCadena') format('svg'),
+       url('../font/iCielCadena.ttf') format('truetype'),
+       url('../font/iCielCadena.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'iciel Cadena';
+  src: url('../font/iciel Cadena.eot');
+  src: url('../font/iciel Cadena.eot?#iefix') format('embedded-opentype'),
+       url('../font/iciel Cadena.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
