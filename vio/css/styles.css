@@ -146,12 +146,7 @@ h1, h2, h3{
 	margin-right:20px;
 	margin-top:5px;
 	}
-.navbar-nav>li#btnQuote>a, .btn.btnFix{
-	border:1px solid #333;
-	font-family: 'UTMAvoBold';
-	text-transform:uppercase;
-	background:#fff;
-	}
+
 
 /**/
 .section{
@@ -521,10 +516,11 @@ h1, h2, h3{
 #thanks .thanks .inner a{
 	color:#404040;
 	font-family: 'UTMAvoBold';}
-.btn.btnFix{
+.btn.btnFix, .btn.btnFix:focus{
 	position:fixed;
 	bottom:5px;
 	right:5px;
+	z-index:99999;
 	}
 
 /**/
@@ -541,6 +537,10 @@ img{
 @media (max-width:991px){
 	}
 @media (max-width:768px){
+	.st-mobie
+	{
+		padding-top:20px;
+	}
 	#video-avata img
 	{
 		width: 70%;
@@ -580,6 +580,8 @@ img{
 	#timeout .number{
 		font-size:22px;
 		}
+	#section2{
+		padding-bottom:0px;}
 	#section2 .st-top{
 		font-size:14px;
 		}
