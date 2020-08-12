@@ -621,10 +621,24 @@ img{
 	#section8 .inner .btn{
 		margin-bottom:-40px;
 		}
+	.owl-loaded .owl-prev, .owl-loaded .owl-next{
+		width:22px !important;
+		height:42px !important;
+		top:50%;
+		margin-top:-21px;
+		background-size:100% auto !important;
+		}
 	.owl-loaded .owl-prev{
-		left:0 !important;}
+		left:-10px !important;}
 	.owl-loaded .owl-next{
-		right:0 !important;}
+		right:-10px !important;}
+	.section .owl-item .item .text{
+		padding-right:15px;
+		padding-left:15px;
+		}
+	#section10 .item img{
+		width:100%;
+		}
 	#footer address p{
 		font-size:13px;
 		}

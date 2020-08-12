@@ -22,6 +22,8 @@
     <script type="text/javascript" src="js/jquery.plugin.min.js"></script>
     <script type="text/javascript" src="js/jquery.countdown.js"></script>
     <script type="text/javascript" src="js/wow/wow.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src='js/jquery.countup.js'></script>
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="css/styles.css" rel="stylesheet" type="text/css" />
     <link href="css/font-face.css" rel="stylesheet" type="text/css" />
@@ -57,7 +59,7 @@
             <div class="container">
                 
                 <div class="row">
-                	<div class="col-md-8 col-sm-8"><img src="img/banner-.png"></div>
+                	<div class="col-md-8 col-sm-8"><img src="img/banner-.png" class="hidden-xs"><img src="img/banner-mb.png" class="visible-xs"></div>
                     <div class="col-md-4 col-sm-4">
                         <div class="formRegister wow fadeInRight" id="frm-register" style="visibility: visible; animation-name: fadeInRight;">
                             <div class="inner">
@@ -133,32 +135,32 @@
                 <div class="row text-center">
                 	<div class="col-sm-4">
                     	<div><img src="img/ic-1.png"></div>
-                        <div class="number">92,5%</div>
+                        <div class="number"><span class="counter">92,5</span>%</div>
                         <p>Học sinh tiến bộ rõ rệt<br>sau khi luyện tập</p>
                     </div>
                     <div class="col-sm-4">
                     	<div><img src="img/ic-2.png"></div>
-                        <div class="number">30 - 50%</div>
+                        <div class="number"><span class="counter">30</span> - <span class="counter">50</span>%</div>
                         <p>Giảm <strong>30 - 50%</strong> thời gian học tập</p>
                     </div>
                     <div class="col-sm-4">
                     	<div><img src="img/ic-3.png"></div>
-                        <div class="number">95%</div>
+                        <div class="number"><span class="counter">95</span>%</div>
                         <p>Phát hiện chính xác<br><strong>95%</strong> điểm mạnh, điểm yếu từng học sinh</p>
                     </div>
                     <div class="col-sm-4">
                     	<div><img src="img/ic-4.png"></div>
-                        <div class="number">100,000<sup>++</sup></div>
+                        <div class="number"><span class="counter">100,000</span><sup>++</sup></div>
                         <p>Nội dung kiến thức</p>
                     </div>
                     <div class="col-sm-4">
                     	<div><img src="img/ic-5.png"></div>
-                        <div class="number">600.000</div>
+                        <div class="number"><span class="counter">600.000</span></div>
                         <p>Học sinh luyện tập thường xuyên</p>
                     </div>
                     <div class="col-sm-4">
                     	<div><img src="img/ic-6.png"></div>
-                        <div class="number">3.000.000</div>
+                        <div class="number"><span class="counter">3,000,000</span></div>
                         <p>Lượt thực hành trên hệ thống</p>
                     </div>
                     <div class="col-sm-8" id="video">
@@ -594,6 +596,7 @@ tại trường Tiểu học Lê Lai - HCM</a></h2>
             callbackAfter: function (toggle, navbar1) { }
         });
         $(document).ready(function() {
+            $('.counter').countUp();
             var timeServer = '08/31/2020 00:00:00';
             var serverTime = new Date('08/31/2020 00:00:00');
             var newYear = new Date(timeServer);
