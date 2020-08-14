@@ -82,7 +82,8 @@ a, .btn, button{
 	outline:none;
 	}
 .modal-header{
-	position:relative}
+	position:relative;
+	border:none;}
 .modal-header .close{
 	background:#E81619 url(../img/cancel.png) no-repeat 50% 50%;
 	width:40px;
@@ -181,6 +182,7 @@ a, .btn, button{
 	text-transform:uppercase;
 	padding:10px 15px;
 	font-family: Helvetica, Arial, sans-serif;
+	cursor:pointer;
 	}
 .navbar-nav .active a, .navbar-nav a:hover,  .navbar-nav li a:focus{
 	color:#fff;
@@ -196,32 +198,30 @@ a, .btn, button{
 
 .formRegister{
 	}
-.formRegister .inner{
+.formRegister{
 	padding: 30px;
-	background:rgba(0,0,0,0.5);
-	margin-bottom:15px;
 	}
-.formRegister .inner h3{
+.formRegister h3{
 	margin:0 0 30px 0;
-	color:#fff;
+	color:#b21c13;
 	font-size:24px;
+	font-weight:bold;
 	text-transform:uppercase;
 	text-align:center;
 	}
-.formRegister .inner .alert{
+.formRegister .alert{
 	
 	text-align:center;
 	font-size:11px;
 	}
-.formRegister .inner .form-control{
-	border:none;
+.formRegister .form-control{
 	height:auto;
-	-moz-border-radius:0;
-	-webkit-border-radius:0;
-	-o-border-radius:0;
-	border-radius:0;
+	padding:10px;
+	color:#97191e;
+	background:rgba(255,255,255,0.3);
+	border:1px solid rgba(255,255,255,0.5);
 	}
-.formRegister .inner label{
+.formRegister label{
 	height:30px;
 	width:156px;
 	display:inline-block;
@@ -230,17 +230,22 @@ a, .btn, button{
 	font-size:14px;
 	padding-left:20px;
 	background:url(../img/bg-label.png) no-repeat 0 0;}
-.formRegister .inner .form-control{
-	height:36px;
-	background:url(../img/bg-input.png) no-repeat 100% 0;}
+
 .formRegister .btn{
 	font-size:16px;
 	padding:10px 30px;
+	background:#b21c13;
+	color:#fff;
+	text-transform:uppercase;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	-o-border-radius:5px;
+	border-radius:5px;
 	}
 .formRegister .btn:hover{
 	color:#fff;
 	}
-.formRegister .inner hr{
+.formRegister hr{
 	margin:10px 0;
 	border-top:1px solid #8b8b8b;
 	}
@@ -318,6 +323,12 @@ a, .btn, button{
 	position:relative;
 	font-weight:600;
 	}
+.seemore.in:before{
+	content:"Ẩn chi tiết";
+	}
+.seemore:before{
+	content:"Xem chi tiết";
+	}
 .seemore:after{
 	content:"";
 	height:1px;
@@ -341,16 +352,16 @@ a, .btn, button{
 	}
 
 .carousel-control.right, .carousel-control.left{
-	height:50px;
+	height:44px;
 	width:30px;
 	top:50%;
-	margin-top:-25px;
+	margin-top:-22px;
 	}
 .carousel-control.right{
-	background: url(../img/ic_next.png) no-repeat 50% 50%;
+	background: url(../img/next.png) no-repeat 50% 50%;
 	}
 .carousel-control.left{
-	background: url(../img/ic_prev.png) no-repeat 50% 50%;
+	background: url(../img/prev.png) no-repeat 50% 50%;
 	}
 /**/
 #section1{
@@ -686,6 +697,26 @@ a, .btn, button{
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1 );
 
 	}
+/**/
+/*thanks*/
+#thanks{
+	padding:150px 15px;
+	text-align:center;
+	
+	color: #fff;
+	}
+#thanks .h2{
+	font-size:30px;
+	margin:30px 0;
+	}
+#thanks  p{
+	font-size:18px;}
+#thanks .logo{
+	margin-bottom:30px;}
+
+
+	
+	
 /*owl-carousel*/
 .owl-carousel{padding:20px 20px 0 20px;
 	}
@@ -797,15 +828,10 @@ img{
 .modal{
 	padding-top:100px;
 	}
-#formbuynow .modal-body .price{
-	margin-bottom:30px;
+.modal-body{
+	background:#ddc074
 	}
-#formbuynow .modal-body .btn{
-	background:#ff9c00;
-	color:#fff;
-	padding:10px 30px;
-	text-transform:uppercase;
-	}
+
 #thank{
 	text-transform:uppercase;
 	padding-top:100px;
@@ -852,11 +878,12 @@ img{
 	display:inline-block !important
 	}
 	#header, #header .affix{
-		min-height:56px;
+		min-height:68px;
 		padding:0;
 		}
 	#header .navbar-brand, #header .affix .navbar-brand{
-		padding:0 0;}
+		padding:5px 0;
+		position:static}
 	#header .navbar-brand img, #header .affix .navbar-brand img{
 		height:56px;
 		}
@@ -891,7 +918,10 @@ img{
 		line-height:normal;
 		line-height:30px;
 		letter-spacing: 2px;
+		background:none
 		}
+	.tl1.text-right{
+		text-align:center !important}
 	#section2 li, #section6 li{
 		width:50%;
 		}
@@ -927,8 +957,35 @@ img{
 		margin-top:200px;
 		font-size:14px;
 		}
-
-
+	#section3 .visible-xs .col-sm-4, #section3 .visible-xs .col-sm-6, #section4 .inner .col-sm-3, #section5 .inner .col-sm-4{
+		margin-bottom:30px;
+		}
+	#section3 .item{
+		margin-bottom:15px;
+		}
+	#section3 .bgShow .info{
+		height:auto;
+		}
+	.bgShow{
+		padding:15px 15px 45px 15px;
+		}
+	#section5.section .st-hd h3, #section9.section .st-hd h3{
+		background:none;
+		}
+	#section5 .inner{
+		padding:15px;
+		}
+	#section6 .text-right{
+		text-align:center !important;
+		}
+	#section6 .line.gradient-r.pull-right{
+		float:none;
+		width:auto !important;
+		}
+	.local h3 span{
+		width:100%;
+		background-size:100% 100%;
+		}
 
 	}
 @media (max-width: 460px){
