@@ -986,7 +986,13 @@ img{
 		width:100%;
 		background-size:100% 100%;
 		}
-
+		#section9 .container-fluid>.row>div{
+			padding-bottom:0 !important;
+			}
+		.text-mobie
+		{
+			padding-bottom: 15px !important;
+		}
 	}
 @media (max-width: 460px){
 	#section2 li, #section6 li{
