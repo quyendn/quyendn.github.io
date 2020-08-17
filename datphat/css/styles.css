@@ -986,12 +986,31 @@ img{
 		width:100%;
 		background-size:100% 100%;
 		}
-		#section9 .container-fluid>.row>div{
-			padding-bottom:0 !important;
-			}
-		.text-mobie
+	#section9 .container-fluid>.row>div{
+		padding-bottom:0 !important;
+		}
+	.text-mobie
 		{
-			padding-bottom: 15px !important;
+		padding-bottom: 15px !important;
+		}
+	#section4 .item{
+		padding-top:0;}
+	#section4 .item img, #section7 .item{
+		width:100%;
+		}
+	#section6 .col-sm-6 .item .flow{
+		width:100px;
+		height:90px;
+		background-size:100px auto;
+		}
+	 #section7  .col-sm-4{
+		 margin-bottom:30px;
+		 }
+	#section7 .item{
+		margin-bottom:0px;
+		}
+	#section7 .col-sm-4 h3{
+		font-size:20px;
 		}
 	}
 @media (max-width: 460px){
