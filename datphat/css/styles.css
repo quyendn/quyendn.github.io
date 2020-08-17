@@ -232,10 +232,11 @@ a, .btn, button{
 	background:url(../img/bg-label.png) no-repeat 0 0;}
 
 .formRegister .btn{
-	font-size:16px;
+	font-size:18px;
 	padding:10px 30px;
 	background:#b21c13;
-	color:#fff;
+	color:#f0db90;
+	font-weight:bold;
 	text-transform:uppercase;
 	-moz-border-radius:5px;
 	-webkit-border-radius:5px;
@@ -243,7 +244,7 @@ a, .btn, button{
 	border-radius:5px;
 	}
 .formRegister .btn:hover{
-	color:#fff;
+	color:#f0db90;
 	}
 .formRegister hr{
 	margin:10px 0;
@@ -829,7 +830,11 @@ img{
 	padding-top:100px;
 	}
 .modal-body{
-	background:#ddc074
+	background:#ddc074;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	-o-border-radius:10px;
+	border-radius:10px;
 	}
 
 #thank{
@@ -1035,3 +1040,7 @@ img{
 	}
 
 /**/
+.modal-content
+{
+	background: none;
+}
