@@ -232,11 +232,10 @@ a, .btn, button{
 	background:url(../img/bg-label.png) no-repeat 0 0;}
 
 .formRegister .btn{
-	font-size:18px;
+	font-size:16px;
 	padding:10px 30px;
 	background:#b21c13;
-	color:#f0db90;
-	font-weight:bold;
+	color:#fff;
 	text-transform:uppercase;
 	-moz-border-radius:5px;
 	-webkit-border-radius:5px;
@@ -244,7 +243,7 @@ a, .btn, button{
 	border-radius:5px;
 	}
 .formRegister .btn:hover{
-	color:#f0db90;
+	color:#fff;
 	}
 .formRegister hr{
 	margin:10px 0;
@@ -601,20 +600,15 @@ a, .btn, button{
 	margin:0;
 	}
  #section9 .container-fluid>.row>div{
-	padding-bottom:0 !important;
+	padding-bottom:30px !important;
 	}
 #section9 .col-sm-6 .info{
 	min-height:70px;
 	padding-bottom:10px;
 	}
 #section9.section .st-hd{
-	margin-bottom:0px;
+	margin-bottom:15px;
 	}
-#section9.section .inner{
-	padding:15px 0;
-	}
-#section9.section .st-hd h3{
-	margin:0;}
 #section9 .container-fluid, #section9 .row, #section9 .row>div{
 	padding:0;
 	margin:0;}
@@ -835,11 +829,7 @@ img{
 	padding-top:100px;
 	}
 .modal-body{
-	background:#ddc074;
-	-moz-border-radius:10px;
-	-webkit-border-radius:10px;
-	-o-border-radius:10px;
-	border-radius:10px;
+	background:#ddc074
 	}
 
 #thank{
@@ -924,7 +914,7 @@ img{
 		margin-left:0;
 		}
 	.section .st-hd h3{
-		font-size:22px;
+		font-size:24px;
 		line-height:normal;
 		line-height:30px;
 		letter-spacing: 2px;
@@ -1001,7 +991,7 @@ img{
 		}
 	.text-mobie
 		{
-		padding-bottom: 0 !important;
+		padding-bottom: 15px !important;
 		}
 	#section4 .item{
 		padding-top:0;}
@@ -1045,7 +1035,11 @@ img{
 	}
 
 /**/
-.modal-content
+.modal-body
 {
-	background: none;
+	border-radius: 5px !important;
+    -moz-border-radius: 5px !important;
+    -webkit-border-radius: 5px !important;
+    -ms-border-radius:5px !important;
+    -o-border-radius:5px !important;
 }
