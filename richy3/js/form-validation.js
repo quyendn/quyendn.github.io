@@ -27,29 +27,11 @@ $(document).ready(function() {
         // Indicate where the error messages are shown.
         // Tooltip, Popover, Custom Container.
         // =================================================================
-   
     $('#frmRegDownload').bootstrapValidator({
         message: 'This value is not valid',
         excluded: [':disabled'],
         feedbackIcons: faIcon,
         fields: {
-            email: {
-                validators: {
-                    notEmpty: {
-                        message: 'Địa chỉ email không được để trống.'
-                    },
-                    emailAddress: {
-                        message: 'Không đúng định dạng email'
-                    }
-                }
-            },
-            name: {
-                validators: {
-                    notEmpty: {
-                        message: 'Họ tên không được để trống.'
-                    }
-                }
-            },
             phone: {
                 validators: {
                     notEmpty: {
@@ -61,36 +43,27 @@ $(document).ready(function() {
                         message: 'Số điện thoại chỉ có thể là 10 số.'
                     }
                 }
-            },
-            cboCity: {
-                validators: {
-                    notEmpty: {
-                        message: 'Cần chọn Tỉnh/thành phố'
-                    }
-                }
-            },
-            cboPartner: {
-                validators: {
-                    notEmpty: {
-                        message: 'Cần chọn thông tin'
-                    }
-                }
             }
         },
         onSuccess: function (e) {
-
             var name = $('#txtName').val();
-            var email = $('#txtEmail').val();
             var phone = $('#txtPhone').val();
-            var partner = $('#cboPartner').val();
+            var company = $('#txtNameCompany').val();
+            var description = $('#txtNote').val();
             var emailto = "quyendn84@gmail.com";
+            var url_source = "lp_richy";
+            var source = getUrlParameter('utm_source');
+            if (isEmpty(source))
+                url_source = "lp_richy";
+            else
+                url_source = source;
             var check = checkPhoneNumber();
             if (!check)
                 return;
-            var dataJSON = { "name": name, "phone": phone, "email": email, "description": partner,  "emailto": emailto };
+            var dataJSON = { "name": name, "phone": phone, "company": company, "description": description, "source": url_source,  "emailto": emailto };
             showLoadingContactImage('content-register', 'frmContentReg');
             $.ajax({
-                url: "https://alpha.f5academy.net/api/Vioservice",
+                url: "https://alpha.f5academy.net/api/Richymonservice",
                 type: "Post",
                 async: false,
                 data: dataJSON,
@@ -99,7 +72,7 @@ $(document).ready(function() {
                 success: function (states) {
                     $('#frmRegDownload').bootstrapValidator('resetForm', true);
                     hideLoadingContactImage('content-register', 'frmContentReg');
-                 },
+                },
                 error: function (ex) {
                     toastr.error('Đã có lỗi trong quá trình đăng ký, mời bạn thử lại.', { timeOut: 5000 })
                     hideLoadingContactImage('content-register', 'frmContentReg');
@@ -111,7 +84,7 @@ $(document).ready(function() {
                     $('#frmRegDownload').bootstrapValidator('resetForm', true);
                     toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', { timeOut: 5000 })
                     hideLoadingContactImage('content-register', 'frmContentReg');
-                    window.location.href = "https://quyendn.github.io/vio/dang-ky-thanh-cong.html";
+                    window.location.href = "https://quyendn.github.io/richy3/dang-ky-thanh-cong.html";
                 }
             });
         }
@@ -155,6 +128,27 @@ $(document).ready(function() {
             return false;
         }
     }
+    function isEmpty(item) {
+        if (item) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+    var getUrlParameter = function getUrlParameter(sParam) {
+        var sPageURL = window.location.search.substring(1),
+            sURLVariables = sPageURL.split('&'),
+            sParameterName,
+            i;
+
+        for (i = 0; i < sURLVariables.length; i++) {
+            sParameterName = sURLVariables[i].split('=');
+
+            if (sParameterName[0] === sParam) {
+                return sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
+            }
+        }
+    };
     function checkPhoneNumber2() {
         var vnf_regex = /((09|03|07|08|05)+([0-9]{8})\b)/g;
         var mobile = $('#txtPhoneSub').val();
