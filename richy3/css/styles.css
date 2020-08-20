@@ -80,6 +80,28 @@ a, .btn, button{
 	}
 h1, h2, h3{
 	}
+.modal-content{
+	background:none;
+	border:none;
+	-moz-box-shadow:none;
+	-webkit-box-shadow:none;
+	-o-box-shadow:none;
+	box-shadow:none;
+	}
+.modal-header{
+	border:none;
+	}
+.modal-content .formRegister .inner{
+	padding-left:60px;
+	}
+.modal-content .formRegister .label{
+	width:180px;
+	top:-45px;
+	}
+.modal-content .formRegister h3{
+	font-size:24px;}
+.modal-header .close{
+	color:#fff}
 /*header=================================*/
 
 #header{

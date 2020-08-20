@@ -92,7 +92,70 @@ $(document).ready(function() {
 
     });
     
-    
+    $('#frmRegDownload2').bootstrapValidator({
+        message: 'This value is not valid',
+        excluded: [':disabled'],
+        feedbackIcons: faIcon,
+        fields: {
+            phone2: {
+                validators: {
+                    notEmpty: {
+                        message: 'Điện thoại không được để trống.'
+                    },
+                    stringLength: {
+                        min: 10,
+                        max: 10,
+                        message: 'Số điện thoại chỉ có thể là 10 số.'
+                    }
+                }
+            }
+        },
+        onSuccess: function (e) {
+            var name = $('#txtName2').val();
+            var phone = $('#txtPhone2').val();
+            var company = $('#txtNameCompany2').val();
+            var description = $('#txtNote2').val();
+            var emailto = "quyendn84@gmail.com";
+            var url_source = "lp_richy";
+            var source = getUrlParameter('utm_source');
+            if (isEmpty(source))
+                url_source = "lp_richy";
+            else
+                url_source = source;
+            var check = checkPhoneNumber2();
+            if (!check)
+                return;
+            var dataJSON = { "name": name, "phone": phone, "company": company, "description": description, "source": url_source,  "emailto": emailto };
+            showLoadingContactImage('content-register-2', 'frmContentReg2');
+            $.ajax({
+                url: "https://alpha.f5academy.net/api/Richymonservice",
+                type: "Post",
+                async: false,
+                data: dataJSON,
+                contentType: 'application/json; charset=utf-8',
+                dataType: 'jsonp',
+                success: function (states) {
+                    $('#frmRegDownload2').bootstrapValidator('resetForm', true);
+                    hideLoadingContactImage('content-register-2', 'frmContentReg2');
+                },
+                error: function (ex) {
+                    toastr.error('Đã có lỗi trong quá trình đăng ký, mời bạn thử lại.', { timeOut: 5000 })
+                    hideLoadingContactImage('content-register-2', 'frmContentReg2');
+                },
+                complete: function (jqXHR, textStatus) {
+                    $('#txtName2').val('');
+                    $("#txtEmail2").val('');
+                    $('#txtPhone2').val('');
+                    $('#frmRegDownload2').bootstrapValidator('resetForm', true);
+                    toastr.success('Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên lạc sớm nhất khi nhận thông tin.', { timeOut: 5000 })
+                    hideLoadingContactImage('content-register-2', 'frmContentReg2');
+                    window.location.href = "https://quyendn.github.io/richy3/dang-ky-thanh-cong.html";
+                }
+            });
+        }
+    }).on('success.form.fv', function (e) {
+
+    });
     function showLoadingImage() {
 
         $('#content').empty().append('<div id="loading-image" align="center"><img src="img/ajax-loader.gif" alt="Loading..." /></div>');
@@ -151,11 +214,11 @@ $(document).ready(function() {
     };
     function checkPhoneNumber2() {
         var vnf_regex = /((09|03|07|08|05)+([0-9]{8})\b)/g;
-        var mobile = $('#txtPhoneSub').val();
+        var mobile = $('#txtPhone2').val();
         if (mobile !== '') {
             if (vnf_regex.test(mobile) == false) {
                 toastr.error('Số điện thoại của bạn không đúng định dạng.', { timeOut: 5000 })
-                $("#txtPhoneSub").focus();
+                $("#txtPhone2").focus();
                 return false;
 
             } else {
