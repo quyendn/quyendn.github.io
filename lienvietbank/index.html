@@ -1,0 +1,474 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="no-js" style="height:100%;">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Liên Việt Bank</title>
+    <link rel="shortcut icon" href="images/icon-logo.png">
+    <meta property="fb:app_id" content="890776717644660" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.nanoscroller.min.js"></script>
+    <script src="js/jquery.tmpl.min.js"></script>
+    <script type="text/javascript" src="js/wow/wow.min.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <link href="css/font-face.css" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrapValidator.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/toastr.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+    
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+    <div id="container">
+        <div id="header">
+            <div class="affix" data-spy="affix" data-offset-top="79" id="">
+            
+                <div class="container" style="position:relative">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"></button>
+                    <div class="row">
+                    	<div class="col-sm-3 col-xs-6">
+                        	<a data-scroll="" data-options="easing: easeInQuad" href="#slide" class="navbar-brand">
+                                <img src="img/logo.png">
+                            </a>
+                        </div>
+                        <div class="col-sm-9 col-xs-5" style="border-left:1px solid #e0e1e3">
+                        	<div style="" class="phoneTop"><img src="img/tongdai.png"></div>
+                        	<nav id="navbarPC" class="collapse navbar-collapse" role="navigation" style="border-top:1px solid #e0e1e3; clear:both;margin-left:-15px">
+                                <ul class="nav navbar-nav">
+                                    <li><a data-scroll="" data-options="easing: easeInQuad" href="#section1" class="navbar1">GIỚI THIỆU</a></li>
+                                    <li><a data-scroll="" data-options="easing: easeInQuad" href="#section2" class="navbar1">NỘI DUNG</a></li>
+                                    <li><a data-scroll="" data-options="easing: easeInQuad" href="#section3" class="navbar1">ĐỐI TƯỢNG</a></li>
+                                    <li><a data-scroll="" data-options="easing: easeInQuad" href="#section4" class="navbar1">THỜI GIAN</a></li>
+                                    <li><a data-scroll="" data-options="easing: easeInQuad" href="#footer" class="navbar1">LIÊN HỆ</a></li>
+                                </ul>
+                            </nav>
+                            
+                        </div>
+                    </div>
+                    <nav id="navbarMb" class="collapse navbar-collapse" role="navigation" style="border-top:1px solid #e0e1e3; clear:both;">
+                                <ul class="nav navbar-nav">
+                                    <li><a data-scroll="" data-options="easing: easeInQuad" href="#section1" class="navbar1">GIỚI THIỆU</a></li>
+                                    <li><a data-scroll="" data-options="easing: easeInQuad" href="#section2" class="navbar1">NỘI DUNG</a></li>
+                                    <li><a data-scroll="" data-options="easing: easeInQuad" href="#section3" class="navbar1">ĐỐI TƯỢNG</a></li>
+                                    <li><a data-scroll="" data-options="easing: easeInQuad" href="#section4" class="navbar1">THỜI GIAN</a></li>
+                                    <li><a data-scroll="" data-options="easing: easeInQuad" href="#footer" class="navbar1">LIÊN HỆ</a></li>
+                                </ul>
+                            </nav>
+                </div>
+            </div>
+        </div>
+        <div id="slide-wrap" style="" class="wow fadeInUp">
+            <div class="container-fluid">
+                <div style="max-width:1500px; margin:0 auto">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-4">
+                            <div style="margin-bottom:30px"><img src="img/uudai.png"></div>
+                            <div class="hidden-xs"><img src="img/tongdai_bn.png"></div>
+                        </div>
+                        <div class="col-md-5 col-sm-4">
+                            
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                            <div class="formRegister wow fadeInRight" id="frm-register" style="visibility: visible; animation-name: fadeInRight;">
+                                <div class="inner">
+                                    <h3>ĐĂNG KÝ VAY</h3>
+                                    <form id="frmRegDownload" autocomplete="off" novalidate class="bv-form">
+                                        <div id="frmContentReg">
+                                            <div class="form-group has-feedback">
+                                                <input type="text" class="form-control" name="name" id="txtName" value="" placeholder="Họ và tên(*)">
+                                            </div>
+                                            <div class="form-group has-feedback">
+                                                <input type="text" class="form-control" name="phone" id="txtPhone" onkeypress="return AllowNumberOnly(event);" placeholder="Số điện thoại(*)">
+                                            </div>
+                                            <div class="form-group has-feedback">
+                                                <select class="form-control" id="cboDeposit" name="cboDeposit">
+                                                    <option value="">...Chọn nhu cầu vay ...</option>
+                                                    <option value="Cho vay SXKD hàng tiêu dùng">Cho vay SXKD hàng tiêu dùng</option>
+                                                    <option value="Cho vay tiêu dùng có TSBĐ ">Cho vay tiêu dùng có TSBĐ </option>
+                                                    <option value="Cho vay mua đất, xây sửa nhà để ở">Cho vay mua đất, xây sửa nhà để ở</option>
+                                                    <option value="Cho vay phát triển nông nghiệp nông thôn">Cho vay phát triển nông nghiệp nông thôn</option>
+                                                    <option value="Cho vay lĩnh vực XNK">Cho vay lĩnh vực XNK</option>
+                                                    <option value="Cho vay lĩnh vực xây lắp">Cho vay lĩnh vực xây lắp</option>
+                                                    <option value="Cho vay bổ sung vốn lưu động SXKD vật liệu xây dựng">Cho vay bổ sung vốn lưu động SXKD vật liệu xây dựng</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group has-feedback">
+                                                <input type="text" class="form-control" name="provider" id="txtProvider" value="" placeholder="Tỉnh thành">
+    
+                                            </div>
+                                            
+                                            <div class="form-group has-feedback">
+                                                <input type="text" class="form-control" name="email" id="txtEmail" placeholder="Email">
+                                            </div>
+                                            <div class="form-group text-center">
+                                                <button class="btn btnRegister">Vay ngay</button>
+                                            </div>
+                                        </div>
+                                        <div id="content-register"></div>
+                                    </form>
+    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section wow fadeInUp" id="section1">
+            <div class="container">
+            	<div class="row">
+                	<div class="col-md-10 col-md-offset-1">
+                    	<div id="intro" class="wow fadeInLeft">
+                            <div class="row">
+                                <div class="col-md-4"><img src="img/bank.png"></div>
+                                <div class="col-md-8">
+                                    <h3>Lienvietpostbank - Cần vay là có ngay</h3>
+                                    <p>Ngân hàng Bưu điện Liên Việt triển khai chương trình <strong>“Ưu đãi lãi vay - Tiếp vốn liền tay" </strong>với nhiều ưu đãi hấp dẫn, phục vụ cho các mục đích vay vốn khác nhau để hỗ trợ tối đa cho khách hàng: thúc đẩy sản xuất kinh doanh, tiêu dùng cá nhân, nâng cao chất lượng cuộc sống,...</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="about">
+                            <div class="row">
+                                <div class="col-md-4 wow fadeInLeft"><img src="img/p1.png"></div>
+                                <div class="col-md-4 wow fadeInDown"><img src="img/p2.png"></div>
+                                <div class="col-md-4 wow fadeInRight"><img src="img/p3.png"></div>
+                                <div class="col-md-4 wow fadeInLeft"><img src="img/p4.png"></div>
+                                <div class="col-md-4 wow fadeInUp"><img src="img/p5.png"></div>
+                                <div class="col-md-4 wow fadeInRight"><img src="img/p6.png"></div>
+                                
+                            </div>
+                        </div>
+                        <div class="btnDangky"><img src="img/btn-dky.png"></div>
+                    </div>
+                </div>
+            	
+            </div>
+
+        </div>
+        <div class="section wow fadeInUp" id="section2">
+            <div class="container">
+            	<div class="st-hd text-center"><h3>Nội dung ưu đãi</h3></div>
+                <div id="st2-top">
+                    <div class="row text-center text-uppercase">
+                        <div class="col-sm-4">
+                            <strong>Sản phẩm/mục đích vay</strong>	
+                        </div>
+                        <div class="col-sm-4">
+                            <strong>Đặc điểm sản phẩm</strong>
+                        </div>
+                        <div class="col-sm-4">
+                            <strong>Lãi suất ưu đãi</strong>
+                        </div>
+                    </div>
+                </div>
+                    
+            	
+                <div id="st2-bt">
+                    <div class="row">
+                        <div class="col-sm-4  text-center">
+                            <div><img src="img/s1.png"></div>
+                            <div class="st2-bt-tl textGradient">Cho vay SXKD hàng tiêu dùng</div>
+                        </div>
+                        <div class="col-sm-4">
+                            <ul class="checklist">
+                            <li>Mức cho vay:<br/>Tối đa <span class="textGradient">90% nhu cầu vốn</span></li>
+                            <li>Thời gian duy trì hạn mức đến 3 năm</li>
+                            <li>Thời gian duyệt hồ sơ: 24h làm việc</li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4">
+                            <ul class="checklist">
+                            <li>Thời gian vay &lt;= 6 tháng:<br>Lãi suất <span class="textGradient">chỉ từ 7.5%/năm</span></li>
+                            <li>6 tháng &lt;=thời gian vay &lt;= 12 tháng:<br>Lãi suất <span class="textGradient">chỉ từ 8.5%/năm</span></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-8 col-sm-offset-4 text-right ">
+                        	<div class="btnDangky_bt">
+                        	<a href="" class=""><img src="img/btn-dkvay.png"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4  text-center">
+                            <div><img src="img/s2.png"></div>
+                            <div class="st2-bt-tl textGradient">Cho vay bổ sung vốn lưu động<br/>SXKD vật liệu xây dựng</div>
+                        </div>
+                        <div class="col-sm-4">
+                            <ul class="checklist">
+                            <li>Mức cho vay:<br/>Tối đa <span class="textGradient">70% nhu cầu vốn</span></li>
+                            <li>Phương thức trả nở linh hoạt</li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4">
+                        </div>
+                        <div class="col-sm-8 col-sm-offset-4 text-right ">
+                        	<div class="btnDangky_bt">
+                        	<a href="" class=""><img src="img/btn-dkvay.png"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4  text-center">
+                            <div><img src="img/s3.png"></div>
+                            <div class="st2-bt-tl textGradient">Cho vay phát triển<br/>nông nghiệp nông thôn</div>
+                        </div>
+                        <div class="col-sm-4">
+                            <ul class="checklist">
+                            <li>Mức cho vay:<br/>Tối đa <span class="textGradient">80% nhu cầu vốn</span></li>
+                            <li>Thời gian duy trì hạn mức đến 3 năm<br/>Phương thức trả nở linh hoạt</li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4">
+                        </div>
+                        <div class="col-sm-8 col-sm-offset-4 text-right ">
+                        	<div class="btnDangky_bt">
+                        	<a href="" class=""><img src="img/btn-dkvay.png"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4  text-center">
+                            <div><img src="img/s4.png"></div>
+                            <div class="st2-bt-tl textGradient">Cho vay mua nhà đất để ở</div>
+                        </div>
+                        <div class="col-sm-4">
+                            <ul class="checklist">
+                            <li>Mức cho vay:<br/>Tối đa <span class="textGradient">100% nhu cầu vốn</span></li>
+                            <li>Thời hạn vay: Tối đa 240 tháng</li>
+                            <li>Thời gian xét hoàn vốn:<br/>Tối đa 12 tháng kể từ ngày thanh toán</li>
+                            <li>Cho vay mua đất đấu giá</li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4">
+                        <ul class="checklist">
+                        <li>Lãi suất <span class="textGradient">chỉ từ 7.5%/năm</span><br/> (tùy theo thời gian và xếp hạng tín dụng của KH)</li>
+                        </ul>
+                        </div>
+                        <div class="col-sm-8 col-sm-offset-4 text-right ">
+                        	<div class="btnDangky_bt">
+                        	<a href="" class=""><img src="img/btn-dkvay.png"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4  text-center">
+                            <div><img src="img/s5.png"></div>
+                            <div class="st2-bt-tl textGradient">Cho vay xây sửa nhà để ở</div>
+                        </div>
+                        <div class="col-sm-4">
+                            <ul class="checklist">
+                                <li>Mức cho vay:<br/>Tối đa <span class="textGradient">100% nhu cầu vốn</span>
+                                <li>Thời hạn vay: Tối đa 180 tháng</li>
+                                <li>Thời gian xét hoàn vốn:<br/>Tối đa 12 tháng kể từ ngày xây sửa nhà
+                                <li>Thời gian ân hạn trả gốc:<br/>Tối đa 12 tháng</li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4">
+                        <ul class="checklist">
+                        <li>Lãi suất <span class="textGradient">chỉ từ 7.5%/năm</span><br/> (tùy theo thời gian và xếp hạng tín dụng của KH)</li>
+                        </ul>
+                        </div>
+                        <div class="col-sm-8 col-sm-offset-4 text-right ">
+                        	<div class="btnDangky_bt">
+                        	<a href="" class=""><img src="img/btn-dkvay.png"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4  text-center">
+                            <div><img src="img/s6.png"></div>
+                            <div class="st2-bt-tl textGradient">Cho vay tiêu dùng có TSBĐ</div>
+                        </div>
+                        <div class="col-sm-4">
+                            <ul class="checklist">
+                                <li>Mức cho vay:<br/>Tối đa <span class="textGradient">100% nhu cầu vốn</span></li>
+                                <li>Thời hạn vay: Tối đa 180 tháng</li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4">
+                        <ul class="checklist">
+                        <li>Lãi suất <span class="textGradient">chỉ từ 8.2%/năm</span><br/> (tùy theo thời gian và xếp hạng tín dụng của KH)</li>
+                        </ul>
+                        </div>
+                        <div class="col-sm-8 col-sm-offset-4 text-right ">
+                        	<div class="btnDangky_bt">
+                        	<a href="" class=""><img src="img/btn-dkvay.png"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4  text-center">
+                            <div><img src="img/s7.png"></div>
+                            <div class="st2-bt-tl textGradient">Cho vay tiêu dùng không TSBĐ<br/>cho CB công chúc viên chức</div>
+                        </div>
+                        <div class="col-sm-4">
+                            <ul class="checklist">
+                                <li>Mức cho vay:<br/>Tối đa <span class="textGradient">chỉ từ 8.2%/năm</span></li>
+                                <li>Thời hạn vay: Tối đa 60 tháng</li>
+                                <li>Không cần tài sản đảm bảo</li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4">
+                        <ul class="checklist">
+                        <li>Lãi suất <span class="textGradient">chỉ từ 10.2%/năm</span><br/> (tùy theo thời gian và xếp hạng tín dụng của KH)</li>
+                        </ul>
+                        </div>
+                        <div class="col-sm-8 col-sm-offset-4 text-right ">
+                        	<div class="btnDangky_bt">
+                        	<a href="" class=""><img src="img/btn-dkvay.png"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4  text-center">
+                            <div><img src="img/s8.png"></div>
+                            <div class="st2-bt-tl textGradient">Cho vay CCCK GTCG</div>
+                        </div>
+                        <div class="col-sm-4">
+                            <ul class="checklist">
+                                <li>Mức cho vay:<br/>Tối đa <span class="textGradient">100% giá trị TSBĐ</span></li>
+                                <li>Danh mục Giấy tờ có giá do LienVietPostBank nhận cầm cố,chiết khấu đa dạng</li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4">
+                        <ul class="checklist">
+                        	<li>Lãi suất cho vay = Lãi suất huy động thực tế của giấy tờ có giá + Tối thiểu <span class="textGradient">chỉ từ 10.2%/năm</span></li>
+                            <li>
+                            	Vay &lt;=1 tháng:<br/> <span class="textGradient">Tối thiểu 7%/năm</span>
+                                <p>Vay > 1 tháng:</p>
+                                <p>&bull; Tối thiểu <strong>7,5%/ năm</strong> đối với KHDN</p>
+                                <p>&bull; Tối thiểu <strong>8%/ năm</strong> đối với KHCN</p>
+                                <p>&nbsp;</p>
+                            </li>
+                        </ul>
+                        </div>
+                        <div class="col-sm-8 col-sm-offset-4 text-right ">
+                        	<div class="btnDangky_bt">
+                        		<a href="" class=""><img src="img/btn-dkvay.png"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="section wow fadeInUp" id="section3">
+            <div class="container">
+            	<div class="st-hd text-center"><h3>Đối tượng tham gia</h3></div>
+                <div class="row">
+                	<div class="col-md-3 col-sm-4 col-md-offset-3 col-sm-offset-2">
+                    	<div class="inner">
+                        	<div><img src="img/kh_canhan.png"></div>
+                            <h2>Khách hàng<br/>Cá nhân</h2>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-3 col-sm-4">
+                    	<div class="inner">
+                        	<div><img src="img/kh_doanhnghiep.png"></div>
+                            <h2>Khách hàng<br/>Doanh nghiệp</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center"><button class="btn"><strong>ĐĂNG KÝ VAY</strong></button></div>
+            </div>
+        </div>
+        <div class="section wow fadeInUp" id="section4">
+            <div class="container">
+            	<div class="st-hd text-center"><h3>Thời gian ưu đãi</h3></div>
+                <div class="row">
+                	<div class="col-md-7 col-sm-7">
+                    	<div class="time">
+                        	<div class="inner">05/09/2020 - 31/12/2020</div>
+                            <div class="text-center"><a href="" class=""><img src="img/btn-dkvay.png"></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="" id="footer">
+            <div class="container">
+                <div class="row">
+                	<div class="col-md-3 col-sm-3">
+                    	<div style="margin-bottom:30px"><img src="img/logo.png"></div>
+                        <div class="text-right">
+                        	<a href=""><img src="img/ic_fb.png"></a>
+                            <a href=""><img src="img/ic_yt.png"></a>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-sm-9 col-md-offset-1">
+                    	<h4><strong>Mọi thắc mắc, Quý khách vui lòng liên hệ theo thông tin bên dưới</strong></h4>
+
+                        <p><strong>Giờ giao dịch:</strong></p>
+                        <p>&bull; Từ 8h00 đến 17h00 từ Thứ Hai đến Thứ Sáu hàng tuần (Trừ các ngày nghỉ lễ, Tết Nguyên đán).</p>
+                        <p>&bull; Từ 8h00 đến 12h00 Thứ Bẩy hàng tuần (Trừ các ngày nghỉ lễ, Tết Nguyên đán). </p>
+                        
+                        <p><strong>Dịch vụ Khách hàng:</strong></p>
+                        <p>&bull; Giờ làm việc: 24/24 (Tất cả các ngày trong tuần bao gồm cả Thứ Bảy, Chủ nhật, các ngày Lễ và Tết Nguyên đán).</p>
+                        <p>&bull; Đường dây nóng dịch vụ khách hàng: 1800 577 758</p>
+                        <p>&bull; Địa chỉ liên hệ: Tòa nhà Thaiholdings Tower, số 210 Trần Quang Khải, phường Tràng Tiền, quận Hoàn  Kiếm, thành phố Hà Nội.</p>
+                        <p>&bull; Email liên hệ: dichvukhachhang@lienvietpostbank.com.vn</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/toastr.js"></script>
+    <script type="text/javascript" src="js/wow/wow.min.js"></script>
+    <script src="js/smooth-scroll.js"></script>
+    <script type="text/javascript" src="js/bootstrapValidator.min.js"></script>
+    <script type="text/javascript" src="js/form-validation.js"></script>
+    
+    <script>
+        new WOW().init();
+        smoothScroll.init({
+            speed: 1000,
+            easing: 'easeInOutCubic',
+            offset: 70,
+            updateURL: false,
+            callbackBefore: function (toggle, navbar1) { },
+            callbackAfter: function (toggle, navbar1) { }
+        });
+
+    </script>
+    <script>
+        function AllowNumberOnly(evt) {
+            evt = (evt) ? evt : event;
+            var charCode = (evt.charCode) ? evt.charCode : ((evt.keyCode) ? evt.keyCode : ((evt.which) ? evt.which : 0));
+            if ((charCode > 31) && (charCode < 48 || charCode > 57) && charCode != 8 && charCode != 37 && charCode != 39 && charCode != 45 && charCode != 46) {
+                return false;
+            }
+            return true;
+        }
+    	$("button").click(function(){
+			$(".navbar-toggle").toggleClass("close");
+		});
+
+    	$(".navbar-toggle").click(function(){
+			$("#header").toggleClass("open");
+		});
+  
+    	$(".navbar-nav a").click(function(){
+			$(".navbar-collapse").removeClass("in");
+		
+			$(".navbar-toggle").removeClass("close");
+		});
+        
+    </script>
+    
+
+    <script src="js/smooth-scrollbar.js"></script>
+    <link href="css/smooth-scrollbar.css" rel="stylesheet" type="text/css" />
+    
+    
+
+</body>
+
+</html>
