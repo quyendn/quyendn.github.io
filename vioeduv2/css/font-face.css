@@ -1,0 +1,66 @@
+@font-face {
+  font-family: 'Diavlo';
+  src: url('../fonts/Diavlo.eot');
+  src: url('../fonts/Diavlo.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Diavlo.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'DiavloLight-Regular';
+  src: url('../fonts/DiavloLight-Regular.eot');
+  src: url('../fonts/DiavloLight-Regular.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/DiavloLight-Regular.svg#DiavloLight-Regular') format('svg'),
+       url('../fonts/DiavloLight-Regular.ttf') format('truetype'),
+       url('../fonts/DiavloLight-Regular.woff') format('woff'),
+       url('../fonts/DiavloLight-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'DiavloBook-Regular';
+  src: url('../fonts/DiavloBook-Regular.eot');
+  src: url('../fonts/DiavloBook-Regular.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/DiavloBook-Regular.svg#DiavloBook-Regular') format('svg'),
+       url('../fonts/DiavloBook-Regular.ttf') format('truetype'),
+       url('../fonts/DiavloBook-Regular.woff') format('woff'),
+       url('../fonts/DiavloBook-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DiavloMedium-Regular';
+  src: url('../fonts/DiavloMedium-Regular.svg#DiavloMedium-Regular') format('svg'),
+       url('../fonts/DiavloMedium-Regular.ttf') format('truetype'),
+       url('../fonts/DiavloMedium-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+@font-face {
+  font-family: 'DiavloBold-Regular';
+  src: url('../fonts/DiavloBold-Regular.eot');
+  src: url('../fonts/DiavloBold-Regular.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/DiavloBold-Regular.svg#DiavloBold-Regular') format('svg'),
+       url('../fonts/DiavloBold-Regular.ttf') format('truetype'),
+       url('../fonts/DiavloBold-Regular.woff') format('woff'),
+       url('../fonts/DiavloBold-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'DiavloBlack-Regular';
+  src: url('../fonts/DiavloBlack-Regular.eot');
+  src: url('../fonts/DiavloBlack-Regular.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/DiavloBlack-Regular.svg#DiavloBlack-Regular') format('svg'),
+       url('../fonts/DiavloBlack-Regular.ttf') format('truetype'),
+       url('../fonts/DiavloBlack-Regular.woff') format('woff'),
+       url('../fonts/DiavloBlack-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
