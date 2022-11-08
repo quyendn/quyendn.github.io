@@ -1,0 +1,105 @@
+@media (max-width: 1199px) {
+    
+}
+
+@media (max-width: 992px) {
+    
+    #header{
+        top: 0;
+        
+        background: url(../imgs/bg_nav-mb.png) no-repeat 00px 0;
+        min-height: 80px;
+        
+    }
+    #navbarNav{
+        background: #12257d;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        padding: 1rem;
+    }
+    .navbar-brand{
+        margin-left: 40px;
+        
+    }
+    .navbar-brand img{
+        height: 48px;
+    }
+    #navbarNav .nav-link{
+        line-height: 40px;
+    }
+    #banner .h1{
+        font-size: 3em;
+    }
+    #banner .h2{
+        font-size: 1.5em;
+    }
+    #banner .bg-white{
+        white-space: nowrap;
+    }
+    #section2 .bg{
+        background-size: contain;
+        padding: 20px;
+        width: auto;
+        height: auto;
+        
+    }
+    #section2 .row  .mb-4{
+        padding: 15px;
+        margin: 0!important;
+    }
+    .st2-tl{
+        height: auto;
+        padding: 30px 0;
+        margin-bottom: 45px;
+        background: url(../imgs/bg_tl_mb.png) no-repeat 50% 50%;
+        background-size: cover;
+    }
+    #section2 .h3, .st3-tl .h3, #section4 .st4-text > div{
+        font-size: 1em !important;
+    }
+    
+    .st3-text > div{
+        font-size: 1em;
+        height: 56px;
+        background-size: 100% 100%;
+        
+    }
+    .st4-text > div{
+        height: 50px;
+        background-size: contain;
+    }
+    .st7-text{
+        padding: 15px;
+        font-size: .85em;
+        height: auto;
+        background-size: 100% 100%;
+    }
+    
+   
+    
+}
+
+@media (max-width: 768px) {
+    
+    
+    
+
+}
+@media (max-width: 578px) {
+    
+   
+	
+	
+}
+@media (min-width: 1199px) {
+   
+   
+}
+@media (min-width: 992px){
+    
+}
+@media (min-width: 768px){
+    
+}

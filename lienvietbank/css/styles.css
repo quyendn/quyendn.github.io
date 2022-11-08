@@ -636,30 +636,23 @@ img{
 	
 /*thanks*/
 #thanks{
-	padding:90px 0;
+	padding:150px 0;
 	text-align:center;
-	}
-#thanks .inner{
-	background:rgba(255,255,255,0.6);
-	padding:15px;
-	}
-#thanks .text{
-	color:#222;
-	border:1px solid #777;
-	padding:30px;
-	background:rgba(255,255,255,0.3);
-	}
-#thanks .text{
-	font-weight:700;
-	font-size:24px;
+	color:#fff;
+	font-weight:bold;
+	font-size:30px;
 	text-transform:uppercase;
+	background:url(../img/bg_thank.jpg) no-repeat 50% 50%;
+	background-size:100% auto;
 	}
-#thanks .text .logo{
-	margin-top:30px;}
-
-
-
+#thanks .text{
+	margin:15px 0;
+	}
 @media (max-width: 991px) {
+	#thanks{
+		font-size:24px;
+		background-size: auto 100%;
+		}
   
 }
 
