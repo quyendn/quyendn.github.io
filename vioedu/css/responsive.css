@@ -38,6 +38,21 @@
     #banner .bg-white{
         white-space: nowrap;
     }
+    #banner .pulse{
+        
+        
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+       
+    }
+    #banner .pulse .btnRegister{
+        position: relative;
+        
+        margin-top: 1rem;
+    }
     #section2 .bg{
         background-size: contain;
         padding: 20px;
@@ -62,7 +77,8 @@
     
     .st3-text > div{
         font-size: 1em;
-        height: 56px;
+        height: auto;
+        padding: 15px;
         background-size: 100% 100%;
         
     }
@@ -71,10 +87,28 @@
         background-size: contain;
     }
     .st7-text{
-        padding: 15px;
-        font-size: .85em;
-        height: auto;
+        padding: 15px 5px;
+        font-size: .75em;
+        height: 76px;
         background-size: 100% 100%;
+    }
+    .container-xxxl{
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    #footer{
+        padding-bottom: 60px;
+    }
+    #footer .order-md-5 img{
+        width: 44px;
+    }
+    .owl-prev{
+        left:0px !important;
+        
+    }
+    .owl-next{
+        right:0px !important;
+        
     }
     
    

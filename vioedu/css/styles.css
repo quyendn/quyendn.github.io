@@ -15,7 +15,7 @@ body{
 	font-family: 'Open Sans', sans-serif;
 	font-size:1em;
 	line-height: 1.6em;
-	background-color:#00021e;
+	background-color:#0b3178;
 	
 	height: 100%;
     width: 100%;
@@ -129,8 +129,23 @@ a{
 #banner .h2{
 	font-size: 2.5em;
 }
+#banner .pulse{
+	position: relative;
+
+	
+}
+
+#banner .btnRegister{
+
+	position: absolute;
+	bottom: 1rem;
+	right: 0;
+
+	
+}
+
 .bgAll{
-	background:#00011a url(../imgs/bg_body.jpg) no-repeat 50% 0;
+	background:#0b3178 url(../imgs/bg_body.jpg) no-repeat 50% 0;
 }
 .st2-tl{
 	height: 256px;
@@ -180,3 +195,69 @@ a{
 	background: url(../imgs/bg_footer.jpg) no-repeat 50% 0;
 	background-size: cover;
 }
+/*owl-carousel*/
+
+.owl-carousel, .listImg{}
+.owl-carousel.owl-loaded, .listImg.owl-loaded{
+  display: block;
+  position:relative;
+  overflow:hidden
+}
+.owl-carousel .owl-stage-outer, .listImg .owl-stage-outer{
+  position: relative;
+  overflow:hidden;
+  -moz-transform: translate3d(0px,0,0);
+  -webkit-transform: translate3d(0px,0,0);
+  transform: translate3d(0px,0,0);
+}
+.owl-carousel .owl-item, .listImg .owl-item{
+  position: relative;
+  min-height: 1px;
+  float: left;
+  -webkit-backface-visibility: hidden;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-align: center;
+}
+.owl-carousel .item, .listImg .item{
+	padding:0 10px;
+	}
+.owl-carousel .item .inner, .listImg .item .inner{
+	background:#fff;
+	}
+.owl-theme .owl-controls {
+  text-align: center;
+  -webkit-tap-highlight-color: transparent;
+  -moz-tap-highlight-color: transparent;
+  tap-highlight-color: transparent;
+}
+.owl-prev, .owl-next{
+	top:50%;
+	margin-top: -20px;
+	width:40px;
+	height:40px;
+	position:absolute;
+	text-indent:-1000em;
+	transition: all 300ms ease-in-out;
+	-webkit-transition: all 300ms ease-in-out;
+	-moz-transition: all 300ms ease-in-out;
+	-o-transition: all 300ms ease-in-out;
+	}
+.owl-prev{
+	left:0px;
+	background: url(../imgs/btn-prev.png) no-repeat 50% 50%;
+}
+.owl-next{
+	right:0px;
+	background: url(../imgs/btn-next.png) no-repeat 50% 50%;
+}
+.owl-dots{
+	
+	display: none;
+}
+
+/**/
