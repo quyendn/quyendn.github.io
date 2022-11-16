@@ -19,6 +19,7 @@
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/owl.carousel.min.js"></script>
   <script src="js/smooth-scroll.js"></script>
+  <script src="js/mobile-detect.min.js"></script>
   <script type="text/javascript" src="js/wow/wow.min.js"></script>
   <link href="css/animate.css" rel="stylesheet" type="text/css" />
   <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -63,7 +64,7 @@
       <div class="wow pulse" data-wow-duration="0.15" data-wow-delay="3s" data-wow-iteration="5">
         <img src="imgs/banner.png">
         <div class="text-center mt-3">
-          <a href="https://vio.edu.vn/arena-mass-battle/game" class="btnRegister"><img src="imgs/btn_thamgiangay.png" width="270px"></a>
+          <a href="javascript:void(0);" onclick="checkMobile()" class="btnRegister"><img src="imgs/btn_thamgiangay.png" width="270px"></a>
         </div>
       </div>
     </div>
@@ -111,7 +112,7 @@
           </div>
           <div class="col-md-6">
             <div class="mb-4 wow bounceInRight" data-wow-delay="1s" ><img src="imgs/dangky-img.png"></div>
-            <div class="wow pulse animated" data-wow-delay="300ms" data-wow-iteration="infinite" data-wow-duration="2s" style="visibility: visible; animation-duration: 2s; animation-delay: 300ms; animation-iteration-count: infinite; animation-name: pulse;"><a href="https://vio.edu.vn/arena-mass-battle/game "><img src="imgs/bg_dangkymienphi.png"></a></div>
+            <div class="wow pulse animated" data-wow-delay="300ms" data-wow-iteration="infinite" data-wow-duration="2s" style="visibility: visible; animation-duration: 2s; animation-delay: 300ms; animation-iteration-count: infinite; animation-name: pulse;"><a href="javascript:void(0);" onclick="checkMobile()"><img src="imgs/bg_dangkymienphi.png"></a></div>
           </div>
         </div>
       </div>
@@ -224,7 +225,7 @@
             <div class="st7-text d-flex align-items-center justify-content-center mt-4"><a href="https://www.facebook.com/groups/2490333967870502" style="color: #fff;">Tham gia cộng đồng VioEdu</a></div>
           </div>
         </div>
-        <div class="text-center wow pulse animated" data-wow-delay="300ms" data-wow-iteration="infinite" data-wow-duration="2s" style="visibility: visible; animation-duration: 2s; animation-delay: 300ms; animation-iteration-count: infinite; animation-name: pulse;"><a href="https://vio.edu.vn/arena-mass-battle/game "><img src="imgs/btn_dangky.png"></a></div>
+        <div class="text-center wow pulse animated" data-wow-delay="300ms" data-wow-iteration="infinite" data-wow-duration="2s" style="visibility: visible; animation-duration: 2s; animation-delay: 300ms; animation-iteration-count: infinite; animation-name: pulse;"><a href="javascript:void(0);" onclick="checkMobile()"><img src="imgs/btn_dangky.png"></a></div>
       </div>
     </section>
     <section id="section7" class="py-5 section">
@@ -303,7 +304,7 @@
       </div>
     </div>
   </section>
-  <div id="fixed-scroll" ><a href="https://vio.edu.vn/arena-mass-battle/game "><img src="imgs/btn_thamgiangay.png" width="200px"></a></div>
+  <div id="fixed-scroll" ><a href="javascript:void(0);" onclick="checkMobile()"><img src="imgs/btn_thamgiangay.png" width="200px"></a></div>
 
 <script>
   new WOW().init();
@@ -345,6 +346,20 @@
   } // end if
 
   </script>
+  <script>
+    var md = new MobileDetect(window.navigator.userAgent);
+    function checkMobile()
+    {
+      console.log(md.mobile());
+      if(md.mobile())
+      {
+        location.href = (md.mobile() === 'iPhone') || md.mobile() === 'iPad' ? 'https://apps.apple.com/vn/app/vioedu-h%E1%BB%8Dc-sinh/id1504040583' : 'https://play.google.com/store/apps/details?id=vn.edu.vioedu.student&pli=1';
+      }
+      else{
+        location.href = 'https://vio.edu.vn/arena-mass-battle/game';
+      }
+    }
+</script>
   <script type="text/javascript" src="js/owl.carousel.min.js"></script>
   <script>
     $(document).ready(function() {
