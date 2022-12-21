@@ -240,3 +240,9 @@ transform: scale(1.1);
 -moz-transform: scale(1.1);
 cursor:pointer;
 }
+#header.fixed-top #navbarNav .nav-link{
+	line-height: 40px;
+  }
+  #header.fixed-top .navbar-brand img, #header.fixed-top #navbarNav .nav-link img{
+	height: 40px;
+  }
