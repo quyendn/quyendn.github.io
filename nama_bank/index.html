@@ -4,13 +4,15 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nam A Bank</title>
-  <meta name="description" content="Trang chủ Ngân hàng TMCP Nam Á chính thức hoạt động từ ngày 21/10/1992, là một trong những ngân hàng thương mại cổ phần đầu tiên được thành lập." />
-  <meta property="og:title" content="Trang chủ" />
-  <meta property="og:description" content="Trang chủ Ngân hàng TMCP Nam Á chính thức hoạt động từ ngày 21/10/1992, là một trong những ngân hàng thương mại cổ phần đầu tiên được thành lập." />
-  <meta property="og:site_name" content="Nam A Bank" />
-  <meta itemprop="name" content="Trang chủ" />
-  <meta itemprop="description" content="Trang chủ Ngân hàng TMCP Nam Á chính thức hoạt động từ ngày 21/10/1992, là một trong những ngân hàng thương mại cổ phần đầu tiên được thành lập." />
+  <title>MỞ GREEN ACCOUNT 0 ĐỒNG PHÍ TRÊN OPEN BANKING</title>
+  <meta name="description" content="Tài khoản Green Account do Nam A Bank cung cấp là tài khoản thanh toán trực tuyến và/hoặc đăng ký dịch vụ Ngân hàng số mở bằng phương thức định danh điện tử (eKYC)." />
+  <meta property="og:title" content="MỞ GREEN ACCOUNT 0 ĐỒNG PHÍ TRÊN OPEN BANKING" />
+  <meta property="og:description" content="Tài khoản Green Account do Nam A Bank cung cấp là tài khoản thanh toán trực tuyến và/hoặc đăng ký dịch vụ Ngân hàng số mở bằng phương thức định danh điện tử (eKYC)." />
+  <meta property="og:site_name" content="MỞ GREEN ACCOUNT 0 ĐỒNG PHÍ TRÊN OPEN BANKING" />
+  <meta itemprop="name" content="MỞ GREEN ACCOUNT 0 ĐỒNG PHÍ TRÊN OPEN BANKING" />
+  <meta itemprop="description" content="Tài khoản Green Account do Nam A Bank cung cấp là tài khoản thanh toán trực tuyến và/hoặc đăng ký dịch vụ Ngân hàng số mở bằng phương thức định danh điện tử (eKYC)." />
+  <meta property="og:image" content="https://quyendn.github.io/nama_bank/imgs/Share_Normal_FB.jpg"/>
+  <meta property="og:image:secure_url" content="https://quyendn.github.io/nama_bank/imgs/Share_Normal_FB.jpg"/>
   <link rel="apple-touch-icon" sizes="57x57" href="https://www.namabank.com.vn//Data/Sites/1/skins/default/favicon/apple-icon-57x57.png" />
   <link rel="apple-touch-icon" sizes="60x60" href="https://www.namabank.com.vn//Data/Sites/1/skins/default/favicon/apple-icon-60x60.png" />
   <link rel="apple-touch-icon" sizes="72x72" href="https://www.namabank.com.vn//Data/Sites/1/skins/default/favicon/apple-icon-72x72.png" />
@@ -57,7 +59,8 @@
     </nav>
   </header>
   <section id="section1" class="wow fadeInDown shadow">
-    <div id="banner" class="carousel slide"  data-bs-ride="false">
+    <div id="banner" class="carousel slide" data-bs-ride="carousel">
+
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img src="imgs/Banner-pc-1.jpg" onclick="checkMobile()" style="cursor: pointer;" class="d-md-block d-none w-100">
@@ -69,12 +72,8 @@
         </div>
       </div>
     
-      <button class="carousel-control-prev" type="button" data-bs-target="#banner" data-bs-slide="prev">
-        <i class="fal fa-chevron-left h5"></i>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#banner" data-bs-slide="next">
-        <i class="fal fa-chevron-right h5"></i>
-      </button>
+      <button class="carousel-control-prev" type="button" data-bs-target="#banner" data-bs-slide="prev"><img src="imgs/btn-prev.png"></button>
+      <button class="carousel-control-next" type="button" data-bs-target="#banner" data-bs-slide="next"><img src="imgs/btn-next.png"></button>
     </div>
   </section>
 
@@ -261,8 +260,8 @@
         <div class="col-md-6 text-center wow bounceInUp" data-wow-delay="0.4s">
           <div class="text-blue fw-bold mb-3">Mọi thắc mắc, Quý khách vui lòng liên hệ<br>Nam A Bank:</div>
           <div>
-            <a href="tel:19006679" class="btn btn-register fw-bold px-5 text-uppercase">Hotline</a>
-            <a href="https://www.namabank.com.vn/chi-nhanh-1" class="btn btn-register fw-bold px-5 text-uppercase">điểm giao dịch</a>
+            <a href="tel:19006679" class="btn btn-register fw-bold px-5 text-uppercase my-2 my-md-0">Hotline</a>
+            <a href="https://www.namabank.com.vn/chi-nhanh-1" class="btn btn-register fw-bold px-5 text-uppercase my-2 my-md-0">điểm giao dịch</a>
           </div>
         </div>
       </div>
@@ -319,7 +318,7 @@
    var vOffset = 80;
     var md = new MobileDetect(window.navigator.userAgent);
     if (md.mobile()) {
-        vOffset = 90;
+        vOffset = 50;
     }
     smoothScroll.init({
         speed: 1000,
@@ -390,6 +389,7 @@
       })
     })
 </script>
+
 
 </body>
 </html>
