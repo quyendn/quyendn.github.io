@@ -42,7 +42,7 @@ a{
 }
 .navbar-toggler{
 	position: absolute;
-	top: 1rem;
+	top: .5rem;
 	right: 1rem;
 	border: none;
 	padding: 0;
@@ -243,9 +243,13 @@ cursor:pointer;
 #header.fixed-top #navbarNav .nav-link{
 	line-height: 40px;
   }
-#header.fixed-top .navbar-brand img, #header.fixed-top #navbarNav .nav-link img{
-height: 40px;
+  #header.fixed-top .navbar-brand img, #header.fixed-top #navbarNav .nav-link img{
+	height: 40px;
+  }
+#section5 .h5 .me-3{
+	flex: 0 0 70px;
 }
-.slidesteps .owl-item{
-	padding-bottom: 2rem;
+#section2 .mb-4 .me-3{
+	flex: 0 0 100px;
 }
+.slidesteps .owl-item{padding-bottom:2rem}
