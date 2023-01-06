@@ -66,12 +66,12 @@ $(document).ready(function() {
             var phone = $('#phone').val();
             var address = $('#address').val();
             var emailto = "anecovn@gmail.com";
-            var typeId = 0;
+            var typeId = "Hải Dương";
             var rederect = false;
-            var dataJSON = { "name": fullname, "address": address, "phone": phone,"typeId": typeId, "emailto": emailto }
+            var dataJSON = { "Name": fullname, "Email": address, "Phone": phone,"Province": typeId}
             showLoadingContactImage('content-mobile','formContentContactMobile');
             $.ajax({
-                url: "http://alpha.f5academy.net/api/Anecoservice",
+                url: "http://localhost:9999/api/YoutubeSearch/CreateSheet",
                 type: "Post",
                 async: false,
                 data: dataJSON,

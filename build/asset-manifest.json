@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/quyendn.github.io/landing/static/css/main.073c9b0a.css",
+    "main.js": "/quyendn.github.io/landing/static/js/main.e9d0ccea.js",
+    "static/js/787.4ba014fb.chunk.js": "/quyendn.github.io/landing/static/js/787.4ba014fb.chunk.js",
+    "static/media/logo.svg": "/quyendn.github.io/landing/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/quyendn.github.io/landing/index.html",
+    "main.073c9b0a.css.map": "/quyendn.github.io/landing/static/css/main.073c9b0a.css.map",
+    "main.e9d0ccea.js.map": "/quyendn.github.io/landing/static/js/main.e9d0ccea.js.map",
+    "787.4ba014fb.chunk.js.map": "/quyendn.github.io/landing/static/js/787.4ba014fb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.e9d0ccea.js"
+  ]
+}
