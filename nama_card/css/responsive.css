@@ -16,10 +16,7 @@
         right: 0;
         padding: 1rem;
     }
-    #section2 .bg-shadow{
-        right: 0;
-        left: 0;
-    }
+    
     #navbarNav .nav-item{
         padding: .5rem 0;
     }
@@ -32,13 +29,21 @@
         left: 0;
         right: 0;
     }
+
     
     
     
 
 }
 @media (max-width: 578px) {
-    
+    #section2 .icon{
+        flex: 0 0 44px;
+        margin-right: 1rem;
+    }
+    #section2 .bg-shadow{
+        right: 0;
+        left: 0;
+    }
    
 	
 	

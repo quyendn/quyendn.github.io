@@ -127,6 +127,7 @@ img{
 }
 #section2 .icon{
 	flex: 0 0 68px;
+	margin-right: 1rem;
 }
 #section4{
 	background: rgb(71,96,255);
@@ -142,7 +143,9 @@ img{
 	-webkit-border-radius:20px;
 	border-radius:20px;
 }
-
+.inner .text-white.small{
+	line-height: normal;
+}
 /**/
 .inner-hover{
 	position: absolute;
@@ -163,13 +166,13 @@ img{
 	-o-transition: all 300ms ease-in-out;
 	
 }
-#section2 .col-lg-4:hover .inner-hover, #section2-slide .inner-hover.show{
+.inner-hover.show{
 	opacity: 1;
 	z-index: 99;
 	display: flex;
 	flex-direction: column;
 	
-	align-items: center;
+	
 }
 /*=================================*/
 #footer{
@@ -180,6 +183,11 @@ img{
 }
 #footer a{
 	color: #111;
+}
+/*thanks*/
+#thanks{
+	background: url(../imgs/bg_cloud.png) no-repeat 50% 50%;
+	background-size: cover;
 }
 /*owl-carousel*/
 
@@ -247,10 +255,10 @@ img{
 }
 .carousel-control-next, .carousel-control-prev{
 	z-index: 99;
-	width: 10%;
+	width: 16px;
 }
 .carousel-inner{
-	width: 80%;
+	width: calc(100% - 36px);
 	margin: 0 auto;
 	
 }
