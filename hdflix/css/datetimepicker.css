@@ -1,0 +1,34 @@
+﻿.cursorily{ cursor: pointer;  }
+.hov:hover{ color: #000;}
+.ico-size{font-size: 16px;}
+.ico-size-month{font-size: 20px!important; width: 30px; text-align: center;}
+.ico-size-large{ font-size: 30px!important; line-height: 30px;}
+.dtp_main{ border: solid 1px #eee; border-radius: 0px; background-color: #fff; padding: .325rem .75rem;}
+.dtp_main span, .dtp_main i{ display: inline-block; padding-right: 8px;}
+.dtp_modal-win{}
+.dtp_modal-content{color:#111; background-color: #fff; width: 270px; position: absolute; z-index: 9999; top: 100px; left: 100px; font-size: 16px;font-weight: normal;box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);}
+.dtp_modal-content-no-time{ background-color: #fff; border-radius: 10px; width: 312px;
+    position: absolute; z-index: 1000; top: 100px; left: 100px; font-size: 16px;font-weight: normal;}
+.dtp_modal-title{ padding: 5px 15px; color: #777; font-weight: 600; text-align: center; }
+.dtp_modal-cell-date{ margin-bottom: 0; margin-top: 6px;}
+.dtp_modal-cell-time{ direction: ltr; }
+.dtp_modal-months{ color: #333; text-align: center; font-size: 16px; padding: 0 5px;}
+.dtp_modal-months span{ display: inline-block; padding: 0px 10px; width: 180px;}
+.dtp_modal-calendar{ width: 266px; }
+.dtp_modal-calendar-cell{ width: 38px; padding: 0 0; display: inline-block; text-align: center;}
+.dtp_modal-colored{ color: #555; font-size: 13px;}
+.dtp_modal-grey{ color: #7d7d7d; }
+.dtp_modal-cell-selected{ background-color: #BA9A27;color:#fff; border-radius: 50%;  transition: background-color 1s ease-out;height:38px; line-height: 38px;}
+.dtp_modal-time-block{ height: 140px;  }
+.dpt_modal-button{ background-color: #BA9A27; color: #fff; font-size: 16px; font-weight: 700; padding: .375rem .75rem; text-align: center; display: block; cursor: pointer;
+border-radius: 0px;  border:1px solid #BA9A27; margin: 0 15px 15px 15px;}
+.dtp_modal-time-line{ text-align: center; color: #111; font-size: 16px; font-weight: 600;  }
+.dtp_modal-time-mechanic{ padding-top: 10px;}
+.dtp_modal-append{ color: #7d7d7d; text-align:center; font-weight: normal; }
+.dtp_modal-midle{ display: inline-block; width: 40px; }
+.dtp_modal-midle-dig{display: inline-block; width: 30px; text-align: center; font-weight: 300; color: #999;}
+.dtp_modal-digits{ font-size: 30px; text-align:center; color: #555; padding-top: 5px; padding-bottom: 5px; font-weight: 700;}
+.dtp_modal-digit{  }
+#picker .fal{
+    opacity: .6;
+}
