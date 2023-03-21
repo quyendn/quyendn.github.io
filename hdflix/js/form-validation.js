@@ -72,7 +72,6 @@ $(document).ready(function() {
             }
         },
         onSuccess: function (e) {
-
             var fullname = $('#fullname').val();
             var phone = $('#phone').val();
             var email = $('#email').val();
@@ -118,26 +117,20 @@ $(document).ready(function() {
     }).on('success.form.fv', function (e) {
 
     });
-    
     function showLoadingImage() {
 
         $('#content').empty().append('<div id="loading-image" align="center"><img src="imgs/ajax-loader.gif" alt="Loading..." /></div>');
         $('#formContentContact').hide();
-
     }
-
     function hideLoadingImage() {
         $('#formContentContact').show();
         $('#loading-image').remove();
     }
-   
     function showLoadingContactImage(contentLoading,frmContent) {
 
         $('#' + contentLoading).empty().append('<div id="loading-image" align="center"><img src="imgs/ajax-loader.gif" alt="Loading..." /></div>');
         $('#' + frmContent).hide();
-
     }
-
     function hideLoadingContactImage(contentLoading, frmContent) {
         $('#' + frmContent).show();
         $('#loading-image').remove();

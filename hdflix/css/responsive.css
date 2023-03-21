@@ -11,7 +11,7 @@
         height: 36px;
     }
     .st2-bt .bg{
-        margin-right: 0rem;
+        margin-right: -12px;;
     }
     #section2 {
         margin-top: 0rem;
@@ -38,16 +38,26 @@
     #section3 .st-tl::before, #section4 .st-tl::before{
         font-size: 1.5em;
     }
-    .st2-bt .box{
-        display: block !important;
-    }
-    .st2-bt .box .icon{
-        margin-bottom: 1rem;
-    }
-    #navbarNav .nav{
+    
+    #navbarNav .nav, #footer .nav{
         flex-direction: column;
     }
-    
+   
+    .st-tl, #footer, #section1, #navbarNav{
+        text-align: center;
+    }
+    .st2-bt .bg{
+        display: block !important;
+        
+    }
+    #section3 .st-tl::before, #section4 .st-tl::before{
+        left: 0;
+        right: 0;
+    }
+    #section3 .st-tl span{
+        left: 50%;
+        transform: translateX(-50%);
+    }
     
 
 }

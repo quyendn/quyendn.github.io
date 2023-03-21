@@ -41,6 +41,16 @@ a{
 	right: 1rem;
 	border: none;
 	padding: 0;
+	width: 24px;
+	height: 24px;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+}
+.navbar-toggler[aria-expanded="false"]{
+	background-image: url(../imgs/bars.svg);
+}
+.navbar-toggler[aria-expanded="true"]{
+	background-image: url(../imgs/close.svg);
 }
 
 
@@ -152,6 +162,9 @@ img{
 	-moz-border-radius: 30px 0 0 0;
 	-webkit-border-radius: 30px 0 0 0;
 	border-radius: 30px 0 0 0;
+}
+.st2-bt .bg .fw-bold{
+	font-size: 1.5em;
 }
 .st2-bt .icon{
 	flex: 0 0 36px;

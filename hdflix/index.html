@@ -20,23 +20,20 @@
   <header class="" id="header">
     <nav class="navbar navbar-expand-md w-100">
       <div class="container d-flex flex-wrap justify-content-center">
-        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <img src="imgs/bars.svg">
+        <button id="navbar-toggle" class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          
         </button>
-        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+        <a href="/" class="d-flex align-items-center mb-md-0 me-md-auto text-dark text-decoration-none">
           <img src="imgs/logo-ft.png">
         </a>
-        <div class="collapse navbar-collapse"  id="navbarNav">
-          <ul class="nav nav-pills">
+        <div class="collapse navbar-collapse mt-4 mt-md-0"  id="navbarNav">
+          <ul class="nav nav-pills ms-md-auto">
             <li class="nav-item"><a class="nav-link navbar1 rounded-pill active" href="#section1" data-scroll="" data-options="easing: easeInQuad">Home</a></li>
             <li class="nav-item"><a  class="nav-link navbar1 rounded-pill" href="#section2" data-scroll="" data-options="easing: easeInQuad">Feature</a></li>
             <li class="nav-item"><a class="nav-link navbar1 rounded-pill" href="#section3" data-scroll="" data-options="easing: easeInQuad">FAQ</a></li>
             <li class="nav-item"><a  class="nav-link navbar1 btn rounded-pill" href="#section4" data-scroll="" data-options="easing: easeInQuad">Join HD Flix Chanel</a></li>
           </ul>
-
         </div>
-
-        
       </div>
     </nav>
   </header>
@@ -67,25 +64,24 @@
         </div>
       </div>
       <div class="st2-bt">
-        
         <div class="row align-items-center">
           <div class="col-lg-8 offset-lg-4 ">
             <div class="bg py-3 d-flex">
-              <div class="d-flex p-1 p-sm-3 box">
+              <div class="d-flex p-3 box">
                 <div class="icon"><img src="imgs/movie.png"></div>
                 <div>
                   <div class="fw-bold">100.000</div>
                   <div class="small">Movies and Shows</div>
                 </div>
               </div>
-              <div class="d-flex p-1 p-sm-3 box">
+              <div class="d-flex p-3 box">
                 <div class="icon"><img src="imgs/user.png"></div>
                 <div>
                   <div class="fw-bold">500.000</div>
                   <div class="small">Users</div>
                 </div>
               </div>
-              <div class="d-flex p-1 p-sm-3 box">
+              <div class="d-flex p-3 box">
                 <div class="icon"><img src="imgs/download.png"></div>
                 <div>
                   <div class="fw-bold">100,000+</div>
@@ -140,9 +136,9 @@
   <section id="section4" class="py-5 section">
     <div class="container">
       <div class="h2 st-tl mb-5"><span>Join our comunication</span></div>
-      <div class="text-center">
-        <a href=""><img src="imgs/Tele.png"></a>
-        <a href=""><img src="imgs/Discord.png"></a>
+      <div class="text-center d-flex justify-content-center">
+        <a href="" class="m-1"><img src="imgs/Tele.png"></a>
+        <a href="" class="m-1"><img src="imgs/Discord.png"></a>
       </div>
     </div>
   </section>
@@ -206,6 +202,7 @@
   <script src="js/owl.carousel.min.js"></script>
   <script src="js/smooth-scroll.js"></script>
   <script type="text/javascript" src="js/wow/wow.min.js"></script>
+  <script src="js/mobile-detect.min.js"></script>
 
 <script>
    function AllowNumberOnly(evt) {
@@ -230,21 +227,10 @@
         callbackBefore: function (toggle, navbar1) { },
         callbackAfter: function (toggle, navbar1) { }
     });
-  $("button").click(function(){
-			$(".navbar-toggle").toggleClass("close");
-      
-		});
-
-    	$(".navbar-toggle").click(function(){
-        
+</script>
+<script>
+  $("#navbar-toggle").click(function(){
 			$("#header").toggleClass("open");
-		});
-  
-    	$(".nav-item a").click(function(){
-        
-			$(".navbar-collapse").removeClass("in");
-		
-			$(".navbar-collapse").removeClass("show");
 		});
 </script>
 <script>
