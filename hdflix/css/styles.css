@@ -251,6 +251,36 @@ img{
 	float: right;
 	
 }
+/**/
+.step{
+	position: relative;
+
+}
+.step::before{
+	content: "";
+	position: absolute;
+	left: 25px;
+	top: 52px;
+	bottom: 0;
+	border-left: 1px dashed #EA001E;
+	z-index: 1;
+}
+.step .number{
+	flex: 0 0 52px;
+	color: #fff;
+	font-weight: bold;
+	border: 1px solid #EA001E;
+	text-align: center;
+	line-height: 52px;
+	margin-right: 1rem;
+	background: #0A0A0A;
+	z-index: 9;
+	position: relative;
+	
+}
+.stepContent{
+	padding-left: calc(1rem + 50px);
+}
 /*=================================*/
 #footer{
 	padding-top: 2rem;
