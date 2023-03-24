@@ -91,7 +91,7 @@ $(document).ready(function() {
                     toastr.success('Đăng ký tư vấn mở thẻ thành công </br>Cảm ơn bạn đã tham gia chương trình.', { timeOut: 5000 })
                     hideLoadingContactImage('content-mobile', 'formContentContactMobile');
                     $('#frmMobile').bootstrapValidator('resetForm', true);
-                    location.href = 'https://quyendn.github.io/nama_card/dang-ky-thanh-cong.html';
+                    location.href = '/dang-ky-thanh-cong.html';
                 },
                 error: function (ex) {
                     toastr.success('Đăng ký tư vấn mở thẻ thành công </br>Cảm ơn bạn đã tham gia chương trình.', { timeOut: 5000 })
@@ -101,7 +101,7 @@ $(document).ready(function() {
                     $('#email').val('');
                     $('#province').val('');
                     $('#frmMobile').bootstrapValidator('resetForm', true);
-                    location.href = 'https://quyendn.github.io/nama_card/dang-ky-thanh-cong.html';
+                    location.href = '/dang-ky-thanh-cong.html';
                 },
                 complete: function (jqXHR, textStatus) {
                     $('#fullname').val('');
@@ -109,7 +109,7 @@ $(document).ready(function() {
                     $('#email').val('');
                     $('#province').val('');
                     $('#frmMobile').bootstrapValidator('resetForm', true);
-                    location.href = 'https://quyendn.github.io/nama_card/dang-ky-thanh-cong.html';
+                    location.href = '/dang-ky-thanh-cong.html';
                     
                 }
             });
